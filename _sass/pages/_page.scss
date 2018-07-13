@@ -7,10 +7,17 @@
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
+  overflow: hidden;
 
   @include breakpoint($lg) {
     margin: 0 auto;
     height: 36em;
+  }
+
+  video {
+    transform: translateY(-10%);
+    width: 100%;
+    z-index: -1;
   }
 
   &::before {
@@ -22,6 +29,7 @@
     width: 100%;
     height: 100%;
     background: rgba(52, 56, 81, .8);
+    z-index: 1;
   }
 }
 
