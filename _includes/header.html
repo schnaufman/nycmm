@@ -9,15 +9,34 @@
       </a>
       <nav class="header__links">
         <div class="container header__links-wrapper">
-          {% for item in site.navigation %}
-            <a class="header__link" href="{{ item.link | relative_url }}" itemprop="url">
-              <span itemprop="name">{{ item.name }}</span>
-            </a>
-          {% endfor %}
+            {% for item in site.navigation %}
+              {% if item.subnavigation %}
+              <ul>
+                <li class="dropdown">
+                    <a href="{{ item.link | relative_url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ item.name }} <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        {% for subnav in item.subnavigation %}
+                            {% if subnav.name == 'separator' %}
+                                <li role="separator" class="divider"></li>
+                            {% else %}
+                                <li>
+                                    <a href="{{ subnav.link | relative_url }}">{{ subnav.name }}</a>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </li>
+              {% else %}
+                <a class="header__link" href="{{ item.link | relative_url }}" itemprop="url">
+                  <span itemprop="name">{{ item.name }}</span>
+                </a>
+              {% endif %}
+              </ul>
+            {% endfor %}
         </div>
       </nav>
       <div class="header__toggle">
-        <span>test</span>
+        <span></span>
         <span></span>
         <span></span>
       </div>

@@ -23,8 +23,11 @@ social:
 
 # THEME SETTINGS
 navigation: # Navigation links
-  - {name: 'Home', link: '/'}
-  - {name: 'About', link: '/about'}
+  - name: 'Home'
+    link: '/'
+    subnavigation: 
+      - name: 'About'
+        link: '/about'
   - {name: 'Contact', link: '/contact'}
 
 tagline: >
