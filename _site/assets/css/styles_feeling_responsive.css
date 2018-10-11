@@ -21,6 +21,8 @@ https://flatuicolors.com/palette/us
 ------------------------------------------------------------------- */
 /* Topbar-Navigation
 ------------------------------------------------------------------- */
+/* Header
+------------------------------------------------------------------- */
 /* Footer
 ------------------------------------------------------------------- */
 /* Code
@@ -8185,18 +8187,18 @@ mark {
 */
 /* Adjustments: Video Layout
 ------------------------------------------------------------------- */
-/* line 24, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 25, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 body.video,
 body.video #masthead-no-image-header {
   background: #000;
 }
 
-/* line 29, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 30, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 body.video #masthead-no-image-header {
   margin-bottom: 60px;
 }
 
-/* line 33, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 34, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 body.video h1,
 body.video h2,
 body.video h3,
@@ -8211,102 +8213,144 @@ body.video cite a {
   color: #fff;
 }
 
-/* line 47, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 48, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 body.video cite a:visited {
   color: #fff;
 }
 
-/* line 51, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 52, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 body.video cite {
   color: #fff;
 }
 
 /* Navigation
 ------------------------------------------------------------------- */
-/* line 58, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 59, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 #navigation {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
 }
-/* line 62, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 63, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 #navigation [class^='icon-']:before, #navigation [class*=' icon-']:before {
   margin-right: 0.5rem;
 }
 
 /* Search
 ------------------------------------------------------------------- */
-/* line 70, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 71, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .no-js form#search {
   display: none;
 }
 
 /* Masthead
 ------------------------------------------------------------------- */
-/* line 77, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 78, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 #masthead {
   background-color: #636e72;
 }
-/* line 80, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 81, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 #masthead #logo {
   display: inline-block;
 }
 
-/* line 85, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 86, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 #masthead-no-image-header {
   background-color: #636e72;
 }
 
-/* line 89, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
-#masthead-with-text {
+/* line 90, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+#masthead-title, #masthead-video-title {
   text-align: center;
   font-size: 3.375rem;
   font-family: "Volkhov", Georgia, Times, serif;
-  color: #fff;
+  color: #F1F1F1;
   text-transform: uppercase;
-  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
-}
-
-/* line 98, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
-#masthead-no-image-header {
-  height: 175px;
 }
 
 /* line 102, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+#masthead-with-video {
+  background-color: rgba(11, 11, 11, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+/* line 107, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+#masthead-with-video #logo {
+  display: inline-block;
+}
+/* line 110, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+#masthead-with-video #masthead-video-title {
+  display: inline-block;
+  line-height: 100%;
+}
+/* line 115, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+#masthead-with-video .row {
+  height: 100%;
+}
+/* line 118, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+#masthead-with-video .columns {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 124, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+#masthead-no-image-header {
+  height: 380px;
+}
+
+/* line 128, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 #masthead-no-image-header #logo img {
   margin-top: 60px;
+}
+
+/* line 132, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+#masthead-video {
+  display: block;
+  width: 110%;
+  z-index: -100;
+  transform: translate(-2%, -20%);
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -ms-filter: blur(10px);
+  -o-filter: blur(10px);
+  position: absolute;
 }
 
 /* Masthead › small-only
 ------------------------------------------------------------------- */
 @media only screen and (max-width: 40em) {
-  /* line 110, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+  /* line 148, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
   #logo img {
     display: none;
   }
 
-  /* line 113, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+  /* line 151, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+  #masthead-video {
+    display: none;
+  }
+
+  /* line 154, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
   #masthead {
     height: 200px;
   }
 
-  /* line 116, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+  /* line 157, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
   #masthead-with-pattern {
     padding: 15px 0;
   }
 
-  /* line 119, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+  /* line 160, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
   #masthead-with-background-color {
     padding: 15px 0;
   }
 
-  /* line 122, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+  /* line 163, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
   #masthead-with-text {
     height: 220px;
     padding: 30px 0;
     font-size: 2.25rem;
   }
 
-  /* line 127, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+  /* line 168, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
   #masthead-no-image-header {
     display: none;
   }
@@ -8314,160 +8358,160 @@ body.video cite {
 /* Masthead › medium-only
 ------------------------------------------------------------------- */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 136, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
-  #logo img {
-    margin-top: 60px;
-  }
-
-  /* line 139, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+  /* line 177, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
   #masthead {
     height: 280px;
   }
 
-  /* line 142, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+  /* line 180, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
   #masthead-with-pattern {
     padding: 20px 0;
   }
 
-  /* line 145, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+  /* line 183, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
   #masthead-with-background-color {
     padding: 20px 0;
   }
 
-  /* line 148, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+  /* line 186, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
   #masthead-with-text {
     padding: 60px 0;
     height: 300px;
+  }
+
+  /* line 191, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+  #masthead-with-video {
+    height: 200px;
   }
 }
 /* Masthead › large-only
 ------------------------------------------------------------------- */
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
-  /* line 158, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
-  #logo img {
-    margin-top: 80px;
-  }
-
-  /* line 161, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+  /* line 200, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
   #masthead {
     height: 310px;
   }
 
-  /* line 164, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+  /* line 203, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
   #masthead-with-pattern {
     padding: 30px 0;
   }
 
-  /* line 167, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+  /* line 206, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
   #masthead-with-background-color {
     padding: 30px 0;
   }
 
-  /* line 170, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+  /* line 209, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
   #masthead-with-text {
     height: 330px;
     padding: 60px 0;
+  }
+
+  /* line 214, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+  #masthead-with-video {
+    height: 310px;
   }
 }
 /* Masthead › xlarge-up
 ------------------------------------------------------------------- */
 @media only screen and (min-width: 90.063em) {
-  /* line 180, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
-  #logo img {
-    margin-top: 110px;
-  }
-
-  /* line 183, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+  /* line 223, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
   #masthead {
     height: 380px;
   }
 
-  /* line 186, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+  /* line 226, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
   #masthead-with-pattern {
     padding: 45px 0;
   }
 
-  /* line 189, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+  /* line 229, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
   #masthead-with-background-color {
     padding: 45px 0;
   }
 
-  /* line 192, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+  /* line 232, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
   #masthead-with-text {
     padding: 95px 0;
     height: 400px;
   }
+
+  /* line 236, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+  #masthead-with-video {
+    height: 380px;
+  }
 }
-/* line 198, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 241, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 #title-image-small {
   height: 240px;
 }
 
-/* line 202, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 245, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 #title-image-large {
   height: 520px;
 }
 
-/* line 206, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 249, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 #title-image-index-small {
   height: 120px;
 }
 
-/* line 210, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 253, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 #title-image-index-large {
   height: 260px;
 }
 
 /* Breadcrumb
 ------------------------------------------------------------------- */
-/* line 217, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 260, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 #breadcrumb {
   background: #f3f3f3;
   border-top: 1px solid #f0f0f0;
   border-bottom: 1px solid #f0f0f0;
 }
 
-/* line 223, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 266, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .breadcrumbs > .current {
   font-weight: bold;
 }
 
 /* Meta
 ------------------------------------------------------------------- */
-/* line 230, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 273, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 #page-meta, #page-meta a {
   color: #A4A4A4;
 }
 
-/* line 234, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 277, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 #page-meta .button {
   background: #A4A4A4;
   border: 0;
 }
 
-/* line 239, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 282, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 #page-meta .button {
   color: #fff;
 }
 
-/* line 243, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 286, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 #page-meta .button:hover {
   background: #636e72;
 }
 
-/* line 247, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 290, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .meta-info p {
   font-size: 0.8125rem;
   color: #efefef;
 }
 
-/* line 252, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 295, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .meta-info a {
   text-decoration: underline;
   color: #efefef;
 }
 
-/* line 257, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 300, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .meta-info a:hover {
   text-decoration: none;
   color: #55efc4;
@@ -8475,33 +8519,33 @@ body.video cite {
 
 /* Jump to top
 ------------------------------------------------------------------- */
-/* line 265, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 308, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 #up-to-top {
   padding: 160px 0 10px 0;
 }
 
-/* line 269, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 312, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 #up-to-top a {
   font-size: 24px;
   padding: 5px;
   border-radius: 3px;
 }
 
-/* line 275, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 318, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 #up-to-top a:hover {
   background: #D7D7D7;
 }
 
 /* Footer
 ------------------------------------------------------------------- */
-/* line 282, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 325, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 #footer-content p,
 #footer-content li {
   font-size: 0.8125rem;
   font-weight: 300;
 }
 
-/* line 288, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 331, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 #footer {
   padding-top: 30px;
   padding-bottom: 20px;
@@ -8509,12 +8553,12 @@ body.video cite {
   color: #fff;
 }
 
-/* line 295, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 338, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 #footer a {
   color: #55efc4;
 }
 
-/* line 299, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 342, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 #footer h4,
 #footer h5 {
   letter-spacing: 1px;
@@ -8524,38 +8568,38 @@ body.video cite {
 
 /* Subfooter
 ------------------------------------------------------------------- */
-/* line 309, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 352, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 #subfooter {
   background: #313131;
   color: #7E7E7E;
   padding-top: 30px;
 }
 
-/* line 315, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 358, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 #subfooter-left ul.inline-list {
   float: left;
 }
 
-/* line 319, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 362, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .credits a {
   color: #7E7E7E;
   border: 0;
   text-transform: uppercase;
 }
-/* line 323, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 366, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .credits a:hover {
   color: #fff;
 }
 
-/* line 328, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 371, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .social-icons {
   margin-bottom: 10px !important;
 }
-/* line 332, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 375, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .social-icons li {
   padding: 0 0 20px 0;
 }
-/* line 335, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 378, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .social-icons a {
   font-size: 1.4375rem;
   display: block;
@@ -8565,7 +8609,7 @@ body.video cite {
   background: #7E7E7E;
   text-align: center;
 }
-/* line 343, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 386, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .social-icons a:hover {
   background: #313131;
   color: #fff;
@@ -8573,97 +8617,97 @@ body.video cite {
 
 /* CSS-Classes to add margin at top or bottom
 ------------------------------------------------------------------- */
-/* line 353, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 396, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .t10 {
   margin-top: 10px !important;
 }
 
-/* line 357, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 400, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .t15 {
   margin-top: 15px !important;
 }
 
-/* line 361, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 404, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .t20 {
   margin-top: 20px !important;
 }
 
-/* line 365, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 408, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .t30 {
   margin-top: 30px !important;
 }
 
-/* line 369, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 412, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .t50 {
   margin-top: 50px !important;
 }
 
-/* line 373, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 416, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .t60 {
   margin-top: 60px !important;
 }
 
-/* line 377, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 420, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .t70 {
   margin-top: 70px !important;
 }
 
-/* line 381, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 424, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .t80 {
   margin-top: 80px !important;
 }
 
-/* line 385, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 428, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .t90 {
   margin-top: 90px !important;
 }
 
-/* line 389, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 432, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .b15 {
   margin-bottom: 15px !important;
 }
 
-/* line 393, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 436, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .b20 {
   margin-bottom: 20px !important;
 }
 
-/* line 397, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 440, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .b30 {
   margin-bottom: 30px !important;
 }
 
-/* line 401, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 444, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .b60 {
   margin-bottom: 60px !important;
 }
 
-/* line 405, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 448, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .l15 {
   margin-left: 15px !important;
 }
 
-/* line 409, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 452, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .r15 {
   margin-right: 15px !important;
 }
 
-/* line 413, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 456, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .pl20 {
   padding-left: 20px !important;
 }
 
-/* line 417, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 460, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .pr5 {
   padding-right: 5px !important;
 }
 
-/* line 421, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 464, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .pr10 {
   padding-right: 10px !important;
 }
 
-/* line 425, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
+/* line 468, /home/matthias/dev/websites/nycmm/repo/nycmm/_sass/_07_layout.scss */
 .pr20 {
   padding-right: 20px !important;
 }

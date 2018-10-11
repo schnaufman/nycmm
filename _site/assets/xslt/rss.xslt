@@ -418,17 +418,15 @@
 		
 
 <div id="masthead-no-image-header">
-	<div class="row">
-		<div class="small-12 columns">
-			<a id="logo" href="http://localhost:4000/" title="NYC Musikmarathon Mattighofen – Live music - with live music">
-				<img src="http://localhost:4000/assets/img/logo.png" alt="NYC Musikmarathon Mattighofen – Live music - with live music">
-			</a>
-		</div><!-- /.small-12.columns -->
-	</div><!-- /.row -->
+    <div class="row">
+        <div class="small-12 columns">
+            <a id="logo" href="http://localhost:4000/" title="NYC Musikmarathon Mattighofen – Live music - with live music">
+                <img src="http://localhost:4000/assets/img/logo.png"
+                     alt="NYC Musikmarathon Mattighofen – Live music - with live music">
+            </a>
+        </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
 </div><!-- /#masthead -->
-
-
-
 
 
 

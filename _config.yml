@@ -39,6 +39,7 @@ improve_content: https://github.com/matt-hires/feeling-responsive/edit/gh-pages
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
 urlimg: 'https://matt-hires.github.io/nycmm/images/'
+urlvideo: 'https://matt-hires.github.io/nycmm/videos/'
 
 
 # Logo size is 600x80 pixels

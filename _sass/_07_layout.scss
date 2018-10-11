@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 /* TOC
 
 - Adjustments: Video Layout
@@ -86,21 +87,58 @@ body.video cite {
   background-color: $primary-color;
 }
 
-#masthead-with-text {
+#masthead-title {
   text-align: center;
   font-size: rem-calc(54);
   font-family: $header-font-family;
-  color: #fff;
+  color: $header-title-color;
   text-transform: uppercase;
-  text-shadow: 0 2px 3px rgba(0, 0, 0, .4);
+}
+
+#masthead-video-title {
+  @extend #masthead-title;
+}
+
+#masthead-with-video {
+  background-color: rgba($header-masthead-video-bg, 0.2);
+  overflow: hidden;
+  position: relative;
+
+  #logo {
+    display: inline-block; // for a href to stay with img
+  }
+  #masthead-video-title {
+    display: inline-block;
+    line-height: 100%;
+  }
+
+  .row {
+    height: 100%;
+  }
+  .columns {
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 #masthead-no-image-header {
-  height: 175px;
+  height: 380px;
 }
 
 #masthead-no-image-header #logo img {
   margin-top: 60px;
+}
+
+#masthead-video {
+  display: block;
+  width: 110%;
+  z-index: -100;
+  transform: translate(-2%, -20%);
+  filter:blur(10px);
+  -webkit-filter:blur(10px);
+  -ms-filter: blur(10px);
+  -o-filter: blur(10px);
+  position:absolute;
 }
 
 /* Masthead › small-only
@@ -108,6 +146,9 @@ body.video cite {
 
 @media #{$small-only} {
   #logo img {
+    display: none;
+  }
+  #masthead-video {
     display: none;
   }
   #masthead {
@@ -133,9 +174,6 @@ body.video cite {
 ------------------------------------------------------------------- */
 
 @media #{$medium-only} {
-  #logo img {
-    margin-top: 60px;
-  }
   #masthead {
     height: 280px;
   }
@@ -149,15 +187,16 @@ body.video cite {
     padding: 60px 0;
     height: 300px;
   }
+
+  #masthead-with-video {
+    height: 200px;
+  }
 }
 
 /* Masthead › large-only
 ------------------------------------------------------------------- */
 
 @media #{$large-only} {
-  #logo img {
-    margin-top: 80px;
-  }
   #masthead {
     height: 310px;
   }
@@ -171,15 +210,16 @@ body.video cite {
     height: 330px;
     padding: 60px 0;
   }
+
+  #masthead-with-video {
+    height: 310px;
+  }
 }
 
 /* Masthead › xlarge-up
 ------------------------------------------------------------------- */
 
 @media #{$xlarge-up} {
-  #logo img {
-    margin-top: 110px;
-  }
   #masthead {
     height: 380px;
   }
@@ -192,6 +232,9 @@ body.video cite {
   #masthead-with-text {
     padding: 95px 0;
     height: 400px;
+  }
+  #masthead-with-video {
+    height: 380px;
   }
 }
 
