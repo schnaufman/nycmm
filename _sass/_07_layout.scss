@@ -90,7 +90,8 @@ body.video cite {
 #masthead-title {
   text-align: center;
   font-size: rem-calc(54);
-  font-family: $header-font-family;
+  font-family: $masthead-font-family;
+  font-weight: $masthead-font-weight;
   color: $header-title-color;
   text-transform: uppercase;
 }
@@ -104,20 +105,34 @@ body.video cite {
   overflow: hidden;
   position: relative;
 
-  #logo {
-    display: inline-block; // for a href to stay with img
+  #masthead-with-video-logo {
+    position: absolute;
+    display: inline-block;
+    z-index: -90;
+    right: 0;
+    padding: 2%;
+
+    img {
+      max-width: 50px;
+    }
   }
+
   #masthead-video-title {
     display: inline-block;
     line-height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
   }
 
   .row {
     height: 100%;
   }
+
   .columns {
-    top: 50%;
-    transform: translateY(-50%);
+    height: 100%;
   }
 }
 
@@ -134,11 +149,11 @@ body.video cite {
   width: 110%;
   z-index: -100;
   transform: translate(-2%, -20%);
-  filter:blur(10px);
-  -webkit-filter:blur(10px);
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
   -ms-filter: blur(10px);
   -o-filter: blur(10px);
-  position:absolute;
+  position: absolute;
 }
 
 /* Masthead › small-only
@@ -146,6 +161,9 @@ body.video cite {
 
 @media #{$small-only} {
   #logo img {
+    display: none;
+  }
+  #masthead-with-video-logo img {
     display: none;
   }
   #masthead-video {
@@ -167,6 +185,9 @@ body.video cite {
   }
   #masthead-no-image-header {
     display: none;
+  }
+  #masthead-with-video {
+    height: 200px;
   }
 }
 
@@ -190,6 +211,10 @@ body.video cite {
 
   #masthead-with-video {
     height: 200px;
+  }
+
+  #masthead-with-video-logo img {
+    display: none;
   }
 }
 

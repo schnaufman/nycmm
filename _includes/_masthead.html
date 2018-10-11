@@ -59,14 +59,12 @@
     <video id="masthead-video" loop muted autoplay preload="auto">
         <source src="{{ site.urlvideo }}{{ page.header.video }}" type="video/mp4">
     </video>
+    <a id="masthead-with-video-logo" title="{{ site.title }} – {{ site.slogan }}">
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/img/{{ site.video-logo }}"
+             alt="{{ site.title }} – {{ site.slogan }}">
+    </a>
     <div class="row">
-        <div class="medium-3 columns">
-            <a id="logo" href="{{ '/' | absolute_url }}" title="{{ site.title }} – {{ site.slogan }}">
-                <img src="{{ site.url }}{{ site.baseurl }}/assets/img/{{ site.logo }}"
-                     alt="{{ site.title }} – {{ site.slogan }}">
-            </a>
-        </div>
-        <div class="medium-9 columns">
+        <div class="medium-12 columns">
             <div id="masthead-video-title">{{ page.header.title }}</div>
         </div>
     </div><!-- /.row -->
@@ -88,7 +86,6 @@
 
 
 {% elsif page.header.pattern %}
-
 <div id="masthead-with-pattern" style="background: url('{{ site.urlimg }}/{{ page.header.pattern }}')">
     <div class="row">
         <figure class="small-12 columns">

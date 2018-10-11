@@ -43,7 +43,9 @@ urlvideo: 'https://matt-hires.github.io/nycmm/videos/'
 
 
 # Logo size is 600x80 pixels
-logo: "logo.png"
+logo: ""
+# video logo is treated like a watermark on the top right of the video
+video-logo: "logo.png"
 
 # Gems
 plugins:

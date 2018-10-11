@@ -16,6 +16,10 @@ $header-top-margin: .2rem !default;
 $header-bottom-margin: .5rem !default;
 $header-text-rendering: optimizeLegibility !default;
 
+// Masthead fonts
+$masthead-font-family: $header-font-family !default;
+$masthead-font-weight: $font-weight-light !default;
+
 // We use these to control header font sizes
 $h1-font-size: rem-calc(44) !default;
 $h2-font-size: rem-calc(37) !default;
