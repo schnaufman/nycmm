@@ -87,17 +87,14 @@ body.video cite {
   background-color: $primary-color;
 }
 
-#masthead-title {
+#masthead-title,
+#masthead-video-title {
   text-align: center;
   font-size: rem-calc(54);
   font-family: $masthead-font-family;
   font-weight: $masthead-font-weight;
   color: $header-title-color;
   text-transform: uppercase;
-}
-
-#masthead-video-title {
-  @extend #masthead-title;
 }
 
 #masthead-with-video {
@@ -119,18 +116,22 @@ body.video cite {
 
   #masthead-video-title {
     display: inline-block;
-    line-height: 100%;
     position: absolute;
-    width: 100%;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
+    bottom: 0;
+    margin-left: 10%;
+  }
+
+  #masthead-video-button-sign-up {
+    margin-left: 10%;
+  }
+
+  #masthead-video-button-tickets {
+    margin-left: 2%;
   }
 
   .row {
-    height: 100%;
+    height: 50%;
   }
-
   .columns {
     height: 100%;
   }

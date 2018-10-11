@@ -8,6 +8,7 @@ layout: frontpage
 header:
   # image_fullwidth: header_unsplash_12.jpg
   video: bassmovie_x264.mp4
+  # title: NYC &mdash; Musikmarathon
   title: NYC Musikmarathon
 widget1:
   title: "Blog & Portfolio"
