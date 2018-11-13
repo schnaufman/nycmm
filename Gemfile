@@ -8,7 +8,5 @@ group :jekyll_plugins do
   gem "jekyll-language-plugin"
 end
 
-gem 'asciidoctor', '~> 1.5.4'
-gem 'coderay'
 gem 'html-proofer'
 
