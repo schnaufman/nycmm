@@ -12,4 +12,5 @@ end
 gem 'asciidoctor', '~> 1.5.4'
 gem 'coderay'
 gem 'github-pages'
+gem 'html-proofer'
 
