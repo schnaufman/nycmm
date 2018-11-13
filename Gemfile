@@ -4,8 +4,7 @@ gem 'jekyll'
 
 group :jekyll_plugins do
   gem 'jekyll-gist'
-  gem 'jekyll-paginate-v2'
-  gem "jekyll-asciidoc"
+  gem 'jekyll-paginate'
   gem "jekyll-language-plugin"
 end
 
