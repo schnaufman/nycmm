@@ -3,6 +3,7 @@ layout: page
 sidebar: right
 subheadline: Templates
 title:  "Page/Post Right Sidebar"
+language: en
 teaser: "This is an example of page/post with a sidebar on the right."
 breadcrumb: true
 tags:

@@ -61,6 +61,17 @@
         <nav class="row">
           <section id="subfooter-left" class="small-12 medium-6 columns credits">
             {{ site.credits }}
+              <ul>
+                  {% for language in site.languages %}
+                  <li>
+                      {% if page.language == language %}
+                      <a class="active" title="{% tl language %}">{% tl language %}</a>
+                      {% else %}
+                      <a href="{{ site.baseurl }}/{{ language }}/" title="{% tl language %}">{% tl language %}</a>
+                      {% endif %}
+                  </li>
+                  {% endfor %}
+              </ul>
           </section>
 
           <section id="subfooter-right" class="small-12 medium-6 columns">

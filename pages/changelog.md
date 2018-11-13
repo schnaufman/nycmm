@@ -2,6 +2,9 @@
 layout: page
 title: "Change is good!"
 meta_title: "Feeling Responsive Theme Changelog"
+languages:
+- de
+- en
 subheadline: "Feeling Responsive Theme Changelog"
 teaser: "History and changelog of Feeling Responsive Theme"
 header:

@@ -1,6 +1,7 @@
 ---
 layout: page
 title:  "Breadcrumbs"
+language: en
 teaser: "If you need them, <em>Feeling Responsive</em> offers you a breadcrumb navigation. You can easily turn it on/off via frontmatter."
 breadcrumb: true
 categories:

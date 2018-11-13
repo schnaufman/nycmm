@@ -1,6 +1,9 @@
 ---
 layout: page
 show_meta: false
+languages:
+- de
+- en
 title: "Style your content!"
 subheadline: "Layouts of Feeling Responsive"
 header:

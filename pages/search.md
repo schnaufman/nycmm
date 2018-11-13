@@ -1,6 +1,9 @@
 ---
 permalink: /search/
 layout: page
+languages:
+- de
+- en
 title: "Search"
 sitemap: false
 ---

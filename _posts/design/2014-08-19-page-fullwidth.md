@@ -2,6 +2,7 @@
 layout: page-fullwidth
 title:  "The Full-Width Page Template"
 subheadline:  "Multi-Device Layouts"
+language: en
 teaser: "The full-width page format gives you all the space you need to show your content using the grid."
 categories:
     - design

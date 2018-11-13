@@ -1,6 +1,7 @@
 ---
 layout: page
 sidebar: left
+language: en
 subheadline: Templates
 title:  "Page/Post With Left Sidebar"
 teaser: "This is a example of page/post with a sidebar on the left."

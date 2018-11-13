@@ -1,6 +1,7 @@
 ---
 layout: page
 title:  "Header Image With Background Color"
+language: en
 subheadline:  "Headers With Style"
 teaser: "Feeling Responsive allows you to use all kinds of headers. This example shows a header image with a defined background color via front matter."
 categories:

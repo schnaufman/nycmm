@@ -1,6 +1,9 @@
 ---
 layout: page
 title: "Roadmap"
+languages:
+- de
+- en
 subheadline: "ToDo-List &amp; Ideas"
 teaser: "Here are some ideas and features I want to implement in the future."
 header:
