@@ -62,6 +62,7 @@ excerpt_separator: "<!--more-->"
 include: ['.htaccess']
 # Exclude these files from your production _site
 exclude:
+    - vendor # for travis build - see https://github.com/jekyll/jekyll/issues/2938
     - .sass-cache
     - Gemfile
     - Gemfile.lock
