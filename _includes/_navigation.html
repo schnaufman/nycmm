@@ -27,13 +27,19 @@
       <ul class="right">
         {% for link in site.data.navigation %}
 
-              {% if link.url contains 'http' %}
-                {% assign domain = '' %}
-              {% elsif link.url == '#' %}
-                {% assign domain = '' %}
-              {% else %}
-                {% assign domain = site.url %}
-              {% endif %}
+                    {% assign temp_trans = link.translation %}
+                    {% assign temp_url = link.url %}
+
+                    {% capture translation_title %}{% t link.translation %}{% endcapture %}
+                    {% capture translation_url %}{% t link.url %}{% endcapture %}
+
+                    {% if translation_url contains 'http' %}
+                        {% assign domain = '' %}
+                    {% elsif translation_url == '#' %}
+                        {% assign domain = '' %}
+                    {% else %}
+                        {% capture domain %}{{ site.url }}{{ site.baseurl }}/{{ page.language }} {% endcapture %}
+                    {% endif %}
 
           {% comment %}   If there are links for right side begin   {% endcomment %}
           {% if link.side == 'right' %}
@@ -52,23 +58,31 @@
                   <ul class="dropdown">
                     {% for dropdown_link in link.dropdown %}
 
-                      {% if dropdown_link.url contains 'http' %}
-                        {% assign domain = '' %}
-                        {% else %}
-                        {% assign domain = site.url %}
-                      {% endif %}
+                                        {% capture translation_dropdown_title %}{% t temp_trans %}{% endcapture %}
+                                        {% capture translation_dropdown_url %}{% t temp_url %}{% endcapture %}
 
-                      <li><a {% if dropdown_link.class %}class="{{dropdown_link.class}}"{% endif %} href="{{ domain }}{{ site.baseurl }}{{ dropdown_link.url }}"{% if dropdown_link.url contains 'http' %} target="_blank"{% endif %}>{{ dropdown_link.title | escape }}</a></li>
-                    {% endfor %}
-                  </ul>
+                                        {% if translation_dropdown_url contains 'http' %}
+                                            {% assign domain = '' %}
+                                        {% else %}
+                                            {% capture domain %}{{ site.url }}{{ site.baseurl }}/{{ page.language }}{% endcapture %}
+                                        {% endif %}
 
-              </li>
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-        {% comment %}   First loop finished 1   {% endcomment %}
-      </ul>
-{% comment %}
+                                        <li><a {% if dropdown_link.class %}
+                                                    class="{{dropdown_link.class}}"
+                                               {% endif %}
+                                               href="{{ domain }}{{ translation_dropdown_url }}"
+                                               {% if dropdown_link.url contains 'http' %}
+                                                    target="_blank"{% endif %}>{{ translation_dropdown_title | escape}}</a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+                {% comment %} First loop finished 1 {% endcomment %}
+            </ul>
+            {% comment %}
 
     __         ______     _   __            _             __  _
    / /   ___  / __/ /_   / | / /___ __   __(_)___ _____ _/ /_(_)___  ____
@@ -81,13 +95,19 @@
       <ul class="left">
         {% for link in site.data.navigation %}
 
-              {% if link.url contains 'http' %}
-                {% assign domain = '' %}
-              {% elsif link.url == '#' %}
-                {% assign domain = '' %}
-              {% else %}
-                {% assign domain = site.url %}
-              {% endif %}
+                    {% assign temp_trans = link.translation %}
+                    {% assign temp_url = link.url %}
+
+                    {% capture translation_title %}{% t temp_trans %}{% endcapture %}
+                    {% capture translation_url %}{% t temp_url %}{% endcapture %}
+
+                    {% if translation_url contains 'http' %}
+                        {% assign domain = '' %}
+                    {% elsif translation_url == '#' %}
+                        {% assign domain = '' %}
+                    {% else %}
+                        {% capture domain %}{{ site.url }}{{ site.baseurl }}/{{ page.language }}{% endcapture %}
+                    {% endif %}
 
           {% comment %}   If there are links for left side begin   {% endcomment %}
           {% if link.side == 'left' %}
@@ -106,15 +126,24 @@
                   <ul class="dropdown">
                     {% for dropdown_link in link.dropdown %}
 
-                      {% if dropdown_link.url contains 'http' %}
-                        {% assign domain = '' %}
-                        {% else %}
-                        {% assign domain = site.url %}
-                      {% endif %}
+                                    {% capture translation_dropdown_title %}{% t temp_trans %}{% endcapture %}
+                                    {% capture translation_dropdown_url %}{% t temp_url %}{% endcapture %}
 
-                      <li><a {% if dropdown_link.class %}class="{{dropdown_link.class}}"{% endif %} href="{{ domain }}{{ site.baseurl }}{{ dropdown_link.url }}"{% if dropdown_link.url contains 'http' %} target="_blank"{% endif %}>{{ dropdown_link.title | escape }}</a></li>
-                    {% endfor %}
-                  </ul>
+                                    {% if translation_dropdown_url contains 'http' %}
+                                        {% assign domain = '' %}
+                                    {% else %}
+                                        {% capture domain %}{{ site.url }}{{ site.baseurl }}/{{ page.language }}{% endcapture %}
+                                    {% endif %}
+
+                                <li><a {% if dropdown_link.class %}
+                                            class="{{dropdown_link.class}}"
+                                       {% endif %}
+                                       href="{{ domain }}{{ translation_dropdown_url }}"
+                                       {% if dropdown_link.url contains 'http' %}
+                                            target="_blank"{% endif %}>{{ translation_dropdown_title | escape }}</a>
+                                </li>
+                        {% endfor %}
+                    </ul>
 
               </li>
               <li class="divider"></li>
