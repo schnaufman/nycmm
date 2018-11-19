@@ -1,12 +1,10 @@
 ---
 layout: page-fullwidth
 title: "Theme Documentation"
-languages:
-- de
-- en
+language: en
 subheadline: "How to use Feeling Responsive"
 teaser: "The documentation is a work in progress..."
-permalink: "/documentation/"
+permalink: "/en/documentation/"
 header:
    image_fullwidth: "header_roadmap_2.jpg"
 ---

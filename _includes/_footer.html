@@ -63,11 +63,12 @@
             {{ site.credits }}
               <ul>
                   {% for language in site.languages %}
+                      {% assign language_name = site.data.lang[{{language}}].translation %}
                   <li>
                       {% if page.language == language %}
-                      <a class="active" title="{% tl language %}">{% tl language %}</a>
+                      <a class="active" title="{{ language_name }}">{{ language_name }}</a>
                       {% else %}
-                      <a href="{{ site.baseurl }}/{{ language }}/" title="{% tl language %}">{% tl language %}</a>
+                      <a href="{{ site.baseurl }}/{{ language }}/" title="{{ language_name }}">{{ language_name }}</a>
                       {% endif %}
                   </li>
                   {% endfor %}

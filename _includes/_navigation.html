@@ -23,11 +23,8 @@
             <ul class="right">
                 {% for link in site.data.navigation %}
 
-                    {% assign temp_trans = link.translation %}
-                    {% assign temp_url = link.url %}
-
-                    {% capture translation_title %}{% t link.translation %}{% endcapture %}
-                    {% capture translation_url %}{% t link.url %}{% endcapture %}
+                    {% assign translation_title = site.data.lang[page.language].navigation[{{link.translation}}] %}
+                    {% assign translation_url = site.data.lang[page.language].navigation[{{link.url}}] %}
 
                     {% if translation_url contains 'http' %}
                         {% assign domain = '' %}
@@ -70,11 +67,9 @@
 
                                 <ul class="dropdown">
                                     {% for dropdown_link in link.dropdown %}
-                                        {% assign temp_trans = dropdown_link.translation %}
-                                        {% assign temp_url = dropdown_link.url %}
 
-                                        {% capture translation_dropdown_title %}{% t temp_trans %}{% endcapture %}
-                                        {% capture translation_dropdown_url %}{% t temp_url %}{% endcapture %}
+                                        {% assign translation_dropdown_title = site.data.lang[page.language].navigation[{{dropdown_link.translation}}] %}
+                                        {% assign translation_dropdown_url = site.data.lang[page.language].navigation[{{dropdown_link.url}}] %}
 
                                         {% if translation_dropdown_url contains 'http' %}
                                             {% assign domain = '' %}
@@ -87,7 +82,7 @@
                                                {% endif %}
                                                href="{{ domain }}{{ translation_dropdown_url }}"
                                                {% if dropdown_link.url contains 'http' %}
-                                                    target="_blank"{% endif %}>{{ translation_dropdown_title | escape}}</a>
+                                                    target="_blank"{% endif %}>{{translation_dropdown_title | escape}}</a>
                                         </li>
                                     {% endfor %}
                                 </ul>
@@ -105,11 +100,8 @@
             <ul class="left">
                 {% for link in site.data.navigation %}
 
-                    {% assign temp_trans = link.translation %}
-                    {% assign temp_url = link.url %}
-
-                    {% capture translation_title %}{% t temp_trans %}{% endcapture %}
-                    {% capture translation_url %}{% t temp_url %}{% endcapture %}
+                    {% assign translation_title = site.data.lang[page.language].navigation[{{link.translation}}] %}
+                    {% assign translation_url = site.data.lang[page.language].navigation[{{link.url}}] %}
 
                     {% if translation_url contains 'http' %}
                         {% assign domain = '' %}
@@ -149,11 +141,9 @@
                                {% endif %}>{{translation_title | escape }}</a>
                             <ul class="dropdown">
                                 {% for dropdown_link in link.dropdown %}
-                                    {% assign temp_trans = dropdown_link.translation %}
-                                    {% assign temp_url = dropdown_link.url %}
 
-                                    {% capture translation_dropdown_title %}{% t temp_trans %}{% endcapture %}
-                                    {% capture translation_dropdown_url %}{% t temp_url %}{% endcapture %}
+                                    {% assign translation_dropdown_title = site.data.lang[page.language].navigation[{{dropdown_link.translation}}] %}
+                                    {% assign translation_dropdown_url = site.data.lang[page.language].navigation[{{dropdown_link.url}}] %}
 
                                     {% if translation_dropdown_url contains 'http' %}
                                         {% assign domain = '' %}
@@ -166,7 +156,7 @@
                                        {% endif %}
                                        href="{{ domain }}{{ translation_dropdown_url }}"
                                        {% if dropdown_link.url contains 'http' %}
-                                            target="_blank"{% endif %}>{{ translation_dropdown_title | escape }}</a>
+                                            target="_blank" {% endif %}>{{ translation_dropdown_title | escape }}</a>
                                 </li>
                         {% endfor %}
                     </ul>

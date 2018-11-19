@@ -1,8 +1,6 @@
 ---
 layout: frontpage
-languages:
-- de
-- en
+language: en
 subset: home
 header:
   # image_fullwidth: header_unsplash_12.jpg
@@ -38,7 +36,7 @@ callforaction:
   url: https://tinyletter.com/feeling-responsive
   text: Inform me about new updates and features ›
   style: alert
-permalink: /:language/index.html
+permalink: /index.html
 #
 # This is a nasty hack to make the navigation highlight
 # this page as active in the topbar navigation

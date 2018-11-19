@@ -1,14 +1,12 @@
 ---
 layout: page
 show_meta: false
-languages:
-- de
-- en
+languages: en
 title: "Style your content!"
 subheadline: "Layouts of Feeling Responsive"
 header:
    image_fullwidth: "header_unsplash_5.jpg"
-permalink: "/design/"
+permalink: "/en/design/"
 ---
 <ul>
     {% for post in site.categories.design %}

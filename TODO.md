@@ -1,6 +1,7 @@
 # Whats next?
 
 # Language Support <-
+* Figure out how to support multiple languages without jekyll-language-plugin
 * Support multiple languages (1)
 * Implement buttons for switching between german and english  (2)
 

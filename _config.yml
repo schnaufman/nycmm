@@ -49,8 +49,6 @@ video-logo: "logo.png"
 
 # Gems
 plugins:
-    - jekyll-gist
-    - jekyll-language-plugin
     - jekyll-paginate
 
 # Theme works best with Kramdown (using the table of contents function)
@@ -72,16 +70,6 @@ exclude:
 
 # The language setting is used in /includes/default.html for html-settings
 language: 'de'
-
-# Configuration for multiple languages --> jekyll-language-plugin
-# (see https://github.com/vwochnik/jekyll-language-plugin/wiki/Getting-Started)
-# The first key, language_data, tells the plugin where it can find the translation data used by the liquid tag.
-# %% is a placeholder for the language name. So, if the language is en, the plugin will look into data.lang.en.
-language_data: 'data.lang.%%'
-
-# The second key, language_includes_dir, works similar to Jekyll's includes_dir configuration setting.
-# By default, it is set to _i18n.
-language_includes_dir: '_i18n'
 
 # The languages in use
 languages: ['de', 'en']
@@ -139,20 +127,6 @@ defaults:
       # sidebar:        # Possible values › left, right › by default there will be no sidebar
       comments: false
       author: matt     # Default author for posts
-
-
-
-#       _   __            _             __  _
-#      / | / /___ __   __(_)___ _____ _/ /_(_)___  ____
-#     /  |/ / __ `/ | / / / __ `/ __ `/ __/ / __ \/ __ \
-#    / /|  / /_/ /| |/ / / /_/ / /_/ / /_/ / /_/ / / / /
-#   /_/ |_/\__,_/ |___/_/\__, /\__,_/\__/_/\____/_/ /_/
-#                       /____/
-#
-#  Open _data/navigation.yml to adjust the left and right topbar navigation
-#
-
-
 
 #     _____ __________
 #    / ___// ____/ __ \

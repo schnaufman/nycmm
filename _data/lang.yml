@@ -1,5 +1,6 @@
 ---
 de:
+  translation: "Deutsch"
   home:
     sign_up: "Jetzt Anmelden"
     tickets: "Konzertkarten"
@@ -41,6 +42,7 @@ de:
   enter_search_term: "Suchbegriff eingeben und Eingabetaste drücken"
 
 en:
+  translation: "English"
   home:
     sign_up: "Sign up"
     tickets: "Tickets"
