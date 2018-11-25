@@ -4,9 +4,8 @@ language: en
 subset: home
 header:
   # image_fullwidth: header_unsplash_12.jpg
-  video: bassmovie_x264.mp4
+  video: bassmovie_x264_blur.mp4
   # title: NYC &mdash; Musikmarathon
-  title: NYC Musikmarathon
 widget1:
   title: "t 'portfolio'"
   url: 'http://phlow.github.io/feeling-responsive/blog/'

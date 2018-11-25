@@ -106,25 +106,33 @@ body.video cite {
     position: absolute;
     display: inline-block;
     z-index: -90;
-    right: 0;
+    cursor: default;
     padding: 2%;
 
     img {
-      max-width: 50px;
+      max-width: 100px;
     }
   }
 
   #masthead-video-title {
     display: inline-block;
     position: absolute;
-    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #masthead-video-buttons {
+    margin-top: 5%;
+    text-align: center;
+    position: relative;
   }
 
   #masthead-video-button-sign-up {
   }
 
   #masthead-video-button-tickets {
-    margin-left: 2%;
+    margin-left: 5%;
   }
 
   .row {
@@ -145,13 +153,9 @@ body.video cite {
 
 #masthead-video {
   display: block;
-  width: 110%;
+  width: 140%;
   z-index: -100;
-  transform: translate(-2%, -20%);
-  filter: blur(10px);
-  -webkit-filter: blur(10px);
-  -ms-filter: blur(10px);
-  -o-filter: blur(10px);
+  transform: translate(-15%, -35%);
   position: absolute;
 }
 
@@ -258,7 +262,7 @@ body.video cite {
     height: 400px;
   }
   #masthead-with-video {
-    height: 380px;
+    height: 680px;
   }
 }
 
