@@ -2064,7 +2064,7 @@ function FastClick(a,b){"use strict";function c(a,b){return function(){return a.
   };
 }(jQuery, window, window.document));
 
-;(function ($, window, document, undefined) {
+(function ($, window, document, undefined) {
   'use strict';
 
   Foundation.libs.topbar = {
