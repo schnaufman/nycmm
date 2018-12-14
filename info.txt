@@ -1,0 +1,958 @@
+﻿Inhalt
+Organisation	2
+Selbstverwaltung	6
+Melde-, Versicherung & Beitragswesen	9
+Krankenversicherung	11
+Vertragspartner	16
+Unfallversicherung	17
+Pensionsversicherung	23
+Pflegegeld	31
+ITSV GmbH	32
+Strafrecht	34
+Datenschutz	35
+Prozessmanagement	36
+Projektmanagement	38
+Security	39
+
+
+Schiffspatent ITSV Fragenkatalog
+Organisation
+    1. Definieren Sie den Begriff ,,soziale Sicherheit".
+Soziale Sicherheit ist der Überbegriff für die Gesamtheit der gesellschaft­lichen (= sozialen) Einrichtungen, auf deren Leistungen Menschen in wirt­schaftlichen und persönlichen Not- und Ausnahmesituationen Anspruch haben. 
+
+    2. Was umfasst die soziale Sicherheit?
+Die soziale Sicherheit umfasst den Schutz vor den Folgen der „Wechselfäl­le des Lebens“, den Lebensrisiken wie Krankheit, Unfall, Erwerbsunfähig­keit, Alter, Tod.
+    3. Was versteht man unter ,,Sozialpolitik"?
+Ausgleich so­zialer Gegensätze und Spannungen 
+    4. Wer kommt in erster Linie als Träger der Sozialpolitik in Betracht?
+Als Träger der Sozialpoli­tik kommt in erster Linie der Staat in Betracht.
+    5. Nennen Sie ein Merkmal der Sozialversicherung.
+    • Pflichtversicherung
+    • Versicherungsfälle
+    • Pflichtleistungen
+    • Finanzierung durch einkommensorientierte Beiträge
+    • Selbstverwaltung
+    • Keine Riskenauslese
+    • Umlageverfahren
+    • Solidaritätsprinzip
+    • Versicherungsmethode mit sozialem Ausgleich
+    • Nicht gewinnorientiert
+
+    6. Nennen Sie einen Unterschied zwischen der gesetzlichen Sozialversicherung und einer Privatversicherung.
+
+    7. Nennen Sie ein System der sozialen Sicherheit. 
+
+    8. Worin unterscheiden sich zum Beispiel Sozialversicherung, Versorgung und Sozialhilfe?
+
+    9. Wie lassen sich die Leistungen der österreichischen Sozialversicherung unterscheiden?
+Einteilung nach dem Zweck und nach der Rechtsnatur 
+
+    10. Wie kann man die Leistungen nach der Rechtsnatur einteilen?
+Einteilung nach der Rechtsnatur 
+    • Pflichtleistungen 
+    • Gesetzliche Mindestleistungen
+    • Satzungsmäßige Mehrleistungen
+
+    11. Erklären Sie den Begriff „Pflichtleistung“.
+Der Versicherte besitzt auf diese Leistungen einen durchsetzbaren Rechtsan­spruch. Innerhalb der Pflichtleistungen kann zwischen gesetzlichen Mindest-oder satzungsmäßigen Mehrleistungen unterschieden werden. 
+
+    12. Was versteht man unter „Sachleistungen“?
+Derartige Leistungen erbringt der Versicherungsträger entwe­der durch Vertragspartner (z.B. ärztliche Hilfe) oder in eigenen Einrichtungen selbst.
+    13. Nennen Sie eine sozialversicherungsinterne Rechtsquelle.
+    • Satzung
+    • Krankenordnung
+    • Geschäftsordnung
+Satzungen - Mustersatzung des HVB, Krankenordnung - Musterkrankenordnung HVB, Geschäftsordnung - Mustergeschäftsordnung des HVB, Richtlinien
+    14. Welchen Rang nehmen sozialversicherungsinterne Rechtsquellen im Stufenbau der Rechtsordnung ein?
+Stufe von Verordnungen
+    15. Was regelt die Satzung zum Beispiel?
+Die Satzung enthält insbesondere Bestimmungen über: 
+    • beitrags- und leistungsrechtliche Bestimmungen 
+    • die Form der Kundmachung und der rechtsverbindlichen Akte 
+    • Informationsveranstal­tungen
+    • die Zahl der Mitglieder des Beirates und deren Bestellung
+
+    16. Was regelt die Krankenordnung zum Beispiel?
+Die Krankenordnung enthält Bestimmungen über 
+    • die Pflichten der Versicherten und der Leistungsempfänger im Lei­stungsfalle, 
+    • das Verfahren bei Inanspruchnahme der Leistung und 
+    • die Kontrolle der Kranken. 
+
+    17. Was versteht man unter Organisation der Sozialversicherung?
+Unter dem Begriff “Organisation der Sozialversicherung” versteht man 
+    • die Zahl und 
+    • die Zuständigkeit der Versicherungsträger sowie 
+    • deren Zusammenschluss zum Hauptverband der österreichischen Sozial­versicherungsträger (=Dachorganisation aller Sozialversicherungsträger Österreichs)
+
+    18. Nennen Sie eine Aufgabe des Hauptverbandes?
+Allgemeine Verbandsaufgaben 
+    • Wahrnehmung der allgemeinen und gesamtwirtschaftlichen Interessen der Sozialversicherungsträger, 
+    • Vertretung der Sozialversicherungsträger in gemeinsamen Angelegen­heiten, 
+    • Vorsorge für die fachliche Ausbildung der Sozialversicherungsbedien­steten und die Erstellung von Prüfungsvorschriften, 
+    • die Herausgabe der Fachzeitschrift „Soziale Sicherheit“, 
+    • die Führung statistischer Nachweisungen über die österreichische Sozi­alversicherung usw.
+    • Richtlinien-, Satzungs- und Feststellungskompetenz
+
+    19. Wie viele Sozialversicherungsträger gibt es derzeit in Österreich?
+Derzeit führen insgesamt 21 Versicherungsträger die Sozialversicherung in Österreich durch 
+    20. Erklären Sie die Organisationsstruktur der Sozialversicherungsträger.
+SV-Träger sind tlw zentral und tlw dezentral organisiert:
+    • Zentrale Organisation: Träger mit zentraler GF mit ausschließlich büromäßigen regionalen Untergliederungen 
+        ◦ Gebietskrankenkassen
+        ◦ VAEB (Versicherungsanstalt für Eisenbahnen und Bergbau)
+        ◦ SVB (Sozialversicherungsanstalt der Bauern)
+        ◦ VA d. ö. N. (Versicherungsanstalt des österr. Notariates)
+    • Dezentrale Organisation: Träger mit dezentraler GF durch dezentrale Verwaltungskörper
+        ◦ BVA (Versicherungsanstalt öffentlich Bediensteter)
+        ◦ SVA (Sozialversicherungsanstalt der gewerblichen Wirtschaft)
+        ◦ AUVA
+        ◦ PVA
+Selbstverwaltung
+    1. Definieren Sie den Begriff „Selbstverwaltung“.
+Selbstverwaltung ist ein Teil der öffentlichen Verwaltung. Sie ist dann gegeben, wenn der Staat für einen Bereich der Verwaltung auf die Führung durch staatliche Verwaltungsbehörden verzichtet und diese Verwaltungsaufgaben durch ein Gesetz Selbstverwaltungskörpern überträgt, die aus Vertretern der unmittelbar betroffenen Personengruppen gebildet werden. Die Selbstverwaltungskörper unterliegen keinem Weisungsrecht, aber einem Aufsichtsrecht der staatlichen Behörden.
+    2. Wessen Aufsicht unterliegen die so genannten Bundes-Krankenversicherungsträger?
+Als Selbstverwaltungskörper unterliegen die Sozialversicherungsträger der Aufsicht durch den Bundesminister für Arbeit, Soziales und Konsumentenschutz (Pensionsversicherung, Hauptverband) und den Bundesminister für Gesundheit (Kranken- und Unfallversicherung und die so genannten Bundeskrankenversicherungsträger: Versicherungsanstalt für Eisenbahnen und Bergbau, Versicherungsanstalt öffentlich Bediensteter, Sozialversicherungsanstalt der gewerblichen Wirtschaft, Sozialversicherungsanstalt der Bauern).
+    3. Wie wird man Versicherungsvertreter?
+Sie kommen aus dem Kreis der Versicherten (bzw. Dienstgeber) und werden von der jeweiligen gesetzlichen Interessenvertretung entsendet (keine SV-Mitarbeiter)
+    4. Nennen Sie ein Beispiel wann ein Versicherungsvertreter seines Amtes zu entheben ist?
+Ein Versicherungsvertreter ist seines Amtes zu entheben, wenn
+    • Tatsachen bekannt werden, die seine Bestellung ausschließen würden,
+    • er seine Pflichten verletzt,
+    • er seit mehr als drei Monaten aufgehört hat, der Gruppe der Dienstgeber
+oder Dienstnehmer anzugehören, für die er bestellt wurde,
+    • ein wichtiger persönlicher Grund zur Enthebung vorliegt und er seine
+Enthebung unter Berufung darauf beantragt hat.
+    5. Nennen Sie einen Verwaltungskörper der Sozialversicherungsträger.
+
+    6. In welchen Verwaltungskörpern führt der Obmann den Vorsitz?
+Generalsversammlung und Vorstand
+    7. Was versteht man unter Budgetrecht?
+Die Generalversammlung beschließt
+    • den Jahresvoranschlag,
+    • den Jahresbericht (Rechnungsabschluss, statistische Nachweisungen),
+    • die Entlastung des Vorstandes,
+    • die Zuweisung an den Unterstützungsfonds (Dotierung).
+    8. Welche Vorstandsbeschlüsse bedürfen zu ihrer Wirksamkeit der Zustimmung der Kontrollversammlung?
+Bestimmte wichtige Beschlüsse des Vorstandes bedürfen zu ihrer Wirksamkeit der Zustimmung der Kontrollversammlung. Es handelt sich z.B. um
+    • dauernde Veranlagung von Vermögensbeständen,
+    • Errichtung von Gebäuden,
+    • Bestellung oder Kündigung bzw. Entlassung des leitenden Angestellten,
+    • Abschluss von Verträgen mit Vertragspartnern, wenn diese Verträge eine
+wesentliche dauernde Belastung des Versicherungsträgers herbeiführen,
+    • Dienstpostenpläne,
+    • Richtlinien über die Verwendung von Mitteln aus dem Unterstützungsfonds
+    9. Wer ist das beratende Organ des Hauptverbandes?
+Beirat 
+    10. Wie setzt sich die Trägerkonferenz zusammen?
+Sie besteht aus den Obmännern und je einem Obmann-Stellvertreter der Versicherungsträger sowie drei Seniorenvertretern
+    11. Nennen Sie eine Aufgabe der Trägerkonferenz.
+Die Trägerkonferenz ist das rechtsetzende Organ. Ihr obliegt die Beschlussfassung über
+    • den Jahresvoranschlag (Budgetrecht),
+    • den Jahresbericht (bestehend aus dem Rechnungsabschluss und den
+statistischen Nachweisungen),
+    • die Satzung des Hauptverbandes, Mustersatzung, Musterkrankenordnung
+und Mustergeschäftsordnungen,
+    • Richtlinien,
+    • die Zielsteuerung zur Koordinierung des Verwaltungshandelns der
+Sozialversicherungsträger,
+    • ein Leitbild für den Hauptverband.
+    12. Wer führt den Vorsitz im Verbandsvorstand?
+Der gewählte Verbandvorsitzende.
+Der Verbandsvorstand besteht aus 12 Mitgliedern, die von der Trägerkonferenz über Vorschlag der Interessenvertretungen entsandt werden.
+
+Melde-, Versicherung & Beitragswesen
+    1. Wer ist für die Durchführung des Versicherungs-, Melde- und Beitragswesen in allen Versicherungszweigen (bei einer Pflichtversicherung) grundsätzlich zuständig?
+Aufgabe der Krankenversicherungsträger
+    2. Wie werden die Geldmittel für die Leistungen an die Versicherten bzw. Anspruchsberechtigten überwiegend aufgebracht?
+Mit dem sogenannten Umlageverfahren
+    3. Was bedeutet Umlageverfahren? 
+Umlageverfahren bedeutet, dass die im Kalenderjahr eingenommenen Geldmittel im selben Jahr für Leistungen aufgebracht werden. Es wird somit kein Kapitalstock angelegt (so wie beim Kapitaldeckungsverfahren).
+    4. Wie entsteht die Pflichtversicherung in der Sozialversicherung?
+bei Zutreffen der im Gesetz vorgesehenen Voraussetzungen 
+    5. Welche Auswirkung hat eine geringfügige Beschäftigung?
+Es tritt nur die Pflichtversicherung in der Unfall­versicherung ein (keine KV und PV). 
+    6. Welche der folgenden Personen sind nicht nach dem ASVG vollversichert? 
+Ge­ringfügig beschäftigte Personen.
+Vollversicherte sind: 
+    • Dienstnehmer (sofern Entgelt über der Geringfügigkeitsgrenze), 
+    • Lehrlinge, 
+    • freie Dienstnehmer (sofern Entgelt über der Geringfügigkeitsgrenze)
+    7. Welchem Versicherungszweig unterliegen Bezieher bzw. Bezieherinnen einer Pension nach dem ASVG?
+Pensionsversiche­rung 
+    8. Welche Gebietskrankenkasse ist bei einem Beschäftigungsort in Niederösterreich zuständig?
+NÖGKK 
+    9. Wie kommt es zu einer freiwilligen Versicherung?
+Es ist ein Antrag erforderlich. Die gesetzlichen Voraussetzungen werden durch den Versicherungsträger geprüft.
+
+    10. In welcher Form sind Meldungen der Dienstgeber bzw. Dienstgeberinnen grundsätzlich zu erstatten?
+Mittels elektronischer Daten­träger (Datenfernübertragung) gemäß den Richtlinien des Hauptverbandes
+    11. Wann hat die Anmeldung für pflichtversicherte DienstnehmerInnen nach dem ASVG zu erfolgen?
+Vor Arbeitsantritt
+    12. Wozu wird die Beitragsgrundlage benötigt?
+Um Beiträge zu berechnen und die Bemessungsgrund­lagen(Leistungsbereich) zu bilden.
+    13. Bis zu welchem Betrag sind SV-Beiträge maximal zu bezahlen?
+Höchstbeitragsgrundlage (4980 etwa)
+    14. In welchem Gesetz gibt es keine Mindestbeitragsgrundlage?
+Im ASVG und B-KUVG
+    15. In welchem Gesetz gibt es eine Geringfügigkeitsgrenze?
+Im ASVG und B-KUVG (unter der Geringfügigkeitsgrenze besteht nur Unfallversicherung)
+    16. Wann sind die Beiträge im ASVG fällig?
+Am Ende des Kalendermonats, in den das Ende des Beitragszeitraums fällt
+    17. Wer führt bei DienstnehmerInnen die Beiträge an den Krankenversicherungsträger in der Regel ab?
+Der Dienstgeber (Bringschuld) 
+    18. Welche der folgenden Geldmittel werden nicht zur Finanzierung der Sozialversicherung herangezogen? 
+Die Sozialversicherung wird finanziert durch:
+    • Beiträge (gemäß dem Solidaritätsprinzip knapp zu 2/3 der Einnahmen) 
+    • Kostenbeteiligungen im Leistungsbereich,
+    • sonstige Einnahmen (Verzugszinsen, Beitragszuschläge, Vermögenserträgnisse usw.) 
+    • Bundesmittel
+    19. In welchem Bereich gibt es keinen Bundesbeitrag?
+Unfallversicherung
+    20. Wie wird die Sozialversicherung überwiegend finanziert?
+Überwiegend beitragsfinanziert
+    21. Wo trägt der Bund die Ausfallshaftung, wenn die Einnahmen die Aufwendungen nicht decken?
+Pensionsversicherung
+Krankenversicherung
+    1. Nach welchen Kriterien können Leistungen z.B. eingeteilt werden?
+    • Nach Rechtsnatur (Pflichtleistungen/Freiwillige Leistungen/Pflichtaufgaben)
+    • Art d. Leistungserbringung (Sach- & Geldleistungen)
+    2. Welche Angehörige sind in Ihrer Krankenversicherung z.B. beitragsfrei mitversichert?
+Als Angehörige gelten beispielsweise: 
+    • der Ehegatte/der eingetragene Partner 
+    • die Kinder und Wahlkinder 
+    • die Stiefkinder und Enkel (ständige Hausgemeinschaft) 
+    • die Pflegekinder 
+    • der Lebensgefährte, wenn bestimmte gesetzliche Voraussetzungen vorlie­gen 
+    • der pflegende Angehörige, wenn bestimmte gesetzliche Voraussetzungen vorliegen
+    3. In welcher Form hat Ihr Krankenversicherungsträger die Sachleistungen zu erbringen?
+Werden von Vertragspartnern gewährt, darüber hinaus werden sie auch in eigenen Einrichtungen der Versicherungsträger (z.B. Ambulatorien) erbracht. 
+Das ASVG qualifiziert auch Kostenerstattungen und Kostenzuschüsse als Sachleistungen.
+    4. Nennen Sie ein Beispiel für eine Aufgabe Ihres Krankenversicherungsträgers!
+Die Krankenversicherungsträger treffen Vorsorge 
+    • für die Versicherungsfälle der Krankheit, der Arbeitsunfähigkeit infolge Krankheit (nur im ASVG und GSVG), der Mutterschaft; 
+    • für die Früherkennung von Krankheiten und die Erhaltung der Volksgesund­heit (Jugendlichen- und Vorsorge[Gesunden]untersuchungen); 
+    • für Zahnbehandlung und Zahnersatz; 
+    • für die Hilfe bei körperlichen Gebrechen (Gewährung von Hilfsmitteln); 
+    • für medizinische Maßnahmen der Rehabilitation; 
+    • für die Gesundheitsförderung.
+Überdies können die Krankenversicherungsträger als freiwillige Leistungen beispielsweise Maßnahmen zur Festigung der Gesundheit gewähren.
+    5. Nennen Sie eine Leistung, die aus dem Versicherungsfall der Krankheit erbracht wird!
+Aus dem Versicherungsfall der Krankheit werden gewährt: 
+    • Krankenbehandlung 
+    • Anstaltspflege 
+    • Medizinische Hauskrankenpflege
+    6. Nennen Sie ein Beispiel für Personen, die ärztliche Hilfe gewähren können!
+Ärztliche Hilfe wird gewährt durch: 
+    • Vertragsärzte
+    • Vertragsgruppenpraxen 
+    • Wahlärzte
+    • Wahlgruppenpraxen
+    • Ärzte in eigenen Einrichtungen (Ambulatorien)
+    • Ärzte in Vertragseinrichtungen (z.B. Krankenhausambulanzen) 
+    • Ärzte in Wahleinrichtungen (z.B. in privaten Ambulanzen)
+    7. Wie hoch ist die Kostenbeteiligung für Versicherte bzw. Angehörige Ihres KV-Trägers im Rahmen der Anstaltspflege?
+10% des jeweiligen Pflegegebührenersatzes für max. 4 Wochen pro Kalenderjahr (Ausnahmen B-KUVG/GSVG: kein Kostenbeitrag vorgesehen)
+    8. Welche Funktionen hat die e-card?
+Anspruchsnachweis des Patienten gegenüber dem Arzt.
+    9. Hat der Versicherte die Kosten bei Inanspruchnahme eines Wahlarztes im ASVG selbst zu tragen?
+Ja, bekommt allerdings Kostenersatz lt. Satzung (ASVG: 80% des Vertragstarifes)
+    10. Welchen Regelungsinhalt hat der vom Hauptverband herausgegebene Erstattungskodex?
+Die wirtschaftliche Verschreibweise von Medikamenten und Richtlinien über die ökonomische Verschreibweise von Heilmitteln und Heilbehelfen. 
+Der EKO gliedert sich in drei Bereiche (den Grünen, den Gelben und den Roten Bereich)
+    11. Welche Personen sind von der Rezeptgebühr befreit?
+Befreiungen sind vorgesehen 
+    • kraft Gesetzes (Personen mit anzeigepflichtigen übertragbaren Krankheiten z.B. offene Tuberkulose) 
+    • bei Überschreitung der Rezeptgebührenobergrenze
+    • durch Richtlinien des Hauptverbandes (Personen mit besonderer sozialer Schutzbedürftigkeit z.B. Bezieher einer Ausgleichszulage zur Pension) 
+    • durch Antrag beim Krankenversicherungsträger (zumeist befristete Be­freiung) bei geringem Nettoeinkommen oder erhöhtem Medikamentenbe­darf
+
+    12. Was verstehen Sie unter Generika?
+Sie werden mit den gleichen Wirkstoffen wie die Originale nach­gebaut, sind aber deutlich kostengünstiger  Patent auf Original ausgelaufen
+    13. Welche Leistung gebührt aus dem Versicherungsfall der Arbeitsunfähigkeit infolge Krankheit?
+Krankengeld wird als einzige Leistung erbracht.
+    14. Wie lange gebührt gesetzlich bzw. satzungsmäßig Krankengeld?
+Das Krankengeld gebührt ab dem 4. Tag der Arbeitsunfähigkeit infolge Krankheit für ein und denselben Versicherungsfall bis zur Dauer von 26 Wo­chen. Gesetzliche Mindestleistung sind 52 Wochen, durch die Satzung kann die Höchstdauer des Krankengeldanspruches bis auf 78 Wochen verlängert werden (satzungsmä­ßige Mehrleistung).
+    15. Besteht Anspruch auf Krankengeld, wenn sich der Versicherte absichtlich verletzt, um diese Leistung zu erhalten?
+Nein
+    16. Weshalb erhält der Versicherte im Regelfall ein Krankengeld erst einige Wochen nach Eintritt des Versicherungsfalles?
+Kollektivvertragliche Regelungen
+    17. Wann tritt beispielsweise der Versicherungsfall der Mutterschaft nach dem ASVG ein?
+Der Versicherungsfall gilt als eingetreten: 
+    • Mit dem Beginn der achten Woche vor dem voraussichtlichen Entbin­dungstag 
+    • Mit dem Tag der Entbindung, wenn diese vor dem Beginn der achten Wo­che vor dem voraussichtlichen Geburtstermin stattfindet. 
+    • Mit dem Beginn der achten Woche vor dem tatsächlichen Entbindungstag, wenn kein voraussichtlicher Entbindungstermin festgestellt wurde. 
+    • Nur für ASVG und B-KUVG: Mit dem Beginn eines individuellen Beschäf­tigungsverbotes. 
+    18. Welche Leistungen gebühren aus dem Versicherungsfall der Mutterschaft?
+Sachleistungen 
+    • Ärztlicher Beistand, Hebammenbeistand, Beistand durch diplomierte Kin­derkranken- und Säuglingsschwestern 
+    • Heilmittel und Heilbehelfe 
+    • Pflege in einer Krankenanstalt oder in einem Entbindungsheim
+
+    19. Für welchen Zeitraum gebührt Wochengeld nach dem ASVG?
+Wochengeld wird gewährt für 
+    • die letzten acht Wochen vor der voraussichtlichen Entbindung, 
+    • den Tag der Entbindung, 
+    • die ersten acht Wochen nach der Entbindung. Dieser Zeitraum verlängert sich auf zwölf Wochen, wenn eine Frühgeburt, eine Mehrlingsgeburt oder eine Kaiserschnittgeburt vorliegt; 
+    • die Dauer eines individuellen Beschäftigungsverbotes.
+    20. Was soll das Wochengeld ersetzen?
+Das Wochengeld soll den durch die Mutterschaft entfallenden Arbeitsverdienst voll ersetzen. Bei der Berechnung des Wochengeldes ist daher auch der Teil des Arbeitsverdienstes, der die Höchstbeitragsgrundlage in der Krankenver­sicherung übersteigt, zu berücksichtigen.
+    21. Ist bei Anstaltspflege aus dem Versicherungsfall der Mutterschaft eine Kostenbeteiligung vorgesehen?
+Für die Entbindung wird Pflege in einer Krankenanstalt oder in einem Entbindungs­heim für längstens 10 Tage gewährt.
+Ist Anstaltspflege länger als 10 Tage erforderlich, so ist - ab dem 11. Tag - ein allfälliger Kostenbeitrag zu leisten.
+    22. Ist das Ausmaß der gebührenden Sonderzahlungen für die Höhe des Wochengeldes von Bedeutung?
+Ja (14%, 17% max 21% Erhöhung)
+    23. Nennen Sie ein Beispiel für eine Leistung nach dem Kinderbetreuungsgeldgesetz!
+Ab 1.1.2010 (Inkrafttreten der 11. Novelle zum KBGG) werden folgende Leistungen gewährt: 
+    • das pauschalierte Kinderbetreuungsgeld in vier Varianten 
+    • das Kinderbetreuungsgeld als Ersatz des Erwerbseinkommens 
+    • die Beihilfe zum pauschalen Kinderbetreuungsgeld
+    24. Nennen Sie eine Voraussetzung für den Anspruch auf Kinderbetreuungsgeld!
+Anspruch auf Kinderbetreuungsgeld hat ein Elternteil (Adoptivelternteil, Pfle­geelternteil) für sein Kind (Adoptivkind, Pflegekind), sofern 
+    • Familienbeihilfe bezogen wird, 
+    • der Elternteil mit diesem Kind im gemeinsamen Haushalt lebt, 
+    • die Gesamteinkünfte des Elternteiles im Kalenderjahr den Grenzbetrag von EUR 16.200,00 nicht übersteigen, 
+    • der Elternteil und das Kind den Mittelpunkt der Lebensinteressen im Bun­desgebiet haben und 
+    • der Elternteil und das Kind sich rechtmäßig in Österreich aufhalten.
+    25. Wie wird das Kinderbetreuungsgeld finanziert?
+
+Die Aufwendungen für das Kinderbetreuungsgeld werden den Krankenver­sicherungsträgern vom Bund aus Mitteln des Familienlastenausgleichs­fonds zur Gänze ersetzt.
+    26. Haben Schüler Anspruch auf Durchführung einer Jugendlichenuntersuchung?
+
+NEIN: nur für berufstätige Jugendliche vorgesehen
+    27. Welchen Zweck haben die Vorsorge(Gesunden)untersuchungen?
+
+Früherkennung von Krankheiten und Maßnahmen zur Festigung der Gesundheit.
+    28. Was versteht man unter Maßnahmen der Gesundheitsförderung?
+
+Maßnahmen und Initiativen zur Erhaltung, Förderung und Verbesserung der Gesundheit der Bevölkerung; Aufklärung und Information über vermeidbare Krankheiten und über seelische, geistige und soziale Faktoren, die Gesundheit beeinflussen.
+    29. Welche Bedeutung hat die Satzung für den Umfang der Zahnbehandlung und des Zahnersatzes?
+
+Umfang der Leistungen (freiwillige Mehrleistung)
+    30. Welche Unterschiede bestehen zwischen Heilbehelfen und Hilfsmitteln?
+
+Der Heilbehelf wird im Zusammenhang mit dem Versicherungsfall der Krankheit gewährt. Er soll somit das Leiden heilen oder lindern. (Besserungs­aussicht)
+Das Hilfsmittel wird im Zusammenhang mit einem körperlichen Gebre­chen geleistet. Da ein Gebrechen nicht mehr positiv beeinflussbar ist, soll das Hilfsmittel die ausgefallene oder unzureichende Körperfunktion überbrücken.
+    31. Nennen Sie ein Beispiel für Leistungen der Krankenversicherung, die Präventionscharakter haben!
+
+Früherkennung von Krankheiten: Jugendlichenuntersuchungen und Vorsorgeuntersuchung
+Maßnahmen zur Erhaltung der Volksgesundheit: Humangenetische Vorsorgemaßnahmen und Zuschuss zur Zeckenschutzimpfung
+Vertragspartner
+    1. Nennen Sie ein Beispiel für Vertragspartner der Krankenversicherungsträger!
+
+    • freiberuflich tätige Ärzte (inkl. Zahnärzte), 
+stellen die größte Gruppe der Vertragspartner dar 
+    • Gruppenpraxen, 
+    • freiberuflich tätige klinische Psychologen, 
+    • freiberuflich tätige Psychotherapeuten, 
+    • freiberuflich tätige Apotheker, 
+    • freiberuflich tätige Hebammen, 
+    • Rechtsträger von Krankenanstalten
+
+    2. Wie sind die Beziehungen zwischen den Krankenversicherungsträgern und den freiberuflich tätigen Ärzten geregelt?
+
+Teilweise sind die Beziehungen im Gesetz selbst geregelt; zum anderen Teil ver­weist das Gesetz aber auf privatrechtliche Verträge. 
+    3. Wie sind die Beziehungen zwischen den Krankenversicherungsträgern und den freiberuflich tätigen Apothekern geregelt?
+
+Die Beziehungen der Krankenversicherungsträger zu den Apothekern sind durch einen Gesamtvertrag zu regeln.. Für die Apotheker wird er von Gesetzes wegen, also ohne den Abschluss von Einzelverträgen und ohne gesonderte Zustimmungs- oder Beitrittserklärungen, wirksam. 
+    4. Nennen Sie ein Beispiel für einen Fonds, der für die Krankenanstaltenfinanzierung von Bedeutung ist!
+
+Landesgesundheitsfonds (verteilt Mittel an die einzelnen Krankenanstalten (KA))
+Ausgleichsfonds (21 Sozialversicherträger zahlen ein  HVB verteilt die Mittel dann an den Landesgesundheitsfonds)
+    5. Erläutern Sie das für das Vertragspartnerrecht maßgebliche Sachleistungsprinzip!
+Die medizinischen Leistungen aus der Krankenversicherung sind daher in er­ster Linie als Sachleistungen (und nicht in Geldform, z.B. als Kostenerstat­tungen) zu erbringen.
+
+
+Unfallversicherung
+    1. Welche Prinzipien kennzeichnen die gesetzliche Unfallversicherung?
+    • Finanzierungsprinzip
+    • Kausalitätsprinzip
+    • Ex-offo Prinzip (amtswegige Einleitung des Verfahrens)
+
+    2. Wann trat das Gesetz in Kraft, mit dem die gesetzliche Unfallversicherung geschaffen wurde?
+Wirksamkeitsbeginn 1. November 1889
+    3. Folgende Gesetze regeln die gesetzliche Unfallversicherung
+    • das Allgemeine Sozialversicherungsgesetz (ASVG)
+    • das Bauern-Sozialversicherungsgesetz (BSVG)
+    • das Beamten-, Kranken- und Unfallversicherungsgesetz (B-KUVG). 
+    • die zu diesen Gesetzen ergangenen Novellen;
+    • die Satzungen der Unfallversicherungsträger.
+
+    4. Die Versicherungsfälle in der gesetzlichen Unfallversicherung sind
+    • den Arbeitsunfall ( im B-KUVG Dienstunfall genannt);
+    • die Berufskrankheit.
+
+    5. Kann ein Dienstnehmer/ eine Dienstnehmerin nach einem Arbeitsunfall erfolgreich Schadenersatzansprüche gegenüber dem Dienstgeber/der Dienstgeberin geltend machen?
+Nein - ist durch die UV geschützt - UV kann sich beim Dienstgeber regressieren.
+    6. Unter Unfall versteht man
+Unter einem Unfall versteht man ein plötzliches bzw. zeitlich eng begrenztes Ereignis, eine Einwirkung von außen, eine außergewöhnliche Belastung, die zu einer Körperschädigung geführt haben.
+    7. Wer ist nicht verpflichtet einen Arbeitsunfall zu melden?
+Der Verunfallte (Dienstgeber innerhalb von 5 Tagen).
+    8. Wer kann eine Höherversicherung abschließen?
+    • Selbständig Erwerbstätige, die Mitglieder der Wirtschaftskammer sind
+    • Freiberuflich tätige Ärzte
+    • Neue Selbständige, die pflichtversichert sind.
+
+    9. Mitglieder der freiwilligen Hilfsorganisationen sind geschützt bei:
+    • Ausbildung
+    • Übung und
+    • Einsatz
+
+    10. Welche Ereignisse stehen nicht unter Versicherungsschutz?
+Tätigkeit nicht im örtlichen, zeitlichen und ursächlichen Zusammenhang mit der Erwerbstätigkeit: 
+    • bei eigenwirtschaftlichen Tätigkeiten (z.B. Herstellung von Gegenständen für private Zwecke), 
+    • bei der Verfolgung persönlicher Interessen (z.B. Privatwege während der Arbeitszeit), 
+    • bei Lösung vom Betrieb (z.B. eine Unterbrechung des Heimweges wegen eines Einkaufs oder eine Alkoholisierung, die zu einem Unfall führt), 
+    • bei Schädigung durch innere Ursachen (z.B. Leistenbruch, Netzhautab­hebung, Herzinfarkt, Kreislaufversagen, ... – wobei jedoch die vorher er­wähnte außergewöhnliche Belastung zu berücksichtigen ist).
+
+    11. Auf welchem Weg besteht kein Versicherungsschutz
+Geschützt ist der direkte Weg. Ab- bzw. Umwege, die der Versicherte aus privaten Gründen wählt, werden nicht anerkannt.
+    12. Wann tritt bei Berufskrankheiten der Versicherungsfall ein?
+Die Berufskrankheit tritt mit dem Beginn der Krankheit ein oder
+wenn dies günstiger ist, mit dem Beginn der Minderung der Erwerbsfähigkeit.
+    13. Unter Berufskrankheit versteht man
+Berufskrankheiten sind Schädigungen der Gesundheit durch die versicherte Tätigkeit.
+    14. Wieviele Berufskrankheiten im Sinne des Gesetzes gibt es zur Zeit?
+53 Positionen (3 Gruppen)
+    15. Unfallheilbehandlung erfolgt
+Direkt in den eigenen Einrichtungen des Trägers (ohne zeitliche Begrenzung!)
+    16. Auf welche Geldleistung hat man während eines stationären Aufenthalts Anspruch?
+    • Familiengeld für ihre Angehörigen oder
+    • Taggeld, wenn sie keine Angehörigen haben
+
+    17. Die Höhe der Versehrtenrente hängt ab von
+Für die Feststellung der Höhe einer Versehrtenrente (Betriebsrente) sind maßgebend:
+    • der Grad der Minderung der Erwerbsfähigkeit und
+    • die Bemessungsgrundlage.
+
+    18. Anspruch auf Versehrtenrente im ASVG besteht bei
+
+Minderung der Erwerbsfähigkeit über drei Monate nach dem Eintritt um mindestens 20%.
+    19. Anspruch auf Betriebsrente im BSVG besteht bei
+Minderung der Erwerbsfähigkeit über ein Jahr nach dem Eintritt um mindestens 20%.
+    20. Kindergartenkinder, Schüler und Studenten haben Anspruch auf Versehrtenrente ab einer MdE von
+Minderung der Erwerbsfähig­keit von mindestens 50 %. 
+    21. Kindergartenkinder, Schüler und Studenten haben Anspruch auf Versehrtengeld ab einer MdE von
+Minderung der Erwerbsfähigkeit über drei Monate nach dem Eintritt um mindestens 20%.
+    22. Wer braucht eine 50%ige Minderung der Erwerbsfähigkeit, um eine Versehrtenrente zu erhalten?
+        ◦ Schwerversehrte
+        ◦ Kindergartenkinder, Schüler & Studenten
+    23. Welche Bemessungsgrundlage kommt im ASVG nicht vor?
+Monatliche Bemessungsgrundlage ohne Berücksichtigung von Höchstbemessungsgrundlage.
+    24. Welche Bemessungsgrundlage hat ein Dienstnehmer?
+Bemessungsgrundlage unter Berücksichtigung der Beitragsgrundlagen.
+    25. Wer hat keine Bemessungsgrundlage nach festen Beträgen?
+unselbständige Erwerbstätige
+    26. Die Bemessungsgrundlage im ASVG ist eine
+Jahresbemessungsgrundlage (Summe der allgemeinen Beitragsgrundlagen im Kalenderjahr vor Eintritt des Versicherungsfalls)
+    27. In welchem Gesetz gibt es keine Höchstbemessungsgrundlage?
+B-KUVG (im Gegensatz um ASVG)
+    28. Sie sind ein Spitzenverdiener, Ihr monatliches Einkommen beläuft sich auf € 6.400,00. Welcher Versicherungsträger berücksichtigt  dieses hohe Einkommen bei der Bildung der Bemessungsgrundlage?
+Versicherungsträger nach dem B-KUVG
+    29. Wie wird die Bemessungsgrundlage für Schüler, Studenten und Kindergartenkinder gebildet?
+Nach dem Lebensalter gestaffelte (15., 18. und 24. Lebensjahr) feste Bemessungsgrundlagen.
+    30. Schwerversehrter ist, wer
+Anspruch auf eine oder mehrere Versehrtenrenten (Betriebsrenten) im Ausmaß von zusammen mindestens 50 % haben.
+    31. Auf welchen Rentenbestandteil hat ein Schwerversehrter Anspruch?
+    • Zusatzrente
+    • Kinderzuschuss
+
+    32. Wer hat Anspruch auf einen Kinderzuschuss?
+Schwerversehrte. Der Kinderzuschuss gebührt für: 
+    • Kinder; 
+    • Wahlkinder; 
+    • die unehelichen Kinder einer weiblichen Versicherten; die eines männlichen Versicherten nur, wenn seine Vaterschaft festgestellt oder anerkannt ist; 
+    • die Stiefkinder, wenn sie mit dem (der) Versicherten ständig in Hausge­meinschaft leben. 
+    • die Enkel wenn sie mit dem (der) Versicherten ständig in Hausgemein­schaft leben und darüber hinaus gegenüber dem Versicherten unterhalts­berechtigt sind. 
+    33. Eine Witwenrente gebührt bis
+Die Rente gebührt bis zum Tod oder bis zur Wiederverehelichung der Witwe (des Witwers).
+    34. Welche Witwe erhält keine 40%ige Witwenrente?
+
+40% bekommt man nur dann:
+    • wenn und solange die Witwe (der Witwer) durch Krankheit oder Gebrechen wenigstens die Hälfte ihrer Erwerbsfähigkeit länger als 3 Monate verloren oder
+    • wenn die Witwe das 60. Lebensjahr (der Witwer das 65. Lebensjahr) vollendet hat.
+
+    35. Wann besteht Anspruch auf eine Witwenbeihilfe?
+Stirbt ein Schwerversehrter und hat die Witwe (der Witwer) keinen Anspruch auf Witwen(Witwer)rente, weil der Tod nicht Folge eines Arbeitsunfalls oder einer Berufskrankheit war, so erhält die Witwe (der Witwer) als einmalige Witwen(Witwer)beihilfe einen Betrag abhängig von der Bemessungsgrundlage. Diese Bestimmungen gelten in gleicher Weise auch für die hinterbliebenen eingetragenen Partner.
+    36. Wer hat keinen Anspruch auf Witwenbeihilfe?
+Wenn der Tod Folge eines Arbeitsunfalls/Berufskrankheit war.
+    37. Wie lange erhält eine Waise längstens eine Waisenrente?
+Bis 18!
+Nach Vollendung des 18. Lebensjahres wird der Kinderzuschuss nur auf besonderen Antrag gewährt.
+Voraussetzung sind wenn:
+    • sich das Kind in Schul- oder Berufsausbildung befindet, die seine Arbeitskraft überwiegend beansprucht, längstens bis zur Vollendung des 27. Lebensjahres.
+    • Bei einem Studium nur dann, wenn es sich um ein ordentliches Studium handelt, welches ernsthaft und zielstrebig betrieben wird.
+    • seit der Vollendung des 18. Lebensjahres oder seit dem Ablauf der vorgenannten Zeiträume infolge Krankheit oder Gebrechens erwerbsunfähig ist.
+
+    38. Wie hoch ist eine Waisenrente?
+    • für ein einfach verwaistes Kind 20 % und
+    • für ein doppelt verwaistes Kind 30 % der Bemessungsgrundlage
+
+    39. Wer hat keinen Anspruch auf Waisenrente?
+Nicht Kinder des Versicherten (zB Enkel…)
+    40. Waisenrente gebührt bis zum
+Höchstausmaß der Hinterbliebenenrente (80%) bis zur Vollendung des 18. Lebensjahres, darüber hinaus maximal bis zur Vollendung des 27. Lebensjahres, wenn die Arbeitskraft der Waise durch Berufs- oder Schulausbildung überwiegend in Anspruch genommen wird
+    41. Welche Bedingung ist NICHT Voraussetzung für die Gewährung einer Integritätsabgeltung?
+Voraussetzungen sind:
+    • Arbeitsunfalls durch grobe Fahrlässigkeit, (dauernde, erhebliche Schädigung)
+    • Anspruch Versehrtenrente
+
+    42. Welche Geldleistung bekommt der Versicherte 14x jährlich?
+
+Die Rente! 
+    43. Wie lang wird die vorläufige Versehrtenrente gewährt?
+Die Versehrtenrente (Betriebsrente) wird zunächst, wegen der noch nicht ab­sehbaren Entwicklung der Verletzungsfolgen, als vorläufige Rente gewährt. Ei­ne vorläufige Rente kann jederzeit geändert werden.
+Spätestens nach Ablauf von 2 Jahren nach Eintritt des Versicherungsfalles ist dann die Rente als Dauerrente festzustellen.
+    44. Welche Form der Rente existiert nicht?
+    • Vorläufige Rente
+    • Gesamtvergütung (Einmalzahlung bei kurzer zB. 6 monatiger vorläufiger Rente)
+    • Dauerrente
+    • Gesamtrente
+
+    45. Versehrtengeld gebührt für
+
+    • Kindergartenkinder, Schüler u. Studenten 
+    • Schwerversehrte
+
+    46. Anspruch auf Pflegegeld aus der gesetzlichen Unfallversicherung haben
+    • Vollrentenbezieher bzw. Kindergartenkinder, Schüler und Studenten mit einer MdE von 100% deren Pflegebedarf auf den Arbeitsunfall oder die Berufskrankheit zurückzuführen ist.
+    • Der ständige Pflegebedarf hat für einen Zeitraum von voraussichtlich mindestens 6 Monaten im Ausmaß von mehr als 65 Stunden pro Monat vorzuliegen.
+Pensionsversicherung
+    1. Definieren Sie die Zielsetzung von Eigenpensionen.
+Es soll- abhängig von der Versicherungsdauer- annähernd jenes beitragspflichtige Erwerbseinkommen ersetzt werden, welches durch die Pensionierung weggefallen ist.
+    2. Nennen Sie ein Pensionsversicherungsgesetz und die dazugehörende Personengruppe.
+
+    3. Was ist unter dem berufsständischen Prinzip zu verstehen?
+Gliederung nach Berufsgruppen.
+    4. Für welche Personengruppen ist das APG anzuwenden?
+Alle Erwerbstätigen aus allen Gruppen geboren ab 1.1.1955
+    5. Welche Sozialversicherungsträger führen die Pensionsversicherung durch?
+PVA - ASVG Angestellte, Arbeiter
+VAEB - ASVG - Angestellte, Arbeiter, Knappschaftl. PV
+SVA - gewerbl. Wirtschaft
+SVB – Bauern
+    6. Zu welchem Zeitpunkt wird die „Leistungszuständigkeit” geprüft?
+Stichtag - ist immer ein Monatserster, abhängig vom Antrag bei Eigenpension; 
+Bei Hinterbliebenen Stichtag = Tag des Todes
+    7. Ein Versicherter geht nach einem arbeitsreichen Leben in Pension. Er war rückblickend Arbeiter, Gewerbetreibender und Landwirt und hat dafür auch entsprechende Beiträge geleistet. Wie viele Pensionen erhält er?
+3: PVA: Arbeiter; SVA: Gewerbetreibender und SVB: Landwirt
+Wird aber nur von einem Träger ausbezahlt!
+    8. Woher nimmt der Pensionsversicherungsträger das Geld, das für die Auszahlung der Pensionen benötigt wird?
+Umlageverfahren: aus den jetzigen Beiträgen
+
+    9. Wie hoch ist der Anteil eines Dienstnehmers beim Beitragssatz für eine Pflichtversicherung in der gesetzlichen Pensionsversicherung nach dem ASVG?
+10,25%
+    10. Wer führt für die Pensionsversicherungsträger das Versicherungs-, Melde- und Beitragswesen durch?
+Das Versicherungs-, Melde- und Beitragswesen der Pensionsversicherung wird für 
+    • ASVG-Pflichtversicherte von den ASVG-Krankenversicherungsträgern; (Ausnahme: neue Vertragsbedienstete von der VA öffentlich Bediensteter); 
+    • GSVG-Pflichtversicherte von der Sozialversicherungsanstalt der gewerb­lichen Wirtschaft 
+    • BSVG-Pflichtversicherte von der Sozialversicherungsanstalt der Bauern 
+durchgeführt.
+Für freiwillig Versicherte führen alle Pensionsversicherungsträger das Ver­sicherungs-, Melde- und Beitragswesen selbst durch (Ausnahme: Selbstversi­cherung bei geringfügiger Beschäftigung).
+
+    11. Wo werden die Versicherungsunterlagen für die Pensionsversicherungsträger ab 01.01.1972 aufbewahrt?
+Pensionskonto
+    12. Welche Formen der freiwilligen Versicherungen gibt es in der Pensionsversicherung?
+In der Pensionsversicherung gibt es folgende Formen der freiwilligen Versi­cherung die zur Anrechnung von Versicherungszeiten führen: 
+    • Weiterversicherung (nach allen Gesetzen!) 
+    • Weiterversicherung für pflegende Angehörige (nach allen Gesetzen!) 
+    • Selbstversicherung (nur ASVG) 
+    • Selbstversicherung bei geringfügiger Beschäftigung (nur ASVG) 
+    • Selbstversicherung für Zeiten der Pflege eines behinderten Kindes (nur ASVG) 
+    • Nachträgliche Selbstversicherung für Zeiten des Besuches einer Bildungs­einrichtung (nach allen Gesetzen!) 
+    • Selbstversicherung für Pflegezeiten naher Angehöriger (nur ASVG)
+(Höherversicherung – siehe Kapitel „Besonderer Steigerungsbetrag“)
+
+    13. Was versteht man unter Versicherungszeiten?
+Versicherungszeiten sind daher alle Zeiten, die sich auf die Feststellung eines Pensionsanspruches positiv auswirken.
+    14. Welche Bedeutung haben Versicherungszeiten?
+Sie sind die Basis sowohl für die Prüfung der jeweiligen Anspruchsvoraussetzungen als auch für die Höhe einer Pensionsleistung.
+    15. Wie werden die Versicherungszeiten unterteilt?
+    • Beitragszeiten
+    • Ersatzzeiten
+
+    16. In welcher Form werden die Versicherungszeiten für die Feststellung einer Leistung aus der gesetzlichen Pensionsversicherung berücksichtigt?
+Versicherungszeiten werden in Versicherungsmonaten erfasst.
+Versicherungsmonate sind die Basis für das Entstehen eines Pensionsanspruches und für die Bemessung der Leistung.
+    17. Wie viele Versicherungstage sind in einem Kalendermonat erforderlich, damit dieser nach den Bestimmungen des ASVG zu einem Versicherungsmonat wird?
+Mindestens 15 Tagen.
+    18. Welcher Tatbestand gilt NICHT als Ersatz- bzw. Beitragszeit einer Teilpflichtversicherung?
+Alles außer:
+    • Beitragszeiten(Pflichtversicherung; Weiterversicherung; Selbstversicherung) und
+    • Ersatzzeiten(Präsenzdienst; Zivildienst; Kindererziehung; Wochengeldbezug; Krankengeldbezug; Arbeitslosengeld; Schul- Studien; und Ausbildungszeiten)
+    19. Welche Leistungen sieht die gesetzliche Pensionsversicherung außer den Pensionsleistungen noch vor?
+    • Gesundheitsvorsorge und Rehabilitation
+    • Leistungen aus den Versicherungsfällen der geminderten Arbeitsfähigkeit bzw. Erwerbsunfähigkeit
+    • Hinterbliebenenleistungen
+
+    20. Was versteht man unter „Eintritt des Versicherungsfalles”?
+    • Mit dem tatsächlichem Eintritt der Invalidität, Berufs- bzw. Erwerbsunfähigkeit
+    • oder wenn dies nicht feststellbar ist, mit dem Tag der Antragstellung.
+
+    21. Durch welches Prinzip wird die Realisierung eines Pensionsanpruches verwirklicht?
+Antragsprinzip
+    22. Was versteht man unter Wartezeit?
+Das Mindestausmaß an nachgewiesenen Versicherungsmonaten.
+    23. Was ist am Stichtag vom Pensionsversicherungsträger zu prüfen?
+    • aus welcher Pensionsversicherung bzw. im ASVG in welchem Zweig der Pensionsversicherung und 
+    • ob überhaupt (Prüfung Eintritt Versicherungsfall und alle Anspruchsvo­raussetzungen) und 
+    • in welchem Ausmaß eine Leistung gebührt 
+
+    24. Wie oft und wann werden Pensionen ausbezahlt?
+Die Pensionen werden monatlich im Nachhinein an den Anspruchsberech­tigten bzw. seinen gesetzlichen Vertreter (z.B. Vormund) ausgezahlt.
+Zu den Pensionen, auf die in den Monaten April bzw. Oktober ein Anspruch be­stand, gebührt je eine Sonderzahlung (13. und 14. Pension) in der Höhe dieser Monatspension. 
+    25. Aus welchen Gründen kann eine Pension ruhen?
+    • Haft 
+    • Zusammentreffen einer Eigenpension mit Anspruch auf Krankengeld
+
+    26. Was ist der Unterschied zwischen dem Erlöschen und dem Entziehen einer Pension?
+    • durch Erlöschen (ohne weiteres Verfahren)
+    • durch Entziehen (mit Bescheid)
+
+    27. Unter welchen Voraussetzungen hat jemand Anspruch auf eine Berufsunfähigkeitspension?
+Dieser Begriff lässt eine Prüfung der Arbeitsfähigkeit nur innerhalb der Berufsgruppe, nicht jedoch auf dem allgemeinen Arbeitsmarkt zu (Berufsschutz).
+Berufsunfähigkeit liegt vor, wenn die Arbeitsfähigkeit in jedem Verweisungsberuf um mehr als 50% herabgesunken ist
+    28. Welche Altersgrenzen spielen bei der Prüfung eines Anspruches auf eine Invaliditäts- bzw. Berufsunfähigkeitspension eine besondere Rolle?
+Ab dem 50. Lebensjahr: Härtefallregelung 
+Mit Vollendung des 59. Lebensjahres (erhöht sich ab 2017 auf das 60. Lebensjahr) besteht bei allen Versicherten ein verstärkter Berufsschutz.
+
+    29. Wann besteht Anspruch auf eine vorzeitige Alterspension bei langer Versicherungsdauer?
+    • Vollendung des 56,5 (Frauen) / 61,5 (Männer) Lebensjahres 
+UND 
+    • 240 Beitragsmonate der Pflichtversicherung oder 
+    • 240 Versicherungsmonate in einer Rahmenzeit von 360 Kalendermonaten vorliegen 
+UND 
+    • 480 Versicherungsmonate 
+    • 450 Beitragsmonate der Pflichtversicherung
+
+    30. Wann besteht Anspruch auf eine Alterspension nach dem ASVG?
+Frauen: Vollendung des 60. Lebensjahres
+Männer: Vollendung des 65. Lebensjahres
+Allgemeine Anspruchsvoraussetzung: Wartezeit gilt als erfüllt, wenn am Stichtag mindestens
+180 Beitragsmonate oder
+300 Versicherungsmonate oder
+180 Versicherungsmonate in einer Rahmenzeit von 360 Kalendermonaten vorliegen.
+    31. Wann besteht Anspruch auf eine Alterspension nach dem APG?
+Frauen und Männer: Einheitlich Vollendung des 65. Lebensjahres
+Mindestversicherungszeit:
+180 Beitragsmonate nach dem APG vorliegen und
+davon mindestens 84 Beitragsmonate auf Grund einer Erwerbstätigkeit sind.
+    32. Welche Formen einer Alterspension sind auf Grund der Bestimmungen des APG möglich?
+Alterspension / Korridorpension / Schwerarbeiterpension 
+    33. Welche Leistungen der Pensionsversicherung könnten Sie persönlich bereits in Anspruch genommen haben?
+    • GESUNDHEITSVORSORGE
+        ◦ Gewährung von Kuraufenthalten
+        ◦ Kurkostenzuschüsse
+    • REHABILITATION
+        ◦ Medizinische Maßnahmen
+        ◦ Berufliche Maßnahmen
+        ◦ Soziale Maßnahmen 
+    34. Wann fallen Eigenpensionen aus der Pensionsversicherung grundsätzlich an?
+Stichtag bei den Eigenpensionen ist der Tag der Antragstellung, wenn er auf einen Monatsersten fällt, sonst der dem Tag der Antragstellung folgende Monatserste.
+    35. Welchen Unterschied gibt es hinsichtlich des Pensionsbeginnes zwischen einer Alterspension und einer Berufsunfähigkeitspension?
+Alterspension: Antragsdatum folgender Monatserster
+Berufsunfähigkeitspension: Mit dem tatsächlichem Eintritt der Invalidität, Berufs- bzw. Erwerbsunfähigkeit oder wenn dies nicht feststellbar ist, mit dem Tag der Antragstellung.
+    36. Wovon hängt die Höhe einer Eigenpension nach dem ASVG ab?
+Von der Bemessungsgrundlage 
+    37. Wie erfolgt die Berechnung einer Eigenpension nach dem APG (Pensionskonto)?
+Jährliche Berechnung von Teilgutschriften aufgrund der Beitragsgrundlage 
+    38. Wie viele Prozentpunkte sind bei der Berechnung des Steigerungsbetrages für je 12 Versicherungsmonate bzw. fürs Pensionskonto vorgesehen?
+    • 1,78%
+    39. Was bedeutet „BONUS-MALUS“ in der gesetzlichen Pensionsversicherung?
+    • Inanspruchnahme der Pension vor dem Regelpensionsalter - Verminderung des Steigerungsbetrages = MALUS    
+    • Zuschläge bei Pensionen nach Regelpensionsalter = BONUS 
+
+    40. Wie unterscheiden sich die Regelungen hinsichtlich der Pensionsberechnungen „ALT“ und „NEU“?
+
+    • Alt  Bemessungsgrundlage 
+    • Neu  Teilgutschriften (Pensionskonto) 
+
+    41. Auf Grund von Beiträgen zur Höherversicherung gebührt ein eigener Pensionsbestandteil - wie heißt dieser?
+    • Zusatzpension (besonderer Steigerungsbetrag)
+
+    42. Wie wirkt sich eine Höherversicherung auf das Ausmaß einer Pensionsleistung aus?
+    • Positiv (höhere Pensionsleistung)
+    43. Welches Ziel wird mit der Gewährung von Hinterbliebenenpensionen verfolgt?
+Ersatz für die durch den Tod weggefallenen Unterhaltsleistungen 
+    44. Unter welchen Voraussetzungen hat eine Frau Anspruch auf Witwenpension?
+Die Wartezeit ist zu erfüllen. Zum Zeitpunkt des Todes muss eine aufrechte Ehe bzw. eine Unterhaltspflicht bestanden haben 
+    45. Gebührt auch einer geschiedenen Frau eine Witwenpension? Wenn ja, unter welcher Voraussetzung?
+Ja, wenn der verstorbene Ehepartner zum Zeitpunkt seines Todes verpflichtet war Unterhalt zu leisten
+    46. Wann wird die Witwen(Witwer)pension zeitlich begrenzt gewährt?
+    • Wenn der überlebende Ehepartner bei Eintritt des Todes des Versicherten das 35. Lebensjahr noch nicht vollendet hat und die Ehe noch nicht 10 Jahre gedauert hat 
+    • Bei Versorgungsehen (Altersunterschied + Ehedauer maßgeblich) 
+
+    47. Welche Auswirkungen hat eine Verehelichung bei einem laufenden Bezug einer Witwen(Witwer)pension?
+    • Anspruch erlischt 
+    • Es gebührt eine Abfertigung in der Höhe des 35-fachen dieser Pension 
+
+    48. Kann eine abgefertigte Witwenpension wieder aufleben?
+Ja - Tod oder Scheidung des neuen Ehepartners, frühestens nach 2,5 Jahren 
+    49. Wer hat Anspruch auf eine Waisenpension?
+Kinder und Wahlkinder sowie Stiefkinder im gemeinsamen Haushalt 
+    50. Unter welchen Voraussetzungen gebührt eine Waisenpension über die Vollendung des 18. Lebensjahres hinaus?
+    • Schul- oder Berufsausbildung bis zum 27. Lebensjahr 
+    • freiwilliges Sozialjahr (max. bis zum 27. Lebensjahr) 
+    • wenn erwerbsunfähig 
+
+    51. Wann fallen Hinterbliebenenpensionen an?
+Hinterbliebenenpensionen fallen mit dem Tag nach Eintritt des Versicherungsfalles an, sofern der Antrag innerhalb von 6 Monaten nach dem Tod des Versicherten gestellt wird.
+    52. In welcher Höhe gebührt eine Witwen/erpension?
+0% bis 60% der Pension, auf die der Verstorbenen Anspruch gehabt hat oder gehabt hätte 
+    53. Welcher Prozentsatz ist bei der Berechnung einer Waisenpension für einfach verwaiste Kinder anzusetzen?
+40% 
+    54. Wovon wird eine Waisenpension berechnet?
+Von einer 60%igen Witwen/Witwerpension 
+    55. Wer hat Anspruch auf einen Kinderzuschuss und welche Voraussetzungen müssen vorliegen?
+Jedes Kind, nur zur Eigenpensionen
+    56. Welche Unterschiede gibt es beim Kinderbegriff zwischen Waisenpension und Kinderzuschuss?
+Beim Kinderzuschuss gelten auch Enkel, wenn sie mit dem Versicherten ständig in Hausgemeinschaft leben, gegenüber dem Versicherten unterhaltsberechtigt sind, und beide ihren Wohnsitz im Inland haben
+    57. In welcher Höhe gebührt ein Kinderzuschuss und welche Besonderheit kennzeichnet diese Leistungshöhe?
+    • EUR 29,07 (keine jährliche Anpassung vorgesehen) 
+    58. Wann wird eine Ausgleichszulage gewährt?
+Wenn das Gesamteinkommen eines Pensionisten so gering ist, dass ihm/ihr nicht zugemutet werden kann davon zu leben, gebührt zu der der Pension eine Ausgleichszulage (Pension unter Richtsatz)
+    59. Was ist der Richtsatz?
+Garantiertes Mindesteinkommen für Pensionsbezieher
+    60. Wie wirkt sich die Auszahlung der Ausgleichszulage auf das Budget eines Pensionsversicherungsträgers aus?
+    • wird vom Bund finanziert
+    61. "Welche Bedeutung hat der Wohnsitz bzw. rechtmäßig gewöhnliche Aufenthalt der/s Anspruchsberechtigten bei der Ausgleichszulage?"
+    • Der Wohnsitz muss im Inland sein 
+Pflegegeld
+    1. Welchen Zweck soll das Pflegegeld erfüllen?
+Es soll pflegebedingte Mehraufwendungen pauschaliert abgegolten werden.
+    2. Wie viele Pflegegeldstufen sind vorgesehen?
+7 Pflegestufen 
+    3. Wie lange muss ein gewisser Pflegebedarf vorliegen, damit ein Anspruch auf Pflegegeld gegeben ist?
+Mindestens 6 Monate 
+    4. Unter welchen Voraussetzungen besteht Anspruch auf Pflegegeld?
+    • Bedarf besteht seit mind. 6 Monaten 
+    • Pflegebedarf monatl. mehr als 65 Sunden
+    • Aufenthalt im Inland bzw. EWR-Raum
+
+    5. Wann bzw. wie lange kommt es zum Ruhen des Pflegegeldes?
+        ◦ Aufnahme in eine Krankenanstalt, Reha, Kur, usw. – bis zur Entlassung 
+    6. Wer hat Anspruch auf Pflegegeld aus der Pensionsversicherung?
+        ◦ Bezieher einer Vollrente der Unfallversicherung 
+        ◦ Bezieher von Pensionen der Pensionsversicherung 
+        ◦ Bezieher von Ruhe- bzw. Versorgungsgenüssen 
+        ◦ Österreichische Staatsbürger auch ohne Grundleistung mit Aufenthaltsort im Inland 
+        ◦ Bezieher von Renten, Ausgleichen und Beihilfen 
+        ◦ In der Unfallversicherung teilversicherte Schüler und Studenten, deren Pflegebedarf die Folge eines Arbeitsunfalles oder einer Berufskrankheit ist 
+    7. Wie oft im Jahr wird Pflegegeld ausbezahlt?
+        ◦ 12 x jährlich 
+    8. Belastet die Auszahlung des Pflegegeldes das Budget der Pensionsversicherung?
+        ◦ Nein, wird vom Bund getragen 
+ITSV GmbH
+    1. Welches Unternehmen gehört nicht zu den Tochterunternehmen der Österreichischen Sozialversicherung?
+Tochterunternehmen sind:
+    • IT-SV GmbH
+    • SVD Büromanagement GmbH (SVD)
+    • Sozialversicherungs-Chipkarten Betriebs- und Errichtungsgesellschaft mbH- SVC
+    • Peering Point Betreibs GmbH
+    • ELGA GmbH 
+
+    2. Welche Rechtsform hat die ITSV?
+GmbH  Gesellschaft mit beschränkter Haftung.
+    3. Wer sind die Geschäftsführer der ITSV GmbH
+Erwin Fleischhacker (EFL) und Hubert Wackerle (WAH)
+    4. Wann wurde die ITSV GmbH gegründet: 
+03.11.2004
+    5. Welche Aufgabe gehörte ursprünglich NICHT zum Gründungsauftrag:
+    • operativen Betrieb von Rechenzentren
+    • zentrale Softwareentwicklung 
+    • zentrales Servicecenter(CuCC)
+
+    6. Welche der folgenden Organisationen ist Gesellschafter der ITSV GmbH:
+Alle außer AUVA, PVA und VA der öff. Notare
+    7. Wie lautet die Kurzversion des Leistungsprofils der ITSV GmbH
+„Die ITSV liefert aus einer Gesamtsicht auf das Sozialversicherungs- und Gesundheitswesen überzeugende SV-IT Lösungen zur optimalen Unterstützung der Geschäftsprozesse ihrer Kunden – aus einer Hand“.
+    8. Was drücken die Leistungsbausteine des Leistungsprofils aus?
+Die sieben Bausteine des Profils drücken unsere besonderen Eigenschaften aus und stellen die Ziele dar, die wir anstreben. 
+
+    9. Wozu dient in erster Linie das Leistungsprofil mit seinen Bausteinen?
+Das Profil dient allen Mitarbeiterinnen und Mitarbeitern zur Orientierungshilfe für die tägliche Arbeit. Gleichzeitig bildet das Leistungsprofil die Grundlage für die Kommunikation mit Kontaktpunkten nach innen und außen.
+    10. Welches Unternehmen zählt zu den Kunden der ITSV:
+Alle 21 Träger und Competence Centers
+    11. Wie bekommt die ITSV GmbH Aufträge der Sozialversicherungsträger?
+Inhouse-Vergaben im Rahmen der Erstellung der Jahresbudgets
+    12. Wie erhält die ITSV GmbH Aufträge außerhalb der Jahresbudgets ?
+Durch die unterjährigen Beauftragungen nach Angebotslegung 
+    13. Welche Aufgaben zählen NICHT zum Unternehmensgegenstand der ITSV GmbH?
+Zu den Aufgaben zählen:
+    • Steuerung und Koordination d. IT-Services
+    • Entwicklung von Strategien und Standards
+    • Erbringung von Dienstleistungen
+    • Rz-Betrieb
+    • Zentrale Softwareentwicklung
+    • CUCC
+
+    14. Was ist ein ITSV Produkt?
+SV-Kerngeschäft, SV-Gesundheit, IT-Support, Individualleistungen, SV-Stammdaten
+    15. Welche Leistungen zählen NICHT zum Produkt-Lebenszyklus der ITSV GmbH?
+Leistungen des Produkt-Lebenszyklus:
+    • Anforderung von Dienstleistungen
+    • Entwicklungs-
+    • Betriebs-
+    • Service- und
+    • Support-/Beratungsleistungen
+
+    16. Welcher der Geschäftsbereiche zählt zu den drei Säulen der Organisation der ITSV:
+Geschäftsbereiche der 3 Säulen der Organisation der ITSV: Software, Rechenzentrum, Servicebereich
+    17. Welche der genannten Methoden werden in der Ablauforganisation der ITSV GmbH eingesetzt:
+Projektmanagement und Prozessmanagement (Ablauforganisation)
+    18. In welche Prozesstypen werden die Prozesse in der Prozesslandkarte der ITSV GmbH eingeteilt?
+    • Management Prozesse
+    • Kern Prozesse
+    • Support Prozesse
+Strafrecht
+    1. Keine Strafe ohne Gesetz - wo stehen die Straftatbestände geschrieben?
+Im Strafgesetzbuch (StGB) und in einigen Nebengesetzen (zB. Urheberrechtsgesetz, Patentgesetz)
+    2. Welche Straffolge gibt es in Österreich NICHT?
+Todesstrafe
+    3. Welche "innere Tatseite" ist die harmloseste Form?
+leichte Fahrlässigkeit
+    4. Welche Aussage trifft NICHT zu? Täter im Strafrecht ist…
+Trifft NICHT zu!!!   …immer nur eine natürliche Personen. Eine juristische Person, wie etwa die ITSV GmbH, kann nie Täter sein.
+    5. Welche Aussage trifft zu: Straftaten über das Internet…
+…werden aufgrund des weiten Wirkungsbereiches des Internets oft strenger geahndet als Straftaten in der realen Welt.
+    6. Wird registermäßig festgehalten, wenn jemand in Österreich wegen einer Straftat verurteilt wird?
+Ja, im Strafregister
+    7. Korruption - welche Aussage trifft NICHT zu?
+Trifft NICHT zu!!!   Bestraft wird nur der Geschenkgeber, nicht aber der Geschenknehmer
+    8. Von meinem Kunden, einer Softwarefirma, bekomme ich zu Weihnachten für die gute Zusammenarbeit  das neueste am Markt erhältliche Tablet geschenkt. Wie geht es weiter?
+Ich lehne dankend ab und erkläre dem Kunden, dass ich in direktem Zusammenhang mit Leistungen keine Geschenke annehmen darf.
+    9. Wovon darf ich mir eine Privatkopie machen?
+Medium ohne Kopierschutz (gilt nicht für Software)
+    10. Darf ich mir eine Privatkopie von einer DVD mit Kopierschutz machen, wenn sich der Kopierschutz "knacken" lässt?
+nein, Kopierschutz geht dem "Recht auf Privatkopie" vor
+    11. Ich habe ein Video von einem Freund  gemacht, wie er stockbesoffen über seinen Chef ablästert. Mein Freund möchte nicht, dass ich das Video jemandem zeige. Aber es ist so witzig! Ich lade es trotzdem auf YouTube hoch, da kann mir ja nichts passieren! Oder?
+doch, wenn es die berechtigten Interessen des Freundes beeinträchtigt (Schutz des Abgebildeten vor ungewollter Veröffentlichung)
+Datenschutz
+    1. Wie lange könnte ich im Gefängnis maximal eingesperrt werden, wenn ich Gesundheitsdaten eines Versicherten jemand anderem offenbare?
+6 Monate
+    2. Was muss ich mindestens zur Erfüllung aller datenschutzrechtlichen Pflichten und Rechte wissen?
+Die ITSV-internen Datensicherheitsvorschriften und Prozesse, soweit sie meine Aufgabe/Rolle in der ITSV betreffen
+    3. Wenn die ITSV Daten für den Hauptverband (einen SV-Träger) verarbeitet, dann ist sie als ….
+…Dienstleister verpflichtet die Datensicherheit für den Hauptverband sicherzustellen und ihn bei der Einhaltung seiner datenschutzrechtlichen Verpflichtungen zu unterstützen.
+    4. Wenn die ITSV mit einem Lieferanten/Dienstleister einen Vertrag abschließt, welcher ermöglicht dass dieser im Rahmen seiner Tätigkeit auch auf personenbezogene Daten zugreifen könnte,  müssen …
+... Vereinbarungen abgeschlossen werden, welche die datenschutzrechtlichen Pflichten dieser Firma gegenüber der ITSV regelt (z.B. eigener Datenschutzrechtlicher Dienstleistervertrag; AGB der ITSV)
+    5. Was ist die DVR-Nummer (Datenverarbeitungsregisternummer)?
+Mit der DVR-Nummer kann ich durch Einsicht in das DVR-Onlineregister erfahren, wer welche Daten über mich gespeichert hat.
+    6. Wie oft pro Jahr darf ich bei jemandem, der über mich Daten gespeichert hat,  eine Datenschutzauskunft verlangen?
+beliebig oft
+    7. Wie oft pro Jahr darf ich bei jemandem, der über mich Daten gespeichert hat, kostenlos eine Datenschutzauskunft verlangen?
+nur 1x pro Jahr
+    8. Wie lange muss ich auf die Beantwortung einer Datenauskunft warten, bis ich mich bei der Datenschutzbehörde beschweren kann?
+8 bzw. 12 Wochen
+    9. Wenn ich in der ITSV eine Datenanwendung einführe, in welcher personenbezogene Daten verarbeitet werden, muss ich….
+… mit Unterstützung des Datenschutzbeauftragten eine Applikationsbeschreibung aus datenschutzrechtlicher Sicht ausfüllen.
+    10. Wenn ich ein Dokument erstelle, in dem personenbezogene Daten eines Sozialversicherten beinhaltet sind, dann muss ich das Dokument kennzeichnen als...
+streng vertraulich
+Prozessmanagement
+    1. Was ist ein Prozess?
+Organisationseinheiten übergreifendendes, betriebswirtschaftlich, ein sich ständig wiederholender Ablauf in einem Unternehmen zur Erreichung der Unternehmenszweck
+    2. In welcher Reihenfolge ist prinzipiell ein Prozess aufgebaut?
+    • Ein definierten Beginn (Auslöser)
+    • Eine Folge bzw. Ablauf von Aktivitäten/Tätigkeiten
+    • Ein definiertes Ende (Ergebnis)
+    • Innerhalb vorgegebener Rahmenbedingungen (z.B.: Zeitspanne, Ressourcen etc.)
+
+    3. In welche Prozesstypen werden Prozesse unterteilt?
+    • Management-Prozesse
+Prozesse zur strategischen Ausrichtung und operativen Steuerung der Organisation
+    • Kern-Prozesse
+Prozesse, die der Wertschöpfung im Rahmen der Erstellung von Produkten bzw. Dienstleistungen für Kunden dienen
+    • Support-Prozesse
+Prozesse, die andere Prozesse als Unterstützung dienen.
+
+    4. In welcher Form werden Prozesse überblicksmäßig dargestellt?
+Top-Down
+    5. Was ist eine Prozesslandkarte? 
+Die Prozesslandkarte ist ein Management-Instrument, das einen Überblick über die im Unternehmen existierenden Prozesse gibt. Diese Landkarte dient als Ausgangsbasis und Drehscheibe für den Process Life Cycle und als Hilfestellung für die Prozessmanagementsteuerung
+    6. Was bedeutet eine Verzweigung im Flussdiagramm?
+Im Ablauf kann es Verzweigungen geben, wenn der Ablauf unterschiedliche Wege nehmen kann.
+    7. Welchen Zweck hat der Prozess „PzM betreiben“?
+Der Prozess „PzM betreiben“ dient der Festlegung der Prozesse in der ITSV GmbH sowie der Messung und laufenden Verbesserung.
+    8. Welche Aufgaben hat der Prozess-Inhaber unter anderem?
+    • Strategisch für ein Prozess verantwortlich
+    9. Was bedeutet Makro-Prozessmanagement?
+Das Makro-Prozessmanagement betrachtet das Prozessportfolio einer Organisation als die Menge aller Prozesse und deren Beziehungen zueinander.
+    10. Was bedeutet Mikro-Prozessmanagement?
+Das Mikro-Prozessmanagement betrachtet einzelne Prozesse und deren Teilprozesse (betreiben der einzelnen Prozesse).
+    11. Was bedeutet das „D“ in der DEMI-Matrix?
+Durchführen
+    12. Was bedeutet das „E“ in der DEMI-Matrix?
+Entscheiden
+    13. Was bedeutet das „M“ in der DEMI-Matrix?
+Mitarbeit
+    14. Was bedeutet das „I“ in der DEMI-Matrix?
+Information
+    15. Was macht das PzM-Office?
+In der ITSV werden steuernde, koordinierende, prüfende und vor allem unterstützende Aufgaben des Prozessmanagement durch das PzM-Office wahrgenommen.
+Projektmanagement
+    1. Welche Eigenschaften hat ein Projekt?
+    • Meist neuartig
+    • Komplex
+    • Zieldeterminiert 
+    • Für das Unternehmen bedeutend
+    2. Was ist Projektmanagement?
+Ist die Planung, Organisation, Überwachung und Kontrolle aller Aspekte eines Projekts sowie das Management und die Führung aller Beteiligten, um die Projektziele sicher und im vorgegebenen Zeit-, Kosten-, Leistungs-, und Qualitätsrahmen zu erreichen.
+    3. Wie lautet die Bezeichnung des Prozesses zum Thema Projektmanagement in der ITSV?
+Projekte managen
+    4. Welche Teilprozesse hat der Prozess „Projekte managen“?
+    • Projektstart
+    • Projektkoordination
+    • Projektcontrolling
+    • Projektabschluss
+    5. Welches Prozessziel verfolgt/hat der Prozess „Projekte mangen“?
+Ziel dabei ist der effektive und effiziente Einsatz von Methoden und Instrumenten im Projektmanagement, zur Steigerung der Qualität bzw.  des Erfolges einzelner Projekte und des gesamten Projektportfolios.
+    6. Welche Aufgaben hat ein Projektleiter?
+Gestaltung der Projektmanagement-Teilprozesse gemeinsam mit dem Projektauftraggeber und den Projektteammitgliedern.
+Erhebung der Projektergebnisse und des Projektstatus und Präsentation der Ergebnisse gegenüber dem Projekt-Lenkungsausschuss und dem Management (Vertretung des Projektes „nach außen“)
+    7. Wofür steht das pm-Office?
+Projektmanagement-Office: Entwicklung, Weiterentwicklung und Zurverfügungstellung einheitlicher Werkzeuge, Methoden und Standards u.vm.
+Das pm-Office ist eine zentrale Funktion im Sinne des Prozesses „Projekt managen“, das Aufgaben bereichsübergreifend in der ITSV GmbH wahrnimmt und die unterschiedlichen Rollen (Projektleiter, Projektauftraggeber, Projektmitarbeiter, Gremien etc.) in der Projektdurchführung unterstützt.
+    8. Wie heißt das zentrale Projektmanagement-Tool in der ITSV GmbH?
+Enterprise Project Management Tool (EPM-Tool)
+Security
+
+    1. Wie viele Sicherheitsverhaltensregeln (Sicherheitsgebote) hat die ITSV?
+14 Sicherheitsverhaltensregeln
+    2. Welche Sicherheitszertifizierung besitzt die ITSV?
+ISO 27001
+    3. Wer ist für die Sicherheit der Daten verantwortlich?
+Jeder Mitarbeiter
+    4. Wem darf ich interne Informationen weitergeben?
+niemandem
+    5. Was sind die drei Eckpfeiler der Informationssicherheit?
+Confidality, Integrity and Availability (CIA) bzw. Vertraulichkeit, Integrität und Verfügbarkeit der Daten
+    6. Für wen gilt die Dienstanweisung für Anwender?
+jeden ITSV-Mitarbeiter
+    7. Welche Sicherheitsverhaltensregel gibt es NICHT in der ITSV?
+    • Ich bin für Sicherheit verantwortlich und ein Vorbild für Andere!
+    • Ich achte immer darauf wer mitlesen oder mithören könnte!
+    • Ich entferne nach Meetings die beschriebenen Flipcharts und lösche Whiteboards!
+    • Ich drucke Vertrauliches nur mit PIN!
+    • Ich hinterlasse mein leeres Büro nie unversperrt!
+    • Ungelockt geht keiner raus!
+    • Im Gespräch mit externen Partnern beschränke ich mich auf Informationen die den Arbeitsauftrag betreffen!
+    • Ich verwende kein betriebsfremdes Gerät im Netzwerk der ITSV ohne Genehmigung, und lasse dies auch keinen Externen tun!
+    • Ich kennzeichne vertrauliche Dokumente auch als vertraulich!
+    • Ich vermeide lokale Datenspeicherung auf mobilen Endgeräten!
+    • Ich übermittle vertrauliche elektronische Informationen, an Empfänger außerhalb der SV, nur verschlüsselt!
+    • Ich vermeide externe Datenträger – Datenträger unbekannter Herkunft verwende ich keinesfalls!
+    • Personenbezogene Daten haben auf externen Datenträgern nichts verloren! Sonstige vertrauliche Informationen transportiere ich auf externen Datenträgern nur verschlüsselt und wenn es kurzfristig keine andere Möglichkeit gibt, danach lösche ich diese sofort wieder.
+    • Ich installiere auf meinem Client nichts ohne Ticket!"
+
+    8. Was tue ich, wenn ich eine eMail erhalte, die mir viel Geld verspricht?
+nicht öffnen -> Hinweis an sv-servicedesk(sv-cert)
+    9. Wenn ich personenbezogene Daten an eine Person außerhalb der ITSV senden muss, hab ich Folgendes zu beachten …
+Daten- und Datenschutzklassifizierung und Verschlüsselung
+    10. Wenn mir ein Fehler passiert, durch den Daten in falsche Hände geraten, dann …
+informiere ich den Datenschutzbeauftragten sowie das SV-CERT
+    11. In welchen Zeitabständen muss ich mein Passwort ändern?
+alle 4 Monate
+    12. Welches der folgenden Passwörter ist das sicherste?
+
+    13. Ein Schriftstück mit dem Vermerk "Vertraulich" verwende ich wie folgt …
+Vertraulich - Pin Drucken, Verschlüsselt senden
+
