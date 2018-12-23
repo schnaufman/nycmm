@@ -1,112 +1,61 @@
-# ASCII-Font › http://patorjk.com/software/taag/#p=display&f=Slant&t=Phlow
-#
-#      _____ _ __          _____      __  __  _
-#     / ___/(_) /____     / ___/___  / /_/ /_(_)___  ____ ______
-#     \__ \/ / __/ _ \    \__ \/ _ \/ __/ __/ / __ \/ __ `/ ___/
-#    ___/ / / /_/  __/   ___/ /  __/ /_/ /_/ / / / / /_/ (__  )
-#   /____/_/\__/\___/   /____/\___/\__/\__/_/_/ /_/\__, /____/
-#                                                 /____/
-#
-# Title of your website
-title: 'NYC Musikmarathon Mattighofen'
-
-# The slogan describes your website and is used on homepage in <title> and other important places
+# Site settings
+language:               "de"
+title:                  "NYC Musikmarathon Mattighofen"
 slogan: 'Live music - with live music'
+description:            "»NYCMM« bietet ein Musikseminar, Konzerte und Jam-Sessions wo du Musik machen und genießen kannst."
+google-verification:    ""
 
-# The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
-description: '»NYCMM« bietet ein Musikseminar, Konzerte und Jam-Sessions wo du Musik machen und genießen kannst.'
+# Handling Reading
+include:
+  - ".htaccess"
+  - "_pages"
 
-# The credits show up in the includes/_footer.html – It would be nice of you to leave a link to Phlow or Feeling Responsive as a thank you :)
-credits: '<p>Created with &hearts; by <a href="http://phlow.de/">Phlow</a> with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> based on <a href="http://phlow.github.io/feeling-responsive/">Feeling Responsive</a>.</p>'
-
-# Main author of the website
-# See > authors.yml
-author: matt
-
-# This URL is the main address for absolute links. Don't include a slash at the end.
-#
-url: 'https://matt-hires.github.io'
-baseurl: '/nycmm'
-
-# This is for the editing function in _/includes/improve_content
-# Leave it empty if your site is not on GitHub/GitHub Pages
-improve_content: https://github.com/matt-hires/feeling-responsive/edit/gh-pages
-
-# This URL points directly to the images directory making
-# things easier to link to images in posts and templates. It needs a slash at the end.
-#
-# Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
-# Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
-#
-urlimg: 'https://matt-hires.github.io/nycmm/images/'
-urlvideo: 'https://matt-hires.github.io/nycmm/videos/'
-
-
-# Logo size is 600x80 pixels
-logo: ""
-# video logo is treated like a watermark on the top right of the video
-video-logo: "logo.png"
-
-# Gems
-plugins:
-    - jekyll-paginate
-
-# Theme works best with Kramdown (using the table of contents function)
-markdown: kramdown
-permalink: /:categories/:title/
-highlight: rouge
-excerpt_separator: "<!--more-->"
-include: ['.htaccess']
-# Exclude these files from your production _site
 exclude:
-    - vendor # for travis build - see https://github.com/jekyll/jekyll/issues/2938
-    - .sass-cache
-    - Gemfile
-    - Gemfile.lock
-    - LICENSE
-    - README.md
-    - INSTALL.md
+  - "/assets/"
+  - "composer.json"
+  - "composer.lock"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "/gulp/"
+  - "gulpfile.js"
+  - "LICENSE.md"
+  - "Makefile"
+  - "node_modules"
+  - "npm-debug.log"
+  - "package.json"
+  - "README.md"
+  - "rev-manifest.json"
+  - "yarn.lock"
+  - "yarn-error.log"
 
+# Plugins
+# Add plugins in the Gemfile
+plugins:
+  - jekyll-paginate
 
-# The language setting is used in /includes/default.html for html-settings
-language: 'de'
+# Conversion
+incremental:      true
 
-# The languages in use
-languages: ['de', 'en']
+# Serving
+# url:            ""
+# baseurl:        "" # does not include hostname
 
-############################################################
-#
-#       ____              _             __  _
-#      / __ \____ _____ _(_)___  ____ _/ /_(_)___  ____
-#     / /_/ / __ `/ __ `/ / __ \/ __ `/ __/ / __ \/ __ \
-#    / ____/ /_/ / /_/ / / / / / /_/ / /_/ / /_/ / / / /
-#   /_/    \__,_/\__, /_/_/ /_/\__,_/\__/_/\____/_/ /_/
-#               /____/
-#
-#paginate: 5                      # Paginates all X entries
-#paginate_path: "blog/page:num"   # Pagination path › Important for blog page in /blog/ to work
+# Outputting
+permalink:        "/blog/:year/:title/"
+paginate_path:    "/blog/page:num"
+paginate:         5
 
-############################################################
-
-# Used › default.html front-matter and compress.html
-# Options › http://jch.penibelst.de
 compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
-  profile: false
   ignore:
     envs: [development]
 
+highlighter: rouge
 
-#
-#       ____       ____            ____
-#      / __ \___  / __/___ ___  __/ / /_
-#     / / / / _ \/ /_/ __ `/ / / / / __/
-#    / /_/ /  __/ __/ /_/ / /_/ / / /_
-#   /_____/\___/_/  \__,_/\__,_/_/\__/
-#
-# Default Settings
+# See _data/authors.yml
+author: matt
+
+# edit content on github
+edit_content: https://github.com/matt-hires/nycmm/edit/gh-pages
 
 defaults:
   -
@@ -127,99 +76,3 @@ defaults:
       # sidebar:        # Possible values › left, right › by default there will be no sidebar
       comments: false
       author: matt     # Default author for posts
-
-#     _____ __________
-#    / ___// ____/ __ \
-#    \__ \/ __/ / / / /
-#   ___/ / /___/ /_/ /
-#  /____/_____/\____/    Verify Website to Webmaster Tools
-
-google_author:             'https://plus.google.com/u/0/118311555303973066167'
-google_site_verification:  'Vk0IOJ2jwG_qEoG7fuEXYqv0m2rLa8P778Fi_GrsgEQ'
-bing_webmastertools_id:    '0FB4C028ABCF07C908C54386ABD2D97F'
-# yandex_site_verification:  ''
-# alexa_verify_id:           ''
-
-
-
-#       ______            _
-#      / ____/___ __   __(_)________  ____  _____
-#     / /_  / __ `/ | / / / ___/ __ \/ __ \/ ___/
-#    / __/ / /_/ /| |/ / / /__/ /_/ / / / (__  )
-#   /_/    \__,_/ |___/_/\___/\____/_/ /_/____/   Favicon-Crap: Favicons, Chrome, Android & Apple Touch Buttons
-#                                                 More information » https://mathiasbynens.be/notes/touch-icons
-
-favicon-32x32:                          'favicon-32x32.png'
-touch-icon-192x192:                     'touch-icon-192x192.png'
-apple-touch-icon-180x180-precomposed:   'apple-touch-icon-180x180-precomposed.png'
-apple-touch-icon-152x152-precomposed:   'apple-touch-icon-152x152-precomposed.png'
-apple-touch-icon-144x144-precomposed:   'apple-touch-icon-144x144-precomposed.png'
-apple-touch-icon-120x120-precomposed:   'apple-touch-icon-120x120-precomposed.png'
-apple-touch-icon-114x114-precomposed:   'apple-touch-icon-114x114-precomposed.png'
-apple-touch-icon-76x76-precomposed:     'apple-touch-icon-76x76-precomposed.png'
-apple-touch-icon-72x72-precomposed:     'apple-touch-icon-72x72-precomposed.png'
-apple-touch-icon-precomposed:           'apple-touch-icon-precomposed.png'
-msapplication_tileimage:                'msapplication_tileimage.png'               # Size 144x144
-msapplication_tilecolor:                '#fabb00'
-
-
-#       ______                __                __
-#      / ____/___ _________  / /_  ____  ____  / /__
-#     / /_  / __ `/ ___/ _ \/ __ \/ __ \/ __ \/ //_/
-#    / __/ / /_/ / /__/  __/ /_/ / /_/ / /_/ / ,<
-#   /_/    \__,_/\___/\___/_.___/\____/\____/_/|_|      Facebook-Optimization › http://j.mp/fb_optimize
-
-og_image:                           'http://images.phlow.de/phlow/phlow_de-logo-512x.png'
-og_locale:                          'en_EN'
-og_type:                            'website'
-
-
-#      _____            _       __   __  ___         ___
-#     / ___/____  _____(_)___ _/ /  /  |/  /__  ____/ (_)___ _
-#     \__ \/ __ \/ ___/ / __ `/ /  / /|_/ / _ \/ __  / / __ `/
-#    ___/ / /_/ / /__/ / /_/ / /  / /  / /  __/ /_/ / / /_/ /
-#   /____/\____/\___/_/\__,_/_/  /_/  /_/\___/\__,_/_/\__,_/
-#
-#  Open _data/socialmedia.yml to adjust the left and right topbar navigation
-#
-
-socialmedia:
-    twitter: phlow
-    facebook: phlow.media
-
-
-#        ____  _
-#       / __ \(_)________ ___  _______
-#      / / / / / ___/ __ `/ / / / ___/
-#     / /_/ / (__  ) /_/ / /_/ (__  )
-#    /_____/_/____/\__, /\__,_/____/
-#                    /_/
-#
-# used in _includes/comments
-
-disqus_shortname: feelingresponsive
-
-
-#      _____
-#     / ___/____ ___________
-#     \__ \/ __ `/ ___/ ___/
-#    ___/ / /_/ (__  |__  )     More › http://sass-lang.com/
-#   /____/\__,_/____/____/      More › http://jekyllrb.com/docs/assets/#sassscss
-#
-
-sass:
-    sass_dir: _sass
-    style: :compressed
-
-
-#       ___                __      __  _
-#      /   |  ____  ____ _/ /_  __/ /_(_)_________
-#     / /| | / __ \/ __ `/ / / / / __/ / ___/ ___/
-#    / ___ |/ / / / /_/ / / /_/ / /_/ / /__(__  )
-#   /_/  |_/_/ /_/\__,_/_/\__, /\__/_/\___/____/      https://www.google.com/analytics/
-#                        /____/
-#
-# used in _includes/footer_scripts
-
-google_analytics_tracking_id: UA-60112281-1
-

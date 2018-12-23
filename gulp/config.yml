@@ -1,0 +1,61 @@
+browsersync:
+  notify: true
+  open:   false
+  port:   3000
+  server:
+    basedir: "_site/"
+  xip:    true
+
+clean:
+  # The jekyll build dir
+    - "_site/**"
+
+copy:
+  # Paths to static assets that aren't (S)CSS or JavaScript
+  # because these are completely handled by the sass and javascript tasks
+  assets:
+    # all files below the assets dir
+    - "assets/**/*"
+    # exclusions:
+    - "!assets/{js,scss,css}/**/*"   # js, scss and css files
+    - "!assets/css{,/**}"            # css dir
+    - "!assets/js{,/**}"             # js dir
+    - "!assets/scss{,/**}"           # scss dir
+    - "!assets/vendor{,/**}"         # vendor dir
+  dist: "_site/assets/"
+  notification: "Running Copy"
+
+javascript:
+  dest:
+    jekyllRoot: "assets/js/"
+    buildDir: "_site/assets/js/"
+  # filename to output
+  filename: "all.js"
+  notification: "Running JavaScript"
+  # Paths to JavaScript libraries, which are combined into one file
+  src: "assets/js/app.js"
+jekyll:
+  notification: "Running jekyll"
+
+sass:
+  # Autoprefixer will make sure your CSS works with these browsers
+  compatibility:
+    - "last 2 versions"
+    - "ie >= 9"
+  dest:
+    jekyllRoot: "assets/css/"
+    buildDir: "_site/assets/css/"
+  notification: "Running Sass"
+  src: "assets/scss/*.scss"
+
+watch:
+  media:
+    - "assets/img/**/*"
+    - "assets/video/**/*"
+  javascript: "assets/js/app.js"
+  sass: "assets/scss/**/*.scss"
+  pages:
+    - "*.{md,html,yml,xml}"
+    - "{_data,_includes,_layouts,_pages,_posts,blog}/**/*.{md,html,yml,xml}"
+    - "!_site/**/*.*"
+    - "!assets/**/*.*"
