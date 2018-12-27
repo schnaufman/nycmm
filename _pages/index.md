@@ -1,7 +1,8 @@
 ---
 permalink: /
+language: de
 layout: index
 title: Homepage
 ---
 
-Welcome to your new Jekyll site.
+Willkommen auf der neuen Jekyll Seite.

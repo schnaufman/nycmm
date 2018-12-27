@@ -1,0 +1,27 @@
+{% for section in site.data.sections[page.section] %}
+    {% assign section_id = site.data.lang[page.language].navigation[{{section.id}}] %}
+    <section id="{{ section_id }}" class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="cell">
+                <h2>{{ section.title }}</h2>
+
+                <!--
+                To properly render markdown includes as HTML, the include tag must be
+                captured as a string, and this must be passed to the `markdownify` filter.
+                -->
+                {% capture section_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.description }} %}{% endcapture %}
+                {{ section_description | markdownify }}
+
+            </div>
+            {% if section.img %}
+                <div class="cell">
+                    <img src="{{ site.baseurl }}/{{ section.image }}" title="{{ section.image-title }}"
+                         alt="{{ section.title }}" class="img-responsive">
+                    {% if section.img-caption %}
+                        <div class="img-caption">{{ section.img-caption }}</div>
+                    {% endif %}
+                </div>
+            {% endif %}
+        </div>
+    </section>
+{% endfor %}

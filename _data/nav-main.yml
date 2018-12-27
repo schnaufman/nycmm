@@ -1,11 +1,25 @@
-- link: Home
-  url: /
+# Author: Matthias Mairleitner
+# Date: 2018-11-25
+# Description: Navigation data file for defining navigation with dropdown
+#              The values are will be translated within lang.yml in the navigation array
 
-- link: Blog
-  url: /blog
-
-- link: Sample Page
-  url: /samplepage
-
-- link: Kitchen Sink
-  url: /kitchen-sink
+- title: "about_title"
+  url: "about_url"
+  dropdown:
+    - title: "overview_title"
+      url: "overview_url"
+    - title: "tutors_title"
+      url: "tutors_url"
+    - title: "howitworks_title"
+      url: "howitworks_url"
+    - title: "contact_title"
+      url: "contact_url"
+- title: "template_title"
+  url: "template_url"
+  dropdown:
+    - title: "blog_title"
+      url: "blog_url"
+    - title: "samplepage_title"
+      url: "samplepage_url"
+    - title: "kitchensink_title"
+      url: "kitchensink_url"

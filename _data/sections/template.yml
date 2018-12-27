@@ -1,0 +1,20 @@
+#- title: "blog title"
+#  description: "template/blog.md"
+#  image: ""
+#  image-title: "blog image"
+#  image-caption: "blog image"
+
+- title: "Samplepage Section"
+  description: "samplepage.md"
+  image: "assets/img/dummy.jpg"
+  image-title: "sample page image"
+  image-caption: "sample page image"
+  id: "samplepage_id"
+
+- title: "Kitchensink Section"
+  description: "kitchen-sink.md"
+  image: ""
+  image-title: "kichten sink image"
+  image-caption: "kichten sink image"
+  id: "kitchensink_id"
+
