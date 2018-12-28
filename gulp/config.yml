@@ -52,7 +52,8 @@ watch:
   media:
     - "assets/img/**/*"
     - "assets/video/**/*"
-  javascript: "assets/js/app.js"
+  # this has to be a glob, otherwise reload doesn't work (see https://github.com/gulpjs/gulp/issues/1322)
+  javascript: "assets/js/**/*.js"
   sass: "assets/scss/**/*.scss"
   pages:
     - "*.{md,html,yml,xml}"

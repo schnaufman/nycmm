@@ -35,7 +35,7 @@ let webpackConfig = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: [ "@babel/preset-env" ],
+            presets: ['@babel/preset-env'],
             compact: false
           }
         }
@@ -129,10 +129,15 @@ function server(done) {
   done();
 }
 
+function browserSyncReload(done) {
+  browserSync.reload();
+  done();
+}
+
 function watch() {
-  gulp.watch(config.watch.pages).on('all', gulp.series('build', browserSync.reload));
-  gulp.watch(config.watch.javascript).on('all', gulp.series(javascripts, browserSync.reload));
-  gulp.watch(config.watch.sass).on('all', gulp.series(sass, browserSync.reload));
-  gulp.watch(config.watch.media).on('all', gulp.series(copy, browserSync.reload));
+  gulp.watch(config.watch.pages, gulp.series('build', browserSyncReload));
+  gulp.watch(config.watch.javascript, gulp.series(javascripts, browserSyncReload));
+  gulp.watch(config.watch.sass, gulp.series(sass, browserSyncReload));
+  gulp.watch(config.watch.media, gulp.series(copy, browserSyncReload));
 }
 

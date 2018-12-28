@@ -1,8 +1,8 @@
 {% for section in site.data.sections[page.section] %}
     {% assign section_id = site.data.lang[page.language].navigation[{{section.id}}] %}
-    <section id="{{ section_id }}" class="grid-container">
-        <div class="grid-x grid-margin-x">
-            <div class="cell">
+    <section id="{{ section_id }}">
+        <div>
+            <div>
                 <h2>{{ section.title }}</h2>
 
                 <!--
@@ -14,7 +14,7 @@
 
             </div>
             {% if section.img %}
-                <div class="cell">
+                <div>
                     <img src="{{ site.baseurl }}/{{ section.image }}" title="{{ section.image-title }}"
                          alt="{{ section.title }}" class="img-responsive">
                     {% if section.img-caption %}

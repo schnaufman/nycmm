@@ -1,36 +1,37 @@
 <nav>
-    <ul class="dropdown menu" data-dropdown-menu>
-        {% for item in site.data.nav-main %}
-            {% assign link_title = site.data.lang[page.language].navigation[{{item.title}}] %}
-            {% assign nav_url = site.data.lang[page.language].navigation[{{item.url}}] %}
-            {% capture link_url %}{{ site.baseurl }}/{{ page.language }}/{{ nav_url }}{% endcapture %}
+  <ul class="dropdown menu" data-dropdown-menu>
+    {% for item in site.data.nav-main %}
+      {% assign link_title = site.data.lang[page.language].navigation[{{item.title}}] %}
+      {% assign nav_url = site.data.lang[page.language].navigation[{{item.url}}] %}
+      {% capture link_url %}{{ site.baseurl }}/{{ page.language }}/{{ nav_url }}{% endcapture %}
 
-            <li>
-                <a href="{{ link_url }}">
-                    {{link_title | escape}}
-                </a>
-                {% if item.dropdown %}
-                    <ul class="menu" data-smooth-scroll data-offset="0" data-animation-easing="swing">
-                        {% for dropdown_item in item.dropdown %}
-                            {% assign dropdown_title = site.data.lang[page.language].navigation[{{dropdown_item.title}}] %}
-                            {% assign dropdown_nav_url = site.data.lang[page.language].navigation[{{dropdown_item.url}}] %}
+      <li>
+        <a href="{{ link_url }}">
+          {{link_title | escape}}
+        </a>
+          {% if item.dropdown %}
+            <ul class="menu" data-smooth-scroll-with-links data-offset="100" data-animation-easing="swing">
+              {% for dropdown_item in item.dropdown %}
+                {% assign dropdown_title = site.data.lang[page.language].navigation[{{dropdown_item.title}}] %}
+                {% assign dropdown_nav_url = site.data.lang[page.language].navigation[{{dropdown_item.url}}] %}
 
-                            {% comment %} if url is a section or an external link {% endcomment %}
-                            {% if dropdown_nav_url contains '#' or dropdown_nav_url contains 'http' or dropdown_nav_url contains 'https' %}
-                                {% capture dropdown_link_url %}{{ dropdown_nav_url }}{% endcapture %}
-                            {% else %}
-                                {% capture dropdown_link_url %}{{ site.baseurl }}/{{ page.language }}/{{ nav_url }}/{{ dropdown_nav_url }}{% endcapture %}
-                            {% endif %}
-
-                            <li>
-                                <a href="{{ dropdown_link_url }}">
-                                    {{dropdown_title | escape}}
-                                </a>
-                            </li>
-                        {% endfor %}
-                    </ul>
+                {% comment %} if url is a section or an external link {% endcomment %}
+                {% if dropdown_nav_url contains 'http' or dropdown_nav_url contains 'https' %}
+                  {% capture dropdown_link_url %}{{ dropdown_nav_url }}{% endcapture %}
+                {% else %}
+                  {% capture dropdown_link_url %}{{ site.baseurl }}/{{ page.language }}/{{ nav_url }}/{{ dropdown_nav_url
+                  }}{% endcapture %}
                 {% endif %}
-            </li>
-        {% endfor %}
-    </ul>
+
+                <li>
+                  <a href="{{ dropdown_link_url }}">
+                    {{dropdown_title | escape}}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
 </nav>
