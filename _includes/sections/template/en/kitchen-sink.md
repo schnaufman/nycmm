@@ -1,9 +1,3 @@
----
-permalink: /en/kitchen-sink/
-layout: page
-title: Kitchen Sink
-language: en
----
 <p class="lead">Everything but.</p>
 
 <div class="off-campus-wrapper">

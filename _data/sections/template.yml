@@ -4,14 +4,14 @@
 #  image-title: "blog image"
 #  image-caption: "blog image"
 
-- title: "Samplepage Section"
+- title: "samplepage_title"
   description: "samplepage.md"
   image: "assets/img/dummy.jpg"
   image-title: "sample page image"
   image-caption: "sample page image"
   id: "samplepage_id"
 
-- title: "Kitchensink Section"
+- title: "kitchensink_title"
   description: "kitchen-sink.md"
   image: ""
   image-title: "kichten sink image"

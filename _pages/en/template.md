@@ -1,11 +1,11 @@
 ---
-permalink: /de/template/
-language: de
+permalink: /en/template/
+language: en
 layout: sections_default 
 title:  Template
 section: template
 ref: template
 ---
 
-Deutsche Template section.
+Englische Template section.
 

@@ -4,5 +4,5 @@
 
 **Build status** 
 
-[![Build Status](https://travis-ci.com/matt-hires/jekyll-foundation.svg)](https://travis-ci.com/matt-hires/jekyll-foundation)
+[![Build Status](https://travis-ci.com/matt-hires/jekyll-foundation.svg)](https://travis-ci.com/matt-hires/nycmm)
 

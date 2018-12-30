@@ -3,5 +3,25 @@
     {% for item in site.data.nav-footer %}
       <li><a href="{{ item.url }}">{{ item.link }}</a></li>
     {% endfor %}
+
+    <!-- search all pages for current one -->
+    {% assign pages=site.pages | where:"ref", page.ref | sort: 'language' %}
+
+    <!--list pages in all languages-->
+    {% for page in pages %}
+      <li>
+        <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.language }}</a>
+      </li>
+    {% endfor %}
+
+
+    <!--  Same for posts
+    {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+      {% for post in posts %}
+      <li>
+        <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>
+      </li>
+      {% endfor %}
+      -->
   </ul>
 </nav>
