@@ -22,5 +22,9 @@
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/img/icons/apple-touch-icon-72x72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" href="/assets/img/icons/apple-touch-icon-precomposed.png">
   <link rel="stylesheet" href="/assets/css/app.css">
+
+  {% if jekyll.environment == 'production' and site.google_analytics %}
+    {% include components/google-analytics.html %}
+  {% endif %}
 </head>
 <body>
