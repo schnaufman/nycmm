@@ -55,9 +55,6 @@ highlighter: rouge
 # See _data/authors.yml
 author: matt
 
-# edit content on github
-edit_content: https://github.com/matt-hires/nycmm/edit/gh-pages
-
 defaults:
   -
     scope:

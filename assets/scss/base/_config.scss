@@ -2,9 +2,19 @@
 // Config
 // --------------------------------------------------
 
+// mostly done per default in foundation
+//see also node_modules/foundation-sites/
+
 //
 // Colors
 // --------------------------------------------------
 
-$black: #000;
-$white: #fff;
+$black: #373737;
+$white: #fcfcfc;
+
+$topbar-background: $white;
+
+//
+// Font Settings
+// -------------------------------------------------
+$body-font-family: Lato, 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;

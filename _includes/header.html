@@ -1,8 +1,15 @@
 {% include head.html %}
 
-<div class="top-bar" data-sticky-container>
-    <header class="top-bar-left" data-sticky data-margin-top="0">
-        <small><i>header</i></small>
+<header class="header">
+  <div class="masthead">
+    <div class="top-bar" data-sticky-container>
+      <div class="top-bar-left" data-sticky data-margin-top="0">
         {% include components/nav-menu.html %}
-    </header>
-</div>
+      </div>
+    </div>
+    <h1 class="masthead-title">{{ site.title }}</h1>
+    <a class="masthead-content-scroll" href="#content">
+      <div class="masthead-content-scroll-arrow">v</div>
+    </a>
+  </div>
+</header>

@@ -2,8 +2,12 @@
 layout: compress
 ---
 
-{% include header.html %}
+<div data-smooth-scroll data-animation-easing="swing">
+  {% include header.html %}
 
-{{ content }}
+  <div id="content">
+    {{ content }}
+  </div>
+</div>
 
 {% include footer.html %}

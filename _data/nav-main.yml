@@ -1,7 +1,7 @@
 # Author: Matthias Mairleitner
 # Date: 2018-11-25
 # Description: Navigation data file for defining navigation with dropdown
-#              The values are will be translated within lang.yml in the navigation array
+#              The values are will be translated with lang.yml in the navigation array
 
 - title: "about_title"
   url: "about_url"
@@ -17,8 +17,6 @@
 - title: "template_title"
   url: "template_url"
   dropdown:
-    - title: "blog_title"
-      url: "blog_url"
     - title: "samplepage_title"
       url: "samplepage_url"
     - title: "kitchensink_title"

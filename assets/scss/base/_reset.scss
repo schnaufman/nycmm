@@ -1,0 +1,19 @@
+
+// reset margin, padding and use border-box sizing
+// also done in foundation, but to make sure everthing is resetted
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// clearfix selector
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body, html {
+  height: 100%;
+}
