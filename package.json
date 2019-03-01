@@ -23,6 +23,7 @@
     "cross-spawn": "^6.0.5",
     "del": "^3.0.0",
     "foundation-sites": "^6.5.1",
+    "ionicons": "^4.5.5",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-babel": "^8.0.0",
