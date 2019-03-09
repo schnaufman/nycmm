@@ -1,5 +1,5 @@
 ---
-permalink: /en/about/
+permalink: /en/
 language: en
 layout: sections_default 
 title:  About

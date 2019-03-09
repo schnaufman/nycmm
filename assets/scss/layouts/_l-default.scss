@@ -3,37 +3,62 @@
 // --------------------------------------------------
 
 header {
-  background: skyblue;
   height: 100%;
+  overflow: hidden;
+  background: $header-overlay-color;
 
   > h1 {
+    font-weight: $font-weight-light;
     color: $white;
-    position: relative;
+    position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
-.header-content-scroll {
-  position: absolute;
-  bottom: 0;
-  color: $white;
-  font-size: $lead-font-size;
-  margin-left: 50%;
-  margin-bottom: 1%;
+.header-video {
+  position: relative;
+  z-index: -100;
 
-  > i {
-    border: 1px solid $white;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    margin-top: 30px;
-    padding: 10px 1px 0 0;
+  > video {
+    position: absolute;
   }
 }
+
+.nav-page-sections {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  margin-top: 3rem;
+  font-weight: $font-weight-light;
+  // get font-size from header h5 sizes
+  font-size: map-get(map-get(map-get($header-styles, medium), h5), 'font-size') + unquote("px");
+}
+
+.nav-page-sections li {
+  display: inline-block;
+  margin-left: 3rem;
+}
+
+.nav-page-sections li a:link,
+.nav-page-sections li a:visited {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.2s;
+  -moz-transition: border-bottom 0.2s;
+  -o-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+  padding: 8px 0;
+}
+
+.nav-page-sections li a:hover,
+.nav-page-sections li a:active {
+  border-bottom: 2px solid #e67e22;
+}
+
 
 footer {
 }

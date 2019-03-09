@@ -8,13 +8,15 @@
 //
 // Colors
 // --------------------------------------------------
-
 $black: #373737;
 $white: #fcfcfc;
+$link-color-hover: $black;
+$link-color-visited: $white;
 
-$topbar-background: $white;
+$header-overlay-color: rgba(0, 0, 0, 0.47);
 
 //
 // Font Settings
 // -------------------------------------------------
 $body-font-family: Lato, 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$font-weight-light: 300;

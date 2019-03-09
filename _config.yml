@@ -41,6 +41,10 @@ incremental:      true
 # url:            ""
 # baseurl:        "" # does not include hostname
 
+# header video
+header_video:     "/assets/video/bassmovie_x264_blur.mp4"
+header_image:     ""
+
 # Outputting
 permalink:        "/blog/:year/:title/"
 paginate_path:    "/blog/page:num"

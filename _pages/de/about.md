@@ -1,5 +1,5 @@
 ---
-permalink: /de/about/
+permalink: /
 language: de
 layout: sections_default 
 title:  Übersicht

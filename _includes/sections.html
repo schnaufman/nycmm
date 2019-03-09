@@ -10,8 +10,7 @@
         To properly render markdown includes as HTML, the include tag must be
         captured as a string, and this must be passed to the `markdownify` filter.
         -->
-        {% capture section_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.description
-        }} %}{% endcapture %}
+        {% capture section_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.description }} %}{% endcapture %}
         {{ section_description | markdownify }}
 
       </div>

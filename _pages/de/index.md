@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /de/index
 language: de
 layout: index
 title: Homepage
