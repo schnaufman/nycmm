@@ -10,10 +10,14 @@
 // --------------------------------------------------
 $black: #373737;
 $white: #fcfcfc;
-$link-color-hover: $black;
-$link-color-visited: $white;
 
 $header-overlay-color: rgba(0, 0, 0, 0.47);
+$header-nav-link-hover-color: #0ba5e9;
+
+$footer-background-color: $black;
+
+$link-color-hover: $header-nav-link-hover-color;
+$link-color-visited: $link-color-hover;
 
 //
 // Font Settings

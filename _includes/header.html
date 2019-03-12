@@ -1,11 +1,14 @@
 {% include head.html %}
 
 <header>
-  <div class="header-video">
+  <div class="c-header-video">
     <video loop muted autoplay preload="auto">
       <source src="{{ site.header_video }}" type="video/mp4">
     </video>
   </div>
   {% include components/nav-menu-page-sections.html %}
-  <h1>{{ site.title }}</h1>
+  <div class="c-header-title">
+    <h1>{{ site.title }}</h1>
+    <h2>{{ site.slogan }}</h2>
+  </div>
 </header>

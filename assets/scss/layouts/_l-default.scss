@@ -7,22 +7,30 @@ header {
   overflow: hidden;
   background: $header-overlay-color;
 
-  > h1 {
-    font-weight: $font-weight-light;
-    color: $white;
+  .c-header-title {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%);
+    text-align: center;
+
+    h1, h2 {
+      font-weight: $font-weight-light;
+      color: $white;
+    }
+
+    h2 {
+      font-style: italic;
+    }
   }
-}
 
-.header-video {
-  position: relative;
-  z-index: -100;
+  .c-header-video {
+    position: relative;
+    z-index: -100;
 
-  > video {
-    position: absolute;
+    > video {
+      position: absolute;
+    }
   }
 }
 
@@ -34,31 +42,32 @@ header {
   font-weight: $font-weight-light;
   // get font-size from header h5 sizes
   font-size: map-get(map-get(map-get($header-styles, medium), h5), 'font-size') + unquote("px");
-}
 
-.nav-page-sections li {
-  display: inline-block;
-  margin-left: 3rem;
-}
+  li {
+    display: inline-block;
+    margin-left: 3rem;
+  }
 
-.nav-page-sections li a:link,
-.nav-page-sections li a:visited {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-bottom: 2px solid transparent;
-  -webkit-transition: border-bottom 0.2s;
-  -moz-transition: border-bottom 0.2s;
-  -o-transition: border-bottom 0.2s;
-  transition: border-bottom 0.2s;
-  padding: 8px 0;
-}
+  li a:link,
+  li a:visited {
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    -moz-transition: border-bottom 0.2s;
+    -o-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+    padding: 8px 0;
+  }
 
-.nav-page-sections li a:hover,
-.nav-page-sections li a:active {
-  border-bottom: 2px solid #e67e22;
+  li a:hover,
+  li a:active {
+    border-bottom: 2px solid $header-nav-link-hover-color;
+  }
 }
-
 
 footer {
+  height: 20%;
+  background: $footer-background-color;
 }
