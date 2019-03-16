@@ -5,9 +5,11 @@
 header {
   height: 100%;
   overflow: hidden;
-  background: $header-overlay-color;
+  background: $site-header-overlay-color;
+  color: $white;
+  font-weight: $site-header-font-weight;
 
-  .c-header-title {
+  .c-header-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -15,12 +17,24 @@ header {
     text-align: center;
 
     h1, h2 {
-      font-weight: $font-weight-light;
-      color: $white;
+      color: $white
     }
 
     h2 {
       font-style: italic;
+    }
+
+
+    .c-header-button {
+      color: $white;
+      font-size: map-get(map-get(map-get($header-styles, medium), h5), 'font-size') + unquote("px");
+      margin: 0 10px;
+
+      &:hover,
+      &:active {
+        background-color: $primary-color;
+        color: $white;
+      }
     }
   }
 
@@ -28,7 +42,7 @@ header {
     position: relative;
     z-index: -100;
 
-    > video {
+    video {
       position: absolute;
     }
   }
@@ -36,16 +50,14 @@ header {
 
 .nav-page-sections {
   display: inline-block;
-  float: left;
   list-style: none;
-  margin-top: 3rem;
-  font-weight: $font-weight-light;
+  margin-top: 40px;
   // get font-size from header h5 sizes
   font-size: map-get(map-get(map-get($header-styles, medium), h5), 'font-size') + unquote("px");
 
   li {
     display: inline-block;
-    margin-left: 3rem;
+    margin-left: 40px;
   }
 
   li a:link,
@@ -63,7 +75,7 @@ header {
 
   li a:hover,
   li a:active {
-    border-bottom: 2px solid $header-nav-link-hover-color;
+    border-bottom: 2px solid $site-header-nav-link-hover-color;
   }
 }
 

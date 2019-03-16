@@ -1,0 +1,1 @@
+##### In den Ensembles erlernst du 1-4 Stücke, welche über den Seminarzeitraum einstudiert und am Ende des Workshops aufgeführt werden. Dies können selbst mitgebrachte Songs oder vorgegebene Stücke der Dozenten sein.

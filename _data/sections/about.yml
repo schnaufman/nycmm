@@ -1,27 +1,39 @@
 - id: "overview_id"
   title: "overview_title"
-  description: "overview.md"
+  folder: "overview"
+  descriptions: 
+    main: "overview.md"
+    ensemble: "ensemble.md"
+    jamsessions: "jamsessions.md"
+    concerts: "concerts.md"
+  content: "overview.html"
   image: ""
   image-title: ""
   image-caption: ""
 
 - id: "tutors_id"
+  folder: "tutors"
   title: "tutors_title"
-  description: "tutors.md"
+  descriptions:
+    main: "tutors.md"
   image: ""
   image-title: ""
   image-caption: ""
 
 - id: "howitworks_id"
+  folder: "howitworks"
   title: "howitworks_title"
-  description: "howitworks.md"
+  descriptions: 
+    main: "howitworks.md"
   image: ""
   image-title: ""
   image-caption: ""
 
 - id: "contact_id"
+  folder: "contact"
   title: "contact_title"
-  description: "contact.md"
+  descriptions: 
+    main: "contact.md"
   image: ""
   image-title: ""
   image-caption: ""

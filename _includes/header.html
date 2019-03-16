@@ -7,8 +7,12 @@
     </video>
   </div>
   {% include components/nav-menu-page-sections.html %}
-  <div class="c-header-title">
+  <div class="c-header-content">
     <h1>{{ site.title }}</h1>
     <h2>{{ site.slogan }}</h2>
+    {% assign sign_up = site.data.lang[page.language].home.sign_up %}
+    {% assign tickets = site.data.lang[page.language].home.tickets %}
+    <a class="hollow button c-header-button" href="#">{{ sign_up }}</a>
+    <a class="hollow button c-header-button" href="#">{{ tickets }}</a>
   </div>
 </header>

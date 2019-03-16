@@ -1,0 +1,1 @@
+##### Bei den täglichen Jamsessions kannst du in gemütlicher Amthosphäre mit den anderen Seminarteilnehmern und Dozenten musizieren.

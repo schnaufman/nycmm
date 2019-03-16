@@ -1,3 +1,17 @@
 // --------------------------------------------------
 // Headings
 // --------------------------------------------------
+
+h2, h4 {
+    margin-bottom: 50px;
+}
+
+.c-header-underline:after {
+    display: block;
+    height: 2px;
+    background-color: $primary-color;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+}

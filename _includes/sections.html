@@ -1,28 +1,32 @@
 {% for section in site.data.sections[page.section] %}
   {% assign section_id = site.data.lang[page.language].navigation[{{section.id}}] %}
   {% assign section_title = site.data.lang[page.language].navigation[{{section.title}}] %}
-  <section id="{{ section_id }}">
-    <div>
-      <div>
-        <h2>{{ section_title }}</h2>
-
-        <!--
-        To properly render markdown includes as HTML, the include tag must be
-        captured as a string, and this must be passed to the `markdownify` filter.
-        -->
-        {% capture section_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.description }} %}{% endcapture %}
-        {{ section_description | markdownify }}
-
+  <section id="{{ section_id }}" class="c-section">
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="cell auto">
+          <h2 class="c-header-underline">{{ section_title }}</h2>
+          {% capture section_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ section.descriptions.main }} %}{% endcapture %}
+          {{ section_description | markdownify }}
+        </div>
       </div>
+      <div class="grid-x grid-padding-x">
+        {%if section.content %}
+          {% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ section.content }} %}
+        {% endif %}
+      </div>
+    </div>
+
       {% if section.img %}
-        <div>
-          <img src="{{ site.baseurl }}/{{ section.image }}" title="{{ section.image-title }}"
-               alt="{{ section.title }}" class="img-responsive">
-          {% if section.img-caption %}
+        <div class="grid-x grid-margin-x">
+          <div class="cell">
+            <img src="{{ site.baseurl }}/{{ section.image }}" title="{{ section.image-title }}" alt="{{ section.title }}"
+              class="img-responsive">
+            {% if section.img-caption %}
             <div class="img-caption">{{ section.img-caption }}</div>
-          {% endif %}
+            {% endif %}
+          </div>
         </div>
       {% endif %}
-    </div>
   </section>
 {% endfor %}

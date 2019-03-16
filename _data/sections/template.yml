@@ -5,14 +5,19 @@
 #  image-caption: "blog image"
 
 - title: "samplepage_title"
-  description: "samplepage.md"
+  descriptions: 
+    main: "samplepage.md"
+  folder: "samplepage"
   image: "assets/img/dummy.jpg"
   image-title: "sample page image"
   image-caption: "sample page image"
   id: "samplepage_id"
 
 - title: "kitchensink_title"
-  description: "kitchen-sink.md"
+  descriptions: 
+    main: "kitchen-sink.md"
+  folder: "kitchen-sink"
+  image: "assets/img/dummy.jpg"
   image: ""
   image-title: "kichten sink image"
   image-caption: "kichten sink image"

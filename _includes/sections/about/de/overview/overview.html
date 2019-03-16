@@ -1,0 +1,29 @@
+
+{% assign section = site.data.sections[page.section].overview %}
+{% capture ensemble %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ section.descriptions.ensemble }} %}{% endcapture %}
+<div class="small-4 cell c-section-cell-description">
+  <figure class="c-section-image">
+    <img src="/assets/img/note-stand.svg">
+  </figure>
+  <h4>Ensembles</h4>
+  {{ ensemble | markdownify }}
+</div>
+
+
+{% capture jamsessions %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ section.descriptions.jamsessions }} %}{% endcapture %}
+<div class="small-4 cell c-section-cell-description">
+  <figure class="c-section-image">
+    <img src="/assets/img/microphone-with-wire.svg">
+  </figure>
+  <h4>Tägliche Jamsessions</h4>
+  {{ jamsessions | markdownify }}
+</div>
+
+{% capture concerts %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ section.descriptions.concerts }} %}{% endcapture %}
+<div class="small-4 cell c-section-cell-description">
+  <figure class="c-section-image">
+    <img src="/assets/img/stage.svg">
+  </figure>
+  <h4>Konzertreihe</h4>
+  {{ concerts | markdownify }}
+</div>
