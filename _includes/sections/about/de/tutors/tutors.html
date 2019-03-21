@@ -1,0 +1,12 @@
+
+{% assign section_data = site.data.sections[page.section] | where: "id", "tutors_id" | first %}
+
+<div class="grid-x">
+  {% for tutor in section_data.tutors %}
+    <div class="small-3 cell">
+      <figure class="c-section-tutor">
+        <img src="/assets/img/tutors/{{ tutor.image }}" alt="{{ tutor.image-title }}">
+      </figure>
+    </div>
+  {% endfor %}
+</div>

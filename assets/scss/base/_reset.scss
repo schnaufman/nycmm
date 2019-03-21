@@ -11,6 +11,10 @@
 }
 
 // clearfix selector
+.clearfix {
+  zoom: 1;
+}
+
 .clearfix::after {
   content: "";
   display: table;

@@ -10,23 +10,21 @@
           {{ section_description | markdownify }}
         </div>
       </div>
-      <div class="grid-x grid-padding-x">
-        {%if section.content %}
-          {% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ section.content }} %}
-        {% endif %}
-      </div>
+      {%if section.content %}
+        {% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ section.content }} %}
+      {% endif %}
     </div>
 
-      {% if section.img %}
-        <div class="grid-x grid-margin-x">
-          <div class="cell">
-            <img src="{{ site.baseurl }}/{{ section.image }}" title="{{ section.image-title }}" alt="{{ section.title }}"
-              class="img-responsive">
-            {% if section.img-caption %}
-            <div class="img-caption">{{ section.img-caption }}</div>
-            {% endif %}
-          </div>
+    {% if section.image %}
+      <div class="grid-x grid-margin-x">
+        <div class="cell">
+          <img src="{{ site.baseurl }}/{{ section.image }}" title="{{ section.image-title }}" alt="{{ section.title }}"
+            class="img-responsive">
+          {% if section.img-caption %}
+          <div class="img-caption">{{ section.img-caption }}</div>
+          {% endif %}
         </div>
-      {% endif %}
+      </div>
+    {% endif %}
   </section>
 {% endfor %}

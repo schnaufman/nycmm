@@ -3,7 +3,6 @@
 }
 
 .c-section-cell-description {
-
   h4 {
     margin-bottom: 20px;
   }
@@ -13,4 +12,24 @@
   width: 15%;
   margin: auto;
   margin-bottom: 10px;
+}
+
+.c-section-tutor {
+  width: 100%;
+  overflow: hidden;
+  background: black;
+  margin: 0;
+
+  img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.25);
+    transition: transform 0.5s, opacity 0.5s;
+
+    &:hover{
+      opacity: 1;
+      transform: scale(1.03);
+    }
+  }
 }
