@@ -1,9 +1,4 @@
-<!--
-Author: Matthias Mairleitner
-Description: Represents the navigation page section links in the header
-This links will be gathered from the submenu entries in the nav-main.yml
--->
-<nav class="nav-page-sections">
+<nav class="nav-page-sections" data-smooth-scroll-with-links data-animation-easing="swing" data-threshold="0" data-animation-duration="1000">
   <ul>
     {% for section in site.data.sections[page.section] %}
       {% assign section_id = site.data.lang[page.language].navigation[{{section.id}}] %}
