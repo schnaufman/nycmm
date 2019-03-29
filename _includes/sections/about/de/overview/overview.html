@@ -1,5 +1,6 @@
 
 {% assign section_data = site.data.sections[page.section] | where: "id", "overview_id" | first %}
+
 {% capture ensemble %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section_data.folder }}/{{ section_data.descriptions.ensemble }} %}{% endcapture %}
 
 <div class="grid-x grid-padding-x">

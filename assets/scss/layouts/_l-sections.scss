@@ -1,3 +1,6 @@
+/****************************/
+/* general section settings */
+/****************************/
 .c-section {
   padding: 20px 0;
 }
@@ -14,6 +17,9 @@
   margin-bottom: 10px;
 }
 
+/******************/
+/* tutors section */
+/******************/
 .c-section-tutor {
   width: 100%;
   overflow: hidden;
@@ -27,9 +33,26 @@
     transform: scale(1.25);
     transition: transform 0.5s, opacity 0.5s;
 
-    &:hover{
+    &:hover {
       opacity: 1;
       transform: scale(1.03);
     }
   }
+}
+
+/**********************/
+/* howitworks section */
+/**********************/
+.c-section-howitworks-step-count {
+  float: right;
+  color: $primary-color;
+  border: 2px solid $primary-color;
+  border-radius: 50%;
+  text-align: center;
+  width: 3em;
+  height: 3em;
+}
+
+.c-section-howitworks-step-description {
+  text-align: left;
 }

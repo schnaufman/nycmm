@@ -1,1 +1,1 @@
-Wie's funktioniert
+#### Wie's funktioniert: vom Ticketkauf bis zum Seminar:<br>Falls du nur zu unseren Konzerten kommen möchtest, kauf dir Konzertickets in unserem [Ticket](#Tickets) Bereich.<br>Wir freuen uns auf dich.
