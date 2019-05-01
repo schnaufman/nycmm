@@ -18,7 +18,7 @@ $(document).foundation();
 
 // initialize custom apis
 $(function () {
-  new GMapsApi('AIzaSyAQAtkJofXeJ3J5YQgaOsQ7ZgV5utqDhx8', 'gmaps', {
+  new GMapsApi('API_KEY', 'gmaps', {
     zoom: 15,
     center: {
       lat: 48.1008369,
