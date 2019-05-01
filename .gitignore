@@ -55,3 +55,6 @@ Gemfile.lock
 
 # Composer
 composer.lock
+
+# environment variables
+.env

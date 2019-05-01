@@ -54,5 +54,8 @@
 - id: "contact_id"
   folder: "contact"
   title: "contact_title"
+  gmaps:
+    address: "Salzburger Strasse 8, Mattighofen, 5230, Austria"
   descriptions:
     main: "contact.md"
+  content: "contact.html"

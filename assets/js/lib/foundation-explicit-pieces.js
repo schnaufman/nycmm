@@ -2,7 +2,7 @@ import $ from 'jquery';
 
 import { Foundation } from 'foundation-sites/js/foundation.core';
 import * as CoreUtils from 'foundation-sites/js/foundation.core.utils';
-import { Box } from 'foundation-sites/js/foundation.util.box'
+import { Box } from 'foundation-sites/js/foundation.util.box';
 import { onImagesLoaded } from 'foundation-sites/js/foundation.util.imageLoader';
 import { Keyboard } from 'foundation-sites/js/foundation.util.keyboard';
 import { MediaQuery } from 'foundation-sites/js/foundation.util.mediaQuery';

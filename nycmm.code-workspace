@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"eslint.alwaysShowStatus": true,
+		"eslint.validate": [
+			"javascript"
+		],
+		"jshint.enable": false,
+    "eslint.provideLintTask": true,
+    "javascript.validate.enable": false
+	}
+}

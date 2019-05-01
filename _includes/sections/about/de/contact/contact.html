@@ -1,0 +1,4 @@
+{% assign section_data = site.data.sections[page.section] | where: "id", "contact_id" | first %}
+<div id="gmaps" gmaps-address="{{ section_data.gmaps.address }}">
+
+</div>
