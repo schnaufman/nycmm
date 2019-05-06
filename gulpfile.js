@@ -1,7 +1,7 @@
 'use strict';
 
 const plugins = require('gulp-load-plugins');
-
+const replace = require('gulp-replace');
 const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync');
 const del = require('del');
@@ -56,7 +56,6 @@ function clean(done) {
 }
 
 // Copy files out of the assets folder
-// Copy files out of the assets folder
 // This task skips over the "img", "js", and "scss" folders, which are parsed separately
 function copy(done) {
   return gulp.src(config.copy.assets)
@@ -104,13 +103,23 @@ function sass(done) {
 function javascripts(done) {
   browserSync.notify(config.javascript.notification);
 
-  return gulp.src(config.javascript.src)
+  const fileStream = gulp.src(config.javascript.src)
     .pipe(plumber())
     .pipe(named())
     .pipe($.sourcemaps.init())
     .pipe(webpackStream(webpackConfig, webpack2))
-    .pipe($.if(isProduction, $.uglify({mangle: false})))
-    .pipe($.if(!isProduction, $.sourcemaps.write()))
+    .pipe($.if(isProduction, $.uglify({ mangle: false })))
+    .pipe($.if(!isProduction, $.sourcemaps.write()));
+
+  // replace enviroment variables in js files
+  for (const key in process.env) {
+    if (key.startsWith('NYCMM_ENV')) {
+      const replacementString = '\\${' + key + '}';
+      fileStream.pipe(replace(new RegExp(replacementString, 'g'), process.env[key]));
+    }
+  }
+
+  return fileStream
     .pipe(gulp.dest(config.javascript.dest.buildDir))
     .on('end', done);
 }
