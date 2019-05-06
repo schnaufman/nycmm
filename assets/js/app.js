@@ -4,7 +4,7 @@
 import $ from 'jquery';
 import { Foundation } from './lib/foundation-explicit-pieces';
 import { SmoothScrollWithLinks } from './lib/ext/foundation.smoothScrollWithLinks';
-import { GMapsApi } from './lib/gmaps/gmaps-api';
+import { GMapsApi } from './lib/maps/gmaps-api';
 
 //
 // Custom JS

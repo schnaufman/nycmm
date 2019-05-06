@@ -30,19 +30,19 @@ class GMapsApi {
 
         try {
           // dynamically add script element to dom
-          this._addGMapsAPIScript();
+          this._addGMapsApiDomContent();
         } catch (error) {
           reject(error);
         }
       }
     );
 
-    this.gMapsInitPromise.then( value => {
+    this.gMapsInitPromise.then(value => {
       console.debug('GMapsApi: ' + value);
 
       this._initialize();
-    }).catch ( reason => {
-      console.error('GMapsApi: Promised failed. ' + reason);
+    }).catch(reason => {
+      console.error('GMapsApi: Promise failed: ' + reason);
     });
   }
 
@@ -71,19 +71,19 @@ class GMapsApi {
   /**
    * dynamically add GMapsAPI by creating script element in DOM
    */
-  _addGMapsAPIScript() {
-      // get language element from html
-      let lang = $('html').attr('lang');
-      if (!lang) {
-        lang = 'en';
-      }
-      console.debug('GMapsApi: selected language: \'' + lang + '\'');
+  _addGMapsApiDomContent() {
+    // get language element from html
+    let lang = $('html').attr('lang');
+    if (!lang) {
+      lang = 'en';
+    }
+    console.debug('GMapsApi: selected language: \'' + lang + '\'');
 
-      // dynamically add script
-      let gmapsJs = document.createElement('script');
-      gmapsJs.type = 'text/javascript';
-      gmapsJs.src = 'https://maps.googleapis.com/maps/api/js?callback=gMapsCallback&key=' + this.apiKey + '&language=' + lang;
-      $('head').append(gmapsJs);
+    // dynamically add script
+    let gmapsJs = document.createElement('script');
+    gmapsJs.type = 'text/javascript';
+    gmapsJs.src = 'https://maps.googleapis.com/maps/api/js?callback=gMapsCallback&key=' + this.apiKey + '&language=' + lang;
+    $('head').append(gmapsJs);
   }
 }
 
