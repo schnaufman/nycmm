@@ -9,7 +9,7 @@ branches:
 
 node_js:
   - '8'
-  - '6'
+  - '10'
 
 before_install:
 - rvm install 2.5.3
