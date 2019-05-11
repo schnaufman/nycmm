@@ -4,7 +4,7 @@
 import $ from 'jquery';
 import { Foundation } from './lib/foundation-explicit-pieces';
 import { SmoothScrollWithLinks } from './lib/ext/foundation.smoothScrollWithLinks';
-import { GMapsApi } from './lib/maps/gmaps-api';
+import { LeafletApi } from './lib/maps/leaflet-api';
 
 //
 // Custom JS
@@ -18,11 +18,5 @@ $(document).foundation();
 
 // initialize custom apis
 $(function () {
-  new GMapsApi('${NYCMM_ENV_GMAPS_API_KEY}', 'gmaps', {
-    zoom: 15,
-    center: {
-      lat: 48.1008369,
-      lng: 13.1491808
-    }
-  });
+  new LeafletApi('${NYCMM_ENV_LEAFLET_TOKEN}', 'leafletMap');
 });

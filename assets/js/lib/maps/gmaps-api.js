@@ -10,8 +10,9 @@ class GMapsApi {
    * Construct GMapsApi
    *
    * @param {String} apiKey google Maps API Key
-   * @param {String} elementId DOM element ID of the gmaps element
-   * @param {Object} gMapsOptions google Maps options (see https://developers.google.com/maps/documentation/javascript/adding-a-google-map#map)
+   * @param {String} elementId DOM element ID of the maps element
+   * @param {Object} gMapsOptions google Maps options
+   * (see https://developers.google.com/maps/documentation/javascript/adding-a-google-map#map)
    */
   constructor(apiKey, elementId, gMapsOptions) {
     //properties
@@ -50,8 +51,8 @@ class GMapsApi {
    * initialize gmaps with given options
    */
   _initialize() {
+    const $gmaps = $('#' + this.elementId);
     let gMapsClient = null;
-    let $gmaps = $('#' + this.elementId);
 
     // element present
     if ($gmaps.length > 0) {
@@ -69,9 +70,12 @@ class GMapsApi {
   }
 
   /**
-   * dynamically add GMapsAPI by creating script element in DOM
+   * dynamically add GMapsApi by creating script element in DOM
+   * see https://developers.google.com/maps/documentation/javascript/adding-a-google-map
    */
   _addGMapsApiDomContent() {
+    console.debug('GMapsApi: adding dom content.');
+
     // get language element from html
     let lang = $('html').attr('lang');
     if (!lang) {
@@ -79,11 +83,11 @@ class GMapsApi {
     }
     console.debug('GMapsApi: selected language: \'' + lang + '\'');
 
-    // dynamically add script
-    let gmapsJs = document.createElement('script');
-    gmapsJs.type = 'text/javascript';
-    gmapsJs.src = 'https://maps.googleapis.com/maps/api/js?callback=gMapsCallback&key=' + this.apiKey + '&language=' + lang;
-    $('head').append(gmapsJs);
+    // create script element
+    const domScript = document.createElement('script');
+    domScript.type = 'text/javascript';
+    domScript.src = 'https://maps.googleapis.com/maps/api/js?callback=gMapsCallback&key=' + this.apiKey + '&language=' + lang;
+    $('head').append(domScript);
   }
 }
 

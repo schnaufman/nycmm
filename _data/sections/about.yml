@@ -54,8 +54,11 @@
 - id: "contact_id"
   folder: "contact"
   title: "contact_title"
-  gmaps:
-    address: "Salzburger Strasse 8, Mattighofen, 5230, Austria"
+  maps:
+    coordinates:
+      latitude: 48.1008369
+      longitude: 13.1491808
+    zoom: 16
   descriptions:
     main: "contact.md"
   content: "contact.html"
