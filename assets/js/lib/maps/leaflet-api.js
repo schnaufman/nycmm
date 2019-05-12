@@ -9,16 +9,14 @@ class LeafletApi {
 
   /**
    * Construct  LeafletApi
-   * @param {String} accessToken access token for mapbox overlay
    * @param {String} elementId DOM element ID of the maps element
    */
-  constructor(accessToken, elementId) {
+  constructor(elementId) {
     //properties
-    this.accessToken = accessToken;
     this.elementId = elementId;
 
     // initialize leaflet
-    this._initialize();
+    this.leafletMap = this._initialize();
   }
 
   /**
@@ -34,11 +32,12 @@ class LeafletApi {
       console.debug('LeafletApi: Found \'#' + this.elementId + '\' element in document.');
       console.debug('LeafletApi: initializing...');
       // eslint-disable-next-line no-undef
-      const leafletMap = new L.Map($leaflet.get(0));
+      leafletClient = new L.Map($leaflet.get(0));
 
       const $lng = $leaflet.attr('lng');
       const $lat = $leaflet.attr('lat');
       const $zoom = $leaflet.attr('zoom');
+      const $popup = $leaflet.attr('popup');
 
       if (!$lng || !$lat || !$zoom) {
         console.error('LeafletApi: Please set lat,lng,zoom attribute on \'#' + this.elementId + '\' element in document.');
@@ -46,18 +45,26 @@ class LeafletApi {
       }
 
       // eslint-disable-next-line no-undef
-      const latlng = L.latLng($lat, $lng);
+      const latlng = new L.latLng($lat, $lng);
 
-      // setup view
-      leafletMap.setView(latlng, $zoom);
-      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-        maxZoom: 18,
-        id: 'mapbox.streets',
-        accessToken: this.accessToken
-      }).addTo(leafletMap);
+      // create tile layer
+      console.debug('LeafletApi: Creating tile layers for map...');
+      const osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+      const osmAttrib = 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
+      const osm = new L.TileLayer(osmUrl, { minZoom: 8, maxZoom: 18, attribution: osmAttrib });
 
-      L.marker(latlng).addTo(leafletMap);
+      // setup view, layer
+      leafletClient.setView(latlng, $zoom);
+      leafletClient.addLayer(osm);
+
+      // create marker on current location
+      const marker = new L.marker(latlng)
+        .addTo(leafletClient);
+
+      if ($popup) {
+        console.debug(`LeafletApi: Creating popup '${$popup}'`);
+        marker.bindPopup($popup).openPopup();
+      }
 
     } else {
       console.error('LeafletApi: Element \'#' + this.elementId + '\' couldn\'t be found in document.');

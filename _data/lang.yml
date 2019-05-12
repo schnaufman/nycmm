@@ -52,6 +52,7 @@ de:
   this_content_is_open_source: "Der Inhalt ist Open Source."
   help_improve_it: "Hilf ihn zu verbessern"
   enter_search_term: "Suchbegriff eingeben und Eingabetaste drücken"
+  map_marker_popup: "NYCMM Workshop DE"
 
 en:
   translation: "English"
@@ -104,3 +105,4 @@ en:
   this_content_is_open_source: "This content is open source."
   help_improve_it: "Help improve it"
   enter_search_term: "Enter search term and hit enter"
+  map_marker_popup: "NYCMM Workshop EN"

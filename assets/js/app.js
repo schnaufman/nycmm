@@ -18,5 +18,5 @@ $(document).foundation();
 
 // initialize custom apis
 $(function () {
-  new LeafletApi('${NYCMM_ENV_LEAFLET_TOKEN}', 'leafletMap');
+  new LeafletApi('leafletMap');
 });

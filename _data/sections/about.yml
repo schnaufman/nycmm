@@ -59,6 +59,8 @@
       latitude: 48.1008369
       longitude: 13.1491808
     zoom: 16
+    marker:
+      popup: "map_marker_popup"
   descriptions:
     main: "contact.md"
   content: "contact.html"

@@ -1,6 +1,9 @@
 {% assign section_data = site.data.sections[page.section] | where: "id", "contact_id" | first %}
+{% assign marker_popup = site.data.lang[page.language][{{section_data.maps.marker.popup}}] %}
+
 <div id="leafletMap"
   lat="{{ section_data.maps.coordinates.latitude }}"
   lng="{{ section_data.maps.coordinates.longitude }}"
-  zoom="{{ section_data.maps.zoom }}">
+  zoom="{{ section_data.maps.zoom }}"
+  popup="{{ marker_popup }}">
 </div>
