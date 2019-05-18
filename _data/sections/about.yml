@@ -56,11 +56,14 @@
   title: "contact_title"
   maps:
     coordinates:
-      latitude: 48.1008369
-      longitude: 13.1491808
-    zoom: 16
+      lat: 48.10053
+      lng: 13.15334
+    zoom: 19
     marker:
       popup: "map_marker_popup"
+      coordinates:
+        lat: 48.10049
+        lng: 13.15124
   descriptions:
     main: "contact.md"
   content: "contact.html"
