@@ -11,6 +11,9 @@
 		],
 		"jshint.enable": false,
     "eslint.provideLintTask": true,
-    "javascript.validate.enable": false
+		"javascript.validate.enable": false,
+		"search.exclude": {
+			"**/node_modules": false
+		}
 	}
 }

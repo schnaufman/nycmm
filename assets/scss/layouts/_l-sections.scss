@@ -56,3 +56,68 @@
 .c-section-howitworks-step-description {
   text-align: left;
 }
+
+/**********************/
+/* Contact section    */
+/**********************/
+.c-section-contact-form-map-box {
+  position: relative;
+  width: 100%;
+  height: $map-height-large;
+
+  #leafletMap {
+    clear: both;
+    z-index: 0;
+  }
+}
+
+.c-section-contact-form {
+  width: 90%;
+  margin: 0 auto;
+
+  .cell {
+    text-align: left;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  // TODO: align text
+  label[for=news] {
+    > input[type=checkbox] {
+    }
+  }
+
+  input[type=submit] {
+    width: 30%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+
+  input[type=text],
+  input[type=email],
+  select,
+  textarea {
+      width: 100%;
+      padding: 7px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+  }
+}
+
+.c-section-contact-form-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.83);
+  z-index: 10;
+  height: $map-height-large;
+  width: 50%;
+
+  h3 {
+    text-align: center;
+    padding: 20px 0;
+  }
+}
