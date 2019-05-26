@@ -80,12 +80,16 @@
   }
 
   textarea {
-    height: 100px;
+    height: 150px;
+    resize: none;
   }
 
-  // TODO: align text
   label[for=news] {
+    margin-bottom: 7px;
+
     > input[type=checkbox] {
+      margin: 4px;
+      vertical-align: bottom;
     }
   }
 

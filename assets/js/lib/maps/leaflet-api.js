@@ -32,7 +32,7 @@ class LeafletApi {
       console.debug('LeafletApi: Found \'#' + this.elementId + '\' element in document.');
       console.debug('LeafletApi: initializing...');
       // eslint-disable-next-line no-undef
-      leafletClient = new L.Map($leaflet.get(0));
+      leafletClient = new L.Map($leaflet.get(0), { attributionControl: false });
 
       const $lng = $leaflet.attr('lng');
       const $lat = $leaflet.attr('lat');
@@ -47,21 +47,26 @@ class LeafletApi {
       // eslint-disable-next-line no-undef
       const latlng = new L.latLng($lat, $lng);
 
-      // create tile layer
-/*    {s} means one of the available subdomains
+      /* create tile layer
+      {s} means one of the available subdomains
       (used sequentially to help with browser parallel requests per domain limitation;
         subdomain values are specified in options; a, b or c by default, can be omitted)
       {z} — zoom level
       {x} and {y} — tile coordinates.
-      {r} can be used to add "@2x" to the URL to load retina tiles. */
+      {r} can be used to add "@2x" to the URL to load retina tiles.*/
       console.debug('LeafletApi: Creating tile layers for map...');
       const osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-      const osmAttrib = `Map data © <a href="https://openstreetmap.org/#map=${$zoom}/${$lat}/${$lng}">OpenStreetMap</a> contributors`;
-      const osm = new L.TileLayer(osmUrl, { minZoom: 8, maxZoom: 18, detectRetina: true, attribution: osmAttrib });
+      const osm = new L.TileLayer(osmUrl, { minZoom: 8, maxZoom: 18, detectRetina: true });
 
       // setup view, layer
       leafletClient.setView(latlng, $zoom);
       leafletClient.addLayer(osm);
+
+      // add attribution control where users can access openstreetmap within map
+      const osmAttrib = `Map data © <a href="https://openstreetmap.org/#map=${$zoom}/${$lat}/${$lng}">OpenStreetMap</a> contributors`;
+      const attributionCtrl = L.control.attribution({ prefix: false, position: 'bottomleft' });
+      attributionCtrl.addAttribution(osmAttrib);
+      leafletClient.addControl(attributionCtrl);
 
       // create optional marker
       const $lngMarker = $leaflet.attr('lng-marker');
@@ -70,7 +75,7 @@ class LeafletApi {
       if ($latMarker && $lngMarker) {
         // create marker on current location
         console.debug('LeafletApi: Creating marker...');
-        const latlngMarker = new L.latLng($latMarker,$lngMarker);
+        const latlngMarker = new L.latLng($latMarker, $lngMarker);
         const marker = new L.marker(latlngMarker)
           .addTo(leafletClient);
 
