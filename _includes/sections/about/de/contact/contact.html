@@ -1,5 +1,4 @@
 {% assign section_data = site.data.sections[page.section] | where: "id", "contact_id" | first %}
-{% assign marker_popup = site.data.lang[page.language][{{section_data.maps.marker.popup}}] %}
 
 <div class="c-section-contact-form-map-box">
   <div id="leafletMap"
@@ -8,18 +7,18 @@
     lat-marker="{{ section_data.maps.marker.coordinates.lat }}"
     lng-marker="{{ section_data.maps.marker.coordinates.lng }}"
     zoom="{{ section_data.maps.zoom }}"
-    popup="{{ marker_popup }}">
+    popup="<b>Landesmusikschule Mattighofen</b><br>Salzburger Straße 8<br>5230 Mattighofen">
   </div>
 
   <div class="c-section-contact-form-box">
-    <h3>We're happy to hear from you</h2>
+    <h3>Möchtest du mit uns in Kontakt treten?</h2>
     <form method="post" action="#" class="c-section-contact-form">
       <div class="grid-x grid-padding-x">
         <div class="large-3 cell">
           <label for="name">Name</label>
         </div>
         <div class="large-9 cell">
-          <input type="text" name="name" id="name" placeholder="Your name" required>
+          <input type="text" name="name" id="name" placeholder="Dein Name" required>
         </div>
       </div>
       <div class="grid-x grid-padding-x">
@@ -27,19 +26,19 @@
           <label for="email">Email</label>
         </div>
         <div class="large-9 cell"">
-            <input type="email" name="email" id="email" placeholder="Your email" required>
+            <input type="email" name="email" id="email" placeholder="Deine Email" required>
         </div>
       </div>
       <div class="grid-x grid-padding-x">
         <div class="large-3 cell">
-          <label for="find-us">How did you find us?</label>
+          <label for="find-us">Wie hast du uns gefunden?</label>
         </div>
         <div class="large-9 cell">
           <select name="find-us" id="find-us">
-            <option value="friends" selected>Friends</option>
-            <option value="search">Search engine</option>
-            <option value="ad">Advertisement</option>
-            <option value="other">Other</option>
+            <option value="friends" selected>Freunde</option>
+            <option value="search">Suchmaschine</option>
+            <option value="ad">Werbung</option>
+            <option value="other">Andere</option>
           </select>
         </div>
       </div>
@@ -50,16 +49,16 @@
         <div class="large-9 cell">
           <label for="news">
             <input type="checkbox" name="news" id="news" checked>
-            Yes, please
+            Ja, bitte
           </label>
         </div>
       </div>
       <div class="grid-x grid-padding-x">
         <div class="large-3 cell">
-          <label>Drop us a line</label>
+          <label>Hinterlasse uns eine Nachricht</label>
         </div>
         <div class="large-9 cell">
-          <textarea name="message" placeholder="Your message"></textarea>
+          <textarea name="message" placeholder="Deine Nachricht"></textarea>
         </div>
       </div>
       <div class="grid-x grid-padding-x">
@@ -67,7 +66,7 @@
           <label>&nbsp;</label>
         </div>
         <div class="large-9 cell">
-          <input type="submit" value="Send it!">
+          <input type="submit" value="Abschicken">
         </div>
       </div>
     </form>

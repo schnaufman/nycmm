@@ -60,7 +60,6 @@
       lng: 13.15334
     zoom: 19
     marker:
-      popup: "map_marker_popup"
       coordinates:
         lat: 48.10049
         lng: 13.15124

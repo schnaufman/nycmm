@@ -1,0 +1,74 @@
+{% assign section_data = site.data.sections[page.section] | where: "id", "contact_id" | first %}
+
+<div class="c-section-contact-form-map-box">
+  <div id="leafletMap"
+    lat="{{ section_data.maps.coordinates.lat }}"
+    lng="{{ section_data.maps.coordinates.lng }}"
+    lat-marker="{{ section_data.maps.marker.coordinates.lat }}"
+    lng-marker="{{ section_data.maps.marker.coordinates.lng }}"
+    zoom="{{ section_data.maps.zoom }}"
+    popup="<b>Landesmusikschule Mattighofen</b><br>Salzburger Straße 8<br>5230 Mattighofen">
+  </div>
+
+  <div class="c-section-contact-form-box">
+    <h3>"We're happy to hear from you"</h2>
+    <form method="post" action="#" class="c-section-contact-form">
+      <div class="grid-x grid-padding-x">
+        <div class="large-3 cell">
+          <label for="name">Name</label>
+        </div>
+        <div class="large-9 cell">
+          <input type="text" name="name" id="name" placeholder="Your name" required>
+        </div>
+      </div>
+      <div class="grid-x grid-padding-x">
+        <div class="large-3 cell">
+          <label for="email">Email</label>
+        </div>
+        <div class="large-9 cell"">
+            <input type="email" name="email" id="email" placeholder="Your email" required>
+        </div>
+      </div>
+      <div class="grid-x grid-padding-x">
+        <div class="large-3 cell">
+          <label for="find-us">How did you find us?</label>
+        </div>
+        <div class="large-9 cell">
+          <select name="find-us" id="find-us">
+            <option value="friends" selected>Friends</option>
+            <option value="search">Search enginge</option>
+            <option value="ad">Advertisement</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid-x grid-padding-x">
+        <div class="large-3 cell">
+          <label>Newsletter ?</label>
+        </div>
+        <div class="large-9 cell">
+          <label for="news">
+            <input type="checkbox" name="news" id="news" checked>
+            Yes, please
+          </label>
+        </div>
+      </div>
+      <div class="grid-x grid-padding-x">
+        <div class="large-3 cell">
+          <label>Drop us a line</label>
+        </div>
+        <div class="large-9 cell">
+          <textarea name="message" placeholder="Your message"></textarea>
+        </div>
+      </div>
+      <div class="grid-x grid-padding-x">
+        <div class="large-3 cell">
+          <label>&nbsp;</label>
+        </div>
+        <div class="large-9 cell">
+          <input type="submit" value="Send it">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -52,7 +52,6 @@ de:
   this_content_is_open_source: "Der Inhalt ist Open Source."
   help_improve_it: "Hilf ihn zu verbessern"
   enter_search_term: "Suchbegriff eingeben und Eingabetaste drücken"
-  map_marker_popup: "<b>Landesmusikschule Mattighofen</b><br>Salzburger Straße 8<br>5230 Mattighofen"
 
 en:
   translation: "English"
@@ -78,8 +77,6 @@ en:
     samplepage_url: "#samplepage"
     kitchensink_title: "Kitchen Sink"
     kitchensink_url: "#kitchensink"
-  section:
-    overview_title: "Overview"
   portfolio: "Portfolio EN"
   info_website: "About This Site"
   archive: "Archive"
@@ -96,7 +93,7 @@ en:
   previous_posts: "Previous Posts"
   read: "Read"
   read_more: "Read More&nbsp;›"
-  if_you_are_not_redirected_automatically: "If you are not redirected   automatically,"
+  if_you_are_not_redirected_automatically: "If you are not redirected automatically,"
   click_here: "click here"
   next_post_in: "Next Post in"
   previous_post_in: "Previous Post in"
@@ -105,4 +102,3 @@ en:
   this_content_is_open_source: "This content is open source."
   help_improve_it: "Help improve it"
   enter_search_term: "Enter search term and hit enter"
-  map_marker_popup: "<b>Landesmusikschule Mattighofen</b><br>Salzburger Straße 8<br>5230 Mattighofen"
