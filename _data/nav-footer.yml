@@ -1,2 +1,4 @@
-- title: "footer_facebook"
-  url: "http://www.facebook.com"
+- icon-class: "ion-logo-facebook"
+  url: "http://www.facebook.com/NYCMusikmarathonMattighofen/"
+- icon-class: "ion-logo-instagram"
+  url: "https://www.instagram.com/nycmusikmarathon/"

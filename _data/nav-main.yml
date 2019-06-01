@@ -1,7 +1,3 @@
-# Author: Matthias Mairleitner
-# Description: Navigation data file for defining navigation with dropdown
-#              The values are will be translated with lang.yml in the navigation array
-
 - title: "about_title"
   url: "about_url"
   dropdown:

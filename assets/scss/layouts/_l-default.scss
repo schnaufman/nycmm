@@ -16,18 +16,18 @@ header {
     transform: translateX(-50%);
     text-align: center;
 
-    h1, h2 {
-      color: $white
+    h1,
+    h2 {
+      color: $white;
     }
 
     h2 {
       font-style: italic;
     }
 
-
     .c-header-button {
       color: $white;
-      font-size: map-get(map-get(map-get($header-styles, medium), h5), 'font-size') + unquote("px");
+      font-size: map-get(map-get(map-get($header-styles, medium), h5), "font-size") + unquote("px");
       margin: 0 10px;
 
       &:hover,
@@ -53,7 +53,7 @@ header {
   list-style: none;
   margin-top: 40px;
   // get font-size from header h5 sizes
-  font-size: map-get(map-get(map-get($header-styles, medium), h5), 'font-size') + unquote("px");
+  font-size: map-get(map-get(map-get($header-styles, medium), h5), "font-size") + unquote("px");
 
   li {
     display: inline-block;
@@ -79,7 +79,49 @@ header {
   }
 }
 
+/***************************************/
+/*                Footer               */
+/***************************************/
+
 footer {
   height: 20%;
   background: $footer-background-color;
+  padding-top: 20px;
+  color: $medium-gray;
+
+  li {
+    font-size: 20px;
+
+    a:link,
+    a:visited,
+    a:link,
+    a:visited {
+      color: $medium-gray;
+      -webkit-transition: border-bottom 0.2s;
+      -moz-transition: border-bottom 0.2s;
+      -o-transition: border-bottom 0.2s;
+      transition: border-bottom 0.2s;
+    }
+
+    a:active,
+    a:hover {
+      color: $primary-color;
+
+      // social icons
+      .ion-logo-facebook {
+        color: #3b5998;
+      }
+
+      .ion-logo-instagram {
+        color: #EF4B5B;
+      }
+    }
+  }
+
+  .copyright {
+    p {
+      margin-top: 4px;
+      height: 100%;
+    }
+  }
 }

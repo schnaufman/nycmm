@@ -3,7 +3,8 @@
 // --------------------------------------------------
 
 // mostly done per default in foundation
-// see also node_modules/foundation-sites/
+// see also
+// node_modules/foundation-sites/scss/_global.scss
 
 //
 // Colors
@@ -11,6 +12,8 @@
 $black: #373737;
 $white: #fcfcfc;
 $primary-color: #0ba5e9;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a;
 
 // header
 $site-header-overlay-color: rgba(0, 0, 0, 0.47);
@@ -18,6 +21,7 @@ $site-header-nav-link-hover-color: $primary-color;
 
 // footer
 $footer-background-color: $black;
+$footer-link-inactive: $medium-gray;
 
 // links
 $link-color-hover: $site-header-nav-link-hover-color;

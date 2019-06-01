@@ -1,13 +1,21 @@
-
 <footer>
-  <small><i>footer</i></small>
   {% include components/nav-footer.html %}
 
-<!--   <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from
+  <!--   <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from
     <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
     is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
       target="_blank">CC 3.0 BY</a>
   </div> -->
+
+  <div class="grid-x grid-padding-x copyright">
+    <p class="cell">
+      Built with ❤️ in Vienna, Austria.
+    </p>
+    <p class="cell">
+      Copyright &copy; {{ "now" | date: "%Y" }} by NYCMM. All rights reserved.
+    </p>
+  </div>
+
 </footer>
 
 {% include foot.html %}

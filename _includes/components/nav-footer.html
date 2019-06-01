@@ -1,7 +1,11 @@
-<nav class="grid-x">
+<nav class="grid-x grid-padding-x">
   <ul class="cell small-6 menu align-left">
     {% for item in site.data.nav-footer %}
-      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+      {% if item.title %}
+        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+      {% elsif item.icon-class %}
+        <li><a href="{{ item.url }}"><i class="{{ item.icon-class }}"></i></a></li>
+      {% endif %}
     {% endfor %}
   </ul>
   <ul class="cell small-6 menu align-right">
@@ -11,7 +15,7 @@
     <!--list pages in all languages-->
     {% for page in pages %}
       <li>
-        <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.language }}</a>
+        <a href="{{ page.url }}">{{ page.language }}</a>
       </li>
     {% endfor %}
   </ul>
