@@ -1,8 +1,16 @@
 /****************************/
 /* general section settings */
 /****************************/
+
+// set background for every even child of section in the section-container
+.c-section-container {
+  section:nth-child(even) {
+    background: $sections-even-background;
+  }
+}
+
 .c-section {
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 .c-section-cell-description {
@@ -84,30 +92,30 @@
     resize: none;
   }
 
-  label[for=news] {
+  label[for="news"] {
     margin-bottom: 7px;
 
-    > input[type=checkbox] {
+    > input[type="checkbox"] {
       margin: 4px;
       vertical-align: bottom;
     }
   }
 
-  input[type=submit] {
+  input[type="submit"] {
     width: 30%;
     padding: 7px;
     border-radius: 3px;
     border: 1px solid #ccc;
   }
 
-  input[type=text],
-  input[type=email],
+  input[type="text"],
+  input[type="email"],
   select,
   textarea {
-      width: 100%;
-      padding: 7px;
-      border-radius: 3px;
-      border: 1px solid #ccc;
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
   }
 }
 
