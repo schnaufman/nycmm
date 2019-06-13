@@ -28,6 +28,7 @@ exclude:
   - "rev-manifest.json"
   - "yarn.lock"
   - "yarn-error.log"
+  - "nycmm.code-workspace"
 
 # Plugins
 # Add plugins in the Gemfile
