@@ -3,7 +3,7 @@
 <header>
   <div class="c-header-video">
     <video loop muted autoplay preload="auto">
-      <source src="{{ site.header_video }}" type="video/mp4">
+      <source src="{{ site.header_video | relative_url }}" type="video/mp4">
     </video>
   </div>
   {% include components/nav-menu-page-sections.html %}

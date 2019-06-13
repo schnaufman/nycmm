@@ -6,7 +6,7 @@
 <div class="grid-x grid-padding-x">
   <div class="small-4 cell c-section-cell-description">
     <figure class="c-section-image">
-      <img src="/assets/img/icons/note-stand.svg">
+      <img src="{{ "/assets/img/icons/note-stand.svg" | relative_url }}">
     </figure>
     <h4>Ensembles</h4>
     {{ ensemble | markdownify }}
@@ -16,7 +16,7 @@
   {% capture jamsessions %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section_data.folder }}/{{ section_data.descriptions.jamsessions }} %}{% endcapture %}
   <div class="small-4 cell c-section-cell-description">
     <figure class="c-section-image">
-      <img src="/assets/img/icons/microphone-with-wire.svg">
+      <img src="{{ "/assets/img/icons/microphone-with-wire.svg" | relative_url }}">
     </figure>
     <h4>Tägliche Jamsessions</h4>
     {{ jamsessions | markdownify }}
@@ -25,7 +25,7 @@
   {% capture concerts %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section_data.folder }}/{{ section_data.descriptions.concerts }} %}{% endcapture %}
   <div class="small-4 cell c-section-cell-description">
     <figure class="c-section-image">
-      <img src="/assets/img/icons/stage.svg">
+      <img src="{{ "/assets/img/icons/stage.svg" | relative_url }}">
     </figure>
     <h4>Konzertreihe</h4>
     {{ concerts | markdownify }}
