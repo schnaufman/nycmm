@@ -5,6 +5,10 @@
   {% for tutor in section_data.tutors %}
     <div class="small-3 cell">
       <figure class="c-section-tutor">
+        {% capture tutor_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section_data.folder }}/{{ tutor.description }} %}{% endcapture %}
+        <div class="c-section-tutor-description">
+          {{ tutor_description | markdownify }}
+        </div>
         <img src="/assets/img/tutors/{{ tutor.image }}" alt="{{ tutor.image-title }}" title="{{ tutor.image-title }}">
       </figure>
     </div>
