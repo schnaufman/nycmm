@@ -1,12 +1,12 @@
 'use strict';
 
-const plugins = require('gulp-load-plugins');
+const gulp = require('gulp');
+const gulpif = require('gulp-if');
 const replace = require('gulp-replace');
 const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync');
 const del = require('del');
 const fs = require('fs');
-const gulp = require('gulp');
 const named = require('vinyl-named');
 const plumber = require('gulp-plumber');
 const spawn = require('cross-spawn');
@@ -14,9 +14,14 @@ const webpack2 = require('webpack');
 const webpackStream = require('webpack-stream');
 const yaml = require('js-yaml');
 const yargs = require('yargs');
+const cleanCSS = require('gulp-clean-css');
+const sourcemaps = require('gulp-sourcemaps');
+const uglify = require('gulp-uglify');
 
-// Load all Gulp plugins into one letiable
-const $ = plugins();
+// configure sass with compiler
+const sass = require('gulp-sass');
+sass.compiler = require('node-sass');
+
 const config = loadConfig();
 const isProduction = !!(yargs.argv.production);
 
@@ -50,14 +55,14 @@ function loadConfig() {
   return yaml.load(ymlFile);
 }
 
-function clean(done) {
+function cleanTask(done) {
   del.sync(config.clean);
   done();
 }
 
 // Copy files out of the assets folder
 // This task skips over the "img", "js", and "scss" folders, which are parsed separately
-function copy(done) {
+function copyTask(done) {
   return gulp.src(config.copy.assets)
     .pipe(plumber())
     .pipe(gulp.dest(config.copy.dist))
@@ -67,13 +72,13 @@ function copy(done) {
 // Build the "dist" folder by running all of the below tasks
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task('build',
-  gulp.series(clean, jekyllBuild, gulp.parallel(javascripts, copy), sass));
+  gulp.series(cleanTask, jekyllBuildTask, gulp.parallel(jsTask, copyTask), sassTask));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
   gulp.series('build', server, watch));
 
-function jekyllBuild(done) {
+function jekyllBuildTask(done) {
   let processEnv = process.env;
   if (isProduction) {
     processEnv.JEKYLL_ENV = 'production';
@@ -85,31 +90,29 @@ function jekyllBuild(done) {
     .on('close', done);
 }
 
-function sass(done) {
+function sassTask(done) {
   browserSync.notify(config.sass.notification);
 
   return gulp.src(config.sass.src)
     .pipe(plumber())
-    .pipe($.sourcemaps.init())
-    .pipe($.sass().on('error', $.sass.logError))
+    .pipe(gulpif(!isProduction, sourcemaps.init()))
+    .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer(config.sass.compatibility))
-    .pipe($.if(isProduction, $.cssnano()))
-    .pipe($.if(!isProduction, $.sourcemaps.write()))
+    .pipe(gulpif(isProduction, cleanCSS()))
+    .pipe(gulpif(!isProduction, sourcemaps.write()))
     .pipe(gulp.dest(config.sass.dest.jekyllRoot))
     .pipe(gulp.dest(config.sass.dest.buildDir))
     .on('end', done);
 }
 
-function javascripts(done) {
+function jsTask(done) {
   browserSync.notify(config.javascript.notification);
 
   const fileStream = gulp.src(config.javascript.src)
     .pipe(plumber())
     .pipe(named())
-    .pipe($.sourcemaps.init())
-    .pipe(webpackStream(webpackConfig, webpack2))
-    .pipe($.if(isProduction, $.uglify({ mangle: false })))
-    .pipe($.if(!isProduction, $.sourcemaps.write()));
+    .pipe(gulpif(!isProduction, sourcemaps.init()))
+    .pipe(webpackStream(webpackConfig, webpack2));
 
   // replace enviroment variables in js files
   for (const key in process.env) {
@@ -120,6 +123,8 @@ function javascripts(done) {
   }
 
   return fileStream
+    .pipe(gulpif(isProduction, uglify({ mangle: false })))
+    .pipe(gulpif(!isProduction, sourcemaps.write()))
     .pipe(gulp.dest(config.javascript.dest.buildDir))
     .on('end', done);
 }
@@ -144,8 +149,8 @@ function browserSyncReload(done) {
 
 function watch() {
   gulp.watch(config.watch.pages, gulp.series('build', browserSyncReload));
-  gulp.watch(config.watch.javascript, gulp.series(javascripts, browserSyncReload));
-  gulp.watch(config.watch.sass, gulp.series(sass, browserSyncReload));
-  gulp.watch(config.watch.media, gulp.series(copy, browserSyncReload));
+  gulp.watch(config.watch.javascript, gulp.series(jsTask, browserSyncReload));
+  gulp.watch(config.watch.sass, gulp.series(sassTask, browserSyncReload));
+  gulp.watch(config.watch.media, gulp.series(copyTask, browserSyncReload));
 }
 
