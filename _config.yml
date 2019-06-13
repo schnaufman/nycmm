@@ -43,7 +43,7 @@ incremental:      true
 # baseurl:        "" # does not include hostname
 
 # header video
-header_video:     "assets/video/bassmovie_x264_blur.mp4"
+header_video:     "/assets/video/bassmovie_x264_blur.mp4"
 header_image:     ""
 
 # Outputting
