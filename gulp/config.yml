@@ -30,8 +30,6 @@ javascript:
   dest:
     jekyllRoot: "assets/js/"
     buildDir: "_site/assets/js/"
-  # filename to output
-  filename: "all.js"
   notification: "Running JavaScript"
   # Paths to JavaScript libraries, which are combined into one file
   src: "assets/js/app.js"
