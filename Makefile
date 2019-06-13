@@ -4,10 +4,12 @@ SSH-USER = my-username
 SSH-HOST = my-host
 REMOTE-PATH = /my-remote-path with trailing slash/
 
+# deploy:
+# 	rsync -cavze ssh --delete ./_site/ $(SSH-USER)@$(SSH-HOST):$(REMOTE-PATH)
 deploy:
-	rsync -cavze ssh --delete ./_site/ $(SSH-USER)@$(SSH-HOST):$(REMOTE-PATH)
+	yarn build
 
 install:
+	gem install bundler
 	bundle install
 	yarn install
-	# composer install
