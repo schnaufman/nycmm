@@ -46,6 +46,24 @@ header {
       position: absolute;
     }
   }
+}
+
+/***************************************/
+/*            Navigation               */
+/***************************************/
+header {
+  /* Mobile navigation */
+  .c-mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+  }
+
+  .c-mobile-nav-icon i {
+    font-size: 2em;
+    color: white;
+  }
 
   /* Sticky navigation */
   .is-stuck {
@@ -60,62 +78,62 @@ header {
       display: inline-block;
     }
 
-    ul {
+    .c-main-nav {
       margin-top: 16px;
     }
 
-    li {
-      a {
-        &:link,
-        &:visited {
-          color: $black;
-        }
+    li a {
+      &:link,
+      &:visited {
+        color: $black;
       }
     }
   }
-}
 
-.c-nav-page-sections {
-  display: inline-block;
-  width: 100%;
-  // get font-size from header h5 sizes
-  font-size: map-get(map-get(map-get($header-styles, medium), h5), "font-size") + unquote("px");
-
-  .c-nav-logo {
-    float: right;
-    margin: 40px 60px 0 0;
-  }
-
-  // hide logo in the sticky menu per default
-  .c-nav-logo-sticky {
-    float: right;
-    display: none;
-    margin-right: 60px;
-  }
-
-  ul {
+  /* normal navigation */
+  .c-nav-page-sections {
     display: inline-block;
-    margin-top: 40px;
-  }
+    width: 100%;
+    // get font-size from header h5 sizes
+    font-size: map-get(map-get(map-get($header-styles, medium), h5), "font-size") + unquote("px");
 
-  li {
-    list-style: none;
-    a {
-      &:link,
-      &:visited {
-        color: $white;
-        text-decoration: none;
-        text-transform: uppercase;
-        border-bottom: 2px solid transparent;
-        -webkit-transition: border-bottom 0.2s;
-        -moz-transition: border-bottom 0.2s;
-        -o-transition: border-bottom 0.2s;
-        transition: border-bottom 0.2s;
-        padding: 8px 0;
-      }
-      &:hover,
-      &:active {
-        border-bottom: 2px solid $site-header-nav-link-hover-color;
+    .c-nav-logo {
+      float: right;
+      margin: 40px 60px 0 0;
+    }
+
+    // hide logo in the sticky menu per default
+    .c-nav-logo-sticky {
+      float: right;
+      display: none;
+      margin-right: 60px;
+    }
+
+    .c-main-nav {
+      margin-top: 40px;
+    }
+
+    li {
+      list-style: none;
+
+      a {
+        &:link,
+        &:visited {
+          color: $white;
+          text-decoration: none;
+          text-transform: uppercase;
+          border-bottom: 2px solid transparent;
+          -webkit-transition: border-bottom 0.2s;
+          -moz-transition: border-bottom 0.2s;
+          -o-transition: border-bottom 0.2s;
+          transition: border-bottom 0.2s;
+          padding: 8px 0;
+        }
+
+        &:hover,
+        &:active {
+          border-bottom: 2px solid $site-header-nav-link-hover-color;
+        }
       }
     }
   }
@@ -134,6 +152,14 @@ header {
       left: 50%;
       transform: translateX(-50%);
     }
+  }
+
+  .c-main-nav {
+    display: inline-block;
+  }
+
+  .c-mobile-nav-icon {
+    display: none;
   }
 
   .c-nav-page-sections {
@@ -156,15 +182,27 @@ header {
       left: 50%;
       transform: translateX(-50%);
     }
-  }
 
-  .c-nav-page-sections {
-    text-align: center;
+    .c-nav-logo {
+      display: none;
+    }
 
-    li {
-      display: block;
-      margin-left: 0;
-      margin-bottom: 5px;
+    .c-nav-page-sections {
+      text-align: center;
+
+      li {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 5px;
+      }
+    }
+
+    .c-main-nav {
+      display: none;
+    }
+
+    .c-mobile-nav-icon {
+      display: inline-block;
     }
   }
 }
