@@ -1,11 +1,16 @@
-<nav class="c-nav-page-sections" data-smooth-scroll-with-links data-animation-easing="swing" data-threshold="0" data-animation-duration="1000">
-  <ul>
-    {% for section in site.data.sections[page.section] %}
-      {% assign section_id = site.data.lang[page.language].navigation[{{section.id}}] %}
-      {% assign section_title = site.data.lang[page.language].navigation[{{section.title}}] %}
+<div data-sticky-container>
+  <div class="sticky" data-margin-top="0" data-sticky data-top-anchor="site-header:bottom">
+    <nav class="c-nav-page-sections" data-smooth-scroll-with-links data-animation-easing="swing" data-threshold="0" data-animation-duration="1000">
+      <ul>
+        {% for section in site.data.sections[page.section] %}
+          {% assign section_id = site.data.lang[page.language].navigation[{{section.id}}] %}
+          {% assign section_title = site.data.lang[page.language].navigation[{{section.title}}] %}
 
-      <li><a href="#{{ section_id }}">{{ section_title }}</a></li>
-    {% endfor %}
-  </ul>
-  <img src="{{ site.logo_white | relative_url }}" alt="NYCMM Logo" class="c-nav-logo-white">
-</nav>
+          <li><a href="#{{ section_id }}">{{ section_title }}</a></li>
+        {% endfor %}
+      </ul>
+      <img src="{{ site.logo | relative_url }}" alt="NYCMM Logo" class="c-nav-logo">
+      <img src="{{ site.logo_sticky | relative_url }}" alt="NYCMM Logo" class="c-nav-logo-sticky">
+    </nav>
+  </div>
+</div>

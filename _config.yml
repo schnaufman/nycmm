@@ -56,7 +56,8 @@ header_video:     "/assets/video/bassmovie_x264_blur.mp4"
 header_image:     ""
 
 # logo
-logo_white:       "/assets/img/logo_white.png"
+logo:             "/assets/img/logo.png"
+logo_sticky:      "/assets/img/logo_sticky.png"
 
 # Outputting
 permalink:        "/blog/:year/:title/"
