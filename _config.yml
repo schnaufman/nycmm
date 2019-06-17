@@ -55,6 +55,9 @@ incremental:      true
 header_video:     "/assets/video/bassmovie_x264_blur.mp4"
 header_image:     ""
 
+# logo
+logo_white:       "/assets/img/logo_white.png"
+
 # Outputting
 permalink:        "/blog/:year/:title/"
 paginate_path:    "/blog/page:num"

@@ -48,10 +48,22 @@ header {
   }
 }
 
-.nav-page-sections {
+.c-nav-page-sections {
+  display: inline-block;
+  width: 100%;
   margin-top: 40px;
   // get font-size from header h5 sizes
   font-size: map-get(map-get(map-get($header-styles, medium), h5), "font-size") + unquote("px");
+
+  .c-nav-logo-white {
+    float: right;
+    transform: translateY(-20%);
+    margin-right: 40px;
+  }
+
+  ul {
+    display: inline-block;
+  }
 
   li {
     list-style: none;
@@ -92,7 +104,7 @@ only screen and (min-width: 992px) {
     }
   }
 
-  .nav-page-sections {
+  .c-nav-page-sections {
     li {
       display: inline-block;
       margin-left: 40px;
@@ -114,7 +126,7 @@ only screen and (min-width: 992px) {
     }
   }
 
-  .nav-page-sections {
+  .c-nav-page-sections {
     text-align: center;
 
     li {

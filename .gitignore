@@ -47,9 +47,6 @@ _site
 # VSCode
 .vscode
 
-# Vendor directory
-assets/vendor/
-
 # Ruby
 Gemfile.lock
 

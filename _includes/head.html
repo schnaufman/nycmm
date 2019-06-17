@@ -1,12 +1,13 @@
 <!doctype html>
 <html class="no-js" lang="{{ site.language}} ">
+
 <head>
 
   <!--TODO Old code from feeling-responsive-->
   {% comment %}
-  #   Variables › {{ url }} › site.url + site.baseurl
-  #   Variables › {{ description }} › excerpt, page.meta_description, or site.description
-  #   Variables › {{ title }} › page.title
+  # Variables › {{ url }} › site.url + site.baseurl
+  # Variables › {{ description }} › excerpt, page.meta_description, or site.description
+  # Variables › {{ title }} › page.title
   #
   {% endcomment %}
 
@@ -16,19 +17,34 @@
   <title>{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ site.description }}" />
   <meta name="google-site-verification" content="{{ site.google-verification }}">
-  <!-- <link rel="shortcut icon" href="assets/img/icons/favicon.ico">
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/img/icons/apple-touch-icon-144x144-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/img/icons/apple-touch-icon-114x114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/img/icons/apple-touch-icon-72x72-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="/assets/img/icons/apple-touch-icon-precomposed.png"> -->
+
+  <link rel="apple-touch-icon" sizes="57x57" href="{{"/assets/img/faviicon/apple-icon-57x57.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{"/assets/img/faviicon/apple-icon-60x60.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{"/assets/img/faviicon/apple-icon-72x72.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{"/assets/img/faviicon/apple-icon-76x76.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ "/assets/img/faviicon/apple-icon-114x114.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ "/assets/img/faviicon/apple-icon-120x120.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ "/assets/img/faviicon/apple-icon-144x144.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ "/assets/img/faviicon/apple-icon-152x152.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/img/faviicon/apple-icon-180x180.png" | relative_url }}">
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ "/assets/img/faviicon/android-icon-192x192.png" | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/img/faviicon/favicon-32x32.png" | relative_url }}">
+  <link rel="icon" type="image/png" sizes="96x96" href="{{ "/assets/img/faviicon/favicon-96x96.png" | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/img/faviicon/favicon-16x16.png" | relative_url }}">
+  <link rel="manifest" href="{{ "/assets/img/faviicon/manifest.json" | relative_url }}>
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="{{ "/assets/img/faviicon/ms-icon-144x144.png | relative_url }}">
+  <meta name="theme-color" content="#ffffff">
+
   <link rel="stylesheet" href="{{ "/assets/css/app.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/vendors/ionicons/css/ionicons.min.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/vendors/leaflet/leaflet.css" | relative_url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400" rel="stylesheet">
 
   {% if jekyll.environment == 'production' and site.google_analytics %}
-    {% include components/google-analytics.html %}
+  {% include components/google-analytics.html %}
   {% endif %}
 
 </head>
+
 <body>

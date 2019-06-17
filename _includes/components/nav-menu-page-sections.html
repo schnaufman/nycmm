@@ -1,4 +1,4 @@
-<nav class="nav-page-sections" data-smooth-scroll-with-links data-animation-easing="swing" data-threshold="0" data-animation-duration="1000">
+<nav class="c-nav-page-sections" data-smooth-scroll-with-links data-animation-easing="swing" data-threshold="0" data-animation-duration="1000">
   <ul>
     {% for section in site.data.sections[page.section] %}
       {% assign section_id = site.data.lang[page.language].navigation[{{section.id}}] %}
@@ -7,4 +7,5 @@
       <li><a href="#{{ section_id }}">{{ section_title }}</a></li>
     {% endfor %}
   </ul>
+  <img src="{{ site.logo_white | relative_url }}" alt="NYCMM Logo" class="c-nav-logo-white">
 </nav>

@@ -100,7 +100,6 @@ function sassTask(done) {
     .pipe(autoprefixer(config.sass.compatibility))
     .pipe(gulpif(isProduction, cleanCSS()))
     .pipe(gulpif(!isProduction, sourcemaps.write()))
-    .pipe(gulp.dest(config.sass.dest.jekyllRoot))
     .pipe(gulp.dest(config.sass.dest.buildDir))
     .on('end', done);
 }
