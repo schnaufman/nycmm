@@ -2,6 +2,9 @@
 // Layout default
 // --------------------------------------------------
 
+/***************************************/
+/*                Header               */
+/***************************************/
 header {
   height: 100%;
   overflow: hidden;
@@ -11,9 +14,6 @@ header {
 
   .c-header-content {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
     text-align: center;
 
     h1,
@@ -49,15 +49,12 @@ header {
 }
 
 .nav-page-sections {
-  display: inline-block;
-  list-style: none;
   margin-top: 40px;
   // get font-size from header h5 sizes
   font-size: map-get(map-get(map-get($header-styles, medium), h5), "font-size") + unquote("px");
 
   li {
-    display: inline-block;
-    margin-left: 40px;
+    list-style: none;
   }
 
   li a:link,
@@ -76,6 +73,55 @@ header {
   li a:hover,
   li a:active {
     border-bottom: 2px solid $site-header-nav-link-hover-color;
+  }
+}
+
+/***************************************/
+/*           Header Queries            */
+/***************************************/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px),
+/* Large devices (laptops/desktops, 992px and up) */
+only screen and (min-width: 992px) {
+  header {
+    .c-header-content {
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .nav-page-sections {
+    li {
+      display: inline-block;
+      margin-left: 40px;
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  header {
+    .c-header-video {
+      display: none;
+    }
+
+    .c-header-content {
+      top: 40%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .nav-page-sections {
+    text-align: center;
+
+    li {
+      display: block;
+      margin-left: 0;
+      margin-bottom: 5px;
+    }
   }
 }
 
@@ -113,7 +159,7 @@ footer {
       }
 
       .ion-logo-instagram {
-        color: #EF4B5B;
+        color: #ef4b5b;
       }
     }
   }
