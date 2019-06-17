@@ -9,10 +9,3 @@
       url: "howitworks_url"
     - title: "contact_title"
       url: "contact_url"
-- title: "template_title"
-  url: "template_url"
-  dropdown:
-    - title: "samplepage_title"
-      url: "samplepage_url"
-    - title: "kitchensink_title"
-      url: "kitchensink_url"
