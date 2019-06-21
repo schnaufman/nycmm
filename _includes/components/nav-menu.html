@@ -17,13 +17,11 @@
           </div>
         {% endfor %}
       </ul>
-      <nav class="c-nav-page-sections" data-smooth-scroll-with-links data-animation-easing="swing" data-threshold="0"
-        data-animation-duration="1000">
+      <nav class="c-nav-page-sections" data-smooth-scroll-with-links data-animation-easing="swing" data-threshold="0" data-animation-duration="1000">
         <ul class="c-main-nav">
           {% for section in site.data.sections[page.section] %}
             {% assign section_id = site.data.lang[page.language].navigation[{{section.id}}] %}
             {% assign section_title = site.data.lang[page.language].navigation[{{section.title}}] %}
-
             <li class="c-main-nav-link"><a href="#{{ section_id }}">{{ section_title }}</a></li>
           {% endfor %}
         </ul>
