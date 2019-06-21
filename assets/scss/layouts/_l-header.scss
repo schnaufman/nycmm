@@ -45,7 +45,6 @@ header {
 /***************************************/
 /*            Navigation               */
 /***************************************/
-// a navigation link
 .c-main-nav-link {
   list-style: none;
   a {
@@ -85,9 +84,9 @@ header {
   padding-right: 60px;
 }
 
-/*************************/
-/*    Sticky  Navigation */
-/*************************/
+/************************************/
+/*        Sticky Navigation         */
+/************************************/
 .is-stuck {
   background-color: rgba($white, 0.9);
   box-shadow: 0 2px 2px $light-gray;
@@ -163,16 +162,12 @@ header {
       border-bottom: 2px solid $site-header-nav-link-hover-color;
     }
   }
-}
 
-.c-dropdown-nav-link-current {
-  display: inline-block;
-  i {
-    color: $primary-color;
-    padding-right: 5px;
-  }
-  a {
-    display: inline-block;
+  .c-dropdown-nav-link-current {
+    &:link,
+    &:visited {
+      color: $dark-gray;
+    }
   }
 }
 

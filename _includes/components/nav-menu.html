@@ -2,15 +2,17 @@
   <div class="sticky" data-margin-top="0" data-sticky data-top-anchor="site-header:bottom">
     <div class="c-nav-container">
       <a class="c-dropdown-nav-icon js--dropdown-nav-icon"><i class="ion-md-menu"></i></a>
-      {% assign pages = site.pages | where:"language", page.language | sort: 'title' %}
+      {% assign pages = site.pages | where:"language", page.language | sort: 'order' %}
       <ul class="c-dropdown-nav js--dropdown-nav-menu">
         {% for pageIt in pages %}
           <div class="c-dropdown-nav-link">
-            <li class="c-dropdown-nav-link-current">
+            <li>
               {% if pageIt.title == page.title %}
-                <i class="ion-md-arrow-dropright"></i>
+                {% assign link_class = 'c-dropdown-nav-link-current' %}
+              {% else %}
+                {% assign link_class = '' %}
               {% endif %}
-              <a href="{{ pageIt.permalink | relative_url }}">{{ pageIt.title }}</a>
+              <a class="{{ link_class }}" href="{{ pageIt.permalink | relative_url }}">{{ pageIt.title }}</a>
             </li>
           </div>
         {% endfor %}

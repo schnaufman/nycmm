@@ -5,6 +5,7 @@ layout: sections_default
 title: Workshop
 section: workshop
 ref: workshop
+order: 3
 ---
 
 English workshop page.
