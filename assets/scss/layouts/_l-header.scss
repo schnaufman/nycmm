@@ -29,6 +29,12 @@ header {
         background-color: $primary-color;
         color: $white;
       }
+
+      &:link,
+      &:visited {
+        color: $white;
+        text-decoration: none;
+      }
     }
   }
 
@@ -167,6 +173,7 @@ header {
     &:link,
     &:visited {
       color: $dark-gray;
+      text-decoration: none;
     }
   }
 }
