@@ -93,6 +93,10 @@ header {
 /************************************/
 /*        Sticky Navigation         */
 /************************************/
+.sticky-container {
+  z-index: 20;
+}
+
 .is-stuck {
   background-color: rgba($white, 0.9);
   box-shadow: 0 2px 2px $light-gray;

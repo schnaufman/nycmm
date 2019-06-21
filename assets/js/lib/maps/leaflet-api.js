@@ -85,8 +85,6 @@ class LeafletApi {
         }
       }
 
-    } else {
-      console.error('LeafletApi: Element \'#' + this.elementId + '\' couldn\'t be found in document.');
     }
 
     return leafletClient;
