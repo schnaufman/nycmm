@@ -1,16 +1,6 @@
 <!doctype html>
-<html class="no-js" lang="{{ site.language}} ">
-
+<html lang="{{ site.language}} ">
 <head>
-
-  <!--TODO Old code from feeling-responsive-->
-  {% comment %}
-  # Variables › {{ url }} › site.url + site.baseurl
-  # Variables › {{ description }} › excerpt, page.meta_description, or site.description
-  # Variables › {{ title }} › page.title
-  #
-  {% endcomment %}
-
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -42,7 +32,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400" rel="stylesheet">
 
   {% if jekyll.environment == 'production' and site.google_analytics %}
-  {% include components/google-analytics.html %}
+    {% include components/google-analytics.html %}
   {% endif %}
 
 </head>

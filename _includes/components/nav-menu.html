@@ -1,3 +1,4 @@
+{% strip %}
 <div data-sticky-container>
   <div class="sticky" data-margin-top="0" data-sticky data-top-anchor="site-header:bottom">
     <div class="c-nav-container">
@@ -5,15 +6,13 @@
       {% assign pages = site.pages | where:"language", page.language | sort: 'order' %}
       <ul class="c-dropdown-nav js--dropdown-nav-menu">
         {% for pageIt in pages %}
+          {% if pageIt.title == page.title %}
+            {% assign link_class = 'c-dropdown-nav-link-current' %}
+          {% else %}
+            {% assign link_class = '' %}
+          {% endif %}
           <div class="c-dropdown-nav-link">
-            <li>
-              {% if pageIt.title == page.title %}
-                {% assign link_class = 'c-dropdown-nav-link-current' %}
-              {% else %}
-                {% assign link_class = '' %}
-              {% endif %}
-              <a class="{{ link_class }}" href="{{ pageIt.permalink | relative_url }}">{{ pageIt.title }}</a>
-            </li>
+            <li><a class="{{ link_class }}" href="{{ pageIt.permalink | relative_url }}">{{ pageIt.title }}</a></li>
           </div>
         {% endfor %}
       </ul>
@@ -31,3 +30,4 @@
     </div>
   </div>
 </div>
+{% endstrip %}
