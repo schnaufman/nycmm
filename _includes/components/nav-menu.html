@@ -1,37 +1,33 @@
-<nav>
-  <ul class="dropdown menu" data-dropdown-menu>
-    {% for item in site.data.nav-main %}
-      {% assign link_title = site.data.lang[page.language].navigation[{{item.title}}] %}
-      {% assign nav_url = site.data.lang[page.language].navigation[{{item.url}}] %}
-      {% capture link_url %}{{ site.baseurl }}/{{ page.language }}/{{ nav_url }}{% endcapture %}
+<div data-sticky-container>
+  <div class="sticky" data-margin-top="0" data-sticky data-top-anchor="site-header:bottom">
+    <div class="c-nav-container">
+      <a class="c-dropdown-nav-icon js--dropdown-nav-icon"><i class="ion-md-menu"></i></a>
+      {% assign pages = site.pages | where:"language", page.language | sort: 'title' %}
+      <ul class="c-dropdown-nav js--dropdown-nav-menu">
+        {% for pageIt in pages %}
+          <div class="c-dropdown-nav-link">
+            <li class="c-dropdown-nav-link-current">
+              {% if pageIt.title == page.title %}
+                <i class="ion-md-arrow-dropright"></i>
+              {% endif %}
+              <a href="{{ pageIt.permalink | relative_url }}">{{ pageIt.title }}</a>
+            </li>
+          </div>
+        {% endfor %}
+      </ul>
+      <nav class="c-nav-page-sections" data-smooth-scroll-with-links data-animation-easing="swing" data-threshold="0"
+        data-animation-duration="1000">
+        <ul class="c-main-nav">
+          {% for section in site.data.sections[page.section] %}
+            {% assign section_id = site.data.lang[page.language].navigation[{{section.id}}] %}
+            {% assign section_title = site.data.lang[page.language].navigation[{{section.title}}] %}
 
-      <li>
-        <a href="{{ link_url }}">
-          {{link_title | escape}}
-        </a>
-          {% if item.dropdown %}
-            <ul class="menu vertical" data-smooth-scroll-with-links data-offset="100" data-animation-easing="swing">
-              {% for dropdown_item in item.dropdown %}
-                {% assign dropdown_title = site.data.lang[page.language].navigation[{{dropdown_item.title}}] %}
-                {% assign dropdown_nav_url = site.data.lang[page.language].navigation[{{dropdown_item.url}}] %}
-
-                {% comment %} if url is a section or an external link {% endcomment %}
-                {% if dropdown_nav_url contains 'http' or dropdown_nav_url contains 'https' %}
-                  {% capture dropdown_link_url %}{{ dropdown_nav_url }}{% endcapture %}
-                {% else %}
-                  {% capture dropdown_link_url %}{{ site.baseurl }}/{{ page.language }}/{{ nav_url }}/{{ dropdown_nav_url
-                  }}{% endcapture %}
-                {% endif %}
-
-                <li>
-                  <a href="{{ dropdown_link_url }}">
-                    {{dropdown_title | escape}}
-                  </a>
-                </li>
-              {% endfor %}
-            </ul>
-          {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-</nav>
+            <li class="c-main-nav-link"><a href="#{{ section_id }}">{{ section_title }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <img src="{{ site.logo | relative_url }}" alt="NYCMM Logo" class="c-nav-logo">
+      <img src="{{ site.logo_sticky | relative_url }}" alt="NYCMM Logo" class="c-nav-logo-sticky">
+    </div>
+  </div>
+</div>

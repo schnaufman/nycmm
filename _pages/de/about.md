@@ -2,7 +2,7 @@
 permalink: /
 language: de
 layout: sections_default 
-title:  Übersicht
+title:  Über uns
 section: about
 ref: about
 ---
