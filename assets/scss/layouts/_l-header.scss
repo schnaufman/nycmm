@@ -22,7 +22,6 @@ header {
     .c-header-button {
       color: $white;
       font-size: map-get(map-get(map-get($header-styles, medium), h5), "font-size") + unquote("px");
-      margin: 0 10px;
 
       &:hover,
       &:active {
@@ -239,6 +238,11 @@ header {
     top: 50%;
     left: 50%;
     transform: translateX(-50%);
+
+    .c-header-button {
+      width: 200px;
+      margin: 0 10px 0 0;
+    }
   }
   .c-nav-page-sections {
     .c-main-nav {
@@ -253,20 +257,22 @@ header {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .c-header-video {
-    display: none;
-  }
   .c-header-content {
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translateX(-50%);
+
+    .c-header-button {
+      width: 200px;
+      margin: 0 10px 10px 0;
+    }
+  }
+  .c-nav-logo {
+    display: none;
   }
   .c-nav-page-sections {
     text-align: center;
     .c-main-nav {
-      display: none;
-    }
-    .c-nav-logo {
       display: none;
     }
     .c-main-nav-link {

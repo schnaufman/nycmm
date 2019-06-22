@@ -29,8 +29,8 @@ class LeafletApi {
 
     // element present
     if ($leaflet.length > 0) {
-      console.debug('LeafletApi: Found \'#' + this.elementId + '\' element in document.');
-      console.debug('LeafletApi: initializing...');
+      // console.debug('LeafletApi: Found \'#' + this.elementId + '\' element in document.');
+      // console.debug('LeafletApi: initializing...');
       // eslint-disable-next-line no-undef
       leafletClient = new L.Map($leaflet.get(0), { attributionControl: false });
 
@@ -38,6 +38,7 @@ class LeafletApi {
       const $lat = $leaflet.attr('lat');
       const $zoom = $leaflet.attr('zoom');
       const $popup = $leaflet.attr('popup');
+      const $centerToMarker = $leaflet.attr('center-to-marker');
 
       if (!$lng || !$lat || !$zoom) {
         console.error('LeafletApi: Please set lat,lng,zoom attribute on \'#' + this.elementId + '\' element in document.');
@@ -54,9 +55,9 @@ class LeafletApi {
       {z} — zoom level
       {x} and {y} — tile coordinates.
       {r} can be used to add "@2x" to the URL to load retina tiles.*/
-      console.debug('LeafletApi: Creating tile layers for map...');
+      // console.debug('LeafletApi: Creating tile layers for map...');
       const osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-      const osm = new L.TileLayer(osmUrl, { minZoom: 8, maxZoom: 18, detectRetina: true });
+      const osm = new L.TileLayer(osmUrl, { minZoom: 8, maxZoom: 19, detectRetina: true });
 
       // setup view, layer
       leafletClient.setView(latlng, $zoom);
@@ -74,13 +75,16 @@ class LeafletApi {
 
       if ($latMarker && $lngMarker) {
         // create marker on current location
-        console.debug('LeafletApi: Creating marker...');
+        // console.debug('LeafletApi: Creating marker...');
         const latlngMarker = new L.latLng($latMarker, $lngMarker);
+        if ($centerToMarker === 'true') {
+          leafletClient.setView(latlngMarker, $zoom);
+        }
+
         const marker = new L.marker(latlngMarker)
           .addTo(leafletClient);
-
         if ($popup) {
-          console.debug(`LeafletApi: Creating popup '${$popup}'`);
+          // console.debug(`LeafletApi: Creating popup '${$popup}'`);
           marker.bindPopup($popup).openPopup();
         }
       }

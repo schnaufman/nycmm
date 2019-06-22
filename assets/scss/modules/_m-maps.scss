@@ -7,3 +7,19 @@
   width: 100%;
   height: $map-height-large;
 }
+
+
+/***************************************/
+/*           Map Queries               */
+/***************************************/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #leafletMap {
+    height: $map-height-small;
+  }
+
+  #gmapsMap {
+    height: $map-height-small;
+  }
+}

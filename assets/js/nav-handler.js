@@ -38,7 +38,6 @@ class NavHandler {
   }
 
   _handleDropDownClick() {
-    console.debug('Clicked menu');
     const $dropDownNavMenu = $('.' + this.dropDownMenuElClass);
     const $icon = $('.' + this.dropDownMenuIconElClass + ' i');
 
