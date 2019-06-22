@@ -88,6 +88,7 @@ header {
   float: right;
   display: none;
   padding-right: 60px;
+  padding-top: 5px;
 }
 
 /************************************/
@@ -104,15 +105,18 @@ header {
   .c-dropdown-nav-icon {
     color: $black;
   }
+
   .c-nav-logo {
     display: none;
   }
+
   .c-nav-logo-sticky {
     display: inline-block;
   }
 
   .c-nav-container {
     margin-top: 0;
+    margin-bottom: 2px;
   }
 
   .c-nav-page-sections {
