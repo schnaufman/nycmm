@@ -77,12 +77,13 @@ class LeafletApi {
         // create marker on current location
         // console.debug('LeafletApi: Creating marker...');
         const latlngMarker = new L.latLng($latMarker, $lngMarker);
+        const marker = new L.marker(latlngMarker).addTo(leafletClient);
+
         if ($centerToMarker === 'true') {
-          leafletClient.setView(latlngMarker, $zoom);
+          const markerBounds = L.latLngBounds([marker.getLatLng()]);
+          leafletClient.fitBounds(markerBounds);
         }
 
-        const marker = new L.marker(latlngMarker)
-          .addTo(leafletClient);
         if ($popup) {
           // console.debug(`LeafletApi: Creating popup '${$popup}'`);
           marker.bindPopup($popup).openPopup();

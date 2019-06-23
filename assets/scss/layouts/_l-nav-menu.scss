@@ -1,0 +1,227 @@
+/***************************************/
+/*            Navigation               */
+/***************************************/
+.c-main-nav-link {
+  list-style: none;
+  a {
+    &:link,
+    &:visited {
+      color: $white;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-bottom: 2px solid transparent;
+      -webkit-transition: border-bottom 0.2s;
+      -moz-transition: border-bottom 0.2s;
+      -o-transition: border-bottom 0.2s;
+      transition: border-bottom 0.2s;
+      padding: 8px 0;
+    }
+
+    &:hover,
+    &:active {
+      border-bottom: 2px solid $site-header-nav-link-hover-color;
+    }
+  }
+}
+
+.c-nav-container {
+  margin-top: 60px;
+}
+
+.c-nav-logo {
+  float: right;
+  padding-right: 60px;
+  margin-top: -10px;
+}
+
+// hide logo in the sticky menu per default
+.c-nav-logo-sticky {
+  float: right;
+  display: none;
+  padding-right: 60px;
+  padding-top: 5px;
+}
+
+/************************************/
+/*        Sticky Navigation         */
+/************************************/
+.sticky-container {
+  z-index: 20;
+}
+
+.is-stuck {
+  background-color: rgba($white, 0.9);
+  box-shadow: 0 2px 2px $light-gray;
+
+  .c-dropdown-nav-icon {
+    color: $black;
+  }
+
+  .c-nav-logo {
+    display: none;
+  }
+
+  .c-nav-logo-sticky {
+    display: inline-block;
+  }
+
+  .c-nav-container {
+    margin-top: 0;
+    margin-bottom: 2px;
+  }
+
+  .c-nav-page-sections {
+    margin: 0;
+
+    .c-main-nav {
+      margin: 0;
+      .c-main-nav-link a {
+        &:link,
+        &:visited {
+          color: $black;
+        }
+      }
+    }
+  }
+}
+
+/************************************/
+/*        Dropdown  Navigation      */
+/************************************/
+.c-dropdown-nav {
+  display: none;
+  position: absolute;
+  background-color: rgba($light-gray, 0.9);
+  box-shadow: 0 2px 2px $medium-gray;
+  // get font-size from header h5 sizes
+  font-size: map-get(map-get(map-get($header-styles, medium), h5), "font-size") + unquote("px");
+  padding: 20px 20px 0 20px;
+  margin: 4px 0 0 60px;
+  border-radius: $global-radius;
+  overflow: auto;
+  max-height: 500px;
+}
+
+.c-dropdown-nav-link {
+  display: block;
+  list-style: none;
+  margin-bottom: 10px;
+
+  a {
+    display: inline-block;
+
+    &:link,
+    &:visited {
+      color: $black;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-bottom: 2px solid transparent;
+      -webkit-transition: border-bottom 0.2s;
+      -moz-transition: border-bottom 0.2s;
+      -o-transition: border-bottom 0.2s;
+      transition: border-bottom 0.2s;
+    }
+
+    &:hover,
+    &:active {
+      border-bottom: 2px solid $site-header-nav-link-hover-color;
+    }
+  }
+
+  .c-dropdown-nav-link-current {
+    &:link,
+    &:visited {
+      color: $dark-gray;
+      text-decoration: none;
+    }
+  }
+
+  .c-dropdown-section-nav-link {
+    display: none;
+    margin-left: 10px;
+    font-size: map-get(map-get(map-get($header-styles, medium), h6), "font-size") + unquote("px");
+  }
+}
+
+.c-dropdown-nav-icon {
+  display: inline-block;
+  // get font-size from header h5 sizes
+  font-size: map-get(map-get(map-get($header-styles, medium), h3), "font-size") + unquote("px");
+  cursor: pointer;
+  color: $white;
+  width: 30px;
+  margin-left: 60px;
+
+  &:hover,
+  &:active {
+    color: $primary-color;
+  }
+
+  &:link,
+  &:visited {
+    color: $white;
+    text-decoration: none;
+  }
+
+  i {
+    width: 30px;
+    vertical-align: middle;
+  }
+}
+
+/***************************/
+/*    Section Navigation   */
+/***************************/
+.c-nav-page-sections {
+  display: inline-block;
+  // get font-size from header h5 sizes
+  font-size: map-get(map-get(map-get($header-styles, medium), h5), "font-size") + unquote("px");
+  margin: 0;
+
+  .c-main-nav {
+    display: inline-block;
+    margin: 0;
+
+    .c-main-nav-link {
+      margin-left: 40px;
+      display: inline-block;
+    }
+  }
+}
+
+/***************************************/
+/*       Navigation Queries            */
+/***************************************/
+@media only screen and (max-width: 64em) {
+  .c-nav-logo {
+    display: none;
+  }
+
+  .is-stuck {
+    .c-nav-logo-sticky {
+      display: none;
+    }
+  }
+
+  .c-nav-page-sections {
+    .c-main-nav {
+      .c-main-nav-link {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .c-dropdown-nav-link {
+    .c-dropdown-section-nav-link {
+      display: block;
+    }
+  }
+
+  .c-nav-page-sections {
+    .c-main-nav {
+      display: none;
+    }
+  }
+}

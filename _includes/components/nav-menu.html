@@ -1,6 +1,6 @@
 {% strip %}
 <div data-sticky-container>
-  <div class="sticky" data-margin-top="0" data-sticky data-top-anchor="site-header:bottom">
+  <div class="sticky" data-margin-top="0" data-sticky data-sticky-on="small">
     <div class="c-nav-container">
       <a class="c-dropdown-nav-icon js--dropdown-nav-icon"><i class="ion-md-menu"></i></a>
       {% assign pages = site.pages | where:"language", page.language | sort: 'order' %}
@@ -11,8 +11,13 @@
           {% else %}
             {% assign link_class = '' %}
           {% endif %}
-          <div class="c-dropdown-nav-link">
+          <div class="c-dropdown-nav-link" data-smooth-scroll-with-links data-animation-easing="swing" data-threshold="0" data-animation-duration="1000">
             <li><a class="{{ link_class }}" href="{{ pageIt.permalink | relative_url }}">{{ pageIt.title }}</a></li>
+            {% for section in site.data.sections[pageIt.section] %}
+              {% assign section_id = site.data.lang[pageIt.language].navigation[{{section.id}}] %}
+              {% assign section_title = site.data.lang[pageIt.language].navigation[{{section.title}}] %}
+              <li class="c-dropdown-section-nav-link"><a href="{{ pageIt.permalink | relative_url }}#{{ section_id }}">{{ section_title }}</a></li>
+            {% endfor %}
           </div>
         {% endfor %}
       </ul>

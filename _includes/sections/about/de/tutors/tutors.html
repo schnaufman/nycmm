@@ -3,7 +3,7 @@
 
 <div class="grid-x">
   {% for tutor in section_data.tutors %}
-    <div class="large-3 small-6 cell">
+    <div class="large-3 medium-6 small-6 cell">
       <figure class="c-section-tutor">
         {% capture tutor_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section_data.folder }}/{{ tutor.description }} %}{% endcapture %}
         <div class="c-section-tutor-description">

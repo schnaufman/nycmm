@@ -97,7 +97,6 @@
   }
 
   input[type="submit"] {
-    width: 30%;
     padding: 7px;
     border-radius: $global-radius;
     border: 1px solid #ccc;
@@ -125,7 +124,7 @@
 
   h3 {
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 5px;
   }
 }
 
@@ -133,19 +132,27 @@
 /*      About Section Queries          */
 /***************************************/
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .c-section-howitworks-step-count {
-    h3 {
-      margin-top: 0.45em;
-    }
+@media only screen and (max-width: 74.9375em) {
+  .c-section-contact-form-box {
+    height: $map-height-medium;
   }
+}
 
+@media only screen and (max-width: 63.9375em) {
   .c-section-contact-form-box {
     position: relative;
     width: 100%;
     z-index: 0;
-    height: auto;
     padding-bottom: 20px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 39.9375em) {
+
+  .c-section-howitworks-step-count {
+    h3 {
+      margin-top: 0.45em;
+    }
   }
 }

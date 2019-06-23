@@ -13,8 +13,17 @@
 /*           Map Queries               */
 /***************************************/
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 74.9375em) {
+  #leafletMap {
+    height: $map-height-medium;
+  }
+
+  #gmapsMap {
+    height: $map-height-medium;
+  }
+}
+
+@media only screen and (max-width: 63.9375em) {
   #leafletMap {
     height: $map-height-small;
   }
