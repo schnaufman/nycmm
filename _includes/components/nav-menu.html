@@ -1,6 +1,6 @@
 {% strip %}
 <div data-sticky-container>
-  <div class="sticky" data-margin-top="0" data-sticky data-sticky-on="small">
+  <div class="sticky" data-margin-top="0" data-sticky data-sticky-on="small" data-top-anchor="site-header:bottom">
     <div class="c-nav-container">
       <a class="c-dropdown-nav-icon js--dropdown-nav-icon"><i class="ion-md-menu"></i></a>
       {% assign pages = site.pages | where:"language", page.language | sort: 'order' %}
