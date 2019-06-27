@@ -46,6 +46,8 @@
 /*        Sticky Navigation         */
 /************************************/
 
+// this is necessary for mobile devices to
+// keep sticky nav on top
 .sticky.is-stuck {
   z-index: 20;
 }
