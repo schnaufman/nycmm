@@ -211,6 +211,10 @@
       }
     }
   }
+  // workaround for sticky navigation header on mobile
+  .sticky-container {
+    height: auto !important;
+  }
 }
 
 @media only screen and (max-width: 40em) {
