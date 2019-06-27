@@ -12,5 +12,10 @@
         <img src="/assets/img/tutors/{{ tutor.image }}" alt="{{ tutor.image-title }}" title="{{ tutor.image-title }}">
       </figure>
     </div>
+    <div class="c-section-tutor-description-mobile-grid">
+        <div class="c-section-tutor-description-mobile">
+          {{ tutor_description | markdownify }}
+        </div>
+    </div>
   {% endfor %}
 </div>

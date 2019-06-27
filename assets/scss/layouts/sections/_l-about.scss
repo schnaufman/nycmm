@@ -24,12 +24,13 @@
     opacity: 1;
     width: 100%;
     height: auto;
-    transform: scale(1);
+    transform: none;
     z-index: 1;
   }
 
   &:hover {
     .c-section-tutor-description {
+      margin-top: 10px;
       opacity: 1;
       transition: opacity 0.5s;
       z-index: 2;
@@ -40,6 +41,17 @@
       transform: scale(1.2);
       transition: transform 0.5s, opacity 0.5s;
     }
+  }
+}
+
+.c-section-tutor-description-mobile-grid {
+  display: none;
+
+  .c-section-tutor-description-mobile {
+    display: none;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -131,13 +143,14 @@
 /***************************************/
 /*      About Section Queries          */
 /***************************************/
-
+/* up to large */
 @media only screen and (max-width: 74.9375em) {
   .c-section-contact-form-box {
     height: $map-height-medium;
   }
 }
 
+/* up to medium */
 @media only screen and (max-width: 63.9375em) {
   .c-section-contact-form-box {
     position: relative;
@@ -146,10 +159,44 @@
     padding-bottom: 20px;
     height: auto;
   }
+
+  .c-section-tutor {
+    .c-section-tutor-description {
+      display: none;
+    }
+
+    img {
+      transform: none;
+    }
+
+    &:hover {
+      img {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+    }
+  }
+
+  .c-section-tutor-description-mobile-grid {
+    display: inline-block;
+
+    @include breakpoint(medium) {
+      @include xy-cell(6);
+    }
+
+    @include breakpoint(small) {
+      @include xy-cell(6);
+    }
+
+    .c-section-tutor-description-mobile {
+      display: inline-block;
+    }
+  }
 }
 
+/* up to small */
 @media only screen and (max-width: 39.9375em) {
-
   .c-section-howitworks-step-count {
     h3 {
       margin-top: 0.45em;
