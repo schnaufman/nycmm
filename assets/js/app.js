@@ -13,17 +13,23 @@ import { MobileHelper } from './mobile-helper';
 // --------------------------------------------------
 Foundation.plugin(SmoothScrollWithLinks, 'SmoothScrollWithLinks');
 
-//
-// Initialize Foundation after document ready
-// --------------------------------------------------
-$(document).foundation();
-
 // initialize custom apis and mobile navigation
 $(function () {
-  MobileHelper.centerLeafletMapMarkerOnMobile('leafletMap');
+  // cache jQuery object for window.document
+  var $document = $(document);
 
-  new LeafletApi('leafletMap');
-  new NavHandler('js--dropdown-nav-menu', 'js--dropdown-nav-icon');
+  // init foundation js
+  $document.foundation();
 
-  MobileHelper.disableVideoAutoplayOnMobile();
+  // other stuff
+  $document.ready(function () {
+    MobileHelper.centerLeafletMapMarkerOnMobile('leafletMap');
+
+    new LeafletApi('leafletMap');
+    new NavHandler('js--dropdown-nav-menu', 'js--dropdown-nav-icon');
+
+    MobileHelper.disableVideoAutoplayOnMobile();
+
+  });
+
 });
