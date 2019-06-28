@@ -39,8 +39,7 @@ let webpackConfig = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env'],
-            compact: false
+            presets: ['@babel/preset-env']
           }
         }
       }
