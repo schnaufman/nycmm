@@ -48,8 +48,12 @@
 
 // this is necessary for mobile devices to
 // keep sticky nav on top
+.sticky {
+  z-index: 50;
+}
+
 .sticky.is-stuck {
-  z-index: 20;
+  z-index: 50;
 }
 
 .is-stuck {
@@ -103,7 +107,7 @@
   border-radius: $global-radius;
   overflow: auto;
   max-height: 500px;
-  z-index: 20;
+  z-index: 50;
 }
 
 .c-dropdown-nav-link {
