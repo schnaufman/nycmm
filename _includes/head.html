@@ -34,6 +34,7 @@
   {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include components/google-analytics.html %}
   {% endif %}
+  <script defer src="{{ "/assets/js/bundle.js" | relative_url }}" type="application/javascript"></script>
 
 </head>
 
