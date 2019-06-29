@@ -1,7 +1,7 @@
 {% assign section_data = site.data.sections[page.section] | where: "id", "contact_id" | first %}
 
 <div class="c-section-contact-form-map-box">
-  <div id="leafletMap"
+  <div id="gmapsMap"
     lat="{{ section_data.maps.coordinates.lat }}"
     lng="{{ section_data.maps.coordinates.lng }}"
     lat-marker="{{ section_data.maps.marker.coordinates.lat }}"

@@ -23,14 +23,14 @@ class MobileHelper {
 
   /**
    * if window width is smaller than 992 center map to marker
-   * @param {String} leafletMapId DOM element ID of the leaflet map
+   * @param {String} mapElementId DOM element ID of the map
    */
-  static centerLeafletMapMarkerOnMobile(leafletMapId) {
+  static centerMapMarkerOnMobile(mapElementId) {
     let screenWidth = $(window).width();
     if (screenWidth < 992) {
-      let $leafletMap = $('#' + leafletMapId);
-      if ($leafletMap.length > 0) {
-        $leafletMap.attr('center-to-marker', 'true');
+      const $map = $('#' + mapElementId);
+      if ($map.length > 0) {
+        $map.attr('center-to-marker', 'true');
       }
     }
   }

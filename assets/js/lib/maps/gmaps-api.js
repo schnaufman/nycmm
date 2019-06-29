@@ -24,7 +24,7 @@ class GMapsApi {
     this.gMapsInitPromise = new Promise(
       // the executor function is called with the ability to resolve or reject the promise
       (resolve, reject) => {
-        console.debug('GMapsApi: Started promise for initialization');
+        // console.debug('GMapsApi: Started promise for initialization');
         window.gMapsCallback = function () {
           resolve('Callback promise fulfilled.');
         }
@@ -38,8 +38,8 @@ class GMapsApi {
       }
     );
 
-    this.gMapsInitPromise.then(value => {
-      console.debug('GMapsApi: ' + value);
+    this.gMapsInitPromise.then(() => {
+      // console.debug('GMapsApi: ' + value);
 
       this._initialize();
     }).catch(reason => {
@@ -56,16 +56,87 @@ class GMapsApi {
 
     // element present
     if ($gmaps.length > 0) {
-      console.debug('GMapsApi: Found \'#' + this.elementId + '\' element in document.');
-      console.debug('GMapsApi: initializing...');
+      // console.debug('GMapsApi: Found \'#' + this.elementId + '\' element in document.');
+      // console.debug('GMapsApi: initializing...');
+
+      const $lng = $gmaps.attr('lng');
+      const $lat = $gmaps.attr('lat');
+      const $zoom = $gmaps.attr('zoom');
+
+      if (!$lng || !$lat || !$zoom) {
+        console.error('GmapsApi: Please set lat,lng,zoom attribute on \'#' + this.elementId + '\' element in document.');
+        return null;
+      }
 
       // eslint-disable-next-line no-undef
-      gMapsClient = new google.maps.Map($gmaps.get(0), this.gMapsOptions);
+      gMapsClient = new google.maps.Map($gmaps.get(0), {
+        zoom: Number($zoom),
+        center: {
+          lat: Number($lat),
+          lng: Number($lng)
+        },
+        mapTypeControl: true,
+        mapTypeControlOptions: {
+            // eslint-disable-next-line no-undef
+            style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+            // eslint-disable-next-line no-undef
+            position: google.maps.ControlPosition.LEFT_TOP
+        },
+        zoomControl: true,
+        zoomControlOptions: {
+            // eslint-disable-next-line no-undef
+            position: google.maps.ControlPosition.LEFT_BOTTOM
+        },
+        scaleControl: false,
+        streetViewControl: false,
+        fullscreenControl: true,
+        fullscreenControlOptions: {
+            // eslint-disable-next-line no-undef
+            position: google.maps.ControlPosition.LEFT_BOTTOM
+        },
+      });
 
-      console.debug('GmapsApi: Element \'#' + this.elementId + '\' successfully initialized');
+      // create optional marker
+      const $lngMarker = $gmaps.attr('lng-marker');
+      const $latMarker = $gmaps.attr('lat-marker');
+      const $popup = $gmaps.attr('popup');
+      const $centerToMarker = $gmaps.attr('center-to-marker');
+
+      if ($latMarker && $lngMarker) {
+        // eslint-disable-next-line no-undef
+        const marker = new google.maps.Marker({
+          position: {
+            lat: Number($latMarker),
+            lng: Number($lngMarker)
+          },
+          title: 'NYCMM'
+        });
+
+        // eslint-disable-next-line no-undef
+        const infowindow = new google.maps.InfoWindow({
+          content: $popup
+        });
+
+        infowindow.open(gMapsClient, marker);
+
+        marker.addListener('click', function() {
+          infowindow.open(gMapsClient, marker);
+        });
+
+        marker.setMap(gMapsClient);
+
+        if ($centerToMarker === 'true') {
+          const latLng = marker.getPosition(); // returns LatLng object
+          gMapsClient.setCenter(latLng); // setCenter takes a LatLng object
+        }
+      }
+
+      // console.debug('GmapsApi: Element \'#' + this.elementId + '\' successfully initialized');
     } else {
       console.error('GmapsApi: Element \'#' + this.elementId + '\' couldn\'t be found in document.');
+      return null;
     }
+
     return gMapsClient;
   }
 
@@ -74,14 +145,14 @@ class GMapsApi {
    * see https://developers.google.com/maps/documentation/javascript/adding-a-google-map
    */
   _addGMapsApiDomContent() {
-    console.debug('GMapsApi: adding dom content.');
+    // console.debug('GMapsApi: adding dom content.');
 
     // get language element from html
     let lang = $('html').attr('lang');
     if (!lang) {
       lang = 'en';
     }
-    console.debug('GMapsApi: selected language: \'' + lang + '\'');
+    // console.debug('GMapsApi: selected language: \'' + lang + '\'');
 
     // create script element
     const domScript = document.createElement('script');
