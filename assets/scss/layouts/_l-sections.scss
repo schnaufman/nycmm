@@ -24,3 +24,10 @@
   margin: auto;
   margin-bottom: 10px;
 }
+
+/* up to small */
+@media only screen and (max-width: 39.9375em) {
+  .c-section {
+    padding: 20px 0;
+  }
+}
