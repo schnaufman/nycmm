@@ -21,8 +21,6 @@ copy:
     - "!assets/css{,/**}"            # css dir
     - "!assets/js{,/**}"             # js dir
     - "!assets/scss{,/**}"           # scss dir
-    - "!assets/vendors/leaflet/*.map" # leaflet src maps
-    - "!assets/vendors/leaflet/*.js" # leaflet javascript files
   dist: "_site/assets/"
   notification: "Running Copy"
 
