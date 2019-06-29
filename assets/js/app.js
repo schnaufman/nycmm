@@ -14,11 +14,11 @@ import { GMapsApi } from './lib/maps/gmaps-api';
 // --------------------------------------------------
 Foundation.plugin(SmoothScrollWithLinks, 'SmoothScrollWithLinks');
 
-// init foundation js
-$(document).foundation();
-
 // initialize custom apis and mobile navigation
 $(function () {
+  // init foundation js
+  $(document).foundation();
+
   MobileHelper.centerMapMarkerOnMobile('gmapsMap');
 
   new GMapsApi('${NYCMM_ENV_GMAPS_API_KEY}', 'gmapsMap');
