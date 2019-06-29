@@ -75,7 +75,7 @@ class GMapsApi {
           lat: Number($lat),
           lng: Number($lng)
         },
-        mapTypeControl: true,
+        mapTypeControl: false,
         mapTypeControlOptions: {
             // eslint-disable-next-line no-undef
             style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
