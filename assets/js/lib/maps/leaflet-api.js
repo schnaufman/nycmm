@@ -1,6 +1,14 @@
 'use strict';
 import $ from 'jquery';
-import L from '../../../vendors/leaflet/leaflet';
+import { createMap } from 'leaflet/src/map/Map';
+import { toLatLng } from 'leaflet/src/geo/LatLng';
+import { toLatLngBounds } from 'leaflet/src/geo/LatLngBounds';
+import { tileLayer } from 'leaflet/src/layer/tile/TileLayer';
+import { attribution } from 'leaflet/src/control/Control.Attribution';
+import { marker } from 'leaflet/src/layer/marker/Marker';
+// !!! necessary due to bindpopup function !!!
+//eslint-disable-next-line no-unused-vars
+import { popup } from 'leaflet/src/layer/Popup';
 
 /**
  * encapsulation for leaflet maps api access
@@ -32,7 +40,7 @@ class LeafletApi {
       // console.debug('LeafletApi: Found \'#' + this.elementId + '\' element in document.');
       // console.debug('LeafletApi: initializing...');
       // eslint-disable-next-line no-undef
-      leafletClient = new L.Map($leaflet.get(0), { attributionControl: false });
+      leafletClient = createMap($leaflet.get(0), { attributionControl: false });
 
       const $lng = $leaflet.attr('lng');
       const $lat = $leaflet.attr('lat');
@@ -46,7 +54,7 @@ class LeafletApi {
       }
 
       // eslint-disable-next-line no-undef
-      const latlng = new L.latLng($lat, $lng);
+      const latlng = toLatLng($lat, $lng);
 
       /* create tile layer
       {s} means one of the available subdomains
@@ -57,7 +65,7 @@ class LeafletApi {
       {r} can be used to add "@2x" to the URL to load retina tiles.*/
       // console.debug('LeafletApi: Creating tile layers for map...');
       const osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-      const osm = new L.TileLayer(osmUrl, { minZoom: 8, maxZoom: 19, detectRetina: true });
+      const osm = tileLayer(osmUrl, { minZoom: 8, maxZoom: 19, detectRetina: true });
 
       // setup view, layer
       leafletClient.setView(latlng, $zoom);
@@ -65,7 +73,7 @@ class LeafletApi {
 
       // add attribution control where users can access openstreetmap within map
       const osmAttrib = `Map data © <a href="https://openstreetmap.org/#map=${$zoom}/${$lat}/${$lng}">OpenStreetMap</a> contributors`;
-      const attributionCtrl = L.control.attribution({ prefix: false, position: 'bottomleft' });
+      const attributionCtrl = attribution({ prefix: false, position: 'bottomleft' });
       attributionCtrl.addAttribution(osmAttrib);
       leafletClient.addControl(attributionCtrl);
 
@@ -76,17 +84,17 @@ class LeafletApi {
       if ($latMarker && $lngMarker) {
         // create marker on current location
         // console.debug('LeafletApi: Creating marker...');
-        const latlngMarker = new L.latLng($latMarker, $lngMarker);
-        const marker = new L.marker(latlngMarker).addTo(leafletClient);
+        const latlngMarker = toLatLng($latMarker, $lngMarker);
+        const mapMarker = marker(latlngMarker).addTo(leafletClient);
 
         if ($centerToMarker === 'true') {
-          const markerBounds = L.latLngBounds([marker.getLatLng()]);
+          const markerBounds = toLatLngBounds([mapMarker.getLatLng()]);
           leafletClient.fitBounds(markerBounds);
         }
 
         if ($popup) {
           // console.debug(`LeafletApi: Creating popup '${$popup}'`);
-          marker.bindPopup($popup).openPopup();
+          mapMarker.bindPopup($popup).openPopup();
         }
       }
 
