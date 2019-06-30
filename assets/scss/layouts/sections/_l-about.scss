@@ -80,7 +80,7 @@
   width: 100%;
   padding-bottom: 20px;
 
-  #leafletMap {
+  #leafletMap, #gmapsMap{
     clear: both;
     z-index: 0;
   }
@@ -95,7 +95,7 @@
   }
 
   textarea {
-    height: 150px;
+    height: 120px;
     resize: none;
   }
 
@@ -103,7 +103,7 @@
     margin-bottom: 7px;
 
     > input[type="checkbox"] {
-      margin: 4px;
+      margin: 5px;
       vertical-align: bottom;
     }
   }
@@ -136,7 +136,7 @@
 
   h3 {
     text-align: center;
-    padding: 20px 5px;
+    padding: 20px 5px 0 5px;
   }
 }
 
