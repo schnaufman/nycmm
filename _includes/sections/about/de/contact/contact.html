@@ -15,17 +15,17 @@
     <form id="aboutContactFormNetlify" method="POST" netlify-honeypot="bot-field" data-netlify="true" accept-charset="utf-8" class="c-section-contact-form">
       <div class="grid-x grid-padding-x">
         <div class="large-12 medium-12 small-12 cell">
-          <label>Name:<br><input type="text" name="name" id="name" placeholder="Dein Name" required></label>
+          <label>Name:<br><input type="text" name="name" placeholder="Dein Name" required></label>
         </div>
       </div>
       <div class="grid-x grid-padding-x">
         <div class="large-12 medium-12 small-12 cell">
-          <label>Email:<br><input type="email" name="email" id="email" placeholder="Deine Email" required></label>
+          <label>Email:<br><input type="email" name="email" placeholder="Deine Email" required></label>
         </div>
       </div>
       <div class="grid-x grid-padding-x">
         <div class="large-12 medium-12 small-12 cell">
-          <label>Wie hast du uns gefunden?<br><select name="foundUs" id="foundUs">
+          <label>Wie hast du uns gefunden?<br><select name="foundUs">
               <option value="friends" selected>Freunde</option>
               <option value="search">Suchmaschine</option>
               <option value="ad">Werbung</option>
@@ -36,7 +36,9 @@
       </div>
       <div class="grid-x grid-padding-x">
         <div class="large-12 medium-12 small-12 cell" >
-          <label for="news">Newsletter? <input type="checkbox" name="news" id="news" checked> Ja, bitte</label>
+          <label for="newsletter">Newsletter?<input type="hidden" name="newsletter" value="no" />
+            <input type="checkbox" name="newsletter" value="yes" checked>
+          </label>
         </div>
       </div>
       <div class="grid-x grid-padding-x">
@@ -48,7 +50,7 @@
       <input type="hidden" name="subject" value="NYCMM Webseiten Kontaktnachricht" />
       <div class="grid-x grid-padding-x">
         <div class="large-12 medium-12 small-12 cell">
-          <label><input type="submit" value="Abschicken"></label>
+          <label><input type="submit" name="submit" value="Abschicken"></label>
         </div>
       </div>
     </form>
