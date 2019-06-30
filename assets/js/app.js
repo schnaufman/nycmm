@@ -26,9 +26,10 @@ $(function () {
 
   SiteHelper.disableVideoAutoplayOnMobile();
 
-  const contactMailParts = '${NYCMM_ENV_CONTACT_MAIL}'.split('@');
-  const mailAdress = contactMailParts[0];
-  const mailDomain = contactMailParts[1];
+  // when using formspree
+  // const contactMailParts = '${NYCMM_ENV_CONTACT_MAIL}'.split('@');
+  // const mailAdress = contactMailParts[0];
+  // const mailDomain = contactMailParts[1];
 
-  SiteHelper.setFormSpreeContactFormAction('formSpreeContactForm', mailAdress, mailDomain);
+  // SiteHelper.setFormSpreeContactFormAction('formSpreeContactForm', mailAdress, mailDomain);
 });

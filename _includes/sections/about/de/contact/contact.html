@@ -12,7 +12,7 @@
 
   <div class="c-section-contact-form-box">
     <h3>Möchtest du mit uns in Kontakt treten?</h3>
-    <form id="formSpreeContactForm" method="POST" accept-charset="utf-8" class="c-section-contact-form">
+    <form id="contactForm" method="POST" data-netlify="true" accept-charset="utf-8" class="c-section-contact-form">
       <div class="grid-x grid-padding-x">
         <div class="large-3 medium-4 small-3 cell">
           <label for="name">Name</label>
@@ -61,7 +61,8 @@
           <textarea name="message" placeholder="Deine Nachricht"></textarea>
         </div>
       </div>
-      <input type="hidden" name="_subject" value="NYCMM Webseiten Kontaktnachricht" />
+      <input name="bot-field" style="display: none"/>
+      <input type="hidden" name="subject" value="NYCMM Webseiten Kontaktnachricht" />
       <input type="hidden" name="_language" value="{{ page.language }}" />
       <div class="grid-x grid-padding-x">
         <div class="large-3 medium-4 small-3 cell">

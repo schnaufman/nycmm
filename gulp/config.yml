@@ -4,7 +4,7 @@ browsersync:
   port:   3000
   server:
     basedir: "_site/"
-  xip:    true
+  xip:    false
 
 clean:
   # The jekyll build dir
