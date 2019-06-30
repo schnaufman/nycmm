@@ -11,7 +11,7 @@ header {
   .c-header-content {
     position: absolute;
     text-align: center;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translateX(-50%);
 
@@ -58,12 +58,11 @@ header {
 /***************************************/
 /*           Header Queries            */
 /***************************************/
+/* up to Large */
 @media only screen and (max-width: 64em) {
   header {
     .c-header-content {
       top: 30%;
-      left: 50%;
-      transform: translateX(-50%);
 
       .c-header-button {
         margin: 0 10px 10px 0;
