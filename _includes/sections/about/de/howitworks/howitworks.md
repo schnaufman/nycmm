@@ -1,1 +1,1 @@
-#### Wie's funktioniert &mdash; vom Ticketkauf bis zum Seminar:<br>Falls du nur zu unseren Konzerten kommen möchtest, kauf dir Konzertickets in unserem [Ticket](#Tickets) Bereich.<br>Wir freuen uns auf dich.
+#### So funktionierts &mdash; vom Ticketkauf bis zum Seminar:<br>

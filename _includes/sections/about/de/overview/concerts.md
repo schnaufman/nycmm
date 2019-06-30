@@ -1,1 +1,1 @@
-##### Das tägliche, vorabendliche Konzert bringt Auftritte von Bands, Newcomer und Dozentenensembles mit sich.<br>Außerdem gibts es am letztn Tag des Workshops ein spezielles Konzert für alle Ensembles die dort ihre erlenten Arrangements aufführen. 
+##### Die Konzerte werden von Bands, Newcomer und Dozentenensembles gestaltet. Am letzten Tag findet ein Abschlusskonzert aller Seminarteilnehmer statt.

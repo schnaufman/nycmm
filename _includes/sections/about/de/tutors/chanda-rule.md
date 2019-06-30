@@ -1,5 +1,5 @@
 ##### Chanda Rule 
 
-###### Instrument &ndash; Gesang
+###### Gesang
 
 <a target="_blank" rel="noopener noreferrer" href="https://www.chandarule.com/">Website</a>

@@ -173,7 +173,7 @@
 
   i {
     width: 30px;
-    padding-top: 5px;
+    padding-top: 14px;
     vertical-align: middle;
   }
 }
@@ -186,6 +186,8 @@
   // get font-size from header h5 sizes
   font-size: map-get(map-get(map-get($header-styles, medium), h5), "font-size") + unquote("px");
   margin: 0;
+  padding-top: 10px;
+  vertical-align: middle;
 
   .c-main-nav {
     display: inline-block;
@@ -201,7 +203,7 @@
 /***************************************/
 /*       Navigation Queries            */
 /***************************************/
-/* up to Large */
+/* up to Medium */
 @media only screen and (max-width: 64em) {
   .c-nav-logo {
     display: none;
@@ -212,8 +214,13 @@
       display: none;
     }
   }
-
+  .c-dropdown-nav-icon {
+    i {
+      padding-top: 9px;
+    }
+  }
   .c-nav-page-sections {
+    padding-top: 5px;
     .c-main-nav {
       .c-main-nav-link {
         margin-left: 20px;

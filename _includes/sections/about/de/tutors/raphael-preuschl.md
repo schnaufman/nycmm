@@ -1,3 +1,3 @@
 ##### Raphael Preuschl 
 
-###### Instrument &ndash; Bass
+###### Bass
