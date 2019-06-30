@@ -44,26 +44,23 @@
       </div>
       <div class="grid-x grid-padding-x">
         <div class="large-3 medium-4 small-3 cell">
-          <label>Newsletter?</label>
+          <label for="news">Newsletter?</label>
         </div>
         <div class="large-9 medium-8 small-9 cell">
-          <label for="news">
-            <input type="checkbox" name="news" id="news" checked>
-            Ja, bitte
-          </label>
+          <input type="checkbox" name="news" id="news" checked>
+          Ja, bitte
         </div>
       </div>
       <div class="grid-x grid-padding-x">
         <div class="large-3 medium-4 small-3 cell">
-          <label>Hinterlasse uns eine Nachricht</label>
+          <label for="message">Hinterlasse uns eine Nachricht</label>
         </div>
         <div class="large-9 medium-8 small-9 cell">
           <textarea name="message" placeholder="Deine Nachricht"></textarea>
         </div>
       </div>
-      <input name="bot-field" style="display: none"/>
+      <input type="hidden" name="bot-field"/>
       <input type="hidden" name="subject" value="NYCMM Webseiten Kontaktnachricht" />
-      <input type="hidden" name="_language" value="{{ page.language }}" />
       <div class="grid-x grid-padding-x">
         <div class="large-3 medium-4 small-3 cell">
           <label>&nbsp;</label>
