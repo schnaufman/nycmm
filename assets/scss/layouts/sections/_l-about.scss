@@ -99,9 +99,11 @@
     resize: none;
   }
 
-  label {
+  label[for="news"] {
+    margin-bottom: 7px;
+
     > input[type="checkbox"] {
-      margin: 6px;
+      margin: 5px;
       vertical-align: bottom;
     }
   }
