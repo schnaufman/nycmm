@@ -15,6 +15,7 @@ include:
 exclude:
   - "assets/js/lib/"
   - "assets/scss/"
+  - "assets/vendors/leaflet/" # DISABLE LEAFLET
   - "assets/js/app.js"
   - "composer.json"
   - "composer.lock"
