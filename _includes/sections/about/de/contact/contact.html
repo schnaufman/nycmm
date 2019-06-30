@@ -14,41 +14,48 @@
     <h3>Möchtest du mit uns in Kontakt treten?</h3>
     <form id="aboutContactFormNetlify" method="POST" netlify-honeypot="bot-field" data-netlify="true" accept-charset="utf-8" class="c-section-contact-form">
       <div class="grid-x grid-padding-x">
-        <label class="large-12 medium-12 small-12 cell" for="name">Name
-          <input type="text" name="name" id="name" placeholder="Dein Name" required>
-        </label>
+        <div class="large-12 medium-12 small-12 cell">
+          <label>Name:<br><input type="text" name="name" id="name" placeholder="Dein Name" required>
+          </label>
+        </div>
       </div>
       <div class="grid-x grid-padding-x">
-        <label class="large-12 medium-12 small-12 cell" for="email">Email
-          <input type="email" name="email" id="email" placeholder="Deine Email" required>
-        </label>
+        <div class="large-12 medium-12 small-12 cell">
+          <label>Email:<br><input type="email" name="email" id="email" placeholder="Deine Email" required>
+          </label>
+        </div>
       </div>
       <div class="grid-x grid-padding-x">
-        <label class="large-12 medium-12 small-12 cell" for="find-us">Wie hast du uns gefunden?
-          <select name="find-us" id="find-us">
-            <option value="friends" selected>Freunde</option>
-            <option value="search">Suchmaschine</option>
-            <option value="ad">Werbung</option>
-            <option value="other">Andere</option>
-          </select>
-        </label>
+        <div class="large-12 medium-12 small-12 cell">
+          <label>Wie hast du uns gefunden?<br><select name="findUs" id="findUs">
+              <option value="friends" selected>Freunde</option>
+              <option value="search">Suchmaschine</option>
+              <option value="ad">Werbung</option>
+              <option value="other">Andere</option>
+            </select>
+          </label>
+        </div>
       </div>
       <div class="grid-x grid-padding-x">
-        <label class="large-12 medium-12 small-12 cell" for="news">Newsletter?
-          <input type="checkbox" name="news" id="news" checked> Ja, bitte
-        </label>
+        <div class="large-12 medium-12 small-12 cell" >
+          <label>Newsletter? <input type="checkbox" name="news" id="news" checked> Ja, bitte
+          </label>
+        </div>
       </div>
       <div class="grid-x grid-padding-x">
-        <label class="large-12 medium-12 small-12 cell" for="message">Hinterlasse uns eine Nachricht
-          <textarea name="message" placeholder="Deine Nachricht"></textarea>
-        </label>
+        <div class="large-12 medium-12 small-12 cell">
+          <label>Hinterlasse uns eine Nachricht:<br><textarea name="message" placeholder="Deine Nachricht"></textarea>
+          </label>
+        </div>
       </div>
       <input type="hidden" name="bot-field"/>
       <input type="hidden" name="subject" value="NYCMM Webseiten Kontaktnachricht" />
       <div class="grid-x grid-padding-x">
-        <label class="large-12 medium-12 small-12 cell">
-          <input type="submit" value="Abschicken">
-        </label>
+        <div class="large-12 medium-12 small-12 cell">
+          <label>
+            <input type="submit" value="Abschicken">
+          </label>
+        </div>
       </div>
     </form>
   </div>
