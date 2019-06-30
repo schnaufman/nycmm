@@ -5,7 +5,7 @@ import $ from 'jquery';
 /**
  * Helper class for responsive website support
  */
-class MobileHelper {
+class SiteHelper {
 
   /**
    * if window width is smaller than 600 remove the autoplay attribute from the video
@@ -18,6 +18,24 @@ class MobileHelper {
         $headerVideo.get(0).pause();
         $headerVideo.removeAttr('autoplay');
       }
+    }
+  }
+
+  /**
+   * fill action attribute of contact FormSpree form
+   * also with broken up email to make it more obscure for spambots
+   *
+   * @param {String} contactFormElementId DOM element ID of the contact form
+   * @param {String} mail the email adress without domain and @ (@gmail.com)
+   * @param {String} mailDomain the email domain (gmail.com,gmx.at)
+   */
+  static setFormSpreeContactFormAction(contactFormElementId, mail, mailDomain) {
+    const $contactForm = $('#' + contactFormElementId);
+    const formSpreePreString = '//formspree.io/';
+
+    // element present
+    if ($contactForm.length > 0) {
+      $contactForm.attr('action', formSpreePreString + mail + '@' + mailDomain);
     }
   }
 
@@ -36,4 +54,4 @@ class MobileHelper {
   }
 }
 
-export { MobileHelper };
+export { SiteHelper };

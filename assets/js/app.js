@@ -5,7 +5,7 @@
 import $ from 'jquery';
 import { SmoothScrollWithLinks } from './lib/ext/foundation.smoothScrollWithLinks';
 import { Foundation } from './lib/foundation-explicit-pieces';
-import { MobileHelper } from './lib/mobile-helper';
+import { SiteHelper } from './lib/site-helper';
 import { NavHandler } from './lib/nav-handler';
 import { GMapsApi } from './lib/maps/gmaps-api';
 
@@ -19,10 +19,16 @@ $(function () {
   // init foundation js
   $(document).foundation();
 
-  MobileHelper.centerMapMarkerOnMobile('gmapsMap');
+  SiteHelper.centerMapMarkerOnMobile('gmapsMap');
 
   new GMapsApi('${NYCMM_ENV_GMAPS_API_KEY}', 'gmapsMap');
   new NavHandler('js--dropdown-nav-menu', 'js--dropdown-nav-icon');
 
-  MobileHelper.disableVideoAutoplayOnMobile();
+  SiteHelper.disableVideoAutoplayOnMobile();
+
+  const contactMailParts = '${NYCMM_ENV_CONTACT_MAIL}'.split('@');
+  const mailAdress = contactMailParts[0];
+  const mailDomain = contactMailParts[1];
+
+  SiteHelper.setFormSpreeContactFormAction('formSpreeContactForm', mailAdress, mailDomain);
 });
