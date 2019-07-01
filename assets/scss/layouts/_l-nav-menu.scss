@@ -39,7 +39,6 @@
   float: right;
   display: none;
   padding-right: 60px;
-  padding-top: 5px;
 }
 
 /************************************/
@@ -74,7 +73,6 @@
 
   .c-nav-container {
     margin-top: 0;
-    margin-bottom: 2px;
   }
 
   .c-nav-page-sections {
@@ -159,7 +157,6 @@
   color: $white;
   width: 30px;
   margin-left: 60px;
-  padding-top: 10px;
   vertical-align: middle;
 
   &:hover,
@@ -186,7 +183,6 @@
   // get font-size from header h5 sizes
   font-size: map-get(map-get(map-get($header-styles, medium), "h4"), "font-size") + unquote("px");
   margin: 0;
-  padding-top: 10px;
   vertical-align: middle;
 
   .c-main-nav {
