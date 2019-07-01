@@ -152,6 +152,12 @@
 
 /* up to medium */
 @media only screen and (max-width: 63.9375em) {
+  .c-section-howitworks-step-count {
+    h3 {
+      margin-top: 5px;
+    }
+  }
+
   .c-section-contact-form-box {
     position: relative;
     width: 100%;
@@ -199,7 +205,7 @@
 @media only screen and (max-width: 39.9375em) {
   .c-section-howitworks-step-count {
     h3 {
-      margin-top: 0.45em;
+      margin-top: 11px;
     }
   }
 }

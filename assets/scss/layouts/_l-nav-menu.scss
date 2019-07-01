@@ -57,8 +57,8 @@
 }
 
 .is-stuck {
-  background-color: rgba($white, 0.9);
-  box-shadow: 0 2px 2px $light-gray;
+  background-color: $light-gray;
+  box-shadow: 0 2px 2px $medium-gray;
 
   .c-dropdown-nav-icon {
     color: $black;
@@ -98,10 +98,10 @@
 .c-dropdown-nav {
   display: none;
   position: absolute;
-  background-color: rgba($light-gray, 0.9);
+  background-color: $light-gray;
   box-shadow: 0 2px 2px $medium-gray;
   // get font-size from header h5 sizes
-  font-size: map-get(map-get(map-get($header-styles, medium), h5), "font-size") + unquote("px");
+  font-size: map-get(map-get(map-get($header-styles, medium), "h5"), "font-size") + unquote("px");
   padding: 20px 20px 0 20px;
   margin: 4px 0 0 60px;
   border-radius: $global-radius;
@@ -147,18 +147,20 @@
   .c-dropdown-section-nav-link {
     display: none;
     margin-left: 10px;
-    font-size: map-get(map-get(map-get($header-styles, medium), h6), "font-size") + unquote("px");
+    font-size: map-get(map-get(map-get($header-styles, medium), "h5"), "font-size") + unquote("px");
   }
 }
 
 .c-dropdown-nav-icon {
   display: inline-block;
   // get font-size from header h5 sizes
-  font-size: map-get(map-get(map-get($header-styles, medium), h3), "font-size") + unquote("px");
+  font-size: map-get(map-get(map-get($header-styles, medium), "h2"), "font-size") + unquote("px");
   cursor: pointer;
   color: $white;
   width: 30px;
   margin-left: 60px;
+  padding-top: 10px;
+  vertical-align: middle;
 
   &:hover,
   &:active {
@@ -173,8 +175,6 @@
 
   i {
     width: 30px;
-    padding-top: 14px;
-    vertical-align: middle;
   }
 }
 
@@ -184,7 +184,7 @@
 .c-nav-page-sections {
   display: inline-block;
   // get font-size from header h5 sizes
-  font-size: map-get(map-get(map-get($header-styles, medium), h5), "font-size") + unquote("px");
+  font-size: map-get(map-get(map-get($header-styles, medium), "h4"), "font-size") + unquote("px");
   margin: 0;
   padding-top: 10px;
   vertical-align: middle;
@@ -214,13 +214,7 @@
       display: none;
     }
   }
-  .c-dropdown-nav-icon {
-    i {
-      padding-top: 9px;
-    }
-  }
   .c-nav-page-sections {
-    padding-top: 5px;
     .c-main-nav {
       .c-main-nav-link {
         margin-left: 20px;
@@ -230,9 +224,44 @@
 }
 
 @media only screen and (max-width: 40em) {
+  .c-dropdown-nav {
+    width: 100%;
+    margin: 0;
+    font-size: map-get(map-get(map-get($header-styles, medium), "h4"), "font-size") + unquote("px");
+  }
+
+  .c-nav-container {
+    margin-top: 20px;
+  }
+
+  .c-dropdown-nav-icon {
+    margin-left: 20px;
+    font-size: map-get(map-get(map-get($header-styles, large), "h2"), "font-size") + unquote("px");
+  }
+
   .c-dropdown-nav-link {
     .c-dropdown-section-nav-link {
       display: block;
+      width: 100%;
+      font-size: map-get(map-get(map-get($header-styles, medium), "h4"), "font-size") + unquote("px");
+    }
+
+    a {
+      width: 100%;
+      &:link,
+      &:visited {
+        text-transform: uppercase;
+        background-color: transparent;
+        border-bottom: none;
+        transition: background-color 0.2s;
+      }
+
+      &:hover,
+      &:active {
+        border-bottom: none;
+        background-color: rgba($site-header-nav-link-hover-color, 0.4);
+      }
+
     }
   }
 
