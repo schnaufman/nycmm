@@ -11,6 +11,7 @@ class SmoothScrollWithLinks extends SmoothScroll {
     this.$element = element;
     this.options = $.extend({}, SmoothScroll.defaults, this.$element.data(), options);
     this.className = 'SmoothScrollWithLinks'; // ie9 back compat
+    this.backToTop = '#backToTop';
 
     this._init();
   }
@@ -43,9 +44,16 @@ class SmoothScrollWithLinks extends SmoothScroll {
     if (((link.pathname === location.pathname) || ('/' + link.pathname === location.pathname))
       && (link.search === location.search)) {
       this._inTransition = true;
-      SmoothScrollWithLinks.scrollToLoc(link.hash, this.options, () => {
-        this._inTransition = false;
-      });
+
+      if (link.hash === this.backToTop) {
+        SmoothScrollWithLinks.scrollToTop(this.options, () => {
+          this._inTransition = false;
+        });
+      } else {
+        SmoothScrollWithLinks.scrollToLoc(link.hash, this.options, () => {
+          this._inTransition = false;
+        });
+      }
 
     } else {
       // Follow the link to the specific section if navigation comes from outside page
@@ -53,6 +61,25 @@ class SmoothScrollWithLinks extends SmoothScroll {
     }
 
     e.preventDefault();
+  }
+
+  /**
+   * Scroll back to top of the page
+   *
+   * @param {Object} options  - scroll options
+   * @param {Function} callback - callbackfunction after scrolling
+   */
+  static scrollToTop(options = SmoothScroll.defaults, callback) {
+    $('html, body').stop(true).animate(
+      { scrollTop: 0 },
+      options.animationDuration,
+      options.animationEasing,
+      () => {
+        if (typeof callback === 'function') {
+          callback();
+        }
+      }
+    );
   }
 
   /**
