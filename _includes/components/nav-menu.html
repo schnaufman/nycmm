@@ -1,7 +1,7 @@
 {% strip %}
 <div data-sticky-container>
-  <div class="sticky" data-margin-top="0" data-sticky data-sticky-on="small" data-top-anchor="site-header:bottom">
-    <div class="c-nav-container" data-smooth-scroll-with-links data-animation-easing="swing" data-animation-duration="1000">
+  <div class="c-nav-container" data-smooth-scroll-with-links data-animation-easing="swing" data-animation-duration="1000">
+    <div class="sticky c-nav-top-sticky" data-margin-top="0" data-sticky data-sticky-on="small" data-top-anchor="site-header:bottom">
       <a class="c-dropdown-nav-icon js--dropdown-nav-icon"><i class="ion-md-menu"></i></a>
       {% assign pages = site.pages | where:"language", page.language | sort: 'order' %}
       <ul class="c-dropdown-nav js--dropdown-nav-menu">
@@ -31,7 +31,10 @@
         </ul>
       </nav>
       <img src="{{ site.logo | relative_url }}" alt="NYCMM Logo" class="c-nav-logo">
-      <a href="#backToTop"><img src="{{ site.logo_sticky | relative_url }}" alt="NYCMM Logo" class="c-nav-logo-sticky"></a>
+      <img src="{{ site.logo_sticky | relative_url }}" alt="NYCMM Logo" class="c-nav-logo-sticky">
+    </div>
+    <div class="sticky c-nav-bottom-sticky" data-sticky data-sticky-on="small" data-stick-to="bottom" data-top-anchor="site-header:bottom">
+      <a class="c-nav-bottom-back-to-top-icon" href="#backToTop"><i class="ion-md-arrow-round-up"></i></a>
     </div>
   </div>
 </div>

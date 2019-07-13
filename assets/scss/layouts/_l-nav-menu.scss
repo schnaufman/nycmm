@@ -34,11 +34,34 @@
   margin-top: -10px;
 }
 
-// hide logo in the sticky menu per default
-.c-nav-logo-sticky {
-  float: right;
-  display: none;
-  padding-right: 60px;
+.c-nav-bottom-back-to-top-icon {
+  right: 30px;
+  bottom: 30px;
+  position: fixed;
+  border: 2px solid $primary-color;
+  border-radius: 50%;
+  text-align: center;
+  color: $black;
+  background-color: $white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+  width: 3em; // relative due to circle
+  height: 3em; // relative due to circle
+
+  &:link,
+  &:visited {
+    color: $black;
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:active {
+    color: $primary-color;
+  }
+
+  i {
+    font-size: map-get(map-get(map-get($header-styles, medium), "h2"), "font-size") + unquote("px");
+    width: 30px;
+  }
 }
 
 /************************************/
@@ -49,41 +72,54 @@
 // keep sticky nav on top
 .sticky {
   z-index: 50;
+
+  &.is-stuck {
+    z-index: 50;
+  }
 }
 
-.sticky.is-stuck {
-  z-index: 50;
-}
+.c-nav-bottom-sticky {
+  display: none;
 
-.is-stuck {
-  background-color: $light-gray;
-  box-shadow: 0 2px 2px $medium-gray;
-
-  .c-dropdown-nav-icon {
-    color: $black;
-  }
-
-  .c-nav-logo {
-    display: none;
-  }
-
-  .c-nav-logo-sticky {
+  &.sticky.is-stuck {
     display: inline-block;
   }
+}
 
-  .c-nav-container {
-    margin-top: 0;
+.c-nav-top-sticky {
+  // hide logo in the sticky menu per default
+  .c-nav-logo-sticky {
+    float: right;
+    display: none;
+    padding-right: 60px;
   }
 
-  .c-nav-page-sections {
-    margin: 0;
+  &.sticky.is-stuck {
+    background-color: $light-gray;
+    box-shadow: 0 2px 2px $medium-gray;
 
-    .c-main-nav {
+    .c-dropdown-nav-icon {
+      color: $black;
+    }
+
+    .c-nav-logo {
+      display: none;
+    }
+
+    .c-nav-logo-sticky {
+      display: inline-block;
+    }
+
+    .c-nav-page-sections {
       margin: 0;
-      .c-main-nav-link a {
-        &:link,
-        &:visited {
-          color: $black;
+
+      .c-main-nav {
+        margin: 0;
+        .c-main-nav-link a {
+          &:link,
+          &:visited {
+            color: $black;
+          }
         }
       }
     }
@@ -205,11 +241,12 @@
     display: none;
   }
 
-  .is-stuck {
+  .c-nav-top-sticky.sticky.is-stuck {
     .c-nav-logo-sticky {
       display: none;
     }
   }
+
   .c-nav-page-sections {
     .c-main-nav {
       .c-main-nav-link {
@@ -257,7 +294,6 @@
         border-bottom: none;
         background-color: rgba($site-header-nav-link-hover-color, 0.4);
       }
-
     }
   }
 
