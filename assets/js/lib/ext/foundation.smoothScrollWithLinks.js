@@ -70,7 +70,7 @@ class SmoothScrollWithLinks extends SmoothScroll {
    * @param {Function} callback - callbackfunction after scrolling
    */
   static scrollToTop(options = SmoothScroll.defaults, callback) {
-    $('html, body').stop(true).animate(
+    $('html, body').stop().animate(
       { scrollTop: 0 },
       options.animationDuration,
       options.animationEasing,
@@ -98,7 +98,7 @@ class SmoothScrollWithLinks extends SmoothScroll {
 
     var scrollPos = Math.round($loc.offset().top - options.threshold / 2 - options.offset);
 
-    $('html, body').stop(true).animate(
+    $('html, body').stop().animate(
       { scrollTop: scrollPos },
       options.animationDuration,
       options.animationEasing,
