@@ -34,33 +34,39 @@
   margin-top: -10px;
 }
 
-.c-nav-bottom-back-to-top-icon {
-  right: 30px;
-  bottom: 30px;
-  position: fixed;
-  border: 2px solid $primary-color;
-  border-radius: 50%;
-  text-align: center;
-  color: $black;
-  background-color: $white;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
-  width: 3em; // relative due to circle
-  height: 3em; // relative due to circle
+// will be displayed with sticky event from top sticky
+.c-nav-bottom-back-to-top {
+  display: none;
 
-  &:link,
-  &:visited {
+  .c-nav-bottom-back-to-top-icon {
+    right: 30px;
+    bottom: 30px;
+    position: fixed;
+    border: 2px solid $primary-color;
+    border-radius: 50%;
+    text-align: center;
     color: $black;
-    text-decoration: none;
-  }
+    background-color: $white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+    width: 3em; // relative due to circle
+    height: 3em; // relative due to circle
+    z-index: 50;
 
-  &:hover,
-  &:active {
-    color: $primary-color;
-  }
+    &:link,
+    &:visited {
+      color: $black;
+      text-decoration: none;
+    }
 
-  i {
-    font-size: map-get(map-get(map-get($header-styles, medium), "h2"), "font-size") + unquote("px");
-    width: 30px;
+    &:hover,
+    &:active {
+      color: $primary-color;
+    }
+
+    i {
+      font-size: map-get(map-get(map-get($header-styles, medium), "h2"), "font-size") + unquote("px");
+      width: 30px;
+    }
   }
 }
 
@@ -75,14 +81,6 @@
 
   &.is-stuck {
     z-index: 50;
-  }
-}
-
-.c-nav-bottom-sticky {
-  display: none;
-
-  &.sticky.is-stuck {
-    display: inline-block;
   }
 }
 

@@ -15,7 +15,7 @@ import { GMapsApi } from './lib/maps/gmaps-api';
 Foundation.plugin(SmoothScrollWithLinks, 'SmoothScrollWithLinks');
 
 // initialize custom apis and mobile navigation
-$(document).ready(function() {
+$(document).ready(function () {
 
   // init foundation js
   $(document).foundation();
@@ -23,7 +23,11 @@ $(document).ready(function() {
   SiteHelper.centerMapMarkerOnMobile('gmapsMap');
 
   new GMapsApi('${NYCMM_ENV_GMAPS_API_KEY}', 'gmapsMap');
-  new NavHandler('js--dropdown-nav-menu', 'js--dropdown-nav-icon');
+
+  new NavHandler('js--dropdown-nav-menu',
+    'js--dropdown-nav-icon',
+    'js--nav-sticky-top-menu',
+    'js--back-to-top-button');
 
   SiteHelper.disableVideoAutoplayOnMobile();
 
