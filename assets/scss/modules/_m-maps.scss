@@ -1,13 +1,10 @@
-#gmapsMap {
+
+#leafletMap, #gmapsMap {
   width: 100%;
   height: $map-height-large;
+  clear: both;
+  z-index: 0;
 }
-
-#leafletMap {
-  width: 100%;
-  height: $map-height-large;
-}
-
 
 /***************************************/
 /*           Map Queries               */
