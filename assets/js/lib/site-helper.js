@@ -14,7 +14,7 @@ class SiteHelper {
     let screenWidth = $(window).width();
     if (screenWidth < 992) {
       const $headerVideo = $('.js--header-video');
-      if ($headerVideo.length > 0) {
+      if ($headerVideo.length) {
         $headerVideo.hide();
       }
     }
@@ -33,7 +33,7 @@ class SiteHelper {
     const formSpreePreString = '//formspree.io/';
 
     // element present
-    if ($contactForm.length > 0) {
+    if ($contactForm.length) {
       $contactForm.attr('action', formSpreePreString + mail + '@' + mailDomain);
     }
   }
@@ -46,7 +46,7 @@ class SiteHelper {
     let screenWidth = $(window).width();
     if (screenWidth < 992) {
       const $map = $('#' + mapElementId);
-      if ($map.length > 0) {
+      if ($map.length) {
         $map.attr('center-to-marker', 'true');
       }
     }

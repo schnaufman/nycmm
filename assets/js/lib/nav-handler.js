@@ -35,17 +35,17 @@ class NavHandler {
   _initialize() {
     // mobile navigation
     const $dropDownNavIcon = $('.' + this.dropDownMenuIconElClass);
-    if ($dropDownNavIcon.length > 0) {
+    if ($dropDownNavIcon.length) {
       $dropDownNavIcon.get(0).onclick = this._handleDropDownClick.bind(this);
     } else {
       console.error('NavHandler: Couldn\'t find nav icon \'.' + this.dropDownMenuElClass + '\' in document.');
     }
 
     const $navTop = $('.' + this.navTopMenuElClass);
-    if ($navTop.length > 0) {
+    if ($navTop.length) {
       const $backToTop = $('.' + this.backToTopButtonElClass);
 
-      if ($backToTop.length > 0) {
+      if ($backToTop.length) {
         // event handlers for sticky menu
         $navTop.on('sticky.zf.stuckto:top', () => $backToTop.show());
         $navTop.on('sticky.zf.unstuckfrom:top', () => $backToTop.hide());
@@ -59,7 +59,7 @@ class NavHandler {
     const $dropDownNavMenu = $('.' + this.dropDownMenuElClass);
     const $icon = $('.' + this.dropDownMenuIconElClass + ' i');
 
-    if ($dropDownNavMenu.length > 0 && $icon.length > 0) {
+    if ($dropDownNavMenu.length && $icon.length) {
       // open dropdown
       $dropDownNavMenu.slideToggle(200);
 

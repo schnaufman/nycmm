@@ -20,6 +20,11 @@ class GMapsApi {
     this.elementId = elementId;
     this.gMapsOptions = gMapsOptions;
 
+    if (!$('#' + this.elementId).length) {
+      // do nothing if element id is not present in the current document
+      return;
+    }
+
     // we make a new Promise -> we promise a initialization of the google Maps API
     this.gMapsInitPromise = new Promise(
       // the executor function is called with the ability to resolve or reject the promise
@@ -55,7 +60,7 @@ class GMapsApi {
     let gMapsClient = null;
 
     // element present
-    if ($gmaps.length > 0) {
+    if ($gmaps.length) {
       // console.debug('GMapsApi: Found \'#' + this.elementId + '\' element in document.');
       // console.debug('GMapsApi: initializing...');
 
@@ -77,22 +82,22 @@ class GMapsApi {
         },
         mapTypeControl: false,
         mapTypeControlOptions: {
-            // eslint-disable-next-line no-undef
-            style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
-            // eslint-disable-next-line no-undef
-            position: google.maps.ControlPosition.LEFT_TOP
+          // eslint-disable-next-line no-undef
+          style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+          // eslint-disable-next-line no-undef
+          position: google.maps.ControlPosition.LEFT_TOP
         },
         zoomControl: true,
         zoomControlOptions: {
-            // eslint-disable-next-line no-undef
-            position: google.maps.ControlPosition.LEFT_BOTTOM
+          // eslint-disable-next-line no-undef
+          position: google.maps.ControlPosition.LEFT_BOTTOM
         },
         scaleControl: false,
         streetViewControl: false,
         fullscreenControl: true,
         fullscreenControlOptions: {
-            // eslint-disable-next-line no-undef
-            position: google.maps.ControlPosition.LEFT_BOTTOM
+          // eslint-disable-next-line no-undef
+          position: google.maps.ControlPosition.LEFT_BOTTOM
         },
       });
 
@@ -119,7 +124,7 @@ class GMapsApi {
 
         infowindow.open(gMapsClient, marker);
 
-        marker.addListener('click', function() {
+        marker.addListener('click', function () {
           infowindow.open(gMapsClient, marker);
         });
 
@@ -133,7 +138,7 @@ class GMapsApi {
 
       // console.debug('GmapsApi: Element \'#' + this.elementId + '\' successfully initialized');
     } else {
-      //console.error('GmapsApi: Element \'#' + this.elementId + '\' couldn\'t be found in document.');
+      console.error('GmapsApi: Element \'#' + this.elementId + '\' couldn\'t be found in document.');
       return null;
     }
 

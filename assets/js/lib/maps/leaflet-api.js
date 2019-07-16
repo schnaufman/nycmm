@@ -36,7 +36,7 @@ class LeafletApi {
     let leafletClient = null;
 
     // element present
-    if ($leaflet.length > 0) {
+    if ($leaflet.length) {
       // console.debug('LeafletApi: Found \'#' + this.elementId + '\' element in document.');
       // console.debug('LeafletApi: initializing...');
       // eslint-disable-next-line no-undef
