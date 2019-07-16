@@ -136,6 +136,8 @@ class GMapsApi {
         }
       }
 
+      $gmaps.show();
+
       // console.debug('GmapsApi: Element \'#' + this.elementId + '\' successfully initialized');
     } else {
       console.error('GmapsApi: Element \'#' + this.elementId + '\' couldn\'t be found in document.');
