@@ -15,7 +15,7 @@ import { GMapsApi } from './lib/maps/gmaps-api';
 Foundation.plugin(SmoothScrollWithLinks, 'SmoothScrollWithLinks');
 
 // initialize custom apis and mobile navigation
-$(document).ready(function () {
+$(function () {
 
   // init foundation js
   $(document).foundation();
