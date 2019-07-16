@@ -29,8 +29,6 @@ $(function () {
     'js--nav-sticky-top-menu',
     'js--back-to-top-button');
 
-  SiteHelper.disableVideoAutoplayOnMobile();
-
   // when using formspree
   // const contactMailParts = '${NYCMM_ENV_CONTACT_MAIL}'.split('@');
   // const mailAdress = contactMailParts[0];

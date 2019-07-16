@@ -4,8 +4,8 @@
 header {
   height: 100%;
   overflow: hidden;
-  background: $site-header-overlay-color;
   color: $white;
+  background: $site-header-overlay-color;
   font-weight: $site-header-font-weight;
 
   .c-header-content {
@@ -61,12 +61,19 @@ header {
 /* up to Large */
 @media only screen and (max-width: 64em) {
   header {
+    background-image: linear-gradient($site-header-overlay-color, $site-header-overlay-color), url(/assets/video/bassmovie_x264_poster.jpeg);
+    background-size: cover;
+
     .c-header-content {
       top: 30%;
 
       .c-header-button {
         margin: 0 10px 10px 0;
       }
+    }
+
+    .c-header-video {
+      display: none;
     }
   }
 }

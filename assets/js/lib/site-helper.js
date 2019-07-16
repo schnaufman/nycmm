@@ -13,10 +13,9 @@ class SiteHelper {
   static disableVideoAutoplayOnMobile() {
     let screenWidth = $(window).width();
     if (screenWidth < 992) {
-      let $headerVideo = $('.c-header-video video');
+      const $headerVideo = $('.js--header-video');
       if ($headerVideo.length > 0) {
-        $headerVideo.get(0).pause();
-        $headerVideo.removeAttr('autoplay');
+        $headerVideo.hide();
       }
     }
   }
