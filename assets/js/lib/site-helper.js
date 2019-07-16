@@ -12,7 +12,7 @@ class SiteHelper {
    */
   static disableVideoAutoplayOnMobile() {
     let screenWidth = $(window).width();
-    if (screenWidth < 600) {
+    if (screenWidth < 992) {
       let $headerVideo = $('.c-header-video video');
       if ($headerVideo.length > 0) {
         $headerVideo.get(0).pause();
