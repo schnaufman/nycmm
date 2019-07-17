@@ -136,6 +136,8 @@ class GMapsApi {
         }
       }
 
+      // this is a fix for the gray box which will appear on reload
+      // now map is only displayed when it's initialized
       $gmaps.show();
 
       // console.debug('GmapsApi: Element \'#' + this.elementId + '\' successfully initialized');
