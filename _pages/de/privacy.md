@@ -54,12 +54,12 @@ Auf dieser Website greift die IP-Anonymisierung. Die IP-Adresse der Nutzer wird 
 Sie haben die Möglichkeit, die Speicherung des Cookies auf Ihrem Gerät zu verhindern, indem Sie in Ihrem Browser entsprechende Einstellungen vornehmen. Es ist nicht gewährleistet, dass Sie auf alle Funktionen dieser Website ohne Einschränkungen zugreifen können, wenn Ihr Browser keine Cookies zulässt.
 
 Weiterhin können Sie durch ein Browser-Plugin verhindern, dass die durch Cookies gesammelten Informationen (inklusive Ihrer IP-Adresse) an die Google Inc. gesendet und von der Google Inc. genutzt werden. Folgender Link führt Sie zu dem entsprechenden Plugin:<br>
-[https://tools.google.com/dlpage/gaoptout?hl=de](https://tools.google.com/dlpage/gaoptout?hl=de)
+[Google Analytics Opt-Out](https://tools.google.com/dlpage/gaoptout?hl=de)
 
 Alternativ können Sie mit einem Klick auf <a onclick="javascript:window.cookieconsent.popup.open()">Cookie Einstellungen</a> und 'Ablehnen' verhindern, dass Google Analytics innerhalb dieser Website Daten über Sie erfasst. Ihr Browser muss die Speicherung von Cookies also hierzu grundsätzlich erlauben. Löschen Sie Ihre Cookies regelmäßig, ist ein erneuter Klick auf den Link bei jedem Besuch dieser Website vonnöten.
 
 Hier finden Sie weitere Informationen zur Datennutzung durch die Google Inc.:<br>
-[https://support.google.com/analytics/answer/6004245?hl=de](https://support.google.com/analytics/answer/6004245?hl=de)
+[Google Analytics Datennutzung](https://support.google.com/analytics/answer/6004245?hl=de)
 
 ### Newsletter-Abonnement
 Der Websitebetreiber bietet Ihnen einen Newsletter an, in welchem er Sie über aktuelle Geschehnisse und Angebote informiert. Möchten Sie den Newsletter abonnieren, müssen Sie eine valide E-Mail-Adresse angeben. Diese wird lediglich für den Versand des abonnierten Newsletters verwendet und nicht an Dritte weitergereicht. Sie können das Abonnement jederzeit abbestellen.
@@ -73,4 +73,4 @@ Diese Datenschutzerklärung wurde von ithelps rechtmäßig kopiert. SEO Agentur 
 ### YouTube
 Unsere Seite verwendet für die Einbindung von Videos den Anbieter YouTube LLC , 901 Cherry Avenue, San Bruno, CA 94066, USA, vertreten durch Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA. Normalerweise wird bereits bei Aufruf einer Seite mit eingebetteten Videos Ihre IP-Adresse an YouTube gesendet und Cookies auf Ihrem Rechner installiert. Wir haben unsere YouTube-Videos jedoch mit dem erweiterten Datenschutzmodus eingebunden (in diesem Fall nimmt YouTube immer noch Kontakt zu dem Dienst Double Klick von Google auf, doch werden dabei laut der Datenschutzerklärung von Google personenbezogene Daten nicht ausgewertet). Dadurch werden von YouTube keine Informationen über die Besucher mehr gespeichert, es sei denn, sie sehen sich das Video an. Wenn Sie das Video anklicken, wird Ihre IP-Adresse an YouTube übermittelt und YouTube erfährt, dass Sie das Video angesehen haben. Sind Sie bei YouTube eingeloggt, wird diese Information auch Ihrem Benutzerkonto zugeordnet (dies können Sie verhindern, indem Sie sich vor dem Aufrufen des Videos bei YouTube ausloggen).
 
-Von der dann möglichen Erhebung und Verwendung Ihrer Daten durch YouTube haben wir keine Kenntnis und darauf auch keinen Einfluss. Nähere Informationen können Sie der Datenschutzerklärung von YouTube  unter [https://policies.google.com/privacy?hl=de&gl=de](https://policies.google.com/privacy?hl=de&gl=de) entnehmen. Zudem verweisen wir für den generellen Umgang mit und die Deaktivierung von Cookies auf unsere allgemeine Darstellung in dieser Datenschutzerklärung.
+Von der dann möglichen Erhebung und Verwendung Ihrer Daten durch YouTube haben wir keine Kenntnis und darauf auch keinen Einfluss. Nähere Informationen können Sie der Datenschutzerklärung von YouTube  unter [Google Policies](https://policies.google.com/privacy?hl=de&gl=de) entnehmen. Zudem verweisen wir für den generellen Umgang mit und die Deaktivierung von Cookies auf unsere allgemeine Darstellung in dieser Datenschutzerklärung.
