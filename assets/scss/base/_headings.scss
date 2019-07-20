@@ -2,28 +2,36 @@
 // Headings
 // --------------------------------------------------
 
-h2, h4 {
+h2,
+h4 {
   margin-bottom: 50px;
 }
 
-.c-header-underline:after {
-  display: block;
-  height: 2px;
-  background-color: $primary-color;
-  content: "";
-  width: 100px;
-  margin: 0 auto;
-  margin-top: 10px;
+.c-header-underline {
+  text-align: center;
+
+  &:after {
+    display: block;
+    height: 2px;
+    background-color: $primary-color;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
 }
 
 /* up to small */
 @media only screen and (max-width: 39.9375em) {
-  h2, h4 {
+  h2,
+  h4 {
     margin-bottom: 25px;
   }
 
-  .c-header-underline:after {
-    width: 60px;
-    margin-top: 10px;
+  .c-header-underline {
+    &:after {
+      width: 60px;
+      margin-top: 10px;
+    }
   }
 }

@@ -1,7 +1,7 @@
 ---
 permalink: /faq/
 language: de
-layout: sections_default 
+layout: sections
 title: FAQ
 section: faq
 ref: faq

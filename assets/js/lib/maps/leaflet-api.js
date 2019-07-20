@@ -37,8 +37,8 @@ class LeafletApi {
 
     // element present
     if ($leaflet.length) {
-      // console.debug('LeafletApi: Found \'#' + this.elementId + '\' element in document.');
-      // console.debug('LeafletApi: initializing...');
+      console.debug('LeafletApi: Found \'#' + this.elementId + '\' element in document.');
+      console.debug('LeafletApi: initializing...');
       // eslint-disable-next-line no-undef
       leafletClient = createMap($leaflet.get(0), { attributionControl: false });
 
@@ -63,7 +63,7 @@ class LeafletApi {
       {z} — zoom level
       {x} and {y} — tile coordinates.
       {r} can be used to add "@2x" to the URL to load retina tiles.*/
-      // console.debug('LeafletApi: Creating tile layers for map...');
+      console.debug('LeafletApi: Creating tile layers for map...');
       const osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
       const osm = tileLayer(osmUrl, { minZoom: 8, maxZoom: 19, detectRetina: true });
 
@@ -83,7 +83,7 @@ class LeafletApi {
 
       if ($latMarker && $lngMarker) {
         // create marker on current location
-        // console.debug('LeafletApi: Creating marker...');
+        console.debug('LeafletApi: Creating marker...');
         const latlngMarker = toLatLng($latMarker, $lngMarker);
         const mapMarker = marker(latlngMarker).addTo(leafletClient);
 
@@ -93,7 +93,7 @@ class LeafletApi {
         }
 
         if ($popup) {
-          // console.debug(`LeafletApi: Creating popup '${$popup}'`);
+          console.debug(`LeafletApi: Creating popup '${$popup}'`);
           mapMarker.bindPopup($popup).openPopup();
         }
       }

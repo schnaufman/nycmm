@@ -88,6 +88,9 @@ defaults:
       # sidebar:    		# Possible values › left, right › by default there will be no sidebar
       comments: false
       author: matt     # Default author for pages
+      privacy:
+        de: "/datenschutz/"
+        en: "/privacy/"
   -
     scope:
       path: ''

@@ -29,7 +29,7 @@ class GMapsApi {
     this.gMapsInitPromise = new Promise(
       // the executor function is called with the ability to resolve or reject the promise
       (resolve, reject) => {
-        // console.debug('GMapsApi: Started promise for initialization');
+        console.debug('GMapsApi: Started promise for initialization');
         window.gMapsCallback = function () {
           resolve('Callback promise fulfilled.');
         }
@@ -43,8 +43,8 @@ class GMapsApi {
       }
     );
 
-    this.gMapsInitPromise.then(() => {
-      // console.debug('GMapsApi: ' + value);
+    this.gMapsInitPromise.then((value) => {
+      console.debug('GMapsApi: ' + value);
 
       this._initialize();
     }).catch(reason => {
@@ -61,8 +61,8 @@ class GMapsApi {
 
     // element present
     if ($gmaps.length) {
-      // console.debug('GMapsApi: Found \'#' + this.elementId + '\' element in document.');
-      // console.debug('GMapsApi: initializing...');
+      console.debug('GMapsApi: Found \'#' + this.elementId + '\' element in document.');
+      console.debug('GMapsApi: initializing...');
 
       const $lng = $gmaps.attr('lng');
       const $lat = $gmaps.attr('lat');
@@ -140,7 +140,7 @@ class GMapsApi {
       // now map is only displayed when it's initialized
       $gmaps.show();
 
-      // console.debug('GmapsApi: Element \'#' + this.elementId + '\' successfully initialized');
+      console.debug('GmapsApi: Element \'#' + this.elementId + '\' successfully initialized');
     } else {
       console.error('GmapsApi: Element \'#' + this.elementId + '\' couldn\'t be found in document.');
       return null;
@@ -154,14 +154,14 @@ class GMapsApi {
    * see https://developers.google.com/maps/documentation/javascript/adding-a-google-map
    */
   _addGMapsApiDomContent() {
-    // console.debug('GMapsApi: adding dom content.');
+    console.debug('GMapsApi: adding dom content.');
 
     // get language element from html
     let lang = $('html').attr('lang');
     if (!lang) {
       lang = 'en';
     }
-    // console.debug('GMapsApi: selected language: \'' + lang + '\'');
+    console.debug('GMapsApi: selected language: \'' + lang + '\'');
 
     // create script element
     const domScript = document.createElement('script');

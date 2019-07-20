@@ -1,7 +1,7 @@
 ---
-permalink: /concerts/
+permalink: /konzerte/
 language: de
-layout: sections_default 
+layout: sections
 title: Konzerte
 section: concerts
 ref: concerts

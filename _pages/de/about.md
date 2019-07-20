@@ -1,7 +1,7 @@
 ---
 permalink: /
 language: de
-layout: sections_default 
+layout: sections
 title:  Über uns
 section: about
 ref: about

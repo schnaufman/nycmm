@@ -2,9 +2,12 @@
 // Layout page
 // --------------------------------------------------
 
-main {
+.c-page-main-content {
   @include grid-row;
 
-  //other elements
-  //@include grid-column;
+  padding: rem-calc(40 40);
+}
+
+.c-page-content-md-center {
+  text-align: center;
 }

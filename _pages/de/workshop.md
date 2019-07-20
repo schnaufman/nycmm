@@ -1,7 +1,7 @@
 ---
 permalink: /workshop/
 language: de
-layout: sections_default 
+layout: sections
 title: Workshop
 section: workshop
 ref: workshop

@@ -1,7 +1,7 @@
 ---
 permalink: /en/concerts/
 language: en 
-layout: sections_default 
+layout: sections
 title: Concerts
 section: concerts
 ref: concerts
