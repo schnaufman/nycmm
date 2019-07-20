@@ -10,23 +10,25 @@ class CookieConsentHelper {
   /**
    * construct the cookie consent helper
    *
-   * @param {boolean} checkTrackEnabled  check if navigator or window disabled tracker, is so we are not adding cookies
    * @param {String} googleTrackingId id for google analytics tracking
    */
-  constructor(checkTrackEnabled, googleTrackingId) {
-    this.checkTrackEnabled = checkTrackEnabled;
+  constructor(googleTrackingId) {
     this.googleTrackingId = googleTrackingId;
     this.gaLoaded = false;
 
-    this._initializeCookieConsent();
+    this.cookieOptions = this._createCookieOptions();
+
+    // use popup instead
+    //window.cookieconsent.initialise(this.cookieOptions);
+    window.cookieconsent.popup = new window.cookieconsent.Popup(this.cookieOptions);
   }
 
   /**
-   * Ask the user for cookie consent
+   * generate cookie options
    */
-  _initializeCookieConsent() {
+  _createCookieOptions() {
     const self = this;
-    window.cookieconsent.initialise({
+    const options = {
       container: document.getElementById('content'),
       palette: {
         popup: {
@@ -37,19 +39,26 @@ class CookieConsentHelper {
         }
       },
       theme: 'classic',
+      compliance: {
+        'info': '<div class="cc-compliance">{{dismiss}}</div>',
+        'opt-in': '<div class="cc-compliance cc-highlight">{{dismiss}}{{allow}}</div>',
+        'opt-out': '<div class="cc-compliance cc-highlight">{{deny}}{{dismiss}}</div>',
+      },
       type: 'opt-out',
       content: {
         message: 'Wir nutzen Cookies und Google Analytics, um diese Website für Sie so interessant wie möglich zu gestalten. Sind Sie damit einverstanden? (Sie können diese Entscheidung jederzeit widerrufen)',
+        dismiss: 'OK',
         deny: 'Ablehnen',
-        allow: 'OK, gerne!',
         link: 'Datenschutzerklärung',
         href: 'https://nycmm.netlify.com/datenschutz'
       },
-      revokable: true,
+      // hide revokebutton for opt-in
+      revokable: false,
+      revokeBtn: '<div class=”cc-revoke {{classes}}” style="display: none">Cookie Policy</div>',
       //eslint-disable-next-line no-unused-vars
       onInitialise: function (status) {
-        var type = this.options.type;
-        var didConsent = this.hasConsented();
+        const type = this.options.type;
+        const didConsent = this.hasConsented();
         if (type == 'opt-out' && didConsent) {
           // enable cookies
           console.debug('CookieConsentHelper|onInitialise: Enabling cookies.');
@@ -58,8 +67,8 @@ class CookieConsentHelper {
       },
       //eslint-disable-next-line no-unused-vars
       onStatusChange: function (status, chosenBefore) {
-        var type = this.options.type;
-        var didConsent = this.hasConsented();
+        const type = this.options.type;
+        const didConsent = this.hasConsented();
         if (type == 'opt-out' && didConsent) {
           console.debug('CookieConsentHelper|onStatusChange: Enabling cookie.');
           // enable cookies
@@ -70,12 +79,14 @@ class CookieConsentHelper {
         }
       },
       law: {
-        regionalLaw: false,
+        regionalLaw: true
       },
       // disable ipinfo service
-      location: false,
+      //location: false,
       position: 'bottom-left'
-    });
+    };
+
+    return options;
   }
 
   /**
@@ -94,9 +105,8 @@ class CookieConsentHelper {
 
     // when check tracking is enabled we will check the tracking setting of the browser
     // if the browser blocks the tracking - ga won't be loaded
-    if (this.checkTrackEnabled === true &&
-      (navigator.doNotTrack == 1 || navigator.doNotTrack == 'yes' || window.doNotTrack == 1 || navigator.msDoNotTrack == 0)) {
-      console.debug('CookieConsentHelper|_loadGa: Tracking disabled. Cookies will not be enabled.');
+    if (navigator.doNotTrack == 1 || navigator.doNotTrack == 'yes' || window.doNotTrack == 1 || navigator.msDoNotTrack == 0) {
+      console.debug('CookieConsentHelper|_loadGa: Tracking blocked in browser. Cookies will not be enabled.');
       return;
     }
 

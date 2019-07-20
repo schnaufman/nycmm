@@ -30,8 +30,7 @@ $(document).ready(function () {
     'js--nav-sticky-top-menu',
     'js--back-to-top-button');
 
-  const enableCheckTracking = '${JEKYLL_ENV}' == 'production';
-  new CookieConsentHelper(enableCheckTracking, '${NYCMM_ENV_GOOGLE_TRACKING_ID}');
+  new CookieConsentHelper('${NYCMM_ENV_GOOGLE_TRACKING_ID}');
 
   // when using formspree
   // const contactMailParts = '${NYCMM_ENV_CONTACT_MAIL}'.split('@');

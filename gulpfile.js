@@ -114,7 +114,7 @@ function jsTask(done) {
 
   // replace enviroment variables in js files
   for (const key in process.env) {
-    if (key.startsWith('NYCMM_ENV') || key.startsWith('JEKYLL_')) {
+    if (key.startsWith('NYCMM_ENV')) {
       const replacementString = '\\${' + key + '}';
       fileStream.pipe(replace(new RegExp(replacementString, 'g'), process.env[key]));
     }
