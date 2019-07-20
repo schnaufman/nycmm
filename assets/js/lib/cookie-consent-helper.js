@@ -52,9 +52,9 @@ class CookieConsentHelper {
         link: 'Datenschutzerklärung',
         href: 'https://nycmm.netlify.com/datenschutz'
       },
-      // hide revokebutton for opt-in
       revokable: false,
-      revokeBtn: '<div class=”cc-revoke {{classes}}” style="display: none">Cookie Policy</div>',
+      // hide revokebutton for opt-in
+      revokeBtn: '<div class="c-cookie-revoke-disabled"></div>',
       //eslint-disable-next-line no-unused-vars
       onInitialise: function (status) {
         const type = this.options.type;
@@ -70,7 +70,7 @@ class CookieConsentHelper {
         const type = this.options.type;
         const didConsent = this.hasConsented();
         if (type == 'opt-out' && didConsent) {
-          console.debug('CookieConsentHelper|onStatusChange: Enabling cookie.');
+          console.debug('CookieConsentHelper|onStatusChange: Enabling cookies.');
           // enable cookies
           self._loadGA(true);
         } else {

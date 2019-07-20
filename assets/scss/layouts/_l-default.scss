@@ -48,3 +48,8 @@ footer {
     }
   }
 }
+
+// disabling floating revoke button for cookies
+.c-cookie-revoke-disabled {
+  display: none;
+}
