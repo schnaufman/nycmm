@@ -16,17 +16,34 @@ class CookieConsentHelper {
     this.googleTrackingId = googleTrackingId;
     this.gaLoaded = false;
 
-    this.cookieOptions = this._createCookieOptions();
+    this.cookieOptionsInfo = this._createCookiePopupOptions('info');
+    // same options as info instead of the intialise function.
+    this.cookieOptionsOptOut = {
+      ...this._createCookiePopupOptions('opt-out'),
+      autoOpen: false,
+      //eslint-disable-next-line no-unused-vars
+      onPopupOpen: function () {
+        if (window.cookieconsent.infoPopup) {
+          window.cookieconsent.infoPopup.close();
+        }
+        console.debug('CookieConsentHelper|onInitialise: Initializing Opt-Out.');
+      }
+    };
 
     // use popup instead
     //window.cookieconsent.initialise(this.cookieOptions);
-    window.cookieconsent.popup = new window.cookieconsent.Popup(this.cookieOptions);
+
+    // create popup
+    window.cookieconsent.infoPopup = new window.cookieconsent.Popup(this.cookieOptionsInfo);
+    window.cookieconsent.optOutPopup = new window.cookieconsent.Popup(this.cookieOptionsOptOut);
   }
 
   /**
-   * generate cookie options
+   * generate cookie popup options
+   *
+   * @param {String} type cookieconsent popup type ('opt-out' or 'info')
    */
-  _createCookieOptions() {
+  _createCookiePopupOptions(type) {
     const self = this;
     const options = {
       container: document.getElementById('content'),
@@ -44,9 +61,9 @@ class CookieConsentHelper {
         'opt-in': '<div class="cc-compliance cc-highlight">{{dismiss}}{{allow}}</div>',
         'opt-out': '<div class="cc-compliance cc-highlight">{{deny}}{{dismiss}}</div>',
       },
-      type: 'opt-out',
+      type: type,
       content: {
-        message: 'Wir nutzen Cookies und Google Analytics, um diese Website für Sie so interessant wie möglich zu gestalten. Sind Sie damit einverstanden? (Sie können diese Entscheidung jederzeit widerrufen)',
+        message: 'Wir nutzen Cookies und Google Analytics, um diese Website für Sie so interessant wie möglich zu gestalten. (Sie können diese Entscheidung jederzeit widerrufen)',
         dismiss: 'OK',
         deny: 'Ablehnen',
         link: 'Datenschutzerklärung',
@@ -56,20 +73,22 @@ class CookieConsentHelper {
       // hide revokebutton for opt-in
       revokeBtn: '<div class="c-cookie-revoke-disabled"></div>',
       //eslint-disable-next-line no-unused-vars
-      onInitialise: function (status) {
-        const type = this.options.type;
+      onPopupOpen: function () {
+        //const type = this.options.type;
         const didConsent = this.hasConsented();
-        if (type == 'opt-out' && didConsent) {
+        if (didConsent) {
           // enable cookies
           console.debug('CookieConsentHelper|onInitialise: Enabling cookies.');
           self._loadGA(true);
+        } else {
+          console.debug('CookieConsentHelper|onInitialise: Cookies are disabled.');
         }
       },
       //eslint-disable-next-line no-unused-vars
       onStatusChange: function (status, chosenBefore) {
-        const type = this.options.type;
+        //const type = this.options.type;
         const didConsent = this.hasConsented();
-        if (type == 'opt-out' && didConsent) {
+        if (didConsent) {
           console.debug('CookieConsentHelper|onStatusChange: Enabling cookies.');
           // enable cookies
           self._loadGA(true);
@@ -93,13 +112,10 @@ class CookieConsentHelper {
    * load google analytics
    */
   _loadGA(consent) {
-    if (!consent) {
-      if (this.gaLoaded) {
-        // already loaded - we have to unload ga
-        console.debug('CookieConsentHelper|_loadGa: Reloading page to disable cookies.');
-        location.reload(); // this will trigger a page reload and unload analytics script
-      }
-      // ga is not loaded - nothin to do - return
+    if (!consent && this.gaLoaded) {
+      // already loaded - we have to unload ga
+      console.debug('CookieConsentHelper|_loadGa: Reloading page to disable cookies.');
+      location.reload(); // this will trigger a page reload and unload analytics script
       return;
     }
 
@@ -107,6 +123,12 @@ class CookieConsentHelper {
     // if the browser blocks the tracking - ga won't be loaded
     if (navigator.doNotTrack == 1 || navigator.doNotTrack == 'yes' || window.doNotTrack == 1 || navigator.msDoNotTrack == 0) {
       console.debug('CookieConsentHelper|_loadGa: Tracking blocked in browser. Cookies will not be enabled.');
+      return;
+    }
+
+    // if the script has already been loaded there is nothing to do
+    if (this.gaLoaded) {
+      console.debug('CookieConsentHelper|_loadGa: Analytics script has already been loaded.');
       return;
     }
 
