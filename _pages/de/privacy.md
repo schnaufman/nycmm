@@ -5,7 +5,7 @@ layout: page
 title:  Datenschutzerklärung
 dropdown_title: Datenschutz
 ref: privacy
-order: 5
+order: 6
 ---
 
 ### Geltungsbereich
