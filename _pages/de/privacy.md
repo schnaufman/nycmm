@@ -56,7 +56,7 @@ Sie haben die Möglichkeit, die Speicherung des Cookies auf Ihrem Gerät zu verh
 Weiterhin können Sie durch ein Browser-Plugin verhindern, dass die durch Cookies gesammelten Informationen (inklusive Ihrer IP-Adresse) an die Google Inc. gesendet und von der Google Inc. genutzt werden. Folgender Link führt Sie zu dem entsprechenden Plugin:<br>
 [Google Analytics Opt-Out](https://tools.google.com/dlpage/gaoptout?hl=de)
 
-Alternativ können Sie mit einem Klick auf <a onclick="javascript:window.cookieconsent.optOutPopup.open();">Cookie Einstellungen</a> und 'Ablehnen' verhindern, dass Google Analytics innerhalb dieser Website Daten über Sie erfasst. Ihr Browser muss die Speicherung von Cookies also hierzu grundsätzlich erlauben. Löschen Sie Ihre Cookies regelmäßig, ist ein erneuter Klick auf den Link bei jedem Besuch dieser Website vonnöten.
+Alternativ können Sie mit einem Klick auf <a onclick="javascript:window.cookieconsent.optOutPopup.open();">Cookie Einstellungen</a> verhindern, dass Google Analytics innerhalb dieser Website Daten über Sie erfasst. Ihr Browser muss die Speicherung von Cookies also hierzu grundsätzlich erlauben. Löschen Sie Ihre Cookies regelmäßig, ist ein erneuter Klick auf den Link bei jedem Besuch dieser Website vonnöten.
 
 Hier finden Sie weitere Informationen zur Datennutzung durch die Google Inc.:<br>
 [Google Analytics Datennutzung](https://support.google.com/analytics/answer/6004245?hl=de)
