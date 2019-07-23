@@ -21,6 +21,15 @@ class CookieConsentHelper {
     this.cookieOptionsOptOut = {
       ...this._createCookiePopupOptions('opt-out'),
       autoOpen: false,
+      layout: 'basic-header',
+      content: {
+        message: 'Möchten Sie die weitere Verwendung von Cookies und Google Analytics erlauben?',
+        dismiss: 'Ja',
+        deny: 'Nein',
+        link: 'Datenschutzerklärung',
+        href: '/datenschutz/',
+        header: 'Cookienutzung'
+      },
       //eslint-disable-next-line no-unused-vars
       onPopupOpen: function () {
         if (window.cookieconsent.infoPopup) {
@@ -62,12 +71,23 @@ class CookieConsentHelper {
         'opt-out': '<div class="cc-compliance cc-highlight">{{deny}}{{dismiss}}</div>',
       },
       type: type,
+      layouts: {
+        'basic-header': '{{header}}{{message}}{{link}}{{compliance}}',
+        'info-layout': '{{header}}{{message}}<div style="padding-bottom: 10px">{{link}}{{link_optout}}</div>{{compliance}}'
+      },
+      elements: {
+        link: '<a aria-label="learn more about cookies" tabindex="0" class="cc-link" href="{{href}}" target="_blank">{{link}}</a>',
+        link_optout: '<a aria-label="opt out" tabindex="1" onclick="javascript:window.cookieconsent.optOutPopup.open();" class="cc-link">{{link_optout}}</a>',
+      },
+      layout: 'info-layout',
       content: {
         message: 'Wir nutzen Cookies und Google Analytics, um diese Website für Sie so interessant wie möglich zu gestalten. (Sie können diese Entscheidung jederzeit widerrufen)',
         dismiss: 'OK',
         deny: 'Ablehnen',
         link: 'Datenschutzerklärung',
-        href: 'https://nycmm.netlify.com/datenschutz'
+        link_optout: 'Opt-Out',
+        href: '/datenschutz/',
+        header: 'Cookienutzung'
       },
       revokable: false,
       // hide revokebutton for opt-in
