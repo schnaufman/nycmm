@@ -11,27 +11,18 @@
           {% else %}
             {% assign link_class = '' %}
           {% endif %}
-          <div class="c-dropdown-nav-link">
-            {% if pageIt.dropdown_title %}
-              {% assign page_title = pageIt.dropdown_title %}
-            {% else %}
-              {% assign page_title = pageIt.title %}
-            {% endif %}
-            <div class="c-dropdown-nav-link-collapse-wrapper">
-              <li>
-                <div class="c-dropdown-section-nav-collapse">
-                  {% if site.data.sections[pageIt.section] %}
-                    <a class="c-dropdown-section-nav-icon"><i class="ion-md-add"></i></a>
-                  {% endif %}
-                </div>
-                <a class="c-dropdown-section-nav-link {{ link_class }}" href="{{ pageIt.permalink | relative_url }}">{{ page_title }}</a>
-              </li>
-              {% for section in site.data.sections[pageIt.section] %}
-                {% assign section_id = site.data.lang[pageIt.language].navigation[{{section.id}}] %}
-                {% assign section_title = site.data.lang[pageIt.language].navigation[{{section.title}}] %}
-                <li class="c-dropdown-section-nav-item"><a class="c-dropdown-section-nav-link" href="{{ pageIt.permalink | relative_url }}#{{ section_id }}">{{ section_title }}</a></li>
-              {% endfor %}
-            </div>
+          <div class="c-dropdown-nav-link" >
+           {% if pageIt.dropdown_title %}
+            {% assign page_title = pageIt.dropdown_title %}
+          {% else %}
+            {% assign page_title = pageIt.title %}
+          {% endif %}
+            <li><a class="{{ link_class }}" href="{{ pageIt.permalink | relative_url }}">{{ page_title }}</a></li>
+            {% for section in site.data.sections[pageIt.section] %}
+              {% assign section_id = site.data.lang[pageIt.language].navigation[{{section.id}}] %}
+              {% assign section_title = site.data.lang[pageIt.language].navigation[{{section.title}}] %}
+              <li class="c-dropdown-section-nav-link"><a href="{{ pageIt.permalink | relative_url }}#{{ section_id }}">{{ section_title }}</a></li>
+            {% endfor %}
           </div>
         {% endfor %}
       </ul>
