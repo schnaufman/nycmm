@@ -156,8 +156,14 @@
   display: block;
   list-style: none;
   margin-bottom: 10px;
+  height: 38px;
 
-  a {
+  .c-dropdown-section-nav-collapse {
+    display: inline-block;
+    width: 30px;
+  }
+
+  .c-dropdown-section-nav-link {
     display: inline-block;
 
     &:link,
@@ -186,11 +192,38 @@
     }
   }
 
-  .c-dropdown-section-nav-link {
+  .c-dropdown-section-nav-item {
     display: none;
     margin-left: 10px;
     font-size: map-get(map-get(map-get($header-styles, medium), "h5"), "font-size") + unquote("px");
   }
+}
+
+.c-dropdown-section-nav-icon {
+  display: inline-block;
+  // get font-size from header h5 sizes
+  font-size: map-get(map-get(map-get($header-styles, medium), "h2"), "font-size") + unquote("px");
+  cursor: pointer;
+  color: $dark-gray;
+  width: 30px;
+  vertical-align: middle;
+
+  &:hover,
+  &:active {
+    color: $primary-color;
+    text-decoration: none;
+  }
+
+  &:link,
+  &:visited {
+    color: $white;
+    text-decoration: none;
+  }
+
+  i {
+    width: 30px;
+  }
+
 }
 
 .c-dropdown-nav-icon {
