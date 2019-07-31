@@ -28,7 +28,7 @@ $(document).ready(function () {
   new NavHandler('js--nav-dropdown',
     'js--nav-dropdown-icon',
     'js--nav-container-sticky',
-    'js--nav-back-to-top');
+    'js--nav-back-to-top-container');
 
   new CookieConsentHelper('${NYCMM_ENV_GOOGLE_TRACKING_ID}');
 
