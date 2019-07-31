@@ -1,17 +1,17 @@
 {% strip %}
 <div class="c-nav-container" data-smooth-scroll-with-links data-animation-easing="swing" data-offset="-25" data-animation-duration="1000">
   <div data-sticky-container>
-    <div class="sticky c-nav-top-sticky js--nav-sticky-top-menu" data-margin-top="0" data-sticky data-sticky-on="small" data-top-anchor="site-header:bottom">
-      <a class="c-dropdown-nav-icon js--dropdown-nav-icon"><i class="ion-md-menu"></i></a>
+    <div class="sticky c-nav-container-sticky js--nav-container-sticky" data-margin-top="0" data-sticky data-sticky-on="small" data-top-anchor="site-header:bottom">
+      <a class="c-nav-dropdown-icon js--nav-dropdown-icon"><i class="ion-md-menu"></i></a>
       {% assign pages = site.pages | where:"language", page.language | sort: 'order' %}
-      <ul class="c-dropdown-nav js--dropdown-nav-menu">
+      <ul class="c-nav-dropdown js--nav-dropdown">
         {% for pageIt in pages %}
           {% if pageIt.title == page.title %}
-            {% assign link_class = 'c-dropdown-nav-link-current' %}
+            {% assign link_class = 'c-nav-dropdown-item-current' %}
           {% else %}
             {% assign link_class = '' %}
           {% endif %}
-          <div class="c-dropdown-nav-link" >
+          <div class="c-nav-dropdown-item" >
            {% if pageIt.dropdown_title %}
             {% assign page_title = pageIt.dropdown_title %}
           {% else %}
@@ -21,17 +21,17 @@
             {% for section in site.data.sections[pageIt.section] %}
               {% assign section_id = site.data.lang[pageIt.language].navigation[{{section.id}}] %}
               {% assign section_title = site.data.lang[pageIt.language].navigation[{{section.title}}] %}
-              <li class="c-dropdown-section-nav-link"><a href="{{ pageIt.permalink | relative_url }}#{{ section_id }}">{{ section_title }}</a></li>
+              <li class="c-nav-dropdown-item-section"><a href="{{ pageIt.permalink | relative_url }}#{{ section_id }}">{{ section_title }}</a></li>
             {% endfor %}
           </div>
         {% endfor %}
       </ul>
       <nav class="c-nav-page-sections">
-        <ul class="c-main-nav">
+        <ul class="c-nav-page-sections-main">
           {% for section in site.data.sections[page.section] %}
             {% assign section_id = site.data.lang[page.language].navigation[{{section.id}}] %}
             {% assign section_title = site.data.lang[page.language].navigation[{{section.title}}] %}
-            <li class="c-main-nav-link"><a href="#{{ section_id }}">{{ section_title }}</a></li>
+            <li class="c-nav-page-sections-main-item"><a href="#{{ section_id }}">{{ section_title }}</a></li>
           {% endfor %}
         </ul>
       </nav>
@@ -39,8 +39,8 @@
       <img src="{{ site.logo_sticky | relative_url }}" alt="NYCMM Logo" class="c-nav-logo-sticky">
     </div>
   </div>
-  <div class="c-nav-bottom-back-to-top js--back-to-top-button">
-    <a class="c-nav-bottom-back-to-top-icon" href="#backToTop"><i class="ion-md-arrow-round-up"></i></a>
+  <div class="c-nav-back-to-top js--nav-back-to-top">
+    <a class="c-nav-back-to-top-icon" href="#backToTop"><i class="ion-md-arrow-round-up"></i></a>
   </div>
 </div>
 {% endstrip %}

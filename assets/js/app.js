@@ -25,10 +25,10 @@ $(document).ready(function () {
 
   new GMapsApi('${NYCMM_ENV_GMAPS_API_KEY}', 'gmapsMap');
 
-  new NavHandler('js--dropdown-nav-menu',
-    'js--dropdown-nav-icon',
-    'js--nav-sticky-top-menu',
-    'js--back-to-top-button');
+  new NavHandler('js--nav-dropdown',
+    'js--nav-dropdown-icon',
+    'js--nav-container-sticky',
+    'js--nav-back-to-top');
 
   new CookieConsentHelper('${NYCMM_ENV_GOOGLE_TRACKING_ID}');
 

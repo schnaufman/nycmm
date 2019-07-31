@@ -1,7 +1,7 @@
 /***************************************/
 /*            Navigation               */
 /***************************************/
-.c-main-nav-link {
+.c-nav-page-sections-main-item {
   list-style: none;
   a {
     &:link,
@@ -35,10 +35,10 @@
 }
 
 // will be displayed with sticky event from top sticky
-.c-nav-bottom-back-to-top {
+.c-nav-back-to-top {
   display: none;
 
-  .c-nav-bottom-back-to-top-icon {
+  .c-nav-back-to-top-icon {
     right: 30px;
     bottom: 30px;
     position: fixed;
@@ -84,7 +84,7 @@
   }
 }
 
-.c-nav-top-sticky {
+.c-nav-container-sticky {
   // hide logo in the sticky menu per default
   .c-nav-logo-sticky {
     float: right;
@@ -96,7 +96,7 @@
     background-color: $light-gray;
     box-shadow: 0 2px 2px $medium-gray;
 
-    .c-dropdown-nav-icon {
+    .c-nav-dropdown-icon {
       color: $black;
 
       &:hover,
@@ -121,9 +121,9 @@
     .c-nav-page-sections {
       margin: 0;
 
-      .c-main-nav {
+      .c-nav-page-sections-main {
         margin: 0;
-        .c-main-nav-link a {
+        .c-nav-page-sections-main-item a {
           &:link,
           &:visited {
             color: $black;
@@ -137,7 +137,7 @@
 /************************************/
 /*        Dropdown  Navigation      */
 /************************************/
-.c-dropdown-nav {
+.c-nav-dropdown {
   display: none;
   position: absolute;
   background-color: $light-gray;
@@ -152,7 +152,7 @@
   z-index: 50;
 }
 
-.c-dropdown-nav-link {
+.c-nav-dropdown-item {
   display: block;
   list-style: none;
   margin-bottom: 10px;
@@ -178,7 +178,7 @@
     }
   }
 
-  .c-dropdown-nav-link-current {
+  .c-nav-dropdown-item-current {
     &:link,
     &:visited {
       color: $dark-gray;
@@ -186,14 +186,14 @@
     }
   }
 
-  .c-dropdown-section-nav-link {
+  .c-nav-dropdown-item-section {
     display: none;
     margin-left: 10px;
     font-size: map-get(map-get(map-get($header-styles, medium), "h5"), "font-size") + unquote("px");
   }
 }
 
-.c-dropdown-nav-icon {
+.c-nav-dropdown-icon {
   display: inline-block;
   // get font-size from header h5 sizes
   font-size: map-get(map-get(map-get($header-styles, medium), "h2"), "font-size") + unquote("px");
@@ -229,11 +229,11 @@
   margin: 0;
   vertical-align: middle;
 
-  .c-main-nav {
+  .c-nav-page-sections-main {
     display: inline-block;
     margin: 0;
 
-    .c-main-nav-link {
+    .c-nav-page-sections-main-item {
       margin-left: 40px;
       display: inline-block;
     }
@@ -249,15 +249,15 @@
     display: none;
   }
 
-  .c-nav-top-sticky.sticky.is-stuck {
+  .c-nav-container-sticky.sticky.is-stuck {
     .c-nav-logo-sticky {
       display: none;
     }
   }
 
   .c-nav-page-sections {
-    .c-main-nav {
-      .c-main-nav-link {
+    .c-nav-page-sections-main {
+      .c-nav-page-sections-main-item {
         margin-left: 20px;
       }
     }
@@ -265,7 +265,7 @@
 }
 
 @media only screen and (max-width: 40em) {
-  .c-dropdown-nav {
+  .c-nav-dropdown {
     width: 100%;
     margin: 0;
     font-size: map-get(map-get(map-get($header-styles, medium), "h4"), "font-size") + unquote("px");
@@ -275,13 +275,13 @@
     margin-top: 20px;
   }
 
-  .c-dropdown-nav-icon {
+  .c-nav-dropdown-icon {
     margin-left: 20px;
     font-size: map-get(map-get(map-get($header-styles, large), "h2"), "font-size") + unquote("px");
   }
 
-  .c-dropdown-nav-link {
-    .c-dropdown-section-nav-link {
+  .c-nav-dropdown-item {
+    .c-nav-dropdown-item-section {
       display: block;
       width: 100%;
       font-size: map-get(map-get(map-get($header-styles, medium), "h4"), "font-size") + unquote("px");
@@ -306,7 +306,7 @@
   }
 
   .c-nav-page-sections {
-    .c-main-nav {
+    .c-nav-page-sections-main {
       display: none;
     }
   }
