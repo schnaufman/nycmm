@@ -37,36 +37,36 @@
 // will be displayed with sticky event from top sticky
 .c-nav-back-to-top {
   display: none;
+}
 
-  .c-nav-back-to-top-icon {
-    right: 30px;
-    bottom: 30px;
-    position: fixed;
-    border: 2px solid $primary-color;
-    border-radius: 50%;
-    text-align: center;
+.c-nav-back-to-top-icon {
+  right: 30px;
+  bottom: 30px;
+  position: fixed;
+  border: 2px solid $primary-color;
+  border-radius: 50%;
+  text-align: center;
+  color: $black;
+  background-color: $white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+  width: 3em; // relative due to circle
+  height: 3em; // relative due to circle
+  z-index: 50;
+
+  &:link,
+  &:visited {
     color: $black;
-    background-color: $white;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
-    width: 3em; // relative due to circle
-    height: 3em; // relative due to circle
-    z-index: 50;
+    text-decoration: none;
+  }
 
-    &:link,
-    &:visited {
-      color: $black;
-      text-decoration: none;
-    }
+  &:hover,
+  &:active {
+    color: $primary-color;
+  }
 
-    &:hover,
-    &:active {
-      color: $primary-color;
-    }
-
-    i {
-      font-size: map-get(map-get(map-get($header-styles, medium), "h2"), "font-size") + unquote("px");
-      width: 30px;
-    }
+  i {
+    font-size: map-get(map-get(map-get($header-styles, medium), "h2"), "font-size") + unquote("px");
+    width: 30px;
   }
 }
 
@@ -84,50 +84,48 @@
   }
 }
 
-.c-nav-container-sticky {
+.c-nav-logo-sticky {
+  float: right;
   // hide logo in the sticky menu per default
-  .c-nav-logo-sticky {
-    float: right;
-    display: none;
-    padding-right: 60px;
+  display: none;
+  padding-right: 60px;
+}
+
+.c-nav-container-sticky.sticky.is-stuck {
+  background-color: $light-gray;
+  box-shadow: 0 2px 2px $medium-gray;
+
+  .c-nav-dropdown-icon {
+    color: $black;
+
+    &:hover,
+    &:active {
+      color: $primary-color;
+    }
+
+    &:link,
+    &:visited {
+      color: $black;
+    }
   }
 
-  &.sticky.is-stuck {
-    background-color: $light-gray;
-    box-shadow: 0 2px 2px $medium-gray;
+  .c-nav-logo {
+    display: none;
+  }
 
-    .c-nav-dropdown-icon {
-      color: $black;
+  .c-nav-logo-sticky {
+    display: inline-block;
+  }
 
-      &:hover,
-      &:active {
-        color: $primary-color;
-      }
+  .c-nav-page-sections {
+    margin: 0;
 
-      &:link,
-      &:visited {
-        color: $black;
-      }
-    }
-
-    .c-nav-logo {
-      display: none;
-    }
-
-    .c-nav-logo-sticky {
-      display: inline-block;
-    }
-
-    .c-nav-page-sections {
+    .c-nav-page-sections-main {
       margin: 0;
-
-      .c-nav-page-sections-main {
-        margin: 0;
-        .c-nav-page-sections-main-item a {
-          &:link,
-          &:visited {
-            color: $black;
-          }
+      .c-nav-page-sections-main-item a {
+        &:link,
+        &:visited {
+          color: $black;
         }
       }
     }
@@ -177,20 +175,20 @@
       border-bottom: 2px solid $site-header-nav-link-hover-color;
     }
   }
+}
 
-  .c-nav-dropdown-item-current {
-    &:link,
-    &:visited {
-      color: $dark-gray;
-      text-decoration: none;
-    }
+.c-nav-dropdown-item-current {
+  &:link,
+  &:visited {
+    color: $dark-gray;
+    text-decoration: none;
   }
+}
 
-  .c-nav-dropdown-item-section {
-    display: none;
-    margin-left: 10px;
-    font-size: map-get(map-get(map-get($header-styles, medium), "h5"), "font-size") + unquote("px");
-  }
+.c-nav-dropdown-item-section {
+  display: none;
+  margin-left: 10px;
+  font-size: map-get(map-get(map-get($header-styles, medium), "h5"), "font-size") + unquote("px");
 }
 
 .c-nav-dropdown-icon {
@@ -228,16 +226,16 @@
   font-size: map-get(map-get(map-get($header-styles, medium), "h4"), "font-size") + unquote("px");
   margin: 0;
   vertical-align: middle;
+}
 
-  .c-nav-page-sections-main {
-    display: inline-block;
-    margin: 0;
+.c-nav-page-sections-main {
+  display: inline-block;
+  margin: 0;
+}
 
-    .c-nav-page-sections-main-item {
-      margin-left: 40px;
-      display: inline-block;
-    }
-  }
+.c-nav-page-sections-main-item {
+  margin-left: 40px;
+  display: inline-block;
 }
 
 /***************************************/
@@ -255,12 +253,8 @@
     }
   }
 
-  .c-nav-page-sections {
-    .c-nav-page-sections-main {
-      .c-nav-page-sections-main-item {
-        margin-left: 20px;
-      }
-    }
+  .c-nav-page-sections-main-item {
+    margin-left: 20px;
   }
 }
 
@@ -281,12 +275,6 @@
   }
 
   .c-nav-dropdown-item {
-    .c-nav-dropdown-item-section {
-      display: block;
-      width: 100%;
-      font-size: map-get(map-get(map-get($header-styles, medium), "h4"), "font-size") + unquote("px");
-    }
-
     a {
       width: 100%;
       &:link,
@@ -305,9 +293,13 @@
     }
   }
 
-  .c-nav-page-sections {
-    .c-nav-page-sections-main {
-      display: none;
-    }
+  .c-nav-dropdown-item-section {
+    display: block;
+    width: 100%;
+    font-size: map-get(map-get(map-get($header-styles, medium), "h4"), "font-size") + unquote("px");
+  }
+
+  .c-nav-page-sections-main {
+    display: none;
   }
 }
