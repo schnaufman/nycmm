@@ -142,7 +142,7 @@
   box-shadow: 0 2px 2px $medium-gray;
   // get font-size from header h5 sizes
   font-size: map-get(map-get(map-get($header-styles, medium), "h5"), "font-size") + unquote("px");
-  padding: 20px 20px 0 20px;
+  padding: 20px;
   margin: 4px 0 0 60px;
   border-radius: $global-radius;
   overflow: auto;
@@ -153,31 +153,32 @@
 .c-nav-dropdown-item {
   display: block;
   list-style: none;
-  margin-bottom: 10px;
+}
 
-  a {
-    display: inline-block;
+.c-nav-dropdown-item-link {
+  display: inline-block;
 
-    &:link,
-    &:visited {
-      color: $black;
-      text-decoration: none;
-      text-transform: uppercase;
-      border-bottom: 2px solid transparent;
-      -webkit-transition: border-bottom 0.2s;
-      -moz-transition: border-bottom 0.2s;
-      -o-transition: border-bottom 0.2s;
-      transition: border-bottom 0.2s;
-    }
+  &:link,
+  &:visited {
+    color: $black;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    -moz-transition: border-bottom 0.2s;
+    -o-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+  }
 
-    &:hover,
-    &:active {
-      border-bottom: 2px solid $site-header-nav-link-hover-color;
-    }
+  &:hover,
+  &:active {
+    border-bottom: 2px solid $site-header-nav-link-hover-color;
   }
 }
 
-.c-nav-dropdown-item-current {
+.c-nav-dropdown-item-current-link {
+  @extend .c-nav-dropdown-item-link;
+
   &:link,
   &:visited {
     color: $dark-gray;
@@ -186,9 +187,9 @@
 }
 
 .c-nav-dropdown-item-section {
-  display: none;
+  display: block;
   margin-left: 10px;
-  font-size: map-get(map-get(map-get($header-styles, medium), "h5"), "font-size") + unquote("px");
+  font-size: map-get(map-get(map-get($header-styles, medium), "h6"), "font-size") + unquote("px");
 }
 
 .c-nav-dropdown-icon {
@@ -217,6 +218,39 @@
   }
 }
 
+/***************************************/
+/*     Section Dropdown  Navigation    */
+/***************************************/
+.c-nav-dropdown-item-section {
+  display: none;
+}
+
+.c-nav-dropdown-item .c-nav-dropdown-item-section-dropdown-hide {
+  visibility: hidden;
+}
+
+.c-nav-dropdown-item-section-dropdown-icon {
+  display: inline-block;
+  // get font-size from header h5 sizes
+  font-size: map-get(map-get(map-get($header-styles, medium), "h3"), "font-size") + unquote("px");
+  cursor: pointer;
+  color: $black;
+
+  &:hover,
+  &:active {
+    color: $primary-color;
+  }
+
+  &:link,
+  &:visited {
+    color: $black;
+    text-decoration: none;
+  }
+
+  i {
+    width: 30px;
+  }
+}
 /***************************/
 /*    Section Navigation   */
 /***************************/
@@ -274,29 +308,48 @@
     font-size: map-get(map-get(map-get($header-styles, large), "h2"), "font-size") + unquote("px");
   }
 
-  .c-nav-dropdown-item {
-    a {
-      width: 100%;
-      &:link,
-      &:visited {
-        text-transform: uppercase;
-        background-color: transparent;
-        border-bottom: none;
-        transition: background-color 0.2s;
-      }
+  .c-nav-dropdown-item-link {
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+      background-color: transparent;
+      border-bottom: none;
+      transition: background-color 0.2s;
+    }
 
-      &:hover,
-      &:active {
-        border-bottom: none;
-        background-color: rgba($site-header-nav-link-hover-color, 0.4);
-      }
+    &:hover,
+    &:active {
+      border-bottom: none;
+      //background-color: rgba($site-header-nav-link-hover-color, 0.4);
+    }
+  }
+
+  .c-nav-dropdown-item-section-dropdown-icon {
+    color: $black;
+
+    &:hover,
+    &:active {
+      color: $white;
+    }
+
+    &:link,
+    &:visited {
+      color: $black;
     }
   }
 
   .c-nav-dropdown-item-section {
-    display: block;
-    width: 100%;
     font-size: map-get(map-get(map-get($header-styles, medium), "h4"), "font-size") + unquote("px");
+
+    &:hover {
+      background: rgba($site-header-nav-link-hover-color, 0.4);
+    }
+  }
+
+  .c-nav-dropdown-item-page {
+    &:hover {
+      background: rgba($site-header-nav-link-hover-color, 0.4);
+    }
   }
 
   .c-nav-page-sections-main {
