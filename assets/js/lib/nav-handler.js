@@ -36,9 +36,13 @@ class NavHandler {
     // mobile navigation
     const $dropDownNavIcon = $('.' + this.dropDownMenuIconElClass);
     if ($dropDownNavIcon.length) {
-      $dropDownNavIcon.get(0).onclick = this._handleDropDownClick.bind(this);
+      $dropDownNavIcon.get(0).onclick = this._handleDropDownClick.bind(this,
+                                                                       this.dropDownMenuElClass,
+                                                                       this.dropDownMenuIconElClass,
+                                                                       this.iconMenuOpen,
+                                                                       this.iconMenuClose);
     } else {
-      console.error('NavHandler: Couldn\'t find nav icon \'.' + this.dropDownMenuElClass + '\' in document.');
+      console.error('NavHandler: Couldn\'t find nav icon \'.' + this.dropDownMenuIconElClass + '\' in document.');
     }
 
     const $navTop = $('.' + this.navTopMenuElClass);
@@ -55,25 +59,24 @@ class NavHandler {
     }
   }
 
-  _handleDropDownClick() {
-    const $dropDownNavMenu = $('.' + this.dropDownMenuElClass);
-    const $icon = $('.' + this.dropDownMenuIconElClass + ' i');
+  _handleDropDownClick(dropDownMenuElClass, dropDownMenuIconElClass, iconOpen, iconClose) {
+    const $dropDownNavMenu = $('.' + dropDownMenuElClass);
+    const $icon = $('.' + dropDownMenuIconElClass + ' i');
 
     if ($dropDownNavMenu.length && $icon.length) {
       // open dropdown
       $dropDownNavMenu.slideToggle(200);
 
-      if ($icon.hasClass(this.iconMenuOpen)) {
-        $icon.removeClass(this.iconMenuOpen);
-        $icon.addClass(this.iconMenuClose);
+      if ($icon.hasClass(iconOpen)) {
+        $icon.removeClass(iconOpen);
+        $icon.addClass(iconClose);
       } else {
-        $icon.removeClass(this.iconMenuClose);
-        $icon.addClass(this.iconMenuOpen);
+        $icon.removeClass(iconClose);
+        $icon.addClass(iconOpen);
       }
     } else {
-      console.error('NavHandler: Couldn\'t find dropDownNavMenu or icon \'.' + this.dropDownMenuElClass + '\' \'.' + this.dropDownMenuIconElClass + '\' in document.');
+      console.error('NavHandler: Couldn\'t find dropdown menu or icon \'.' + dropDownMenuElClass + '\' \'.' + dropDownMenuIconElClass + '\' in document.');
     }
-
   }
 }
 export { NavHandler };
