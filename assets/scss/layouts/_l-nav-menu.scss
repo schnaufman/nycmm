@@ -187,7 +187,6 @@
 }
 
 .c-nav-dropdown-item-section {
-  display: block;
   margin-left: 10px;
   font-size: map-get(map-get(map-get($header-styles, medium), "h6"), "font-size") + unquote("px");
 }
@@ -221,16 +220,18 @@
 /***************************************/
 /*     Section Dropdown  Navigation    */
 /***************************************/
-.c-nav-dropdown-item-section {
-  display: none;
-}
-
 .c-nav-dropdown-item .c-nav-dropdown-item-section-dropdown-hide {
   visibility: hidden;
 }
 
+.c-nav-dropdown-item-section-dropdown {
+  display: none;
+  list-style: none;
+}
+
 .c-nav-dropdown-item-section-dropdown-icon {
-  display: inline-block;
+  // hide section dropdowns for fullsize screens by default (is set again in media query)
+  visibility: hidden;
   // get font-size from header h5 sizes
   font-size: map-get(map-get(map-get($header-styles, medium), "h3"), "font-size") + unquote("px");
   cursor: pointer;
@@ -299,6 +300,10 @@
     font-size: map-get(map-get(map-get($header-styles, medium), "h4"), "font-size") + unquote("px");
   }
 
+  .c-nav-dropdown-item-section-dropdown-icon {
+    visibility: unset;
+  }
+
   .c-nav-container {
     margin-top: 20px;
   }
@@ -309,6 +314,8 @@
   }
 
   .c-nav-dropdown-item-link {
+    font-size: map-get(map-get(map-get($header-styles, medium), "h4"), "font-size") + unquote("px");
+
     &:link,
     &:visited {
       text-transform: uppercase;
@@ -320,35 +327,7 @@
     &:hover,
     &:active {
       border-bottom: none;
-      //background-color: rgba($site-header-nav-link-hover-color, 0.4);
-    }
-  }
-
-  .c-nav-dropdown-item-section-dropdown-icon {
-    color: $black;
-
-    &:hover,
-    &:active {
-      color: $white;
-    }
-
-    &:link,
-    &:visited {
-      color: $black;
-    }
-  }
-
-  .c-nav-dropdown-item-section {
-    font-size: map-get(map-get(map-get($header-styles, medium), "h4"), "font-size") + unquote("px");
-
-    &:hover {
-      background: rgba($site-header-nav-link-hover-color, 0.4);
-    }
-  }
-
-  .c-nav-dropdown-item-page {
-    &:hover {
-      background: rgba($site-header-nav-link-hover-color, 0.4);
+      background-color: rgba($site-header-nav-link-hover-color, 0.4);
     }
   }
 

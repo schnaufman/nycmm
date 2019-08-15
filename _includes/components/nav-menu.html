@@ -25,19 +25,19 @@
               {% endif %}
               <a class="{{ show_section_dropdown }} c-nav-dropdown-item-section-dropdown-icon js--nav-dropdown-item-section-dropdown-icon"><i class="ion-md-add"></i></a>
               <a class="{{ link_class }}" href="{{ pageIt.permalink | relative_url }}">{{ page_title }}</a>
-            </li>
-            {% if show_section_dropdown %}
-            <div class="c-nav-dropdown-item-section-dropdown js--nav-dropdown-item-section-dropdown">
-            {% endif %}
+              {% if show_section_dropdown %}
+                <ul class="c-nav-dropdown-item-section-dropdown js--nav-dropdown-item-section-dropdown">
+                {% endif %}
 
-              {% for section in site.data.sections[pageIt.section] %}
-                {% assign section_id = site.data.lang[pageIt.language].navigation[{{section.id}}] %}
-                {% assign section_title = site.data.lang[pageIt.language].navigation[{{section.title}}] %}
-                <li class="c-nav-dropdown-item-section"><a class="c-nav-dropdown-item-link" href="{{ pageIt.permalink | relative_url }}#{{ section_id }}">{{ section_title }}</a></li>
-              {% endfor %}
-            {% if show_section_dropdown %}
-            </div>
-            {% endif %}
+                  {% for section in site.data.sections[pageIt.section] %}
+                    {% assign section_id = site.data.lang[pageIt.language].navigation[{{section.id}}] %}
+                    {% assign section_title = site.data.lang[pageIt.language].navigation[{{section.title}}] %}
+                    <li class="c-nav-dropdown-item-section"><a class="c-nav-dropdown-item-link" href="{{ pageIt.permalink | relative_url }}#{{ section_id }}">{{ section_title }}</a></li>
+                  {% endfor %}
+                {% if show_section_dropdown %}
+                </ul>
+              {% endif %}
+            </li>
           </div>
         {% endfor %}
       </ul>

@@ -27,6 +27,8 @@ $(document).ready(function () {
 
   new NavHandler('js--nav-dropdown',
     'js--nav-dropdown-icon',
+    'js--nav-dropdown-item-section-dropdown',
+    'js--nav-dropdown-item-section-dropdown-icon',
     'js--nav-container-sticky',
     'js--nav-back-to-top-container');
 
