@@ -7,51 +7,49 @@ header {
   color: $white;
   background: $site-header-overlay-color;
   font-weight: $site-header-font-weight;
+}
 
-  .c-header-content {
+.c-header-content {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  h1,
+  h2 {
+    color: $white;
+  }
+  h2 {
+    font-style: italic;
+  }
+}
+
+.c-header-button {
+  color: $white;
+  font-size: map-get(map-get(map-get($header-styles, medium), h5), "font-size") + unquote("px");
+  width: 200px;
+  margin: 0 10px 0 0;
+
+  &:hover,
+  &:active {
+    background-color: $primary-color;
+    color: $white;
+  }
+
+  &:link,
+  &:visited {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.c-header-video {
+  position: relative;
+  z-index: -100;
+
+  video {
     position: absolute;
-    text-align: center;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%);
-
-    h1,
-    h2 {
-      color: $white;
-    }
-    h2 {
-      font-style: italic;
-    }
-    .c-header-button {
-      color: $white;
-      font-size: map-get(map-get(map-get($header-styles, medium), h5), "font-size") + unquote("px");
-
-      &:hover,
-      &:active {
-        background-color: $primary-color;
-        color: $white;
-      }
-
-      &:link,
-      &:visited {
-        color: $white;
-        text-decoration: none;
-      }
-    }
-  }
-
-  .c-header-button {
-    width: 200px;
-    margin: 0 10px 0 0;
-  }
-
-  .c-header-video {
-    position: relative;
-    z-index: -100;
-
-    video {
-      position: absolute;
-    }
   }
 }
 
@@ -61,19 +59,19 @@ header {
 /* up to Large */
 @media only screen and (max-width: 64em) {
   header {
-    background-image: linear-gradient($site-header-overlay-color, $site-header-overlay-color), url(/assets/video/bassmovie_x264_poster.jpeg);
+    background-image: linear-gradient($site-header-overlay-color, $site-header-overlay-color),
+      url(/assets/video/bassmovie_x264_poster.jpeg);
     background-size: cover;
+  }
 
-    .c-header-content {
-      top: 30%;
+  .c-header-content {
+    top: 30%;
+  }
 
-      .c-header-button {
-        margin: 0 10px 10px 0;
-      }
-    }
-
-    .c-header-video {
-      display: none;
-    }
+  .c-header-button {
+    margin: 0 10px 10px 0;
+  }
+  .c-header-video {
+    display: none;
   }
 }

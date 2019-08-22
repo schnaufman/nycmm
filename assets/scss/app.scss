@@ -31,7 +31,6 @@
 // them in Foundations's variables file
 
 // Global Config Variables
-@import 'base/config';
 @import 'base/reset';
 
 //
@@ -55,6 +54,7 @@
 
 // Import all of Foundation
 @import 'foundation/foundation';
+@import 'base/config';
 
 @import 'node_modules/cookieconsent/build/cookieconsent.min';
 
