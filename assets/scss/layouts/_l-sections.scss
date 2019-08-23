@@ -1,6 +1,14 @@
 /****************************/
 /* general section settings */
 /****************************/
+//
+// config
+//
+$sections-even-background: $lighter-gray;
+
+//
+// style
+//
 
 // set background for every even child of section in the section-container
 .c-section-main-content {

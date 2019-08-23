@@ -18,7 +18,6 @@
 // override Foundation's default styles
 @import 'settings';
 
-
 // Foundation Components
 // --------------------------------------------------
 // Behold, here are all the Foundation components.
@@ -27,7 +26,6 @@
 //@import 'node_modules/motion-ui/src/motion-ui';
 
 @include foundation-global-styles;
-@include add-foundation-colors;
 
 // This is the default Flexbox Grid
 // http://foundation.zurb.com/sites/docs/flex-grid.html

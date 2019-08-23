@@ -1,12 +1,17 @@
-// --------------------------------------------------
-// Links
-// --------------------------------------------------
+/***************************************/
+/*                Links                */
+/***************************************/
 
-/*a:link,
+//
+// config
+//
+$link-color-hover: $secondary-color;
+$link-color-visited: $link-color-hover;
+
+
+/* a:link,
 a:visited {
   color: $link-color-visited;
-  text-decoration: none;
-  border-bottom: 1px solid $link-color-visited;
   -webkit-transition: border-bottom 0.2s, color 0.2s;
   -moz-transition: border-bottom 0.2s, color 0.2s;
   -ms-transition: border-bottom 0.2s, color 0.2s;
@@ -17,6 +22,5 @@ a:visited {
 a:hover,
 a:active {
   color: $link-color-hover;
-  border-bottom: 1px solid transparent;
-}*/
+} */
 

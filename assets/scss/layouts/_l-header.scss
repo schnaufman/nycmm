@@ -1,6 +1,16 @@
 /***************************************/
 /*                Header               */
 /***************************************/
+
+//
+// config
+//
+$site-header-overlay-color: rgba($black, 0.47);
+$site-header-nav-link-hover-color: $primary-color;
+
+//
+// style
+//
 header {
   height: 100%;
   overflow: hidden;
@@ -26,10 +36,17 @@ header {
 }
 
 .c-header-button {
-  color: $white;
+  border: 1px solid $primary-color;
+  border-radius: $global-radius;
   font-size: map-get(map-get(map-get($header-styles, medium), h5), "font-size") + unquote("px");
   width: 200px;
   margin: 0 10px 0 0;
+  padding: 20px 40px;
+  -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  -moz-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  -ms-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  -o-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
 
   &:hover,
   &:active {

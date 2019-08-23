@@ -32,13 +32,15 @@
 
 // Global Config Variables
 @import 'base/reset';
+@import 'base/config';
 
 //
 // 3. Fonts
 // --------------------------------------------------
-
 // Open Sans
 // @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700");
+// Lato
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400");
 
 //
 // 4. Foundation and Cookieconsent
@@ -54,8 +56,8 @@
 
 // Import all of Foundation
 @import 'foundation/foundation';
-@import 'base/config';
 
+// cookieconsent import
 @import 'node_modules/cookieconsent/build/cookieconsent.min';
 
 //

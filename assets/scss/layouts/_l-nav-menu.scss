@@ -1,6 +1,16 @@
 /***************************************/
 /*            Navigation               */
 /***************************************/
+
+//
+// config
+//
+$sticky-container-background-color: $light-gray;
+$sticky-container-box-shadow: $medium-gray;
+
+$nav-dropdown-background-color: $light-gray;
+$nav-dropdown-box-shadow: $medium-gray;
+
 .c-nav-page-sections-main-item {
   list-style: none;
   a {
@@ -92,8 +102,8 @@
 }
 
 .c-nav-container-sticky.sticky.is-stuck {
-  background-color: $light-gray;
-  box-shadow: 0 2px 2px $medium-gray;
+  background-color: $sticky-container-background-color;
+  box-shadow: 0 2px 2px $sticky-container-box-shadow;
 
   .c-nav-dropdown-icon {
     color: $black;
@@ -138,8 +148,8 @@
 .c-nav-dropdown {
   display: none;
   position: absolute;
-  background-color: $light-gray;
-  box-shadow: 0 2px 2px $medium-gray;
+  background-color: $nav-dropdown-background-color;
+  box-shadow: 0 2px 2px $nav-dropdown-box-shadow;
   // get font-size from header h5 sizes
   font-size: map-get(map-get(map-get($header-styles, medium), "h5"), "font-size") + unquote("px");
   padding: 20px;
