@@ -4,33 +4,23 @@
 //
 // Colors
 // --------------------------------------------------
-$black: #373737;
-$white: #fcfcfc;
-
-$lighter-gray: #f6f6f6;
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
+//
+// Globals
+// --------------------------------------------------
+$global-radius: 3px;
 
 $foundation-palette: (
-  primary: #E26B00,
-  secondary: #0C163D,
+  primary: $primary-color,
+  secondary: $secondary-color,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
 );
 
-$black: #373737;
-$white: #fcfcfc;
-
-$lighter-gray: #f6f6f6;
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-
 //
 // Font
 //
+// -------------------------------------------------
 $header-styles: (
   small: (
     'h1': ('font-size': 24),
@@ -57,11 +47,6 @@ $header-styles: (
     'h6': ('font-size': 16),
   )
 );
-
-//
-// Globals
-// --------------------------------------------------
-$global-radius: 3px;
 
 //
 // Buttons

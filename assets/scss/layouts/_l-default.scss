@@ -2,13 +2,6 @@
 /*        Default Layout               */
 /***************************************/
 
-//
-// config
-//
-$footer-background-color: $black;
-$footer-link-inactive: $medium-gray;
-
-
 /***************************************/
 /*                Footer               */
 /***************************************/
@@ -16,7 +9,7 @@ $footer-link-inactive: $medium-gray;
 footer {
   background: $footer-background-color;
   padding-top: 20px;
-  color: $medium-gray;
+  color: $footer-text-color;
 
   li {
     font-size: 20px;
@@ -25,7 +18,7 @@ footer {
     a:visited,
     a:link,
     a:visited {
-      color: $medium-gray;
+      color: $footer-text-color;
       -webkit-transition: border-bottom 0.2s;
       -moz-transition: border-bottom 0.2s;
       -o-transition: border-bottom 0.2s;
@@ -34,7 +27,7 @@ footer {
 
     a:active,
     a:hover {
-      color: $primary-color;
+      color: $footer-text-hover-color;
 
       // social icons
       .ion-logo-facebook {

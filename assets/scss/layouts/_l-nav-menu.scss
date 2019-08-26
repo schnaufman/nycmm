@@ -2,15 +2,6 @@
 /*            Navigation               */
 /***************************************/
 
-//
-// config
-//
-$sticky-container-background-color: $light-gray;
-$sticky-container-box-shadow: $medium-gray;
-
-$nav-dropdown-background-color: $light-gray;
-$nav-dropdown-box-shadow: $medium-gray;
-
 .c-nav-page-sections-main-item {
   list-style: none;
   a {
@@ -53,7 +44,7 @@ $nav-dropdown-box-shadow: $medium-gray;
   right: 30px;
   bottom: 30px;
   position: fixed;
-  border: 2px solid $primary-color;
+  border: 2px solid $nav-back-to-top-button-color;
   border-radius: 50%;
   text-align: center;
   color: $black;
@@ -71,7 +62,7 @@ $nav-dropdown-box-shadow: $medium-gray;
 
   &:hover,
   &:active {
-    color: $primary-color;
+    color: $nav-back-to-top-button-color;
   }
 
   i {
@@ -103,14 +94,14 @@ $nav-dropdown-box-shadow: $medium-gray;
 
 .c-nav-container-sticky.sticky.is-stuck {
   background-color: $sticky-container-background-color;
-  box-shadow: 0 2px 2px $sticky-container-box-shadow;
+  box-shadow: 0 2px 2px $sticky-container-box-shadow-color;
 
   .c-nav-dropdown-icon {
     color: $black;
 
     &:hover,
     &:active {
-      color: $primary-color;
+      color: $nav-hover-color;
     }
 
     &:link,
@@ -149,7 +140,7 @@ $nav-dropdown-box-shadow: $medium-gray;
   display: none;
   position: absolute;
   background-color: $nav-dropdown-background-color;
-  box-shadow: 0 2px 2px $nav-dropdown-box-shadow;
+  box-shadow: 0 2px 2px $nav-dropdown-box-shadow-color;
   // get font-size from header h5 sizes
   font-size: map-get(map-get(map-get($header-styles, medium), "h5"), "font-size") + unquote("px");
   padding: 20px;
@@ -191,7 +182,7 @@ $nav-dropdown-box-shadow: $medium-gray;
 
   &:link,
   &:visited {
-    color: $dark-gray;
+    color: $nav-dropdown-current-item-color;
     text-decoration: none;
   }
 }
@@ -213,7 +204,7 @@ $nav-dropdown-box-shadow: $medium-gray;
 
   &:hover,
   &:active {
-    color: $primary-color;
+    color: $nav-hover-color;
   }
 
   &:link,
@@ -249,7 +240,7 @@ $nav-dropdown-box-shadow: $medium-gray;
 
   &:hover,
   &:active {
-    color: $primary-color;
+    color: $nav-hover-color;
   }
 
   &:link,

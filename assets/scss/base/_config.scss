@@ -9,6 +9,45 @@
 //
 // Colors
 // --------------------------------------------------
+$black: #373737;
+$white: #fcfcfc;
+
+$lighter-gray: #f6f6f6;
+$light-gray: #e6e6e6;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a;
+
+$primary-color: #e4964c;
+$secondary-color: #213246;
+
+// header
+$site-header-overlay-color: rgba($black, 0.47);
+$site-header-nav-link-hover-color: $primary-color;
+$header-underline-color: $primary-color;
+$header-button-color: $primary-color;
+
+// footer
+$footer-background-color: $secondary-color;
+$footer-text-color: $medium-gray;
+$footer-text-hover-color: $primary-color;
+
+//sections
+$sections-even-background-color: $lighter-gray;
+$section-how-it-works-step-color: $primary-color;
+
+//nav
+$sticky-container-background-color: $light-gray;
+$sticky-container-box-shadow-color: $medium-gray;
+$nav-hover-color: $primary-color;
+$nav-dropdown-background-color: $light-gray;
+$nav-dropdown-box-shadow-color: $medium-gray;
+$nav-dropdown-current-item-color: $dark-gray;
+$nav-back-to-top-button-color: $primary-color;
+
+// links
+$link-hover-color: $secondary-color;
+$link-visited-color: $link-hover-color;
+
 //
 // Font Settings
 // -------------------------------------------------
@@ -21,10 +60,10 @@ $header-font-weight: $font-weight-light;
 //header page section (not header like h1,h2,h3)
 $site-header-font-weight: $header-font-weight;
 
+
 //
 // Lib Settings
 // -------------------------------------------------
-
 // maps
 $map-height-large: 550px;
 $map-height-medium: 600px;

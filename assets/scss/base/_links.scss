@@ -2,16 +2,11 @@
 /*                Links                */
 /***************************************/
 
-//
-// config
-//
-$link-color-hover: $secondary-color;
-$link-color-visited: $link-color-hover;
 
 
 /* a:link,
 a:visited {
-  color: $link-color-visited;
+  color: $link-visited-color;
   -webkit-transition: border-bottom 0.2s, color 0.2s;
   -moz-transition: border-bottom 0.2s, color 0.2s;
   -ms-transition: border-bottom 0.2s, color 0.2s;
@@ -21,6 +16,6 @@ a:visited {
 
 a:hover,
 a:active {
-  color: $link-color-hover;
+  color: $link-hover-color;
 } */
 

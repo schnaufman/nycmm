@@ -13,7 +13,7 @@ h4 {
   &:after {
     display: block;
     height: 2px;
-    background-color: $primary-color;
+    background-color: $header-underline-color;
     content: "";
     width: 100px;
     margin: 0 auto;
