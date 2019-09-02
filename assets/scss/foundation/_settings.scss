@@ -7,15 +7,17 @@
 //
 // Globals
 // --------------------------------------------------
-$global-radius: 3px;
+$global-radius: 1px;
 
 $foundation-palette: (
   primary: $primary-color,
   secondary: $secondary-color,
   success: #3adb76,
   warning: #ffae00,
-  alert: #cc4b37,
+  alert: #cc4b37
 );
+
+$anchor-color: $primary-color;
 
 //
 // Font

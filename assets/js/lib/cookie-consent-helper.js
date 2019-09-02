@@ -58,10 +58,10 @@ class CookieConsentHelper {
       container: document.getElementById('content'),
       palette: {
         popup: {
-          background: '#252e39'
+          background: '#1e262f'
         },
         button: {
-          background: '#f1d600'
+          background: '#f4c500'
         }
       },
       theme: 'classic',

@@ -44,10 +44,10 @@
   right: 30px;
   bottom: 30px;
   position: fixed;
-  border: 2px solid $nav-back-to-top-button-color;
+  border: 2px solid $nav-back-to-top-button-border-color;
   border-radius: 50%;
   text-align: center;
-  color: $black;
+  color: $nav-back-to-top-button-color;
   background-color: $white;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
   width: 3em; // relative due to circle
@@ -56,13 +56,13 @@
 
   &:link,
   &:visited {
-    color: $black;
+    color: $nav-back-to-top-button-color;
     text-decoration: none;
   }
 
   &:hover,
   &:active {
-    color: $nav-back-to-top-button-color;
+    color: $nav-back-to-top-button-hover-color;
   }
 
   i {
@@ -277,7 +277,7 @@
 /***************************************/
 /*       Navigation Queries            */
 /***************************************/
-/* up to Medium */
+/* up to Large */
 @media only screen and (max-width: 64em) {
   .c-nav-logo {
     display: none;
@@ -294,6 +294,7 @@
   }
 }
 
+/* up to Medium */
 @media only screen and (max-width: 40em) {
   .c-nav-dropdown {
     width: 100%;

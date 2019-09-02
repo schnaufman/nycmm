@@ -18,7 +18,8 @@ $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 
 $primary-color: #E26B00;
-$secondary-color: #213246;
+//$secondary-color: #213246;
+$secondary-color: #252e39;
 
 // header
 $site-header-overlay-color: rgba($black, 0.47);
@@ -42,11 +43,13 @@ $nav-hover-color: $primary-color;
 $nav-dropdown-background-color: $light-gray;
 $nav-dropdown-box-shadow-color: $medium-gray;
 $nav-dropdown-current-item-color: $dark-gray;
-$nav-back-to-top-button-color: $primary-color;
+$nav-back-to-top-button-color: $secondary-color;
+$nav-back-to-top-button-border-color: $secondary-color;
+$nav-back-to-top-button-hover-color: $primary-color;
 
 // links
-$link-hover-color: $secondary-color;
-$link-visited-color: $link-hover-color;
+$link-hover-color: $primary-color;
+$link-visited-color: $secondary-color;
 
 //
 // Font Settings
