@@ -6,6 +6,7 @@ assets/js/all.js
 rev-manifest.json
 
 # Cache
+.jekyll-cache/
 .sass-cache/
 *.sassc
 *.scssc
