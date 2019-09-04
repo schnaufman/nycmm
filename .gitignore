@@ -48,9 +48,6 @@ _site
 # VSCode
 .vscode
 
-# Ruby
-Gemfile.lock
-
 # Composer
 composer.lock
 
