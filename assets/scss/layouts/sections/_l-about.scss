@@ -30,7 +30,7 @@
 
   &:hover {
     .c-section-tutor-description {
-      margin-top: 10px;
+      margin-top: rem-calc(10);
       opacity: 1;
       transition: opacity 0.5s;
       z-index: 10;
@@ -49,7 +49,7 @@
 
   .c-section-tutor-description-mobile {
     display: none;
-    margin-top: 10px;
+    margin-top: rem-calc(10);
     width: 100%;
     text-align: center;
   }
@@ -78,7 +78,7 @@
 .c-section-contact-form-map-box {
   position: relative;
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: rem-calc(20);
 
 }
 
@@ -91,21 +91,21 @@
   }
 
   textarea {
-    height: 120px;
+    height: rem-calc(120);
     resize: none;
   }
 
   label[for="newsletter"] {
-    margin-bottom: 7px;
+    margin-bottom: rem-calc(7);
 
     > input[type="checkbox"] {
-      margin: 5px;
+      margin: rem-calc(5);
       vertical-align: bottom;
     }
   }
 
   input[type="submit"] {
-    padding: 7px;
+    padding: rem-calc(7);
     border-radius: $global-radius;
     border: 1px solid #ccc;
   }
@@ -115,7 +115,7 @@
   select,
   textarea {
     width: 100%;
-    padding: 7px;
+    padding: rem-calc(7);
     border-radius: $global-radius;
     border: 1px solid #ccc;
   }
@@ -132,7 +132,7 @@
 
   h3 {
     text-align: center;
-    padding: 20px 5px 0 5px;
+    padding: rem-calc(20 5 0 5);
   }
 }
 
@@ -150,7 +150,7 @@
 @media only screen and (max-width: 63.9375em) {
   .c-section-howitworks-step-count {
     h3 {
-      margin-top: 5px;
+      margin-top: rem-calc(5);
     }
   }
 
@@ -158,7 +158,7 @@
     position: relative;
     width: 100%;
     z-index: 0;
-    padding-bottom: 20px;
+    padding-bottom: rem-calc(20);
     height: auto;
   }
 
@@ -201,7 +201,7 @@
 @media only screen and (max-width: 39.9375em) {
   .c-section-howitworks-step-count {
     h3 {
-      margin-top: 11px;
+      margin-top: rem-calc(11);
     }
   }
 }

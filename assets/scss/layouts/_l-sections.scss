@@ -10,19 +10,19 @@
 }
 
 .c-section {
-  padding: 40px 0;
+  padding: rem-calc(40 0);
 }
 
 .c-section-cell-description {
   h4 {
-    margin-bottom: 20px;
+    margin-bottom: rem-calc(20);
   }
 }
 
 .c-section-image {
   width: 15%;
   margin: auto;
-  margin-bottom: 10px;
+  margin-bottom: rem-calc(10);
 
   .c-section-image-svg {
     fill: $primary-color;
@@ -32,6 +32,6 @@
 /* up to small */
 @media only screen and (max-width: 39.9375em) {
   .c-section {
-    padding: 20px 5px;
+    padding: rem-calc(20 5);
   }
 }

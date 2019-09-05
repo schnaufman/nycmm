@@ -15,7 +15,7 @@
       -moz-transition: border-bottom 0.2s;
       -o-transition: border-bottom 0.2s;
       transition: border-bottom 0.2s;
-      padding: 8px 0;
+      padding: rem-calc(8 0);
     }
 
     &:hover,
@@ -26,13 +26,13 @@
 }
 
 .c-nav-container {
-  margin-top: 60px;
+  margin-top: rem-calc(60);
 }
 
 .c-nav-logo {
   float: right;
-  padding-right: 60px;
-  margin-top: -10px;
+  padding-right: rem-calc(60);
+  margin-top: -rem-calc(10);
 }
 
 // will be displayed with sticky event from top sticky
@@ -41,8 +41,8 @@
 }
 
 .c-nav-back-to-top-button {
-  right: 30px;
-  bottom: 30px;
+  right: rem-calc(30);
+  bottom: rem-calc(30);
   position: fixed;
   border: 2px solid $nav-back-to-top-button-border-color;
   border-radius: 50%;
@@ -67,7 +67,7 @@
 
   i {
     font-size: map-get(map-get(map-get($header-styles, medium), "h2"), "font-size") + unquote("px");
-    width: 30px;
+    width: rem-calc(30);
   }
 }
 
@@ -89,7 +89,7 @@
   float: right;
   // hide logo in the sticky menu per default
   display: none;
-  padding-right: 60px;
+  padding-right: rem-calc(60);
 }
 
 .c-nav-container-sticky.sticky.is-stuck {
@@ -143,11 +143,11 @@
   box-shadow: 0 2px 2px $nav-dropdown-box-shadow-color;
   // get font-size from header h5 sizes
   font-size: map-get(map-get(map-get($header-styles, medium), "h5"), "font-size") + unquote("px");
-  padding: 20px;
-  margin: 4px 0 0 60px;
+  padding: rem-calc(20);
+  margin: rem-calc(4 0 0 60);
   border-radius: $global-radius;
   overflow: auto;
-  max-height: 500px;
+  max-height: rem-calc(500);
   z-index: 50;
 }
 
@@ -188,7 +188,7 @@
 }
 
 .c-nav-dropdown-item-section {
-  margin-left: 10px;
+  margin-left: rem-calc(10);
   font-size: map-get(map-get(map-get($header-styles, medium), "h6"), "font-size") + unquote("px");
 }
 
@@ -198,8 +198,8 @@
   font-size: map-get(map-get(map-get($header-styles, medium), "h2"), "font-size") + unquote("px");
   cursor: pointer;
   color: $white;
-  width: 30px;
-  margin-left: 60px;
+  width: rem-calc(30);
+  margin-left: rem-calc(60);
   vertical-align: middle;
 
   &:hover,
@@ -214,7 +214,7 @@
   }
 
   i {
-    width: 30px;
+    width: rem-calc(30);
   }
 }
 
@@ -250,7 +250,7 @@
   }
 
   i {
-    width: 30px;
+    width: rem-calc(30);
   }
 }
 /***************************/
@@ -270,7 +270,7 @@
 }
 
 .c-nav-page-sections-main-item {
-  margin-left: 40px;
+  margin-left: rem-calc(40);
   display: inline-block;
 }
 
@@ -290,7 +290,7 @@
   }
 
   .c-nav-page-sections-main-item {
-    margin-left: 20px;
+    margin-left: rem-calc(20);
   }
 }
 
@@ -307,11 +307,11 @@
   }
 
   .c-nav-container {
-    margin-top: 20px;
+    margin-top: rem-calc(20);
   }
 
   .c-nav-dropdown-icon {
-    margin-left: 20px;
+    margin-left: rem-calc(20);
     font-size: map-get(map-get(map-get($header-styles, large), "h2"), "font-size") + unquote("px");
   }
 

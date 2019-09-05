@@ -8,11 +8,11 @@
 
 footer {
   background: $footer-background-color;
-  padding-top: 20px;
+  padding-top: rem-calc(20);
   color: $footer-text-color;
 
   li {
-    font-size: 20px;
+    font-size: rem-calc(20);
 
     a:link,
     a:visited,
@@ -42,7 +42,7 @@ footer {
 
   .copyright {
     p {
-      margin-top: 4px;
+      margin-top: rem-calc(4);
       height: 100%;
     }
   }
