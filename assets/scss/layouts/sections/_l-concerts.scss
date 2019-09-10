@@ -1,4 +1,3 @@
-
 /****************************/
 /* concerts section settings */
 /****************************/
@@ -6,6 +5,21 @@
 /******************/
 /* lineup section */
 /******************/
+
+
+.c-section-lineup-concert {
+  margin-bottom: rem-calc(50);
+
+  &:not(:last-child):after {
+    display: block;
+    height: rem-calc(1);
+    background-color: $secondary-color;
+    content: "";
+    width: rem-calc(100);
+    margin: 0 auto;
+    margin-top: rem-calc(10);
+  }
+}
 
 .c-section-lineup-concert-act-image {
   width: 100%;
