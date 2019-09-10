@@ -1,0 +1,41 @@
+
+/****************************/
+/* concerts section settings */
+/****************************/
+
+/******************/
+/* lineup section */
+/******************/
+
+.c-section-lineup-concert-act-image {
+  width: 100%;
+  overflow: hidden;
+  background: black;
+  margin: 0;
+  position: relative;
+
+  img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    background: black;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+  }
+
+  &:hover {
+    img {
+      opacity: 1;
+      transform: scale(1.03);
+    }
+  }
+}
+
+.c-section-lineup-concert-description {
+  text-align: center;
+  margin-bottom: rem-calc(25);
+
+  h4 {
+    margin-bottom: rem-calc(25);
+  }
+}

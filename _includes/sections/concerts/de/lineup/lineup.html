@@ -1,0 +1,39 @@
+{% assign section_data = site.data.sections[page.section] | where: "id", "lineup_id" | first %}
+
+<div class="grid-container">
+  {% assign concert_count = 0 %}
+  {% assign concert_size = section_data.concerts | size %}
+  {% for concert in section_data.concerts %}
+    {% assign concert_count = concert_count | plus: 1 %}
+    {% capture concert_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section_data.folder }}/{{ concert.description }} %}{% endcapture %}
+    <div class="c-section-lineup-concert-description">
+      {{ concert_description | | markdownify }}
+    </div>
+    {% assign act_size = concert.acts | size %}
+    {% assign act_cell_rows = act_size | divided_by: 3 %}
+    {% if act_cell_rows <= 0 %}
+      {% assign act_cell_grid = 6 %}
+    {% else %}
+      {% assign act_cell_grid = 4 %}
+    {% endif %}
+    <div class="grid-x grid-padding-x grid-padding-y">
+      {% for act in concert.acts %}
+        <div class="large-{{act_cell_grid}} medium-{{act-cell-grid}} small-12 cell">
+          <figure class="c-section-lineup-concert-act">
+            <div class="c-section-lineup-concert-act-image">
+              <img src="/assets/img/acts/{{ act.image }}" alt="{{ act.image-title }}" title="{{ act.image-title }}">
+            </div>
+            {% capture act_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section_data.folder }}/{{ act.description }} %}{% endcapture %}
+            <div class="c-section-lineup-concert-act-description">
+              {{ act_description | markdownify }}
+            </div>
+          </figure>
+        </div>
+      {% endfor %}
+    </div>
+
+    {%if concert_count < concert_size %}
+      <h2 class="c-header-underline"></div>
+    {% endif %}
+  {% endfor %}
+</div>

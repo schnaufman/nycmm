@@ -1,0 +1,23 @@
+- id: "lineup_id"
+  title: "lineup_title"
+  folder: "lineup"
+  descriptions:
+    main: "lineup.md"
+  content: "lineup.html"
+  concerts:
+    - description: "big-band-battle.md"
+      acts:
+        - image: "big-band-burghausen.jpg"
+          image-title: "Big Band Burghausen"
+          description: "big-band-burghausen.md"
+        - image: "big-band-franz-kirchner.jpg"
+          image-title: "Franz Kirchner Big Band"
+          description: "big-band-franz-kirchner.md"
+    - description: "austrian-music-night.md"
+      acts:
+        - image: "wilfried-scharf.jpg"
+          image-title: "Zithervirtuose Wilfried Scharf & der Salzburger Saitenklang"
+          description: "wilfried-scharf.md"
+        - image: "die-strottern.jpg"
+          image-title: "Die Strottern"
+          description: "die-strottern.md"
