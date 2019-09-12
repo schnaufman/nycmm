@@ -6,7 +6,6 @@
 /* lineup section */
 /******************/
 
-
 .c-section-lineup-concert {
   margin-bottom: rem-calc(50);
 
@@ -33,12 +32,10 @@
     width: 100%;
     height: auto;
     background: black;
-    transform: scale(1.00);
+    transform: scale(1);
     transition: transform 0.5s, opacity 0.5s;
-  }
 
-  &:hover {
-    img {
+    &:hover {
       opacity: 1;
       transform: scale(1.02);
     }
@@ -51,5 +48,18 @@
 
   h4 {
     margin-bottom: rem-calc(25);
+  }
+}
+
+/* up to medium */
+@media only screen and (max-width: 63.9375em) {
+  .c-section-lineup-concert-act-image {
+    img {
+      opacity: 1;
+
+      &:hover {
+        transform: scale(1.00);
+      }
+    }
   }
 }
