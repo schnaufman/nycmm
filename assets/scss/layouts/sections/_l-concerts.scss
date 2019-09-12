@@ -17,7 +17,7 @@
     content: "";
     width: rem-calc(100);
     margin: 0 auto;
-    margin-top: rem-calc(10);
+    margin-top: rem-calc(25);
   }
 }
 
@@ -33,14 +33,14 @@
     width: 100%;
     height: auto;
     background: black;
-    transform: scale(1.15);
+    transform: scale(1.00);
     transition: transform 0.5s, opacity 0.5s;
   }
 
   &:hover {
     img {
       opacity: 1;
-      transform: scale(1.03);
+      transform: scale(1.02);
     }
   }
 }

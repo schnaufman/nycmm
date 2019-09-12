@@ -6,6 +6,7 @@
   content: "lineup.html"
   concerts:
     - description: "big-band-battle.md"
+      x-grid-cells: "2"
       acts:
         - image: "big-band-burghausen.jpg"
           image-title: "Big Band Burghausen"
@@ -14,6 +15,7 @@
           image-title: "Franz Kirchner Big Band"
           description: "big-band-franz-kirchner.md"
     - description: "austrian-music-night.md"
+      x-grid-cells: "2"
       acts:
         - image: "wilfried-scharf.jpg"
           image-title: "Zithervirtuose Wilfried Scharf & der Salzburger Saitenklang"
@@ -21,3 +23,22 @@
         - image: "die-strottern.jpg"
           image-title: "Die Strottern"
           description: "die-strottern.md"
+    - description: "musiktag-jazz-meets-classic.md"
+      x-grid-cells: "2"
+      acts:
+        - image: "familienmusiktag.jpg"
+          image-title: "Familien Musiktag"
+          description: "familienmusiktag.md"
+        - image: "young-music-lions-series-prim.jpg"
+          image-title: "Young Music Lion Series: Jazz Trio PRIM"
+          description: "young-music-lions-series-prim.md"
+        - image: "jazz-meets-klassik.jpg"
+          image-title: "Jazz meets Klassik mit Culturessence feat. Sopranistin Cassandra McConnell & Loren Stillman"
+          description: "jazz-meets-klassik.md"
+    - description: "workshop-abschlusskonzerte.md"
+      x-grid-cells: "2"
+      acts:
+        - image: "workshop-abschlusskonzert.jpg"
+          image-title: "Workshop Abschlusskonzert"
+          description: "workshop-abschlusskonzert.md"
+
