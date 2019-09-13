@@ -41,4 +41,10 @@
         - image: "workshop-abschlusskonzert.jpg"
           image-title: "Workshop Abschlusskonzert"
           description: "workshop-abschlusskonzert.md"
+- id: "calendar_id"
+  title: "calendar_title"
+  folder: "calendar"
+  descriptions:
+    main: "calendar.md"
+  content: "calendar.html"
 
