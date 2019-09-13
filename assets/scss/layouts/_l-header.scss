@@ -13,8 +13,8 @@ header {
   position: absolute;
   text-align: center;
   top: 40%;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 40%;
+  transform: translateX(-35%);
 
   h1,
   h2 {
@@ -26,12 +26,13 @@ header {
 }
 
 .c-header-button {
+  display: inline-block;
   border: 1px solid $header-button-color;
   border-radius: $global-radius;
   font-size: map-get(map-get(map-get($header-styles, medium), h5), "font-size") + unquote("px");
   width: rem-calc(200);
   margin: rem-calc(0 10 0 0);
-  padding: rem-calc(20 40);
+  padding: rem-calc(20 30);
   -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
   -moz-transition: background-color 0.25s ease-out, color 0.25s ease-out;
   -ms-transition: background-color 0.25s ease-out, color 0.25s ease-out;
@@ -76,12 +77,9 @@ header {
   }
 
   .c-header-button {
-    margin: rem-calc(0 10 10 0);
+    margin: rem-calc(0 5 10 0);
   }
   .c-header-video {
     display: none;
-  }
-  .c-header-button {
-    display: inline-block;
   }
 }
