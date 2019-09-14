@@ -1,9 +1,7 @@
-{% assign section_data = site.data.sections[page.section] | where: "id", "lineup_id" | first %}
-
 <div class="grid-container">
-  {% for concert in section_data.concerts %}
+  {% for concert in section.concerts %}
     <div class="c-section-lineup-concert">
-      {% capture concert_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section_data.folder }}/{{ concert.description }} %}{% endcapture %}
+      {% capture concert_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ concert.description }} %}{% endcapture %}
       <div class="c-section-lineup-concert-description">
         {{ concert_description | | markdownify }}
       </div>
@@ -15,7 +13,7 @@
               <div class="c-section-lineup-concert-act-image">
                 <img src="/assets/img/acts/{{ act.image }}" alt="{{ act.image-title }}" title="{{ act.image-title }}">
               </div>
-              {% capture act_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section_data.folder }}/{{ act.description }} %}{% endcapture %}
+              {% capture act_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ act.description }} %}{% endcapture %}
               <div class="c-section-lineup-concert-act-description">
                 {{ act_description | markdownify }}
               </div>

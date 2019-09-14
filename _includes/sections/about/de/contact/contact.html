@@ -1,12 +1,10 @@
-{% assign section_data = site.data.sections[page.section] | where: "id", "contact_id" | first %}
-
 <div class="c-section-contact-form-map-box">
   <div id="gmapsMap"
-    lat="{{ section_data.maps.coordinates.lat }}"
-    lng="{{ section_data.maps.coordinates.lng }}"
-    lat-marker="{{ section_data.maps.marker.coordinates.lat }}"
-    lng-marker="{{ section_data.maps.marker.coordinates.lng }}"
-    zoom="{{ section_data.maps.zoom }}"
+    lat="{{ section.maps.coordinates.lat }}"
+    lng="{{ section.maps.coordinates.lng }}"
+    lat-marker="{{ section.maps.marker.coordinates.lat }}"
+    lng-marker="{{ section.maps.marker.coordinates.lng }}"
+    zoom="{{ section.maps.zoom }}"
     popup="<b>Landesmusikschule Mattighofen</b><br>Salzburger Straße 8<br>5230 Mattighofen">
   </div>
 
