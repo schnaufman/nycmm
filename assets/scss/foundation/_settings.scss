@@ -18,7 +18,20 @@ $foundation-palette: (
 );
 
 $anchor-color: $primary-color;
-$table-background: darken($white, 2%);
+
+// Table settings
+
+// PRIMARY COLOR TABLE
+//$table-striped-background: lighten($secondary-color, 75%); striped color variation
+/* $table-striped-background: lighten($primary-color, 50%);
+$table-head-background: lighten($primary-color, 30%);
+$table-border: 1px solid lighten($primary-color, 30%); */
+
+// SECONDARY COLOR TABLE
+//$table-striped-background: lighten($secondary-color, 70%);
+$table-striped-background: lighten($primary-color, 50%);
+$table-head-background: lighten($secondary-color, 60%);
+$table-border: 1px solid lighten($secondary-color, 50%);
 
 //
 // Font

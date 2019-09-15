@@ -16,7 +16,7 @@
             format: "{{ site.date.begin | date: \"%d\" }}.{{ site.date.begin | date: \"%m\" }}.{{ site.date.begin | date: \"%Y\" }}"
             time:
               begin: "19:30"
-              end: ""
+              end: "23:00"
         - image: "big-band-franz-kirchner.jpg"
           title: "Franz Kirchner Big Band"
           description: "big-band-franz-kirchner.md"
@@ -25,7 +25,7 @@
             format: "{{ site.date.begin | date: \"%d\" }}.{{ site.date.begin | date: \"%m\" }}.{{ site.date.begin | date: \"%Y\" }}"
             time:
               begin: "19:30"
-              end: ""
+              end: "23:00"
     - description: "austrian-music-night.md"
       acts-in-row: "2"
       acts:
@@ -37,7 +37,7 @@
             format: "{{ site.date.begin | date: \"%d\" | plus: 1 }}.{{ site.date.begin | date: \"%m\" }}.{{ site.date.begin | date: \"%Y\" }}"
             time:
               begin: "18:00"
-              end: ""
+              end: "23:00"
         - image: "die-strottern.jpg"
           title: "Die Strottern"
           description: "die-strottern.md"
@@ -46,7 +46,7 @@
             format: "{{ site.date.begin | date: \"%d\" | plus: 1}}.{{ site.date.begin | date: \"%m\" }}.{{ site.date.begin | date: \"%Y\" }}"
             time:
               begin: "18:00"
-              end: ""
+              end: "23:00"
     - description: "familienmusiktag.md"
       acts-in-row: "2"
       acts:

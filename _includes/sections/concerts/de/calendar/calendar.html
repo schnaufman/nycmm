@@ -1,32 +1,23 @@
+{% assign lineup_data = site.data.sections[page.section] | where: "id", "lineup_id" | first %}
 <div class="c-section-calendar">
-    <table class="stack">
-        <thead>
+  <table class="stack c-section-calendar-table">
+    <thead>
+      <tr>
+        <th width="300">Datum/Uhrzeit</th>
+        <th width="300">Location</th>
+        <th>Konzert</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for concert in lineup_data.concerts %}
+        {% for act in concert.acts %}
           <tr>
-            <th width="300">Table Header</th>
-            <th>Table Header</th>
-            <th width="150">Table Header</th>
-            <th width="150">Table Header</th>
+            <td>{{ act.date.format | flatify }} / {{ act.date.time.begin }}-{{ act.date.time.end }}</td>
+            <td>{{ act.location }}</td>
+            <td>{{ act.title }}</td>
           </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Content Goes Here</td>
-            <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-            <td>Content Goes Here</td>
-            <td>Content Goes Here</td>
-          </tr>
-          <tr>
-            <td>Content Goes Here</td>
-            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-            <td>Content Goes Here</td>
-            <td>Content Goes Here</td>
-          </tr>
-          <tr>
-            <td>Content Goes Here</td>
-            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-            <td>Content Goes Here</td>
-            <td>Content Goes Here</td>
-          </tr>
-        </tbody>
-      </table>
+        {% endfor %}
+      {% endfor %}
+    </tbody>
+  </table>
 </div>
