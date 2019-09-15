@@ -1,8 +1,5 @@
-<h5>
-  NYC Sopranistin Cassandra McConnell &<br>
-  Jazz Songstress Chanda Rule<br>
-  Gernot Bernroiders Culturessence feat. New York Horns<br>
-  Loren Stillman (sax), Greg Nagorski (trb) & special guests<br>
-  <a target="_blank" rel="noopener noreferrer" href="https://www.lorenstillman.com">Website Loren Stillman</a>,&nbsp;
-  <a target="_blank" rel="noopener noreferrer" href="http://alessabooking.com/portfolio-item/gernot-bernroiders-culturessence">Website Culturessence</a>
-</h5>
+{% assign first_act = concert.acts | first %}
+{% assign last_act = concert.acts | last %}
+### Jazz meets Klassik
+#### Datum: {{ first_act.date.format | flatify }}, {{ first_act.date.time.begin }} - {{ last_act.date.time.end }}<br>Ort: {{ first_act.location }}
+##### Konzerte mit dem Jazz Trio Prim sowie Gernot Bernroiders Culturessence im Rahmen des 'Jazz meets Klassik' Abend

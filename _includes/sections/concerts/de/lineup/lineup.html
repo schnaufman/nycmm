@@ -5,10 +5,16 @@
       <div class="c-section-lineup-concert-description">
         {{ concert_description | markdownify }}
       </div>
-      {% assign act_cell_grid = 12 | divided_by: concert.x-grid-cells %}
-      <div class="grid-x grid-padding-x grid-padding-y">
+      <div class="grid-x grid-padding-x grid-padding-y large-up-{{concert.acts-in-row}} medium-up-{{concert.acts-in-row}} small-up-1">
         {% for act in concert.acts %}
-          <div class="large-{{act_cell_grid}} medium-{{act-cell-grid}} small-12 cell">
+          {% if act.row-offset %}
+            {% assign act_size = concert.acts | size %}
+            {% assign offset_calc = 12 | divided_by: concert.acts-in-row | times: act.row-offset | floor %}
+            {% capture act_cell_offset %}large-offset-{{offset_calc}} medium-offset-{{offset_calc}}{% endcapture %}
+          {% else %}
+            {% assign act_cell_offset = "" %}
+          {% endif %}
+          <div class="cell {{act_cell_offset}}">
             <figure class="c-section-lineup-concert-act">
               <div class="c-section-lineup-concert-act-image">
                 <img src="/assets/img/acts/{{ act.image }}" alt="{{ act.image-title }}" title="{{ act.image-title }}">

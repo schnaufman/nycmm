@@ -6,41 +6,96 @@
   content: "lineup.html"
   concerts:
     - description: "big-band-battle.md"
-      x-grid-cells: "2"
+      acts-in-row: "2"
       acts:
         - image: "big-band-burghausen.jpg"
-          image-title: "Big Band Burghausen"
+          title: "Big Band Burghausen"
           description: "big-band-burghausen.md"
+          location: "Stadtsaal Mattighofen"
+          date:
+            format: "{{ site.date.begin | date: \"%d\" }}.{{ site.date.begin | date: \"%m\" }}.{{ site.date.begin | date: \"%Y\" }}"
+            time:
+              begin: "19:30"
+              end: ""
         - image: "big-band-franz-kirchner.jpg"
-          image-title: "Franz Kirchner Big Band"
+          title: "Franz Kirchner Big Band"
           description: "big-band-franz-kirchner.md"
+          location: "Stadtsaal Mattighofen"
+          date:
+            format: "{{ site.date.begin | date: \"%d\" }}.{{ site.date.begin | date: \"%m\" }}.{{ site.date.begin | date: \"%Y\" }}"
+            time:
+              begin: "19:30"
+              end: ""
     - description: "austrian-music-night.md"
-      x-grid-cells: "2"
+      acts-in-row: "2"
       acts:
         - image: "wilfried-scharf.jpg"
-          image-title: "Zithervirtuose Wilfried Scharf & der Salzburger Saitenklang"
+          title: "Zithervirtuose Wilfried Scharf & der Salzburger Saitenklang"
           description: "wilfried-scharf.md"
+          location: "Schloss Mattighofen"
+          date:
+            format: "{{ site.date.begin | date: \"%d\" | plus: 1 }}.{{ site.date.begin | date: \"%m\" }}.{{ site.date.begin | date: \"%Y\" }}"
+            time:
+              begin: "18:00"
+              end: ""
         - image: "die-strottern.jpg"
-          image-title: "Die Strottern"
+          title: "Die Strottern"
           description: "die-strottern.md"
-    - description: "musiktag-jazz-meets-classic.md"
-      x-grid-cells: "2"
+          location: "Schloss Mattighofen"
+          date:
+            format: "{{ site.date.begin | date: \"%d\" | plus: 1}}.{{ site.date.begin | date: \"%m\" }}.{{ site.date.begin | date: \"%Y\" }}"
+            time:
+              begin: "18:00"
+              end: ""
+    - description: "familienmusiktag.md"
+      acts-in-row: "2"
       acts:
         - image: "familienmusiktag.jpg"
-          image-title: "Familien Musiktag"
-          description: "familienmusiktag.md"
+          title: "Familienmusiktag"
+          row-offset: "0.5"
+          description: "familienmusiktag-desc.md"
+          location: "Park der LMS Mattighofen"
+          date:
+            format: "{{ site.date.begin | date: \"%d\" | plus: 2 }}.{{ site.date.begin | date: \"%m\" }}.{{ site.date.begin | date: \"%Y\" }}"
+            time:
+              begin: "11:00"
+              end: "16:00"
+    - description: "jazz-meets-klassik.md"
+      acts-in-row: "2"
+      acts:
         - image: "young-music-lions-series-prim.jpg"
-          image-title: "Young Music Lion Series: Jazz Trio PRIM"
+          title: "Young Music Lion Series: Jazz Trio PRIM"
           description: "young-music-lions-series-prim.md"
+          row-offset: "0.5"
+          location: "Schloss Mattighofen"
+          date:
+            format: "{{ site.date.begin | date: \"%d\" | plus: 2 }}.{{ site.date.begin | date: \"%m\" }}.{{ site.date.begin | date: \"%Y\" }}"
+            time:
+              begin: "18:00"
+              end: "19:30"
         - image: "jazz-meets-klassik.jpg"
-          image-title: "Jazz meets Klassik mit Culturessence feat. Sopranistin Cassandra McConnell & Loren Stillman"
-          description: "jazz-meets-klassik.md"
+          title: "Jazz meets Klassik mit Culturessence feat. Sopranistin Cassandra McConnell & Loren Stillman"
+          row-offset: "0.5"
+          description: "jazz-meets-klassik-desc.md"
+          location: "Schloss Mattighofen"
+          date:
+            format: "{{ site.date.begin | date: \"%d\" | plus: 2 }}.{{ site.date.begin | date: \"%m\" }}.{{ site.date.begin | date: \"%Y\" }}"
+            time:
+              begin: "20:00"
+              end: "23:00"
     - description: "workshop-abschlusskonzerte.md"
-      x-grid-cells: "2"
+      acts-in-row: "2"
       acts:
         - image: "workshop-abschlusskonzert.jpg"
-          image-title: "Workshop Abschlusskonzert"
+          title: "Workshop Abschlusskonzert"
+          row-offset: "0.5"
           description: "workshop-abschlusskonzert.md"
+          location: "Schloss Mattighofen"
+          date:
+            format: "{{ site.date.begin | date: \"%d\" | plus: 3 }}.{{ site.date.begin | date: \"%m\" }}.{{ site.date.begin | date: \"%Y\" }}"
+            time:
+              begin: "18:00"
+              end: "23:00"
 - id: "calendar_id"
   title: "calendar_title"
   folder: "calendar"

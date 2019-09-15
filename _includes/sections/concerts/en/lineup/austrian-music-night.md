@@ -1,3 +1,4 @@
+{% assign first_act = concert.acts | first %}
 ### Austrian Music Night
-#### Freitag {{ site.date.day.begin | plus: 1 }}.{{ site.date.month }}.{{ site.date.year }}<br>Beginn: 18:00, Schloss Mattighofen
+#### Datum: {{ first_act.date.format | flatify }}, Beginn: {{ first_act.date.time.begin }}<br>Ort: {{ first_act.location }}
 ##### Wir zelebrieren die österreichische Musiktradition: von der Klassik über das Wienerlied bis hin zur Folkmusik.<br>

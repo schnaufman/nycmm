@@ -9,7 +9,7 @@
   {% include components/nav-menu.html %}
   <div class="c-header-content">
     <h1>{{ site.title }}</h1>
-    <h1>{{ site.date.day.begin }}. - {{ site.date.day.end }}.{{ site.date.month}}.{{ site.date.year }}</h1>
+    <h1>{{ site.date.begin | date: "%d" }}. - {{ site.date.end | date: "%d" }}.{{ site.date.begin | date: "%m" }}.{{ site.date.begin | date: "%Y" }}</h1>
     <h2>{{ site.description }}</h2>
     {% assign sign_up = site.data.lang[page.language].home.sign_up %}
     {% assign tickets = site.data.lang[page.language].home.tickets %}
