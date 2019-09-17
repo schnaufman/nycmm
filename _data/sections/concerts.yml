@@ -96,10 +96,10 @@
             time:
               begin: "18:00"
               end: "23:00"
-- id: "calendar_id"
-  title: "calendar_title"
-  folder: "calendar"
+- id: "dates_id"
+  title: "dates_title"
+  folder: "dates"
   descriptions:
-    main: "calendar.md"
-  content: "calendar.html"
+    main: "dates.md"
+  content: "dates.html"
 
