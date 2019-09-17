@@ -102,4 +102,8 @@
   descriptions:
     main: "dates.md"
   content: "dates.html"
-
+- id: "tickets_id"
+  title: "tickets_title"
+  folder: "tickets"
+  descriptions:
+    main: "tickets.md"
