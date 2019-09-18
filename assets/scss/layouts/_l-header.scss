@@ -29,7 +29,7 @@ header {
   display: inline-block;
   border: 1px solid $header-button-color;
   border-radius: $global-radius;
-  font-size: map-get(map-get(map-get($header-styles, medium), h5), "font-size") + unquote("px");
+  font-size: map-get(map-get(map-get($header-styles, medium), h4), "font-size") + unquote("px");
   width: rem-calc(200);
   margin: rem-calc(0 10 0 0);
   padding: rem-calc(20 30);
