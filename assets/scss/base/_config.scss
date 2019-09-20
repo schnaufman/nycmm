@@ -35,6 +35,8 @@ $footer-text-hover-color: $primary-color;
 //sections
 $sections-even-background-color: $lighter-gray;
 $section-how-it-works-step-color: $primary-color;
+$section-concerts-ticket-box-shadow-color: $medium-gray;
+$section-concerts-ticket-border-color: lighten($secondary-color, 50%);
 
 //nav
 $sticky-container-background-color: $light-gray;
@@ -68,6 +70,6 @@ $site-header-font-weight: $header-font-weight;
 // Lib Settings
 // -------------------------------------------------
 // maps
-$map-height-large: 550px;
+$map-height-large: 560px;
 $map-height-medium: 600px;
 $map-height-small: 350px;

@@ -1,6 +1,16 @@
-<div class="grid-container">
-  <div class="grid-x grid-padding-x grid-padding-y large-up-3 medium-up-3 small-up-1">
-    <div class="cell">
+<div class="c-section-tickets">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-4 medium-up-4 small-up-2">
+      {% for ticket in section.tickets %}
+        <div class="cell c-section-tickets-ticket">
+          <h5>{{ticket.title}}</h5>
+          <div class="c-section-tickets-ticket-prices">
+            <h2 class="c-section-tickets-ticket-price">{{ticket.price.regular}}<span>&nbsp;/&nbsp;{{ticket.price.discount}}&nbsp;*</span></h2>
+          </div>
+          <button type="button" class="button">Kaufen</button>
+        </div>
+      {% endfor %}
     </div>
   </div>
+  <p class="c-section-tickets-info">*&nbsp;Jugendticket - ermäßigter Eintritt für Schüler/Studenten/Jugendliche.</p>
 </div>

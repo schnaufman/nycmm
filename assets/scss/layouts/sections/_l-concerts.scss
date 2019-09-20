@@ -51,6 +51,36 @@
   }
 }
 
+/******************/
+/* tickets section */
+/******************/
+
+.c-section-tickets-ticket {
+  background-color: $white;
+  box-shadow: 0px 2px 2px $section-concerts-ticket-box-shadow-color;
+  border: 1px solid $section-concerts-ticket-border-color;
+
+  h5 {
+    text-align: left;
+    margin-bottom: rem-calc(25);
+  }
+}
+
+.c-section-tickets-ticket-prices {
+  color: $primary-color;
+}
+
+.c-section-tickets-ticket-price {
+  span {
+    font-size: map-get(map-get(map-get($header-styles, medium), h4), "font-size") + unquote("px");
+  }
+}
+
+.c-section-tickets-info {
+  margin-top: rem-calc(20);
+  text-align: center;
+}
+
 /* up to medium */
 @media only screen and (max-width: 63.9375em) {
   .c-section-lineup-concert-act-image {
