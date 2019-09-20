@@ -1,16 +1,24 @@
 <div class="c-section-tickets">
   <div class="grid-container">
-    <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-4 medium-up-4 small-up-2">
+    <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-4 medium-up-2 small-up-1">
       {% for ticket in section.tickets %}
         <div class="cell c-section-tickets-ticket">
-          <h5>{{ticket.title}}</h5>
+          <h5 class="c-section-tickets-ticket-title">{{ticket.title}}</h5>
           <div class="c-section-tickets-ticket-prices">
             <h2 class="c-section-tickets-ticket-price">{{ticket.price.regular}}<span>&nbsp;/&nbsp;{{ticket.price.discount}}&nbsp;*</span></h2>
+            <h5 class="c-section-tickets-ticket-door-price">Abendkasse: {{ticket.price.door}}</h5>
           </div>
-          <button type="button" class="button">Kaufen</button>
+          <div class="c-section-tickets-ticket-description">
+            <ul>
+              {% for include in ticket.includes %}
+              <li><i class="ion-md-checkbox-outline"></i>{{include.item}}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          <a class="button c-section-tickets-ticket-order-btn" target="_blank" rel="noopener noreferrer" href="{{ticket.link}}">Bestellen</a>
         </div>
       {% endfor %}
     </div>
   </div>
-  <p class="c-section-tickets-info">*&nbsp;Jugendticket - ermäßigter Eintritt für Schüler/Studenten/Jugendliche.</p>
+  <p class="c-section-tickets-info">*&nbsp;Ermäßigter Eintritt für Schüler/Studenten/Jugendliche bis zum vollendeten 21. Lebensjahr.</p>
 </div>
