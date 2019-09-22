@@ -43,7 +43,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400");
 
 //
-// 4. Foundation and Cookieconsent
+// 4. 3rd Party Libs
 // --------------------------------------------------
 // Source: http://foundation.zurb.com/docs/
 // Notes:
@@ -59,6 +59,15 @@
 
 // cookieconsent import
 @import 'node_modules/cookieconsent/build/cookieconsent.min';
+
+
+// photoswipe core css import
+@import 'node_modules/photoswipe/dist/photoswipe';
+/* Skin CSS file (styling of UI - buttons, caption, etc.)
+      In the folder of skin CSS file there are also:
+      - .png and .svg icons sprite,
+      - preloader.gif (for browsers that do not support CSS animations)*/
+@import 'node_modules/photoswipe/dist/default-skin/default-skin';
 
 //
 // 5. Helpers
