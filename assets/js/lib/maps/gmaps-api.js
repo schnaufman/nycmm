@@ -1,5 +1,13 @@
 'use strict';
 import $ from 'jquery';
+import { SiteHelper } from '../site-helper';
+
+const GMapsMarkerPopupState = {
+  alwaysOpened: 'always_opened',
+  alwaysClosed: 'always_closed',
+  closedOnMobile: 'closed_on_mobile',
+  openedOnMobile: 'opened_on_mobile'
+};
 
 /**
  * encapsulation for gmaps api access
@@ -19,6 +27,8 @@ class GMapsApi {
     this.apiKey = apiKey;
     this.elementId = elementId;
     this.gMapsOptions = gMapsOptions;
+
+
 
     if (!$('#' + this.elementId).length) {
       // do nothing if element id is not present in the current document
@@ -67,6 +77,8 @@ class GMapsApi {
       const $lng = $gmaps.attr('lng');
       const $lat = $gmaps.attr('lat');
       const $zoom = $gmaps.attr('zoom');
+      const $mobileZoom = $gmaps.attr('mobile-zoom') || $zoom;
+      const zoom = SiteHelper.queryOnMobileDevice() ? $mobileZoom  : $zoom;
 
       if (!$lng || !$lat || !$zoom) {
         console.error('GmapsApi: Please set lat,lng,zoom attribute on \'#' + this.elementId + '\' element in document.');
@@ -75,7 +87,7 @@ class GMapsApi {
 
       // eslint-disable-next-line no-undef
       gMapsClient = new google.maps.Map($gmaps.get(0), {
-        zoom: Number($zoom),
+        zoom: Number(zoom),
         center: {
           lat: Number($lat),
           lng: Number($lng)
@@ -101,39 +113,43 @@ class GMapsApi {
         },
       });
 
-      // create optional marker
+      // create optional marker(s)
       const $lngMarker = $gmaps.attr('lng-marker');
       const $latMarker = $gmaps.attr('lat-marker');
-      const $popup = $gmaps.attr('popup');
-      const $centerToMarker = $gmaps.attr('center-to-marker');
+      const $popup = $gmaps.attr('marker-popup');
+      const $popupState = $gmaps.attr('marker-popup-state');
+      const $title = $gmaps.attr('marker-title');
+      const $centerOnMobile = $gmaps.attr('marker-center-on-mobile');
+      const $markers = $gmaps.attr('markers');
 
-      if ($latMarker && $lngMarker) {
-        // eslint-disable-next-line no-undef
-        const marker = new google.maps.Marker({
-          position: {
-            lat: Number($latMarker),
-            lng: Number($lngMarker)
-          },
-          title: 'NYCMM'
-        });
-
-        // eslint-disable-next-line no-undef
-        const infowindow = new google.maps.InfoWindow({
-          content: $popup
-        });
-
-        infowindow.open(gMapsClient, marker);
-
-        marker.addListener('click', function () {
-          infowindow.open(gMapsClient, marker);
-        });
-
-        marker.setMap(gMapsClient);
-
-        if ($centerToMarker === 'true') {
-          const latLng = marker.getPosition(); // returns LatLng object
-          gMapsClient.setCenter(latLng); // setCenter takes a LatLng object
+      let centerToMarker = $centerOnMobile === 'true' ? SiteHelper.queryOnMobileDevice() : false;
+      let markerSettings;
+      if ($markers) {
+        try {
+          markerSettings = ($markers && JSON.parse($markers)) || undefined;
+        } catch (error) {
+          console.error('GmapsApi: Element \'#' + this.elementId + ' unable to parse JSON: ' + $markers);
         }
+      } else if ($latMarker && $lngMarker) {
+        markerSettings = [
+          {
+            lat: $latMarker,
+            lng: $lngMarker,
+            popup: {
+              content: $popup,
+              state: $popupState
+            },
+            center: centerToMarker,
+            title: $title
+          }
+        ];
+      } else {
+        // in this case, no markers where configured
+        markerSettings = undefined;
+      }
+
+      if (markerSettings) {
+        this._createMapMarkers(gMapsClient, markerSettings);
       }
 
       // this is a fix for the gray box which will appear on reload
@@ -147,6 +163,71 @@ class GMapsApi {
     }
 
     return gMapsClient;
+  }
+
+  _createMapMarkers(gMapsClient, markerSettingsArray) {
+    markerSettingsArray.forEach((markerSettings) => {
+      // eslint-disable-next-line no-undef
+      const gmapsMarker = new google.maps.Marker({
+        position: {
+          lat: Number(markerSettings.lat),
+          lng: Number(markerSettings.lng)
+        },
+        title: markerSettings.title
+      });
+
+      if (markerSettings.popup) {
+        // eslint-disable-next-line no-undef
+        const infowindow = new google.maps.InfoWindow({
+          content: markerSettings.popup.content
+        });
+
+        let openPopup;
+        switch (this._parseGMapsMarkerPopupState(markerSettings.popup.state)) {
+          default:
+          case GMapsMarkerPopupState.alwaysOpened: {
+            openPopup = true;
+            break;
+          }
+          case GMapsMarkerPopupState.alwaysClosed: {
+            openPopup = false;
+            break;
+          }
+          case GMapsMarkerPopupState.closedOnMobile: {
+            openPopup = !SiteHelper.queryOnMobileDevice();
+            break;
+          }
+          case GMapsMarkerPopupState.openedOnMobile: {
+            openPopup = SiteHelper.queryOnMobileDevice();
+            break;
+          }
+        }
+
+        if (openPopup) {
+          infowindow.open(gMapsClient, gmapsMarker);
+        }
+
+        gmapsMarker.addListener('click', function () {
+          infowindow.open(gMapsClient, gmapsMarker);
+        });
+      }
+
+      gmapsMarker.setMap(gMapsClient);
+
+      if (markerSettings.center) {
+        const latLng = gmapsMarker.getPosition(); // returns LatLng object
+        gMapsClient.setCenter(latLng); // setCenter takes a LatLng object
+      }
+    });
+  }
+
+  _parseGMapsMarkerPopupState(state) {
+    for (let key in GMapsMarkerPopupState) {
+      if (GMapsMarkerPopupState[key] === state) {
+        return GMapsMarkerPopupState[key];
+      }
+    }
+    return null;
   }
 
   /**

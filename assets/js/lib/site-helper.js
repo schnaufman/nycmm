@@ -11,8 +11,7 @@ class SiteHelper {
    * if window width is smaller than 600 remove the autoplay attribute from the video
    */
   static disableVideoAutoplayOnMobile() {
-    let screenWidth = $(window).width();
-    if (screenWidth < 992) {
+    if (this.queryOnMobileDevice()) {
       const $headerVideo = $('.js--header-video');
       if ($headerVideo.length) {
         $headerVideo.hide();
@@ -39,17 +38,11 @@ class SiteHelper {
   }
 
   /**
-   * if window width is smaller than 992 center map to marker
-   * @param {String} mapElementId DOM element ID of the map
+   * query if window width is smaller than 992
+   * @returns true if smaller otherwise false
    */
-  static centerMapMarkerOnMobile(mapElementId) {
-    let screenWidth = $(window).width();
-    if (screenWidth < 992) {
-      const $map = $('#' + mapElementId);
-      if ($map.length) {
-        $map.attr('center-to-marker', 'true');
-      }
-    }
+  static queryOnMobileDevice () {
+    return $(window).width() < 992;
   }
 }
 

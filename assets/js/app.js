@@ -23,7 +23,6 @@ $(document).ready(function () {
   $(document).foundation();
 
   // map init - currently there's the limitation to have exactly ONE gmapsMap Element in the DOM
-  SiteHelper.centerMapMarkerOnMobile('gmapsMap');
   new GMapsApi('${NYCMM_ENV_GMAPS_API_KEY}', 'gmapsMap');
 
   new NavHandler(

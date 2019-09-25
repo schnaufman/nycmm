@@ -135,4 +135,37 @@
         regular: "20€"
         discount: "16€"
         door: "25€"
-
+- id: "locations_id"
+  title: "locations_title"
+  folder: "locations"
+  descriptions:
+    main: "locations.md"
+  content: "locations.html"
+  maps:
+    coordinates:
+      lat: 48.103936
+      lng: 13.149204
+    zoom: 16
+    mobile-zoom: 15
+    markers:
+      - title: "Schloss Mattighofen"
+        popup:
+          content: "<b>Schloss Mattighofen</b><br>Stadtplatz 1<br>5230 Mattighofen"
+          state: "closed_on_mobile"
+        coordinates:
+          lat: 48.105578
+          lng: 13.147794
+      - title: "Stadtsaal Mattighofen"
+        popup:
+          content: "<b>Stadtsaal Mattighofen</b><br>Salzburger Str. 6<br>5230 Mattighofen"
+          state: "closed_on_mobile"
+        coordinates:
+          lat: 48.1009628
+          lng: 13.1479442
+      - title: "Landesmusikschule Mattighofen"
+        popup:
+          content: "<b>Park der LMS Mattighofen</b><br>Salzburger Str. 8<br>5230 Mattighofen"
+          state: "closed_on_mobile"
+        coordinates:
+          lat: 48.10049
+          lng: 13.15124
