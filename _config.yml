@@ -49,9 +49,6 @@ keep_files:
 plugins:
   - jekyll-paginate
 
-# enable photoswipe gallery
-photoswipe:       true
-
 # Conversion
 incremental:      true
 

@@ -4,7 +4,7 @@ import { PhotoSwipe } from 'photoswipe/dist/photoswipe';
 import { PhotoSwipeUI_Default } from 'photoswipe/dist/photoswipe-ui-default';
 
 /**
- * set photoswipe: true in _config.yml of jekyll to initialize DOM for photoswipe
+ * enable photoswipe on page by setting photoswipe: true in page frontmatter
  * encapsulation class for photoswipe api
  */
 class PhotoSwipeApi {
