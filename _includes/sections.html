@@ -18,11 +18,14 @@
     {% if section.image %}
       <div class="grid-x grid-margin-x">
         <div class="cell">
-          <img src="{{ site.baseurl }}/{{ section.image }}" title="{{ section.image-title }}" alt="{{ section.title }}"
-            class="img-responsive">
-          {% if section.img-caption %}
-            <div class="img-caption">{{ section.img-caption }}</div>
-          {% endif %}
+          <figure>
+            <img src="{{ site.baseurl }}/{{ section.image }}" title="{{ section.image-title }}" alt="{{ section.title }}">
+            {% if section.img-caption %}
+              <figcaption>
+              {{ section.img-caption }}</div>
+              </figcaption>
+            {% endif %}
+          </figure>
         </div>
       </div>
     {% endif %}
