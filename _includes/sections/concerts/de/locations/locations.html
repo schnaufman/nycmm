@@ -18,3 +18,14 @@
     markers="{{- marker_settings | escape -}}">
   </div>
 </div>
+
+<div class="c-section-locations-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+  {% for image in section.gallery.images %}
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="/assets/img/locations/{{image.file}}" itemprop="contentUrl" data-size="{{image.size}}"></a>
+        <img src="/assets/img/locations/{{image.thumbnail.file}}" itemprop="thumbnail" alt="{{image.thumbnail.description}}" />
+      </a>
+      <figcaption itemprop="caption description">{{image.caption}}</figcaption>
+    </figure>
+  {% endfor %}
+</div>

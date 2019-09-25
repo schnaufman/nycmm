@@ -169,3 +169,24 @@
         coordinates:
           lat: 48.10049
           lng: 13.15124
+  gallery:
+    images:
+      - file: "landesmusikschule.jpg"
+        size: "600x400"
+        caption: "Landesmusikschule Mattighofen"
+        thumbnail:
+          file: "landesmusikschule_thumb.jpg"
+          description: "Landesmusikschule Mattighofen"
+      - file: "schloss_mattighofen_culturessence.jpg"
+        size: "600x400"
+        caption: "Gernot Bernroiders Culturessence im Schloss Mattighofen"
+        thumbnail:
+          file: "schloss_mattighofen_culturessence_thumb.jpg"
+          description: "Culturessence im Schloss Mattighofen"
+      - file: "schloss_mattighofen_prim.jpg"
+        size: "600x400"
+        caption: "Prim im Schloss Mattighofen"
+        thumbnail:
+          file: "schloss_mattighofen_prim_thumb.jpg"
+          description: "Prim im Schloss Mattighofen"
+
