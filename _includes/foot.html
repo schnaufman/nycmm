@@ -1,4 +1,7 @@
 
+  {%if site.photoswipe %}
+    {% include lib/gallery/photoswipe-template.html %}
+  {% endif %}
   <script src="{{ "/assets/js/bundle.js" | relative_url }}" type="application/javascript"></script>
 </body>
 </html>

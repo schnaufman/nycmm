@@ -9,6 +9,7 @@ import { SiteHelper } from './lib/site-helper';
 import { NavHandler } from './lib/nav-handler';
 import { GMapsApi } from './lib/maps/gmaps-api';
 import { CookieConsentHelper } from './lib/cookie-consent-helper';
+import { PhotoSwipeApi } from './lib/gallery/photoswipe-api';
 
 //
 // Custom JS
@@ -21,11 +22,12 @@ $(document).ready(function () {
   // init foundation js
   $(document).foundation();
 
+  // map init - currently there's the limitation to have exactly ONE gmapsMap Element in the DOM
   SiteHelper.centerMapMarkerOnMobile('gmapsMap');
-
   new GMapsApi('${NYCMM_ENV_GMAPS_API_KEY}', 'gmapsMap');
 
-  new NavHandler('js--nav-dropdown',
+  new NavHandler(
+    'js--nav-dropdown',
     'js--nav-dropdown-icon',
     'js--nav-dropdown-item-section-dropdown',
     'js--nav-dropdown-item-section-dropdown-icon',
@@ -33,6 +35,8 @@ $(document).ready(function () {
     'js--nav-back-to-top-container');
 
   new CookieConsentHelper('${NYCMM_ENV_GOOGLE_TRACKING_ID}');
+
+  new PhotoSwipeApi('photoSwipe');
 
   // when using formspree
   // const contactMailParts = '${NYCMM_ENV_CONTACT_MAIL}'.split('@');
