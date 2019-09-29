@@ -31,7 +31,6 @@
     opacity: 0.7;
     width: 100%;
     height: auto;
-    background: black;
     transform: scale(1);
     transition: transform 0.5s, opacity 0.5s;
 
@@ -108,6 +107,40 @@
 .c-section-tickets-info {
   margin-top: rem-calc(20);
   text-align: center;
+}
+
+/*********************/
+/* locations section */
+/*********************/
+
+.c-section-locations {
+  margin-bottom: rem-calc(50);
+}
+
+.c-section-location-gallery-img,
+.c-section-location-gallery-img-y-tile {
+  width: 100%;
+  overflow: hidden;
+  background: black;
+  position: relative;
+
+  img {
+    height: 100%;
+    opacity: 0.7;
+    transform: scale(1);
+    transition: transform 0.5s, opacity 0.5s;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.02);
+    }
+  }
+}
+
+.c-section-location-gallery-img-y-tile {
+  &:not(:last-child) {
+    margin-bottom: rem-calc(25);
+  }
 }
 
 /* up to medium */

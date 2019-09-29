@@ -172,6 +172,7 @@
   gallery:
     images:
       - file: "landesmusikschule.jpg"
+        cell: "large-8 medium-8 small-12"
         size: "600x400"
         caption: "Landesmusikschule Mattighofen"
         thumbnail:
@@ -179,14 +180,16 @@
           description: "Landesmusikschule Mattighofen"
       - file: "schloss_mattighofen_culturessence.jpg"
         size: "600x400"
+        cell: "large-4 medium-4 small-12"
         caption: "Gernot Bernroiders Culturessence im Schloss Mattighofen"
         thumbnail:
           file: "schloss_mattighofen_culturessence_thumb.jpg"
           description: "Culturessence im Schloss Mattighofen"
-      - file: "schloss_mattighofen_prim.jpg"
-        size: "600x400"
-        caption: "Prim im Schloss Mattighofen"
-        thumbnail:
-          file: "schloss_mattighofen_prim_thumb.jpg"
-          description: "Prim im Schloss Mattighofen"
+        y-tiles:
+          - file: "schloss_mattighofen_prim.jpg"
+            size: "600x400"
+            caption: "Prim im Schloss Mattighofen"
+            thumbnail:
+              file: "schloss_mattighofen_prim_thumb.jpg"
+              description: "Prim im Schloss Mattighofen"
 
