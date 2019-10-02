@@ -5,7 +5,6 @@
 import $ from 'jquery';
 import { SmoothScrollWithLinks } from './lib/ext/foundation.smoothScrollWithLinks';
 import { Foundation } from './lib/foundation-explicit-pieces';
-import { SiteHelper } from './lib/site-helper';
 import { NavHandler } from './lib/nav-handler';
 import { GMapsApi } from './lib/maps/gmaps-api';
 import { CookieConsentHelper } from './lib/cookie-consent-helper';
