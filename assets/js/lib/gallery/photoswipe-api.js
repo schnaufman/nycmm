@@ -170,7 +170,7 @@ class PhotoSwipeApi {
     const pswpElement = $('.' + this.pswpTemplateElClass).get(0);
     let gallery, options, items;
 
-    console.debug('PhotoSwipeApi: Opening photoswipe from template el class \'' + this.pswpTemplateElClass + '\' ...');
+    //console.debug('PhotoSwipeApi: Opening photoswipe from template el class \'' + this.pswpTemplateElClass + '\' ...');
 
     items = this._parseThumbnailElements(galleryElement);
 
