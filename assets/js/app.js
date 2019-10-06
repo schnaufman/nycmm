@@ -34,7 +34,7 @@ $(document).ready(function () {
 
   new CookieConsentHelper('${NYCMM_ENV_GOOGLE_TRACKING_ID}');
 
-  new PhotoSwipeApi('photoSwipe');
+  new PhotoSwipeApi('photoSwipe', 'pswp');
 
   // when using formspree
   // const contactMailParts = '${NYCMM_ENV_CONTACT_MAIL}'.split('@');

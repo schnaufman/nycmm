@@ -4,7 +4,7 @@ const PhotoSwipe = require('photoswipe/dist/photoswipe');
 const PhotoSwipeUI_Default = require('photoswipe/dist/photoswipe-ui-default');
 
 /**
- * enable photoswipe on page by setting photoswipe: true in page frontmatter
+ * enable photoswipe on page by setting 'photoswipe: true' in page frontmatter
  * encapsulation class for photoswipe api
  */
 class PhotoSwipeApi {
@@ -12,14 +12,23 @@ class PhotoSwipeApi {
   /**
    * Constructs and intializes PhotoSwipeAPI
    *
-   * @param {String} Gallery element class in the DOM
+   * it queries the dom for the '.pwsp' photoswipe template and initializes the api if found.
+   * otherwise it will return from the constructor without function
+   * @param {String} galleryElClass gallery element class in the DOM
+   * @param {String} pswpTemplateElClass photoswipe template element class in the DOM
    */
-  constructor(galleryElClass) {
-    // loop through all gallery elements and bind events
-    const galleryElements = $('.' + galleryElClass);
+  constructor(galleryElClass, pswpTemplateElClass) {
+    this.pswpTemplateElClass = pswpTemplateElClass;
 
-    for (let i = 0, l = galleryElements.length; i < l; i++) {
-      let galleryElement = galleryElements[i];
+    // check if photoswipe template has been added to DOM
+    if ($('.' + this.pswpTemplateElClass).length < 0)  {
+      return;
+    }
+
+    // loop through all gallery elements and bind events
+    const $galleryElements = $('.' + galleryElClass);
+    for (let i = 0, l = $galleryElements.length; i < l; i++) {
+      let galleryElement = $galleryElements.get(i);
       $(galleryElement).attr('data-pswp-uid', i + 1);
       galleryElement.onclick = this._onThumbnailsClick.bind(this);
     }
@@ -27,8 +36,10 @@ class PhotoSwipeApi {
     // Parse URL and open gallery if it contains #&pid=3&gid=1
     const hashData = this._photoSwipeParseHash();
     if (hashData.pid && hashData.gid) {
-      this._openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
+      this._openPhotoSwipe(hashData.pid, $galleryElements[hashData.gid - 1], true, true);
     }
+
+    console.debug('PhotoSwipeApi: gallery \'' + galleryElClass + '\' successfully initialized.');
   }
 
   _parseThumbnailElements(galleryEl) {
@@ -81,7 +92,7 @@ class PhotoSwipeApi {
     }
 
     // find index of clicked item by looping through all child nodes
-    // alternatively, you may define index via data- attribute TODO: refactor this
+    // alternatively, you may define index via data- attribute
     const $clickedGallery = $clickedListItem.parents('.photoSwipe').first();
     const $childNodes = $clickedGallery.find('figure');
 
@@ -102,27 +113,31 @@ class PhotoSwipeApi {
     return false;
   }
 
+  /**
+   * parse picture index and gallery index from URL (#&pid=1&gid=2)
+   */
   _photoSwipeParseHash() {
-    // parse picture index and gallery index from URL (#&pid=1&gid=2)
     const hash = window.location.hash.substring(1);
     let params = {};
 
+    console.debug('PhotoSwipeApi: Opening photoswipe from URL string \'' + hash + '\' ...');
+
+    // if hash length is less than five this are no params for photoswipe
     if (hash.length < 5) {
       return params;
     }
 
     const vars = hash.split('&');
-
-    for (let variable in vars) {
+    vars.forEach(variable => {
       if (!variable) {
-        continue;
+        return;
       }
-      var pair = variable.split('=');
+      let pair = variable.split('=');
       if (pair.length < 2) {
-        continue;
+        return;
       }
       params[pair[0]] = pair[1];
-    }
+    });
 
     if (params.gid) {
       params.gid = parseInt(params.gid, 10);
@@ -152,8 +167,10 @@ class PhotoSwipeApi {
   }
 
   _openPhotoSwipe(index, galleryElement, disableAnimation, fromURL) {
-    const pswpElement = $('.pswp').get(0);
+    const pswpElement = $('.' + this.pswpTemplateElClass).get(0);
     let gallery, options, items;
+
+    console.debug('PhotoSwipeApi: Opening photoswipe from template el class \'' + this.pswpTemplateElClass + '\' ...');
 
     items = this._parseThumbnailElements(galleryElement);
 
