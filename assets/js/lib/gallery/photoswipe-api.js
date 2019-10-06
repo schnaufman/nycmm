@@ -1,7 +1,7 @@
 'use strict';
 import $ from 'jquery';
-import { PhotoSwipe } from 'photoswipe/dist/photoswipe';
-import { PhotoSwipeUI_Default } from 'photoswipe/dist/photoswipe-ui-default';
+const PhotoSwipe = require('photoswipe/dist/photoswipe');
+const PhotoSwipeUI_Default = require('photoswipe/dist/photoswipe-ui-default');
 
 /**
  * enable photoswipe on page by setting photoswipe: true in page frontmatter
@@ -34,19 +34,19 @@ class PhotoSwipeApi {
   _parseThumbnailElements(galleryEl) {
     // parse slide data (url, title, size ...) from DOM elements
     // (children of gallerySelector)
-    const items = $(galleryEl).children('figure')
+    const items = $(galleryEl).find('figure')
       .map(function () {
-        const linkEl = $(this).children('a').first();
-        const itemSize = linkEl.attr('data-size').split('x');
-        const itemHref = linkEl.attr('href');
+        const $linkEl = $(this).children('a').first();
+        const itemSize = $linkEl.attr('data-size').split('x');
+        const itemHref = $linkEl.attr('href');
 
         // thumbnail element
-        const linkImgEl = $(linkEl).children('img').first();
-        const itemThumbnailUrl = linkImgEl ? linkImgEl.attr('src') : null;
+        const $linkImgEl = $($linkEl).children('img').first();
+        const itemThumbnailUrl = $linkImgEl ? $linkImgEl.attr('src') : null;
 
         // item title
-        const figcaptionEl = $(this).children('figcaption').first();
-        const itemTitle = figcaptionEl ? figcaptionEl.contents() : null;
+        const $figcaptionEl = $(this).children('figcaption').first();
+        const itemTitle = $figcaptionEl ? $figcaptionEl.text() : null;
 
         //create slide object
         return {
@@ -74,27 +74,20 @@ class PhotoSwipeApi {
     const eTarget = e.target || e.srcElement;
 
     // find root element of slide
-    var clickedListItem = this._closest(eTarget, function (el) {
-      return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
-    });
+    const $clickedListItem = $(eTarget).closest('figure').first();
 
-    if (!clickedListItem) {
+    if ($clickedListItem.length < 0) {
       return;
     }
 
     // find index of clicked item by looping through all child nodes
-    // alternatively, you may define index via data- attribute
-    const clickedGallery = clickedListItem.parentNode;
-    const childNodes = clickedListItem.parentNode.childNodes;
+    // alternatively, you may define index via data- attribute TODO: refactor this
+    const $clickedGallery = $clickedListItem.parents('.photoSwipe').first();
+    const $childNodes = $clickedGallery.find('figure');
+
     let nodeIndex = 0, index;
-
-
-    for (let i = 0; i < childNodes.length; i++) {
-      if(childNodes[i].nodeType !== 1) {
-          continue;
-      }
-
-      if(childNodes[i] === clickedListItem) {
+    for (let i = 0; i < $childNodes.length; i++) {
+      if($childNodes.get(i) === $clickedListItem.get(0)) {
           index = nodeIndex;
           break;
       }
@@ -103,7 +96,7 @@ class PhotoSwipeApi {
 
     if (index >= 0) {
       // open PhotoSwipe if valid index found
-      this._openPhotoSwipe(index, clickedGallery);
+      this._openPhotoSwipe(index, $clickedGallery.get(0));
     }
 
     return false;
@@ -138,23 +131,16 @@ class PhotoSwipeApi {
     return params;
   }
 
-  _openPhotoSwipe(index, galleryElement, disableAnimation, fromURL) {
-    const pswpElement = $('.pswp');
-    let gallery, options, items;
-
-    items = this._parseThumbnailElements(galleryElement);
-
-    // define options (if needed)
-    options = {
-
+  _createGalleryOptions(galleryElement, thumbnailItems) {
+    return {
       // define gallery index (for URL)
       galleryUID: $(galleryElement).attr('data-pswp-uid'),
 
-      getThumbBoundsFn: function (index) {
+      getThumbBoundsFn: (index) => {
         // See Options -> getThumbBoundsFn section of documentation for more info
-        let thumbnail = $(items[index]).children('img').first(), // find thumbnail
-          pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
-          rect = thumbnail.getBoundingClientRect();
+        const thumbnail = $(thumbnailItems[index].el).find('img').first().get(0); // find thumbnail
+        const pageYScroll = window.pageYOffset || document.documentElement.scrollTop;
+        const rect = thumbnail.getBoundingClientRect();
 
         return {
           x: rect.left,
@@ -162,8 +148,17 @@ class PhotoSwipeApi {
           w: rect.width
         };
       }
-
     };
+  }
+
+  _openPhotoSwipe(index, galleryElement, disableAnimation, fromURL) {
+    const pswpElement = $('.pswp').get(0);
+    let gallery, options, items;
+
+    items = this._parseThumbnailElements(galleryElement);
+
+    // define options (if needed)
+    options = this._createGalleryOptions(galleryElement, items);
 
     // PhotoSwipe opened from URL
     if (fromURL) {

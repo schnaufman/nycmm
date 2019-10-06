@@ -29,7 +29,7 @@
         {% assign y_tile_container_class="" %}
         {% assign figure_class="c-section-location-gallery-img" %}
       {% endif %}
-      <div class="cell {{image.cell}} flex-container {{y_tiles_container_class}}">
+      <div class="cell {{image.cell}} flex-container {{y_tiles_container_class}}" >
         <figure class="photoSwipeFigure {{figure_class}} flex-child-auto" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
           <a href="/assets/img/locations/{{image.file}}" itemprop="contentUrl" data-size="{{image.size}}">
             <img src="/assets/img/locations/{{image.thumbnail.file}}" itemprop="thumbnail" alt="{{image.thumbnail.description}}" />
