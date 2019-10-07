@@ -18,33 +18,3 @@
     markers="{{- marker_settings | escape -}}">
   </div>
 </div>
-
-<div class="grid-container">
-  <div class="photoSwipe c-section-locations-gallery grid-x grid-padding-x grid-padding-y" itemscope itemtype="http://schema.org/ImageGallery">
-    {% for image in section.gallery.images %}
-      {% if image.y-tiles %}
-        {% assign y_tiles_container_class="flex-dir-column" %}
-        {% assign figure_class="c-section-location-gallery-img-y-tile" %}
-      {% else %}
-        {% assign y_tiles_container_class="" %}
-        {% assign figure_class="c-section-location-gallery-img" %}
-      {% endif %}
-      <div class="cell {{image.cell}} flex-container {{y_tiles_container_class}}" >
-        <figure class="photoSwipeFigure {{figure_class}} flex-child-auto" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-          <a href="/assets/img/locations/{{image.file}}" itemprop="contentUrl" data-size="{{image.size}}">
-            <img src="/assets/img/locations/{{image.thumbnail.file}}" itemprop="thumbnail" alt="{{image.thumbnail.description}}" />
-          </a>
-          <figcaption itemprop="caption description">{{image.caption}}</figcaption>
-        </figure>
-        {% for y_tile in image.y-tiles %}
-          <figure class="photoSwipeFigure {{figure_class}} flex-child-auto" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="/assets/img/locations/{{y_tile.file}}" itemprop="contentUrl" data-size="{{y_tile.size}}">
-              <img src="/assets/img/locations/{{y_tile.thumbnail.file}}" itemprop="thumbnail" alt="{{y_tile.thumbnail.description}}" />
-            </a>
-            <figcaption itemprop="caption description">{{y_tile.caption}}</figcaption>
-          </figure>
-        {% endfor %}
-      </div>
-    {% endfor %}
-  </div>
-</div>

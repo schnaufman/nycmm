@@ -169,34 +169,39 @@
         coordinates:
           lat: 48.10049
           lng: 13.15124
-  gallery:
-    images:
-      - file: "landesmusikschule.jpg"
-        cell: "large-8 medium-8 small-12"
-        size: "1200x800"
-        caption: "Landesmusikschule Mattighofen"
-        thumbnail:
-          file: "landesmusikschule_thumb.jpg"
-          description: "Landesmusikschule Mattighofen"
-      - file: "schloss_mattighofen_culturessence.jpg"
-        size: "1200x800"
-        cell: "large-4 medium-4 small-12"
-        caption: "Gernot Bernroiders Culturessence im Schloss Mattighofen"
-        thumbnail:
-          file: "schloss_mattighofen_culturessence_thumb.jpg"
-          description: "Gernot Bernroiders Culturessence im Schloss Mattighofen"
-        y-tiles:
-          - file: "schloss_mattighofen_prim.jpg"
-            size: "1200x800"
-            caption: "Prim im Schloss Mattighofen"
-            thumbnail:
-              file: "schloss_mattighofen_prim_thumb.jpg"
-              description: "Prim im Schloss Mattighofen"
-      - file: "schloss_mattighofen.jpg"
-        size: "1200x800"
-        cell: "large-8 medium-8 small-12"
-        caption: "Das Schloss Mattighofen"
-        thumbnail:
-          file: "schloss_mattighofen_thumb.jpg"
-          description: "Das Schloss Mattighofen"
+- id: "gallery_id"
+  title: "gallery_title"
+  folder: "gallery"
+  descriptions:
+    main: "gallery.md"
+  content: "gallery.html"
+  images:
+    - file: "landesmusikschule.jpg"
+      cell: "large-8 medium-8 small-12"
+      size: "1200x800"
+      caption: "Landesmusikschule Mattighofen"
+      thumbnail:
+        file: "landesmusikschule_thumb.jpg"
+        description: "Landesmusikschule Mattighofen"
+    - file: "schloss_mattighofen_culturessence.jpg"
+      size: "1200x800"
+      cell: "large-4 medium-4 small-12"
+      caption: "Gernot Bernroiders Culturessence im Schloss Mattighofen"
+      thumbnail:
+        file: "schloss_mattighofen_culturessence_thumb.jpg"
+        description: "Gernot Bernroiders Culturessence im Schloss Mattighofen"
+      y-tiles:
+        - file: "schloss_mattighofen_prim.jpg"
+          size: "1200x800"
+          caption: "Prim im Schloss Mattighofen"
+          thumbnail:
+            file: "schloss_mattighofen_prim_thumb.jpg"
+            description: "Prim im Schloss Mattighofen"
+    - file: "schloss_mattighofen.jpg"
+      size: "1200x800"
+      cell: "large-8 medium-8 small-12"
+      caption: "Das Schloss Mattighofen"
+      thumbnail:
+        file: "schloss_mattighofen_thumb.jpg"
+        description: "Das Schloss Mattighofen"
 
