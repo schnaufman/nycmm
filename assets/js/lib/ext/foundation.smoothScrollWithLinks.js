@@ -48,6 +48,8 @@ class SmoothScrollWithLinks extends SmoothScroll {
       if (link.hash === this.backToTop) {
         SmoothScrollWithLinks.scrollToTop(this.options, () => {
           this._inTransition = false;
+          // update location hash after scrolling
+          window.location.hash = '#';
         });
       } else {
         SmoothScrollWithLinks.scrollToLoc(link.hash, this.options, () => {
