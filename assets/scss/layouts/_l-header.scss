@@ -1,11 +1,11 @@
 /***************************************/
 /*                Header               */
 /***************************************/
-header {
+#site-header {
   height: 100%;
   overflow: hidden;
   color: $white;
-  background: $site-header-overlay-color;
+  background-color: $site-header-overlay-color;
   font-weight: $site-header-font-weight;
 }
 
@@ -57,7 +57,7 @@ header {
   z-index: -100;
 
   video {
-    position: absolute;
+    position: fixed;
   }
 }
 
@@ -66,10 +66,11 @@ header {
 /***************************************/
 /* up to Large */
 @media only screen and (max-width: 64em) {
-  header {
+  #site-header {
     background-image: linear-gradient($site-header-overlay-color, $site-header-overlay-color),
       url(/assets/video/bassmovie_x264_poster.jpeg);
     background-size: cover;
+    background-attachment: fixed;
   }
 
   .c-header-content {
