@@ -34,10 +34,6 @@
   width: rem-calc(200);
   margin: rem-calc(0 10 0 0);
   padding: rem-calc(20 30);
-  -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
-  -moz-transition: background-color 0.25s ease-out, color 0.25s ease-out;
-  -ms-transition: background-color 0.25s ease-out, color 0.25s ease-out;
-  -o-transition: background-color 0.25s ease-out, color 0.25s ease-out;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
 
   &:hover,

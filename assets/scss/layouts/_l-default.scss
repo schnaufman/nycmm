@@ -23,9 +23,6 @@ footer {
     a:link,
     a:visited {
       color: $footer-text-color;
-      -webkit-transition: border-bottom 0.2s;
-      -moz-transition: border-bottom 0.2s;
-      -o-transition: border-bottom 0.2s;
       transition: border-bottom 0.2s;
     }
 
