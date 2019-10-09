@@ -150,7 +150,9 @@
 
 /* up to medium */
 @media only screen and (max-width: 63.9375em) {
-  .c-section-lineup-concert-act-image {
+  .c-section-lineup-concert-act-image,
+  .c-section-location-gallery-img-y-tile,
+  .c-section-location-gallery-img {
     img {
       opacity: 1;
 
