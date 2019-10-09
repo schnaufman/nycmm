@@ -1,7 +1,7 @@
 'use strict';
 import $ from 'jquery';
-const PhotoSwipe_Fixed = require('./photoswipe-fixed');
-const PhotoSwipeUI_Default_Fixed = require('./photoswipe-ui-default-fixed');
+const PhotoSwipe = require('photoswipe/dist/photoswipe');
+const PhotoSwipeUI_Default = require('photoswipe/dist/photoswipe-ui-default');
 
 /**
  * enable photoswipe on page by setting 'photoswipe: true' in page frontmatter
@@ -206,7 +206,7 @@ class PhotoSwipeApi {
     }
 
     // Pass data to PhotoSwipe and initialize it
-    gallery = new PhotoSwipe_Fixed(pswpElement, PhotoSwipeUI_Default_Fixed, items, options);
+    gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
     gallery.init();
   }
 }
