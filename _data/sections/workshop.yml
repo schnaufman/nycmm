@@ -1,0 +1,10 @@
+- id: "classes_id"
+  title: "classes_title"
+  folder: "classes"
+  descriptions:
+    main: "classes.md"
+  content: "classes.html"
+  classes:
+    - description: "big-band-battle.md"
+      image: "big-band-burghausen.jpg"
+      title: "Big Band Burghausen"
