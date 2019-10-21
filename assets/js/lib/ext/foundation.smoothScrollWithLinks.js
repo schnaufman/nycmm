@@ -1,15 +1,15 @@
 import $ from 'jquery';
 import { GetYoDigits } from 'foundation-sites/js/foundation.core.utils';
-import { SmoothScroll } from 'foundation-sites/js/foundation.smoothScroll';
+import { Plugin } from 'foundation-sites/js/foundation.core.plugin';
 
 /**
  * SmoothScrollWithLinks to navigate to link before scrolling
  */
-class SmoothScrollWithLinks extends SmoothScroll {
+class SmoothScrollWithLinks extends Plugin {
 
   _setup(element, options) {
     this.$element = element;
-    this.options = $.extend({}, SmoothScroll.defaults, this.$element.data(), options);
+    this.options = $.extend({}, SmoothScrollWithLinks.defaults, this.$element.data(), options);
     this.className = 'SmoothScrollWithLinks'; // ie9 back compat
     this.backToTop = '#backToTop';
 
@@ -73,7 +73,7 @@ class SmoothScrollWithLinks extends SmoothScroll {
    * @param {Object} options  - scroll options
    * @param {Function} callback - callbackfunction after scrolling
    */
-  static scrollToTop(options = SmoothScroll.defaults, callback) {
+  static scrollToTop(options = SmoothScrollWithLinks.defaults, callback) {
     $('html, body').stop().animate(
       { scrollTop: 0 },
       options.animationDuration,
@@ -94,7 +94,7 @@ class SmoothScrollWithLinks extends SmoothScroll {
    * @static
    * @function
    */
-  static scrollToLoc(loc, options = SmoothScroll.defaults, callback) {
+  static scrollToLoc(loc, options = SmoothScrollWithLinks.defaults, callback) {
     const $loc = $(loc);
 
     // Do nothing if target does not exist to prevent errors
@@ -121,6 +121,41 @@ class SmoothScrollWithLinks extends SmoothScroll {
   _destroy() {
     this.$element.off('click.zf.smoothScrollWithLinks', 'a[href*="#"]', this._linkClickListener);
   }
+}
+
+/**
+ * Default settings for plugin.
+ */
+SmoothScrollWithLinks.defaults = {
+  /**
+   * Amount of time, in ms, the animated scrolling should take between locations.
+   * @option
+   * @type {number}
+   * @default 500
+   */
+  animationDuration: 500,
+  /**
+   * Animation style to use when scrolling between locations. Can be `'swing'` or `'linear'`.
+   * @option
+   * @type {string}
+   * @default 'linear'
+   * @see {@link https://api.jquery.com/animate|Jquery animate}
+   */
+  animationEasing: 'linear',
+  /**
+   * Number of pixels to use as a marker for location changes.
+   * @option
+   * @type {number}
+   * @default 50
+   */
+  threshold: 50,
+  /**
+   * Number of pixels to offset the scroll of the page on item click if using a sticky nav bar.
+   * @option
+   * @type {number}
+   * @default 0
+   */
+  offset: 0
 }
 
 export { SmoothScrollWithLinks }
