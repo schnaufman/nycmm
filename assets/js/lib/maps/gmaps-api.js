@@ -28,20 +28,24 @@ class GMapsApi {
     this.elementId = elementId;
     this.gMapsOptions = gMapsOptions;
 
-
-
     if (!$('#' + this.elementId).length) {
       // do nothing if element id is not present in the current document
       return;
     }
+  }
 
+  init() {
+    return new Promise((resolve, reject) => this._init(resolve, reject));
+  }
+
+  _init(initResolveFunc, initRejectFunc) {
     // we make a new Promise -> we promise a initialization of the google Maps API
-    this.gMapsInitPromise = new Promise(
+    const gmapsInitPromise = new Promise(
       // the executor function is called with the ability to resolve or reject the promise
       (resolve, reject) => {
-        console.debug('GMapsApi: Started promise for initialization');
+        console.debug('GMapsApi: Started API promise for initialization');
         window.gMapsCallback = function () {
-          resolve('Callback promise fulfilled.');
+          resolve('Callback API promise fulfilled.');
         }
 
         try {
@@ -53,19 +57,23 @@ class GMapsApi {
       }
     );
 
-    this.gMapsInitPromise.then((value) => {
+    gmapsInitPromise.then((value) => {
       console.debug('GMapsApi: ' + value);
 
-      this._initialize();
+      this._initializeGMapsAPI();
+
+      initResolveFunc('GMapsAPI: Initialized Successfully');
     }).catch(reason => {
-      console.error('GMapsApi: Promise failed: ' + reason);
+      console.error('GMapsApi: API Promise failed: ' + reason);
+
+      initRejectFunc(reason);
     });
   }
 
   /**
    * initialize gmaps with given options
    */
-  _initialize() {
+  _initializeGMapsAPI() {
     const $gmaps = $('#' + this.elementId);
     let gMapsClient = null;
 
