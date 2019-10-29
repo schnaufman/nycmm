@@ -43,14 +43,14 @@ $(document).ready(function () {
 
   // SiteHelper.setFormSpreeContactFormAction('formSpreeContactForm', mailAdress, mailDomain);
 
-  //scroll to location is this has been passed with location.hash
-  /*if (window.location && window.location.hash) {
+  //scroll to location if this has been passed with location.hash
+  if (window.location && window.location.hash) {
     console.debug('Scrolling to location: ' + window.location.hash);
     SmoothScrollWithLinks.scrollToLoc(window.location.hash, {
-      animationDuration: 1000,
+      animationDuration: 200,
       animationEasing: 'swing',
       threshold: 50,
       offset: -25
     });
-  }*/
+  }
 });
