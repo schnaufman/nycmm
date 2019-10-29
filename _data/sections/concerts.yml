@@ -10,6 +10,8 @@
       acts:
         - image: "big-band-burghausen.jpg"
           title: "Big Band Burghausen"
+          height: "400px"
+          width: "600px"
           description: "big-band-burghausen.md"
           location: "Stadtsaal Mattighofen"
           date:
@@ -19,6 +21,8 @@
               end: "23:00"
         - image: "big-band-franz-kirchner.jpg"
           title: "Franz Kirchner Big Band"
+          height: "400px"
+          width: "600px"
           description: "big-band-franz-kirchner.md"
           location: "Stadtsaal Mattighofen"
           date:
@@ -31,6 +35,8 @@
       acts:
         - image: "wilfried-scharf.jpg"
           title: "Zithervirtuose Wilfried Scharf & der Salzburger Saitenklang"
+          height: "400px"
+          width: "600px"
           description: "wilfried-scharf.md"
           location: "Schloss Mattighofen"
           date:
@@ -40,6 +46,8 @@
               end: "23:00"
         - image: "die-strottern.jpg"
           title: "Die Strottern"
+          height: "400px"
+          width: "600px"
           description: "die-strottern.md"
           location: "Schloss Mattighofen"
           date:
@@ -52,6 +60,8 @@
       acts:
         - image: "familienmusiktag.jpg"
           title: "Familienmusiktag"
+          height: "600px"
+          width: "400px"
           row-offset: "0.5"
           description: "familienmusiktag-desc.md"
           location: "Park der LMS Mattighofen"
@@ -65,6 +75,8 @@
       acts:
         - image: "young-music-lions-series-prim.jpg"
           title: "Young Music Lion Series: Jazz Trio PRIM"
+          height: "600px"
+          width: "400px"
           description: "young-music-lions-series-prim.md"
           row-offset: "0.5"
           location: "Schloss Mattighofen"
@@ -75,6 +87,8 @@
               end: "19:30"
         - image: "jazz-meets-klassik.jpg"
           title: "Jazz meets Klassik mit Culturessence feat. Sopranistin Cassandra McConnell & Loren Stillman"
+          height: "400px"
+          width: "600px"
           row-offset: "0.5"
           description: "jazz-meets-klassik-desc.md"
           location: "Schloss Mattighofen"
@@ -88,6 +102,8 @@
       acts:
         - image: "workshop-abschlusskonzert.jpg"
           title: "Workshop Abschlusskonzert"
+          height: "600px"
+          width: "400px"
           row-offset: "0.5"
           description: "workshop-abschlusskonzert.md"
           location: "Schloss Mattighofen"
@@ -183,6 +199,8 @@
       thumbnail:
         file: "landesmusikschule_thumb.jpg"
         description: "Landesmusikschule Mattighofen"
+        height: "400px"
+        width: "600px"
     - file: "schloss_mattighofen_culturessence.jpg"
       size: "1200x800"
       cell: "large-4 medium-4 small-12"
@@ -190,6 +208,8 @@
       thumbnail:
         file: "schloss_mattighofen_culturessence_thumb.jpg"
         description: "Gernot Bernroiders Culturessence im Schloss Mattighofen"
+        height: "400px"
+        width: "600px"
       y-tiles:
         - file: "schloss_mattighofen_prim.jpg"
           size: "1200x800"
@@ -197,6 +217,8 @@
           thumbnail:
             file: "schloss_mattighofen_prim_thumb.jpg"
             description: "Prim im Schloss Mattighofen"
+            height: "400px"
+            width: "600px"
     - file: "schloss_mattighofen.jpg"
       size: "1200x800"
       cell: "large-8 medium-8 small-12"
@@ -204,4 +226,6 @@
       thumbnail:
         file: "schloss_mattighofen_thumb.jpg"
         description: "Das Schloss Mattighofen"
+        height: "400px"
+        width: "600px"
 

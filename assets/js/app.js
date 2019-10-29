@@ -9,8 +9,6 @@ import { NavHandler } from './lib/nav-handler';
 import { GMapsApi } from './lib/maps/gmaps-api';
 import { CookieConsentHelper } from './lib/cookie-consent-helper';
 import { PhotoSwipeApi } from './lib/gallery/photoswipe-api';
-import { AsyncLibInitManager } from './lib/async-lib-init-manager'
-
 
 //
 // Custom JS
@@ -34,8 +32,7 @@ $(document).ready(function () {
   new CookieConsentHelper('${NYCMM_ENV_GOOGLE_TRACKING_ID}');
 
   // map init - currently there's the limitation to have exactly ONE gmapsMap Element in the DOM
-  let gmapsApiPromise = new GMapsApi('${NYCMM_ENV_GMAPS_API_KEY}', 'gmapsMap').init();
-  AsyncLibInitManager.getInstance().registerInitPromise(gmapsApiPromise);
+  new GMapsApi('${NYCMM_ENV_GMAPS_API_KEY}', 'gmapsMap');
 
   new PhotoSwipeApi('photoSwipe', 'pswp');
 
@@ -46,23 +43,14 @@ $(document).ready(function () {
 
   // SiteHelper.setFormSpreeContactFormAction('formSpreeContactForm', mailAdress, mailDomain);
 
-  AsyncLibInitManager.getInstance().onInitDone(
-    (value) => {
-      console.debug('AppLibInitManager DONE: ' + value)
-      if (!window.location || !window.location.hash) {
-        // do nothing if not set
-        return;
-      }
-
-      SmoothScrollWithLinks.scrollToLoc(window.location.hash, {
-        animationDuration: 1000,
-        animationEasing: 'swing',
-        threshold: 50,
-        offset: -25
-      });
-    },
-    (error) => {
-      console.error('AppLibInitManager ERROR: ' + error)
-    }
-  );
+  //scroll to location is this has been passed with location.hash
+  /*if (window.location && window.location.hash) {
+    console.debug('Scrolling to location: ' + window.location.hash);
+    SmoothScrollWithLinks.scrollToLoc(window.location.hash, {
+      animationDuration: 1000,
+      animationEasing: 'swing',
+      threshold: 50,
+      offset: -25
+    });
+  }*/
 });
