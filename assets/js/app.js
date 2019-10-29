@@ -48,7 +48,7 @@ $(document).ready(function () {
 
   AsyncLibInitManager.getInstance().onInitDone(
     (value) => {
-      console.debug('AppLibInitManager DONE -- ' + value)
+      console.debug('AppLibInitManager DONE: ' + value)
       if (!window.location || !window.location.hash) {
         // do nothing if not set
         return;
