@@ -42,10 +42,12 @@ $(document).ready(function () {
   // const mailDomain = contactMailParts[1];
 
   // SiteHelper.setFormSpreeContactFormAction('formSpreeContactForm', mailAdress, mailDomain);
+});
 
-  //scroll to location if this has been passed with location.hash
+//scroll to location if this has been passed with location.hash
+window.onload = () => {
   if (window.location && window.location.hash) {
-    console.debug('Scrolling to location: ' + window.location.hash);
+    console.debug('INIT: Page is fully loaded - scroll to location...')
     SmoothScrollWithLinks.scrollToLoc(window.location.hash, {
       animationDuration: 200,
       animationEasing: 'swing',
@@ -53,4 +55,4 @@ $(document).ready(function () {
       offset: -25
     });
   }
-});
+};
