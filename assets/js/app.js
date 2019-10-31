@@ -17,7 +17,6 @@ Foundation.plugin(SmoothScrollWithLinks, 'SmoothScrollWithLinks');
 
 // initialize custom apis and mobile navigation
 $(document).ready(function () {
-
   // init foundation js
   $(document).foundation();
 
@@ -44,15 +43,20 @@ $(document).ready(function () {
   // SiteHelper.setFormSpreeContactFormAction('formSpreeContactForm', mailAdress, mailDomain);
 });
 
+$(window).on('beforeunload', function() {
+  $(window).scrollTop(0);
+});
+
 //scroll to location if this has been passed with location.hash
-window.onload = () => {
+/* window.onload = () => {
   if (window.location && window.location.hash) {
-    console.debug('INIT: Page is fully loaded - scroll to location...')
+    console.debug('INIT: Page is fully loaded - scroll to location.')
     SmoothScrollWithLinks.scrollToLoc(window.location.hash, {
       animationDuration: 200,
       animationEasing: 'swing',
       threshold: 50,
       offset: -25
     });
+    window.userSectionScroll = false;
   }
-};
+}; */
