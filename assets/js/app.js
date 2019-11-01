@@ -15,7 +15,9 @@ import { PhotoSwipeApi } from './lib/gallery/photoswipe-api';
 // --------------------------------------------------
 Foundation.plugin(SmoothScrollWithLinks, 'SmoothScrollWithLinks');
 
-let navScrollCancelled = false;
+// scroll to location if passed by session storage
+SmoothScrollWithLinks.initSessionNavScrollHash();
+
 // initialize custom apis and mobile navigation
 $(document).ready(function () {
   // init foundation js
@@ -44,27 +46,3 @@ $(document).ready(function () {
   // SiteHelper.setFormSpreeContactFormAction('formSpreeContactForm', mailAdress, mailDomain);
 });
 
-$(window).on('scroll', () => {
-  console.debug('INIT: Nav scroll cancelled by user scroll')
-  navScrollCancelled = true;
-
-  $(window).off('scroll');
-});
-
-//scroll to location if this has been passed with location.hash
-window.onload = () => {
-  let navScrollHash = window.sessionStorage.getItem(SmoothScrollWithLinks.navScrollHash);
-  if (navScrollHash && !navScrollCancelled && window.location) {
-    console.debug('INIT: Page is fully loaded - scroll to location.')
-    SmoothScrollWithLinks.scrollToLoc(navScrollHash, {
-      animationDuration: 1000,
-      animationEasing: 'swing',
-      threshold: 50,
-      offset: -25
-    }, () => {
-      window.location.hash = navScrollHash;
-      window.sessionStorage.removeItem(SmoothScrollWithLinks.navScrollHash);
-    });
-    $(window).off('scroll');
-  }
-};

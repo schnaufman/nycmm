@@ -2,6 +2,8 @@ import $ from 'jquery';
 import { GetYoDigits } from 'foundation-sites/js/foundation.core.utils';
 import { Plugin } from 'foundation-sites/js/foundation.core.plugin';
 
+let navScrollCancelled = false;
+
 /**
  * SmoothScrollWithLinks to navigate to link before scrolling
  */
@@ -62,6 +64,7 @@ class SmoothScrollWithLinks extends Plugin {
     } else {
       // Follow the link to the specific section if navigation comes from outside page
       window.location.href = link.pathname;
+      // store hash in session storage for scroll after page load
       window.sessionStorage.setItem(SmoothScrollWithLinks.navScrollHash, link.hash);
     }
 
@@ -85,6 +88,50 @@ class SmoothScrollWithLinks extends Plugin {
         }
       }
     );
+  }
+
+  /**
+   * Register window events to scroll to passed link hash from session storage
+   * This will be used to scroll to a specific link hash after page loading cause
+   * jumping with window.location.href will fuck up the location position.
+   */
+  static initSessionNavScrollHash() {
+    // handle scroll event
+    $(window).on('scroll', () => {
+
+      // only if the session storage is filled user cancels scroll
+      if (window.sessionStorage.getItem(SmoothScrollWithLinks.navScrollHash)) {
+        console.debug('SmoothScrollWithLinks: Nav scroll cancelled by user scroll')
+        navScrollCancelled = true;
+      }
+
+      $(window).off('scroll');
+    });
+
+    //scroll to location if this has been passed with location.hash
+    window.onload = () => {
+      let navScrollHash;
+
+      if(window.location && window.location.hash) {
+        navScrollHash = window.location.hash;
+      } else {
+        navScrollHash = window.sessionStorage.getItem(SmoothScrollWithLinks.navScrollHash);
+      }
+
+      if (navScrollHash && !navScrollCancelled && window.location) {
+        console.debug('SmoothScrollWithLinks: Page is fully loaded - scroll to location.')
+        SmoothScrollWithLinks.scrollToLoc(navScrollHash, {
+          animationDuration: 200,
+          animationEasing: 'swing',
+          threshold: 50,
+          offset: -25
+        }, () => {
+          window.location.hash = navScrollHash;
+          window.sessionStorage.removeItem(SmoothScrollWithLinks.navScrollHash);
+        });
+        $(window).off('scroll');
+      }
+    };
   }
 
   /**
