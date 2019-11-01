@@ -96,42 +96,52 @@ class SmoothScrollWithLinks extends Plugin {
    * jumping with window.location.href will fuck up the location position.
    */
   static initSessionNavScrollHash() {
-    // handle scroll event
-    $(window).on('scroll', () => {
+    if (document.readyState === 'complete') {
+      console.debug('SmoothScrollWithLinks: Page already loaded.')
+      this._scrollToLocationHash();
+    } else {
+      console.debug('SmoothScrollWithLinks: Page still loading, attaching handlers...')
+      // handle scroll event
+      $(window).on('scroll', () => {
 
-      // only if the session storage is filled user cancels scroll
-      if (window.sessionStorage.getItem(SmoothScrollWithLinks.navScrollHash)) {
-        console.debug('SmoothScrollWithLinks: Nav scroll cancelled by user scroll')
-        navScrollCancelled = true;
-      }
+        // only if the session storage is filled user cancels scroll
+        if (window.sessionStorage.getItem(SmoothScrollWithLinks.navScrollHash)) {
+          console.debug('SmoothScrollWithLinks: Nav scroll cancelled by user scroll')
+          navScrollCancelled = true;
+        }
 
-      $(window).off('scroll');
-    });
-
-    //scroll to location if this has been passed with location.hash
-    window.onload = () => {
-      let navScrollHash;
-
-      if(window.location && window.location.hash) {
-        navScrollHash = window.location.hash;
-      } else {
-        navScrollHash = window.sessionStorage.getItem(SmoothScrollWithLinks.navScrollHash);
-      }
-
-      if (navScrollHash && !navScrollCancelled && window.location) {
-        console.debug('SmoothScrollWithLinks: Page is fully loaded - scroll to location.')
-        SmoothScrollWithLinks.scrollToLoc(navScrollHash, {
-          animationDuration: 200,
-          animationEasing: 'swing',
-          threshold: 50,
-          offset: -25
-        }, () => {
-          window.location.hash = navScrollHash;
-          window.sessionStorage.removeItem(SmoothScrollWithLinks.navScrollHash);
-        });
         $(window).off('scroll');
-      }
-    };
+      });
+
+      //scroll to location if this has been passed with location.hash
+      window.onload = () => {
+        this._scrollToLocationHash();
+      };
+    }
+  }
+
+  static _scrollToLocationHash() {
+    let navScrollHash;
+
+    if (window.location && window.location.hash) {
+      navScrollHash = window.location.hash;
+    } else {
+      navScrollHash = window.sessionStorage.getItem(SmoothScrollWithLinks.navScrollHash);
+    }
+
+    if (navScrollHash && !navScrollCancelled && window.location) {
+      console.debug('SmoothScrollWithLinks: Scroll to location hash.')
+      SmoothScrollWithLinks.scrollToLoc(navScrollHash, {
+        animationDuration: 200,
+        animationEasing: 'swing',
+        threshold: 50,
+        offset: -25
+      }, () => {
+        window.location.hash = navScrollHash;
+        window.sessionStorage.removeItem(SmoothScrollWithLinks.navScrollHash);
+      });
+      $(window).off('scroll');
+    }
   }
 
   /**
