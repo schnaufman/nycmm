@@ -15,6 +15,9 @@ import { PhotoSwipeApi } from './lib/gallery/photoswipe-api';
 // --------------------------------------------------
 Foundation.plugin(SmoothScrollWithLinks, 'SmoothScrollWithLinks');
 
+// scroll to location if passed by session storage
+SmoothScrollWithLinks.initSessionNavScrollHash();
+
 // initialize custom apis and mobile navigation
 $(document).ready(function () {
   // init foundation js
@@ -42,7 +45,5 @@ $(document).ready(function () {
 
   // SiteHelper.setFormSpreeContactFormAction('formSpreeContactForm', mailAdress, mailDomain);
 
-  // scroll to location if passed by session storage
-  SmoothScrollWithLinks.initSessionNavScrollHash();
 });
 

@@ -105,7 +105,7 @@ class SmoothScrollWithLinks extends Plugin {
       $(window).on('scroll', SmoothScrollWithLinks._onUserScroll);
 
       //scroll to location if this has been passed with location.hash
-      window.onload = SmoothScrollWithLinks._scrollToLocationHash;
+      $(window).on('load', SmoothScrollWithLinks._scrollToLocationHash);
     }
   }
 
@@ -116,7 +116,11 @@ class SmoothScrollWithLinks extends Plugin {
       navScrollCancelled = true;
     }
 
-    $(window).off(SmoothScrollWithLinks._onUserScroll);
+    try {
+      $(window).off('scroll', SmoothScrollWithLinks._onUserScroll);
+    } catch (error) {
+      console.error('SmoothScrollWithLinks: ' + error);
+    }
   }
 
   static _scrollToLocationHash() {
@@ -139,7 +143,12 @@ class SmoothScrollWithLinks extends Plugin {
         window.location.hash = navScrollHash;
         window.sessionStorage.removeItem(SmoothScrollWithLinks.navScrollHash);
       });
-      $(window).off('scroll', SmoothScrollWithLinks._onUserScroll);
+
+      try {
+        $(window).off('scroll', SmoothScrollWithLinks._onUserScroll);
+      } catch (error) {
+        console.error('SmoothScrollWithLinks: ' + error);
+      }
     }
   }
 
