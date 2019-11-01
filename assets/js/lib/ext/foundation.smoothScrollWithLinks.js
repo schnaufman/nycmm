@@ -102,22 +102,21 @@ class SmoothScrollWithLinks extends Plugin {
     } else {
       console.debug('SmoothScrollWithLinks: Page still loading, attaching handlers...')
       // handle scroll event
-      $(window).on('scroll', () => {
-
-        // only if the session storage is filled user cancels scroll
-        if (window.sessionStorage.getItem(SmoothScrollWithLinks.navScrollHash)) {
-          console.debug('SmoothScrollWithLinks: Nav scroll cancelled by user scroll')
-          navScrollCancelled = true;
-        }
-
-        $(window).off('scroll');
-      });
+      $(window).on('scroll', SmoothScrollWithLinks._onUserScroll);
 
       //scroll to location if this has been passed with location.hash
-      window.onload = () => {
-        this._scrollToLocationHash();
-      };
+      window.onload = SmoothScrollWithLinks._scrollToLocationHash;
     }
+  }
+
+  static _onUserScroll() {
+    // only if the session storage is filled user cancels scroll
+    if (window.sessionStorage.getItem(SmoothScrollWithLinks.navScrollHash)) {
+      console.debug('SmoothScrollWithLinks: Nav scroll cancelled by user scroll')
+      navScrollCancelled = true;
+    }
+
+    $(window).off(SmoothScrollWithLinks._onUserScroll);
   }
 
   static _scrollToLocationHash() {
@@ -140,7 +139,7 @@ class SmoothScrollWithLinks extends Plugin {
         window.location.hash = navScrollHash;
         window.sessionStorage.removeItem(SmoothScrollWithLinks.navScrollHash);
       });
-      $(window).off('scroll');
+      $(window).off('scroll', SmoothScrollWithLinks._onUserScroll);
     }
   }
 
