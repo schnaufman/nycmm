@@ -61,7 +61,8 @@ class SmoothScrollWithLinks extends Plugin {
 
     } else {
       // Follow the link to the specific section if navigation comes from outside page
-      window.location.href = link.href;
+      window.location.href = link.pathname;
+      window.sessionStorage.setItem(SmoothScrollWithLinks.navScrollHash, link.hash);
     }
 
     e.preventDefault();
@@ -122,6 +123,8 @@ class SmoothScrollWithLinks extends Plugin {
     this.$element.off('click.zf.smoothScrollWithLinks', 'a[href*="#"]', this._linkClickListener);
   }
 }
+
+SmoothScrollWithLinks.navScrollHash = 'navScrollHash';
 
 /**
  * Default settings for plugin.
