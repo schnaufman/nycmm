@@ -12,7 +12,7 @@
       {% for concert in lineup_data.concerts %}
         {% for act in concert.acts %}
           <tr>
-            <td>{{ act.date.format | flatify }} / {{ act.date.time.begin }}&mdash;{{ act.date.time.end }}</td>
+            <td>{{ act.date.format | flatify }} / {{ act.date.time.begin }} &mdash; {{ act.date.time.end }}</td>
             <td>{{ act.location }}</td>
             <td>{{ act.title }}</td>
           </tr>
