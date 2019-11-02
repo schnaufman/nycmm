@@ -56,3 +56,62 @@
   }
 }
 
+/******************/
+/* tickets section */
+/******************/
+
+.c-section-workshop-tickets-ticket {
+  background-color: $white;
+  box-shadow: 0px 2px 2px $section-ticket-box-shadow-color;
+  border: 1px solid $section-ticket-border-color;
+  border-radius: rem-calc(5);
+}
+
+.c-section-workshop-tickets-ticket-order-btn {
+  padding: rem-calc(15 30);
+  margin: 0;
+}
+
+.c-section-workshop-tickets-ticket-title {
+  text-align: left;
+  margin-bottom: rem-calc(20);
+}
+
+.c-section-workshop-tickets-ticket-description {
+  font-size: map-get(map-get(map-get($header-styles, medium), h5), "font-size") + unquote("px");
+  font-weight: $header-font-weight;
+  margin-bottom: rem-calc(30);
+
+  ul {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    height: rem-calc(50);
+
+    li i {
+      color: $primary-color;
+      margin-right: rem-calc(5);
+    }
+  }
+}
+
+.c-section-workshop-tickets-ticket-door-price {
+  text-align: center;
+  margin-bottom: rem-calc(20);
+}
+
+.c-section-workshop-tickets-ticket-price {
+  color: $primary-color;
+  border-bottom: 1px solid $section-ticket-border-color;
+  margin-bottom: 0;
+  span {
+    margin-left: rem-calc(2);
+    font-size: map-get(map-get(map-get($header-styles, medium), h4), "font-size") + unquote("px");
+  }
+}
+
+.c-section-workshop-tickets-info {
+  margin-top: rem-calc(20);
+  text-align: center;
+}
+

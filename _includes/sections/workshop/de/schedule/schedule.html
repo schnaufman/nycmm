@@ -10,7 +10,7 @@
     </thead>
     <tbody>
       {% for class in classes_data.classes %}
-        {% assign class_title = site.data.lang[page.language].classes[{{class.title}}] %}
+        {% assign class_title = site.data.lang[page.language].workshop.classes[{{class.title}}] %}
         <tr>
           <td class="c-section-workshop-schedule-table-class-title">{{class_title}}</td>
           <td>Täglich / {{class.schedule.time.begin}} &mdash; {{class.schedule.time.end}}</td>

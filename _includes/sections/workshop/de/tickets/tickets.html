@@ -1,0 +1,31 @@
+<div class="c-section-workshop-tickets">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-3 medium-up-2 small-up-1">
+      {% for ticket in section.tickets %}
+        {% if ticket.row-offset %}
+          {% assign tickets_size = section.tickets | size %}
+          {% assign offset_calc = 12 | divided_by: {{section.tickets-in-row}} | times: ticket.row-offset | floor %}
+          {% capture ticket_cell_offset %}large-offset-{{offset_calc}} medium-offset-{{offset_calc}}{% endcapture %}
+        {% else %}
+          {% assign ticket_cell_offset = "" %}
+        {% endif %}
+        <div class="cell c-section-workshop-tickets-ticket {{ticket_cell_offset}}">
+          <h5 class="c-section-workshop-tickets-ticket-title">{{ticket.title}}</h5>
+          <div class="c-section-workshop-tickets-ticket-prices">
+            <h2 class="c-section-workshop-tickets-ticket-price">{{ticket.price.regular}}<span>&nbsp;/&nbsp;{{ticket.price.discount}}&nbsp;*</span></h2>
+          </div>
+          <div class="c-section-workshop-tickets-ticket-description">
+            <ul>
+              {% for include in ticket.includes %}
+                {% assign include_text = site.data.lang[page.language].workshop.tickets[{{include.item}}] %}
+                <li><i class="ion-md-checkbox-outline"></i>{{include_text}}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          <a class="button c-section-workshop-tickets-ticket-order-btn" target="_blank" rel="noopener noreferrer" href="{{ticket.link}}">Bestellen</a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <p class="c-section-workshop-tickets-info">*&nbsp;Ermäßigter Eintritt für Schüler/Studenten/Jugendliche bis zum vollendeten 21. Lebensjahr.</p>
+</div>

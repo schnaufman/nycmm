@@ -27,12 +27,15 @@ de:
     classes_title: "Kurse"
     schedule_id: "kursplan"
     schedule_title: "Kursplan"
-  classes:
-    ensemble_title: "Ensembleunterricht"
-    masterclass_title: "Masterclasses"
-    instrument_title: "Instrumentalunterricht"
-    advanced_singers_title: "Advanced Singers"
-    gospel_title: "Rise Up Gospel Workshop"
+  workshop:
+    classes:
+      ensemble_title: "Ensembleunterricht"
+      masterclass_title: "Masterclasses"
+      instrument_title: "Instrumentalunterricht"
+      advanced_singers_title: "Advanced Singers"
+      gospel_title: "Rise Up Gospel Workshop"
+    tickets:
+      workshop_ticket_includes: "Teilnahme am Workhop inkl. Konzerte"
   portfolio: "Portfolio"
   info_website: "Über diese Website"
   archive: "Archiv"
@@ -87,12 +90,15 @@ en:
     classes_title: "Classes"
     schedule_id: "kursplan"
     schedule_title: "Kursplan"
-  classes:
-    ensemble_title: "Ensemble Class"
-    masterclass_title: "Master Class"
-    instrument_title: "Instrument Specific Class"
-    advanced_singers_title: "Advanced Singers"
-    gospel_title: "Rise Up Gospel Workshop"
+  workshop:
+    classes:
+      ensemble_title: "Ensemble Class"
+      masterclass_title: "Master Class"
+      instrument_title: "Instrument Specific Class"
+      advanced_singers_title: "Advanced Singers"
+      gospel_title: "Rise Up Gospel Workshop"
+    tickets:
+      workshop_ticket_includes: "Includeds workhop and concerts"
   portfolio: "Portfolio EN"
   info_website: "About This Site"
   archive: "Archive"

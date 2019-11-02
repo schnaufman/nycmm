@@ -69,4 +69,26 @@
   descriptions:
     main: "schedule.md"
   content: "schedule.html"
-
+- id: "tickets_id"
+  title: "tickets_title"
+  folder: "tickets"
+  descriptions:
+    main: "tickets.md"
+  content: "tickets.html"
+  tickets-in-row: "3"
+  tickets:
+    - title: "Workshop Ticket"
+      row-offset: "0.5"
+      link: "https://events.eventzilla.net/e/nyc-musikmarathon-workshop-2019-2138727274"
+      price:
+        regular: "229€"
+        discount: "169€"
+      includes:
+        - item: "workshop_ticket_includes"
+    - title: "Parnership Ticket Blasmusik"
+      link: "https://events.eventzilla.net/e/nyc-musikmarathon-workshop-2019-2138727274"
+      price:
+        regular: "179€"
+        discount: "169€"
+      includes:
+        - item: "workshop_ticket_includes"
