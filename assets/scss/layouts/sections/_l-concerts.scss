@@ -50,6 +50,24 @@
   }
 }
 
+
+/*****************/
+/* dates section */
+/*****************/
+.c-section-dates-table {
+  th {
+    font-size: map-get(map-get(map-get($header-styles, medium), h5), "font-size") + unquote("px");
+    font-weight: normal;
+    text-align: center;
+  }
+  tr {
+    font-size: map-get(map-get(map-get($header-styles, medium), h5), "font-size") + unquote("px");
+    font-weight: $header-font-weight;
+    text-align: center;
+    border-bottom: 1px solid lighten($secondary-color, 50%);
+  }
+}
+
 /******************/
 /* tickets section */
 /******************/

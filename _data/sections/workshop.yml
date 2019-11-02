@@ -6,35 +6,67 @@
   content: "classes.html"
   classes-in-row: "3"
   classes:
-    - description: "instrument.md"
-      title: "instrument_title"
-      image:
-        file: "instrument.jpg"
-        height: "400px"
-        width: "600px"
-    - description: "ensemble.md"
-      title: "ensemble_title"
-      image:
-        file: "ensemble.jpg"
-        height: "400px"
-        width: "600px"
     - description: "masterclass.md"
       title: "masterclass_title"
+      location: "LMS Mattighofen"
       image:
         file: "masterclass.jpg"
         height: "400px"
         width: "600px"
+      schedule:
+        time:
+          begin: "09:30"
+          end: "10:45"
+    - description: "instrument.md"
+      title: "instrument_title"
+      location: "LMS Mattighofen"
+      image:
+        file: "instrument.jpg"
+        height: "400px"
+        width: "600px"
+      schedule:
+        time:
+          begin: "11:00"
+          end: "12:30"
     - description: "advanced_singers.md"
-      row-offset: "0.5"
       title: "advanced_singers_title"
+      location: "LMS Mattighofen"
       image:
         file: "advanced_singers.jpg"
         height: "400px"
         width: "600px"
+      schedule:
+        time:
+          begin: "11:00"
+          end: "12:30"
+    - description: "ensemble.md"
+      row-offset: "0.5"
+      title: "ensemble_title"
+      location: "LMS Mattighofen"
+      image:
+        file: "ensemble.jpg"
+        height: "400px"
+        width: "600px"
+      schedule:
+        time:
+          begin: "14:30"
+          end: "17:30"
     - description: "gospel.md"
       title: "gospel_title"
+      location: "LMS Mattighofen"
       image:
         file: "gospel.jpg"
         height: "400px"
         width: "600px"
+      schedule:
+        time:
+          begin: "14:30"
+          end: "17:30"
+- id: "schedule_id"
+  title: "schedule_title"
+  folder: "schedule"
+  location: "LMS Mattighofen"
+  descriptions:
+    main: "schedule.md"
+  content: "schedule.html"
 

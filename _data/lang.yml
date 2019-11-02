@@ -25,6 +25,8 @@ de:
     gallery_title: "Gallerie"
     classes_id: "kurse"
     classes_title: "Kurse"
+    schedule_id: "kursplan"
+    schedule_title: "Kursplan"
   classes:
     ensemble_title: "Ensembleunterricht"
     masterclass_title: "Masterclasses"
@@ -83,6 +85,8 @@ en:
     gallery_title: "Gallery"
     classes_id: "classes"
     classes_title: "Classes"
+    schedule_id: "kursplan"
+    schedule_title: "Kursplan"
   classes:
     ensemble_title: "Ensemble Class"
     masterclass_title: "Master Class"

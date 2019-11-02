@@ -37,3 +37,22 @@
   hyphens: auto;
   text-align: justify;
 }
+
+
+/********************/
+/* schedule section */
+/********************/
+.c-section-workshop-schedule-table {
+  th {
+    font-size: map-get(map-get(map-get($header-styles, medium), h5), "font-size") + unquote("px");
+    font-weight: normal;
+    text-align: center;
+  }
+  tr {
+    font-size: map-get(map-get(map-get($header-styles, medium), h5), "font-size") + unquote("px");
+    font-weight: $header-font-weight;
+    text-align: center;
+    border-bottom: 1px solid lighten($secondary-color, 50%);
+  }
+}
+
