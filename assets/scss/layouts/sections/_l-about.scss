@@ -10,13 +10,16 @@
   margin: auto;
 
   figcaption {
+    h4 {
+      margin-bottom: rem-calc(20);
+      text-align: center;
+    }
+
     display: table-caption;
     caption-side: bottom;
     margin-bottom: rem-calc(20);
-
-    h4 {
-      margin-bottom: rem-calc(20);
-    }
+    text-align: justify;
+    hyphens: auto;
   }
 
   .c-section-overview-image-svg {

@@ -4,7 +4,37 @@
   descriptions:
     main: "classes.md"
   content: "classes.html"
+  classes-in-row: "3"
   classes:
-    - description: "big-band-battle.md"
-      image: "big-band-burghausen.jpg"
-      title: "Big Band Burghausen"
+    - description: "instrument.md"
+      title: "instrument_title"
+      image:
+        file: "instrument.jpg"
+        height: "400px"
+        width: "600px"
+    - description: "ensemble.md"
+      title: "ensemble_title"
+      image:
+        file: "ensemble.jpg"
+        height: "400px"
+        width: "600px"
+    - description: "masterclass.md"
+      title: "masterclass_title"
+      image:
+        file: "masterclass.jpg"
+        height: "400px"
+        width: "600px"
+    - description: "advanced_singers.md"
+      row-offset: "0.5"
+      title: "advanced_singers_title"
+      image:
+        file: "advanced_singers.jpg"
+        height: "400px"
+        width: "600px"
+    - description: "gospel.md"
+      title: "gospel_title"
+      image:
+        file: "gospel.jpg"
+        height: "400px"
+        width: "600px"
+

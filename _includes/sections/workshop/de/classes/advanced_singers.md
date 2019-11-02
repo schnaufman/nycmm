@@ -1,0 +1,1 @@
+##### Erreiche den nächsten Level an Stimm-und Ausdruckskraft, festige den individuellen Klang der eigenen Stimme und rücke Herz und Seele ins Zentrum der Musik durch effizientes, praxisbezogenes „Coaching“.

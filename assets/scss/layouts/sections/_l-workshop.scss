@@ -1,0 +1,39 @@
+
+/****************************/
+/* workshop section style   */
+/****************************/
+
+/*******************/
+/* classes section */
+/*******************/
+
+.c-section-workshop-classes-class-image {
+  width: 100%;
+  overflow: hidden;
+  background: black;
+  margin: 0;
+  position: relative;
+  margin-bottom: rem-calc(25);
+
+  img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: transform 0.5s, opacity 0.5s;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.02);
+    }
+  }
+}
+
+.c-section-workshop-classes-class-title {
+  margin-bottom: rem-calc(20);
+}
+
+.c-section-workshop-classes-class-description {
+  hyphens: auto;
+  text-align: justify;
+}

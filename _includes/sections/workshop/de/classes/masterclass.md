@@ -1,0 +1,1 @@
+##### Mit informativen und eigens für diesen Workshop zurecht geschnittenen Lektionen für Harmonie und Improvisation wird eine wichtige Basis für das praxisbezogene Spiel am Instrument und im Ensemble geschaffen.
