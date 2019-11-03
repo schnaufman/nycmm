@@ -4,7 +4,7 @@
 
 // set background for every even child of section in the section-container
 .c-section-main-content {
-  section:nth-child(even) {
+  .c-section-parent-container:nth-child(even) {
     background: $sections-even-background-color;
   }
 }

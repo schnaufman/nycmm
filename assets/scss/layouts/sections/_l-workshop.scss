@@ -54,9 +54,9 @@
   }
 }
 
-/******************/
+/*******************/
 /* tickets section */
-/******************/
+/*******************/
 
 .c-section-workshop-tickets-ticket {
   background-color: $white;
@@ -111,6 +111,51 @@
 .c-section-workshop-tickets-info {
   margin-top: rem-calc(20);
   text-align: center;
+}
+
+/************************/
+/* testimonials section */
+/************************/
+
+#section-testimonials_id-container {
+  background-image: linear-gradient($section-testimonials-overlay-color, $section-testimonials-overlay-color),
+    url(/assets/img/testimonials/testimonial_background.jpg);
+  background-size: cover;
+  color: $white;
+  background-attachment: fixed;
+}
+
+.c-section-testimonials-testimonial {
+  margin-top: rem-calc(20);
+
+  blockquote {
+    color: $white;
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    border: none;
+
+    h4 {
+      margin-bottom: rem-calc(10);
+    }
+
+    &:before {
+      color: $white;
+      content: "\201c";
+      font-size: rem-calc(100);
+      display: block;
+      position: absolute;
+      top: rem-calc(-5px);
+      left: rem-calc(-3px);
+    }
+  }
+
+  cite {
+    color: $white;
+    font-size: map-get(map-get(map-get($header-styles, medium), h4), "font-size") + unquote("px");
+    display: block;
+  }
 }
 
 /* up to medium */
