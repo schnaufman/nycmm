@@ -55,6 +55,8 @@
 
   video {
     position: fixed;
+    object-fit: cover;
+    height: 100%;
     width: 100%;
   }
 }
@@ -68,6 +70,8 @@
     background-image: linear-gradient($site-header-overlay-color, $site-header-overlay-color),
       url(/assets/video/bassmovie_x264_poster.jpeg);
     background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
   }
 
   .c-header-content {
