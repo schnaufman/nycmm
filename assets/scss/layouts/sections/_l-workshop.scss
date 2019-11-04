@@ -123,6 +123,7 @@
   background-size: cover;
   color: $white;
   background-attachment: fixed;
+  background-position: center center;
 }
 
 .c-section-testimonials-testimonial {
@@ -168,5 +169,9 @@
         transform: scale(1);
       }
     }
+  }
+
+  #section-testimonials_id-container {
+    background-attachment: scroll;
   }
 }
