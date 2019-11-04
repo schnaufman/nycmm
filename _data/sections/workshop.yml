@@ -106,4 +106,21 @@
     - description: "testimonial4.md"
     - description: "testimonial5.md"
     - description: "testimonial6.md"
-
+- id: "locations_id"
+  title: "locations_title"
+  folder: "locations"
+  descriptions:
+    main: "locations.md"
+  content: "locations.html"
+  maps:
+    coordinates:
+      lat: 48.10049
+      lng: 13.15124
+    zoom: 18
+    markers:
+      - title: "Landesmusikschule Mattighofen"
+        popup:
+          content: "<b>LMS Mattighofen</b><br>Salzburger Str. 8<br>5230 Mattighofen"
+        coordinates:
+          lat: 48.10049
+          lng: 13.15124

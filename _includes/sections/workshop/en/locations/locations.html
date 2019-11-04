@@ -1,0 +1,20 @@
+<div class="c-section-locations">
+  {%- capture marker_settings -%}[{%- endcapture -%}
+  {% for marker in section.maps.markers %}
+    {% capture settings %}{"title":"{{marker.title}}","popup":{"content":"{{marker.popup.content}}","state":"{{marker.popup.state}}"},"lat":"{{marker.coordinates.lat}}","lng":"{{marker.coordinates.lng}}"{% endcapture %}
+    {% if marker == section.maps.markers.last %}
+      {% assign settings = settings | append: "}" %}
+    {% else %}
+      {% assign settings = settings | append: "}," %}
+    {% endif %}
+    {% assign marker_settings = marker_settings | append: settings %}
+  {% endfor %}
+  {% assign marker_settings = marker_settings | append: "]" %}
+  <div id="gmapsMap"
+    lat="{{ section.maps.coordinates.lat }}"
+    lng="{{ section.maps.coordinates.lng }}"
+    zoom="{{ section.maps.zoom }}"
+    mobile-zoom="{{ section.maps.mobile-zoom }}"
+    markers="{{- marker_settings | escape -}}">
+  </div>
+</div>
