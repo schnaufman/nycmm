@@ -1,5 +1,5 @@
-
-#leafletMap, #gmapsMap {
+#leafletMap,
+#gmapsMap {
   width: 100%;
   height: $map-height-large;
   clear: both;
@@ -10,11 +10,6 @@
   // this is a fix for the gray box which will appear on reload
   // now map is only displayed when it's initialized
   display: none;
-}
-
-.gmaps-popup {
-  padding-right: rem-calc(12);
-  padding-bottom: rem-calc(12);
 }
 
 /***************************************/
@@ -32,6 +27,12 @@
 }
 
 @media only screen and (max-width: 63.9375em) {
+  // explicitly set right and bottom padding on gmaps popups on small displays
+  .gmaps-popup {
+    padding-right: rem-calc(12);
+    padding-bottom: rem-calc(12);
+  }
+
   #leafletMap {
     height: $map-height-small;
   }
