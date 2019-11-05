@@ -179,7 +179,7 @@ class GMapsApi {
       if (markerSettings.popup) {
         // eslint-disable-next-line no-undef
         const infowindow = new google.maps.InfoWindow({
-          content: markerSettings.popup.content
+          content: '<div class="gmaps-popup">' + markerSettings.popup.content + '</div>'
         });
 
         let openPopup;
