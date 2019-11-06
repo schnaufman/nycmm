@@ -38,6 +38,15 @@ de:
       gospel_title: "Rise Up Gospel Workshop"
     tickets:
       workshop_ticket_includes: "Teilnahme am Workhop inkl. Konzerte"
+    gallery:
+      workshop_1_caption: "Ensembleunterricht"
+      workshop_1_description: "Ensembleunterricht"
+      workshop_2_caption: "Advanced Singers"
+      workshop_2_description: "Advanced Singers"
+      workshop_3_caption: "Instrumentalunterricht"
+      workshop_3_description: "Instrumentalunterricht"
+      workshop_4_caption: "Ensembleunterricht"
+      workshop_4_description: "Ensembleunterricht"
   portfolio: "Portfolio"
   info_website: "Über diese Website"
   archive: "Archiv"
@@ -103,6 +112,15 @@ en:
       gospel_title: "Rise Up Gospel Workshop"
     tickets:
       workshop_ticket_includes: "Includeds workhop and concerts"
+    gallery:
+      workshop_1_caption: "workshop1"
+      workshop_1_description: "workshop1"
+      workshop_2_caption: "workshop2"
+      workshop_2_description: "workshop2"
+      workshop_3_caption: "workshop3"
+      workshop_3_description: "workshop3"
+      workshop_4_caption: "workshop4"
+      workshop_4_description: "workshop4"
   portfolio: "Portfolio EN"
   info_website: "About This Site"
   archive: "Archive"

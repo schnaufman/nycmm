@@ -1,0 +1,33 @@
+<div class="grid-container">
+  <div class="photoSwipe c-section-workshop-gallery grid-x grid-padding-x grid-padding-y" itemscope itemtype="http://schema.org/ImageGallery">
+    {% for image in section.images %}
+      {% if image.y-tiles %}
+        {% assign y_tiles_container_class="flex-dir-column" %}
+        {% assign figure_class="c-section-workshop-gallery-img-y-tile" %}
+      {% else %}
+        {% assign y_tiles_container_class="" %}
+        {% assign figure_class="c-section-workshop-gallery-img" %}
+      {% endif %}
+      {% assign image_caption = site.data.lang[page.language].workshop.gallery[{{image.caption}}] %}
+      {% assign image_description = site.data.lang[page.language].workshop.gallery[{{image.thumbnail.description}}] %}
+      <div class="cell {{image.cell}} flex-container {{y_tiles_container_class}}" >
+        <figure class="photoSwipeFigure {{figure_class}} flex-child-auto" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="/assets/img/workshops/{{image.file}}" itemprop="contentUrl" data-size="{{image.size}}">
+            <img src="/assets/img/workshops/{{image.thumbnail.file}}" itemprop="thumbnail" alt="{{image_description}}" width="{{image.thumbnail.width}}" height="{{image.thumbnail.height}}"/>
+          </a>
+          <figcaption itemprop="caption description">{{image_caption}}</figcaption>
+        </figure>
+        {% for y_tile in image.y-tiles %}
+          {% assign y_image_caption = site.data.lang[page.language].workshop.gallery[{{y_tile.caption}}] %}
+          {% assign y_image_description = site.data.lang[page.language].workshop.gallery[{{y_tile.thumbnail.description}}] %}
+          <figure class="photoSwipeFigure {{figure_class}} flex-child-auto" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="/assets/img/workshops/{{y_tile.file}}" itemprop="contentUrl" data-size="{{y_tile.size}}">
+              <img src="/assets/img/workshops/{{y_tile.thumbnail.file}}" itemprop="thumbnail" alt="{{y_image_description}}" width="{{y_tile.thumbnail.width}}" height="{{y_tile.thumbnail.height}}"/>
+            </a>
+            <figcaption itemprop="caption description">{{y_image_caption}}</figcaption>
+          </figure>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+</div>

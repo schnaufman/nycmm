@@ -124,3 +124,47 @@
         coordinates:
           lat: 48.10049
           lng: 13.15124
+- id: "gallery_id"
+  title: "gallery_title"
+  folder: "gallery"
+  descriptions:
+    main: "gallery.md"
+  content: "gallery.html"
+  images:
+    - file: "workshop_1.jpg"
+      cell: "large-6 medium-6 small-12"
+      size: "1200x800"
+      caption: "workshop_1_caption"
+      thumbnail:
+        file: "workshop_1_thumb.jpg"
+        description: "workshop_1_description"
+        height: "400px"
+        width: "600px"
+    - file: "workshop_2.jpg"
+      size: "1200x800"
+      cell: "large-6 medium-6 small-12"
+      caption: "workshop_2_caption"
+      thumbnail:
+        file: "workshop_2_thumb.jpg"
+        description: "workshop_2_description"
+        height: "400px"
+        width: "600px"
+    - file: "workshop_3.jpg"
+      size: "1200x800"
+      cell: "large-6 medium-6 small-12"
+      caption: "workshop_3_caption"
+      thumbnail:
+        file: "workshop_3_thumb.jpg"
+        description: "workshop_3_description"
+        height: "400px"
+        width: "600px"
+    - file: "workshop_4.jpg"
+      size: "1200x800"
+      cell: "large-6 medium-6 small-12"
+      caption: "workshop_4_caption"
+      thumbnail:
+        file: "workshop_4_thumb.jpg"
+        description: "workshop_4_description"
+        height: "400px"
+        width: "600px"
+
