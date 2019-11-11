@@ -63,15 +63,24 @@ class NavHandler {
       return;
     }
 
-    //iterate all queried elements
+    //iterate all queried dropdown elements
     $dropDownSectionExpandIconBtn.each(function (index, element) {
+      // unfortunately I found no other way to get the next child with a given class
+      let dropDownSectionExpandEl = $(element).parent().children('.' + this.dropDownSectionExpandElClass);
+
       element.onclick = this._handleDropDownClick.bind(
                                   this,
-                                  // unfortunately I found no other way to get the next child with a given class
-                                  $(element).parent().children('.' + this.dropDownSectionExpandElClass),
+                                  dropDownSectionExpandEl,
                                   $(element).children('i'),
                                   this.iconExpandClass,
                                   this.iconCollapseClass);
+
+      $(dropDownSectionExpandEl).children('li').each( function (index, sectionElement) {
+        // close menu on section navigation
+        sectionElement.onclick = () => {
+          $('.' + this.dropDownMenuIconElClass).click();
+        };
+      }.bind(this));
 
     }.bind(this));
 
