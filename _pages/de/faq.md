@@ -25,7 +25,7 @@ Tel.: 07742 4668
 ##### Mattigtalerhof
 Postgasse 18,<br> 5230 Mattighofen<br>
 (15 Gehmin.von LMS)<br>
-Preis: Auf Anfrage<br>
+Preis: Frei
 Tel.: 07742 2562
 
 ##### Gasthof Wirt z’Weissau
