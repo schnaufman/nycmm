@@ -1,4 +1,5 @@
-{% for section in site.data.sections[page.section] %} {% assign section_id = site.data.lang[page.language].navigation[{{section.id}}] %}
+{% for section in site.data.sections[page.section] %}
+  {% assign section_id = site.data.lang[page.language].navigation[{{section.id}}] %}
   {% assign section_title = site.data.lang[page.language].navigation[{{section.title}}] %}
   <div id="section-{{section.id}}-container" class="c-section-parent-container">
     <section id="{{ section_id }}" class="c-section">
