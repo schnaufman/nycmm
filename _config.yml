@@ -57,10 +57,8 @@ incremental:      true
 # baseurl:        "" # does not include hostname
 
 # header video
-header_video:             "/assets/video/bassmovie_x264.mp4"
-header_video_poster:      "/assets/video/bassmovie_x264_poster.jpeg"
-# header video (not active at the moment)
-header_image:     ""
+header_video:     "/assets/video/header_video_x264.mp4"
+header_hero:      "/assets/img/header/hero.jpg"
 
 # logo
 logo:             "/assets/img/logo.png"
