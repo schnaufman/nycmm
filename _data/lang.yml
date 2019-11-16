@@ -29,6 +29,8 @@ de:
     schedule_title: "Kursplan"
     testimonials_id: "referenzen"
     testimonials_title: "Referenzen"
+    activities_id: "aktivitaeten"
+    activities_title: "Aktivitäten"
   workshop:
     classes:
       ensemble_title: "Ensembleunterricht"
@@ -103,6 +105,8 @@ en:
     schedule_title: "Kursplan"
     testimonials_id: "testimonials"
     testimonials_title: "Testimonials"
+    activities_id: "activities"
+    activities_title: "Activities"
   workshop:
     classes:
       ensemble_title: "Ensemble Class"

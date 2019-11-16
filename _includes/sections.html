@@ -17,15 +17,21 @@
       </div>
 
       {% if section.image %}
-        <div class="grid-x grid-margin-x">
+        <div class="grid-x grid-padding-x">
           <div class="cell">
-            <figure>
-              <img src="{{ site.baseurl }}/{{ section.image }}" title="{{ section.image-title }}" alt="{{ section.title }}">
-              {% if section.img-caption %}
-                <figcaption>
-                {{ section.img-caption }}</div>
-                </figcaption>
+            <figure class="c-section-image-figure">
+              {% if section.image.caption %}
+                <figcaption>{{ section.image.caption }}</figcaption>
               {% endif %}
+              <div class="c-section-image-figure-container">
+                {% if section.image.link %}
+                  <a href="{{ section.image.link }}" target="_blank">
+                {% endif %}
+                <img src="{{ section.image.file }}" title="{{ section.image.title }}" alt="{{ section.title }}">
+                {% if section.image.link %}
+                  </a>
+                {% endif %}
+              </div>
             </figure>
           </div>
         </div>

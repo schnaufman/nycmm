@@ -67,3 +67,14 @@
   descriptions:
     main: "contact.md"
   content: "contact.html"
+
+- id: "activities_id"
+  folder: "activities"
+  title: "activities_title"
+  image:
+    file: "/assets/img/activities/jamademy.jpg"
+    title: "Jamademy"
+    caption: "Jamademy"
+    link: "https://www.nycmusikmarathon.com/info/jamademy"
+  descriptions:
+    main: "activities.md"
