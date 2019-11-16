@@ -7,18 +7,20 @@
     </video>
   </div>
   {% include components/nav-menu.html %}
-  <div class="c-header-content">
-    <h1>{{ site.title }}</h1>
-    <h1>{{ site.date.begin | date: "%d" }}. - {{ site.date.end | date: "%d" }}.{{ site.date.begin | date: "%m" }}.{{ site.date.begin | date: "%Y" }}</h1>
-    <h2>{{ site.description }}</h2>
-    <div id="site-header-nav" data-smooth-scroll-with-links data-animation-easing="swing" data-offset="-25" data-animation-duration="1000">
-      {% assign sign_up = site.data.lang[page.language].home.sign_up %}
-      {% assign tickets = site.data.lang[page.language].home.tickets %}
-      {% assign page_concerts = site.pages | where:"language", page.language | where:"ref", "concerts" | first %}
-      {% assign page_workshop = site.pages | where:"language", page.language | where:"ref", "workshop" | first %}
-      {% assign tickets_ref = site.data.lang[page.language].navigation.tickets_id %}
-      <a class="c-header-button" href="{{page_workshop.permalink | relative_url}}#{{tickets_ref}}">{{ sign_up }}</a>
-      <a class="c-header-button" href="{{page_concerts.permalink | relative_url}}#{{tickets_ref}}">{{ tickets }}</a>
+  <div class="c-header-container">
+    <div class="c-header-content">
+      <h1>{{ site.title }}</h1>
+      <h1>{{ site.date.begin | date: "%d" }}. - {{ site.date.end | date: "%d" }}.{{ site.date.begin | date: "%m" }}.{{ site.date.begin | date: "%Y" }}</h1>
+      <h2>{{ site.description }}</h2>
+      <div id="site-header-nav" data-smooth-scroll-with-links data-animation-easing="swing" data-offset="-25" data-animation-duration="1000">
+        {% assign sign_up = site.data.lang[page.language].home.sign_up %}
+        {% assign tickets = site.data.lang[page.language].home.tickets %}
+        {% assign page_concerts = site.pages | where:"language", page.language | where:"ref", "concerts" | first %}
+        {% assign page_workshop = site.pages | where:"language", page.language | where:"ref", "workshop" | first %}
+        {% assign tickets_ref = site.data.lang[page.language].navigation.tickets_id %}
+        <a class="c-header-button" href="{{page_workshop.permalink | relative_url}}#{{tickets_ref}}">{{ sign_up }}</a>
+        <a class="c-header-button" href="{{page_concerts.permalink | relative_url}}#{{tickets_ref}}">{{ tickets }}</a>
+      </div>
     </div>
   </div>
 </header>
