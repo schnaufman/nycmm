@@ -3,8 +3,9 @@
   folder: "overview"
   descriptions:
     main: "overview.md"
-    ensemble: "ensemble.md"
+    workshop: "workshop.md"
     jamsessions: "jamsessions.md"
+    familien-nachmittag: "familien-nachmittag.md"
     concerts: "concerts.md"
   content: "overview.html"
 
