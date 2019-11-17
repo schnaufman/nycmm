@@ -1,10 +1,10 @@
 ---
-permalink: /konzerte/
+permalink: /festival/
 language: de
 layout: sections
-title: Konzerte
-section: concerts
-ref: concerts
+title: Festival
+section: festival
+ref: festival
 photoswipe: true
 order: 2
 ---
