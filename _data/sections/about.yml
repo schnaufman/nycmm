@@ -76,5 +76,7 @@
     title: "Jamademy"
     caption: "Jamademy"
     link: "https://www.nycmusikmarathon.com/info/jamademy"
+    width: "400px"
+    height: "370px"
   descriptions:
     main: "activities.md"

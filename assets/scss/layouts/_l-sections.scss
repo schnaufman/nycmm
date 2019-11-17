@@ -15,7 +15,9 @@
 
 .c-section-image-figure {
   margin: auto;
-  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   figcaption {
     text-align: center;
@@ -28,12 +30,9 @@
   overflow: hidden;
   position: relative;
   background: black;
-  width: 100%;
 
   img {
     opacity: 0.7;
-    width: 100%;
-    height: auto;
     transform: scale(1);
     transition: transform 0.5s, opacity 0.5s;
 
@@ -46,9 +45,6 @@
 
 /* up to small */
 @media only screen and (max-width: 39.9375em) {
-  .c-section-image-figure {
-    width: 50%;
-  }
   .c-section {
     padding: rem-calc(20 5);
   }
@@ -56,9 +52,6 @@
 
 /* up to medium */
 @media only screen and (max-width: 63.9375em) {
-  .c-section-image-figure {
-    width: 50%;
-  }
   .c-section-image-figure-container {
     img {
       opacity: 1;
