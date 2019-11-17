@@ -31,6 +31,8 @@ de:
     testimonials_title: "Referenzen"
     activities_id: "aktivitaeten"
     activities_title: "Aktivitäten"
+    scholarship_id: "stipendium"
+    scholarship_title: "Stipendium"
   workshop:
     classes:
       ensemble_title: "Ensembleunterricht"
@@ -107,6 +109,8 @@ en:
     testimonials_title: "Testimonials"
     activities_id: "activities"
     activities_title: "Activities"
+    scholarship_id: "scholarship"
+    scholarship_title: "Scholarship"
   workshop:
     classes:
       ensemble_title: "Ensemble Class"

@@ -92,6 +92,11 @@
         discount: "169€"
       includes:
         - item: "workshop_ticket_includes"
+- id: "scholarship_id"
+  title: "scholarship_title"
+  folder: "scholarship"
+  descriptions:
+    main: "scholarship.md"
 - id: "testimonials_id"
   title: "testimonials_title"
   folder: "testimonials"
