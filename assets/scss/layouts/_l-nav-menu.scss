@@ -2,26 +2,6 @@
 /*            Navigation               */
 /***************************************/
 
-.c-nav-page-sections-main-item {
-  list-style: none;
-  a {
-    &:link,
-    &:visited {
-      color: $white;
-      text-decoration: none;
-      text-transform: uppercase;
-      border-bottom: 2px solid transparent;
-      transition: border-bottom 0.2s;
-      padding: rem-calc(8 0);
-    }
-
-    &:hover,
-    &:active {
-      border-bottom: 2px solid $site-header-nav-link-hover-color;
-    }
-  }
-}
-
 .c-nav-container {
   margin-top: rem-calc(60);
 }
@@ -256,17 +236,38 @@
   font-size: map-get(map-get(map-get($header-styles, medium), "h4"), "font-size") + unquote("px");
   margin: 0;
   vertical-align: middle;
+  width: 80%;
 }
 
 .c-nav-page-sections-main {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .c-nav-page-sections-main-item {
+  list-style: none;
   margin-left: rem-calc(40);
-  display: inline-block;
+
+  a {
+    &:link,
+    &:visited {
+      color: $white;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom 0.2s;
+      padding: rem-calc(8 0);
+    }
+
+    &:hover,
+    &:active {
+      border-bottom: 2px solid $site-header-nav-link-hover-color;
+    }
+  }
 }
+
 
 /***************************************/
 /*       Navigation Queries            */
@@ -286,10 +287,7 @@
   .c-nav-page-sections-main-item {
     margin-left: rem-calc(20);
   }
-}
 
-/* up to Medium */
-@media only screen and (max-width: 40em) {
   .c-nav-dropdown {
     width: 100%;
     margin: 0;
