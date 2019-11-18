@@ -21,8 +21,11 @@ SmoothScrollWithLinks.initSessionNavScrollHash();
 // initialize custom apis and mobile navigation
 $(document).ready(function () {
 
-  // force heider height to window size (fix for firefox mobile scroll)
+  // FIREFOX/SAFARI MOBILE SCROLL Bugfix with 100vh and navigation bar included in css height
+  // force header height to window size (fix for firefox mobile scroll)
   $('#site-header').height($(window).height());
+  // also set fixed height for content
+  $('.c-header-container').height($(window).height() - $('.c-nav-container').outerHeight(true));
 
   // init foundation js
   $(document).foundation();
