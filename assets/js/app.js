@@ -25,7 +25,7 @@ $(document).ready(function () {
   // force header height to window size (fix for firefox mobile scroll)
   $('#site-header').height($(window).height());
   // also set fixed height for content
-  $('.c-header-container').height($(window).height() - $('.c-nav-container').outerHeight(true));
+  $('.c-header-container').height($(window).height());
 
   // init foundation js
   $(document).foundation();
