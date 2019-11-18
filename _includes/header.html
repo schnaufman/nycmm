@@ -1,11 +1,19 @@
 {% include head.html %}
 
-<header id="site-header">
-  <div class="c-header-video">
-    <video class="js--header-video" loop muted autoplay>
-      <source src="{{ site.header_video | relative_url }}" type="video/mp4" poster="{{ site.header_hero | relative_url }}">
-    </video>
-  </div>
+{% if site.header_video %}
+  {% assign header_class = "c-site-header-video" %}
+{% else %}
+  {% assign header_class = "c-site-header-hero" %}
+{% endif %}
+
+<header id="site-header" class="{{ header_class }}">
+  {% if site.header_video %}
+    <div class="c-header-video">
+      <video class="js--header-video" loop muted autoplay>
+        <source src="{{ site.header_video | relative_url }}" type="video/mp4" poster="{{ site.header_hero | relative_url }}">
+      </video>
+    </div>
+  {% endif %}
   {% include components/nav-menu.html %}
   <div class="c-header-container">
     <div class="c-header-content">

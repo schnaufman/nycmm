@@ -67,12 +67,22 @@
   }
 }
 
+.c-site-header-hero {
+  height: 100vh;
+  background-image: linear-gradient($site-header-overlay-color, $site-header-overlay-color),
+    url(/assets/img/header/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
 /***************************************/
 /*           Header Queries            */
 /***************************************/
 /* up to Large */
 @media only screen and (max-width: 64em) {
-  #site-header {
+   .c-site-header-video {
     background-image: linear-gradient($site-header-overlay-color, $site-header-overlay-color),
       url(/assets/img/header/hero.jpg);
     background-size: cover;
