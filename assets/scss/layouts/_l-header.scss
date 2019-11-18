@@ -69,6 +69,9 @@
 
 .c-site-header-hero {
   height: 100vh;
+  max-height: 100%;
+  position: relative;
+  overflow: hidden;
   background-image: linear-gradient($site-header-overlay-color, $site-header-overlay-color),
     url(/assets/img/header/hero.jpg);
   background-size: cover;
@@ -81,8 +84,12 @@
 /***************************************/
 /* up to Large */
 @media only screen and (max-width: 64em) {
-   .c-site-header-hero,
-   .c-site-header-video {
+  .c-site-header-hero,
+  .c-site-header-video {
+    height: 100vh;
+    max-height: 100%;
+    position: relative;
+    overflow: hidden;
     background-image: linear-gradient($site-header-overlay-color, $site-header-overlay-color),
       url(/assets/img/header/hero.jpg);
     background-size: cover;
