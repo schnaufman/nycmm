@@ -2,9 +2,8 @@
 /*                Header               */
 /***************************************/
 #site-header {
+  height: 100%;
   overflow: hidden;
-  min-height: 100vh;
-  min-height: -web-fill-available;
   color: $white;
   background-color: $site-header-overlay-color;
   font-weight: $site-header-font-weight;
@@ -16,7 +15,7 @@
   width: 100%;
   top: 50%;
   left: 50%;
-  transform: translate(-25%, -25%);
+  transform: translate(-50%, -40%);
 }
 
 .c-header-content {
