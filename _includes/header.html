@@ -23,7 +23,7 @@
       <div id="site-header-nav" data-smooth-scroll-with-links data-animation-easing="swing" data-offset="-25" data-animation-duration="1000">
         {% assign sign_up = site.data.lang[page.language].home.sign_up %}
         {% assign tickets = site.data.lang[page.language].home.tickets %}
-        {% assign page_concerts = site.pages | where:"language", page.language | where:"ref", "concerts" | first %}
+        {% assign page_concerts = site.pages | where:"language", page.language | where:"ref", "festival" | first %}
         {% assign page_workshop = site.pages | where:"language", page.language | where:"ref", "workshop" | first %}
         {% assign tickets_ref = site.data.lang[page.language].navigation.tickets_id %}
         <a class="c-header-button" href="{{page_workshop.permalink | relative_url}}#{{tickets_ref}}">{{ sign_up }}</a>
