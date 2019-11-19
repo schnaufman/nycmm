@@ -24,8 +24,6 @@ $(document).ready(function () {
   // FIREFOX/SAFARI MOBILE SCROLL Bugfix with 100vh and navigation bar included in css height
   // force header height to window size (fix for firefox mobile scroll)
   $('#site-header').height($(window).height());
-  // also set fixed height for content
-  $('.c-header-container').height($(window).height());
 
   // init foundation js
   $(document).foundation();

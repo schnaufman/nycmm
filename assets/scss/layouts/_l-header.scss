@@ -11,16 +11,15 @@
 }
 
 .c-header-container {
-  margin: rem-calc(0, 20);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .c-header-content {
+  display: inline-block;
   text-align: center;
-  position: absolute;
   width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -40%);
 
   h1,
   h2 {
