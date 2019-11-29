@@ -7,5 +7,5 @@ ref: blog
 order: 7
 pagination:
   enabled: true
-  locale: de
+  locale: 'de'
 ---
