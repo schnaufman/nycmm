@@ -70,14 +70,6 @@ compress_html:
 
 highlighter: rouge
 
-#paginate_multiple:
-#  - paginate: 2
-#    paginate_path: '/blog/de/page:num/'
-#    sub_dir: '/de'
-#  - paginate: 2
-#    paginate_path: '/blog/en/page:num/'
-#    sub_dir: '/en'
-
 pagination:
   enabled: true
   per_page: 3
@@ -87,13 +79,13 @@ pagination:
   limit: 0
   sort_field: 'date'
   sort_reverse: true
+  locale: en
 
 # See _data/authors.yml
 author: matt
 
 defaults:
-  -
-    scope:
+  - scope:
       path: '' 				# an empty string here means all files in the project
       type: 'pages'
     values:
@@ -104,12 +96,23 @@ defaults:
       privacy:
         de: "/datenschutz/"
         en: "/privacy/"
-  -
-    scope:
+  - scope:
       path: ''
-      type: 'blog'
+      type: 'posts'
     values:
       show_meta: true   # Show metadata for all posts
       # sidebar:        # Possible values › left, right › by default there will be no sidebar
       comments: false
       author: matt     # Default author for posts
+  - scope:
+      path: '_posts/de'
+      type: 'posts'
+    values:
+      permalink: "/blog/:year/:title/"
+  - scope:
+      path: '_posts/en'
+      type: 'posts'
+    values:
+      permalink: "en/blog/:year/:title/"
+
+

@@ -9,8 +9,8 @@
     {% endfor %}
   </ul>
   <ul class="cell small-6 menu align-right">
-    <!-- search all pages for current one -->
-    {% assign pages=site.pages | where:"ref", page.ref | sort: 'language' %}
+    <!-- search all pages except autogenrated for pagination for current one -->
+    {% assign pages=site.pages | where:"autogen", nil | where:"ref", page.ref | sort: 'language' %}
 
     <!--list pages in all languages-->
     {% for page in pages %}
@@ -18,5 +18,19 @@
         <a href="{{ page.url }}">{{ page.language }}</a>
       </li>
     {% endfor %}
+
+    {% assign pages_size = pages | size%}
+    {% unless pages_size > 0 %}
+    <!-- search all posts  -->
+    {% assign posts=site.posts | where:"ref", page.ref | sort: 'language' %}
+
+    <!--list pages in all languages-->
+    {% for post in posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.language }}</a>
+      </li>
+    {% endfor %}
+
+    {% endunless %}
   </ul>
 </nav>

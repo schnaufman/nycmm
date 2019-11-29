@@ -5,6 +5,7 @@ layout: blog
 title: Blog
 ref: blog
 order: 7
-paginate:
+pagination:
   enabled: true
+  locale: de
 ---
