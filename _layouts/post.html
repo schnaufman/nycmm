@@ -1,13 +1,21 @@
 ---
 layout: default
 ---
+<article class="c-post-article" itemscope itemtype="http://schema.org/BlogPosting">
 
-<main class="c-post-main-content">
-<article>
-  <h1>{{ page.title }}</h1>
-  <p class="meta">{{ page.date | date_to_string }}</p>
-  <p class="post-content">
-  {{ content }}
-  </p>
+  <header class="c-post-article-header">
+    <h1 class="c-post-article-header-title" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="c-post-article-meta">
+      <time class="c-post-article-dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="c-post-article-author" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}</p>
+  </header>
+
+  <div class="c-post-article-content" itemprop="articleBody">
+    {{ content }}
+  </div>
 </article>
-</main>

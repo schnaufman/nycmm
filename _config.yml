@@ -47,7 +47,7 @@ keep_files:
 # Plugins
 # Add plugins in the Gemfile
 plugins:
-  - jekyll-paginate
+  - jekyll-paginate-v2
 
 # Conversion
 incremental:      true
@@ -64,16 +64,29 @@ header_hero:      "/assets/img/header/hero.jpg"
 logo:             "/assets/img/logo.png"
 logo_sticky:      "/assets/img/logo_sticky.png"
 
-# Outputting
-permalink:        "/blog/:year/:title/"
-paginate_path:    "/blog/page:num"
-paginate:         5
-
 compress_html:
   ignore:
     envs: [development]
 
 highlighter: rouge
+
+#paginate_multiple:
+#  - paginate: 2
+#    paginate_path: '/blog/de/page:num/'
+#    sub_dir: '/de'
+#  - paginate: 2
+#    paginate_path: '/blog/en/page:num/'
+#    sub_dir: '/en'
+
+pagination:
+  enabled: true
+  per_page: 3
+  offset: 2
+  permalink: '/page/:num/'
+  title: ':title - page :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 
 # See _data/authors.yml
 author: matt
@@ -94,7 +107,7 @@ defaults:
   -
     scope:
       path: ''
-      type: 'posts'
+      type: 'blog'
     values:
       show_meta: true   # Show metadata for all posts
       # sidebar:        # Possible values › left, right › by default there will be no sidebar
