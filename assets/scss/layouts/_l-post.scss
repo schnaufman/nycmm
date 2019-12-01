@@ -24,3 +24,11 @@
   color: $dark-gray;
   margin-bottom: rem-calc(20);
 }
+
+.c-post-list {
+  list-style: none;
+
+  > li {
+    margin-bottom: rem-calc(40);
+  }
+}
