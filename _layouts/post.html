@@ -1,21 +1,30 @@
 ---
 layout: default
 ---
-<article class="c-post-article" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="c-post-article-header">
-    <h1 class="c-post-article-header-title" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="c-post-article-meta">
-      <time class="c-post-article-dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+{% assign page_blog = site.pages | where: "language", page.language | where: "ref", "blog" | first %}
+{% assign translation = site.data.lang[page.language].blog %}
+{% assign author = site.data.authors[page.author] %}
+
+<article id="post" class="c-post-article" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="c-post-header">
+    <h2 class="c-header-underline c-post-article-header-title" itemprop="name headline">{{ page.title | escape }}</h2>
+    <p class="c-post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
+        {{- page.date | date: date_format -}}
       </time>
       {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="c-post-article-author" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="c-post-article-author" itemprop="name">&nbsp;&mdash;&nbsp;{{- author.name -}}</span></span>
+      {%- endif -%}
+    </p>
   </header>
 
   <div class="c-post-article-content" itemprop="articleBody">
-    {{ content }}
+    {{ content | markdownify }}
+  </div>
+
+  <div class="c-post-back-to-blog">
+    <a href="{{- page_blog.permalink | relative_url -}}">{{ translation.back }}</a>
   </div>
 </article>

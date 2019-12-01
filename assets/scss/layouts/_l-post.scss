@@ -2,10 +2,25 @@
 // Layout post
 // --------------------------------------------------
 
-/* center content
-.c-post-main-content {
+.c-post-article {
   @include grid-row;
 
-  //other elements
-  //@include grid-column;
-} */
+  padding: rem-calc(40 40);
+
+  h2 {
+    margin-bottom: rem-calc(20);
+  }
+}
+
+.c-post-header {
+  margin-bottom: rem-calc(30);
+}
+
+.c-post-back-to-blog {
+  text-align: center;
+}
+
+.c-post-meta {
+  color: $dark-gray;
+  margin-bottom: rem-calc(20);
+}

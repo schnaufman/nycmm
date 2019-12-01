@@ -52,9 +52,12 @@ de:
       workshop_4_caption: "Ensembleunterricht"
       workshop_4_description: "Ensembleunterricht"
   blog:
-    older: "&larr;&nbsp;Ältere"
-    newer: "Neuere&nbsp;&larr;"
+    older: "Ältere"
+    newer: "Neuere"
     read_more: "Weiterlesen..."
+    subscribe: "abonnieren"
+    subscribe_via: "mit RSS"
+    back: "zurück zum Blog"
 
 en:
   translation: "English"
@@ -109,6 +112,9 @@ en:
       workshop_4_caption: "workshop4"
       workshop_4_description: "workshop4"
   blog:
-    older: "&larr;&nbsp;Older"
-    newer: "Next&nbsp;&rarr;"
+    older: "Older"
+    newer: "Next"
     read_more: "Read More..."
+    subscribe: "subscribe"
+    subscribe_via: "via RSS"
+    back : "back to Blog"
