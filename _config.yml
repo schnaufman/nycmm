@@ -72,14 +72,18 @@ highlighter: rouge
 
 pagination:
   enabled: true
-  per_page: 3
-  offset: 2
+  per_page: 5
+  # exclude the first N number of newest posts from the pagination.
+  #offset: 2
   permalink: '/page/:num/'
-  title: ':title - page :num of :max'
+  title: ':title | :num / :max'
+  # Limit how many pagenated pages to create (default: 0, means all)
   limit: 0
   sort_field: 'date'
   sort_reverse: true
-  locale: en
+  # trail: not working with version 1.5.x of jekyll paginate
+  #  before: 2
+  #  after: 2
 
 # See _data/authors.yml
 author: matt
