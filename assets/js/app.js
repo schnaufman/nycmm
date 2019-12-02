@@ -16,7 +16,7 @@ import { PhotoSwipeApi } from './lib/gallery/photoswipe-api';
 Foundation.plugin(SmoothScrollWithLinks, 'SmoothScrollWithLinks');
 
 // scroll to location if passed by session storage
-SmoothScrollWithLinks.initSessionNavScrollHash();
+SmoothScrollWithLinks.initSessionNavScrollHash('content');
 
 // initialize custom apis and mobile navigation
 $(document).ready(function () {

@@ -94,18 +94,20 @@ class SmoothScrollWithLinks extends Plugin {
    * Register window events to scroll to passed link hash from session storage
    * This will be used to scroll to a specific link hash after page loading cause
    * jumping with window.location.href will fuck up the location position.
+   *
+   * @param {String} contentId the content id hash (string WITHOUT the HASH sign) to scroll to when its not the landing page.
    */
-  static initSessionNavScrollHash() {
+  static initSessionNavScrollHash(contentId) {
     if (document.readyState === 'complete') {
       console.debug('SmoothScrollWithLinks: Page already loaded.')
-      this._scrollToLocationHash();
+      this._scrollToLocationHash(contentId);
     } else {
       console.debug('SmoothScrollWithLinks: Page still loading, attaching handlers...')
       // handle scroll event
       $(window).on('scroll', SmoothScrollWithLinks._onUserScroll);
 
       //scroll to location if this has been passed with location.hash
-      $(window).on('load', SmoothScrollWithLinks._scrollToLocationHash);
+      $(window).on('load', SmoothScrollWithLinks._scrollToLocationHash.bind(null, contentId));
     }
   }
 
@@ -123,7 +125,7 @@ class SmoothScrollWithLinks extends Plugin {
     }
   }
 
-  static _scrollToLocationHash() {
+  static _scrollToLocationHash(contentId) {
     let navScrollHash;
 
     if (window.location && window.location.hash) {
@@ -149,6 +151,14 @@ class SmoothScrollWithLinks extends Plugin {
       } catch (error) {
         console.error('SmoothScrollWithLinks: ' + error);
       }
+    // in case of navigation to a page which is not the landing page, we autoscroll to the content
+    } else if (window.location.pathname !== '/') {
+      SmoothScrollWithLinks.scrollToLoc('#' + contentId, {
+        animationDuration: 0,
+        animationEasing: 'linear',
+        threshold: 50,
+        offset: -25
+      });
     }
   }
 
