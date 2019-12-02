@@ -41,6 +41,8 @@ class SmoothScrollWithLinks extends Plugin {
   _handleLinkClick(e) {
     var link = e.currentTarget;
 
+    e.preventDefault();
+
     /* Is the link the same as the current location? */
     /* Is the querystring the same as the current location? */
     if (((link.pathname === location.pathname) || ('/' + link.pathname === location.pathname))
@@ -56,8 +58,10 @@ class SmoothScrollWithLinks extends Plugin {
       } else {
         SmoothScrollWithLinks.scrollToLoc(link.hash, this.options, () => {
           this._inTransition = false;
-          // update location hash after scrolling
+          // reset scroll position to saved pos, so that we can set the hash in the url
+          const topPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
           window.location.hash = link.hash;
+          document.documentElement.scrollTop = topPos;
         });
       }
 
@@ -68,7 +72,6 @@ class SmoothScrollWithLinks extends Plugin {
       window.sessionStorage.setItem(SmoothScrollWithLinks.navScrollHash, link.hash);
     }
 
-    e.preventDefault();
   }
 
   /**
@@ -140,9 +143,12 @@ class SmoothScrollWithLinks extends Plugin {
         animationDuration: 1000,
         animationEasing: 'swing',
         threshold: 50,
-        offset: -25
+        offset: 0
       }, () => {
+        // reset scroll position to saved pos, so that we can set the hash in the url
+        const topPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
         window.location.hash = navScrollHash;
+        document.documentElement.scrollTop = topPos;
         window.sessionStorage.removeItem(SmoothScrollWithLinks.navScrollHash);
       });
 
@@ -154,10 +160,10 @@ class SmoothScrollWithLinks extends Plugin {
     // in case of navigation to a page which is not the landing page, we autoscroll to the content
     } else if (window.location.pathname !== '/') {
       SmoothScrollWithLinks.scrollToLoc('#' + contentId, {
-        animationDuration: 0,
-        animationEasing: 'linear',
+        animationDuration: 1000,
+        animationEasing: 'swing',
         threshold: 50,
-        offset: -25
+        offset: 0
       });
     }
   }

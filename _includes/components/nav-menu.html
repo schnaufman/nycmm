@@ -1,7 +1,7 @@
 {% strip %}
-<div class="c-nav-container" data-smooth-scroll-with-links data-animation-easing="swing" data-offset="-25" data-animation-duration="1000">
-  <div data-sticky-container>
-    <div class="sticky c-nav-container-sticky js--nav-container-sticky" data-margin-top="0" data-sticky data-sticky-on="small" data-top-anchor="site-header:bottom">
+<div class="c-nav-container" data-smooth-scroll-with-links data-animation-easing="swing" data-animation-duration="1000">
+  <div id="site-main-nav-breakpoint" data-sticky-container>
+    <div class="sticky c-nav-container-sticky js--nav-container-sticky" data-margin-top="0" data-sticky data-sticky-on="small" data-top-anchor="site-main-nav-breakpoint:bottom">
       <a class="c-nav-dropdown-icon js--nav-dropdown-icon"><i class="ion-md-menu"></i></a>
       <!-- autogen indicated automatically generated pages for pagination - we don't want them to show in menu -->
       {% assign pages = site.pages | where:"autogen", nil | where:"language", page.language | sort: 'order' %}
