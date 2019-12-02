@@ -112,11 +112,11 @@ defaults:
       path: '_posts/de'
       type: 'posts'
     values:
-      permalink: "/blog/:year/:title/"
+      permalink: "/blog/:year/:month/:day/:title/"
   - scope:
       path: '_posts/en'
       type: 'posts'
     values:
-      permalink: "en/blog/:year/:title/"
+      permalink: "en/blog/:year/:month/:day/:title/"
 
 
