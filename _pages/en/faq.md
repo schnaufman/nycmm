@@ -5,7 +5,7 @@ layout: sections
 title: FAQ
 section: faq
 ref: faq
-order: 4
+order: 6
 ---
 
 English FAQ page.

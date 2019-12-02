@@ -4,7 +4,7 @@ language: de
 layout: page
 title: FAQ
 ref: faq
-order: 4
+order: 6
 ---
 
 ### Wo kann man schlafen?

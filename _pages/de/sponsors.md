@@ -4,7 +4,7 @@ language: de
 layout: page
 title: Sponsoren
 ref: sponsors
-order: 5
+order: 4
 ---
 
 <div class="c-page-sponsors grid-container">

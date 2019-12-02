@@ -4,7 +4,7 @@ language: de
 layout: page 
 title:  Impressum
 ref: impressum
-order: 5
+order: 7
 ---
 ###### Inhaber der Website<br>
 Verein New York City Musikmarathon<br>

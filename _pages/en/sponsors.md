@@ -4,7 +4,7 @@ language: en
 layout: page
 title: Sponsors
 ref: sponsors
-order: 5
+order: 4
 ---
 
 English Sponsors

@@ -5,7 +5,7 @@ layout: page
 title: Data Processing Agreement 
 dropdown_title: Privacy
 ref: privacy
-order: 6
+order: 8
 ---
 
 <div class="c-page-content-md-center" markdown="1">
