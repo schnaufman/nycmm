@@ -5,6 +5,7 @@ layout: page
 title:  Datenschutzerklärung
 dropdown_title: Datenschutz
 ref: privacy
+menu: footer
 order: 8
 ---
 

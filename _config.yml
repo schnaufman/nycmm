@@ -96,7 +96,8 @@ defaults:
       show_meta: false 	# Hide metadata for all pages
       # sidebar:    		# Possible values › left, right › by default there will be no sidebar
       comments: false
-      author: matt     # Default author for pages
+      author: matt      # Default author for pages
+      menu: main      # define where to show menu (main, footer)
       privacy:
         de: "/datenschutz/"
         en: "/privacy/"

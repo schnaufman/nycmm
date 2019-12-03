@@ -4,6 +4,7 @@ language: en
 layout: page 
 title:  Impressum
 ref: impressum
+menu: footer
 order: 7
 ---
 ###### Website owner<br>

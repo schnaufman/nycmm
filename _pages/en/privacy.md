@@ -5,6 +5,7 @@ layout: page
 title: Data Processing Agreement 
 dropdown_title: Privacy
 ref: privacy
+menu: footer
 order: 8
 ---
 

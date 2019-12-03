@@ -4,6 +4,7 @@ language: de
 layout: page 
 title:  Impressum
 ref: impressum
+menu: footer
 order: 7
 ---
 ###### Inhaber der Website<br>
@@ -18,4 +19,15 @@ Renzlhausen 20<br>
 ###### Tel<br>
 +43 650 284 0744<br>
 ###### E-Mail<br>
-<a href="mailto:info@nycmusikmarathon.com?subject=Impressum">info@nycmusikmarathon.com</a>  
+<a href="mailto:info@nycmusikmarathon.com?subject=Impressum">info@nycmusikmarathon.com</a>
+
+<hr>
+
+###### Powered by<br>
+* <a href="https://jekyllrb.com/" target="_blank" title="Jekyll">Jekyll</a> <i class="ion-logo-github"></i>
+* <a href="https://www.netlify.com/" target="_blank" title="Netlify">Netlify</a>
+
+###### Icons from<br>
+* <a href="https://www.flaticon.com/" target="_blank" title="Flaticon">Flaticon</a>
+* <a href="https://ionicons.com/" target="_blank" title="Ionicons">Ionicons</a> <i class="ion-logo-ionic"></i>
+

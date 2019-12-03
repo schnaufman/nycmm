@@ -1,5 +1,5 @@
-<nav class="grid-x grid-padding-x">
-  <ul class="cell small-6 menu align-left">
+<nav class="grid-x grid-padding-x grid-padding-y">
+  <ul class="cell small-4 menu align-left">
     {% for item in site.data.nav-footer %}
       {% if item.title %}
         <li><a target="_blank" rel="noopener noreferrer" href="{{ item.url }}">{{ item.title }}</a></li>
@@ -8,7 +8,17 @@
       {% endif %}
     {% endfor %}
   </ul>
-  <ul class="cell small-6 menu align-right">
+  <ul class="cell small-4 menu align-center">
+    <!-- search all pages for footer menu items -->
+    {% assign pages=site.pages | where:"menu", "footer" | where:"autogen", nil | where:"language", page.language | sort: 'order' %}
+    <!--list footer items-->
+    {% for page in pages %}
+      <li>
+        <a href="{{ page.url }}">{{ page.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  <ul class="cell small-4 menu align-right">
     <!-- search all pages except autogenrated for pagination for current one -->
     {% assign pages=site.pages | where:"autogen", nil | where:"ref", page.ref | sort: 'language' %}
 
