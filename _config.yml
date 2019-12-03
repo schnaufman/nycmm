@@ -76,7 +76,7 @@ pagination:
   # exclude the first N number of newest posts from the pagination.
   #offset: 2
   permalink: '/page/:num/'
-  title: ':title | :num / :max'
+  title: ':title | :num'
   # Limit how many pagenated pages to create (default: 0, means all)
   limit: 0
   sort_field: 'date'
@@ -93,10 +93,6 @@ defaults:
       path: '' 				# an empty string here means all files in the project
       type: 'pages'
     values:
-      show_meta: false 	# Hide metadata for all pages
-      # sidebar:    		# Possible values › left, right › by default there will be no sidebar
-      comments: false
-      author: matt      # Default author for pages
       menu: main      # define where to show menu (main, footer)
       privacy:
         de: "/datenschutz/"
@@ -106,7 +102,6 @@ defaults:
       type: 'posts'
     values:
       show_meta: true   # Show metadata for all posts
-      # sidebar:        # Possible values › left, right › by default there will be no sidebar
       comments: false
       author: matt     # Default author for posts
   - scope:
