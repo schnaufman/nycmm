@@ -94,9 +94,6 @@ defaults:
       type: 'pages'
     values:
       menu: main      # define where to show menu (main, footer)
-      privacy:
-        de: "/datenschutz/"
-        en: "/privacy/"
   - scope:
       path: ''
       type: 'posts'

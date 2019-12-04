@@ -57,4 +57,5 @@
     </form>
   </div>
 </div>
-<p>* Die abgesendeten Daten werden nur zum Zweck der Bearbeitung Ihres Anliegens verarbeitet. Weitere Informationen finden Sie in unserer <a href="{{ page.privacy.de | relative_url }}">Datenschutzerklärung</a>.</p>
+{% assign privacy = site.pages | where:"language", page.language | where:"ref", "privacy" | first %}
+<p>* Die abgesendeten Daten werden nur zum Zweck der Bearbeitung Ihres Anliegens verarbeitet. Weitere Informationen finden Sie in unserer <a href="{{ privacy.permalink | relative_url }}">Datenschutzerklärung</a>.</p>
