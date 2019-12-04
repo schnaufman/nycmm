@@ -158,7 +158,7 @@ class SmoothScrollWithLinks extends Plugin {
         console.error('SmoothScrollWithLinks: ' + error);
       }
     // in case of navigation to a page which is not the landing page, we autoscroll to the content
-    } else if (window.location.pathname !== '/') {
+    } else if (window.location.pathname !== '/' && window.location.pathname !== '/en/') {
       SmoothScrollWithLinks.scrollToLoc('#' + contentId, {
         animationDuration: 1000,
         animationEasing: 'swing',
