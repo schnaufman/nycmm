@@ -17,7 +17,7 @@ Foundation.plugin(SmoothScrollWithLinks, 'SmoothScrollWithLinks');
 SmoothScrollWithLinks.initSessionNavScrollHash('content');
 
 // map init - currently there's the limitation to have exactly ONE gmapsMap Element in the DOM
-new GMapsApi('${NYCMM_ENV_GMAPS_API_KEY}', 'gmapsMap');
+const gmapsApi = new GMapsApi('${NYCMM_ENV_GMAPS_API_KEY}', 'gmapsMap');
 
 // initialize custom apis and mobile navigation
 $(document).ready(function () {
@@ -41,6 +41,8 @@ $(document).ready(function () {
 
   new GalleriaApi('galleria');
 
+  gmapsApi.initialize();
+
   // when using photoswipe
   //new PhotoSwipeApi('photoSwipe', 'pswp');
 
@@ -50,6 +52,6 @@ $(document).ready(function () {
   // const mailDomain = contactMailParts[1];
 
   // SiteHelper.setFormSpreeContactFormAction('formSpreeContactForm', mailAdress, mailDomain);
-
 });
+
 

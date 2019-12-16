@@ -28,15 +28,13 @@ class GMapsApi {
     this.elementId = elementId;
     this.gMapsOptions = gMapsOptions;
 
-
-
     if (!$('#' + this.elementId).length) {
       // do nothing if element id is not present in the current document
       return;
     }
 
     // we make a new Promise -> we promise a initialization of the google Maps API
-    this.gMapsInitPromise = new Promise(
+    this.gmapsInitPromise = new Promise(
       // the executor function is called with the ability to resolve or reject the promise
       (resolve, reject) => {
         console.debug('GMapsApi: Started promise for initialization');
@@ -52,8 +50,10 @@ class GMapsApi {
         }
       }
     );
+  }
 
-    this.gMapsInitPromise.then((value) => {
+  initialize() {
+    this.gmapsInitPromise.then((value) => {
       console.debug('GMapsApi: ' + value);
 
       this._initialize();
@@ -78,7 +78,7 @@ class GMapsApi {
       const $lat = $gmaps.attr('lat');
       const $zoom = $gmaps.attr('zoom');
       const $mobileZoom = $gmaps.attr('mobile-zoom') || $zoom;
-      const zoom = SiteHelper.queryOnMobileDevice() ? $mobileZoom  : $zoom;
+      const zoom = SiteHelper.queryOnMobileDevice() ? $mobileZoom : $zoom;
 
       if (!$lng || !$lat || !$zoom) {
         console.error('GmapsApi: Please set lat,lng,zoom attribute on \'#' + this.elementId + '\' element in document.');
