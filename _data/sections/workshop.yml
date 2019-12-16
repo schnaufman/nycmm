@@ -136,12 +136,12 @@
     main: "gallery.md"
   content: "gallery.html"
   images:
-    - file: "workshop_1.webp"
+    - file: "workshop_1.jpg"
       caption: "workshop_1_caption"
-    - file: "workshop_2.webp"
+    - file: "workshop_2.jpg"
       caption: "workshop_2_caption"
-    - file: "workshop_3.webp"
+    - file: "workshop_3.jpg"
       caption: "workshop_3_caption"
-    - file: "workshop_4.webp"
+    - file: "workshop_4.jpg"
       caption: "workshop_4_caption"
 
