@@ -16,6 +16,9 @@ Foundation.plugin(SmoothScrollWithLinks, 'SmoothScrollWithLinks');
 // scroll to location if passed by session storage
 SmoothScrollWithLinks.initSessionNavScrollHash('content');
 
+// map init - currently there's the limitation to have exactly ONE gmapsMap Element in the DOM
+new GMapsApi('${NYCMM_ENV_GMAPS_API_KEY}', 'gmapsMap');
+
 // initialize custom apis and mobile navigation
 $(document).ready(function () {
 
@@ -35,9 +38,6 @@ $(document).ready(function () {
     'js--nav-back-to-top-container');
 
   new CookieConsentHelper('${NYCMM_ENV_GOOGLE_TRACKING_ID}');
-
-  // map init - currently there's the limitation to have exactly ONE gmapsMap Element in the DOM
-  new GMapsApi('${NYCMM_ENV_GMAPS_API_KEY}', 'gmapsMap');
 
   new GalleriaApi('galleria');
 
