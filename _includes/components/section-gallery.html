@@ -1,0 +1,5 @@
+<div class="cell galleria">
+  {% for image in section.images %}
+    <img src="{{include.assets-path}}/{{image.file}}" alt="{{image.caption}}">
+  {% endfor %}
+</div>

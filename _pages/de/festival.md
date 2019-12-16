@@ -5,7 +5,6 @@ layout: sections
 title: Festival
 section: festival
 ref: festival
-photoswipe: true
 order: 2
 ---
 

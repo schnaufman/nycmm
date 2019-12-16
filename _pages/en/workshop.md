@@ -4,7 +4,6 @@ language: en
 layout: sections
 title: Workshop
 section: workshop
-photoswipe: true
 ref: workshop
 order: 3
 ---

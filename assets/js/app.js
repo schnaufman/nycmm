@@ -1,6 +1,3 @@
-// --------------------------------------------------
-// APP.JS
-// --------------------------------------------------
 'use strict';
 import $ from 'jquery';
 import { SmoothScrollWithLinks } from './lib/ext/foundation.smoothScrollWithLinks';
@@ -8,7 +5,8 @@ import { Foundation } from './lib/foundation-explicit-pieces';
 import { NavHandler } from './lib/nav-handler';
 import { GMapsApi } from './lib/maps/gmaps-api';
 import { CookieConsentHelper } from './lib/cookie-consent-helper';
-import { PhotoSwipeApi } from './lib/gallery/photoswipe-api';
+import { GalleriaApi } from './lib/gallery/galleria-api';
+//import { PhotoSwipeApi } from './lib/gallery/photoswipe-api';
 
 //
 // Custom JS
@@ -41,7 +39,10 @@ $(document).ready(function () {
   // map init - currently there's the limitation to have exactly ONE gmapsMap Element in the DOM
   new GMapsApi('${NYCMM_ENV_GMAPS_API_KEY}', 'gmapsMap');
 
-  new PhotoSwipeApi('photoSwipe', 'pswp');
+  new GalleriaApi('galleria');
+
+  // when using photoswipe
+  //new PhotoSwipeApi('photoSwipe', 'pswp');
 
   // when using formspree
   // const contactMailParts = '${NYCMM_ENV_CONTACT_MAIL}'.split('@');
