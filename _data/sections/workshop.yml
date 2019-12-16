@@ -10,9 +10,7 @@
       title: "masterclass_title"
       location: "LMS Mattighofen"
       image:
-        file:
-          jpg: "masterclass.jpg"
-          webp: "masterclass.webp"
+        file: "masterclass.jpg"
       schedule:
         time:
           begin: "09:30"
@@ -21,9 +19,7 @@
       title: "instrument_title"
       location: "LMS Mattighofen"
       image:
-        file:
-          jpg: "instrument.jpg"
-          webp: "instrument.webp"
+        file: "instrument.jpg"
       schedule:
         time:
           begin: "11:00"
@@ -32,9 +28,7 @@
       title: "advanced_singers_title"
       location: "LMS Mattighofen"
       image:
-        file:
-          jpg: "advanced_singers.jpg"
-          webp: "advanced_singers.webp"
+        file: "advanced_singers.jpg"
       schedule:
         time:
           begin: "11:00"
@@ -44,9 +38,7 @@
       title: "ensemble_title"
       location: "LMS Mattighofen"
       image:
-        file:
-          jpg: "ensemble.jpg"
-          webp: "ensemble.webp"
+        file: "ensemble.jpg"
       schedule:
         time:
           begin: "14:30"
@@ -55,9 +47,7 @@
       title: "gospel_title"
       location: "LMS Mattighofen"
       image:
-        file:
-          jpg: "gospel.jpg"
-          webp: "gospel.webp"
+        file: "gospel.jpg"
       schedule:
         time:
           begin: "14:30"

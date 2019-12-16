@@ -12,7 +12,7 @@ order: 4
     {% for image in site.data.sponsors.images %}
       <div class="cell">
         <a href="{{ image.link }}" target="_blank"> 
-          <img src="/assets/img/sponsors/{{ image.file }}" alt="{{ image.title }}">
+          <img class="lazyload" data-src="/assets/img/sponsors/{{ image.file }}" alt="{{ image.title }}">
         </a>
       </div>
     {% endfor %}

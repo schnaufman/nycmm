@@ -2,6 +2,7 @@
   {%if page.photoswipe %}
     {% include lib/gallery/photoswipe-template.html %}
   {% endif %}
-  <script src="{{ "/assets/js/bundle.js" | relative_url }}" type="application/javascript"></script>
+  <script src="/assets/vendors/lazysizes/lazysizes.min.js" async></script>
+  <script src="/assets/js/bundle.js" type="application/javascript"></script>
 </body>
 </html>

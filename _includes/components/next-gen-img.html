@@ -1,5 +1,5 @@
 <picture>
   <source srcset="{{include.assets-path}}/{{include.file-webp}}" type="image/webp">
   <source srcset="{{include.assets-path}}/{{include.file-jpeg}}" type="image/jpeg">
-  <img src="{{include.assets-path}}/{{include.file-jpeg}}" alt="{{include.alt}}" title="{{include.title}}">
+  <img class="lazyload" data-src="{{include.assets-path}}/{{include.file-jpeg}}" alt="{{include.alt}}" title="{{include.title}}">
 </picture>

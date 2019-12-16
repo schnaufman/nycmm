@@ -14,7 +14,7 @@
         <h4 class="c-section-workshop-classes-class-title">{{class_title}}</h4>
         <figure class="c-section-workshop-classes-class">
           <div class="c-section-workshop-classes-class-image">
-            {% include components/next-gen-img.html assets-path="/assets/img/classes" file-jpeg=class.image.file.jpg file-webp=class.image.file.webp alt=class_title title=class_title %}
+            <img class="lazyload" data-src="/assets/img/classes/{{class.image.file}}" alt="{{class_title}}" title="{{class_title}}">
           </div>
           {% capture class_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ class.description }} %}{% endcapture %}
           <figcaption class="c-section-workshop-classes-class-description">
