@@ -53,6 +53,11 @@ class GMapsApi {
   }
 
   initialize() {
+    if (!this.gmapsInitPromise) {
+      // do nothing if no gmaps are available
+      return;
+    }
+
     this.gmapsInitPromise.then((value) => {
       console.debug('GMapsApi: ' + value);
 
