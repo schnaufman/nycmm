@@ -15,7 +15,8 @@ const GMapsMarkerPopupState = {
 class GMapsApi {
 
   /**
-   * Construct GMapsApi
+   * Construct GMapsApi and dynamically append maps script to dom.
+   * It's necessary to initialize after construction
    *
    * @param {String} apiKey google Maps API Key
    * @param {String} elementId DOM element ID of the maps element
@@ -52,6 +53,10 @@ class GMapsApi {
     );
   }
 
+  /**
+   * trigger initialization.
+   * Waits for promise from scriptloading for map configurations
+   */
   initialize() {
     if (!this.gmapsInitPromise) {
       // do nothing if no gmaps are available
