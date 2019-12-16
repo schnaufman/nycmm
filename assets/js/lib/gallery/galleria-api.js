@@ -25,17 +25,16 @@ class GalleriaApi {
 
     this._loadTwelveTheme();
     Galleria.run('.' + galleryElClass, {
+      autoplay: 7000, // will move forward every 7 seconds
+      fullscreenDoubleTap: false, // prevent going to fullscreen unintentional
 
       // eslint-disable-next-line no-unused-vars
       extend: function (options) {
         //Galleria.log(this) // the gallery instance
         //Galleria.log(options) // the gallery options
 
-        // autoplay gallery with 10 seconds interval
-        this.play(10000);
-
+        // scroll back to hash position - needed for mobile
         this.bind('fullscreen_exit', function () {
-          // scroll back to hash position - needed for mobile
           SmoothScrollWithLinks.initSessionNavScrollHash('content');
         });
 
