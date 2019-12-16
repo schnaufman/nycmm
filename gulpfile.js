@@ -33,17 +33,6 @@ let webpackConfig = {
     filename: 'bundle.js'
   },
   module: {
-    rules: [
-      {
-        test: /\.js$/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env']
-          }
-        }
-      }
-    ]
   },
   devtool: !isProduction && 'source-map'
 };
