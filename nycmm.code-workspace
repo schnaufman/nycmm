@@ -2,6 +2,10 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"name": "nycmm @ de7c789",
+			"uri": "gitlens://de7c789/home/matthias/dev/websites/nycmm/source/nycmm?{\"path\":\"/home/matthias/dev/websites/nycmm/source/nycmm\",\"ref\":\"de7c78927975d484783e012c4531eab198bfb830\",\"repoPath\":\"/home/matthias/dev/websites/nycmm/source/nycmm\"}"
 		}
 	],
 	"settings": {
