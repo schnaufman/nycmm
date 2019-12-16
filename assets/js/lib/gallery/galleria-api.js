@@ -1,15 +1,16 @@
 'use strict'
 import $ from 'jquery';
+import { SmoothScrollWithLinks } from '../ext/foundation.smoothScrollWithLinks';
 
 const Galleria = require('galleria/dist/galleria');
 
 /**
  * Wrapper class for galleria api
- *
  */
 class GalleriaApi {
 
   /**
+   * default ctor
    *
    * @param {String} galleryElClass gallery element class in the DOM
    */
@@ -29,7 +30,15 @@ class GalleriaApi {
       extend: function (options) {
         //Galleria.log(this) // the gallery instance
         //Galleria.log(options) // the gallery options
+
+        // autoplay gallery with 10 seconds interval
         this.play(10000);
+
+        this.bind('fullscreen_exit', function () {
+          // scroll back to hash position - needed for mobile
+          SmoothScrollWithLinks.initSessionNavScrollHash('content');
+        });
+
       }
     });
   }
