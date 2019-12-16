@@ -16,7 +16,6 @@ const yaml = require('js-yaml');
 const yargs = require('yargs');
 const cleanCSS = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
-const uglify = require('gulp-uglify');
 
 // configure sass with compiler
 const sass = require('gulp-sass');
@@ -31,8 +30,6 @@ let webpackConfig = {
   cache: false,
   output: {
     filename: 'bundle.js'
-  },
-  module: {
   },
   devtool: !isProduction && 'source-map'
 };
@@ -110,7 +107,6 @@ function jsTask(done) {
   }
 
   return fileStream
-    .pipe(gulpif(isProduction, uglify({ mangle: false })))
     .pipe(gulpif(!isProduction, sourcemaps.write()))
     .pipe(gulp.dest(config.javascript.dest.buildDir))
     .on('end', done);
