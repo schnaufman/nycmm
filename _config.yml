@@ -15,6 +15,10 @@ include:
   - ".htaccess"
   - "_pages"
 
+markdown: kramdown
+kramdown:
+  auto_ids: false
+
 # keep in mind that jekyll is going to exclude this files in jekyll build task from gulp.
 exclude:
   - "assets/js/lib/"
