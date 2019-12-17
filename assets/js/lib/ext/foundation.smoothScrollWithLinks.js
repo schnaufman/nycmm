@@ -110,7 +110,9 @@ class SmoothScrollWithLinks extends Plugin {
       $(window).on('scroll', SmoothScrollWithLinks._onUserScroll);
 
       //scroll to location if this has been passed with location.hash
-      $(window).on('load', SmoothScrollWithLinks._scrollToLocationHash.bind(null, contentId));
+      $(document).ready( function () {
+        SmoothScrollWithLinks._scrollToLocationHash(contentId);
+      });
     }
   }
 
@@ -137,7 +139,11 @@ class SmoothScrollWithLinks extends Plugin {
       navScrollHash = window.sessionStorage.getItem(SmoothScrollWithLinks.navScrollHash);
     }
 
-    if (navScrollHash && !navScrollCancelled && window.location) {
+    if (navScrollCancelled) {
+      return;
+    }
+
+    if (navScrollHash && window.location) {
       console.debug('SmoothScrollWithLinks: Scroll to location hash.')
       SmoothScrollWithLinks.scrollToLoc(navScrollHash, {
         animationDuration: 1000,
