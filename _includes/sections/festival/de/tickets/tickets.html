@@ -2,7 +2,7 @@
   <div class="grid-container">
     <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-4 medium-up-2 small-up-1">
       {% for ticket in section.tickets %}
-        <div class="cell c-section-tickets-ticket">
+        <div data-aos="flip-right" class="cell c-section-tickets-ticket">
           <h5 class="c-section-tickets-ticket-title">{{ticket.title}}</h5>
           <div class="c-section-tickets-ticket-prices">
             <h2 class="c-section-tickets-ticket-price">{{ticket.price.regular}}<span>&nbsp;/&nbsp;{{ticket.price.discount}}&nbsp;*</span></h2>

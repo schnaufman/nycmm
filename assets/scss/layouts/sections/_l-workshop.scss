@@ -6,28 +6,6 @@
 /* classes section */
 /*******************/
 
-.c-section-workshop-classes-class-image {
-  width: 100%;
-  overflow: hidden;
-  background: black;
-  margin: 0;
-  position: relative;
-  margin-bottom: rem-calc(25);
-
-  img {
-    opacity: 0.7;
-    width: 100%;
-    height: auto;
-    transform: scale(1);
-    transition: transform 0.5s, opacity 0.5s;
-
-    &:hover {
-      opacity: 1;
-      transform: scale(1.02);
-    }
-  }
-}
-
 .c-section-workshop-classes-class-title {
   height: 10%;
   margin-bottom: rem-calc(10);
@@ -36,6 +14,11 @@
 .c-section-workshop-classes-class-description {
   text-align: center;
 }
+
+.c-section-workshop-classes-class-image {
+  margin-bottom: rem-calc(25);
+}
+
 
 /********************/
 /* schedule section */
@@ -159,53 +142,8 @@
   }
 }
 
-/*********************/
-/*  gallery section  */
-/*********************/
-.c-section-workshop-gallery-img,
-.c-section-workshop-gallery-img-y-tile {
-  width: 100%;
-  overflow: hidden;
-  background: black;
-  position: relative;
-
-  figcaption {
-    display: none; // currently not needed
-  }
-
-  img {
-    height: 100%;
-    width: 100%;
-    opacity: 0.7;
-    transform: scale(1);
-    transition: transform 0.5s, opacity 0.5s;
-
-    &:hover {
-      opacity: 1;
-      transform: scale(1.02);
-    }
-  }
-}
-
-.c-section-workshop-gallery-img-y-tile {
-  &:not(:last-child) {
-    margin-bottom: rem-calc(25);
-  }
-}
-
 /* up to medium */
 @media only screen and (max-width: 63.9375em) {
-  .c-section-workshop-classes-class-image,
-  .c-section-workshop-gallery-img-y-tile,
-  .c-section-workshop-gallery-img {
-    img {
-      opacity: 1;
-
-      &:hover {
-        transform: scale(1);
-      }
-    }
-  }
 
   #section-testimonials_id-container {
     background-attachment: scroll;

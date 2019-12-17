@@ -1,20 +1,19 @@
 {% assign step_counter = 0 %}
 <div class="grid-x grid-padding-x">
   {% for step in section.descriptions.steps %}
-
     {% assign step_counter = step_counter | plus: 1 %}
     {% capture step_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ step.description }} %}{% endcapture %}
 
-      <div class="cell small-2">
-        <div class="c-section-howitworks-step-count">
-          <h3>{{ step_counter }}</h3>
-        </div>
+    <div class="cell small-2">
+      <div class="c-section-howitworks-step-count">
+        <h3>{{ step_counter }}</h3>
       </div>
-      <div class="cell small-10">
-        <div class="c-section-howitworks-step-description">
-          {{ step_description | markdownify }}
-        </div>
+    </div>
+    <div class="cell small-10">
+      <div class="c-section-howitworks-step-description">
+        {{ step_description | markdownify }}
       </div>
+    </div>
   {% endfor %}
   <div class="cell auto">
     {% assign tickets = site.data.lang[page.language].home.tickets %}

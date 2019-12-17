@@ -10,11 +10,13 @@
     {% assign marker_settings = marker_settings | append: settings %}
   {% endfor %}
   {% assign marker_settings = marker_settings | append: "]" %}
-  <div id="gmapsMap"
-    lat="{{ section.maps.coordinates.lat }}"
-    lng="{{ section.maps.coordinates.lng }}"
-    zoom="{{ section.maps.zoom }}"
-    mobile-zoom="{{ section.maps.mobile-zoom }}"
-    markers="{{- marker_settings | escape -}}">
+  <div class="c-section-locations-map-container">
+    <div id="gmapsMap"
+      lat="{{ section.maps.coordinates.lat }}"
+      lng="{{ section.maps.coordinates.lng }}"
+      zoom="{{ section.maps.zoom }}"
+      mobile-zoom="{{ section.maps.mobile-zoom }}"
+      markers="{{- marker_settings | escape -}}">
+    </div>
   </div>
 </div>

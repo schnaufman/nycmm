@@ -1,17 +1,19 @@
-<div class="c-section-contact-form-map-box">
-  <div id="gmapsMap"
-    lat="{{ section.maps.coordinates.lat }}"
-    lng="{{ section.maps.coordinates.lng }}"
-    lat-marker="{{ section.maps.marker.coordinates.lat }}"
-    lng-marker="{{ section.maps.marker.coordinates.lng }}"
-    zoom="{{ section.maps.zoom }}"
-    marker-title="Landesmusikschule Mattighofen"
-    marker-center-on-mobile="true"
-    marker-popup-state="always_opened"
-    marker-popup="<b>Landesmusikschule Mattighofen</b><br>Salzburger Str. 8<br>5230 Mattighofen">
+<div class="c-section-contact-form-container">
+  <div class="c-section-contact-form-map-container">
+    <div id="gmapsMap"
+      lat="{{ section.maps.coordinates.lat }}"
+      lng="{{ section.maps.coordinates.lng }}"
+      lat-marker="{{ section.maps.marker.coordinates.lat }}"
+      lng-marker="{{ section.maps.marker.coordinates.lng }}"
+      zoom="{{ section.maps.zoom }}"
+      marker-title="Landesmusikschule Mattighofen"
+      marker-center-on-mobile="true"
+      marker-popup-state="always_opened"
+      marker-popup="<b>Landesmusikschule Mattighofen</b><br>Salzburger Str. 8<br>5230 Mattighofen">
+    </div>
   </div>
 
-  <div class="c-section-contact-form-box">
+  <div class="c-section-contact-form">
     <h3>Möchtest du mit uns in Kontakt treten? *</h3>
     <form id="aboutContactFormNetlify" method="POST" netlify-honeypot="bot-field" data-netlify="true" accept-charset="utf-8" class="c-section-contact-form">
       <div class="grid-x grid-padding-x">

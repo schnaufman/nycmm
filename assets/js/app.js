@@ -11,6 +11,13 @@ import { GalleriaApi } from './lib/gallery/galleria-api';
 //
 // Custom JS
 // --------------------------------------------------
+
+// init animate on scroll
+// eslint-disable-next-line no-undef
+AOS.init({
+  disable: 'mobile'
+});
+
 Foundation.plugin(SmoothScrollWithLinks, 'SmoothScrollWithLinks');
 
 // scroll to location if passed by session storage
@@ -39,9 +46,14 @@ $(document).ready(function () {
 
   new CookieConsentHelper('${NYCMM_ENV_GOOGLE_TRACKING_ID}');
 
-  new GalleriaApi('galleria');
-
   gmapsApi.initialize();
+
+  // lazyload images
+  // eslint-disable-next-line no-undef
+  lazyload();
+
+  // init gallery AFTER lazyload
+  new GalleriaApi('galleria');
 
   // when using photoswipe
   //new PhotoSwipeApi('photoSwipe', 'pswp');

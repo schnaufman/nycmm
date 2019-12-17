@@ -105,7 +105,7 @@
 /**********************/
 /* Contact section    */
 /**********************/
-.c-section-contact-form-map-box {
+.c-section-contact-form-container {
   position: relative;
   width: 100%;
   padding-bottom: rem-calc(20);
@@ -150,18 +150,27 @@
   }
 }
 
-.c-section-contact-form-box {
+.c-section-contact-form-map-container {
+  height: $map-height-large;
+}
+
+.c-section-contact-form {
   position: absolute;
   top: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.83);
   z-index: 10;
-  height: $map-height-large;
   width: 50%;
 
   h3 {
     text-align: center;
+    position: relative;
     padding: rem-calc(20 5 0 5);
+  }
+
+  form {
+    position: relative;
+    width: 100%;
   }
 }
 
@@ -170,7 +179,7 @@
 /***************************************/
 /* up to large */
 @media only screen and (max-width: 74.9375em) {
-  .c-section-contact-form-box {
+  .c-section-contact-form-map-container {
     height: $map-height-medium;
   }
 }
@@ -183,12 +192,15 @@
     }
   }
 
-  .c-section-contact-form-box {
+  .c-section-contact-form-map-container {
+    height: $map-height-small;
+  }
+
+  .c-section-contact-form {
     position: relative;
     width: 100%;
     z-index: 0;
     padding-bottom: rem-calc(20);
-    height: auto;
   }
 
   .c-section-tutor {

@@ -11,6 +11,7 @@ class GalleriaApi {
 
   /**
    * default ctor
+   * currently it's only possible to have ONE gallery on the page
    *
    * @param {String} galleryElClass gallery element class in the DOM
    */
@@ -18,15 +19,31 @@ class GalleriaApi {
     //properties
     this.galleryElClass = galleryElClass;
 
+    this.$galleryEl = $('.' + this.galleryElClass);
     // check if gallery element has been added to DOM
-    if (!$('.' + this.galleryElClass).length) {
+    if (!this.$galleryEl.length) {
       return;
+    }
+
+    // currently it's only possible to have ONE gallery on the page
+    const $data = this.$galleryEl.attr('json-data');
+    let jsonData;
+    if ($data) {
+      try {
+        jsonData = $data && JSON.parse($data);
+      } catch (error) {
+        console.error('GalleriaApi: Element \'.' + this.galleryElClass + ' unable to parse JSON: ' + $data);
+      }
+    } else {
+        console.error('GalleriaApi: Element \'.' + this.galleryElClass + ' couldn\'t find json attribute: json-data');
     }
 
     this._loadTwelveTheme();
     Galleria.run('.' + galleryElClass, {
       autoplay: 7000, // will move forward every 7 seconds
       fullscreenDoubleTap: false, // prevent going to fullscreen unintentional
+      imageCrop: true,
+      dataSource: jsonData || undefined,
 
       // eslint-disable-next-line no-unused-vars
       extend: function (options) {

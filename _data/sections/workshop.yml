@@ -11,6 +11,8 @@
       location: "LMS Mattighofen"
       image:
         file: "masterclass.jpg"
+        height: "400px"
+        width: "600px"
       schedule:
         time:
           begin: "09:30"
@@ -20,6 +22,8 @@
       location: "LMS Mattighofen"
       image:
         file: "instrument.jpg"
+        height: "400px"
+        width: "600px"
       schedule:
         time:
           begin: "11:00"
@@ -29,6 +33,8 @@
       location: "LMS Mattighofen"
       image:
         file: "advanced_singers.jpg"
+        height: "400px"
+        width: "600px"
       schedule:
         time:
           begin: "11:00"
@@ -39,6 +45,8 @@
       location: "LMS Mattighofen"
       image:
         file: "ensemble.jpg"
+        height: "400px"
+        width: "600px"
       schedule:
         time:
           begin: "14:30"
@@ -48,6 +56,8 @@
       location: "LMS Mattighofen"
       image:
         file: "gospel.jpg"
+        height: "400px"
+        width: "600px"
       schedule:
         time:
           begin: "14:30"
@@ -126,12 +136,12 @@
     main: "gallery.md"
   content: "gallery.html"
   images:
-    - file: "workshop_1.jpg"
-      caption: "workshop_1_caption"
-    - file: "workshop_2.jpg"
-      caption: "workshop_2_caption"
-    - file: "workshop_3.jpg"
-      caption: "workshop_3_caption"
-    - file: "workshop_4.jpg"
-      caption: "workshop_4_caption"
+    - image: "/assets/img/workshops/workshop_1.jpg"
+      title: "Workshop 1"
+    - image: "/assets/img/workshops/workshop_2.jpg"
+      title: "Workshop 2"
+    - image: "/assets/img/workshops/workshop_3.jpg"
+      title: "Workshop 3"
+    - image: "/assets/img/workshops/workshop_4.jpg"
+      title: "Workshop 4"
 

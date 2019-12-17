@@ -1,0 +1,22 @@
+[
+  {
+    "image": "workshop1.jpg",
+    "title": "Workshop 1",
+    "description": "Workshop 1"
+  },
+  {
+    "image": "workshop2.jpg",
+    "title": "Workshop 2",
+    "description": "Workshop 2"
+  },
+  {
+    "image": "workshop3.jpg",
+    "title": "Workshop 3",
+    "description": "Workshop 3"
+  },
+  {
+    "image": "workshop4.jpg",
+    "title": "Workshop 4",
+    "description": "Workshop 4"
+  }
+]

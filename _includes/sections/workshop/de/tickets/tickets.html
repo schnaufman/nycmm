@@ -9,7 +9,7 @@
         {% else %}
           {% assign ticket_cell_offset = "" %}
         {% endif %}
-        <div class="cell c-section-workshop-tickets-ticket {{ticket_cell_offset}}">
+        <div data-aos="flip-right" class="cell c-section-workshop-tickets-ticket {{ticket_cell_offset}}">
           <h5 class="c-section-workshop-tickets-ticket-title">{{ticket.title}}</h5>
           <div class="c-section-workshop-tickets-ticket-prices">
             <h2 class="c-section-workshop-tickets-ticket-price">{{ticket.price.regular}}<span>&nbsp;/&nbsp;{{ticket.price.discount}}&nbsp;*</span></h2>

@@ -21,24 +21,7 @@
 }
 
 .c-section-lineup-concert-act-image {
-  width: 100%;
-  overflow: hidden;
-  background: black;
-  margin: 0;
-  position: relative;
-
-  img {
-    opacity: 0.7;
-    width: 100%;
-    height: auto;
-    transform: scale(1);
-    transition: transform 0.5s, opacity 0.5s;
-
-    &:hover {
-      opacity: 1;
-      transform: scale(1.02);
-    }
-  }
+  margin-bottom: rem-calc(25);
 }
 
 .c-section-lineup-concert-description {
@@ -49,7 +32,6 @@
     margin-bottom: rem-calc(25);
   }
 }
-
 
 /*****************/
 /* dates section */
@@ -125,58 +107,4 @@
 .c-section-tickets-info {
   margin-top: rem-calc(20);
   text-align: center;
-}
-
-/*********************/
-/* locations section */
-/*********************/
-
-.c-section-locations {
-  margin-bottom: rem-calc(50);
-}
-
-.c-section-location-gallery-img,
-.c-section-location-gallery-img-y-tile {
-  width: 100%;
-  overflow: hidden;
-  background: black;
-  position: relative;
-
-  figcaption {
-    display: none; // currently not needed
-  }
-
-  img {
-    height: 100%;
-    width: 100%;
-    opacity: 0.7;
-    transform: scale(1);
-    transition: transform 0.5s, opacity 0.5s;
-
-    &:hover {
-      opacity: 1;
-      transform: scale(1.02);
-    }
-  }
-}
-
-.c-section-location-gallery-img-y-tile {
-  &:not(:last-child) {
-    margin-bottom: rem-calc(25);
-  }
-}
-
-/* up to medium */
-@media only screen and (max-width: 63.9375em) {
-  .c-section-lineup-concert-act-image,
-  .c-section-location-gallery-img-y-tile,
-  .c-section-location-gallery-img {
-    img {
-      opacity: 1;
-
-      &:hover {
-        transform: scale(1.00);
-      }
-    }
-  }
 }
