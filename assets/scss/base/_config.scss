@@ -77,3 +77,8 @@ $site-header-font-weight: $header-font-weight;
 $map-height-large: 560px;
 $map-height-medium: 600px;
 $map-height-small: 350px;
+
+// set font
+body {
+  font: $body-font-family;
+}
