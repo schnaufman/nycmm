@@ -20,6 +20,9 @@ AOS.init({
 
 Foundation.plugin(SmoothScrollWithLinks, 'SmoothScrollWithLinks');
 
+// scroll to location if passed by session storage
+SmoothScrollWithLinks.initSessionNavScrollHash('content');
+
 // lazyload images
 // eslint-disable-next-line no-undef
 lazyload();
@@ -45,9 +48,6 @@ gmapsApi.initialize();
 
 // init gallery AFTER lazyload
 new GalleriaApi('galleria');
-
-// scroll to location if passed by session storage
-SmoothScrollWithLinks.initSessionNavScrollHash('content');
 
 // initialize custom apis and mobile navigation
 $(document).ready(function () {

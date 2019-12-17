@@ -101,6 +101,9 @@ class SmoothScrollWithLinks extends Plugin {
    * @param {String} contentId the content id hash (string WITHOUT the HASH sign) to scroll to when its not the landing page.
    */
   static initSessionNavScrollHash(contentId) {
+    // reset scroll position
+    scroll(0, 0);
+
     if (document.readyState === 'complete') {
       console.debug('SmoothScrollWithLinks: Page already loaded.')
       this._scrollToLocationHash(contentId);
@@ -110,7 +113,7 @@ class SmoothScrollWithLinks extends Plugin {
       $(window).on('scroll', SmoothScrollWithLinks._onUserScroll);
 
       //scroll to location if this has been passed with location.hash
-      $(document).ready( function () {
+      $(document).ready(function () {
         SmoothScrollWithLinks._scrollToLocationHash(contentId);
       });
     }
@@ -163,7 +166,7 @@ class SmoothScrollWithLinks extends Plugin {
       } catch (error) {
         console.error('SmoothScrollWithLinks: ' + error);
       }
-    // in case of navigation to a page which is not the landing page, we autoscroll to the content
+      // in case of navigation to a page which is not the landing page, we autoscroll to the content
     } else if (window.location.pathname !== '/' && window.location.pathname !== '/en/') {
       SmoothScrollWithLinks.scrollToLoc('#' + contentId, {
         animationDuration: 1000,
