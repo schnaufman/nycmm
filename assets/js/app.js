@@ -20,44 +20,39 @@ AOS.init({
 
 Foundation.plugin(SmoothScrollWithLinks, 'SmoothScrollWithLinks');
 
+// lazyload images
+// eslint-disable-next-line no-undef
+lazyload();
+
 // scroll to location if passed by session storage
 SmoothScrollWithLinks.initSessionNavScrollHash('content');
 
 // map init - currently there's the limitation to have exactly ONE gmapsMap Element in the DOM
 const gmapsApi = new GMapsApi('${NYCMM_ENV_GMAPS_API_KEY}', 'gmapsMap');
 
-// lazyload images
-// eslint-disable-next-line no-undef
-lazyload();
+// FIREFOX/SAFARI MOBILE SCROLL Bugfix with 100vh and navigation bar included in css height
+// force header height to window size (fix for firefox mobile scroll)
+$('#site-header').height($(window).height());
+
+new NavHandler(
+  'js--nav-dropdown',
+  'js--nav-dropdown-icon',
+  'js--nav-dropdown-item-section-dropdown',
+  'js--nav-dropdown-item-section-dropdown-icon',
+  'js--nav-container-sticky',
+  'js--nav-back-to-top-container');
+
+new CookieConsentHelper('${NYCMM_ENV_GOOGLE_TRACKING_ID}');
+
+gmapsApi.initialize();
+
+// init gallery AFTER lazyload
+new GalleriaApi('galleria');
 
 // initialize custom apis and mobile navigation
 $(document).ready(function () {
-
-  // FIREFOX/SAFARI MOBILE SCROLL Bugfix with 100vh and navigation bar included in css height
-  // force header height to window size (fix for firefox mobile scroll)
-  $('#site-header').height($(window).height());
-
   // init foundation js
   $(document).foundation();
-
-  new NavHandler(
-    'js--nav-dropdown',
-    'js--nav-dropdown-icon',
-    'js--nav-dropdown-item-section-dropdown',
-    'js--nav-dropdown-item-section-dropdown-icon',
-    'js--nav-container-sticky',
-    'js--nav-back-to-top-container');
-
-  new CookieConsentHelper('${NYCMM_ENV_GOOGLE_TRACKING_ID}');
-
-  gmapsApi.initialize();
-
-  // init gallery AFTER lazyload
-  new GalleriaApi('galleria');
-
-  // when using photoswipe
-  //new PhotoSwipeApi('photoSwipe', 'pswp');
-
   // when using formspree
   // const contactMailParts = '${NYCMM_ENV_CONTACT_MAIL}'.split('@');
   // const mailAdress = contactMailParts[0];
