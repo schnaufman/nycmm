@@ -20,11 +20,16 @@ AOS.init({
 
 Foundation.plugin(SmoothScrollWithLinks, 'SmoothScrollWithLinks');
 
+// map init - currently there's the limitation to have exactly ONE gmapsMap Element in the DOM
+const gmapsApi = new GMapsApi('${NYCMM_ENV_GMAPS_API_KEY}', 'gmapsMap');
+
+// lazyload images
+// eslint-disable-next-line no-undef
+lazyload();
+
 // scroll to location if passed by session storage
 SmoothScrollWithLinks.initSessionNavScrollHash('content');
 
-// map init - currently there's the limitation to have exactly ONE gmapsMap Element in the DOM
-const gmapsApi = new GMapsApi('${NYCMM_ENV_GMAPS_API_KEY}', 'gmapsMap');
 
 // initialize custom apis and mobile navigation
 $(document).ready(function () {
@@ -47,10 +52,6 @@ $(document).ready(function () {
   new CookieConsentHelper('${NYCMM_ENV_GOOGLE_TRACKING_ID}');
 
   gmapsApi.initialize();
-
-  // lazyload images
-  // eslint-disable-next-line no-undef
-  lazyload();
 
   // init gallery AFTER lazyload
   new GalleriaApi('galleria');
