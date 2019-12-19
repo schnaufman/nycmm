@@ -137,7 +137,12 @@ class SmoothScrollWithLinks extends Plugin {
       navScrollHash = window.sessionStorage.getItem(SmoothScrollWithLinks.navScrollHash);
     }
 
-    if (navScrollHash && !navScrollCancelled && window.location) {
+    if (navScrollCancelled) {
+      // return on nav scroll cancelled
+      return;
+    }
+
+    if (navScrollHash && window.location) {
       console.debug('SmoothScrollWithLinks: Scroll to location hash.')
       SmoothScrollWithLinks.scrollToLoc(navScrollHash, {
         animationDuration: 1000,
