@@ -11,39 +11,37 @@ import { GalleriaApi } from './lib/gallery/galleria-api';
 //
 // Custom JS
 // --------------------------------------------------
-
 Foundation.plugin(SmoothScrollWithLinks, 'SmoothScrollWithLinks');
 
 // scroll to location if passed by session storage
 SmoothScrollWithLinks.initSessionNavScrollHash('content');
 
-// init animate on scroll
-// eslint-disable-next-line no-undef
-AOS.init({
-  disable: 'mobile'
-});
-
-// initialize custom apis and mobile navigation
+/**
+ * for external libs it's necessary to initialize them after the script has been executed
+ * this is on document ready
+ */
 $(document).ready(function () {
-
   // init foundation js
   $(document).foundation();
 
-  // lazyload images
+  // init animate on scroll
   // eslint-disable-next-line no-undef
-  lazyload();
-
-  // map init - currently there's the limitation to have exactly ONE gmapsMap Element in the DOM
-  const gmapsApi = new GMapsApi('${NYCMM_ENV_GMAPS_API_KEY}', 'gmapsMap');
-
-  new CookieConsentHelper('${NYCMM_ENV_GOOGLE_TRACKING_ID}');
-
-  new GalleriaApi('galleria');
+  AOS.init({
+    disable: 'mobile'
+  });
 
   // FIREFOX/SAFARI MOBILE SCROLL Bugfix with 100vh and navigation bar included in css height
   // force header height to window size (fix for firefox mobile scroll)
   $('#site-header').height($(window).height());
 
+  // lazyload images
+  // eslint-disable-next-line no-undef
+  lazyload();
+
+  // init custom apis
+  const gmapsApi = new GMapsApi('${NYCMM_ENV_GMAPS_API_KEY}', 'gmapsMap');
+  new CookieConsentHelper('${NYCMM_ENV_GOOGLE_TRACKING_ID}');
+  new GalleriaApi('galleria');
   new NavHandler(
     'js--nav-dropdown',
     'js--nav-dropdown-icon',
@@ -52,7 +50,9 @@ $(document).ready(function () {
     'js--nav-container-sticky',
     'js--nav-back-to-top-container');
 
+  // init gmaps at this point due to the dynamic script append in the api
   gmapsApi.initialize();
+
   // when using formspree
   // const contactMailParts = '${NYCMM_ENV_CONTACT_MAIL}'.split('@');
   // const mailAdress = contactMailParts[0];

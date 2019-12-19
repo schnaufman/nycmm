@@ -11,6 +11,7 @@ const GMapsMarkerPopupState = {
 
 /**
  * encapsulation for gmaps api access
+ * currently there's the limitation to have exactly ONE gmapsMap Element in the DOM
  */
 class GMapsApi {
 
@@ -74,6 +75,7 @@ class GMapsApi {
 
   /**
    * initialize gmaps with given options
+   * @private
    */
   _initialize() {
     const $gmaps = $('#' + this.elementId);
