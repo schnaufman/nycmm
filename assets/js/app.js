@@ -53,12 +53,6 @@ $(document).ready(function () {
   // init gmaps at this point due to the dynamic script append in the api
   gmapsApi.initialize();
 
-  // when using formspree
-  // const contactMailParts = '${NYCMM_ENV_CONTACT_MAIL}'.split('@');
-  // const mailAdress = contactMailParts[0];
-  // const mailDomain = contactMailParts[1];
-
-  // SiteHelper.setFormSpreeContactFormAction('formSpreeContactForm', mailAdress, mailDomain);
 });
 
 
