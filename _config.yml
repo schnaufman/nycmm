@@ -45,13 +45,14 @@ exclude:
 # if there are extra generated files (such as bundle.js from webpack or minified app.cs) we have to let
 # jekyll know about it, otherwise it will delete them
 keep_files:
-  - "assets/js/bundle.js"
+  - "assets/js"
   - "assets/css/app.css"
 
 # Plugins
 # Add plugins in the Gemfile
 plugins:
   - jekyll-paginate-v2
+  - jekyll-environment-variables
 
 # Conversion
 incremental:      true

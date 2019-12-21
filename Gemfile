@@ -23,6 +23,7 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-paginate-v2"
   gem "sass"
+  gem "jekyll-environment-variables"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

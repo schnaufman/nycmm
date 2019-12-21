@@ -6,7 +6,9 @@ const replace = require('gulp-replace');
 const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync');
 const del = require('del');
+const glob = require('glob');
 const fs = require('fs');
+const path = require('path');
 const named = require('vinyl-named');
 const plumber = require('gulp-plumber');
 const spawn = require('cross-spawn');
@@ -29,7 +31,7 @@ let webpackConfig = {
   watch: false,
   cache: false,
   output: {
-    filename: 'bundle.js'
+    filename: 'bundle-[hash].js'
   },
   devtool: !isProduction && 'source-map'
 };
@@ -57,7 +59,10 @@ function copyTask(done) {
 // Build the "dist" folder by running all of the below tasks
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task('build',
-  gulp.series(cleanTask, jekyllBuildTask, gulp.parallel(jsTask, copyTask), sassTask));
+  gulp.series(cleanTask, jsTask, jekyllBuildTask, copyTask, sassTask));
+
+gulp.task('debug',
+  gulp.series(cleanTask, jsTask, jekyllBuildTask));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -69,9 +74,14 @@ function jekyllBuildTask(done) {
     processEnv.JEKYLL_ENV = 'production';
   }
 
+  glob.sync(config.javascript.dest.buildDir + '*.js')
+    .forEach(file => {
+      processEnv.BUNDLE = '/' + config.javascript.dest.jekyllRoot + path.basename(file);
+    });
+
   browserSync.notify(config.jekyll.notification);
   // Spawn jekyll commands
-  return spawn('bundle', ['exec', 'jekyll', 'build'], {stdio: 'inherit', env: processEnv})
+  return spawn('bundle', ['exec', 'jekyll', 'build'], { stdio: 'inherit', env: processEnv })
     .on('close', done);
 }
 

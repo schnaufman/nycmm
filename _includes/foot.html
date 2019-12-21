@@ -2,6 +2,6 @@
   {%if page.photoswipe %}
     {% include lib/gallery/photoswipe-template.html %}
   {% endif %}
-  <script src="/assets/js/bundle.js" type="application/javascript"></script>
+  <script src="{{ site.env.BUNDLE }}" type="application/javascript"></script>
 </body>
 </html>
