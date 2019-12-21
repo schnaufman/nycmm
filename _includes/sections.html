@@ -25,7 +25,7 @@
             {% if section.image.link %}
               <a href="{{ section.image.link }}" target="_blank">
             {% endif %}
-            <img class="lazyload" data-src="{{ section.image.file }}" alt="" width="{{ section.image.width }}" height="{{ section.image.height }}">
+            <img class="lazyload" src="{{section.image.lqip}}" data-src="{{ section.image.file }}" alt="" width="{{ section.image.width }}" height="{{ section.image.height }}">
             {% if section.image.link %}
               </a>
             {% endif %}

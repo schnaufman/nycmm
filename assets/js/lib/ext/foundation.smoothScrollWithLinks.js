@@ -99,8 +99,9 @@ class SmoothScrollWithLinks extends Plugin {
    * jumping with window.location.href will fuck up the location position.
    *
    * @param {String} contentId the content id hash (string WITHOUT the HASH sign) to scroll to when its not the landing page.
+   * @param {Function} callback after scrolling is done this function will be called
    */
-  static initSessionNavScrollHash(contentId) {
+  static initSessionNavScrollHash(contentId, callback) {
     if (document.readyState === 'complete') {
       console.debug('SmoothScrollWithLinks: Page already loaded.')
       this._scrollToLocationHash(contentId);
@@ -110,14 +111,14 @@ class SmoothScrollWithLinks extends Plugin {
       $(window).on('scroll', SmoothScrollWithLinks._onUserScroll);
 
       //scroll to location if this has been passed with location.hash
-      $(window).on('load', SmoothScrollWithLinks._scrollToLocationHash.bind(null, contentId));
+      $(window).on('load', SmoothScrollWithLinks._scrollToLocationHash.bind(null, contentId, callback));
     }
   }
 
   static _onUserScroll() {
     // only if the session storage is filled user cancels scroll
     if (window.sessionStorage.getItem(SmoothScrollWithLinks.navScrollHash)) {
-      console.debug('SmoothScrollWithLinks: Nav scroll cancelled by user scroll')
+      console.debug('SmoothScrollWithLinks: Nav scroll cancelled by user scroll. Cancelling...')
       navScrollCancelled = true;
     }
 
@@ -128,7 +129,7 @@ class SmoothScrollWithLinks extends Plugin {
     }
   }
 
-  static _scrollToLocationHash(contentId) {
+  static _scrollToLocationHash(contentId, callback) {
     let navScrollHash;
 
     if (window.location && window.location.hash) {
@@ -139,6 +140,10 @@ class SmoothScrollWithLinks extends Plugin {
 
     if (navScrollCancelled) {
       // return on nav scroll cancelled
+      console.debug('SmoothScrollWithLinks: Scroll cancelled');
+      if (typeof callback === 'function') {
+        callback();
+      }
       return;
     }
 
@@ -155,6 +160,9 @@ class SmoothScrollWithLinks extends Plugin {
         window.location.hash = navScrollHash;
         document.documentElement.scrollTop = topPos;
         window.sessionStorage.removeItem(SmoothScrollWithLinks.navScrollHash);
+        if (typeof callback === 'function') {
+          callback();
+        }
       });
 
       try {
@@ -162,14 +170,18 @@ class SmoothScrollWithLinks extends Plugin {
       } catch (error) {
         console.error('SmoothScrollWithLinks: ' + error);
       }
-    // in case of navigation to a page which is not the landing page, we autoscroll to the content
+      // in case of navigation to a page which is not the landing page, we autoscroll to the content
     } else if (window.location.pathname !== '/' && window.location.pathname !== '/en/') {
       SmoothScrollWithLinks.scrollToLoc('#' + contentId, {
         animationDuration: 1000,
         animationEasing: 'swing',
         threshold: 50,
         offset: 0
-      });
+      }, callback);
+    } else {
+      if (typeof callback === 'function') {
+        callback();
+      }
     }
   }
 
@@ -188,6 +200,7 @@ class SmoothScrollWithLinks extends Plugin {
     if (!$loc.length) return false;
 
     var scrollPos = Math.round($loc.offset().top - options.threshold / 2 - options.offset);
+    console.debug('SmoothScrollWithLinks: scrolling to pos: ' + scrollPos);
 
     $('html, body').stop().animate(
       { scrollTop: scrollPos },

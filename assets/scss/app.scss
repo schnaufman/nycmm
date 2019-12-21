@@ -53,12 +53,14 @@
 //   the component styles on your own.
 // - Need a specific foundation component? Enable it
 //   in foundation/_foundation.scss.
-
 // Import all of Foundation
 @import 'foundation/foundation';
 
 // cookieconsent import
 @import 'node_modules/cookieconsent/build/cookieconsent.min';
+
+// import animate on scroll
+@import 'node_modules/aos/dist/aos';
 
 // photoswipe core css import
 // the default skin is imported in html header (due to skin files)

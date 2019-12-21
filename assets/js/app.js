@@ -8,13 +8,24 @@ import { CookieConsentHelper } from './lib/cookie-consent-helper';
 import { GalleriaApi } from './lib/gallery/galleria-api';
 //import { PhotoSwipeApi } from './lib/gallery/photoswipe-api';
 
+const LazyLoad = require('lazyload/lazyload');
+const AOS = require('aos/dist/aos');
+
 //
 // Custom JS
 // --------------------------------------------------
 Foundation.plugin(SmoothScrollWithLinks, 'SmoothScrollWithLinks');
 
-// scroll to location if passed by session storage
-SmoothScrollWithLinks.initSessionNavScrollHash('content');
+// lazyloading the pics must be the last thing to do, otherwise the scroll positions will be messed up
+let lazyload = null;
+SmoothScrollWithLinks.initSessionNavScrollHash('content', () => {
+  if (lazyload) {
+    //already done
+    return;
+  }
+  console.debug('Lazyload: Init...');
+  lazyload = new LazyLoad();
+});
 
 /**
  * for external libs it's necessary to initialize them after the script has been executed
@@ -25,7 +36,6 @@ $(document).ready(function () {
   $(document).foundation();
 
   // init animate on scroll
-  // eslint-disable-next-line no-undef
   AOS.init({
     disable: 'mobile'
   });
@@ -33,10 +43,6 @@ $(document).ready(function () {
   // FIREFOX/SAFARI MOBILE SCROLL Bugfix with 100vh and navigation bar included in css height
   // force header height to window size (fix for firefox mobile scroll)
   $('#site-header').height($(window).height());
-
-  // lazyload images
-  // eslint-disable-next-line no-undef
-  lazyload();
 
   // init custom apis
   const gmapsApi = new GMapsApi('${NYCMM_ENV_GMAPS_API_KEY}', 'gmapsMap');
@@ -52,7 +58,6 @@ $(document).ready(function () {
 
   // init gmaps at this point due to the dynamic script append in the api
   gmapsApi.initialize();
-
 });
 
 
