@@ -44,18 +44,6 @@ class GalleriaApi {
       fullscreenDoubleTap: false, // prevent going to fullscreen unintentional
       imageCrop: true,
       dataSource: jsonData || undefined,
-
-      // eslint-disable-next-line no-unused-vars
-      extend: function (options) {
-        //Galleria.log(this) // the gallery instance
-        //Galleria.log(options) // the gallery options
-
-        // scroll back to hash position - needed for mobile
-        this.bind('fullscreen_exit', function () {
-          SmoothScrollWithLinks.initSessionNavScrollHash('content');
-        });
-
-      }
     });
   }
 
