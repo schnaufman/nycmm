@@ -44,6 +44,7 @@ class GalleriaApi {
       fullscreenDoubleTap: false, // prevent going to fullscreen unintentional
       imageCrop: true,
       dataSource: jsonData || undefined,
+      trueFullscreen: false
     });
   }
 
