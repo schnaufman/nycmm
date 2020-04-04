@@ -8,11 +8,10 @@ branches:
     - /pages-(.*)/ # test every branch which starts with "pages-"
 
 node_js:
-  - '8'
   - '10'
 
 before_install:
-- rvm install 2.6.3
+- rvm install 2.7.0
 - curl -o- -L https://yarnpkg.com/install.sh | bash
 
 before_script:
