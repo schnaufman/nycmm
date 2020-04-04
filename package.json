@@ -1,6 +1,6 @@
 {
   "name": "foundation-zurb-template",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Official ZURB Template for Foundation for Sites.",
   "main": "gulpfile.js",
   "scripts": {
