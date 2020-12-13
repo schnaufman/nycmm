@@ -20,6 +20,7 @@
     "cross-spawn": "^7.0.2",
     "del": "^6.0.0",
     "dotenv": "^8.0.0",
+    "eslint": "^7.15.0",
     "foundation-sites": "6.6.3",
     "galleria": "^1.6.1",
     "gm": "^1.23.1",

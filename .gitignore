@@ -45,9 +45,6 @@ _site
 # IntelliJ
 .idea
 
-# VSCode
-.vscode
-
 # Composer
 composer.lock
 

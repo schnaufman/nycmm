@@ -9,12 +9,9 @@
 		"eslint.validate": [
 			"javascript"
 		],
-		"jshint.enable": false,
-    "eslint.provideLintTask": true,
 		"javascript.validate.enable": false,
 		"search.exclude": {
 			"**/node_modules": false
-		},
-		"search.usePCRE2": true
+		}
 	}
 }
