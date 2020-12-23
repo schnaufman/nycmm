@@ -31,7 +31,7 @@ let webpackConfig = {
   watch: false,
   cache: false,
   output: {
-    filename: 'bundle-[hash].js'
+    filename: 'bundle-[contenthash].js'
   },
   devtool: !isProduction && 'source-map'
 };
