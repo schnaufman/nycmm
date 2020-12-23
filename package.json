@@ -4,10 +4,10 @@
   "description": "NYCMM website packages template",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "node -r dotenv/config ./node_modules/.bin/gulp",
-    "debug": "node -r dotenv/config ./node_modules/.bin/gulp debug",
-    "build": "node -r dotenv/config ./node_modules/.bin/gulp build --production",
-    "test": "node -r dotenv/config ./node_modules/.bin/gulp build --production"
+    "start": "node -r dotenv/config node_modules/gulp/bin/gulp.js",
+    "debug": "node -r dotenv/config node_modules/gulp/bin/gulp.js debug",
+    "build": "node -r dotenv/config node_modules/gulp/bin/gulp.js build --production",
+    "test": "node -r dotenv/config node_modules/gulp/bin/gulp.js build --production"
   },
   "author": "https://github.com/matt-hires",
   "license": "MIT",
