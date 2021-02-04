@@ -4,6 +4,7 @@ language: de
 layout: page
 title: Sponsoren
 ref: sponsors
+menu: main,footer 
 order: 4
 ---
 

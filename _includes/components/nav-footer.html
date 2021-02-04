@@ -10,9 +10,12 @@
   </ul>
   <ul class="cell small-6 menu align-center">
     <!-- search all pages for footer menu items -->
-    {% assign pages=site.pages | where:"menu", "footer" | where:"autogen", nil | where:"language", page.language | sort: 'order' %}
+    {% assign pages=site.pages | where:"autogen", nil | where:"language", page.language | sort: 'order' %}
     <!--list footer items-->
     {% for page in pages %}
+      {% unless page.menu contains "footer" %}
+        {% continue %}
+      {% endunless %}
       <li>
         <a href="{{ page.url }}">{{ page.title }}</a>
       </li>
