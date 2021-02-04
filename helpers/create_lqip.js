@@ -29,6 +29,7 @@ getPics(imagePath, function (err, result) {
 
     // obtain the size of an image
     gm(file)
+      .options({ ImageMagick: true })
       .size(function (err, size) {
         if (err) {
           console.error(err);
