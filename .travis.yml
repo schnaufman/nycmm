@@ -4,7 +4,7 @@ node_js:
   - '14'
 
 before_install:
-- rvm install 2.7.0
+- rvm install 3.0.1
 - curl -o- -L https://yarnpkg.com/install.sh | bash
 
 before_script:
