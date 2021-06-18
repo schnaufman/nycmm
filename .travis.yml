@@ -1,10 +1,12 @@
 language: node_js
 
 node_js:
-  - '14'
+  - 14
+
+rvm:
+  - 2.7
 
 before_install:
-- rvm install 3.0.1p64
 - curl -o- -L https://yarnpkg.com/install.sh | bash
 
 before_script:
