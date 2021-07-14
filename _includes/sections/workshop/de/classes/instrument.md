@@ -1,1 +1,0 @@
-##### Die Klassen für die jeweiligen Instrumentengattungen, behandeln unter anderem Übungen für Technik, Klang, Improvisation, Groove, Rhythmik, Lesen von Musik und Charts und das Spielen in verschiedenen Musikstilen, sowie solistische Ausdruckskraft.

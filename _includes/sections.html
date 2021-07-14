@@ -23,7 +23,7 @@
           {% endif %}
           <div class="c-section-image-figure-container">
             {% if section.image.link %}
-              <a href="{{ section.image.link }}" target="_blank">
+              <a href="{{ section.image.link }}" target="{{ section.image.target | default:_self }}">
             {% endif %}
             <img class="lazyload" src="{{section.image.lqip}}" data-src="{{ section.image.file }}" alt="" width="{{ section.image.width }}" height="{{ section.image.height }}">
             {% if section.image.link %}

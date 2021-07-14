@@ -1,0 +1,5 @@
+### **Just Sing Gospel & Inspirational Music Choir Workshop**
+
+##### Mit unserem neuen Format „Just Sing Gospel & Inspirational Music Choir" folgen wir dem  Wunsch vieler KursteilnehmerInnen, gemeinsam mehr zu singen und vereinen das Beste aus unseren „Just Sing“ und „Rise Up! Gospelchoir“ Workshops nach dem Motto „Get in touch with your authentic voice".
+##### Wir entdecken die Einzigartigkeit der eigenen Stimme mit Körper, Geist und Seele und unternehmen eine musikalische Reise mit musikalischer Intention und Leichtigkeit anstatt mit Druck und Anspannung. Es bleibt  viel Spielraum zum Ausprobieren, Solieren, Kommunizieren & Improvisieren und zum Singen in der Gemeinschaft, in Gruppen und auf der Bühne. Für eine energiegeladene, inspirierende und angenehme Atmosphäre sorgen unsere NYCMM Vokalistinnen Chanda Rule und Cassandra McConnell, gemeinsam mit dem Pianisten/Vokalisten Hubert Gredler und Korrepetitor. 
+##### **Die Workshops können während der [Online-Anmeldung](/workshop/#tickets) ausgesucht werden**

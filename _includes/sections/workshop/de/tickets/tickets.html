@@ -1,6 +1,6 @@
 <div class="c-section-workshop-tickets">
   <div class="grid-container">
-    <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-3 medium-up-2 small-up-1">
+    <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-3 medium-up-3 small-up-1">
       {% for ticket in section.tickets %}
         {% if ticket.row-offset %}
           {% assign tickets_size = section.tickets | size %}
@@ -12,7 +12,7 @@
         <div class="cell c-section-workshop-tickets-ticket {{ticket_cell_offset}}">
           <h5 class="c-section-workshop-tickets-ticket-title">{{ticket.title}}</h5>
           <div class="c-section-workshop-tickets-ticket-prices">
-            <h2 class="c-section-workshop-tickets-ticket-price">{{ticket.price.regular}}<span>&nbsp;/&nbsp;{{ticket.price.discount}}&nbsp;*</span></h2>
+            <h2 class="c-section-workshop-tickets-ticket-price">{{ticket.price.regular}}</h2>
           </div>
           <div class="c-section-workshop-tickets-ticket-description">
             <ul>
@@ -22,10 +22,17 @@
               {% endfor %}
             </ul>
           </div>
-          <a class="button c-section-workshop-tickets-ticket-order-btn" target="_blank" rel="noopener noreferrer" href="{{ticket.link}}">Anmelden</a>
         </div>
       {% endfor %}
+
+      {% if section.scholarship %}
+        {% capture schol_desc %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ section.scholarship.description }} %}{% endcapture %}
+        {% assign schol_title = site.data.lang[page.language].workshop.tickets[{{section.scholarship.headline}}] %}
+        <div class="cell auto">
+          <h3>{{ schol_title }}</h3>
+          {{ schol_desc | markdownify }}
+        </div>
+      {% endif %}
     </div>
   </div>
-  <p class="c-section-workshop-tickets-info">*&nbsp;Ermäßigung für Schüler/Studenten/Jugendliche bis zum vollendeten 21. Lebensjahr.</p>
 </div>

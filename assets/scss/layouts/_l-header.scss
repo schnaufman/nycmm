@@ -13,7 +13,7 @@
 .c-header-container {
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-60%);
 }
 
 .c-header-content {
@@ -35,7 +35,7 @@
   border: 1px solid $header-button-color;
   border-radius: $global-radius;
   font-size: map-get(map-get(map-get($header-styles, medium), h4), "font-size") + unquote("px");
-  width: rem-calc(200);
+  width: rem-calc(300);
   margin: rem-calc(0 10 0 0);
   padding: rem-calc(20 30);
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
