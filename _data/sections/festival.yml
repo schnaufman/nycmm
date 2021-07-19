@@ -7,6 +7,10 @@
   concerts:
     - description: "opening-night.md"
       title: "Opening Night - 10 Jahre NYCMM"
+      location: "Stadtsaal Mattighofen"
+      date:
+        format: "{{ site.date.begin | date: \"%d\" }}.{{ site.date.begin | date: \"%m.%Y\" }}"
+        time: "19:30"
       acts:
         - image: 
             file: "opening-night.jpg"
@@ -23,6 +27,10 @@
               end: "23:00"
     - description: "blues-power-night.md"
       title: "Blues Power Night"
+      location: "Voglpark / Stadtsaal Mattighofen"
+      date: 
+        format: "{{ site.date.begin | date: \"%d\" | plus: 1 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
+        time: "19:30"
       acts:
         - image: 
             file: "meena-cryle.jpg"
@@ -40,6 +48,10 @@
     - description: "austrian-music-night.md"
       title: "Austrian Music Remix Night"
       acts-in-row: "2"
+      location: "Voglpark / Stadtsaal Mattighofen"
+      date:
+        format: "{{ site.date.begin | date: \"%d\" | plus: 2 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
+        time: "18:30"
       acts:
         - image:
             file: "black-stone-brass.jpg"
@@ -70,6 +82,10 @@
     - description: "jazz-night.md"
       title: "Jazz, Soul, Funk & Gospel Night"
       acts-in-row: "3"
+      location: "Voglpark / Stadtsaal Mattighofen"
+      date:
+        format: "{{ site.date.begin | date: \"%d\" | plus: 3 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
+        time: "18:30"
       acts:
         - image:
             file: "herb-hermann.jpg"
@@ -113,6 +129,10 @@
     - description: "musical-sunday.md"
       title: "A Musical (SUN)Day In The Park"
       acts-in-row: "3"
+      location: "Voglpark / Stadtsaal Mattighofen"
+      date:
+        format: "{{ site.date.begin | date: \"%d\" | plus: 4 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
+        time: "11:00"
       acts:
         - image:
             file: "jazzbrunch.jpg"

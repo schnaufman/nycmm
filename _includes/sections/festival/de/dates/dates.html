@@ -3,20 +3,18 @@
   <table class="stack c-section-dates-table">
     <thead>
       <tr>
-        <th width="300">Datum/Uhrzeit</th>
+        <th width="300">Datum / Uhrzeit</th>
         <th width="300">Location</th>
         <th>Konzert</th>
       </tr>
     </thead>
     <tbody>
       {% for concert in lineup_data.concerts %}
-        {% for act in concert.acts %}
-          <tr>
-            <td>{{ act.date.format | flatify }} / {{ act.date.time.begin }} &mdash; {{ act.date.time.end }}</td>
-            <td>{{ act.location }}</td>
-            <td>{{ act.title }}</td>
-          </tr>
-        {% endfor %}
+        <tr>
+          <td>{{ concert.date.format | flatify }} / {{ concert.date.time }}</td>
+          <td>{{ concert.location }}</td>
+          <td>{{ concert.title }}</td>
+        </tr>
       {% endfor %}
     </tbody>
   </table>
