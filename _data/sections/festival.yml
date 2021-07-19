@@ -150,32 +150,35 @@
     main: "tickets.md"
   content: "tickets.html"
   tickets:
-    - title: "Festivalpass"
-      link: "https://events.eventzilla.net/e/nyc-musikmarathon-festivalpass-2019-2138743853"
+    - title: "Opening Night"
       price:
-        regular: "48€"
-        discount: "42€"
+        regular: "freiwillige Spenden"
+      includes:
+        - item: "Ticket erforderlich"
+    - title: "Blues Power Night"
+      price:
+        regular: "25€"
+        discount: "20€"
+        door: "27€"
+    - title: "Austrian Music Remix Night"
+      price:
+        regular: "27€"
+        discount: "22€"
+        door: "30€"
+    - title: "Jazz, Soul, Funk & Gospel Night"
+      price:
+        regular: "27€"
+        discount: "22€"
+        door: "30€"
+    - title: "A Musical (SUN)Day In The Park"
+      price:
+        regular: "freiwillige Spenden"
+    - title: "Festivalpass"
+      price:
+        regular: "69€"
         door: "&mdash;"
       includes:
         - item: "Eintritt zu allen Veranstaltungen"
-    - title: "Big Band Battle"
-      link: "https://events.eventzilla.net/e/nyc-musikmarathon-festival-big-band-battle-2138743834"
-      price:
-        regular: "17€"
-        discount: "13€"
-        door: "22€"
-    - title: "Austrian Musik Night"
-      link: "https://events.eventzilla.net/e/nyc-musikmarathon-festival-austrian-music-night-2138743866"
-      price:
-        regular: "20€"
-        discount: "16€"
-        door: "25€"
-    - title: "Jazz Meets Klassik Night"
-      link: "https://events.eventzilla.net/e/nyc-musikmarathon-festival-jazz-meets-klassik-night-2138743856"
-      price:
-        regular: "20€"
-        discount: "16€"
-        door: "25€"
 - id: "locations_id"
   title: "locations_title"
   folder: "locations"
