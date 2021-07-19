@@ -1,1 +1,2 @@
 ##### **{{ act.title }}** <br> <a target="_blank" rel="noopener noreferrer" href="http://www.kollegiumkalksburg.at/">Website</a>
+##### Die Musiker des Kollegium Kalksburg, die erst vor Kurzem das 25-jährige Bestehen ihres Ensembles feierten, bezeichnen sich selbst als “Ausnahmesuderanten, die auf irgendwelchen größeren und kleineren Bühnen im In- und Ausland im Dienste des Wiener Liedes umadumstehen.”
