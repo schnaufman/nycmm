@@ -19,12 +19,6 @@
             width: "600px"
           description: "opening-night-desc.md"
           title: "Opening Night"
-          location: "Stadtsaal Mattighofen"
-          date:
-            format: "{{ site.date.begin | date: \"%d\" }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-            time:
-              begin: "19:30"
-              end: "23:00"
     - description: "blues-power-night.md"
       title: "Blues Power Night"
       location: "Voglpark / Stadtsaal Mattighofen"
@@ -39,12 +33,6 @@
             width: "400px"
           description: "meena-cryle.md"
           title: "Meena Cryle & The Chris Fillmore Band"
-          location: "Voglpark / Stadtsaal Mattighofen"
-          date: 
-            format: "{{ site.date.begin | date: \"%d\" | plus: 1 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-            time:
-              begin: "19:30"
-              end: "23:00"
     - description: "austrian-music-night.md"
       title: "Austrian Music Remix Night"
       acts-in-row: "2"
@@ -60,12 +48,6 @@
             width: "600px"
           description: "black-stone-brass.md"
           title: "Black Stone Brass"
-          location: "Voglpark / Stadtsaal Mattighofen"
-          date:
-            format: "{{ site.date.begin | date: \"%d\" | plus: 2 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-            time:
-              begin: "18:30"
-              end: "23:00"
         - image:
             file: "kollegium-kalksburg.jpg"
             lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APf/ANrnwd+0T8RfinrX7PPjfwvD4/8A2fb34gT+KYdM1LxZYeB10y58MeFNd1q71OLxB4Q8Ry+NU03XPDOrLfPYQac+rz+GE8X+HtaurzWdU0OwX8f4BwWUUOGMrxODoYeeIr4ZSxeKlhKftq+KbSxEZOdKMnSo4mlOFNO/N7OlVvObnVl+k53UxVTNMR7SdeEFK1KnHETiqVGN4xjFwno6lKUeay+F1Ie7Fxgvx31T/gmP+1eup6ivw+/bZ+LWk+AhfXY8EaVdfGr4r29zpnhAXEg8NafcQW8b28E9no32K2lhgd4Y5I2SJmRVJ+slhMhqSlUq8M5TVqzk51assvy6UqlST5p1JSlScpSnJuTcm5Nu7dzzY1c/pRjSw/EGbUaFNKnRpQzPGwhSpQXLTpxhGooxjCCUYxilGKSSVkf/2Q=="
@@ -73,12 +55,6 @@
             width: "600px"
           description: "kollegium-kalksburg.md"
           title: "Kollegium Kalksburg"
-          location: "Voglpark / Stadtsaal Mattighofen"
-          date:
-            format: "{{ site.date.begin | date: \"%d\" | plus: 2 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-            time:
-              begin: "18:30"
-              end: "23:00"
     - description: "jazz-night.md"
       title: "Jazz, Soul, Funk & Gospel Night"
       acts-in-row: "3"
@@ -94,12 +70,6 @@
             width: "400px"
           description: "herb-hermann.md"
           title: "Herb Berger & Hermann Linecker Duo"
-          location: "Voglpark / Stadtsaal Mattighofen"
-          date:
-            format: "{{ site.date.begin | date: \"%d\" | plus: 3 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-            time:
-              begin: "18:30"
-              end: "23:00"
         - image:
             file: "ike-sturm.jpg"
             lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAoACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP5zG/ba+OGsfEvxJ4g8E/DPwtrXwx+AHj258Ny+ERqcunxeOZvHPjSWy8I2kGh3+owX+ueNw/h/Wde8LxeGtB1K90GDT7/xDqOjJovh/VryH5qhDB4PA0sXiatPA062FpV6sKlShTpYJ1IqrUaqSVOCoU2/Z8nuqWqUpSlFL03RxWNnUwuGoTxtbD160I4mnTr1a+M5WoQhKKdV87UJVOaz5I80p8qUpGzrH/BXO60nVtU0rVv2eLrS9V0zUb3T9T0y/wBRe2vtO1CyuZba8sLy3mtopoLu0uY5Le4hlijkimjdHjRlKjuhh4VYQqUsTRqUqkIzp1IyUo1ITSlCcZRbi4yi1JNNpp3TaPNnSrU5yp1ITp1ISlCpTknGUJxbjKEoyheMoyTi09U1Z6n59a9retS6hqdpLq+qSWvhm2+J6eG7aS/u3t/D6ahJp+pX6aJC0pj0pb7UdT1K/vFsFtxc3uoX11MHnu55JPk81Sq5Xk9OqlVp1MzySnUp1PfhUhGpjJRhOErxlBShCSjJNKUYtK8Vb9D4Tbp4zN6lNuFSlkXE06U4PlnTm4YKDlTkrOEnCUoOUWm4ylG9m0fJt7eXc97dzz3VzNNNdXEs00s8skssskrvJJJI7F3kdyWd2JZmJZiSSa+zw9GlTw9CnTpU4QhRpQhCEIxhCEYRjGMYxSUYxSSjFJJJJJWPksRUqTxFec5znOdarKc5ScpSlKcnKUpNtylJtttttt3ep//Z"
@@ -107,12 +77,6 @@
             width: "400px"
           description: "ike-sturm.md"
           title: "New York Bassist Ike Sturm & Band"
-          location: "Voglpark / Stadtsaal Mattighofen"
-          date:
-            format: "{{ site.date.begin | date: \"%d\" | plus: 3 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-            time:
-              begin: "18:30"
-              end: "23:00"
         - image:
             file: "chanda-rule.jpg"
             lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAA8ACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4//hF+yt4rt/gl4u+M3jz4Wa7q3hvX/AviTUfh5qenQvqt5a3lnp19c6H4iv8ARNPknubfw7fanpN9p73N/Bbebbbr1ZLaB9Mu7v6+GS5jU4dxE8sw0J47DZzl6z6ao0cRiMuyKtlUM7pVK/t6UqeWxr4CnXx8KsK1DF4jDzwspSWExFGGM53nvDOR5pgsu4nxkcDjuJMmxlfgyhiKns4ZxmFHNaORunhKcKiqYyu8zxeFwVOk6VWF5YipCLlQqVcP8bQ+EJ54Yp01LTwk0Ucqh2lVwsiB1DrsO1gCAy5ODkZNaRyKnKMZPHUYtxTcXSr3TavZ2VrrZ20vsZPFzTa+r1HZtXU4Wfmtdmf0XfGLw78c/wBmPwanhz4kaNF8MPAn7Qfwr1S/8D/Erw/4m0TxT4W1zRoPBM1zZ3eleA9DtF8Y+DE1fRbNrKe11iFtUml1mDUdTvY7zSJoL76Sjm+f8Pz444Z4f4gy3NspzTGY+lxLmDyOthMVmeNzGOIjmNeEswxNfEyqVq1SeAwjj/Z2Cp0I0akMBl9NKGH5+KuCPDvxL4i8P/EHi3IMzweecFrLcRwk8NnVWrl+Vf2dLC18qovLsHTy7CTwWGnh6eYYlV8Pj8wq1fb0XjMVGbhiPwEt7OG3gggkYvJBDHC7xuRG7xoqMyBolYIxUldyq20jIB4rellNedKnNONp04SV7J2lFNXSqNJ66pNq+zCdZRnKNr8spK6ejs2rq6Ts+l0n3SZ//9k="
@@ -120,12 +84,6 @@
             width: "400px"
           description: "chanda-rule.md"
           title: "Chanda Rule & Danielle Lous mit Band"
-          location: "Voglpark / Stadtsaal Mattighofen"
-          date:
-            format: "{{ site.date.begin | date: \"%d\" | plus: 3 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-            time:
-              begin: "18:30"
-              end: "23:00"
     - description: "musical-sunday.md"
       title: "A Musical (SUN)Day In The Park"
       acts-in-row: "3"
@@ -146,7 +104,6 @@
             format: "{{ site.date.begin | date: \"%d\" | plus: 4 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
             time:
               begin: "11:00"
-              end: "13:00"
         - image:
             file: "familienmusiktag.jpg"
             lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APizxn+yN4EtPD1t4p8Y/EfxfrGrX9rfWf8Awhl/o1klpeXF9p/iGxbw94d1vRL63+y3t9aWk0thNrn2HRLW6SxS51Oztrq9Sy/EclrYeec4TB5NOhWqYqtilJVMPVwqozw1CnVqyqYhqU03RXI1Ro1068qbU3TdWpDLC8KZZg8FLM/aYmUKsZTxFGcKU6lLmxM6VWorVoR5IReEtCFWpUqLE6uLpVVH8+NR/Zm/Y+XUL5dO8P3V3p63l0LG61Hxr8RLDULmzE7i1uL6xtfDepW1neTQbJLq0t9Rv4LednhivbqNFnk+pxGe4qjiK9GjlWY4ilSrVaVLESx2V0pV6dOcowrSp2Xs5VYpTcLe45cvQ+kpcMValKnUVDDJVKcJ2VbENLnipWTdVNpXsm0nbdJn/9k="
@@ -172,7 +129,6 @@
             format: "{{ site.date.begin | date: \"%d\" | plus: 4 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
             time:
               begin: "16:00"
-              end: "19:00"
 - id: "rahmenprogramm_id"
   title: "rahmenprogramm_title"
   folder: "rahmenprogramm"

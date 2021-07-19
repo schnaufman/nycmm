@@ -1,7 +1,5 @@
-{% assign first_act = concert.acts | first %}
-
 ### {{ concert.title }}
-#### Datum: {{ first_act.date.format | flatify }}, Beginn: {{ first_act.date.time.begin }}<br>Ort: {{ first_act.location }}
+#### Datum: {{ concert.date.format | flatify }}, Beginn: {{ concert.date.time }}<br>Ort: {{ concert.location }}
 
 ##### Es gratulieren langjährige musikalische Weggefährten & special guest: **Popsängerin & Songwriter Danielle Lous** (NDL) mit **Martin Reiter** (p), **Micky Lee** (guit), **Hubert Gredler** (p), **Simon Plötzeneder** (trp) & **Gernot Bernroiders “Culturessence”**.
 
