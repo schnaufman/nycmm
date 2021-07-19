@@ -19,6 +19,8 @@ de:
     # festival
     lineup_id: "programm"
     lineup_title: "Programm"
+    rahmenprogramm_id: "rahmenprogramm"
+    rahmenprogramm_title: "Rahmenprogramm"
     dates_id: "termine"
     dates_title: "Termine"
     tickets_id: "tickets"
