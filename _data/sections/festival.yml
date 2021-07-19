@@ -112,20 +112,33 @@
               end: "23:00"
     - description: "musical-sunday.md"
       title: "A Musical (SUN)Day In The Park"
-      acts-in-row: "2"
+      acts-in-row: "3"
       acts:
+        - image:
+            file: "jazzbrunch.jpg"
+            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APzu+Bf7Dv7PvxN+M/hb4K654l1PTtN0Pwb4x8IaadI8N2d7q2p61qV9rOuy634w1K6tNGt5dWh0vXtTj8PX9pHrkOkzaPoUX2a1Fs0lx+A8OcR47iCrmNWvCNOu8xhVy+dCtW9hRw2F5PaYWVKtOc0q1GglW5dK8qlWUpR9ynH958SeAuHOBsL4b1MtpVsbSzLgbF4rNKWaYfAznPM8xw8VPGYSthadN1KNDG4zEPDvFwhicLDC4WlThVXtcZW6zU/+CIurf2lqH/CJfEK7bwp9uu/+EZbVxpEurN4e8+T+xW1SVI4Ek1E6b9mN66QQq9z5rLFGCEH2ks4UZOP1Sl7ra9ypXUNHb3VKo5KP8qk27Wu2z+b6mBzNVKio0cHKkpyVJzlNTdNSfI5JTSUnGzkkkr3sj//Z"
+            height: "400px"
+            width: "600px"
+          description: "jazzbrunch.md"
+          title: "Jazzbrunch"
+          location: "Voglpark / Stadtsaal Mattighofen"
+          date:
+            format: "{{ site.date.begin | date: \"%d\" | plus: 4 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
+            time:
+              begin: "11:00"
+              end: "13:00"
         - image:
             file: "familienmusiktag.jpg"
             lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APizxn+yN4EtPD1t4p8Y/EfxfrGrX9rfWf8Awhl/o1klpeXF9p/iGxbw94d1vRL63+y3t9aWk0thNrn2HRLW6SxS51Oztrq9Sy/EclrYeec4TB5NOhWqYqtilJVMPVwqozw1CnVqyqYhqU03RXI1Ro1068qbU3TdWpDLC8KZZg8FLM/aYmUKsZTxFGcKU6lLmxM6VWorVoR5IReEtCFWpUqLE6uLpVVH8+NR/Zm/Y+XUL5dO8P3V3p63l0LG61Hxr8RLDULmzE7i1uL6xtfDepW1neTQbJLq0t9Rv4LednhivbqNFnk+pxGe4qjiK9GjlWY4ilSrVaVLESx2V0pV6dOcowrSp2Xs5VYpTcLe45cvQ+kpcMValKnUVDDJVKcJ2VbENLnipWTdVNpXsm0nbdJn/9k="
             height: "400px"
             width: "600px"
           description: "familienmusiktag.md"
-          title: "Brennholz Rocks"
+          title: "Familienmusiktag"
           location: "Voglpark / Stadtsaal Mattighofen"
           date:
             format: "{{ site.date.begin | date: \"%d\" | plus: 4 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
             time:
-              begin: "11:00"
+              begin: "13:30"
               end: "16:00"
         - image:
             file: "abschlusskonzert.jpg"
@@ -148,7 +161,7 @@
           title: "Jazz & Jammin'"
           location: "Restaurant Stadtplatz 1"
         - description: "ausstellung.md"
-          title: "Porträts und Skulpturen"
+          title: "Ausstellung"
           location: "Stadtsaal Mattighofen"
 - id: "dates_id"
   title: "dates_title"
