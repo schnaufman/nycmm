@@ -1,0 +1,1 @@
+##### **Ab {{ act.date.time.begin }} {{ act.title }}**<br>Inspirational Music & Gospelchor sowie NYCMM Workshop Combos & Songwriter

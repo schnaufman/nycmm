@@ -1,0 +1,1 @@
+##### **Ab {{ act.date.time.begin }} {{ act.title }}**<br>“TRIO-Lajtman/Waldert/Lehner” (HRV/AUT/DEU) mit Buffet des Integrationskochclubs Mattighofen

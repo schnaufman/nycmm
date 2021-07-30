@@ -1,0 +1,2 @@
+##### **{{ act.title }}** <br> <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/DASEnsemble/">Facebook</a>
+##### Dieses bemerkenswerte Ensemble begeistert mit Klangreichtum und Stilvielfalt, die von der großen Bandbreite an Stücken verschiedenster Genres wie Klassischen Kompositionen, Barocken Stücken sowie echter Volksmusik herrührt.
