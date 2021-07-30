@@ -5,7 +5,7 @@ layout: sections
 title: Workshopdetails
 section: workshopdetails
 ref: workshopdetails
-order: 7
+order: 4
 ---
 
 Deutsche Workshopdetails Seite 
