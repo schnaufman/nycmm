@@ -6,7 +6,7 @@
   content: "lineup.html"
   concerts:
     - description: "opening-night.md"
-      title: "Opening Night - 10 Jahre NYCMM"
+      title: "Opening Night - DANIELLE LOUS LIVE \"From Amsterdam with Love\""
       location: "Stadtsaal Mattighofen"
       date:
         format: "{{ site.date.begin | date: \"%d\" }}.{{ site.date.begin | date: \"%m.%Y\" }}"
@@ -21,7 +21,7 @@
           title: "Opening Night"
     - description: "blues-power-night.md"
       title: "Blues Power Night"
-      location: "Voglpark / Stadtsaal Mattighofen"
+      location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
       date: 
         format: "{{ site.date.begin | date: \"%d\" | plus: 1 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
         time: "19:30"
@@ -36,7 +36,7 @@
     - description: "austrian-music-night.md"
       title: "Austrian Music Remix Night"
       acts-in-row: "2"
-      location: "Voglpark / Stadtsaal Mattighofen"
+      location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
       date:
         format: "{{ site.date.begin | date: \"%d\" | plus: 2 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
         time: "18:30"
@@ -58,7 +58,7 @@
     - description: "jazz-night.md"
       title: "Jazz, Soul, Funk & Gospel Night"
       acts-in-row: "3"
-      location: "Voglpark / Stadtsaal Mattighofen"
+      location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
       date:
         format: "{{ site.date.begin | date: \"%d\" | plus: 3 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
         time: "18:30"
@@ -87,7 +87,7 @@
     - description: "musical-sunday.md"
       title: "A Musical (SUN)Day In The Park"
       acts-in-row: "3"
-      location: "Voglpark / Stadtsaal Mattighofen"
+      location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
       date:
         format: "{{ site.date.begin | date: \"%d\" | plus: 4 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
         time: "11:00"
@@ -99,7 +99,6 @@
             width: "600px"
           description: "jazzbrunch.md"
           title: "Jazzbrunch"
-          location: "Voglpark / Stadtsaal Mattighofen"
           date:
             format: "{{ site.date.begin | date: \"%d\" | plus: 4 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
             time:
@@ -111,7 +110,6 @@
             width: "600px"
           description: "familienmusiktag.md"
           title: "Familienmusiktag"
-          location: "Voglpark / Stadtsaal Mattighofen"
           date:
             format: "{{ site.date.begin | date: \"%d\" | plus: 4 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
             time:
@@ -124,7 +122,6 @@
             width: "600px"
           description: "abschlusskonzert.md"
           title: "Abschlusskonzert"
-          location: "Voglpark / Stadtsaal Mattighofen"
           date:
             format: "{{ site.date.begin | date: \"%d\" | plus: 4 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
             time:
@@ -192,27 +189,27 @@
     zoom: 16
     mobile-zoom: 15
     markers:
-      - title: "Schloss Mattighofen"
-        popup:
-          content: "<b>Schloss Mattighofen</b><br>Stadtplatz 1<br>5230 Mattighofen"
-          state: "closed_on_mobile"
-        coordinates:
-          lat: 48.105578
-          lng: 13.147794
       - title: "Stadtsaal Mattighofen"
         popup:
           content: "<b>Stadtsaal Mattighofen</b><br>Salzburger Str. 6<br>5230 Mattighofen"
           state: "closed_on_mobile"
         coordinates:
-          lat: 48.1009628
-          lng: 13.1479442
-      - title: "Landesmusikschule Mattighofen"
+          lat: 48.10099294069689
+          lng: 13.150120644972086
+      - title: "Voglpark Mattighofen"
         popup:
           content: "<b>Park der LMS Mattighofen</b><br>Salzburger Str. 8<br>5230 Mattighofen"
           state: "closed_on_mobile"
         coordinates:
-          lat: 48.10049
-          lng: 13.15124
+          lat: 48.10043407331346
+          lng: 13.15076437511837
+      - title: "Gasthaus Badhaus"
+        popup:
+          content: "<b>Gasthaus Badhaus</b><br>Moosstraße 28<br>5230 Mattighofen"
+          state: "closed_on_mobile"
+        coordinates:
+          lat: 48.101681664753684
+          lng: 13.136926188359597
 - id: "gallery_id"
   title: "gallery_title"
   folder: "gallery"

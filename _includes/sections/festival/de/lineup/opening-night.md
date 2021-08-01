@@ -1,7 +1,7 @@
 ### {{ concert.title }}
 #### Datum: {{ concert.date.format | flatify }}, Beginn: {{ concert.date.time }}<br>Ort: {{ concert.location }}
 
-##### Es gratulieren langjährige musikalische Weggefährten & special guest: **Popsängerin & Songwriter Danielle Lous** (NDL) mit **Martin Reiter** (p), **Micky Lee** (guit), **Hubert Gredler** (p), **Simon Plötzeneder** (trp) & **Gernot Bernroiders “Culturessence”**.
-
-##### In einem unterhaltsamen Podiumsgespräch zum Thema „Building, Risk Taking & Creating“ werfen wir mit Gästen aus Kultur, Wirtschaft und Tourismus einen Rückblick Ein- und Ausblick auf unser derzeit etwas anderes Leben.
+##### **Danielle Lous** aus den Niederlanden ist eine vielseitige Sängerin und Schauspielerin mit beeindruckendem Stimmumfang und magischer Bühnenpräsenz. Mit eigenen Songs und Hits von STING und LADY GAGA wird sie gemeinsam mit musikalischen Gästen wie dem Klavier-und Orgelvirtuosen **Martin Reiter** sowie Gitarrist **Micky Lee** (Falco Musical), Pianist & Vokalist **Hubert Gredler** (HuB5), Trompeter **Simon Plötzeneder** (Upper Austrian Jazz Orchestra) und **Gernot Bernroiders "Culturessence"** das NYCMM Festival eröffnen.
+##### Eingebettet in das Konzert ist ein unterhaltsames Podiumsgespräch zum Thema “Building, RiskTaking & Creating” bei dem prominente Gäste aus Kultur, Tourismus und Wirtschaft einen Rückblick, Ein- & Ausblick auf unser derzeit etwas anderes Leben geben.
+##### Gäste: Dr. Franz Sattlecker (Schloss Schönbrunn), Peter Grubmüller (Ressortchef, Kultur & Medien, OÖN), Georg Bachleitner (Geschäftsführer, Entdeckerviertel), Mag. Angelika Sery-Froschauer (Vizepräsidentin der WKO Oberösterreich) 
 Moderation: Dr. Alfred Weidinger (Direktor, OÖ Landes-Kultur GmbH)
