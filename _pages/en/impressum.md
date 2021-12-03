@@ -5,7 +5,7 @@ layout: page
 title:  Impressum
 ref: impressum
 menu: footer
-order: 7
+order: 8
 ---
 ###### Website owner<br>
 Verein New York City Musikmarathon<br>

@@ -5,7 +5,7 @@ layout: page
 title: Partner
 ref: partner
 menu: main,footer 
-order: 5
+order: 6
 ---
 
 <div class="c-page-partner grid-container">

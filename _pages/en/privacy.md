@@ -6,7 +6,7 @@ title: Data Processing Agreement
 dropdown_title: Privacy
 ref: privacy
 menu: footer
-order: 8
+order: 9
 ---
 
 <div class="c-page-content-md-center" markdown="1">
