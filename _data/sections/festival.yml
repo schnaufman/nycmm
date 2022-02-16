@@ -3,7 +3,7 @@
   folder: "lineup"
   descriptions:
     main: "lineup.md"
-  content: "lineup.html"
+ # content: "lineup.html"
   concerts:
     - description: "opening-night.md"
       title: "Opening Night - DANIELLE LOUS LIVE \"From Amsterdam with Love\""
@@ -12,7 +12,7 @@
         format: "{{ site.date.begin | date: \"%d\" }}.{{ site.date.begin | date: \"%m.%Y\" }}"
         time: "19:30"
       acts:
-        - image: 
+        - image:
             file: "opening-night.jpg"
             lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APxY/ZT/AGhf2h/g1+yhr2meC77wh4T8ODxZrHjSysdJHjEeJ57u/wBS0Dwr4htvEHiXSPGfhoSWFx4S8NOltpNjFcQyytaSC/029e4ki4M9ms4zGjj8bWxVef1JYFwq1aNaj7OE8RUhOFOvg60vaRnX5G5TVP2UVTdKUV73blb/ALMo1MHhoU8PH6y8Tz04ThPmcKUOWXsq8IWapt3UXOM5ykp3enrGm/taeIfGOnWHi4/FbTNJPimytfEZ0qfR/ipPPph1yCPUzp808OvXMM0tmbr7NJLFcTxSPGXjmlUh29PDcOZQsPh1Up801QpKcr1FzTVOPNK0PZwV3d2hThFfZhFWSVbPcwVaqozgoqrUUV7KnL3VJ296ac3p1k3J7ybdz//Z"
             height: "400px"
@@ -22,11 +22,11 @@
     - description: "blues-power-night.md"
       title: "Blues Power Night"
       location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
-      date: 
+      date:
         format: "{{ site.date.begin | date: \"%d\" | plus: 1 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
         time: "19:30"
       acts:
-        - image: 
+        - image:
             file: "meena-cryle.jpg"
             lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAA8ACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP5/v2d/2WNP0/8AZB+Hvxes/hHpfj7xD8QpdX0TxJ4Fs9X1HXPin41tf+E/8IaXp0fhbwPDNbRwaPe+FNYsbto9L8EeLb3U7TXtI8RX3iNUtRbaV8HnuNlVzqeAlm39nUcH7HEU8RzUqFKE6mDxM6tGvUqrm9pGVJVcLOnV/iQxNCVGUYSb/YeHMmhLLpyjlVTMq+Mw1WKh7CtVjTdOvSjDExdFuHslzzhjYYn2KpU/q9WFVOrFx/JDxz8HfFvhjxt4w8NWWoWNvZ+HvFPiDQ7SCTxdpV9JDbaTq13YQRSXunXk2n3jxxW6I11YzS2dwymW1keB0Y/XYXGZfisLhsV7KtP6zQo1+d4GvBy9tTjU5nCVFSg5c13GSTjezSaPhcTgMZhcRXw061KMsPWq0JRhjaUoRlSnKm4xl7Vc0U42jKyurM+4Lr9uHxe/wG0T4caT4r1Sx0S0+Hf/AApuBHs9Zsde03wXoFt4tm8OeHLHX9L8RNBrXhzX/wDhJ7y38WxavpemRT3+uTQ2HhzTtE0+dtU+dhktKpnrzCsqtfEUq8Mbyyq0p4aDqPDUa69nUoqoqlKFF1cOqc5RioSjKrUnUhGl9lhs8lR4eeF5IYelUw8qEKtGMo160lPEVqc6kqcknzVZQp1JTfNKMqb5YxpT9p+cUfibxukca2esapHaKiraxpqDIsduFAgRV88bVSIKoXAwABgYr7dyg23KFNttttwu229W3be5+bTqxlOUnCN3KT1inu2+5//Z"
             height: "600px"
@@ -130,22 +130,23 @@
   title: "rahmenprogramm_title"
   folder: "rahmenprogramm"
   descriptions:
-    main: "rahmenprogramm.md"
+#    main: "rahmenprogramm.md"
+    main: "jamsession.md"
   programs:
     - description: "jamsession.md"
-    - description: "exhibition.md"
-- id: "dates_id"
-  title: "dates_title"
-  folder: "dates"
-  descriptions:
-    main: "dates.md"
-  content: "dates.html"
+#    - description: "exhibition.md"
+#- id: "dates_id"
+#  title: "dates_title"
+#  folder: "dates"
+#  descriptions:
+#    main: "dates.md"
+#  content: "dates.html"
 - id: "tickets_id"
   title: "tickets_title"
   folder: "tickets"
   descriptions:
     main: "tickets.md"
-  content: "tickets.html"
+#  content: "tickets.html"
   tickets:
     - title: "Opening Night"
       price:
@@ -176,40 +177,40 @@
         door: "&mdash;"
       includes:
         - item: "Eintritt zu allen Veranstaltungen"
-- id: "locations_id"
-  title: "locations_title"
-  folder: "locations"
-  descriptions:
-    main: "locations.md"
-  content: "locations.html"
-  maps:
-    coordinates:
-      lat: 48.103936
-      lng: 13.149204
-    zoom: 16
-    mobile-zoom: 15
-    markers:
-      - title: "Stadtsaal Mattighofen"
-        popup:
-          content: "<b>Stadtsaal Mattighofen</b><br>Salzburger Str. 6<br>5230 Mattighofen"
-          state: "closed_on_mobile"
-        coordinates:
-          lat: 48.10099294069689
-          lng: 13.150120644972086
-      - title: "Voglpark Mattighofen"
-        popup:
-          content: "<b>Park der LMS Mattighofen</b><br>Salzburger Str. 8<br>5230 Mattighofen"
-          state: "closed_on_mobile"
-        coordinates:
-          lat: 48.10043407331346
-          lng: 13.15076437511837
-      - title: "Gasthaus Badhaus"
-        popup:
-          content: "<b>Gasthaus Badhaus</b><br>Moosstraße 28<br>5230 Mattighofen"
-          state: "closed_on_mobile"
-        coordinates:
-          lat: 48.101681664753684
-          lng: 13.136926188359597
+#- id: "locations_id"
+#  title: "locations_title"
+#  folder: "locations"
+#  descriptions:
+#    main: "locations.md"
+#  content: "locations.html"
+#  maps:
+#    coordinates:
+#      lat: 48.103936
+#      lng: 13.149204
+#    zoom: 16
+#    mobile-zoom: 15
+#    markers:
+#      - title: "Stadtsaal Mattighofen"
+#        popup:
+#          content: "<b>Stadtsaal Mattighofen</b><br>Salzburger Str. 6<br>5230 Mattighofen"
+#          state: "closed_on_mobile"
+#        coordinates:
+#          lat: 48.10099294069689
+#          lng: 13.150120644972086
+#      - title: "Voglpark Mattighofen"
+#        popup:
+#          content: "<b>Park der LMS Mattighofen</b><br>Salzburger Str. 8<br>5230 Mattighofen"
+#          state: "closed_on_mobile"
+#        coordinates:
+#          lat: 48.10043407331346
+#          lng: 13.15076437511837
+#      - title: "Gasthaus Badhaus"
+#        popup:
+#          content: "<b>Gasthaus Badhaus</b><br>Moosstraße 28<br>5230 Mattighofen"
+#          state: "closed_on_mobile"
+#        coordinates:
+#          lat: 48.101681664753684
+#          lng: 13.136926188359597
 - id: "gallery_id"
   title: "gallery_title"
   folder: "gallery"

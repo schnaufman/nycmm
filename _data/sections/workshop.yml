@@ -58,7 +58,7 @@
             file: "vos_stage.jpg"
             lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP5o9N+Cvh7Q/Beg6hpeh3U/jfStZ/0WTVdZhvPCN/n+2k2azoEtvJcxx3t3caOTHBrGqQHSNHkhurYSziwl8yrhM1p5hNQlgamVVMPWjXq2rUsapclD2c8M03CUHF4h1Pa06FWFVUHBTjzzO/DYjJquX0anssXHO6WJwsqEH7Grl9SnGtialdYlSpxqKqmsGqUYSq0qkHX9pOnLlg9hP2WfCEqLJeeEvipBdyKr3UOjePPAlro8Nw4DTxaVbXME1zb6bHKWSxguJZZ4bURRyyPIrMeOVPMm26OKyp0W26TrYLHzrOm3eDqyhjacZVeW3tJRhCLndqEU0l3rBZW0nWwOZKs0nVVDF5dGiqj+NUYzwk5xpKV1TjOc5KFlKcndv//Z"
             height: "400px"
-            width: "600px"  
+            width: "600px"
     - description: "gospel.md"
       classes:
       - description: "g_singen.md"
@@ -151,15 +151,15 @@
     - title: "Festivalpass für Workshopteilnehmer"
       link: "https://nycmm.kupfticket.at/events/nyc-musikmarathon-2021-workshop/"
       price:
-        regular: "40€"
+        regular: "45€"
       includes:
         - item: "ws_festivalpass_price"
   scholarship:
     headline: "scholarship_title"
     description: "scholarship.md"
-    deadline: 
+    deadline:
       format: "{{ section.scholarship.deadline.date | date: \"%d.%m.%Y\" }}"
-      date: "2021-06-30"
+      date: "2022-06-30"
 - id: "testimonials_id"
   title: "testimonials_title"
   folder: "testimonials"
@@ -179,7 +179,7 @@
   folder: "locations"
   descriptions:
     main: "locations.md"
-  content: "locations.html"
+# content: "locations.html"
   maps:
     coordinates:
       lat: 48.10049
