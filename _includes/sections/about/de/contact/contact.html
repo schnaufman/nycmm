@@ -1,63 +1,47 @@
-<div class="c-section-contact-form-container">
-  <div class="c-section-contact-form-map-container">
-    <div id="gmapsMap"
-      lat="{{ section.maps.coordinates.lat }}"
-      lng="{{ section.maps.coordinates.lng }}"
-      lat-marker="{{ section.maps.marker.coordinates.lat }}"
-      lng-marker="{{ section.maps.marker.coordinates.lng }}"
-      zoom="{{ section.maps.zoom }}"
-      marker-title="Landesmusikschule Mattighofen"
-      marker-center-on-mobile="true"
-      marker-popup-state="always_opened"
-      marker-popup="<b>Landesmusikschule Mattighofen</b><br>Salzburger Str. 8<br>5230 Mattighofen">
+<div class="c-section-contact-form">
+  <h3>Möchtest du mit uns in Kontakt treten? *</h3>
+  <form id="aboutContactFormNetlify" method="POST" netlify-honeypot="bot-field" data-netlify="true" accept-charset="utf-8" class="c-section-contact-form">
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 medium-12 small-12 cell">
+        <label>Name:<br><input type="text" name="name" placeholder="Dein Name" required></label>
+      </div>
     </div>
-  </div>
-
-  <div class="c-section-contact-form">
-    <h3>Möchtest du mit uns in Kontakt treten? *</h3>
-    <form id="aboutContactFormNetlify" method="POST" netlify-honeypot="bot-field" data-netlify="true" accept-charset="utf-8" class="c-section-contact-form">
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 medium-12 small-12 cell">
-          <label>Name:<br><input type="text" name="name" placeholder="Dein Name" required></label>
-        </div>
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 medium-12 small-12 cell">
+        <label>Email:<br><input type="email" name="email" placeholder="Deine Email" required></label>
       </div>
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 medium-12 small-12 cell">
-          <label>Email:<br><input type="email" name="email" placeholder="Deine Email" required></label>
-        </div>
+    </div>
+    <!--<div class="grid-x grid-padding-x">
+      <div class="large-12 medium-12 small-12 cell">
+        <label>Wie hast du uns gefunden?<br><select name="foundUs">
+            <option value="friends" selected>Freunde</option>
+            <option value="search">Suchmaschine</option>
+            <option value="ad">Werbung</option>
+            <option value="other">Andere</option>
+          </select>
+        </label>
       </div>
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 medium-12 small-12 cell">
-          <label>Wie hast du uns gefunden?<br><select name="foundUs">
-              <option value="friends" selected>Freunde</option>
-              <option value="search">Suchmaschine</option>
-              <option value="ad">Werbung</option>
-              <option value="other">Andere</option>
-            </select>
-          </label>
-        </div>
+    </div>-->
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 medium-12 small-12 cell" >
+        <label for="newsletter">Newsletter?<input type="hidden" name="newsletter" value="no" />
+          <input type="checkbox" name="newsletter" value="yes" checked>
+        </label>
       </div>
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 medium-12 small-12 cell" >
-          <label for="newsletter">Newsletter?<input type="hidden" name="newsletter" value="no" />
-            <input type="checkbox" name="newsletter" value="yes" checked>
-          </label>
-        </div>
+    </div>
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 medium-12 small-12 cell">
+        <label>Hinterlasse uns eine Nachricht:<br><textarea name="message" placeholder="Deine Nachricht"></textarea></label>
       </div>
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 medium-12 small-12 cell">
-          <label>Hinterlasse uns eine Nachricht:<br><textarea name="message" placeholder="Deine Nachricht"></textarea></label>
-        </div>
+    </div>
+    <input type="hidden" name="bot-field"/>
+    <input type="hidden" name="subject" value="NYCMM Webseiten Kontaktnachricht" />
+    <div class="grid-x grid-padding-x">
+      <div class="cell">
+        <button type="submit" class="button" name="submit">Abschicken</button>
       </div>
-      <input type="hidden" name="bot-field"/>
-      <input type="hidden" name="subject" value="NYCMM Webseiten Kontaktnachricht" />
-      <div class="grid-x grid-padding-x">
-        <div class="cell">
-          <button type="submit" class="button" name="submit">Abschicken</button>
-        </div>
-      </div>
-    </form>
-  </div>
+    </div>
+  </form>
 </div>
 {% assign privacy = site.pages | where:"language", page.language | where:"ref", "privacy" | first %}
 <p>* Die abgesendeten Daten werden nur zum Zweck der Bearbeitung Ihres Anliegens verarbeitet. Weitere Informationen finden Sie in unserer <a href="{{ privacy.permalink | relative_url }}">Datenschutzerklärung</a>.</p>

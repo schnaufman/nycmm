@@ -40,15 +40,6 @@
 - id: "contact_id"
   folder: "contact"
   title: "contact_title"
-  maps:
-    coordinates:
-      lat: 48.10053
-      lng: 13.15334
-    zoom: 18
-    marker:
-      coordinates:
-        lat: 48.10049
-        lng: 13.15124
   descriptions:
     main: "contact.md"
   content: "contact.html"

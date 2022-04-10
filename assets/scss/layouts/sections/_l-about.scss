@@ -105,72 +105,23 @@
 /**********************/
 /* Contact section    */
 /**********************/
-.c-section-contact-form-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: rem-calc(20);
-}
-
 .c-section-contact-form {
-  width: 90%;
-  margin: 0 auto;
-
+  h3 {
+    text-align: center;
+    padding: rem-calc(20 5 0 5);
+  }
   .cell {
     text-align: left;
   }
-
   textarea {
     height: rem-calc(120);
     resize: none;
   }
-
   label[for="newsletter"] {
-    margin-bottom: rem-calc(7);
-
     > input[type="checkbox"] {
       margin: rem-calc(5);
       vertical-align: bottom;
     }
-  }
-
-  input[type="submit"] {
-    padding: rem-calc(7);
-    border-radius: $global-radius;
-    border: 1px solid #ccc;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  select,
-  textarea {
-    width: 100%;
-    padding: rem-calc(7);
-    border-radius: $global-radius;
-    border: 1px solid #ccc;
-  }
-}
-
-.c-section-contact-form-map-container {
-  height: $map-height-large;
-}
-
-.c-section-contact-form {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: rgba(255, 255, 255, 0.83);
-  z-index: 10;
-  width: 50%;
-
-  h3 {
-    text-align: center;
-    position: relative;
-    padding: rem-calc(20 5 0 5);
-  }
-
-  form {
-    position: relative;
-    width: 100%;
   }
 }
 
