@@ -1,1 +1,1 @@
-##### **Ab {{ act.date.time.begin }} {{ act.title }}**<br>Inspirational Music & Gospelchor sowie NYCMM Workshop Combos & Songwriter
+##### **{{ act.date.time.begin }} {{ act.title }}**<br>aller WorkshopteilnehmerInnen mit Combos & Ensembles, Songwriter & VokalistInnen 

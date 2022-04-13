@@ -1,1 +1,1 @@
-##### **Ab {{ act.date.time.begin }} {{ act.title }}**<br>“TRIO-Lajtman/Waldert/Lehner” (HRV/AUT/DEU) mit Buffet des Integrationskochclubs Mattighofen
+##### **Ab {{ act.date.time.begin }} {{ act.title }}**<br>mit den „Young Music Lions“ & VokalistInnen, ein Jazz-Trio bestehend aus geförderten talentieren NachwuchmusikerInnen und TeilnehmerInnen des NYCMM-Gesangsworkshops<br>Essen und Getränke vor Ort!

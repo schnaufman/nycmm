@@ -3,94 +3,84 @@
   folder: "lineup"
   descriptions:
     main: "lineup.md"
- # content: "lineup.html"
+  content: "lineup.html"
   concerts:
-    - description: "opening-night.md"
-      title: "Opening Night - DANIELLE LOUS LIVE \"From Amsterdam with Love\""
+    - title: "Opening Night"
       location: "Stadtsaal Mattighofen"
       date:
         format: "{{ site.date.begin | date: \"%d\" }}.{{ site.date.begin | date: \"%m.%Y\" }}"
         time: "19:30"
+      description: "opening-night.md"
       acts:
         - image:
             file: "opening-night.jpg"
-            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APxY/ZT/AGhf2h/g1+yhr2meC77wh4T8ODxZrHjSysdJHjEeJ57u/wBS0Dwr4htvEHiXSPGfhoSWFx4S8NOltpNjFcQyytaSC/029e4ki4M9ms4zGjj8bWxVef1JYFwq1aNaj7OE8RUhOFOvg60vaRnX5G5TVP2UVTdKUV73blb/ALMo1MHhoU8PH6y8Tz04ThPmcKUOWXsq8IWapt3UXOM5ykp3enrGm/taeIfGOnWHi4/FbTNJPimytfEZ0qfR/ipPPph1yCPUzp808OvXMM0tmbr7NJLFcTxSPGXjmlUh29PDcOZQsPh1Up801QpKcr1FzTVOPNK0PZwV3d2hThFfZhFWSVbPcwVaqozgoqrUUV7KnL3VJ296ac3p1k3J7ybdz//Z"
+            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APy9/wCCfn7afxA0nVtV+GXg+UaLaa34dsbrSzop1aFdMl8HeHtelaFph4g8PHTobq/f7TfahaWus3960OkW01vc2+niWL5POcppSzPB4uEpVMJRliKcqHt5yhCnj8RUxdV2xOGqVK1X6w6dSmnKnDDw56dGpyycJ/VYHOpVMBiMLUpwpYqpHDSVeOFoxnVq4LDUcDTi3h68KeHoRw8aqlyRqSxNT2dSvTc/3lP9PG/bI1aFjDcrqUtxETFPKLzxQwkmjOyWQNN46klYO4Zg0sjyHOXdmyTzf6tU5e9Go4xeqj7LAe6nql/uHRaG6zyqtG22t254h3fV3+sdWf/Z"
             height: "400px"
             width: "600px"
           description: "opening-night-desc.md"
           title: "Opening Night"
-    - description: "blues-power-night.md"
-      title: "Blues Power Night"
+    - title: "Blues Power Night"
       location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
       date:
         format: "{{ site.date.begin | date: \"%d\" | plus: 1 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
         time: "19:30"
+      description: "blues-night.md"
       acts:
         - image:
-            file: "meena-cryle.jpg"
-            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAA8ACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP5/v2d/2WNP0/8AZB+Hvxes/hHpfj7xD8QpdX0TxJ4Fs9X1HXPin41tf+E/8IaXp0fhbwPDNbRwaPe+FNYsbto9L8EeLb3U7TXtI8RX3iNUtRbaV8HnuNlVzqeAlm39nUcH7HEU8RzUqFKE6mDxM6tGvUqrm9pGVJVcLOnV/iQxNCVGUYSb/YeHMmhLLpyjlVTMq+Mw1WKh7CtVjTdOvSjDExdFuHslzzhjYYn2KpU/q9WFVOrFx/JDxz8HfFvhjxt4w8NWWoWNvZ+HvFPiDQ7SCTxdpV9JDbaTq13YQRSXunXk2n3jxxW6I11YzS2dwymW1keB0Y/XYXGZfisLhsV7KtP6zQo1+d4GvBy9tTjU5nCVFSg5c13GSTjezSaPhcTgMZhcRXw061KMsPWq0JRhjaUoRlSnKm4xl7Vc0U42jKyurM+4Lr9uHxe/wG0T4caT4r1Sx0S0+Hf/AApuBHs9Zsde03wXoFt4tm8OeHLHX9L8RNBrXhzX/wDhJ7y38WxavpemRT3+uTQ2HhzTtE0+dtU+dhktKpnrzCsqtfEUq8Mbyyq0p4aDqPDUa69nUoqoqlKFF1cOqc5RioSjKrUnUhGl9lhs8lR4eeF5IYelUw8qEKtGMo160lPEVqc6kqcknzVZQp1JTfNKMqb5YxpT9p+cUfibxukca2esapHaKiraxpqDIsduFAgRV88bVSIKoXAwABgYr7dyg23KFNttttwu229W3be5+bTqxlOUnCN3KT1inu2+5//Z"
-            height: "600px"
-            width: "400px"
-          description: "meena-cryle.md"
-          title: "Meena Cryle & The Chris Fillmore Band"
-    - description: "austrian-music-night.md"
-      title: "Austrian Music Remix Night"
-      acts-in-row: "2"
+            file: "kai-strauss.jpg"
+            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APyOuf8AgnV4/wBfu/2TfAF9cfDG88G/GD4bx/H2ODw3p8h+JfhvwF4cutQQNq+t+JNO0yxurya0n1KPT/DOi+MZtL1CZbaLV4dHWDT9RsPxDH5nhcDln1vDOvHMJ4d06t21RqVcRKf1ipKnCUYVKkJ4dwpTlyuELcrfPI/vrLeIKuceJGYT4ijTxXBfDma1sJlGFpqUZ4bDZdONLJcDQlJVcRhMNiVWw+IzOUMPWk5uu40pOFKnLzPVf2xrjQdU1LQvD/gTw42g6Lf3mk6I09paLO2kadcSWemtMs1jPKsps4YTIJZ5pA+Q8sjZc/I0eGadalSrVcdXVWrThVqJQTtUqRU5q6nZ2k3qtGf1zX+k94nZdWrZfg+GuHJYPA1amDwslVjaWGws3QoNc1OjKzpQi/epUpd6cH7q/wD/2Q=="
+            height: "400px"
+            width: "600px"
+          description: "kai-strauss.md"
+          title: "Kai Strauss & The Electric Blues Allstars"
+    - title: "Big Band Night"
       location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
       date:
         format: "{{ site.date.begin | date: \"%d\" | plus: 2 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-        time: "18:30"
+        time: "19:00"
+      description: "bigband-night.md"
       acts:
         - image:
-            file: "black-stone-brass.jpg"
-            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APSLRv8AgoJe+LLOzf4n+LNF0yy8PancaveWj/CI299fQfE23u57mOx8q9uYBffD/wAQaP4dthC0ceif2Pf3ltbXV7JFDqn86Ph7hfDYaVZZZhpyniqNJ0aixTqUqNWisNCVKvGsk3SqupipqScqkpKDbikofrsM2zKtWVOVZRhGnOo5xjTXtXGpScouDoycL0V7OElJ8k3Kpbms39ifCL4e/tjTfCf4YTeKvjj4hfxRL8PPBUviR20f4YX7Pr0nhvTH1hmvptGuZr1m1A3BN3LcTyXBPnPNKzl28vFZLkH1rE+xy6jGj9Yreyi6+NTVP2kvZp/vFqo2Wx30cbjpUaUqlde0lThKpy0qSjzuKcuVcui5r2XRH//Z"
+            file: "uajo.jpg"
+            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP5MfD/jf4C6D4N0ueX4GfC3U5rvSbqW6OuHxbd6vLqAivvDVxe2lzDpkml20UWoQxajZQeRHskgkuZleS6WC1+TqvEOrGk8bioS50oyTuppXqJNqpCaXI3B8zk7qLvZWf6XhcqtgamKWUYOrh8PRUq8p1aSqwcpOimpSpS5pX5dYUrNxc3703NfKviPxh4DHiHXhonwx8I/2KNZ1QaR9vttce+/ssX04sPtjWviKwtmu/snlfaGt7GzgM28w2lvGVhT16dGu6dPmxVfm5I83LNW5uVXteEna+15Sdt5N6nytWMPaVPZ4HDOnzz9m5RSk4cz5XJRlGKfLa/LGKvtFLQ//9k="
             height: "400px"
             width: "600px"
-          description: "black-stone-brass.md"
-          title: "Black Stone Brass"
-        - image:
-            file: "kollegium-kalksburg.jpg"
-            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APf/ANrnwd+0T8RfinrX7PPjfwvD4/8A2fb34gT+KYdM1LxZYeB10y58MeFNd1q71OLxB4Q8Ry+NU03XPDOrLfPYQac+rz+GE8X+HtaurzWdU0OwX8f4BwWUUOGMrxODoYeeIr4ZSxeKlhKftq+KbSxEZOdKMnSo4mlOFNO/N7OlVvObnVl+k53UxVTNMR7SdeEFK1KnHETiqVGN4xjFwno6lKUeay+F1Ie7Fxgvx31T/gmP+1eup6ivw+/bZ+LWk+AhfXY8EaVdfGr4r29zpnhAXEg8NafcQW8b28E9no32K2lhgd4Y5I2SJmRVJ+slhMhqSlUq8M5TVqzk51assvy6UqlST5p1JSlScpSnJuTcm5Nu7dzzY1c/pRjSw/EGbUaFNKnRpQzPGwhSpQXLTpxhGooxjCCUYxilGKSSVkf/2Q=="
-            height: "400px"
-            width: "600px"
-          description: "kollegium-kalksburg.md"
-          title: "Kollegium Kalksburg"
-    - description: "jazz-night.md"
-      title: "Jazz, Soul, Funk & Gospel Night"
-      acts-in-row: "3"
+          description: "uajo.md"
+          title: "Upper Austrian Jazz Orchestra"
+    - title: "Familienmusiktag"
       location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
       date:
         format: "{{ site.date.begin | date: \"%d\" | plus: 3 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-        time: "18:30"
+        time: "11:00"
+      description: "familienmusiktag.md"
       acts:
         - image:
-            file: "herb-hermann.jpg"
-            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAA8ACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP539O+CuvxxeEl1GC10ufxfcy2lhb6tM2ly2Rh1RNG+0a0b+GBNOspbxz5d07vCIorhpHjaGVV+elON691P/Z4t1Lw6OPtOWPVtQautFrFddPpoYStbB2lQvmEnCjeqk4ONb2HNVvaNODne0pNq0ZPRxaMDVfAE+kanqOk38cEV9pd/eadeRxz21zHHdWVxJbXCR3NtJLb3CJNE6rPBLLDKoEkUjoysdIQ54RnFtxnGMovlavGSTWj1Wj2Zy1ac6NWpSqWVSlUnTmk1JKcJOMrSTakrp6ptPdOxz/x+/wCCkn7Vf7Sfw88M/DX43+JtC8caN4T8QQeI9KP/AAjOmaFfw3Vpb6ha2ME2q6BJpV9qVnanVtSuPseqSXcEt3LbTyh2sLH7LzwxOKcuZYys4KTlFVI0qjXNvBynRnOUGvdTcnNR+3zHoVcPRfxYekpOKu6XNST7Siqc4qLT96yioN29w+Uj8QfErEsul+GkDEsF/wCJsdoPIXP2w9Bx1PTqetdCx2N/6DKv/grDL8PZaHO8Bhf+geP/AINr/wDyZ//Z"
-            height: "600px"
-            width: "400px"
-          description: "herb-hermann.md"
-          title: "Herb Berger & Hermann Linecker Duo"
-        - image:
-            file: "ike-sturm.jpg"
-            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAoACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP5zG/ba+OGsfEvxJ4g8E/DPwtrXwx+AHj258Ny+ERqcunxeOZvHPjSWy8I2kGh3+owX+ueNw/h/Wde8LxeGtB1K90GDT7/xDqOjJovh/VryH5qhDB4PA0sXiatPA062FpV6sKlShTpYJ1IqrUaqSVOCoU2/Z8nuqWqUpSlFL03RxWNnUwuGoTxtbD160I4mnTr1a+M5WoQhKKdV87UJVOaz5I80p8qUpGzrH/BXO60nVtU0rVv2eLrS9V0zUb3T9T0y/wBRe2vtO1CyuZba8sLy3mtopoLu0uY5Le4hlijkimjdHjRlKjuhh4VYQqUsTRqUqkIzp1IyUo1ITSlCcZRbi4yi1JNNpp3TaPNnSrU5yp1ITp1ISlCpTknGUJxbjKEoyheMoyTi09U1Z6n59a9retS6hqdpLq+qSWvhm2+J6eG7aS/u3t/D6ahJp+pX6aJC0pj0pb7UdT1K/vFsFtxc3uoX11MHnu55JPk81Sq5Xk9OqlVp1MzySnUp1PfhUhGpjJRhOErxlBShCSjJNKUYtK8Vb9D4Tbp4zN6lNuFSlkXE06U4PlnTm4YKDlTkrOEnCUoOUWm4ylG9m0fJt7eXc97dzz3VzNNNdXEs00s8skssskrvJJJI7F3kdyWd2JZmJZiSSa+zw9GlTw9CnTpU4QhRpQhCEIxhCEYRjGMYxSUYxSSjFJJJJJWPksRUqTxFec5znOdarKc5ScpSlKcnKUpNtylJtttttt3ep//Z"
-            height: "600px"
-            width: "400px"
-          description: "ike-sturm.md"
-          title: "New York Bassist Ike Sturm & Band"
+            file: "brennholz-rocks.jpg"
+            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APizxn+yN4EtPD1t4p8Y/EfxfrGrX9rfWf8Awhl/o1klpeXF9p/iGxbw94d1vRL63+y3t9aWk0thNrn2HRLW6SxS51Oztrq9Sy/EclrYeec4TB5NOhWqYqtilJVMPVwqozw1CnVqyqYhqU03RXI1Ro1068qbU3TdWpDLC8KZZg8FLM/aYmUKsZTxFGcKU6lLmxM6VWorVoR5IReEtCFWpUqLE6uLpVVH8+NR/Zm/Y+XUL5dO8P3V3p63l0LG61Hxr8RLDULmzE7i1uL6xtfDepW1neTQbJLq0t9Rv4LednhivbqNFnk+pxGe4qjiK9GjlWY4ilSrVaVLESx2V0pV6dOcowrSp2Xs5VYpTcLe45cvQ+kpcMValKnUVDDJVKcJ2VbENLnipWTdVNpXsm0nbdJn/9k="
+            height: "400px"
+            width: "600px"
+          description: "brennholz-rocks.md"
+    - title: "Jazz, Soul & Funk Night"
+      location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
+      date:
+        format: "{{ site.date.begin | date: \"%d\" | plus: 3 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
+        time: "19:00"
+      description: "jazz-night.md"
+      acts:
         - image:
             file: "chanda-rule.jpg"
-            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAA8ACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4//hF+yt4rt/gl4u+M3jz4Wa7q3hvX/AviTUfh5qenQvqt5a3lnp19c6H4iv8ARNPknubfw7fanpN9p73N/Bbebbbr1ZLaB9Mu7v6+GS5jU4dxE8sw0J47DZzl6z6ao0cRiMuyKtlUM7pVK/t6UqeWxr4CnXx8KsK1DF4jDzwspSWExFGGM53nvDOR5pgsu4nxkcDjuJMmxlfgyhiKns4ZxmFHNaORunhKcKiqYyu8zxeFwVOk6VWF5YipCLlQqVcP8bQ+EJ54Yp01LTwk0Ucqh2lVwsiB1DrsO1gCAy5ODkZNaRyKnKMZPHUYtxTcXSr3TavZ2VrrZ20vsZPFzTa+r1HZtXU4Wfmtdmf0XfGLw78c/wBmPwanhz4kaNF8MPAn7Qfwr1S/8D/Erw/4m0TxT4W1zRoPBM1zZ3eleA9DtF8Y+DE1fRbNrKe11iFtUml1mDUdTvY7zSJoL76Sjm+f8Pz444Z4f4gy3NspzTGY+lxLmDyOthMVmeNzGOIjmNeEswxNfEyqVq1SeAwjj/Z2Cp0I0akMBl9NKGH5+KuCPDvxL4i8P/EHi3IMzweecFrLcRwk8NnVWrl+Vf2dLC18qovLsHTy7CTwWGnh6eYYlV8Pj8wq1fb0XjMVGbhiPwEt7OG3gggkYvJBDHC7xuRG7xoqMyBolYIxUldyq20jIB4rellNedKnNONp04SV7J2lFNXSqNJ66pNq+zCdZRnKNr8spK6ejs2rq6Ts+l0n3SZ//9k="
-            height: "600px"
-            width: "400px"
+            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APqP4lftVfEj4X6j8Zdf+Cvj7Q/EHws0vxn8M5vDGg+PPCmteJdSgsfGnjr4R+FvGVtcaxrN7pGu22iR+JPGfibVvC1jZ3aSaf4duZfCr2VvaaV4ZntvBp+IGbUKkZY3MsW1P65iJty9q6nsqOYY32cYujUjQhCdNUl7NKXslGkm4U6bh7dXhPhypRTpYHDRjThTw9qdGdJ0pc2Fwkq1SUJwniqjpQlXfPKUHiJzq8inUqqp+SZ/4KJftjw/uZPEHhW5ki/dyXC+CYNtw6fK0y+b8QUlxKwLjzESTDfOqtkDgqca53UnOpDiLNKcJzlONNYif7uMm3GH+5y+BNR3e273Pfo5Z4aU6VKnW4Yq1K0KcIVakaWHtUqxio1Jq+Ji7SmnJe7HR7LY/wD/2Q=="
+            height: "400px"
+            width: "600px"
           description: "chanda-rule.md"
-          title: "Chanda Rule & Danielle Lous mit Band"
-    - description: "musical-sunday.md"
-      title: "A Musical (SUN)Day In The Park"
-      acts-in-row: "3"
+          title: "Chanda Rule & The Sweet Emma Band"
+    - title: "A Musical Day In The Park"
+      acts-in-row: "2"
       location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
       date:
         format: "{{ site.date.begin | date: \"%d\" | plus: 4 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
         time: "11:00"
+      description: "musical-sunday.md"
       acts:
         - image:
             file: "jazzbrunch.jpg"
@@ -104,20 +94,8 @@
             time:
               begin: "11:00"
         - image:
-            file: "familienmusiktag.jpg"
-            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APizxn+yN4EtPD1t4p8Y/EfxfrGrX9rfWf8Awhl/o1klpeXF9p/iGxbw94d1vRL63+y3t9aWk0thNrn2HRLW6SxS51Oztrq9Sy/EclrYeec4TB5NOhWqYqtilJVMPVwqozw1CnVqyqYhqU03RXI1Ro1068qbU3TdWpDLC8KZZg8FLM/aYmUKsZTxFGcKU6lLmxM6VWorVoR5IReEtCFWpUqLE6uLpVVH8+NR/Zm/Y+XUL5dO8P3V3p63l0LG61Hxr8RLDULmzE7i1uL6xtfDepW1neTQbJLq0t9Rv4LednhivbqNFnk+pxGe4qjiK9GjlWY4ilSrVaVLESx2V0pV6dOcowrSp2Xs5VYpTcLe45cvQ+kpcMValKnUVDDJVKcJ2VbENLnipWTdVNpXsm0nbdJn/9k="
-            height: "400px"
-            width: "600px"
-          description: "familienmusiktag.md"
-          title: "Familienmusiktag"
-          date:
-            format: "{{ site.date.begin | date: \"%d\" | plus: 4 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-            time:
-              begin: "13:30"
-              end: "16:00"
-        - image:
             file: "abschlusskonzert.jpg"
-            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APy1uP2QPFdnLplj4VsNT1e1m8Eabocus+I/FXh8W1l4jsx4m8M3Emn6MLCe6nEWkpeWS2pu9Kge60JL4+ILjzbATebWyKu8BjKdCrTwcv7QoufKlKpi6dXD4bEYik6kKcVQVT2saahecXCXNKfM5Qh4uNybJqUoRpvE1JYukpVsS+SMYVXmOKw9SVOlyKU6Sw9KNSNOTpp1VJtNuMjyDxDpGqWGv65Y+f4ds/sWsanafZJPC9pJJa/Zr2eH7O8kM9xE7wbPLZ4p542ZSyTSKQ7ZYvg+VTFYmphc7zqGFniK08NB5niU40JVJOjFqKpxTjTcVaNOCVtIRXurmlk1CpJzePxNNzbn7NU01T5nfkTdR3Ub8qd3dK92f//Z"
+            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAgACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4k9U1H4P6z/Zn2TwboHgttH8LQafrp03xPqOt2/iLxHp9hODr9qmtXt9faeb8ixgudPsf7Rs59VN3ewRJYTFtP+XlTzuD9pDE1cRCviZunTlRhTnh6Lr/DPlSTUYSk4uo6TVOKjd1IxjP6SnPJ6i9nVw9OhVw9CPNVjUlKlXqKhFaf3nOCv7OFZurOcny05ynD58NhPMTMjafGkp81UOqaXGUWT5lQxvdo8ZUEAo6IyEbWVSCB9GqkY+6/atx91v2NZ3a0buoNO+902numzwPZyl7y9klLVL21FWT1Ss5pq21mk11R/9k="
             height: "400px"
             width: "600px"
           description: "abschlusskonzert.md"
@@ -125,16 +103,15 @@
           date:
             format: "{{ site.date.begin | date: \"%d\" | plus: 4 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
             time:
-              begin: "16:00"
+              begin: "17:00"
 - id: "rahmenprogramm_id"
   title: "rahmenprogramm_title"
   folder: "rahmenprogramm"
   descriptions:
-#    main: "rahmenprogramm.md"
-    main: "jamsession.md"
+    main: "rahmenprogramm.md"
   programs:
     - description: "jamsession.md"
-#    - description: "exhibition.md"
+    - description: "exhibition.md"
 #- id: "dates_id"
 #  title: "dates_title"
 #  folder: "dates"
@@ -146,7 +123,7 @@
   folder: "tickets"
   descriptions:
     main: "tickets.md"
-#  content: "tickets.html"
+  content: "tickets.html"
   tickets:
     - title: "Opening Night"
       price:
@@ -158,17 +135,20 @@
         regular: "25€"
         discount: "20€"
         door: "27€"
-    - title: "Austrian Music Remix Night"
+    - title: "Big Band Night"
       price:
         regular: "27€"
         discount: "22€"
         door: "30€"
-    - title: "Jazz, Soul, Funk & Gospel Night"
+    - title: "Familienmusiktag"
+      price:
+        regular: "freiwillige Spenden"
+    - title: "Jazz, Soul, & Funk Night"
       price:
         regular: "27€"
         discount: "22€"
         door: "30€"
-    - title: "A Musical (SUN)Day In The Park"
+    - title: "A Musical Day In The Park"
       price:
         regular: "freiwillige Spenden"
     - title: "Festivalpass"

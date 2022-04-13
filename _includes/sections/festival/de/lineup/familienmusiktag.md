@@ -1,2 +1,2 @@
-##### **{{ act.date.time.begin }} - {{ act.date.time.end }} {{ act.title }}**<br>Musik-Spielstationen und Mitmachkonzert für die ganze Familie mit „Brennholz Rocks“
-##### <a target="_blank" rel="noopener noreferrer" href="http://www.brennholz.rocks/">Website Brennholz Rocks</a>
+### {{ concert.title }}
+#### Datum: {{ concert.date.format | flatify }}, Beginn: {{ concert.date.time }}<br>Ort: {{ concert.location }}
