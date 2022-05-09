@@ -1,1 +1,0 @@
-##### Entdecke die Einzigartigkeit der eigenen Stimme mit Körper, Geist & Seele und unternimm eine Reise mit musikalischer Intention und Leichtigkeit

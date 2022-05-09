@@ -1,1 +1,0 @@
-##### Durch die geteilte musikalische Kraft der Gospelmusik werden neue Bekannt- und Freundschaften geschlossen

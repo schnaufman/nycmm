@@ -1,4 +1,8 @@
-## **2 Workshops zum Auswählen für SängerInnen**
+## **Workshops für SängerInnen**
+
+### **Dein Coaching-Team:**
+##### Die NYCMM-Gesangsabteilung besteht aus den Vokal-und InstrumentaldozentInnen Danielle Lous (Your Voice on Stage), Chanda Rule (Just Sing! A Cappella Ensemble) und Christian Wegscheider (The Solo Singer & Songwriter).
+##### Am Nachmittag gibt es die Möglichkeit bei allen Lehrenden der Gesangsabteilung Unterricht zu nehmen.
 
 ### **Your Voice on Stage Workshop**
 ##### Erreiche den nächsten Level an Stimm-und Ausdruckskraft, festige den individuellen Klang der eigenen Stimme und rücke Herz und Seele ins Zentrum der Musik durch effizientes, praxisbezogenes und ehrliches „Coaching“.
@@ -9,4 +13,6 @@
 * ##### Analysieren und perfektionieren des eigenen Repertoirs
 * ##### Effiziente und gut klingende Mikrofontechnik
 * ##### Lieder ausdrucksstark singen
-* ##### Aufnahmetechnik-wie bringe ich meine beste Stimme auf Tonträger
+* ##### Aufnahmetechnik-wie bringe ich meine beste Stimme auf Tonträger 
+
+##### **Die Workshops können während der [Online-Anmeldung](/workshop/#tickets) ausgesucht werden**

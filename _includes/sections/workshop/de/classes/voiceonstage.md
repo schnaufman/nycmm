@@ -1,3 +1,3 @@
 ### Workshops für VokalistInnen
 #### Workshop 1 - Your Voice On Stage
-##### Für alle, die gerne als LeadsängerIn auf der Bühne stehen, eigene Songs ausprobieren und ihre Bühnenpräsenz steigern wollen
+##### In diesem Workshop geht es um deinen Auftritt auf der Bühne und alles was so dazugehört, wie zum Beispiel Gesangs-und Mikrofontechnik,  Einlernen neuer Songs, mentale Vorbereitung und deine Bühnenpräsenz.  „Your Voice on stage“ gibt dir alle wichtigen Behelfsmittel, um deine Songs auf der Bühne so „rüberzubringen“, wie du es dir in deinen kühnsten Träumen vorstellst!
