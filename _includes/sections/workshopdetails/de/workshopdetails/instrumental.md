@@ -9,7 +9,7 @@
 ##### **COMBOS** (Leicht bis Fortgeschritten)
 ##### Die Combos werden gemäß dem Level der WorkshopteilnehmerInnen bestmöglich zusammengestellt und reichen von Funk/Rock, Fusion, Latin über Be-Bop, Modal Jazz, bis zu einem Gospel/Vocal Ensemble und Contemporary Music Ensemble.
 
-##### **MUSICIANS OPEN TALKS**
+##### **MUSICIANS TALK**
 ##### Musicians Open Talks sind eine Reihe von Mini-Masterclasses mit verschiedenen DozentInnen in der unterschiedlichste Bereiche, wie zum Beispiel Song Writing, Komposition, Arrangement, Business of Music, Listening Skills, Improvisation, u.v.m.  abgedeckt werden.
 
 ##### **Alle InstrumentalistInnen können an diesen Modulen teilnehmen.**

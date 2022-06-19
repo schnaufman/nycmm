@@ -41,6 +41,8 @@ de:
     # workshopdetails
     dailyroutine_id: "tagesablauf"
     dailyroutine_title: "Tagesablauf"
+    accommodations_id: "unterkuenfte"
+    accommodations_title: "Unterkünfte"
     workshopdetails_id: "workshopdetails"
     workshopdetails_title: "Workshopdetails"
     faq_id: "faq"

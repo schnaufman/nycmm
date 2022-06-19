@@ -1,5 +1,5 @@
-#### Beginn: Mittwoch, 17. August 2021 - 9.00 Uhr
-#### Ende: Sonntag, 21. August 2021
+#### Beginn: Mittwoch, 17. August 2022 - 9.00 Uhr
+#### Ende: Sonntag, 21. August 2022 - ca. 19:30 Uhr
 
 ##### Morgenmeditation / Yoga: 9.00 - 9.30 Uhr
 ##### Workshopdauer: tägl. 9.30 - 17.30 Uhr

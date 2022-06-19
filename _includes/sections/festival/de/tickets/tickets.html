@@ -8,7 +8,7 @@
             {% if ticket.price.discount %}
               <h2 class="c-section-tickets-ticket-price">{{ticket.price.regular}}<span>&nbsp;/&nbsp;{{ticket.price.discount}}&nbsp;*</span></h2>
             {% else %}
-            <h2 class="c-section-tickets-ticket-price">{{ticket.price.regular}}</h2>
+              <h2 class="c-section-tickets-ticket-price">{{ticket.price.regular}}</h2>
             {% endif %}
             {% if ticket.price.door %}
               <h5 class="c-section-tickets-ticket-door-price">Abendkasse: {{ticket.price.door}}</h5>
@@ -17,7 +17,7 @@
           <div class="c-section-tickets-ticket-description">
             <ul>
               {% for include in ticket.includes %}
-              <li><i class="ion-md-checkbox-outline"></i>{{include.item}}</li>
+                <li><i class="ion-md-checkbox-outline"></i>{{include.item}}</li>
               {% endfor %}
             </ul>
           </div>
@@ -25,5 +25,5 @@
       {% endfor %}
     </div>
   </div>
-  <p class="c-section-tickets-info">*&nbsp;Ermäßigter Eintritt für Schüler/Studenten/Jugendliche bis zum vollendeten 19. Lebensjahr.</p>
+  <p class="c-section-tickets-info">*&nbsp;Ermäßigter Eintritt für Schüler/Studenten/Jugendliche bis zum vollendeten 19. Lebensjahr.<br>Freier Eintritt für Kinder und Jugendliche unter 14 Jahren</p>
 </div>

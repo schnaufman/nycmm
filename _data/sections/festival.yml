@@ -9,7 +9,7 @@
       location: "Stadtsaal Mattighofen"
       date:
         format: "{{ site.date.begin | date: \"%d\" }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-        time: "19:30"
+        time: "19:30, Einlass: 19:00"
       description: "opening-night.md"
       acts:
         - title: "Opening Night"
@@ -23,7 +23,7 @@
       location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
       date:
         format: "{{ site.date.begin | date: \"%d\" | plus: 1 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-        time: "19:30"
+        time: "19:30, Einlass: 19:00"
       description: "blues-night.md"
       acts:
         - title: "Kai Strauss & The Electric Blues Allstars"
@@ -38,7 +38,7 @@
       location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
       date:
         format: "{{ site.date.begin | date: \"%d\" | plus: 2 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-        time: "19:00"
+        time: "18:30"
       description: "bigband-night.md"
       acts:
         - title: "Oberösterreichisches Jugendjazzorchester"
@@ -59,7 +59,7 @@
       location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
       date:
         format: "{{ site.date.begin | date: \"%d\" | plus: 3 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-        time: "11:00"
+        time: "11:00, Einlass: 10:30"
       description: "familienmusiktag.md"
       acts:
         - description: "brennholz-rocks.md"
@@ -73,7 +73,7 @@
       location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
       date:
         format: "{{ site.date.begin | date: \"%d\" | plus: 3 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-        time: "19:00"
+        time: "19:00, Einlass: 18:30"
       description: "jazz-night.md"
       acts:
         - title: "JAZZBABY!"
@@ -95,7 +95,7 @@
       location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
       date:
         format: "{{ site.date.begin | date: \"%d\" | plus: 4 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-        time: "11:00"
+        time: "11:00, Einlass: 10:30"
       description: "musical-sunday.md"
       acts:
         - title: "Jazzbrunch"
@@ -173,11 +173,11 @@
         door: "&mdash;"
       includes:
         - item: "Eintritt zu allen Veranstaltungen"
-#- id: "locations_id"
-#  title: "locations_title"
-#  folder: "locations"
-#  descriptions:
-#    main: "locations.md"
+- id: "locations_id"
+  title: "locations_title"
+  folder: "locations"
+  descriptions:
+    main: "locations.md"
 #  content: "locations.html"
 #  maps:
 #    coordinates:
@@ -214,12 +214,19 @@
     main: "gallery.md"
   content: "gallery.html"
   images:
-    - image: "/assets/img/locations/landesmusikschule.jpg"
-      title: "Landesmusikschule Mattighofen"
-    - image: "/assets/img/locations/schloss_mattighofen_culturessence.jpg"
-      title: "Gernot Bernroiders Culturessence im Schloss Mattighofen"
-    - image: "/assets/img/locations/schloss_mattighofen_prim.jpg"
-      title: "Prim im Schloss Mattighofen"
-    - image: "/assets/img/locations/schloss_mattighofen.jpg"
-      title: "Das Schloss Mattighofen"
-
+    - image: "/assets/img/gallery/KollegiumKalksburg.jpg"
+      title: "Kollegium Kalksburg bei der Austrian Music Night"
+    - image: "/assets/img/gallery/Voglpark.jpg"
+      title: "Konzert im Voglpark"
+    - image: "/assets/img/gallery/BrennholzRocks.jpg"
+      title: "Brennholz.Rocks beim Familienmusiktag"
+    - image: "/assets/img/gallery/Berger_Linecker.jpg"
+      title: "Herb Berger & Hermann Linecker bei der Jazz Night"
+    - image: "/assets/img/gallery/Chanda.jpg"
+      title: "Chanda Rule im Voglpark"
+    - image: "/assets/img/gallery/Ike_Gernot.jpg"
+      title: "Ike Sturm und Gernot Bernroider bei der Jazz, Soul & Gospel Night"
+    - image: "/assets/img/gallery/Birgitta_Flick.jpg"
+      title: "Saxofonistin Birgitta Flick aus Berlin"
+    - image: "/assets/img/gallery/Abschlusskonzert.jpg"
+      title: "Abschlusskonzert der Teilnehmer"
