@@ -9,7 +9,7 @@
       location: "Stadtsaal Mattighofen"
       date:
         format: "{{ site.date.begin | date: \"%d\" }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-        time: "19:30, Einlass: 19:00"
+        time: "19:30 Uhr, Einlass: 19:00 Uhr"
       description: "opening-night.md"
       acts:
         - title: "Opening Night"
@@ -23,7 +23,7 @@
       location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
       date:
         format: "{{ site.date.begin | date: \"%d\" | plus: 1 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-        time: "19:30, Einlass: 19:00"
+        time: "19:30 Uhr, Einlass: 19:00 Uhr"
       description: "blues-night.md"
       acts:
         - title: "Kai Strauss & The Electric Blues Allstars"
@@ -38,7 +38,7 @@
       location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
       date:
         format: "{{ site.date.begin | date: \"%d\" | plus: 2 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-        time: "18:30"
+        time: "19:00 Uhr, Einlass:18:30 Uhr"
       description: "bigband-night.md"
       acts:
         - title: "Oberösterreichisches Jugendjazzorchester"
@@ -59,7 +59,7 @@
       location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
       date:
         format: "{{ site.date.begin | date: \"%d\" | plus: 3 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-        time: "11:00, Einlass: 10:30"
+        time: "11:00 Uhr, Einlass: 10:30 Uhr"
       description: "familienmusiktag.md"
       acts:
         - description: "brennholz-rocks.md"
@@ -73,7 +73,7 @@
       location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
       date:
         format: "{{ site.date.begin | date: \"%d\" | plus: 3 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-        time: "19:00, Einlass: 18:30"
+        time: "19:00 Uhr, Einlass: 18:30 Uhr"
       description: "jazz-night.md"
       acts:
         - title: "JAZZBABY!"
@@ -95,7 +95,7 @@
       location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
       date:
         format: "{{ site.date.begin | date: \"%d\" | plus: 4 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-        time: "11:00, Einlass: 10:30"
+        time: "11:00 Uhr, Einlass: 10:30 Uhr"
       description: "musical-sunday.md"
       acts:
         - title: "Jazzbrunch"
