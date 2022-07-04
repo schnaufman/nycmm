@@ -13,7 +13,7 @@ order: 6
     {% for image in site.data.partner.images %}
       <div class="cell">
         <a href="{{ image.link }}" target="_blank"> 
-          <img class="lazyload" src="{{image.lqip}}" data-src="/assets/img/partner/{{ image.file }}" alt="" width="300" height="90">
+          <img class="lazyload" src="{{image.lqip}}" data-src="/assets/img/partner/{{ image.file }}" alt="" width="{{image.width}}" height="{{image.height}}">
         </a>
       </div>
     {% endfor %}
