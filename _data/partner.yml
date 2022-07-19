@@ -52,7 +52,7 @@ images:
     link: "https://www.keinesorgen.at/"
     lqip: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABOSURBVAXBQQqAIBBA0Z8EtpjA1Sz0CN3/Ni5y7U4QIXPqvS3n/JVSuICnd+4QEBHGGMw58d4TY2RPKaGqHLVi78upSmuNtRbOOcwMEeEHZ6ofOfI2UA4AAAAASUVORK5CYII="
   - file: "pergamon.png"
-    link: "https://pergamoncymbals.com/"
+    link: ""
     lqip: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAECAYAAAC3OK7NAAAAAklEQVR4AewaftIAAABXSURBVEXBsQ2CQBQA0PcvlxCJMVexBCswgxWJGzirAzgCBYUxV0GFWN57gRsCBVXTY0OgZsx44o0RGwq+6HDgEZhQcceCASsyrvjgFZrABSdOJPyQsP8B9EwRMVSodAcAAAAASUVORK5CYII="
   - file: "raika.png"
     link: "https://www.raiffeisen.at/"
