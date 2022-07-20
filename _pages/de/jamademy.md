@@ -27,20 +27,9 @@ order: 5
 ##### Gernot Bernroider (Fordham University, NYC, Jazz Drums)
 
 ###### Achtung: begrenzte Teilnehmerzahl (max. 6 Teilnehmer pro Session)
-
-#### **Online- KURSTERMINE 2021 (Pay as you Wish):**
-
-##### Freitag, 19. Februar, 2021, 19:00-21:00 Uhr
-##### Freitag, 26. März, 19:00-21:00 Uhr
-##### Freitag, 30. April 2021, 19:00-21:00 Uhr-  Ike Sturm (b), Gernot Bernroider (dr)
-##### Freitag, 26. Juli 2021, 19:00-21 Uhr - Ike Sturm (b)
-
-###### **Termine für  Herbst 2021 demnächst!**
-
 ### **Kosten:**
 ##### 3 stündige Workshop Sessions gibt es zum Preis von € 45,-
 ##### Vergünstigtes 4-Session-Paket zum Preis von Euro 160,-
-##### Achtung: begrenzte Teilnehmerzahl (max. 6 Teilnehmer pro Session)
 
 ### **WO:**
 ##### MUSIK RAUM
@@ -76,10 +65,10 @@ order: 5
 - ##### Bandleading
 - ##### Vorbereiten eines Repertoires, das auf dich zugeschnitten ist und sämtlichen Prüfungsanforderungen entspricht
 - ##### Simulieren einer Prüfungssituation und worauf es einer Prüfungskommission ankommt
-- ##### Zielgruppe (max.5 Teilnehmer pro 120 min Session):
+- ##### Zielgruppe (max. 5 Teilnehmer pro 120 min Session):
 - ##### Du spielst ein Instrument und/oder singst, willst Musik studieren und bist Dir unsicher, ob Du die Aufnahmeprüfung schaffen kannst?
 
-##### Du bereitest dich gerade auf deine Aufnahme-oder Abschlussprüfung vor, willst in kurzer Zeit das Beste aus Dir herausholen, und brauchst zielgerichtetes Training, Support, Feedback und/oder den letzten Feinschliff?
+##### Du bereitest dich gerade auf deine Aufnahme- oder Abschlussprüfung vor, willst in kurzer Zeit das Beste aus Dir herausholen, und brauchst zielgerichtetes Training, Support, Feedback und/oder den letzten Feinschliff?
 
 ##### Du improvisierst gerne, wirst aber unsicher, wenn viele Akkorde vor dir auftauchen
 

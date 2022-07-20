@@ -1,0 +1,48 @@
+<div class="c-section-workshop-modules">
+  {% for module in section.modules %}
+    <div class="c-section-parent-container">
+
+      <br>
+      <!-- description -->
+      {% capture module_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ module.description }} %}{% endcapture %}
+      <div class="c-section-workshop-classes-class-description"> {{ module_description | markdownify }}</div>
+      
+      <div class="grid-container">
+        <div class="grid-x grid-padding-x grid-padding-y large-up-{{section.classes-in-row}} medium-up-{{section.classes-in-row}} small-up-1">
+          {% for class in module.classes %}
+            {% capture class_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ class.description }} %}{% endcapture %}
+            {% if class.row-offset %}
+              {% assign class_size = section.classes | size %}
+              {% assign offset_calc = 12 | divided_by: {{section.classes-in-row}} | times: class.row-offset | floor %}
+              {% capture class_cell_offset %}large-offset-{{offset_calc}} medium-offset-{{offset_calc}}{% endcapture %}
+            {% else %}
+              {% assign class_cell_offset = "" %}
+            {% endif %}
+            <div class="cell {{class_cell_offset}}">
+              {% assign class_title = site.data.lang[page.language].workshop.classes[{{class.title}}] %}
+              <h4 class="c-section-workshop-classes-class-title">{{class_title}}</h4>
+              <figure class="c-section-workshop-classes-class">
+                <div class="c-section-workshop-classes-class-image">
+                  <img class="lazyload" src="{{class.image.lqip}}" data-src="/assets/img/classes/{{class.image.file}}" alt="" width="{{class.image.width}}" height="{{class.image.height}}">
+                </div>
+                {% capture class_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ class.description }} %}{% endcapture %}
+                <figcaption class="c-section-workshop-classes-class-description">
+                  {{ class_description | markdownify }}
+                </figcaption>
+              </figure>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <br>
+    </div>
+  {% endfor %}
+
+  <br>
+  {% assign details_info = site.data.lang[page.language].workshop.classes[{{section.details}}] %}
+  {% assign details_link = site.pages | where:"language", page.language | where:"ref", "workshopdetails" | first %}
+  <a class="c-section-workshop-classes-class-description" href="{{ details_link.permalink | relative_url}}">
+    <h4 class="c-section-workshop-classes-class-description">{{ details_info }}</h4></a>
+
+
+</div>

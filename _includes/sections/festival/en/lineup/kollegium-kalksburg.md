@@ -1,1 +1,0 @@
-##### **{{ act.title }}** <br> <a target="_blank" rel="noopener noreferrer" href="http://www.kollegiumkalksburg.at/">Website</a>

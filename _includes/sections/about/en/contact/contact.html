@@ -1,61 +1,36 @@
-  <div class="c-section-contact-form">
-    <h3>"We're happy to hear from you"</h2>
-    <form method="post" action="#" class="c-section-contact-form">
-      <div class="grid-x grid-padding-x">
-        <div class="large-3 cell">
-          <label for="name">Name</label>
-        </div>
-        <div class="large-9 cell">
-          <input type="text" name="name" id="name" placeholder="Your name" required>
-        </div>
+<div class="c-section-contact-form">
+  <h3>We're happy to hear from you</h3>
+  <form id="aboutContactFormNetlify" method="POST" netlify-honeypot="bot-field" data-netlify="true" accept-charset="utf-8" class="c-section-contact-form">
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 medium-12 small-12 cell">
+        <label>Name:<br><input type="text" name="name" placeholder="Your Name" required></label>
       </div>
-      <div class="grid-x grid-padding-x">
-        <div class="large-3 cell">
-          <label for="email">Email</label>
-        </div>
-        <div class="large-9 cell"">
-            <input type="email" name="email" id="email" placeholder="Your email" required>
-        </div>
+    </div>
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 medium-12 small-12 cell">
+        <label>Email:<br><input type="email" name="email" placeholder="Your Email" required></label>
       </div>
-      <div class="grid-x grid-padding-x">
-        <div class="large-3 cell">
-          <label for="find-us">How did you find us?</label>
-        </div>
-        <div class="large-9 cell">
-          <select name="find-us" id="find-us">
-            <option value="friends" selected>Friends</option>
-            <option value="search">Search enginge</option>
-            <option value="ad">Advertisement</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
+    </div>
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 medium-12 small-12 cell" >
+        <label for="newsletter">Newsletter?
+          <input type="checkbox" name="newsletter" value="yes">
+        </label>
       </div>
-      <div class="grid-x grid-padding-x">
-        <div class="large-3 cell">
-          <label>Newsletter ?</label>
-        </div>
-        <div class="large-9 cell">
-          <label for="news">
-            <input type="checkbox" name="news" id="news" checked>
-            Yes, please
-          </label>
-        </div>
+    </div>
+    <div class="grid-x grid-padding-x">
+      <div class="large-12 medium-12 small-12 cell">
+        <label>Drop us a line:<br><textarea name="message" placeholder="Your Message"></textarea></label>
       </div>
-      <div class="grid-x grid-padding-x">
-        <div class="large-3 cell">
-          <label>Drop us a line</label>
-        </div>
-        <div class="large-9 cell">
-          <textarea name="message" placeholder="Your message"></textarea>
-        </div>
+    </div>
+    <input type="hidden" name="bot-field"/>
+    <input type="hidden" name="subject" value="NYCMM Webseiten Kontaktnachricht" />
+    <div class="grid-x grid-padding-x">
+      <div class="cell">
+        <button type="submit" class="button" name="submit">Send</button>
       </div>
-      <div class="grid-x grid-padding-x">
-        <div class="large-3 cell">
-          <label>&nbsp;</label>
-        </div>
-        <div class="large-9 cell">
-          <input type="submit" value="Send it">
-        </div>
-      </div>
-    </form>
-  </div>
+    </div>
+  </form>
+</div>
+{% assign privacy = site.pages | where:"language", page.language | where:"ref", "privacy" | first %}
+<p>

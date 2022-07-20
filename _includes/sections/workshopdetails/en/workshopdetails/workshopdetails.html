@@ -1,0 +1,7 @@
+
+{% for ws_detail in section.ws_details %}
+<div class="c-section-wsdetails-description">
+    {% capture ws_text %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ ws_detail.description }} %}{% endcapture %}
+    {{ ws_text | markdownify}}
+</div>
+{% endfor %}

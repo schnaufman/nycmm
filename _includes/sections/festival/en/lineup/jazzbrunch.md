@@ -1,1 +1,1 @@
-##### **{{ act.title }}**
+##### **From {{ act.date.time.begin }} {{ act.title }}**<br>with the "Young Music Lions" & vocalists, a jazz trio consisting of sponsored talented musicians and participants of the NYCMM singing workshop<br>food and drinks on site!

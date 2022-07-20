@@ -1,0 +1,5 @@
+<div class="c-section-wsdetails-description">
+<h5>
+Our workshops are among the most innovative and comprehensive music workshops in Upper Austria and are led by lecturers from Austria and New York. The opportunity for workshop participants to use the complete package consisting of workshops, evening concerts and subsequent jam sessions with the lecturers in a family atmosphere is an all-in experience in which joint leisure activities also ensure a good mood and the feel-good factor is not neglected.<br>
+In five days, less experienced and advanced workshop participants will experiment and fine-tune the playing skills and joy of playing the instrument as well as the concept and philosophy of improvised music found in most American music forms such as funk, rock, jazz, gospel and soul music. Whether on the instrument, in combos or as a vocalist - we play and explore the essential building blocks and progressive elements of these different musical genres with curiosity, fun and team spirit.
+</h5></div>

@@ -1,0 +1,20 @@
+<div class="grid-container">
+  <div class="grid-x large-up-5 medium-up-2 small-up-2">
+    {% for tutor in section.tutors %}
+      <div class="cell">
+        <figure class="c-section-tutor">
+          {% capture tutor_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ tutor.description }} %}{% endcapture %}
+          <div class="c-section-tutor-description">
+            {{ tutor_description | markdownify }}
+          </div>
+          <img class="lazyload" src="{{ tutor.image.lqip }}" data-src="/assets/img/tutors/{{ tutor.image.file }}" alt="" width="400px" height="400px">
+        </figure>
+      </div>
+      <div class="c-section-tutor-description-mobile-grid">
+          <div class="c-section-tutor-description-mobile">
+            {{ tutor_description | markdownify }}
+          </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

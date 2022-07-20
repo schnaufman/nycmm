@@ -1,0 +1,21 @@
+<div class="c-section-testimonials">
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x grid-padding-y large-up-3 medium-up-2 small-up-1">
+      {% for testimonial in section.testimonials %}
+        {% if testimonial.row-offset %}
+          {% assign testimonial_size = section.testimonials | size %}
+          {% assign offset_calc = 12 | divided_by: {{section.testimonials-in-row}} | times: testimonial.row-offset | floor %}
+          {% capture testimonial_cell_offset %}large-offset-{{offset_calc}} medium-offset-{{offset_calc}}{% endcapture %}
+        {% else %}
+          {% assign testimonial_cell_offset = "" %}
+        {% endif %}
+        {% capture testimonial_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ testimonial.description }} %}{% endcapture %}
+        <div class="cell c-section-testimonials-testimonial {{ticket_cell_offset}}">
+          <blockquote class="c-section-testimonials-testimonial-blockquote">
+            {{ testimonial_description | markdownify }}
+          </blockquote>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="grid-container">
+  {% for concert in section.concerts %}
+    <div class="c-section-lineup-concert">
+      {% capture concert_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ concert.description }} %}{% endcapture %}
+      <div class="c-section-lineup-concert-description">
+        {{ concert_description | markdownify }}
+      </div>
+      <div class="grid-x grid-padding-x grid-padding-y large-up-{{concert.acts-in-row}} medium-up-{{concert.acts-in-row}} small-up-1">
+        {% for act in concert.acts %}
+          {% if act.row-offset %}
+            {% assign act_size = concert.acts | size %}
+            {% assign offset_calc = 12 | divided_by: concert.acts-in-row | times: act.row-offset | floor %}
+            {% capture act_cell_offset %}large-offset-{{offset_calc}} medium-offset-{{offset_calc}}{% endcapture %}
+          {% else %}
+            {% assign act_cell_offset = "" %}
+          {% endif %}
+          <div class="cell {{act_cell_offset}}">
+            <figure class="c-section-lineup-concert-act">
+              <div class="c-section-lineup-concert-act-image">
+                <img class="lazyload" src="{{ act.image.lqip }}" data-src="/assets/img/acts/{{ act.image.file }}" alt="" width="{{act.image.width}}" height="{{act.image.height}}">
+              </div>
+              {% capture act_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ act.description }} %}{% endcapture %}
+              <figcaption class="c-section-lineup-concert-act-description">
+                {{ act_description | markdownify }}
+              </figcaption>
+            </figure>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
