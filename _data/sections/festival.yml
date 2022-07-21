@@ -12,7 +12,7 @@
         time: "19:30 Uhr, Einlass: 19:00 Uhr"
       description: "opening-night.md"
       acts:
-        - title: "Opening Night"
+        - title: "Beispielgebend gute Architektur meets Musik aus Berlin & New York"
           description: "opening-night-desc.md"
           image:
             file: "opening-night.jpg"
