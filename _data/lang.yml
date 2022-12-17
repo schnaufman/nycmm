@@ -58,8 +58,8 @@ de:
       ss_writing_title: "Arbeite an deinen eigenen Songs"
       details_info: "detaillierte Infos & Tagesablauf"
     tickets:
-      ws_earlybird_price: "Early Bird Special bis 15.4.: 199€"
-      ws_students_price: "Schüler / Studenten: 189€"
+      ws_earlybird_price: "mit Festivalpass: 375€"
+      ws_students_price: "Schüler / Studenten: 210€"
       ws_festivalpass_price: "Eintritt zu allen Konzerten"
       scholarship_title: "Stipendium"
     gallery:
@@ -131,8 +131,8 @@ en:
       ss_writing_title: "Work on your own songs"
       details_info: "detailed information & daily routine"
     tickets:
-      ws_earlybird_price: "Early Bird Special until 15.4.: 199€"
-      ws_students_price: "Student: 189€"
+      ws_earlybird_price: "with Festivalpass: 375€"
+      ws_students_price: "Student: 210€"
       ws_festivalpass_price: "Entry to all Concerts"
       scholarship_title: "Scholarship"
     gallery:

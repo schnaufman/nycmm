@@ -163,18 +163,18 @@
     - title: "Workshop Ticket"
       link: "https://nycmm.kupfticket.at/events/nyc-musikmarathon-2021-workshop/"
       price:
-        regular: "249€"
+        regular: "320€"
       includes:
           - item: "ws_earlybird_price"
     - title: "LehrerInnen / Blasmusik Friendship"
       price:
-        regular: "199€"
+        regular: "250€"
       includes:
         - item: "ws_students_price"
     - title: "Festivalpass für Workshopteilnehmer"
       link: "https://nycmm.kupfticket.at/events/nyc-musikmarathon-2021-workshop/"
       price:
-        regular: "45€"
+        regular: "55€"
       includes:
         - item: "ws_festivalpass_price"
   scholarship:
