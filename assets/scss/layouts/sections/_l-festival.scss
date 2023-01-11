@@ -42,7 +42,7 @@
     font-weight: normal;
     text-align: center;
   }
-  tr {
+  td {
     font-size: map-get(map-get(map-get($header-styles, medium), h5), "font-size") + unquote("px");
     font-weight: $header-font-weight;
     text-align: center;

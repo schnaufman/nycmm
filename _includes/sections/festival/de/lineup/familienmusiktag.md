@@ -1,4 +1,3 @@
-{% assign first_act = concert.acts | first %}
-### Familienmusiktag
-#### Datum: {{ first_act.date.format | flatify }}, {{ first_act.date.time.begin }} - {{ first_act.date.time.end }}<br>Ort: {{ first_act.location }}
-##### Kostenlose Workshopstationen zum Musikschnuppern und Live-Mitmach-Konzert von 'Brennholz Rocks' für Familien, Kinder & Jugendliche
+### {{ concert.title }}
+#### Datum: {{ concert.date.format | flatify }}, Beginn: {{ concert.date.time }}<br>Ort: {{ concert.location }}
+##### Ein kostenloser Sommernachmittag im Park bei dem Kinder, Jugendliche und Erwachsene trommeln, singen, musikalischen Geschichten lauschen, basteln und bei musikalischen Spielen mitmachen können. Beim abschließenden Mitmachkonzert mit dem Multiinstrumentalisten „Brennholz Rocks“ wird generationenübergreifend mitgeklatscht und mitgesungen

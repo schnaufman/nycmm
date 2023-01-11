@@ -1,0 +1,1 @@
+#### Our international team of lecturers is a valuable part of our workshops both professionally and personally, is available to you as a source of inspiration and knowledge and is looking forward to seeing you!

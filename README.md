@@ -18,6 +18,6 @@ To configure environment variables for api keys/token. Create a `.env` file in t
   </tbody>
 </table>
 
-**Build status** 
+**Build status on master** 
 
 [![Build Status](https://travis-ci.com/matt-hires/jekyll-foundation.svg)](https://travis-ci.com/matt-hires/nycmm)

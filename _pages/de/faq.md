@@ -1,11 +1,13 @@
+<!--
 ---
 permalink: /faq/
 language: de
 layout: page
 title: FAQ
 ref: faq
-order: 6
+order: 7
 ---
+-->
 
 ### Wo kann man schlafen?
 ##### Gasthaus Graf

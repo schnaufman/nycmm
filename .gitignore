@@ -51,5 +51,8 @@ composer.lock
 # environment variables
 .env
 
+# ruby local bundle
+.bundle/
+
 # yarn logs
 yarn-error.log

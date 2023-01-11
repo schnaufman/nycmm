@@ -1,0 +1,19 @@
+- id: "dailyroutine_id"
+  title: "dailyroutine_title"
+  folder: "dailyroutine"
+  descriptions:
+    main: "dailyroutine.md"
+- id: "accommodations_id"
+  title: "accommodations_title"
+  folder: "accommodations"
+  descriptions:
+    main: "accommodations.md"
+- id: "workshopdetails_id"
+  title: "workshopdetails_title"
+  folder: "workshopdetails"
+  descriptions:
+    main: "workshopdetails.md"
+  content: "workshopdetails.html"
+  ws_details:
+    - description: "instrumental.md"
+    - description: "vocalists.md"

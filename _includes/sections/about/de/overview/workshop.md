@@ -1,1 +1,0 @@
-##### In unserem Workshop bietet wir euch Instrumental- und Ensembleunterricht. In Zweiterem erlernt man 1-4 Stücke, welche über den Seminarzeitraum einstudiert und am Ende des Workshops aufgeführt werden. Dies können selbst mitgebrachte Songs oder vorgegebene Stücke der Dozenten sein.

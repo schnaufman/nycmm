@@ -1,0 +1,29 @@
+<div class="c-section-tickets">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-4 medium-up-4 small-up-1">
+      {% for ticket in section.tickets %}
+        <div class="cell c-section-tickets-ticket">
+          <h5 class="c-section-tickets-ticket-title">{{ticket.title}}</h5>
+          <div class="c-section-tickets-ticket-prices">
+            {% if ticket.price.discount %}
+              <h2 class="c-section-tickets-ticket-price">{{ticket.price.regular}}<span>&nbsp;/&nbsp;{{ticket.price.discount}}&nbsp;*</span></h2>
+            {% else %}
+              <h2 class="c-section-tickets-ticket-price">{{ticket.price.regular}}</h2>
+            {% endif %}
+            {% if ticket.price.door %}
+              <h5 class="c-section-tickets-ticket-door-price">Door: {{ticket.price.door}}</h5>
+            {% endif %}
+          </div>
+          <div class="c-section-tickets-ticket-description">
+            <ul>
+              {% for include in ticket.includes %}
+                <li><i class="ion-md-checkbox-outline"></i>{{include.item}}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <p class="c-section-tickets-info">*&nbsp;Reduced admission for pupils/students/young people up to the age of 19.<br>Free admission for children and young people under the age of 14</p>
+</div>

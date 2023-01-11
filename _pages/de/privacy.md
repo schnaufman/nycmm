@@ -6,7 +6,7 @@ title:  Datenschutzerklärung
 dropdown_title: Datenschutz
 ref: privacy
 menu: footer
-order: 8
+order: 9
 ---
 
 ### Geltungsbereich

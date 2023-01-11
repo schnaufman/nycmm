@@ -18,8 +18,9 @@
   <div class="c-header-container">
     <div class="c-header-content">
       <h1>{{ site.title }}</h1>
-      <h1>{{ site.date.begin | date: "%d" }}. - {{ site.date.end | date: "%d" }}.{{ site.date.begin | date: "%m" }}.{{ site.date.begin | date: "%Y" }}</h1>
-      <h2>&quot;{{ site.description }}&quot;</h2>
+      <h1>{{ site.date.begin | date: "%d."}} - {{ site.date.end | date: "%d. %B %Y" }}</h1>
+      {% assign site_description = site.data.lang[page.language].home.description %}
+      <h2>&quot;{{ site_description }}&quot;</h2>
       <div id="site-header-nav" data-smooth-scroll-with-links data-animation-easing="swing" data-animation-duration="1000">
         {% assign sign_up = site.data.lang[page.language].home.sign_up %}
         {% assign tickets = site.data.lang[page.language].home.tickets %}

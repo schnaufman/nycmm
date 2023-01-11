@@ -1,1 +1,0 @@
-##### Let your Soul sing! Rise Up Gospel Workshop ist eine Einführung in neue und traditionelle Gospelliteratur, durchleuchtet die spirituelle Kraft des Singens und behandelt Phrasierung und Rhythmus in der Gospelmusik. 

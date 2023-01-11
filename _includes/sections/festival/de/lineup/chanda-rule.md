@@ -1,0 +1,6 @@
+##### **{{ act.title }}** <br> <a target="_blank" rel="noopener noreferrer" href="https://www.sweetemmaband.com/">Website</a>
+##### Eine kurzfristig einberufene Session aus bunt zusammengewürfelten hochkarätigen MusikerInnen entwickelte sich zu einem Erfolgsprojekt, das seit 3 Jahren auf zahlreichen Festivals in Europa präsent ist und auch in den USA hoch gehandelt wird. Der Grund ist nicht nur die charismatische stimmgewaltige Frontfrau <a target="_blank" rel="noopener noreferrer" href="https://www.chandarule.com/">Chanda Rule</a>, sondern auch der eklektrische musikalische Mix aus Blues, Folk, Funk, Gospel & Soul. Mit <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCMRmO6sYiY5avh2M6YQnoxw">Jan Korinek</a>, (Hammond B3 Orgel), <a target="_blank" rel="noopener noreferrer" href="https://osianrobertsjazz.com/">Osian Roberts</a> ( Tenorsaxofon), <a target="_blank" rel="noopener noreferrer" href="https://www.hermonmehari.com/">Hermon Mehari</a> (Trompete), <a target="_blank" rel="noopener noreferrer" href="https://paul-zauner.com/">Paul Zauner</a> (Posaune), <a target="_blank" rel="noopener noreferrer" href="https://mickylee.net/">Mickylee</a> (Gitarre) & Oliver Lipensky (Schlagzeug).
+
+
+
+
