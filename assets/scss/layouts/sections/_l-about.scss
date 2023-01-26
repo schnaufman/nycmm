@@ -34,10 +34,15 @@
 
 .c-section-overview-links {
   border-style: solid;
+  border-width: rem-calc(2);
   border-radius: $global-radius;
-  background-color: $medium-gray;
-  padding: rem-calc(20 40);
+  background-color: $light-gray;
+  padding: rem-calc(20);
   margin: rem-calc(10 0);
+  
+  img {
+    border-radius: $global-radius;
+  }
 }
 
 /******************/
