@@ -1,1 +1,1 @@
-[mehr Infos](/festival)
+[mehr Infos](/lineup)

@@ -1,8 +1,8 @@
 ---
-permalink: /festival/
+permalink: /lineup/
 language: de
 layout: sections
-title: Festival
+title: Programm
 section: festival
 ref: festival
 order: 2

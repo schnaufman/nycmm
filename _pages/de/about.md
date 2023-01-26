@@ -2,7 +2,7 @@
 permalink: /
 language: de
 layout: sections
-title:  Über uns
+title:  Home
 section: about
 ref: about
 order: 1

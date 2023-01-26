@@ -32,6 +32,14 @@
   }
 }
 
+.c-section-overview-links {
+  border-style: solid;
+  border-radius: $global-radius;
+  background-color: $medium-gray;
+  padding: rem-calc(20 40);
+  margin: rem-calc(10 0);
+}
+
 /******************/
 /* tutors section */
 /******************/
