@@ -1,3 +1,3 @@
-<div align="justify"><h4>
-Der New York City Musikmarathon verwöhnt, verführt und inspiriert seit der oberösterreichischen Landesausstellung 2012  mit Jazz, Blues, Wiener Liedern und Klassik im wunderschönen Ambiente des Stadtparks, der Vogl-Villa und des Schlosses in Mattighofen. Ganztägige Workshops für Jazz und Improvisation, Gesang und Gospelchor mit internationalen DozentInnen in familiärer Atmosphäre gibt es ebenso wie einen kostenlosen Musiktag für die ganze Familie, allabendliche Jam Sessions und Ausstellungen regionaler KünstlerInnen. 
-</h4></div>
+#### Der NYCMM ist ein Musikfestival, das seit 2012 jährlich in Mattighofen OÖ stattfindet und jeden August mit musikalischer Vielfalt verwöhnt, verführt und inspiriert
+
+### Das bietet der NYCMM:<br><br>
