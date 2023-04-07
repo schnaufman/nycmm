@@ -1,5 +1,5 @@
 #### Start: Wednesday, August 9, 2023 - 9:00 a.m
-#### End: Sunday, August 12, 2023 - approx. 7:30 p.m
+#### End: Sunday, August 13, 2023 - approx. 7:30 p.m
 
 ##### During the lunch break, there are joint dining options in nearby restaurants
 
