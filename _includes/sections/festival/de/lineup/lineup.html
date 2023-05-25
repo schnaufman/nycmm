@@ -1,5 +1,5 @@
 <div class="grid-container">
-  {% for concert in section.concerts %}
+  {% for concert in site.data.sections.section_details[section.details_file] %}
     <div class="c-section-lineup-concert">
       {% capture concert_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ concert.description }} %}{% endcapture %}
       <div class="c-section-lineup-concert-description">
