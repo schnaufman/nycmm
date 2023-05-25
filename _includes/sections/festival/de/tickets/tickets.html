@@ -1,7 +1,7 @@
 <div class="c-section-tickets">
   <div class="grid-container">
     <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-4 medium-up-4 small-up-1">
-      {% for ticket in section.tickets %}
+      {% for ticket in site.data.sections[section.tickets_file] %}
         <div class="cell c-section-tickets-ticket">
           <h5 class="c-section-tickets-ticket-title">{{ticket.title}}</h5>
           <div class="c-section-tickets-ticket-prices">

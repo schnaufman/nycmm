@@ -4,6 +4,7 @@
   descriptions:
     main: "lineup.md"
   content: "lineup.html"
+  lineup_file:
   concerts:
 #    - title: "Opening Night"
 #      location: "Stadtsaal Mattighofen"
@@ -134,45 +135,13 @@
 #  descriptions:
 #    main: "dates.md"
 #  content: "dates.html"
-#- id: "tickets_id"
-#  title: "tickets_title"
-#  folder: "tickets"
-#  descriptions:
-#    main: "tickets.md"
-#  content: "tickets.html"
-#  tickets:
-#    - title: "Opening Night"
-#      price:
-#        regular: "freiwillige Spenden"
-#      includes:
-#        - item: "Ticket erforderlich"
-#    - title: "Blues Power Night"
-#      price:
-#        regular: "25€"
-#        discount: "20€"
-#        door: "27€"
-#    - title: "Big Band Night"
-#      price:
-#        regular: "27€"
-#        discount: "22€"
-#        door: "30€"
-#    - title: "Familienmusiktag"
-#      price:
-#        regular: "freiwillige Spenden"
-#    - title: "Jazz, Soul, & Funk Night"
-#      price:
-#        regular: "27€"
-#        discount: "22€"
-#        door: "30€"
-#    - title: "A Musical Day In The Park"
-#      price:
-#        regular: "freiwillige Spenden"
-#    - title: "Festivalpass"
-#      price:
-#        regular: "69€"
-#        door: "&mdash;"
-#      includes:
-#        - item: "Eintritt zu allen Veranstaltungen"
+- id: "tickets_id"
+  title: "tickets_title"
+  folder: "tickets"
+  descriptions:
+    main: "tickets.md"
+  content: "tickets.html"
+  tickets_file: "festival_tickets"
 #- id: "locations_id"
 #  title: "locations_title"
 #  folder: "locations"
