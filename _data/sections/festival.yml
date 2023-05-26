@@ -5,6 +5,7 @@
     main: "lineup.md"
   content: "lineup.html"
   details_file: "festival_lineup"
+  # enter lineup details to section_details/festival_lineup.yml
 #- id: "rahmenprogramm_id"
 #  title: "rahmenprogramm_title"
 #  folder: "rahmenprogramm"
@@ -26,6 +27,7 @@
     main: "tickets.md"
   content: "tickets.html"
   details_file: "festival_tickets"
+  # enter ticket details to section_details/festival_tickets.yml
 #- id: "locations_id"
 #  title: "locations_title"
 #  folder: "locations"
