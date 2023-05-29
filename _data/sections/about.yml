@@ -3,10 +3,8 @@
   folder: "overview"
   descriptions:
     main: "overview.md"
-    workshop: "workshop.md"
-    festival: "workshop.md"
-    familien-nachmittag: "workshop.md"
   content: "overview.html"
+  details_file: "about_overview"
   
 - id: "contact_id"
   folder: "contact"

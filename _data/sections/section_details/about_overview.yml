@@ -1,0 +1,8 @@
+- description: "workshop.md"
+  icon: "workshop.svg"
+- description: "familienmusiktag.md"
+  icon: "family.svg"
+- description: "festival.md"
+  icon: "concert.svg"
+- description: "jamsessions.md"
+  icon: "jamsession.svg"
