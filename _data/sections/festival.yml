@@ -20,13 +20,13 @@
 #  descriptions:
 #    main: "dates.md"
 #  content: "dates.html"
-- id: "tickets_id"
-  title: "tickets_title"
-  folder: "tickets"
-  descriptions:
-    main: "tickets.md"
-  content: "tickets.html"
-  details_file: "festival_tickets"
+#- id: "tickets_id"
+#  title: "tickets_title"
+#  folder: "tickets"
+#  descriptions:
+#    main: "tickets.md"
+#  content: "tickets.html"
+#  details_file: "festival_tickets"
   # enter ticket details to section_details/festival_tickets.yml
 #- id: "locations_id"
 #  title: "locations_title"
