@@ -1,3 +1,0 @@
-##### **{{ act.title }}** <br> <a target="_blank" rel="noopener noreferrer" href="https://www.kaistrauss.com/">Website</a>
-
-##### The Osnabrück-born guitarist and singer has not only been regarded as one of the big names in the European blues scene since his appearance at the Burghausen Jazz Festival in April of this year. Rather, his countless concerts in over 20 countries and multiple awards with the German Blues Award testify to his enthusiasm for this music, which was already instilled in his childhood, with which he inspires with his own signature to the great joy of his many listeners and fans every time anew.

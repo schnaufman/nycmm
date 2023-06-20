@@ -1,3 +1,4 @@
 ### {{ concert.title }}
-#### Date: {{ concert.date.format | flatify }}, Begin: {{ concert.date.time }}<br>Location: {{ concert.location }}
-##### A free summer afternoon in the park where children, teenagers and adults can drum, sing, listen to musical stories, do handicrafts and take part in musical games. At the final hands-on concert with the multi-instrumentalist "Brennholz Rocks", cross-generational clapping and singing along
+#### Date: {{ concert.date.format | flatify }}<br>Location: {{ concert.location }}
+
+##### A free summer day in the park with drumming, singing, dancing, handicrafts, music play stations and an interactive musical for children, teenagers and adults.

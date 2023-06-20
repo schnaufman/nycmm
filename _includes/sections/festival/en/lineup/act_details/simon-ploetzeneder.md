@@ -1,0 +1,3 @@
+##### **{{ act.title }}** <br> <a target="_blank" rel="noopener noreferrer" href="http://www.simon.ploetzeneder.net/">Website</a>
+
+##### This quartet with leader and trumpeter **Simon Plötzeneder**, which impresses with its playful flexibility and familiarity with the most diverse musical genres, convinces with its independent sound and timeless compositions, which transmit energy and emotions directly to the listener without detours. With **Martin Reiter** (organ), **Andy Tausch** (guitar) and **Mario Gonzi** (dr).

@@ -1,3 +1,0 @@
-##### **{{ act.title }}** <br> <a target="_blank" rel="noopener noreferrer" href="https://www.kaistrauss.com/">Website</a>
-
-##### Der aus Osnabrück stammende Gitarrist und Sänger gilt nicht nur seit seinem Auftritt beim Jazzfestival Burghausen im April dieses Jahres als einer der großen Namen in der europäischen Bluesszene. Vielmehr zeugen seine unzähligen Konzerte in über 20 Ländern und mehrfachen Auszeichnungen mit dem German Blues Award von seiner bereits in den Kindertagen eingeflößten Begeisterung für diese Musik, mit der er mit eigener Handschrift zur großen Freude seiner vielen ZuhörerInnen und Fans jedes Mal aufs Neue begeistert.
