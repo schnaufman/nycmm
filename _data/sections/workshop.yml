@@ -166,7 +166,7 @@
         regular: "320€"
       includes:
           - item: "ws_earlybird_price"
-    - title: "LehrerInnen / Blasmusik Friendship"
+    - title: "Lehrer:innen / Blasmusik Friendship"
       price:
         regular: "250€"
       includes:

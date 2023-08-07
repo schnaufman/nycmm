@@ -22,31 +22,47 @@
     {% for ws_timeslot in section.timeslots %}
       <tr>
         <th>{{ ws_timeslot.time }}</th>
-
         {% for ws_class in section.ws_classes %}
           {% if ws_class.timeslot == ws_timeslot.slot %}
-            {% if ws_class.type == "General" %}
-              <td colspan="100%"><b>{{ ws_class.name }}</b><br>
-                {{ ws_class.room }}
-              </td>
-            {% elsif i == 2 and ws_class.type == "Instrumental" %}
-              {% continue %}
-            {% elsif ws_class.type == "Vocal" %}
-              {% if i == 1 %}
-                {% continue %}
-              {% endif %}
-              <td rowspan="2">
-                <b>{{ ws_class.name }}</b><br>
-                {{ ws_class.tutor }}<br>
-                {{ ws_class.room }}<br>
-              </td>
-            {% else %}
-              <td>
-                <b>{{ ws_class.name }}</b><br>
-                {{ ws_class.tutor }}<br>
-                {{ ws_class.room }}<br>
-              </td>
-            {% endif %}
+            {% case ws_class.type %}
+              {% when "General" %}
+                <td colspan="100%"><b>{{ ws_class.name }}</b><br>
+                  {{ ws_class.room }}
+                </td>
+              {% when "Instrumental" %}
+                {% if i == 2 %}
+                  {% continue %}
+                {% endif %}
+                <td>
+                  <b>{{ ws_class.name }}</b><br>
+                  {{ ws_class.tutor }}<br>
+                  {{ ws_class.room }}<br>
+                </td>
+              {% when "Vocal" %}
+                {% if i == 1 %}
+                  {% continue %}
+                {% endif %}
+                <td rowspan="2">
+                  <b>{{ ws_class.name }}</b><br>
+                  {{ ws_class.tutor }}<br>
+                  {{ ws_class.room }}<br>
+                </td>
+              {% when "MusicTalkVoc" %}
+                {% if i == 1 %}
+                  {% continue %}
+                {% endif %}
+                <td>
+                  <b>{{ ws_class.name }}</b><br>
+                  {{ ws_class.tutor }}<br>
+                  {{ ws_class.room }}<br>
+                </td>
+              {% else %}
+                <td>
+                  <b>{{ ws_class.name }}</b><br>
+                  {{ ws_class.tutor }}<br>
+                  {{ ws_class.room }}<br>
+                </td>
+            {% endcase %}
           {% endif %}
         {% endfor %}
       </tr>

@@ -1,1 +1,1 @@
-#### Unser internationales DozentInnenteam ist fachlich und persönlich ein wertvoller Bestandteil unserer Workshops, steht euch als Inspirations-und Wissensquelle zur Verfügung und freut sich auf euch!
+#### Unser internationales Dozent:innenteam ist fachlich und persönlich ein wertvoller Bestandteil unserer Workshops, steht euch als Inspirations-und Wissensquelle zur Verfügung und freut sich auf euch!
