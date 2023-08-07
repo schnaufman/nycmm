@@ -38,6 +38,8 @@ de:
     # workshopdetails
     schedule_id: "tagesablauf"
     schedule_title: "Tagesablauf"
+    timetable_id: "stundenplan"
+    timetable_title: "Stundenplan"
     accommodations_id: "unterkuenfte"
     accommodations_title: "Unterkünfte"
     workshopdetails_id: "workshopdetails"
@@ -111,6 +113,8 @@ en:
     # workshopdetails
     schedule_id: "dailyroutine"
     schedule_title: "Daily Routine"
+    timetable_id: "timetable"
+    timetable_title: "Timetable"
     accommodations_id: "accommodations"
     accommodations_title: "Accommodations"
     workshopdetails_id: "workshopdetails"
