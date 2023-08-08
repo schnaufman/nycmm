@@ -29,40 +29,26 @@
                 <td colspan="100%"><b>{{ ws_class.name }}</b><br>
                   {{ ws_class.room }}
                 </td>
+                {% continue %}
               {% when "Instrumental" %}
                 {% if i == 2 %}
                   {% continue %}
                 {% endif %}
-                <td>
-                  <b>{{ ws_class.name }}</b><br>
-                  {{ ws_class.tutor }}<br>
-                  {{ ws_class.room }}<br>
-                </td>
               {% when "Vocal" %}
                 {% if i == 1 %}
                   {% continue %}
                 {% endif %}
-                <td rowspan="2">
-                  <b>{{ ws_class.name }}</b><br>
-                  {{ ws_class.tutor }}<br>
-                  {{ ws_class.room }}<br>
-                </td>
               {% when "MusicTalkVoc" %}
                 {% if i == 1 %}
                   {% continue %}
                 {% endif %}
-                <td>
-                  <b>{{ ws_class.name }}</b><br>
-                  {{ ws_class.tutor }}<br>
-                  {{ ws_class.room }}<br>
-                </td>
-              {% else %}
-                <td>
-                  <b>{{ ws_class.name }}</b><br>
-                  {{ ws_class.tutor }}<br>
-                  {{ ws_class.room }}<br>
-                </td>
             {% endcase %}
+
+            <td rowspan="{{ ws_class.rowspan }}">
+              <b>{{ ws_class.name }}</b><br>
+              {{ ws_class.tutor }}<br>
+              {{ ws_class.room }}<br>
+            </td>
           {% endif %}
         {% endfor %}
       </tr>
