@@ -1,6 +1,6 @@
 <div class="grid-container">
   <div class="grid-x large-up-5 medium-up-2 small-up-2">
-    {% for tutor in section.tutors %}
+    {% for tutor in site.data.sections.section_details[section.details_file] %}
       <div class="cell">
         <figure class="c-section-tutor">
           {% capture tutor_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ tutor.description }} %}{% endcapture %}
