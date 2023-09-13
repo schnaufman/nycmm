@@ -18,7 +18,7 @@
   folder: "tickets"
   descriptions:
     main: "tickets.md"
-  content: "tickets.html"
+  content: "tickets_new.html"
   tickets-in-row: "3"
   tickets:
     - title: "Workshop Ticket"

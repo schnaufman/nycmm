@@ -1,0 +1,54 @@
+<form id="workshopSignUpForm" method="post" netlify-honeypot="bot-field" data-netlify="true" accept-charset="utf-8" class="c-section-ws_tickets-form">
+  <label>Anrede
+    <select name="salutation" placeholder="Anrede" name="Anrede">
+      <option value="" disabled selected>Anrede</option>
+      <option value="Frau">Frau</option>
+      <option value="Herr">Herr</option>
+      <option value="Divers">Divers</option>
+    </select>
+  </label>
+  <label>Vorname*
+    <input type="text" name="first_name" placeholder="Vorname" required>
+  </label>
+  <label>Nachname*
+    <input type="text" name="last_name" placeholder="Nachname" required>
+  </label>
+  <label>Straße + Hausnummer*
+    <input type="text" name="street" required>
+  </label>
+  <label>PLZ + Ort*
+    <input type="text" name="city" required>
+  </label>
+  <label>E-Mail Adresse*
+    <input type="email" name="email" required>
+  </label>
+  <label>Workshop*<br>
+    <input type="radio" name="workshop" value="Instrumental" required>
+    <label for="Instrumental">Instrumental</label><br>
+    <input type="radio" name="workshop" value="Your Voice On Stage">
+    <label for="Your Voice On Stage">Your Voice On Stage</label><br>
+    <input type="radio" name="workshop" value="Just Sing!">
+    <label for="Just Sing!">Just Sing! A Capella Ensemble</label><br>
+    <input type="radio" name="workshop" value="Songwriter">
+    <label for="Songwriter">The Solo Singer & The Songwriter</label>
+  </label>
+  <label>Instrument*
+    <input type="text" name="Instrument" placeholder="z.B. Vocals, Piano, Saxophon" required>
+  </label>
+  <label>Level*
+    <select name="level" required>
+      <option value="beginner">Anfänger</option>
+      <option value="okay">Mittelprächtig</option>
+      <option value="advanced">Fortgeschritten</option>
+    </select>
+  </label>
+  <label>Anmerkung
+      <input type="text" name="comment">
+  </label>
+  <input type="checkbox" name="cb_Pictures" required>
+  <label for="cb_Pictures">Ich bin damit einverstanden, dass während meiner Teilnahme am NYC Musikmarathon Fotos von mir gemacht und eventuell für Werbezwecke veröffentlicht werden. Mehr dazu(Link).*</label><br>
+  <input type="checkbox" name="cb_SignUp" required>
+  <label for="cb_SignUp">Ich melde mich verbindlich für den NYC Musikmarathon 2024 an.*</label>
+  <br>
+  <button type="submit" class="button" name="submit">Abschicken</button>
+</form>
