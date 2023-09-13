@@ -1,55 +1,18 @@
 
-{% capture workshop %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ section.descriptions.workshop }} %}{% endcapture %}
-{% capture familien-nachmittag %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ section.descriptions.familien-nachmittag }} %}{% endcapture %}
-{% capture festival %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ section.descriptions.festival }} %}{% endcapture %}
-
 <div class="grid-x grid-padding-x large-up-4 medium-up-4 small-up-1">
-  
-  <!-- Workshop -->
-  <div class="cell">
-    <figure class="c-section-overview-image">
-      {% include sections/about/de/overview/svg/workshop.svg %}
-      <figcaption>
-        <h4>Mehrtägiger Instrumental- und Vokalworkshop</h4>
-        {{ workshop | markdownify }}
-      </figcaption>
-    </figure>
-  </div>
-
-  <!-- Familientag -->
-  <div class="cell">
-    <figure class="c-section-overview-image">
-      {% include sections/about/de/overview/svg/family.svg %}
-      <figcaption>
-        <h4>kostenlose Mitmachprogramme und Ausstellungen</h4>
-        {{ familien-nachmittag | markdownify }}
-      </figcaption>
-    </figure>
-  </div>
-
-  <!-- Konzerte -->
-  <div class="cell">
-    <figure class="c-section-overview-image">
-      {% include sections/about/de/overview/svg/concert.svg %}
-      <figcaption>
-        <h4>Hochkarätige Abendkonzerte</h4>
-        {{ festival | markdownify }}
-      </figcaption>
-    </figure>
-  </div>
-  
-  <!-- Jam Sessions -->
-  <div class="cell">
-    <figure class="c-section-overview-image">
-      {% include sections/about/de/overview/svg/jamsession.svg %}
-      <figcaption>
-        <h4>Jam Sessions in gemütlicher Wirtshausatmosphäre</h4>
-        {{ festival | markdownify }}
-      </figcaption>
-    </figure>
-  </div>
-  
+  {% for item in site.data.sections.section_details.[section.details_file] %}
+    {% capture item_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ item.description }} %}{% endcapture %}
+    <div class="cell">
+      <figure class="c-section-overview-image">
+        {% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/svg/{{ item.icon }} %}
+        <figcaption>
+          {{ item_description | markdownify }}
+        </figcaption>
+      </figure>
+    </div>
+  {% endfor %}
 </div>
+
 <br><br>
 <!-- Links to detailed descriptions -->
 <div class="c-section-overview">

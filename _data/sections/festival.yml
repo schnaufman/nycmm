@@ -4,180 +4,31 @@
   descriptions:
     main: "lineup.md"
   content: "lineup.html"
-  concerts:
-#    - title: "Opening Night"
-#      location: "Stadtsaal Mattighofen"
-#      date:
-#        format: "{{ site.date.begin | date: \"%d\" }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-#        time: "19:30 Uhr, Einlass: 19:00 Uhr"
-#      description: "opening-night.md"
-#      acts:
-#        - title: "Beispielgebend gute Architektur meets Musik aus Berlin & New York"
-#          description: "opening-night-desc.md"
-#          image:
-#            file: "opening-night.jpg"
-#            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APy9/wCCfn7afxA0nVtV+GXg+UaLaa34dsbrSzop1aFdMl8HeHtelaFph4g8PHTobq/f7TfahaWus3960OkW01vc2+niWL5POcppSzPB4uEpVMJRliKcqHt5yhCnj8RUxdV2xOGqVK1X6w6dSmnKnDDw56dGpyycJ/VYHOpVMBiMLUpwpYqpHDSVeOFoxnVq4LDUcDTi3h68KeHoRw8aqlyRqSxNT2dSvTc/3lP9PG/bI1aFjDcrqUtxETFPKLzxQwkmjOyWQNN46klYO4Zg0sjyHOXdmyTzf6tU5e9Go4xeqj7LAe6nql/uHRaG6zyqtG22t254h3fV3+sdWf/Z"
-#            height: "400px"
-#            width: "600px"
-#    - title: "Blues Power Night"
-#      location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
-#      date:
-#        format: "{{ site.date.begin | date: \"%d\" | plus: 1 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-#        time: "19:30 Uhr, Einlass: 19:00 Uhr"
-#      description: "blues-night.md"
-#      acts:
-#        - title: "Kai Strauss & The Electric Blues Allstars"
-#          description: "kai-strauss.md"
-#          image:
-#            file: "kai-strauss.jpg"
-#            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APyOuf8AgnV4/wBfu/2TfAF9cfDG88G/GD4bx/H2ODw3p8h+JfhvwF4cutQQNq+t+JNO0yxurya0n1KPT/DOi+MZtL1CZbaLV4dHWDT9RsPxDH5nhcDln1vDOvHMJ4d06t21RqVcRKf1ipKnCUYVKkJ4dwpTlyuELcrfPI/vrLeIKuceJGYT4ijTxXBfDma1sJlGFpqUZ4bDZdONLJcDQlJVcRhMNiVWw+IzOUMPWk5uu40pOFKnLzPVf2xrjQdU1LQvD/gTw42g6Lf3mk6I09paLO2kadcSWemtMs1jPKsps4YTIJZ5pA+Q8sjZc/I0eGadalSrVcdXVWrThVqJQTtUqRU5q6nZ2k3qtGf1zX+k94nZdWrZfg+GuHJYPA1amDwslVjaWGws3QoNc1OjKzpQi/epUpd6cH7q/wD/2Q=="
-#            height: "400px"
-#            width: "600px"
-#    - title: "Big Band Night"
-#      acts-in-row: "2"
-#      location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
-#      date:
-#        format: "{{ site.date.begin | date: \"%d\" | plus: 2 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-#        time: "19:00 Uhr, Einlass:18:30 Uhr"
-#      description: "bigband-night.md"
-#      acts:
-#        - title: "Oberösterreichisches Jugendjazzorchester"
-#          description: "ooejjo.md"
-#          image:
-#            file: "ooejjo.jpg"
-#            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP48ta+NnwK0L4Y+A9K0b4O6R4q+Jsel+JIPFPjrxwbrU9ObTtWutWurLw/4b8NuTaeGdW8MXOsM1l4g0d47S5vxcaobVb6eO+tfnZZZjq2Lm/rf1bL406cYUcNOrCvVqwcIupWlzyozpSoRUeR0lUbfvylCChL6eOb4OhT9pPDLG5hP2lT2uLpU50qbqylP93a1WnUhWqVKvPGUoOSvCMJTdSPntp+2l+0nptpa6dovx2+MPh7R7C3hstJ0DQ/iB4nsdE0PTLWNYLDR9Hsk1XZZ6XplrHFZafap8tvaQQxLwgr1o4KjGMYtc7jFJzkvek0rOUrWXNLd2SV3okeFPFSnOclCMFKUpKEXLlgm21GPM3Lljeyu27LVt6n/2Q=="
-#            height: "400px"
-#            width: "600px"
-#        - title: "Upper Austrian Jazz Orchestra"
-#          description: "uajo.md"
-#          image:
-#            file: "uajo.jpg"
-#            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP5MfD/jf4C6D4N0ueX4GfC3U5rvSbqW6OuHxbd6vLqAivvDVxe2lzDpkml20UWoQxajZQeRHskgkuZleS6WC1+TqvEOrGk8bioS50oyTuppXqJNqpCaXI3B8zk7qLvZWf6XhcqtgamKWUYOrh8PRUq8p1aSqwcpOimpSpS5pX5dYUrNxc3703NfKviPxh4DHiHXhonwx8I/2KNZ1QaR9vttce+/ssX04sPtjWviKwtmu/snlfaGt7GzgM28w2lvGVhT16dGu6dPmxVfm5I83LNW5uVXteEna+15Sdt5N6nytWMPaVPZ4HDOnzz9m5RSk4cz5XJRlGKfLa/LGKvtFLQ//9k="
-#            height: "400px"
-#            width: "600px"
-#    - title: "Familienmusiktag"
-#      location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
-#      date:
-#        format: "{{ site.date.begin | date: \"%d\" | plus: 3 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-#        time: "11:00 Uhr, Einlass: 10:30 Uhr"
-#      description: "familienmusiktag.md"
-#      acts:
-#        - description: "brennholz-rocks.md"
-#          image:
-#            file: "brennholz-rocks.jpg"
-#            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APizxn+yN4EtPD1t4p8Y/EfxfrGrX9rfWf8Awhl/o1klpeXF9p/iGxbw94d1vRL63+y3t9aWk0thNrn2HRLW6SxS51Oztrq9Sy/EclrYeec4TB5NOhWqYqtilJVMPVwqozw1CnVqyqYhqU03RXI1Ro1068qbU3TdWpDLC8KZZg8FLM/aYmUKsZTxFGcKU6lLmxM6VWorVoR5IReEtCFWpUqLE6uLpVVH8+NR/Zm/Y+XUL5dO8P3V3p63l0LG61Hxr8RLDULmzE7i1uL6xtfDepW1neTQbJLq0t9Rv4LednhivbqNFnk+pxGe4qjiK9GjlWY4ilSrVaVLESx2V0pV6dOcowrSp2Xs5VYpTcLe45cvQ+kpcMValKnUVDDJVKcJ2VbENLnipWTdVNpXsm0nbdJn/9k="
-#            height: "400px"
-#            width: "600px"
-#    - title: "Jazz, Soul & Funk Night"
-#      acts-in-row: "2"
-#      location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
-#      date:
-#        format: "{{ site.date.begin | date: \"%d\" | plus: 3 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-#        time: "19:00 Uhr, Einlass: 18:30 Uhr"
-#      description: "jazz-night.md"
-#      acts:
-#        - title: "JAZZBABY!"
-#          description: "jazzbaby.md"
-#          image:
-#            file: "jazzbaby.jpg"
-#            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APg34OfFf4q+Av2P9N034SfEK88L+AbzTvF2p+PPBFnZxp4V8U2OuaXbWjQeMtP1WHVpfEI0i38NLPJ9hjs5ma+m0y2fUNNvNSWX6bEY2FfFUXSjCOEou0or20ak2nGScrS5Zx5opShKOsXJXanKJzYDB0qGHxDxTnVxuIX7puFCpTorlq03yuUOenJxquSnSkuWoqdRR9pRpzX5W+OPEOi3PjXxfcW3/CJNbT+KPEE1u0PhzWLSFoJdWu3iaK1EqC2iMbKY7cIohXEYVQuBg80w7bbpNNu7UY+6m9Wo+8tO2mxayzExSjGu3FJKLlN8zSVk5e78TW/mf//Z"
-#            height: "400px"
-#            width: "600px"
-#        - title: "Chanda Rule & The Sweet Emma Band"
-#          description: "chanda-rule.md"
-#          image:
-#            file: "chanda-rule.jpg"
-#            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APqP4lftVfEj4X6j8Zdf+Cvj7Q/EHws0vxn8M5vDGg+PPCmteJdSgsfGnjr4R+FvGVtcaxrN7pGu22iR+JPGfibVvC1jZ3aSaf4duZfCr2VvaaV4ZntvBp+IGbUKkZY3MsW1P65iJty9q6nsqOYY32cYujUjQhCdNUl7NKXslGkm4U6bh7dXhPhypRTpYHDRjThTw9qdGdJ0pc2Fwkq1SUJwniqjpQlXfPKUHiJzq8inUqqp+SZ/4KJftjw/uZPEHhW5ki/dyXC+CYNtw6fK0y+b8QUlxKwLjzESTDfOqtkDgqca53UnOpDiLNKcJzlONNYif7uMm3GH+5y+BNR3e273Pfo5Z4aU6VKnW4Yq1K0KcIVakaWHtUqxio1Jq+Ji7SmnJe7HR7LY/wD/2Q=="
-#            height: "400px"
-#            width: "600px"
-#    - title: "A Musical Day In The Park"
-#      acts-in-row: "2"
-#      location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
-#      date:
-#        format: "{{ site.date.begin | date: \"%d\" | plus: 4 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-#        time: "11:00 Uhr, Einlass: 10:30 Uhr"
-#      description: "musical-sunday.md"
-#      acts:
-#        - title: "Jazzbrunch"
-#          description: "jazzbrunch.md"
-#          image:
-#            file: "jazzbrunch.jpg"
-#            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APzu+Bf7Dv7PvxN+M/hb4K654l1PTtN0Pwb4x8IaadI8N2d7q2p61qV9rOuy634w1K6tNGt5dWh0vXtTj8PX9pHrkOkzaPoUX2a1Fs0lx+A8OcR47iCrmNWvCNOu8xhVy+dCtW9hRw2F5PaYWVKtOc0q1GglW5dK8qlWUpR9ynH958SeAuHOBsL4b1MtpVsbSzLgbF4rNKWaYfAznPM8xw8VPGYSthadN1KNDG4zEPDvFwhicLDC4WlThVXtcZW6zU/+CIurf2lqH/CJfEK7bwp9uu/+EZbVxpEurN4e8+T+xW1SVI4Ek1E6b9mN66QQq9z5rLFGCEH2ks4UZOP1Sl7ra9ypXUNHb3VKo5KP8qk27Wu2z+b6mBzNVKio0cHKkpyVJzlNTdNSfI5JTSUnGzkkkr3sj//Z"
-#            height: "400px"
-#            width: "600px"
-#          date:
-#            format: "{{ site.date.begin | date: \"%d\" | plus: 4 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-#            time:
-#              begin: "11:00"
-#        - title: "Abschlusskonzert"
-#          description: "abschlusskonzert.md"
-#          image:
-#            file: "abschlusskonzert.jpg"
-#            lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAgACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4k9U1H4P6z/Zn2TwboHgttH8LQafrp03xPqOt2/iLxHp9hODr9qmtXt9faeb8ixgudPsf7Rs59VN3ewRJYTFtP+XlTzuD9pDE1cRCviZunTlRhTnh6Lr/DPlSTUYSk4uo6TVOKjd1IxjP6SnPJ6i9nVw9OhVw9CPNVjUlKlXqKhFaf3nOCv7OFZurOcny05ynD58NhPMTMjafGkp81UOqaXGUWT5lQxvdo8ZUEAo6IyEbWVSCB9GqkY+6/atx91v2NZ3a0buoNO+902numzwPZyl7y9klLVL21FWT1Ss5pq21mk11R/9k="
-#            height: "400px"
-#            width: "600px"
-#          date:
-#            format: "{{ site.date.begin | date: \"%d\" | plus: 4 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-#            time:
-#              begin: "17:00"
-#- id: "rahmenprogramm_id"
-#  title: "rahmenprogramm_title"
-#  folder: "rahmenprogramm"
-#  descriptions:
-#    main: "rahmenprogramm.md"
-#  programs:
-#    - description: "jamsession.md"
-#    - description: "exhibition.md"
-#- id: "dates_id"
-#  title: "dates_title"
-#  folder: "dates"
-#  descriptions:
-#    main: "dates.md"
-#  content: "dates.html"
-#- id: "tickets_id"
-#  title: "tickets_title"
-#  folder: "tickets"
-#  descriptions:
-#    main: "tickets.md"
-#  content: "tickets.html"
-#  tickets:
-#    - title: "Opening Night"
-#      price:
-#        regular: "freiwillige Spenden"
-#      includes:
-#        - item: "Ticket erforderlich"
-#    - title: "Blues Power Night"
-#      price:
-#        regular: "25€"
-#        discount: "20€"
-#        door: "27€"
-#    - title: "Big Band Night"
-#      price:
-#        regular: "27€"
-#        discount: "22€"
-#        door: "30€"
-#    - title: "Familienmusiktag"
-#      price:
-#        regular: "freiwillige Spenden"
-#    - title: "Jazz, Soul, & Funk Night"
-#      price:
-#        regular: "27€"
-#        discount: "22€"
-#        door: "30€"
-#    - title: "A Musical Day In The Park"
-#      price:
-#        regular: "freiwillige Spenden"
-#    - title: "Festivalpass"
-#      price:
-#        regular: "69€"
-#        door: "&mdash;"
-#      includes:
-#        - item: "Eintritt zu allen Veranstaltungen"
-#- id: "locations_id"
-#  title: "locations_title"
-#  folder: "locations"
-#  descriptions:
-#    main: "locations.md"
+  details_file: "festival_lineup"
+  # enter lineup details to section_details/festival_lineup.yml
+- id: "rahmenprogramm_id"
+  title: "rahmenprogramm_title"
+  folder: "rahmenprogramm"
+  descriptions:
+    main: "rahmenprogramm.md"
+  programs:
+    - description: "jamsession.md"
+    - description: "exhibition.md"
+    - description: "workshops.md"
+    - description: "kulinarik.md"
+- id: "tickets_id"
+  title: "tickets_title"
+  folder: "tickets"
+  descriptions:
+    main: "tickets.md"
+  content: "tickets.html"
+  details_file: "festival_tickets"
+  # enter ticket details to section_details/festival_tickets.yml
+- id: "locations_id"
+  title: "locations_title"
+  folder: "locations"
+  descriptions:
+    main: "locations.md"
 ##  content: "locations.html"
 #  maps:
 #    coordinates:

@@ -1,3 +1,2 @@
-#### **AUSSTELLUNG: 17.-21.08. ab 17:00 Uhr**
-##### <a target="_blank" rel="noopener noreferrer" href="https://afo.at/programm/architektur-zeit-raum-2010-bis-2020">„architektur zeit raum 2010 bis 2020“</a> gibt einen Einblick in das oberösterreichische Architekturgeschehen
-##### Stadtsaal und Pavillon der LMS Mattighofen, Salzburger Straße 8
+#### **AUSSTELLUNG**<br>10.-13.08., ab 11:00 Uhr<br>[Stadtsaal und Pavillon](#locations)
+##### Das [Atelier „Nessling“](https://www.atelier-nessling.at/){:rel="noopener noreferrer" target="_blank"} präsentiert in Form von Sabine Nessling Bilder, deren Schaffensprozess nicht nur leicht von der Hand ging, sondern auch  oft anstrengend war. Das Wechselspiel zwischen intuitivem Handeln und analytischem Lenken sowie die Gegenpole Ruhe und Dynamik, Aufregung und Gelassenheit, Fülle und Reduktion informieren den künstlerischen Prozess dieser Künstlerin aus St. Pantaleon.

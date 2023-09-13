@@ -1,0 +1,58 @@
+{% assign classes_data = site.data.sections[page.section] | where: "id", "classes_id" | first %}
+
+{% for i in (1..2) %}
+<!-- change scroll/stack: swap <table...> & edit _l-ws_details.scss -->
+ <!-- <table class="stack c-section-workshop-schedule-table"> -->
+  <table class="c-section-workshop-schedule-table">
+    {% case i %}
+    {% when 1 %}
+      <thead>
+        <tr>
+          <th colspan="100%">Timetable for Instrumentalists</th>
+        </tr>
+      </thead>
+    {% when 2 %}
+      <thead>
+        <tr>
+          <th colspan="100%">Timetable for Vocalists</th>
+        </tr>
+      </thead>
+    {% endcase %}
+
+    {% for ws_timeslot in section.timeslots %}
+      <tr>
+        <th>{{ ws_timeslot.time }}</th>
+        {% for ws_class in section.ws_classes %}
+          {% if ws_class.timeslot == ws_timeslot.slot %}
+            {% case ws_class.type %}
+              {% when "General" %}
+                <td colspan="100%"><b>{{ ws_class.name }}</b><br>
+                  {{ ws_class.room }}
+                </td>
+                {% continue %}
+              {% when "Instrumental" %}
+                {% if i == 2 %}
+                  {% continue %}
+                {% endif %}
+              {% when "Vocal" %}
+                {% if i == 1 %}
+                  {% continue %}
+                {% endif %}
+              {% when "MusicTalkVoc" %}
+                {% if i == 1 %}
+                  {% continue %}
+                {% endif %}
+            {% endcase %}
+
+            <td rowspan="{{ ws_class.rowspan }}">
+              <b>{{ ws_class.name }}</b><br>
+              {{ ws_class.tutor }}<br>
+              {{ ws_class.room }}<br>
+            </td>
+          {% endif %}
+        {% endfor %}
+      </tr>
+    {% endfor%}
+  </table>
+  <br>
+{% endfor %}

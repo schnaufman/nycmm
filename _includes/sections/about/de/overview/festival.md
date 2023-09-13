@@ -1,1 +1,1 @@
-[mehr Infos](/lineup)
+#### Hochkarätige Abendkonzerte

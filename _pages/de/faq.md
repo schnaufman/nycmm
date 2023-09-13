@@ -38,6 +38,6 @@ Für Freunde der Natur die mit dem Auto anreisen empfehlen wir den erholsamen, r
 * Gitarristen und Bassisten Verstärker wenn möglich
 * Schlagzeuger brauchen nur Sticks
 * Pianisten sind ermutigt ihr Keyboard zu bringen
-* Vokalistinnen Mikrofon wenn möglich
+* Vokalist:innen Mikrofon wenn möglich
 * Schreibmaterial: Notenheft, Notizblock, Bleistift
 * Eure musikalische Kreativität und die Erwartungshaltung vier musikalisch ausgefüllte und unvergessliche Tage zu verbringen!

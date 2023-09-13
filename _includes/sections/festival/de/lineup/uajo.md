@@ -1,3 +1,0 @@
-##### **{{ act.title }}** <br> <a target="_blank" rel="noopener noreferrer" href="http://www.toene.at/uajo/">Website</a>
-
-##### Das Upper Austrian Jazz Orchestra vereint traditionelle Big Band Musik mit neuen spannenden Herangehensweisen, die durch die gemeinsame 28-jährige  Bühnenerfahrung dieser herausragenden MusikerInnen in fulminante Konzerte mündet. Weit über die Landesgrenzen hinaus hat das UAJO mit prominenten musikalischen Gästen wie Mike Stern, Kenny Wheeler, Jane Monheit u.v.a. Tourneen bestritten und Konzertsäle gefüllt. In Mattighofen dürfen wir uns auf das jüngste Projekt des UAJO mit dem preisgekrönten britischen Komponisten und Arrangeur Ed Puddick freuen.

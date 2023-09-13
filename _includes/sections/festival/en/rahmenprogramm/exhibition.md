@@ -1,3 +1,2 @@
-#### **EXHIBITION: 17.-21.08. from 17:00 Uhr**
-##### <a target="_blank" rel="noopener noreferrer" href="https://afo.at/programm/architektur-zeit-raum-2010-bis-2020">„architektur zeit raum 2010 bis 2020“</a> gives an insight into the Upper Austrian architectural scene
-##### City Hall and Pavilion of the LMS Mattighofen, Salzburger Straße 8
+#### **EXHIBITION**<br>10.-13.08., from 11:00 O'Clock<br>[Stadtsaal and Pavillon](#locations)
+##### The [Atelier "Nessling"](https://www.atelier-nessling.at/){:rel="noopener noreferrer" target="_blank"} presents images in the form of Sabine Nessling, whose creative process is not only slightly different from the manual, but was also often exhausting. The interplay between intuitive action and analytical control as well as the opposite poles of calm and dynamic, excitement and serenity, fullness and reduction inform the artistic process of this artist from St. Pantaleon.
