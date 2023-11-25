@@ -1,0 +1,17 @@
+- detail_name: "pricing"
+  tickets:
+    - title: "wsticket_regular_title"
+      price: "329€"
+    - title: "wsticket_students_title"
+      price: "219€"
+    - title: "wsticket_earlybird_title"
+      price: "259€"
+    - title: "wsticket_festivalpassWs_title"
+      price: "55€"
+- detail_name: "workshops"
+  workshops:
+    - name: "Instrumental"
+    - name: "Your Voice On Stage"
+    - name: "Just Sing! A Capella Ensemble"
+    - name: "The Solo Singer And The Songwriter"
+

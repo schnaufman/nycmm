@@ -13,12 +13,13 @@
     main: "tutors.md"
   content: "tutors.html"
   details_file: "workshop_tutors"
-- id: "tickets_id"
-  title: "tickets_title"
+- id: "signup_id"
+  title: "signup_title"
   folder: "tickets"
   descriptions:
     main: "tickets.md"
-  content: "tickets_new.html"
+  content: "tickets.html"
+  details_file: "ws_tickets"
   tickets-in-row: "3"
   tickets:
     - title: "Workshop Ticket"
