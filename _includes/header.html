@@ -26,8 +26,9 @@
         {% assign tickets = site.data.lang[page.language].home.tickets %}
         {% assign page_concerts = site.pages | where:"language", page.language | where:"ref", "festival" | first %}
         {% assign page_workshop = site.pages | where:"language", page.language | where:"ref", "workshop" | first %}
+        {% assign signup_ref = site.data.lang[page.language].navigation.signup_id %}
         {% assign tickets_ref = site.data.lang[page.language].navigation.tickets_id %}
-        <a class="c-header-button" href="{{page_workshop.permalink | relative_url}}#{{tickets_ref}}">{{ sign_up }}</a>
+        <a class="c-header-button" href="{{page_workshop.permalink | relative_url}}#{{signup_ref}}">{{ sign_up }}</a>
         <a class="c-header-button" href="{{page_concerts.permalink | relative_url}}#{{tickets_ref}}">{{ tickets }}</a>
       </div>
     </div>

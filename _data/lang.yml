@@ -22,6 +22,7 @@ de:
     lineup_title: "Programm"
     rahmenprogramm_id: "rahmenprogramm"
     rahmenprogramm_title: "Rahmenprogramm"
+    signup_id: "signup"
     tickets_id: "tickets"
     tickets_title: "Tickets"
     locations_id: "locations"
@@ -33,6 +34,8 @@ de:
     modules_title: "Unser Angebot"
     tutors_id: "dozentinnen"
     tutors_title: "Dozent:innen"
+    signup_id: "anmeldung"
+    signup_title: "Anmeldung"
     testimonials_id: "referenzen"
     testimonials_title: "Referenzen"
     # workshopdetails
@@ -60,9 +63,10 @@ de:
       ss_writing_title: "Arbeite an deinen eigenen Songs"
       details_info: "detaillierte Infos & Tagesablauf"
     tickets:
-      ws_earlybird_price: "mit Festivalpass: 375€"
-      ws_students_price: "Schüler / Studenten: 210€"
-      ws_festivalpass_price: "Eintritt zu allen Konzerten"
+      wsticket_regular_title: "Normalpreis"
+      wsticket_students_title: "Schüler / Studenten"
+      wsticket_earlybird_title: "Earlybird bis 31.12.2023"
+      wsticket_festivalpassWs_title: "Festivalpass für Teilnehmer"
       scholarship_title: "Stipendium"
     gallery:
       workshop_1_caption: "Ensembleunterricht"
@@ -108,6 +112,8 @@ en:
     modules_title: "Our Offer"
     tutors_id: "tutors"
     tutors_title: "Tutors"
+    signup_id: "signup"
+    signup_title: "Sign-Up"
     testimonials_id: "testimonials"
     testimonials_title: "Testimonials"
     # workshopdetails
@@ -135,9 +141,10 @@ en:
       ss_writing_title: "Work on your own songs"
       details_info: "detailed information & daily routine"
     tickets:
-      ws_earlybird_price: "with Festivalpass: 375€"
-      ws_students_price: "Student: 210€"
-      ws_festivalpass_price: "Entry to all Concerts"
+      wsticket_regular_title: "Regular Price"
+      wsticket_students_title: "Students"
+      wstickets_earlybird_title: "Earlybird until 31.12.2023"
+      wstickets_festivalpassWs_title: "Festivalpass for Participants"
       scholarship_title: "Scholarship"
     gallery:
       workshop_1_caption: "Combo"
