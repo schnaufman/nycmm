@@ -20,32 +20,32 @@
       <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-3 medium-up-3 small-up-1">
         <div class="cell">
           <label>Anrede
-            <select name="salutation" placeholder="Anrede" name="Anrede">
+            <select name="anrede" placeholder="Anrede">
               <option value="" disabled selected>Anrede</option>
-              <option value="Miss">Frau</option>
-              <option value="Mister">Herr</option>
-              <option value="Sonstiges">Neutrale Anrede</option>
+              <option value="frau">Frau</option>
+              <option value="herr">Herr</option>
+              <option value="neutrale anrede">Neutrale Anrede</option>
             </select>
           </label>
         </div>
         <div class="cell">
           <label>Vorname*
-            <input type="text" name="first_name" placeholder="Vorname" required>
+            <input type="text" name="vorname" placeholder="Vorname" required>
           </label>
         </div>
         <div class="cell">
           <label>Nachname*
-            <input type="text" name="last_name" placeholder="Nachname" required>
+            <input type="text" name="nachname" placeholder="Nachname" required>
           </label>
         </div>
         <div class="cell">
           <label>Straße + Hausnummer*
-            <input type="text" name="street" required>
+            <input type="text" name="strasse" required>
           </label>
         </div>
         <div class="cell">
           <label>PLZ + Ort*
-            <input type="text" name="city" required>
+            <input type="text" name="ort" required>
           </label>
         </div>
         <div class="cell">
@@ -65,7 +65,7 @@
         </div>
         <div class="cell">
           <label>Instrument*
-            <input type="text" name="Instrument" placeholder="z.B. Vocals, Piano, Saxophon" required>
+            <input type="text" name="instrument" placeholder="z.B. Vocals, Piano, Saxophon" required>
           </label>
         </div>
         <div class="cell">
@@ -73,7 +73,7 @@
             <select name="level" required>
               <option value="" selected disabled>Level</option>
               <option value="beginner">Anfänger</option>
-              <option value="okay">Mittelprächtig</option>
+              <option value="medium">Mittelprächtig</option>
               <option value="advanced">Fortgeschritten</option>
             </select>
           </label>
@@ -82,11 +82,12 @@
       <label>Anmerkung
         <input type="text" name="comment">
       </label>
+      <input type="checkbox" name="cb_festivalpass">
+      <label for="cv_festivalpass">Ich will natürlich einen nicen Festivalpass für 55€ dazu! (Achtung: Die Konzerte finden 2024 terminlich erst NACH dem Workshop statt)</label><br>
       <input type="checkbox" name="cb_Pictures" required>
       <label for="cb_Pictures">Ich bin damit einverstanden, dass während meiner Teilnahme am NYC Musikmarathon Fotos von mir gemacht und eventuell für Werbezwecke veröffentlicht werden. Mehr dazu(Link).*</label><br>
       <input type="checkbox" name="cb_SignUp" required>
-      <label for="cb_SignUp">Ich melde mich verbindlich für den NYC Musikmarathon 2024 an.*</label>
-      <br>
+      <label for="cb_SignUp">Ich melde mich verbindlich für den NYC Musikmarathon 2024 an.*</label><br>
       <button type="submit" class="button" name="submit">Abschicken</button>
     </form>
   {% endcase %}
