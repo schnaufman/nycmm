@@ -10,85 +10,59 @@
             <h2 class="c-section-workshop-tickets-ticket-price">{{ticket.price}}</h2>
           </div>
         </div>
+        <!-- Festivalpass merken für Preise am Ende des Formulars-->
         {% if ticket.title == "wsticket_festivalpassWs_title" %}
-          {% assign ws_fp_index = ticket %}
+          {% assign fp_temp = ticket %}
         {% endif %}
       {% endfor %}
     </div>
   {% when "workshops" %}
     <form id="workshopSignUpForm" method="post" netlify-honeypot="bot-field" data-netlify="true" accept-charset="utf-8" class="c-section-ws_tickets-form">
       <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-3 medium-up-3 small-up-1">
-        <div class="cell">
-          <label>Anrede
-            <select name="anrede" placeholder="Anrede">
-              <option value="" disabled selected>Anrede</option>
-              <option value="frau">Frau</option>
-              <option value="herr">Herr</option>
-              <option value="neutrale anrede">Neutrale Anrede</option>
-            </select>
-          </label>
-        </div>
-        <div class="cell">
-          <label>Vorname*
-            <input type="text" name="vorname" placeholder="Vorname" required>
-          </label>
-        </div>
-        <div class="cell">
-          <label>Nachname*
-            <input type="text" name="nachname" placeholder="Nachname" required>
-          </label>
-        </div>
-        <div class="cell">
-          <label>Straße + Hausnummer*
-            <input type="text" name="strasse" required>
-          </label>
-        </div>
-        <div class="cell">
-          <label>PLZ + Ort*
-            <input type="text" name="ort" required>
-          </label>
-        </div>
-        <div class="cell">
-          <label>E-Mail Adresse*
-            <input type="email" name="email" required>
-          </label>
-        </div>
-
-        <div class="cell" style="text-align:left;">
-          <label>Workshop*<br>
-            {% for workshop in detail.workshops %}
-              <input type="radio" name="workshop" value="{{ workshop.name }}" required>
-              <label for="{{ workshop.name }}">{{ workshop.name }}</label>
-              <br>
-            {% endfor %}
-          </label>
-        </div>
-        <div class="cell">
-          <label>Instrument*
-            <input type="text" name="instrument" placeholder="z.B. Vocals, Piano, Saxophon" required>
-          </label>
-        </div>
-        <div class="cell">
-          <label>Level*
-            <select name="level" required>
-              <option value="" selected disabled>Level</option>
-              <option value="beginner">Anfänger</option>
-              <option value="medium">Mittelprächtig</option>
-              <option value="advanced">Fortgeschritten</option>
-            </select>
-          </label>
-        </div>
+        {% for form_element in detail.form_elements_grid %}
+          {% case form_element.type %}
+            {% when "select" %}
+              <div class="cell">
+                <label>{{ form_element.label }}
+                  <select name="{{ form_element.name }}" placeholder="{{ form_element.placeholder }}" {{ form_element.attributes }}>
+                    {% for option in form_element.options%}
+                      <option value="{{ option.value }}" {{ option.attributes }}>{{ option.text }}</option>
+                    {% endfor %}
+                  </select>
+                </label>
+              </div>
+            {% when "text", "email" %}
+              <div class="cell">
+                <label>{{ form_element.label }}
+                    <input type="{{ form_element.type }}" name="{{ form_element.name }}" placeholder="{{ form_element.placeholder }}" {{ form_element.attributes }}>
+                </label>
+              </div>
+            {% when "radio" %}
+              <div class="cell" style="text-align:left;">
+                <label>{{ form_element.label }}<br>
+                  {% for radio in form_element.radios %}
+                    <input type="{{ form_element.type }}" name="{{ form_element.name }}" value="{{ radio.name }}" required>
+                    <label for="{{ radio.name }}">{{ radio.name }}</label>
+                    <br>
+                  {% endfor %}
+                </label>
+              </div>
+          {% endcase %}
+        {% endfor %}
       </div>
-      <label>Anmerkung
-        <input type="text" name="comment">
-      </label>
-      <input type="checkbox" name="cb_festivalpass">
-      <label for="cv_festivalpass">Ich will natürlich einen nicen Festivalpass für 55€ dazu! (Achtung: Die Konzerte finden 2024 terminlich erst NACH dem Workshop statt)</label><br>
-      <input type="checkbox" name="cb_Pictures" required>
-      <label for="cb_Pictures">Ich bin damit einverstanden, dass während meiner Teilnahme am NYC Musikmarathon Fotos von mir gemacht und eventuell für Werbezwecke veröffentlicht werden. Mehr dazu(Link).*</label><br>
-      <input type="checkbox" name="cb_SignUp" required>
-      <label for="cb_SignUp">Ich melde mich verbindlich für den NYC Musikmarathon 2024 an.*</label><br>
-      <button type="submit" class="button" name="submit">Abschicken</button>
+      {% for form_element in detail.form_elements_nogrid %}
+        {% case form_element.type %}
+          {% when "text" %}
+            <label>{{ form_element.label }}
+              <input type="{{ form_element.type }}" name="{{ form_element.name }}" placeholder="{{ form_element.placeholder }}" {{ form_element.attributes }}>
+            </label>
+          {% when "checkbox"%}
+            <input type="{{ form_element.type }}" name="{{ form_element.name }}" {{ form_element.attributes }}>
+            <label for="{{ form_element.name }}">{{ form_element.label }}</label><br>
+          {% when "submit" %}
+              <button type="{{ form_element.type }}" class="button" name="{{ form_element.type }}">{{ form_element.label }}</button>
+        {% endcase %}
+      {% endfor %}
     </form>
   {% endcase %}
 {% endfor %}
@@ -107,7 +81,7 @@
     {% for ticket in site.data.sections.section_details[section.details_file][0].tickets %}
       {% unless ticket.title == "wsticket_festivalpassWs_title" %}
         {% assign ticket_title = site.data.lang[page.language].workshop.tickets[{{ticket.title}}] %}
-        {{ ticket_title }} : {{ ticket.price }} (mit Festivalpass {{ticket.price | plus: ws_fp_index.price }}€)
+        {{ ticket_title }} : {{ ticket.price }} (mit Festivalpass {{ticket.price | plus: fp_temp.price }}€)
         <br>
       {% endunless %}
     {% endfor %}
