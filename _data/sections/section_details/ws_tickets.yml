@@ -52,7 +52,7 @@
       placeholder: "wsform_email_label"
       attributes: "required"
     - type: "radio"
-      label: "wsform_workshop_name"
+      label: "wsform_workshop_label"
       name: "wsform_workshop_name"
       radios:
         - name: "wsform_workshop_ws1"
@@ -65,9 +65,9 @@
       placeholder: "wsform_instrument_label"
       attributes: "required"
     - type: "select"
-      label: "wsform_level"
-      name: "wsform_level"
-      placeholder: "wsform_level"
+      label: "wsform_level_label"
+      name: "wsform_level_name"
+      placeholder: "wsform_level_label"
       attributes: "required"
       options:
         - value: ""
