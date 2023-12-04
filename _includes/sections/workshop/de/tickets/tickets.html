@@ -1,7 +1,7 @@
 {% for detail in site.data.sections.section_details[section.details_file] %}
   {% case detail.detail_name %}
   {% when "pricing"%}
-    <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-4 medium-up-4 small-up-1">
+    <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-5 medium-up-5 small-up-1">
       {% for ticket in detail.tickets %}
         <div class="cell c-section-workshop-tickets-ticket {{ticket_cell_offset}}">
           {% assign ticket_title = site.data.lang[page.language].workshop.tickets[{{ticket.title}}] %}
@@ -20,29 +20,47 @@
     <form id="workshopSignUpForm" method="post" netlify-honeypot="bot-field" data-netlify="true" accept-charset="utf-8" class="c-section-ws_tickets-form">
       <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-3 medium-up-3 small-up-1">
         {% for form_element in detail.form_elements_grid %}
+        {% assign wsform_label = site.data.lang[page.language].workshop.tickets[{{form_element.label}}] %}
+        {% assign wsform_name = site.data.lang[page.language].workshop.tickets[{{form_element.name}}] %}
+        {% assign wsform_placeholder = site.data.lang[page.language].workshop.tickets[{{form_element.placeholder}}] %}
           {% case form_element.type %}
             {% when "select" %}
               <div class="cell">
-                <label>{{ form_element.label }}
-                  <select name="{{ form_element.name }}" placeholder="{{ form_element.placeholder }}" {{ form_element.attributes }}>
+                {% if form_element.attributes contains "required" %}
+                  <label>{{ wsform_label }}*
+                {% else %}
+                  <label>{{ wsform_label }}
+                {% endif %}
+                  <select name="{{ wsform_name }}" {{ form_element.attributes }}>
                     {% for option in form_element.options%}
-                      <option value="{{ option.value }}" {{ option.attributes }}>{{ option.text }}</option>
+                      {% assign option_value = site.data.lang[page.language].workshop.tickets[{{option.value}}] %}
+                      {% assign option_text = site.data.lang[page.language].workshop.tickets[{{option.text}}] %}
+                      <option value="{{ option_value }}" {{ option.attributes }}>{{ option_text }}</option>
                     {% endfor %}
                   </select>
                 </label>
               </div>
             {% when "text", "email" %}
               <div class="cell">
-                <label>{{ form_element.label }}
-                    <input type="{{ form_element.type }}" name="{{ form_element.name }}" placeholder="{{ form_element.placeholder }}" {{ form_element.attributes }}>
+                {% if form_element.attributes contains "required" %}
+                  <label>{{ wsform_label }}*
+                {% else %}
+                  <label>{{ wsform_label }}
+                {% endif %}
+                    <input type="{{ form_element.type }}" name="{{ wsform_name }}" placeholder="{{ wsform_placeholder }}" {{ form_element.attributes }}>
                 </label>
               </div>
             {% when "radio" %}
               <div class="cell" style="text-align:left;">
-                <label>{{ form_element.label }}<br>
+                {% if form_element.attributes contains "required" %}
+                  <label>{{ wsform_label }}*<br>
+                {% else %}
+                  <label>{{ wsform_label }}<br>
+                {% endif %}
                   {% for radio in form_element.radios %}
-                    <input type="{{ form_element.type }}" name="{{ form_element.name }}" value="{{ radio.name }}" required>
-                    <label for="{{ radio.name }}">{{ radio.name }}</label>
+                    {% assign option_value = site.data.lang[page.language].workshop.tickets[{{radio.name}}] %}
+                    <input type="{{ form_element.type }}" name="{{ wsform_name }}" value="{{ option_value }}" required>
+                    <label for="{{ option_value }}">{{ option_value }}</label>
                     <br>
                   {% endfor %}
                 </label>
@@ -51,16 +69,19 @@
         {% endfor %}
       </div>
       {% for form_element in detail.form_elements_nogrid %}
+        {% assign wsform_label = site.data.lang[page.language].workshop.tickets[{{form_element.label}}] %}
+        {% assign wsform_name = site.data.lang[page.language].workshop.tickets[{{form_element.name}}] %}
+        {% assign wsform_placeholder = site.data.lang[page.language].workshop.tickets[{{form_element.placeholder}}] %}
         {% case form_element.type %}
           {% when "text" %}
-            <label>{{ form_element.label }}
-              <input type="{{ form_element.type }}" name="{{ form_element.name }}" placeholder="{{ form_element.placeholder }}" {{ form_element.attributes }}>
+            <label>{{ wsform_label }}
+              <input type="{{ form_element.type }}" name="{{ wsform_name }}" placeholder="{{ wsform_placeholder }}" {{ form_element.attributes }}>
             </label>
           {% when "checkbox"%}
-            <input type="{{ form_element.type }}" name="{{ form_element.name }}" {{ form_element.attributes }}>
-            <label for="{{ form_element.name }}">{{ form_element.label }}</label><br>
+            <input type="{{ form_element.type }}" name="{{ wsform_name }}" {{ form_element.attributes }}>
+            <label for="{{ wsform_name }}">{{ wsform_label }}</label><br>
           {% when "submit" %}
-              <button type="{{ form_element.type }}" class="button" name="{{ form_element.type }}">{{ form_element.label }}</button>
+              <button type="{{ form_element.type }}" class="button" name="{{ wsform_name }}">{{ wsform_label }}</button>
         {% endcase %}
       {% endfor %}
     </form>
