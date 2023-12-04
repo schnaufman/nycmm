@@ -1,5 +1,5 @@
-#### Beginn: Mittwoch, 9. August 2023 - 9.00 Uhr
-#### Ende: Sonntag, 13. August 2023 - ca. 19:30 Uhr
+#### Beginn: Freitag, 9. August 2024 - 9.00 Uhr
+#### Ende: Dienstag, 13. August 2023 - ca. 19:30 Uhr
 
 ##### In der Mittagspause gibt es gemeinsame Essensmöglichkeiten in nahegelegenen Lokalitäten
 
