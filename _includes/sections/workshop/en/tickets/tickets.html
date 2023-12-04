@@ -20,29 +20,47 @@
     <form id="workshopSignUpForm" method="post" netlify-honeypot="bot-field" data-netlify="true" accept-charset="utf-8" class="c-section-ws_tickets-form">
       <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-3 medium-up-3 small-up-1">
         {% for form_element in detail.form_elements_grid %}
+        {% assign wsform_label = site.data.lang[page.language].workshop.tickets[{{form_element.label}}] %}
+        {% assign wsform_name = site.data.lang[page.language].workshop.tickets[{{form_element.name}}] %}
+        {% assign wsform_placeholder = site.data.lang[page.language].workshop.tickets[{{form_element.placeholder}}] %}
           {% case form_element.type %}
             {% when "select" %}
               <div class="cell">
-                <label>{{ form_element.label }}
-                  <select name="{{ form_element.name }}" placeholder="{{ form_element.placeholder }}" {{ form_element.attributes }}>
+                {% if form_element.attributes contains "required" %}
+                  <label>{{ wsform_label }}*
+                {% else %}
+                  <label>{{ wsform_label }}
+                {% endif %}
+                  <select name="{{ wsform_name }}" {{ form_element.attributes }}>
                     {% for option in form_element.options%}
-                      <option value="{{ option.value }}" {{ option.attributes }}>{{ option.text }}</option>
+                      {% assign option_value = site.data.lang[page.language].workshop.tickets[{{option.value}}] %}
+                      {% assign option_text = site.data.lang[page.language].workshop.tickets[{{option.text}}] %}
+                      <option value="{{ option_value }}" {{ option.attributes }}>{{ option_text }}</option>
                     {% endfor %}
                   </select>
                 </label>
               </div>
             {% when "text", "email" %}
               <div class="cell">
-                <label>{{ form_element.label }}
-                    <input type="{{ form_element.type }}" name="{{ form_element.name }}" placeholder="{{ form_element.placeholder }}" {{ form_element.attributes }}>
+                {% if form_element.attributes contains "required" %}
+                  <label>{{ wsform_label }}*
+                {% else %}
+                  <label>{{ wsform_label }}
+                {% endif %}
+                    <input type="{{ form_element.type }}" name="{{ wsform_name }}" placeholder="{{ wsform_placeholder }}" {{ form_element.attributes }}>
                 </label>
               </div>
             {% when "radio" %}
               <div class="cell" style="text-align:left;">
-                <label>{{ form_element.label }}<br>
+                {% if form_element.attributes contains "required" %}
+                  <label>{{ wsform_label }}*<br>
+                {% else %}
+                  <label>{{ wsform_label }}<br>
+                {% endif %}
                   {% for radio in form_element.radios %}
-                    <input type="{{ form_element.type }}" name="{{ form_element.name }}" value="{{ radio.name }}" required>
-                    <label for="{{ radio.name }}">{{ radio.name }}</label>
+                    {% assign option_value = site.data.lang[page.language].workshop.tickets[{{radio.name}}] %}
+                    <input type="{{ form_element.type }}" name="{{ wsform_name }}" value="{{ option_value }}" required>
+                    <label for="{{ option_value }}">{{ option_value }}</label>
                     <br>
                   {% endfor %}
                 </label>
@@ -51,16 +69,19 @@
         {% endfor %}
       </div>
       {% for form_element in detail.form_elements_nogrid %}
+        {% assign wsform_label = site.data.lang[page.language].workshop.tickets[{{form_element.label}}] %}
+        {% assign wsform_name = site.data.lang[page.language].workshop.tickets[{{form_element.name}}] %}
+        {% assign wsform_placeholder = site.data.lang[page.language].workshop.tickets[{{form_element.placeholder}}] %}
         {% case form_element.type %}
           {% when "text" %}
-            <label>{{ form_element.label }}
-              <input type="{{ form_element.type }}" name="{{ form_element.name }}" placeholder="{{ form_element.placeholder }}" {{ form_element.attributes }}>
+            <label>{{ wsform_label }}
+              <input type="{{ form_element.type }}" name="{{ wsform_name }}" placeholder="{{ wsform_placeholder }}" {{ form_element.attributes }}>
             </label>
           {% when "checkbox"%}
-            <input type="{{ form_element.type }}" name="{{ form_element.name }}" {{ form_element.attributes }}>
-            <label for="{{ form_element.name }}">{{ form_element.label }}</label><br>
+            <input type="{{ form_element.type }}" name="{{ wsform_name }}" {{ form_element.attributes }}>
+            <label for="{{ wsform_name }}">{{ wsform_label }}</label><br>
           {% when "submit" %}
-              <button type="{{ form_element.type }}" class="button" name="{{ form_element.type }}">{{ form_element.label }}</button>
+            <button type="{{ form_element.type }}" class="button" name="{{ wsform_name }}">{{ wsform_label }}</button><br>
         {% endcase %}
       {% endfor %}
     </form>
@@ -69,14 +90,14 @@
 
 <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-2 medium-up-2 small-up-1">
   <div class="cell">
-    <h5>Die Teilnahmegebühr mit Namen im Verwendungszweck bitte an folgendes Konto überweisen:</h5>
+    <h5>Please transfer the participation fee with your name and intended purpose to the following account:</h5>
     <h5>New York City Musikmarathon<br>
     Raiffeisenbank Mattigtal<br>
     BIC: RZOOAT2L303<br>
     IBAN: AT45 3430 3000 0062 7182</h5>
   </div>
   <div class="cell">
-    <h5>Preise:</h5>
+    <h5>Prices:</h5>
     <h5>
     {% for ticket in site.data.sections.section_details[section.details_file][0].tickets %}
       {% unless ticket.title == "wsticket_festivalpassWs_title" %}
@@ -86,11 +107,12 @@
       {% endunless %}
     {% endfor %}
     </h5>
-    <h5>Wir schicken dir eine Anmeldungsbestätigung, sobald die Teilnahmegebühr angekommen ist.</h5>
+    <h5>We will send you a registration confirmation after the participation fee has arrived.</h5>
   </div>
 </div>
 
-<p>Falls du 19 Jahre oder jünger bist, kannst du beim NYCMM einen günstigeren Festivalpass direkt bei uns kaufen.<br>
-Wir bitten dich um eine ehrliche Überweisung des korrekten Betrags.<br>
-Solltest du dich gerade in einer schwierigen finanziellen Situation befinden, schreib uns eine Email an <a href="mailto:info@nycmusikmarathon.com">info@nycmusikmarathon.com</a> und dann können wir schauen, ob wir eine Lösung finden :)
+<h5 style="text-align:center;">The workshop will take place from August 9th to 13th in 2024, the concerts will only take place afterwards from August 14th to 18th.</h5><br>
+<p>If you are 19 years old or younger, you can purchase a cheaper festival pass directly from us during the NYCMM.<br>
+We ask that you honestly transfer the correct amount.<br>
+If you are currently in a difficult financial situation, write us an email to <a href="mailto:info@nycmusikmarathon.com">info@nycmusikmarathon.com</a> and then we can see if we can find a solution :)
 </p>
