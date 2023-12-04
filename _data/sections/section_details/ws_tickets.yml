@@ -81,8 +81,8 @@
           text: "wsform_level_option4"
   form_elements_nogrid:
     - type: "text"
-      name: "wsform_comment"
-      label: "wsform_comment"
+      name: "wsform_comment_name"
+      label: "wsform_comment_label"
     - type: "checkbox"
       name: "wsform_festivalpass_name"
       label: "wsform_festivalpass_label"
