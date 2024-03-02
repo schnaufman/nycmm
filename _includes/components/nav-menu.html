@@ -1,65 +1,24 @@
 {% strip %}
-<div class="c-nav-container" data-smooth-scroll-with-links data-animation-easing="swing" data-animation-duration="1000">
-  <div id="site-main-nav-breakpoint" data-sticky-container>
-    <div class="sticky c-nav-container-sticky js--nav-container-sticky" data-margin-top="0" data-sticky data-sticky-on="small" data-top-anchor="site-main-nav-breakpoint:bottom">
-      <a class="c-nav-dropdown-icon js--nav-dropdown-icon"><i class="ion-md-menu"></i></a>
-      <!-- autogen indicated automatically generated pages for pagination - we don't want them to show in menu -->
+<div id="site-main-nav-breakpoint" data-sticky-container>
+  <div class="sticky c-nav-container-sticky js--nav-container-sticky" data-margin-top="0" data-sticky data-sticky-on="small" data-top-anchor="site-main-nav-breakpoint:bottom">
+    <nav class="c-nav-main-pages">
+    <ul class="c-nav-main-pages-main">
       {% assign pages = site.pages | where:"autogen", nil | where:"language", page.language | sort: 'order' %}
-      <ul class="c-nav-dropdown js--nav-dropdown">
-        {% for pageIt in pages %}
-          {% unless pageIt.menu contains "main" %}
-            {% continue %}
-          {% endunless %}
-          {% if pageIt.title == page.title %}
-            {% assign link_class = 'c-nav-dropdown-item-current-link' %}
-          {% else %}
-            {% assign link_class = 'c-nav-dropdown-item-link' %}
-          {% endif %}
-          <div class="c-nav-dropdown-item" >
-            {% if pageIt.dropdown_title %}
-              {% assign page_title = pageIt.dropdown_title %}
-            {% else %}
-              {% assign page_title = pageIt.title %}
-            {% endif %}
-            <li class="c-nav-dropdown-item-page">
-              {% if site.data.sections[pageIt.section] %}
-                {% assign show_section_dropdown = '' %}
-              {% else %}
-                {% assign show_section_dropdown = 'c-nav-dropdown-item-section-dropdown-hide' %}
-              {% endif %}
-              <a class="{{ show_section_dropdown }} c-nav-dropdown-item-section-dropdown-icon js--nav-dropdown-item-section-dropdown-icon"><i class="ion-md-add"></i></a>
-              <a class="{{ link_class }}" href="{{ pageIt.permalink | relative_url }}">{{ page_title }}</a>
-              {% if show_section_dropdown %}
-                <ul class="c-nav-dropdown-item-section-dropdown js--nav-dropdown-item-section-dropdown">
-                {% endif %}
-
-                  {% for section in site.data.sections[pageIt.section] %}
-                    {% assign section_id = site.data.lang[pageIt.language].navigation[{{section.id}}] %}
-                    {% assign section_title = site.data.lang[pageIt.language].navigation[{{section.title}}] %}
-                    <li class="c-nav-dropdown-item-section"><a class="c-nav-dropdown-item-link" href="{{ pageIt.permalink | relative_url }}#{{ section_id }}">{{ section_title }}</a></li>
-                  {% endfor %}
-                {% if show_section_dropdown %}
-                </ul>
-              {% endif %}
-            </li>
-          </div>
-        {% endfor %}
-      </ul>
-      <nav class="c-nav-page-sections">
-        <ul class="c-nav-page-sections-main">
-          {% for section in site.data.sections[page.section] %}
-            {% assign section_id = site.data.lang[page.language].navigation[{{section.id}}] %}
-            {% assign section_title = site.data.lang[page.language].navigation[{{section.title}}] %}
-            <li class="c-nav-page-sections-main-item"><a href="#{{ section_id }}">{{ section_title }}</a></li>
-          {% endfor %}
-        </ul>
-      </nav>
-      <a href="/"><img src="{{ site.logo | relative_url }}" alt="NYCMM Logo" class="c-nav-logo"></a>
-      <a href="/"><img src="{{ site.logo_sticky | relative_url }}" alt="NYCMM Logo" class="c-nav-logo-sticky"></a>
-    </div>
-  </div>
-  <div class="c-nav-back-to-top-container js--nav-back-to-top-container">
-    <a class="c-nav-back-to-top-button" href="#backToTop"><i class="ion-md-arrow-round-up"></i></a>
+      {% for pageIt in pages %}
+        {% unless pageIt.menu contains "main" %}
+          {% continue %}
+        {% endunless %}
+        {% if pageIt.dropdown_title %}
+          {% assign page_title = pageIt.dropdown_title %}
+        {% else %}
+          {% assign page_title = pageIt.title %}
+        {% endif %}
+        <li class="c-nav-main-pages-main-item">
+          <a href="{{ pageIt.permalink | relative_url }}">{{ page_title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    </nav>
   </div>
 </div>
 {% endstrip %}

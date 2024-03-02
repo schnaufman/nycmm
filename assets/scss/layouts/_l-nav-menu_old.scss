@@ -1,12 +1,7 @@
 /***************************************/
 /*            Navigation               */
 /***************************************/
-/*
-different classes for different sections on the page
- - "normal": on top of the page
- - "sticky": in the sticky menu
- - "mobile": maybe exists
-*/
+
 .c-nav-container {
   margin-top: rem-calc(60);
 }
@@ -50,48 +45,6 @@ different classes for different sections on the page
   i {
     font-size: map-get(map-get(map-get($header-styles, medium), "h2"), "font-size") + unquote("px");
     width: rem-calc(30);
-  }
-}
-
-/***************************/
-/*  Main Pages Navigation  */
-/***************************/
-.c-nav-main-pages {
-  //display: inline-block;
-  // get font-size from header h5 sizes
-  font-size: map-get(map-get(map-get($header-styles, medium), "h4"), "font-size") + unquote("px");
-  margin: 0;
-  vertical-align: middle;
-  //width: 80%;
-}
-
-.c-nav-main-pages-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  flex-wrap: wrap;
-}
-
-.c-nav-main-pages-main-item {
-  list-style: none;
-  margin: rem-calc(10 20);
-
-  a {
-    &:link,
-    &:visited {
-      color: $white;
-      text-decoration: none;
-      text-transform: uppercase;
-      border-bottom: 2px solid transparent;
-      transition: border-bottom 0.2s;
-      padding: rem-calc(8 0);
-    }
-
-    &:hover,
-    &:active {
-      border-bottom: 2px solid $site-header-nav-link-hover-color;
-    }
   }
 }
 
@@ -140,21 +93,6 @@ different classes for different sections on the page
 
   .c-nav-logo-sticky {
     display: inline-block;
-  }
-
-  .c-nav-main-pages {
-    margin: 0;
-
-    .c-nav-main-pages-main {
-      margin: 0;
-
-      .c-nav-main-pages-main-item a {
-        &:link,
-        &:visited {
-          color: $black;
-        }
-      }
-    }
   }
 
   .c-nav-page-sections {
@@ -347,7 +285,7 @@ different classes for different sections on the page
     }
   }
 
-  .c-nav-main-pages-item {
+  .c-nav-page-sections-main-item {
     margin-left: rem-calc(20);
   }
 
@@ -388,7 +326,7 @@ different classes for different sections on the page
     }
   }
 
-  .c-nav-main-pages {
+  .c-nav-page-sections-main {
     display: none;
   }
 }
