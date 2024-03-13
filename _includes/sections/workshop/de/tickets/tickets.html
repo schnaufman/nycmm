@@ -1,7 +1,7 @@
 {% for detail in site.data.sections.section_details[section.details_file] %}
   {% case detail.detail_name %}
   {% when "pricing"%}
-    <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-5 medium-up-5 small-up-1">
+    <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-{{ detail.tickets.size }} medium-up-{{ detail.tickets.size }} small-up-1">
       {% for ticket in detail.tickets %}
         <div class="cell c-section-workshop-tickets-ticket {{ticket_cell_offset}}">
           {% assign ticket_title = site.data.lang[page.language].workshop.tickets[{{ticket.title}}] %}
@@ -115,6 +115,6 @@
 
 <h5 style="text-align:center;">Du willst einem deiner Liebsten die Teilnahme am Workshop schenken?<br>Super Idee! Überweis' uns einfach die Gebühr und schick uns eine Email mit dem Namen der/des Beschenkten an <a href="mailto:info@nycmusikmarathon.com">info@nycmusikmarathon.com</a>. Wir schicken dir dann einen Gutschein zu (ebenfalls per Mail) und der/die Teilnehmer:in kann sich danach über das obige Formular anmelden.</h5><br>
 <p>Falls du 19 Jahre oder jünger bist, kannst du beim NYCMM einen günstigeren Festivalpass direkt bei uns kaufen.<br>
-Wir bitten dich um eine ehrliche Überweisung des korrekten Betrags.<br>
+Wir bitten dich um eine ehrliche Überweisung des korrekten Betrags. Da wir ein sehr kleines Team sind kann es etwas dauern bis du die Bestätigung erhältst. Sollte die Überweisung aber schon mehr als 2 Wochen aus sein, frag bitte einmal nach.<br>
 Solltest du dich gerade in einer schwierigen finanziellen Situation befinden, schreib uns eine Email an <a href="mailto:info@nycmusikmarathon.com">info@nycmusikmarathon.com</a> und dann können wir schauen, ob wir eine Lösung finden :)
 </p>
