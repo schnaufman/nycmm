@@ -65,7 +65,7 @@ de:
     tickets:
       wsticket_regular_title: "Normalpreis"
       wsticket_students_title: "Schüler / Studenten"
-      wsticket_blasmusik_title: "Blasmusik Friendship bis 31.03.2024"
+      wsticket_blasmusik_title: "Blasmusik Friendship"
       wsticket_festivalpassWs_title: "Festivalpass für Teilnehmer"
       wsform_salutation_name: "anrede"
       wsform_salutation_label: "Anrede"
@@ -183,7 +183,7 @@ en:
     tickets:
       wsticket_regular_title: "Regular Price"
       wsticket_students_title: "Students"
-      wsticket_blasmusik_title: "Blasmusik Friendship until 31.03.2024"
+      wsticket_blasmusik_title: "Blasmusik Friendship"
       wsticket_festivalpassWs_title: "Festivalpass for Participants"
       wsform_salutation_name: "anrede"
       wsform_salutation_label: "salutation"
