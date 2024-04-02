@@ -1,4 +1,19 @@
 <div class="grid-container">
+
+  <!-- calculate how many columns -->
+  {% assign largeUp = 5 %}
+
+  {% for i in (4..7) reversed %}
+    {% assign mod = site.data.sections.section_details[section.details_file].size | modulo: i %}
+    {% assign var = site.data.sections.section_details[section.details_file].size | divided_by: 2 %}
+    {% if mod == 0 %}
+      {% assign largeUp = i %}
+      {% break %}
+    {% elsif var == mod %}
+      {% assign largeUp = i %}
+    {% endif %}
+  {% endfor %}
+
   <div class="grid-x large-up-5 medium-up-2 small-up-2">
     {% for tutor in site.data.sections.section_details[section.details_file] %}
       <div class="cell">
