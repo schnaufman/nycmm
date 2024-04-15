@@ -1,0 +1,3 @@
+#### **{{ act.title }}**
+
+##### At the final concert of our workshop participants, you will be impressed not only by the range of the many musical genres that will be taught over five days and the range of ages of our participants, but above all by their love of music on stage. Our children's combo with a plus of energy, as well as our young people and adults, will know how to convince our audience with music from folk, country, rock, pop to jazz in combo format. Our vocalists also perform as songwriters, jazz and pop singers and in the a capella ensemble with a large portion of enthusiasm and creative joy.

@@ -2,7 +2,8 @@
 de:
   translation: "Deutsch"
   home:
-    description: "Verwöhnt mit Bewährtem, verführt mit Neuem und inspiriert mit Kreativem"
+    #description: "Verwöhnt mit Bewährtem, verführt mit Neuem und inspiriert mit Kreativem"
+    description: "New Directions: Music meets Dance talks Inclusion"
     sign_up: "Workshop Anmeldung"
     tickets: "Festivaltickets"
   navigation:
@@ -91,6 +92,7 @@ de:
       wsform_workshop_ws4: "The Solo Singer And The Songwriter"
       wsform_instrument_name: "instrument"
       wsform_instrument_label: "Instrument"
+      wsform_instrument_placeholder: "z.B. Vocals, Piano, Saxophon, ..."
       wsform_level_name: "level"
       wsform_level_label: "Level"
       wsform_level_option1: "Level"
@@ -209,6 +211,7 @@ en:
       wsform_workshop_ws4: "The Solo Singer And The Songwriter"
       wsform_instrument_name: "instrument"
       wsform_instrument_label: "Instrument"
+      wsform_instrument_placeholder: "z.B. Vocals, Piano, Saxophone, ..."
       wsform_level_name: "level"
       wsform_level_label: "Level"
       wsform_level_option1: "Level"

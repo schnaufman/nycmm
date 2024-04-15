@@ -3,6 +3,8 @@
   folder: "lineup"
   descriptions:
     main: "lineup.md"
+  content: "lineup.html"
+  details_file: "festival_lineup"
 - id: "locations_id"
   title: "locations_title"
   folder: "locations"
