@@ -1,3 +1,0 @@
-##### **{{ act.title }}** <br> <a target="_blank" rel="noopener noreferrer" href="https://bluesoverdrive.com/">Website</a>
-
-##### They have twice been awarded the "European Blues Award" for 'Album Of The Year' as the best blues band in Europe. This year the Danish super band *The Blues Overdrive* is coming from Copenhagen en route to Mattighofen. One can be curious about the gentlemen from the far north, who will perform in the Blues Brothers manner with frontman **Martin Olsen** (vocals/guitar), **Andreas Andersen** (single guitar), **Thor Boding** (bass ) and **Louisian Boltner** (drums) rock the stage.

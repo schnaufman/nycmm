@@ -60,7 +60,7 @@
     - type: "text"
       label: "wsform_instrument_label"
       name: "wsform_instrument_name"
-      placeholder: "wsform_instrument_label"
+      placeholder: "wsform_instrument_placeholder"
       attributes: "required"
     - type: "select"
       label: "wsform_level_label"

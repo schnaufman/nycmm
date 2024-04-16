@@ -1,3 +1,0 @@
-##### **{{ act.title }}** <br> <a target="_blank" rel="noopener noreferrer" href="http://www.simon.ploetzeneder.net/">Website</a>
-
-##### Dieses Quartett mit Leader und Tompeter **Simon Plötzeneder**, der durch spielerische Flexibilität und Vertrautheit mit den verschiedensten musikalischen Genres besticht, überzeugt durch seinen eigenständigen Sound und zeitlose Kompositionen, die ohne Umwege die Energie und Emotionen direkt auf die Zuhörer übertragen. Mit **Martin Reiter** (organ), **Andy Tausch** (guit) und **Mario Gonzi** (dr).

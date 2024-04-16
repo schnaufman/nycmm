@@ -1,3 +1,0 @@
-##### **{{ act.title }}** <br> <a target="_blank" rel="noopener noreferrer" href="https://www.chandarule.com/revival">Website</a>
-
-##### The long-awaited project "Revival" with the powerful and crystal-clear voice of the charismatic US vocalist **Chanda Rule** and one of the leading jazz/fusion guitarists in Europe, **Mickylee**, promises gospel, soul, jazz and communal music" a musical experience that moves, touches and inspires
