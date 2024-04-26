@@ -233,3 +233,17 @@
   ws_details:
     - description: "instrumental.md"
     - description: "vocalists.md"
+- id: "testimonials_id"
+  title: "testimonials_title"
+  folder: "testimonials"
+  descriptions:
+    main: "testimonials.md"
+  content: "testimonials.html"
+  testimonials-in-row: "3"
+  testimonials:
+    - description: "testimonial1.md"
+    - description: "testimonial2.md"
+    - description: "testimonial3.md"
+    - description: "testimonial4.md"
+    - description: "testimonial5.md"
+    - description: "testimonial6.md"

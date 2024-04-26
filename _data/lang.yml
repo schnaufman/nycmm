@@ -4,8 +4,8 @@ de:
   home:
     #description: "Verwöhnt mit Bewährtem, verführt mit Neuem und inspiriert mit Kreativem"
     description: "New Directions: Music meets Dance talks Inclusion"
-    sign_up: "Workshop Anmeldung"
-    tickets: "Festivaltickets"
+    sign_up: "Workshop Anmeldung<br>09. - 13. August"
+    tickets: "Festivaltickets<br>13. - 18. August"
   navigation:
     # about us
     overview_id: "uebersicht"
@@ -37,6 +37,8 @@ de:
     tutors_title: "Dozent:innen"
     signup_id: "anmeldung"
     signup_title: "Anmeldung"
+    children_id: "kinder"
+    children_title: "Für Kinder"
     testimonials_id: "referenzen"
     testimonials_title: "Referenzen"
     # workshopdetails
@@ -65,7 +67,7 @@ de:
       details_info: "detaillierte Infos & Tagesablauf"
     tickets:
       wsticket_regular_title: "Normalpreis"
-      wsticket_students_title: "Schüler / Studenten"
+      wsticket_students_title: "Schüler / Studenten bis 25 Jahre"
       wsticket_blasmusik_title: "Blasmusik Friendship"
       wsticket_festivalpassWs_title: "Festivalpass für Teilnehmer"
       wsform_salutation_name: "anrede"
@@ -156,6 +158,8 @@ en:
     tutors_title: "Tutors"
     signup_id: "signup"
     signup_title: "Sign-Up"
+    children_id: "children"
+    children_title: "For Children"
     testimonials_id: "testimonials"
     testimonials_title: "Testimonials"
     # workshopdetails

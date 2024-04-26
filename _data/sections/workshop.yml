@@ -26,20 +26,15 @@
     deadline:
       format: "{{ section.scholarship.deadline.date | date: \"%d.%m.%Y\" }}"
       date: "2022-06-30"
-- id: "testimonials_id"
-  title: "testimonials_title"
-  folder: "testimonials"
+- id: "children_id"
+  title: "children_title"
+  folder: "children"
   descriptions:
-    main: "testimonials.md"
-  content: "testimonials.html"
-  testimonials-in-row: "3"
-  testimonials:
-    - description: "testimonial1.md"
-    - description: "testimonial2.md"
-    - description: "testimonial3.md"
-    - description: "testimonial4.md"
-    - description: "testimonial5.md"
-    - description: "testimonial6.md"
+    main: "children.md"
+  image:
+    file: "/assets/img/classes/fckw.jpg"
+    width: "200px"
+    height: "200px"
 - id: "locations_id"
   title: "locations_title"
   folder: "locations"
