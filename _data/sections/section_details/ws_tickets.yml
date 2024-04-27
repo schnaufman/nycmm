@@ -57,6 +57,7 @@
         - name: "wsform_workshop_ws2"
         - name: "wsform_workshop_ws3"
         - name: "wsform_workshop_ws4"
+        - name: "wsform_workshop_ws5"
     - type: "text"
       label: "wsform_instrument_label"
       name: "wsform_instrument_name"

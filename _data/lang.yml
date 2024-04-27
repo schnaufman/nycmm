@@ -67,7 +67,7 @@ de:
       details_info: "detaillierte Infos & Tagesablauf"
     tickets:
       wsticket_regular_title: "Normalpreis"
-      wsticket_students_title: "Schüler / Studenten bis 25 Jahre"
+      wsticket_students_title: "Schüler / Studenten bis inkl. 26 Jahre"
       wsticket_blasmusik_title: "Blasmusik Friendship"
       wsticket_festivalpassWs_title: "Festivalpass für Teilnehmer"
       wsform_salutation_name: "anrede"
@@ -92,6 +92,7 @@ de:
       wsform_workshop_ws2: "Your Voice On Stage"
       wsform_workshop_ws3: "Just Sing! A Capella Ensemble"
       wsform_workshop_ws4: "The Solo Singer And The Songwriter"
+      wsform_workshop_ws5: "Funky Cats Kids Workshop"
       wsform_instrument_name: "instrument"
       wsform_instrument_label: "Instrument"
       wsform_instrument_placeholder: "z.B. Vocals, Piano, Saxophon, ..."
@@ -188,7 +189,7 @@ en:
       details_info: "detailed information & daily routine"
     tickets:
       wsticket_regular_title: "Regular Price"
-      wsticket_students_title: "Students"
+      wsticket_students_title: "Students until 26"
       wsticket_blasmusik_title: "Blasmusik Friendship"
       wsticket_festivalpassWs_title: "Festivalpass for Participants"
       wsform_salutation_name: "anrede"
@@ -213,6 +214,7 @@ en:
       wsform_workshop_ws2: "Your Voice On Stage"
       wsform_workshop_ws3: "Just Sing! A Capella Ensemble"
       wsform_workshop_ws4: "The Solo Singer And The Songwriter"
+      wsform_workshop_ws5: "Funky Cats Kids Workshop"
       wsform_instrument_name: "instrument"
       wsform_instrument_label: "Instrument"
       wsform_instrument_placeholder: "z.B. Vocals, Piano, Saxophone, ..."
