@@ -5,9 +5,10 @@
       {% for ticket in detail.tickets %}
         <div class="cell c-section-workshop-tickets-ticket {{ticket_cell_offset}}">
           {% assign ticket_title = site.data.lang[page.language].workshop.tickets[{{ticket.title}}] %}
-          <h5 class="c-section-workshop-tickets-ticket-title">{{ ticket_title }}</h5>
+          <h4 class="c-section-tickets-ticket-title">{{ ticket_title }}</h4>
           <div class="c-section-workshop-tickets-ticket-prices">
-            <h2 class="c-section-workshop-tickets-ticket-price">{{ticket.price}}</h2>
+            <h2 class="c-section-workshop-tickets-ticket-price">{{ ticket.price }}</h2>
+            <h5 class="c-section-tickets-ticket-door-price">{{ ticket.extra }}</h5>
           </div>
         </div>
         <!-- Festivalpass merken für Preise am Ende des Formulars-->

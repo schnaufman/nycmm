@@ -3,9 +3,16 @@
   folder: "classes"
   descriptions:
     main: "modules.md"
+    end: "ws_details.md"
   content: "classes.html"
   classes-in-row: "3"
   details_file: "workshop_modules"
+- id: "children_id"
+  title: "children_title"
+  folder: "children"
+  content: "children.html"
+  classes-in-row: "3"
+  details_file: "children"
 - id: "tutors_id"
   folder: "tutors"
   title: "tutors_title"
@@ -26,15 +33,6 @@
     deadline:
       format: "{{ section.scholarship.deadline.date | date: \"%d.%m.%Y\" }}"
       date: "2022-06-30"
-- id: "children_id"
-  title: "children_title"
-  folder: "children"
-  descriptions:
-    main: "children.md"
-  image:
-    file: "/assets/img/classes/fckw.jpg"
-    width: "200px"
-    height: "200px"
 - id: "locations_id"
   title: "locations_title"
   folder: "locations"

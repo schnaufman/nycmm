@@ -19,6 +19,9 @@
   .c-section-parent-container:last-of-type {
     border-radius: 0 0 rem-calc(5) rem-calc(5);
   }
+  .c-section-parent-container:only-child {
+    border-radius: rem-calc(5);
+  }
 }
 
 .c-section-workshop-classes-class-title {

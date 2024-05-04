@@ -5,9 +5,10 @@
       {% for ticket in detail.tickets %}
         <div class="cell c-section-workshop-tickets-ticket {{ticket_cell_offset}}">
           {% assign ticket_title = site.data.lang[page.language].workshop.tickets[{{ticket.title}}] %}
-          <h5 class="c-section-workshop-tickets-ticket-title">{{ ticket_title }}</h5>
+          <h4 class="c-section-tickets-ticket-title">{{ ticket_title }}</h4>
           <div class="c-section-workshop-tickets-ticket-prices">
-            <h2 class="c-section-workshop-tickets-ticket-price">{{ticket.price}}</h2>
+            <h2 class="c-section-workshop-tickets-ticket-price">{{ ticket.price }}</h2>
+            <h5 class="c-section-tickets-ticket-door-price">{{ ticket.extra }}</h5>
           </div>
         </div>
         <!-- Festivalpass merken für Preise am Ende des Formulars-->
@@ -88,34 +89,19 @@
   {% endcase %}
 {% endfor %}
 
-<div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-2 medium-up-2 small-up-1">
-  <div class="cell">
-    <h5>Die Teilnahmegebühr mit Namen im Verwendungszweck bitte an folgendes Konto überweisen:</h5>
-    <h5>New York City Musikmarathon<br>
-    Raiffeisenbank Mattigtal<br>
-    BIC: RZOOAT2L303<br>
-    IBAN: AT45 3430 3000 0062 7182</h5>
-  </div>
-  <div class="cell">
-    <h5>Preise:</h5>
-    <h5>
-    {% for ticket in site.data.sections.section_details[section.details_file][0].tickets %}
-      {% unless ticket.title == "wsticket_festivalpassWs_title" %}
-        {% assign ticket_title = site.data.lang[page.language].workshop.tickets[{{ticket.title}}] %}
-        {{ ticket_title }} : {{ ticket.price }} (mit Festivalpass {{ticket.price | plus: fp_temp.price }}€)
-        <br>
-      {% endunless %}
-    {% endfor %}
-    </h5>
-    <h5><a href="#kinder">Schau' dir auch unser Kinder- und Familienangebot an</a></h5>
-    <h5>Wir schicken dir eine Anmeldungsbestätigung, sobald die Teilnahmegebühr angekommen ist.</h5>
-  </div>
+<div class="cell">
+  <h5>Die Teilnahmegebühr mit Namen im Verwendungszweck bitte an folgendes Konto überweisen:</h5><br>
+  <h5 style="border:solid 1px; border-radius:5px; border-spacing:100px; width:fit-content; padding:10px; margin:auto;">
+  New York City Musikmarathon<br>
+  Raiffeisenbank Mattigtal<br>
+  BIC: RZOOAT2L303<br>
+  IBAN: AT45 3430 3000 0062 7182</h5><br>
+  <h5>Wir schicken dir eine Anmeldungsbestätigung, sobald die Teilnahmegebühr angekommen ist.</h5>
+  <h5>ACHTUNG: Der Workshop findet 2024 vom 9. bis 13. August statt, die Konzerte erst danach von 14.-18.</h5>
 </div>
 
-<h5 style="text-align:center;">ACHTUNG: Der Workshop findet 2024 vom 9. bis 13. August statt, die Konzerte erst danach von 14.-18.</h5><br><br>
+<br><br>
 
-<h5 style="text-align:center;">Du willst einem deiner Liebsten die Teilnahme am Workshop schenken?<br>Super Idee! Überweis' uns einfach die Gebühr und schick uns eine Email mit dem Namen der/des Beschenkten an <a href="mailto:info@nycmusikmarathon.com">info@nycmusikmarathon.com</a>. Wir schicken dir dann einen Gutschein zu (ebenfalls per Mail) und der/die Teilnehmer:in kann sich danach über das obige Formular anmelden.</h5><br>
-<p>Falls du 19 Jahre oder jünger bist, kannst du beim NYCMM einen günstigeren Festivalpass direkt bei uns kaufen.<br>
-Wir bitten dich um eine ehrliche Überweisung des korrekten Betrags. Da wir ein sehr kleines Team sind kann es etwas dauern bis du die Bestätigung erhältst. Sollte die Überweisung aber schon mehr als 2 Wochen aus sein, frag bitte einmal nach.<br>
-Solltest du dich gerade in einer schwierigen finanziellen Situation befinden, schreib uns eine Email an <a href="mailto:info@nycmusikmarathon.com">info@nycmusikmarathon.com</a> und dann können wir schauen, ob wir eine Lösung finden :)
-</p>
+<p>*Falls du 19 Jahre oder jünger bist, kannst du beim NYCMM einen günstigeren Festivalpass direkt bei uns kaufen.</p>
+<p>Wir bitten dich um eine ehrliche Überweisung des korrekten Betrags. Da wir ein sehr kleines Team sind kann es etwas dauern bis du die Bestätigung erhältst. Sollte die Überweisung aber schon mehr als 2 Wochen aus sein, frag bitte einmal nach.</p>
+<p>Solltest du dich gerade in einer schwierigen finanziellen Situation befinden, schreib uns eine Email an <a href="mailto:info@nycmusikmarathon.com">info@nycmusikmarathon.com</a> und dann können wir schauen, ob wir eine Lösung finden :)</p>
