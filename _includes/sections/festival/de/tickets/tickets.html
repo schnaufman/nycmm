@@ -3,7 +3,7 @@
     <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-4 medium-up-4 small-up-1">
       {% for ticket in site.data.sections.section_details[section.details_file] %}
         <div class="cell c-section-tickets-ticket">
-          <h5 class="c-section-tickets-ticket-title">{{ticket.title}}</h5>
+          <h4 class="c-section-tickets-ticket-title">{{ticket.title}}</h4>
           <div class="c-section-tickets-ticket-prices">
             {% if ticket.price.discount %}
               <h2 class="c-section-tickets-ticket-price">{{ticket.price.regular}}<span>&nbsp;/&nbsp;{{ticket.price.discount}}&nbsp;*</span></h2>
