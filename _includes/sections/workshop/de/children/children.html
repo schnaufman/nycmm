@@ -10,7 +10,6 @@
       <div class="grid-container">
         <div class="grid-x grid-padding-x grid-padding-y large-up-{{section.classes-in-row}} medium-up-{{section.classes-in-row}} small-up-1">
           {% for class in module.classes %}
-            {% capture class_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/module_details/{{ class.description }} %}{% endcapture %}
             {% if class.row-offset %}
               {% assign class_size = section.classes | size %}
               {% assign offset_calc = 12 | divided_by: {{section.classes-in-row}} | times: class.row-offset | floor %}
@@ -19,13 +18,16 @@
               {% assign class_cell_offset = "" %}
             {% endif %}
             <div class="cell {{class_cell_offset}}">
-              {% assign class_title = site.data.lang[page.language].workshop.classes[{{class.title}}] %}
-              <h4 class="c-section-workshop-classes-class-title">{{class_title}}</h4>
+              {% if class.title %}
+                {% assign class_title = site.data.lang[page.language].workshop.classes[{{class.title}}] %}
+                <h4 class="c-section-workshop-classes-class-title">{{class_title}}</h4>
+              {% endif %}
               <figure class="c-section-workshop-classes-class">
                 <div class="c-section-workshop-classes-class-image">
                   <img class="lazyload" src="{{class.image.lqip}}" data-src="/assets/img/classes/{{class.image.file}}" alt="" width="{{class.image.width}}" height="{{class.image.height}}">
                 </div>
                 <figcaption class="c-section-workshop-classes-class-description">
+                  {% capture class_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/module_details/{{ class.description }} %}{% endcapture %}
                   {{ class_description | markdownify }}
                 </figcaption>
               </figure>
@@ -36,10 +38,5 @@
       <br>
     </div>
   {% endfor %}
-</div>
-
-{% if section.descriptions.end %}
   <br>
-  {% capture end_description %}{% include sections/{{ page.section }}/{{ page.language }}/{{ section.folder }}/{{ section.descriptions.end }} %}{% endcapture %}
-  <div class="c-section-workshop-classes-class-description">{{ end_description | markdownify }}</div>
-{% endif %}
+</div>

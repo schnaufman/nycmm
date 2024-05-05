@@ -1,13 +1,14 @@
 {% for detail in site.data.sections.section_details[section.details_file] %}
   {% case detail.detail_name %}
   {% when "pricing"%}
-  <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-{{ detail.tickets.size }} medium-up-{{ detail.tickets.size }} small-up-1">
+    <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-{{ detail.tickets.size }} medium-up-{{ detail.tickets.size }} small-up-1">
       {% for ticket in detail.tickets %}
         <div class="cell c-section-workshop-tickets-ticket {{ticket_cell_offset}}">
           {% assign ticket_title = site.data.lang[page.language].workshop.tickets[{{ticket.title}}] %}
-          <h5 class="c-section-workshop-tickets-ticket-title">{{ ticket_title }}</h5>
+          <h4 class="c-section-tickets-ticket-title">{{ ticket_title }}</h4>
           <div class="c-section-workshop-tickets-ticket-prices">
-            <h2 class="c-section-workshop-tickets-ticket-price">{{ticket.price}}</h2>
+            <h2 class="c-section-workshop-tickets-ticket-price">{{ ticket.price }}</h2>
+            <h5 class="c-section-tickets-ticket-door-price">{{ ticket.extra }}</h5>
           </div>
         </div>
         <!-- Festivalpass merken für Preise am Ende des Formulars-->
@@ -88,33 +89,17 @@
   {% endcase %}
 {% endfor %}
 
-<div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-2 medium-up-2 small-up-1">
-  <div class="cell">
-    <h5>Please transfer the participation fee with your name and intended purpose to the following account:</h5>
-    <h5>New York City Musikmarathon<br>
-    Raiffeisenbank Mattigtal<br>
-    BIC: RZOOAT2L303<br>
-    IBAN: AT45 3430 3000 0062 7182</h5>
-  </div>
-  <div class="cell">
-    <h5>Prices:</h5>
-    <h5>
-    {% for ticket in site.data.sections.section_details[section.details_file][0].tickets %}
-      {% unless ticket.title == "wsticket_festivalpassWs_title" %}
-        {% assign ticket_title = site.data.lang[page.language].workshop.tickets[{{ticket.title}}] %}
-        {{ ticket_title }} : {{ ticket.price }} (mit Festivalpass {{ticket.price | plus: fp_temp.price }}€)
-        <br>
-      {% endunless %}
-    {% endfor %}
-    </h5>
-    <h5>We will send you a registration confirmation after the participation fee has arrived.</h5>
-  </div>
+<div class="cell">
+  <h5>Please transfer the participation fee with your name and intended purpose to the following account:</h5><br>
+  <h5 style="border:solid 1px; border-radius:5px; border-spacing:100px; width:fit-content; padding:10px; margin:auto;">
+  New York City Musikmarathon<br>
+  Raiffeisenbank Mattigtal<br>
+  BIC: RZOOAT2L303<br>
+  IBAN: AT45 3430 3000 0062 7182</h5><br>
+  <h5>Wir schicken dir eine Anmeldungsbestätigung, sobald die Teilnahmegebühr angekommen ist.</h5>
+  <h5>The workshop will take place from August 9th to 13th in 2024, the concerts will only take place afterwards from August 14th to 18th.</h5><br><br>
 </div>
 
-<h5 style="text-align:center;">The workshop will take place from August 9th to 13th in 2024, the concerts will only take place afterwards from August 14th to 18th.</h5><br><br>
-
-<h5 style="text-align:center;">You want to give one of your loved ones the opportunity to participate in the workshop?<br> Great idea! Just transfer the fee to us and send us an email with the name of the recipient to <a href="mailto:info@nycmusikmarathon.com">info@nycmusikmarathon.com</a>. We will then send you a voucher and the participant can then register via the form.</h5><br>
-<p>If you are 19 years old or younger, you can purchase a cheaper festival pass directly from us during the NYCMM.<br>
-We kindly ask that you honestly transfer the correct amount. Since we are a very small team, it may take some time until you receive the confirmation. However, if the transfer has been out for more than 2 weeks, please ask.<br>
-If you are currently in a difficult financial situation, write us an email to <a href="mailto:info@nycmusikmarathon.com">info@nycmusikmarathon.com</a> and then we can see if we can find a solution :)
-</p>
+<p>*If you are 19 years old or younger, you can purchase a cheaper festival pass directly from us during the NYCMM.</p>
+<p>We kindly ask that you honestly transfer the correct amount. Since we are a very small team, it may take some time until you receive the confirmation. However, if the transfer has been out for more than 2 weeks, please ask.</p>
+<p>If you are currently in a difficult financial situation, write us an email to <a href="mailto:info@nycmusikmarathon.com">info@nycmusikmarathon.com</a> and then we can see if we can find a solution :)</p>

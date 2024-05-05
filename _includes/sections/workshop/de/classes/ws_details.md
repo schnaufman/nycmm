@@ -1,0 +1,1 @@
+### [detaillierte Infos & Tagesablauf](/workshopdetails)

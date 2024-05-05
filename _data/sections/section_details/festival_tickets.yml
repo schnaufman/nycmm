@@ -1,27 +1,25 @@
-- title: "Opening Night"
+- title: "13.08.<br>Abschlusskonzert"
   price:
-    regular: "freiwillige Spenden"
-- title: "Blues Power Night"
+    regular: "freie Spende"
+- title: "14.08.<br>Opening Night"
   price:
-    regular: "25€"
-    discount: "20€"
-    door: "27€"
-- title: "Big Band Night"
+    regular: "freie Spende"
+- title: "15.08.<br>Blues Power Night"
   price:
     regular: "25€"
     discount: "20€"
     door: "27€"
-- title: "Familienmusiktag"
-  price:
-    regular: "freiwillige Spenden"
-- title: "Jazz, Soul, & Funk Night"
+- title: "16.08.<br>Jazz, Funk & Soul Night"
   price:
     regular: "27€"
     discount: "22€"
     door: "30€"
-- title: "A Musical Day In The Park"
+- title: "17.08."
   price:
-    regular: "freiwillige Spenden"
+    regular: "Coming soon!"
+- title: "18.08.<br>A Musical Day In The Park"
+  price:
+    regular: "freie Spende"
 - title: "Festivalpass"
   price:
     regular: "69€"

@@ -13,11 +13,14 @@
   .c-section-parent-container:nth-child(even) {
     background-color: $medium-gray;
   }
-  .c-section-parent-container:first-of-type {
+  .c-section-parent-container:first-child {
     border-radius: rem-calc(5) rem-calc(5) 0 0;
   }
-  .c-section-parent-container:last-of-type {
+  .c-section-parent-container:last-child {
     border-radius: 0 0 rem-calc(5) rem-calc(5);
+  }
+  .c-section-parent-container:only-child {
+    border-radius: rem-calc(5);
   }
 }
 
