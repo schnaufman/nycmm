@@ -78,26 +78,26 @@
         lqip: ""
         width: "600px"
         height: "400px"
-#- title: "Vivaldi 4 Seasons - Das Crossover Konzert"
-#  location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
-#  date:
-#    format: "{{ site.date.begin | date: \"%d\" | plus: 8 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-#    time: "19:30 Uhr, Einlass: 19:00 Uhr"
-#  description: "template.md"
-#  acts:
-#    - title: "Swing Á La Django"
-#      description: "vivaldi.md"
-#      image:
-#        file: "vivaldi.jpg"
-#        lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAgACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4k9U1H4P6z/Zn2TwboHgttH8LQafrp03xPqOt2/iLxHp9hODr9qmtXt9faeb8ixgudPsf7Rs59VN3ewRJYTFtP+XlTzuD9pDE1cRCviZunTlRhTnh6Lr/DPlSTUYSk4uo6TVOKjd1IxjP6SnPJ6i9nVw9OhVw9CPNVjUlKlXqKhFaf3nOCv7OFZurOcny05ynD58NhPMTMjafGkp81UOqaXGUWT5lQxvdo8ZUEAo6IyEbWVSCB9GqkY+6/atx91v2NZ3a0buoNO+902numzwPZyl7y9klLVL21FWT1Ss5pq21mk11R/9k="
-#        width: "600px"
-#        height: "400px"
-- title: "Stay Tuned!"
-  location: "Voglpark / Stadtsaal (bei Schlechtwetter)<br>mehr Infos komen bald!"
+- title: "Vivaldi 4 Seasons - Das Crossover Konzert"
+  location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
   date:
-    format: "Samstag, {{ site.date.begin | date: \"%d\" | plus: 8 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
+    format: "{{ site.date.begin | date: \"%d\" | plus: 8 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
     time: "19:30 Uhr, Einlass: 19:00 Uhr"
   description: "template.md"
+  acts:
+    - title: "Swing Á La Django"
+      description: "vivaldi.md"
+      image:
+        file: "vivaldi.jpg"
+        lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAgACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4k9U1H4P6z/Zn2TwboHgttH8LQafrp03xPqOt2/iLxHp9hODr9qmtXt9faeb8ixgudPsf7Rs59VN3ewRJYTFtP+XlTzuD9pDE1cRCviZunTlRhTnh6Lr/DPlSTUYSk4uo6TVOKjd1IxjP6SnPJ6i9nVw9OhVw9CPNVjUlKlXqKhFaf3nOCv7OFZurOcny05ynD58NhPMTMjafGkp81UOqaXGUWT5lQxvdo8ZUEAo6IyEbWVSCB9GqkY+6/atx91v2NZ3a0buoNO+902numzwPZyl7y9klLVL21FWT1Ss5pq21mk11R/9k="
+        width: "600px"
+        height: "400px"
+#- title: "Stay Tuned!"
+#  location: "Voglpark / Stadtsaal (bei Schlechtwetter)<br>mehr Infos komen bald!"
+#  date:
+#    format: "Samstag, {{ site.date.begin | date: \"%d\" | plus: 8 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
+#    time: "19:30 Uhr, Einlass: 19:00 Uhr"
+#  description: "template.md"
 - title: "A Musical Day In The Park"
   acts-in-row: "2"
   location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
