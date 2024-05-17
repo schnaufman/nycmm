@@ -5,7 +5,6 @@
     main: "overview.md"
   content: "overview.html"
   details_file: "about_overview"
-  
 - id: "contact_id"
   folder: "contact"
   title: "contact_title"

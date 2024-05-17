@@ -1,5 +1,0 @@
-#### **{{ act.title }}**
-##### Das neueste spannende musikalische Experiment der Swing à la Django Band - mit den zwei goldenen Schallplatten - ist eine Adaption des populärsten Werks des berühmten italienischen Komponisten und Geigers Antonio Vivaldi. Jeder kennt die Violinkonzerte der Vier Jahreszeiten, aber das Werk in dieser Form hat man noch nie gehört. Das gesamte Stück wurde überarbeitet, um die Zuhörer auf eine inspirierende Reise durch verschiedene Musikstile mitzunehmen. Vertraute Melodien werden in aufregende Swing-, Jazz-, Latin- und Folk-Klänge und -Rhythmen verwandelt, durchsetzt mit italienischen, französischen, ungarischen, spanischen und amerikanischen Melodien und virtuosen Improvisationen. Das Ziel des Experiments ist es, den Menschen von heute die Barockmusik näherzubringen und das Genie der Vergangenheit zugänglicher zu machen!
-
-##### weitere Infos:
-##### [www.swingaladjango.com](https://www.swingaladjango.com/){:target="_blank"}<br>[Promo Video](https://www.youtube.com/watch?v=Un1JBv5zLb8){:target="_blank"}

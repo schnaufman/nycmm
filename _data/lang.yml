@@ -3,7 +3,7 @@ de:
   translation: "Deutsch"
   home:
     #description: "Verwöhnt mit Bewährtem, verführt mit Neuem und inspiriert mit Kreativem"
-    description: "New Directions: Music meets Dance talks Inclusion"
+    description: "New Directions: Music meets Dance talks Integration"
     sign_up: "Workshop Anmeldung<br>09. - 13. August"
     tickets: "Festivaltickets<br>13. - 18. August"
   navigation:
@@ -126,7 +126,7 @@ de:
 en:
   translation: "English"
   home:
-    description: "Pampered with the tried and tested, seduced with the new and inspired with the creative"
+    description: "New Directions: Music meets Dance talks Integration"
     sign_up: "Workshop Registration<br>09. - 13. August"
     tickets: "Festivaltickets<br>13. - 18. August"
   navigation:
