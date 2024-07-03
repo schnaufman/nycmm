@@ -106,3 +106,7 @@
   acts:
     - title: "Familienmusiktag"
       description: "familienmusiktag.md"
+      image:
+        file: "familienmusiktag.jpg"
+        width: "600px"
+        height: "400px"
