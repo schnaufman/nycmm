@@ -97,7 +97,7 @@
 #    format: "Samstag, {{ site.date.begin | date: \"%d\" | plus: 8 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
 #    time: "19:30 Uhr, Einlass: 19:00 Uhr"
 #  description: "template.md"
-- title: "A Musical Day In The Park"
+- title: "Familienmusiktag"
   location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
   date:
     format: "Sonntag, {{ site.date.begin | date: \"%d\" | plus: 9 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
