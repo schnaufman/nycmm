@@ -14,9 +14,11 @@
     regular: "27€"
     discount: "22€"
     door: "30€"
-- title: "17.08."
+- title: "17.08.<br>Swing Under The Stars Night"
   price:
-    regular: "Coming soon!"
+    regular: "25€"
+    discount: "20€"
+    door: "27€"
 - title: "18.08.<br>A Musical Day In The Park"
   price:
     regular: "freie Spende"
