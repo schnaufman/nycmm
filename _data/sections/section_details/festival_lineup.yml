@@ -17,7 +17,8 @@
 - title: "Workshop - Abschlusskonzert"
   location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
   date:
-    format: "Dienstag, {{ site.date.begin | date: \"%d\" | plus: 4 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
+    # format: "Dienstag, {{ site.date.begin | date: \"%d\" | plus: 4 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
+    format: "Dienstag, {{ site.date.begin | date: \"%d\" | plus: 4 }}.{{ site.date.begin | date: \"%m\" }}.{{ site.date.begin | date: \"%Y\" | minus: 1 }}"
     time: "17:00 Uhr, Einlass: 16:30 Uhr"
   description: "template.md"
   acts:
@@ -31,7 +32,7 @@
 - title: "Opening Night"
   location: "Stadtsaal"
   date:
-    format: "Mittwoch, {{ site.date.begin | date: \"%d\" | plus: 5 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
+    format: "Mittwoch, {{ site.date.begin | date: \"%d\" | plus: 5 }}.{{ site.date.begin | date: \"%m\" }}.{{ site.date.begin | date: \"%Y\" | minus: 1 }}"
     time: "19:30 Uhr, Einlass: 19:00 Uhr"
   description: "template.md"
   acts:
@@ -45,7 +46,7 @@
 - title: "Blues Power Night"
   location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
   date:
-    format: "Donnerstag, {{ site.date.begin | date: \"%d\" | plus: 6 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
+    format: "Donnerstag, {{ site.date.begin | date: \"%d\" | plus: 6 }}.{{ site.date.begin | date: \"%m\" }}.{{ site.date.begin | date: \"%Y\" | minus: 1 }}"
     time: "19:30 Uhr, Einlass: 19:00 Uhr"
   description: "template.md"
   acts:
@@ -59,7 +60,7 @@
 - title: "Jazz, Funk & Soul Night - Doppelkonzert"
   location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
   date:
-    format: "Freitag, {{ site.date.begin | date: \"%d\" | plus: 7 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
+    format: "Freitag, {{ site.date.begin | date: \"%d\" | plus: 7 }}.{{ site.date.begin | date: \"%m\" }}.{{ site.date.begin | date: \"%Y\" | minus: 1 }}"
     time: "19:30 Uhr, Einlass: 19:00 Uhr"
   description: "template.md"
   acts-in-row: "2"
@@ -81,7 +82,7 @@
 - title: "Swing Under The Stars Night"
   location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
   date:
-    format: "{{ site.date.begin | date: \"%d\" | plus: 8 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
+    format: "{{ site.date.begin | date: \"%d\" | plus: 8 }}.{{ site.date.begin | date: \"%m\" }}.{{ site.date.begin | date: \"%Y\" | minus: 1 }}"
     time: "19:30 Uhr, Einlass: 19:00 Uhr"
   description: "template.md"
   acts:
@@ -100,7 +101,7 @@
 - title: "Familienmusiktag"
   location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
   date:
-    format: "Sonntag, {{ site.date.begin | date: \"%d\" | plus: 9 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
+    format: "Sonntag, {{ site.date.begin | date: \"%d\" | plus: 9 }}.{{ site.date.begin | date: \"%m\" }}.{{ site.date.begin | date: \"%Y\" | minus: 1 }}"
     time: "ab 11:00 Uhr"
   description: "template.md"
   acts:

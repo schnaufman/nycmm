@@ -1,6 +1,8 @@
 - id: "lineup_id"
   title: "lineup_title"
   folder: "lineup"
+  descriptions:
+    main: "lineup.md"
   content: "lineup.html"
   details_file: "festival_lineup"
   # enter lineup details to section_details/festival_lineup.yml
