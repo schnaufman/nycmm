@@ -4,8 +4,8 @@ de:
   home:
     #description: "Verwöhnt mit Bewährtem, verführt mit Neuem und inspiriert mit Kreativem"
     description: "New Directions: Music meets Dance talks Integration"
-    sign_up: "Workshop Anmeldung<br>09. - 13. August"
-    tickets: "Festivaltickets<br>13. - 18. August"
+    sign_up: "Workshop Anmeldung<br>01. - 05. August"
+    tickets: "Festivaltickets<br>06. - 10. August"
   navigation:
     # about us
     overview_id: "uebersicht"
@@ -105,11 +105,11 @@ de:
       wsform_comment_name: "anmerkung"
       wsform_comment_label: "Anmerkung"
       wsform_festivalpass_name: "festivalpass"
-      wsform_festivalpass_label: "Ich will natürlich einen nicen Festivalpass für 59€ dazu! (Achtung: Die Konzerte finden 2024 terminlich erst NACH dem Workshop statt)"
+      wsform_festivalpass_label: "Ich will natürlich einen nicen Festivalpass für 59€ dazu! (Achtung: Die Konzerte finden 2025 terminlich erst NACH dem Workshop statt)"
       wsform_pictures_name: "pictures"
       wsform_pictures_label: "Ich bin damit einverstanden, dass während meiner Teilnahme am NYC Musikmarathon Fotos von mir gemacht und eventuell für Werbezwecke veröffentlicht werden.*"
       wsform_signup_name: "signUp"
-      wsform_signup_label: "Ich melde mich verbindlich für den NYC Musikmarathon 2024 an.*"
+      wsform_signup_label: "Ich melde mich verbindlich für den NYC Musikmarathon 2025 an.*"
       wsform_submit_name: "submit"
       wsform_submit_label: "Abschicken"
       scholarship_title: "Stipendium"
@@ -127,8 +127,8 @@ en:
   translation: "English"
   home:
     description: "New Directions: Music meets Dance talks Integration"
-    sign_up: "Workshop Registration<br>09. - 13. August"
-    tickets: "Festivaltickets<br>13. - 18. August"
+    sign_up: "Workshop Registration<br>01. - 05. August"
+    tickets: "Festivaltickets<br>06. - 10. August"
   navigation:
     # about us
     overview_id: "overview"
@@ -227,11 +227,11 @@ en:
       wsform_comment_name: "anmerkung"
       wsform_comment_label: "Comment"
       wsform_festivalpass_name: "festivalpass"
-      wsform_festivalpass_label: "Of course I want an awesome festivalpass for €59! (Attention: The dates of the concerts in 2024 are AFTER the end of the workshop)"
+      wsform_festivalpass_label: "Of course I want an awesome festivalpass for €59! (Attention: The dates of the concerts in 2025 are AFTER the end of the workshop)"
       wsform_pictures_name: "pictures"
       wsform_pictures_label: "I agree that photos of me may be taken during my participation in the NYC Musikmarathon and may be published for promotional purposes.*"
       wsform_signup_name: "signUp"
-      wsform_signup_label: "I register bindingly for the NYC Music Marathon 2024.*"
+      wsform_signup_label: "I register bindingly for the NYC Music Marathon 2025.*"
       wsform_submit_name: "submit"
       wsform_submit_label: "Submit"
       scholarship_title: "Scholarship"
