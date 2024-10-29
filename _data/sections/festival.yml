@@ -1,7 +1,7 @@
 - id: "lineup_id"
   title: "lineup_title"
   folder: "lineup"
-  description:
+  descriptions:
     main: "lineup.md"
   content: "lineup.html"
   details_file: "festival_lineup"
