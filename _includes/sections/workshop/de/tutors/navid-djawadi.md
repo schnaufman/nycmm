@@ -2,4 +2,4 @@
 
 ###### Bass
 
-[Soundcloud](https://soundcloud.com/avidjawadi/){:target="_blank" rel="noopener noreferrer"}
+[Website](https://www.naviddjawadi.at/){:target="_blank" rel="noopener noreferrer"}

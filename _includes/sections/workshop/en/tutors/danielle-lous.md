@@ -2,4 +2,4 @@
 
 ###### Vocalist 
 
-<a target="_blank" rel="noopener noreferrer" href="https://fabulousbeing.com/">Website</a>
+[Website](https://fabulousbeing.com/){:target="_blank" rel="noopener noreferrer"}
