@@ -1,7 +1,8 @@
 - detail_name: "pricing"
   tickets:
     - title: "wsticket_regular_title"
-      price: "329€"
+      price: "<s>329€</s><br>289€"
+      extra: "bis 31.12."
     - title: "wsticket_students_title"
       price: "219€"
       extra: "15 - 26 Jahre"
