@@ -1,9 +1,9 @@
-<form style="text-align: center;" id="wsVoucherForm_de" method="post" netlify-honeypot="bot-field" data-netlify="true" accept-charset="utf-8" class="c-section-ws_tickets-form">
+<form style="text-align: center;" id="wsVoucherForm" method="post" netlify-honeypot="bot-field" data-netlify="true" accept-charset="utf-8" class="c-section-ws_tickets-form">
   <br><h5 style="text-align: center;">Ihre Daten:</h5>
   <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-3 medium-up-3 small-up-1" style="border:solid 1px; border-radius:5px; border-spacing:100px; width:fit-content; padding:10px; margin:auto;">
     <div class="cell">
       <label>"Anrede"
-        <select name="anrede">
+        <select name="salutation">
           <option value=""></option>
           <option value="Herr">Herr</option>
           <option value="Frau">Frau</option>
@@ -13,12 +13,12 @@
     </div>
     <div class="cell">
         <label>Vorname*
-          <input type="text" name="vorname" placeholder="Vorname" required>
+          <input type="text" name="first name" placeholder="Vorname" required>
       </label>
     </div>
     <div class="cell">
       <label>Nachname*
-        <input type="text" name="nachname" placeholder="Nachname" required>
+        <input type="text" name="last name" placeholder="Nachname" required>
       </label>
     </div>
     <div class="cell">
@@ -28,7 +28,7 @@
     </div>
     <div class="cell">
       <label>Telefonnummer
-        <input type="text" name="telefon" placeholder="Telefonnummer">
+        <input type="text" name="phone" placeholder="Telefonnummer">
       </label>
     </div>
   </div>
@@ -37,7 +37,7 @@
   <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-3 medium-up-3 small-up-1" style="border:solid 1px; border-radius:5px; border-spacing:100px; width:fit-content; padding:10px; margin:auto;">
     <div class="cell">
       <label>"Anrede"
-        <select name="anrede-empfaenger">
+        <select name="recipient salutation">
           <option value=""></option>
           <option value="Herr">Herr</option>
           <option value="Frau">Frau</option>
@@ -47,12 +47,12 @@
     </div>
     <div class="cell">
       <label>Vorname*
-        <input type="text" name="vorname-empfaenger" placeholder="Vorname" required>
+        <input type="text" name="recipient first name" placeholder="Vorname" required>
       </label>
     </div>
     <div class="cell">
       <label>Nachname*
-        <input type="text" name="nachname-empfaenger" placeholder="Nachname" required>
+        <input type="text" name="recipient last name" placeholder="Nachname" required>
       </label>
     </div>
   </div>
