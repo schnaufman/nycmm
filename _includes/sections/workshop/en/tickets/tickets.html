@@ -18,7 +18,7 @@
       {% endfor %}
     </div>
   {% when "workshops" %}
-    <form id="ws_SignUpForm" method="post" netlify-honeypot="bot-field" data-netlify="true" accept-charset="utf-8" class="c-section-ws_tickets-form">
+    <form id="ws_SignUpForm_en" method="post" netlify-honeypot="bot-field" data-netlify="true" accept-charset="utf-8" class="c-section-ws_tickets-form">
       <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-3 medium-up-3 small-up-1">
         {% for form_element in detail.form_elements_grid %}
         {% assign wsform_label = site.data.lang[page.language].workshop.tickets[{{form_element.label}}] %}
