@@ -18,11 +18,10 @@
       {% endfor %}
     </div>
   {% when "workshops" %}
-    <form id="wsSignUpForm_en" method="post" netlify-honeypot="bot-field" data-netlify="true" accept-charset="utf-8" class="c-section-ws_tickets-form">
+    <form id="wsSignUpForm" method="post" netlify-honeypot="bot-field" data-netlify="true" accept-charset="utf-8" class="c-section-ws_tickets-form">
       <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-3 medium-up-3 small-up-1">
         {% for form_element in detail.form_elements_grid %}
         {% assign wsform_label = site.data.lang[page.language].workshop.tickets[{{form_element.label}}] %}
-        {% assign wsform_name = site.data.lang[page.language].workshop.tickets[{{form_element.name}}] %}
         {% assign wsform_placeholder = site.data.lang[page.language].workshop.tickets[{{form_element.placeholder}}] %}
           {% case form_element.type %}
             {% when "select" %}
@@ -32,7 +31,7 @@
                 {% else %}
                   <label>{{ wsform_label }}
                 {% endif %}
-                  <select name="{{ wsform_name }}" {{ form_element.attributes }}>
+                  <select name="{{ form_element.name }}" {{ form_element.attributes }}>
                     {% for option in form_element.options%}
                       {% assign option_value = site.data.lang[page.language].workshop.tickets[{{option.value}}] %}
                       {% assign option_text = site.data.lang[page.language].workshop.tickets[{{option.text}}] %}
@@ -48,7 +47,7 @@
                 {% else %}
                   <label>{{ wsform_label }}
                 {% endif %}
-                    <input type="{{ form_element.type }}" name="{{ wsform_name }}" placeholder="{{ wsform_placeholder }}" {{ form_element.attributes }}>
+                    <input type="{{ form_element.type }}" name="{{ form_element.name }}" placeholder="{{ wsform_placeholder }}" {{ form_element.attributes }}>
                 </label>
               </div>
             {% when "radio" %}
@@ -60,7 +59,7 @@
                 {% endif %}
                   {% for radio in form_element.radios %}
                     {% assign option_value = site.data.lang[page.language].workshop.tickets[{{radio.name}}] %}
-                    <input type="{{ form_element.type }}" name="{{ wsform_name }}" value="{{ option_value }}" required>
+                    <input type="{{ form_element.type }}" name="{{ form_element.name }}" value="{{ option_value }}" required>
                     <label for="{{ option_value }}">{{ option_value }}</label>
                     <br>
                   {% endfor %}
@@ -71,18 +70,17 @@
       </div>
       {% for form_element in detail.form_elements_nogrid %}
         {% assign wsform_label = site.data.lang[page.language].workshop.tickets[{{form_element.label}}] %}
-        {% assign wsform_name = site.data.lang[page.language].workshop.tickets[{{form_element.name}}] %}
         {% assign wsform_placeholder = site.data.lang[page.language].workshop.tickets[{{form_element.placeholder}}] %}
         {% case form_element.type %}
           {% when "text" %}
             <label>{{ wsform_label }}
-              <input type="{{ form_element.type }}" name="{{ wsform_name }}" placeholder="{{ wsform_placeholder }}" {{ form_element.attributes }}>
+              <input type="{{ form_element.type }}" name="{{ form_element.name }}" placeholder="{{ wsform_placeholder }}" {{ form_element.attributes }}>
             </label>
           {% when "checkbox"%}
-            <input type="{{ form_element.type }}" name="{{ wsform_name }}" {{ form_element.attributes }}>
-            <label for="{{ wsform_name }}">{{ wsform_label }}</label><br>
+            <input type="{{ form_element.type }}" name="{{ form_element.name }}" {{ form_element.attributes }}>
+            <label for="{{ form_element.name }}">{{ wsform_label }}</label><br>
           {% when "submit" %}
-            <button type="{{ form_element.type }}" class="button" name="{{ wsform_name }}">{{ wsform_label }}</button><br>
+            <button type="{{ form_element.type }}" class="button" name="{{ form_element.name }}">{{ wsform_label }}</button><br>
         {% endcase %}
       {% endfor %}
     </form>
