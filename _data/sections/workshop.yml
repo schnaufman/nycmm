@@ -33,6 +33,12 @@
     deadline:
       format: "{{ section.scholarship.deadline.date | date: \"%d.%m.%Y\" }}"
       date: "2022-06-30"
+- id: "voucher_id"
+  title: "voucher_title"
+  folder: "voucher"
+  content: "voucher.html"
+  descriptions:
+    main: "voucher.md"
 - id: "locations_id"
   title: "locations_title"
   folder: "locations"

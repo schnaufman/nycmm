@@ -1,3 +1,0 @@
-##### Raphael Preuschl 
-
-###### Bass

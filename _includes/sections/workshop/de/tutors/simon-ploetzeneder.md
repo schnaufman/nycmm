@@ -2,4 +2,4 @@
 
 ###### Trompete
 
-<a target="_blank" rel="noopener noreferrer" href="http://www.ploetzeneder.net/">Website</a>
+[Website](http://www.ploetzeneder.net/){:target="_blank" rel="noopener noreferrer"}

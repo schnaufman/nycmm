@@ -2,6 +2,4 @@
 
 ###### Organization, Drums
 
-<a target="_blank" rel="noopener noreferrer" href="http://www.gernotbernroider.com/html/">Website</a>
-
-
+[Website](http://www.gernotbernroider.com/){:target="_blank" rel="noopener noreferrer"}

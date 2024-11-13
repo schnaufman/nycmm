@@ -2,4 +2,4 @@
 
 ###### Gesang
 
-<a target="_blank" rel="noopener noreferrer" href="https://www.chandarule.com/">Website</a>
+[Website](https://www.chandarule.com/){:target="_blank" rel="noopener noreferrer"}

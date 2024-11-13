@@ -1,0 +1,60 @@
+<form style="text-align: center;" id="wsVoucherForm" method="post" netlify-honeypot="bot-field" data-netlify="true" accept-charset="utf-8" class="c-section-ws_tickets-form">
+  <br><h5 style="text-align: center;">Your details:</h5>
+  <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-3 medium-up-3 small-up-1" style="border:solid 1px; border-radius:5px; border-spacing:100px; width:fit-content; padding:10px; margin:auto;">
+    <div class="cell">
+      <label>"Salutation"
+        <select name="salutation">
+          <option value=""></option>
+          <option value="Mister">Mister</option>
+          <option value="Miss">Miss</option>
+          <option value="Neutral salutation">Neutral salutation</option>
+        </select>
+      </label>
+    </div>
+    <div class="cell">
+        <label>First name*
+          <input type="text" name="first name" placeholder="First name" required>
+      </label>
+    </div>
+    <div class="cell">
+      <label>Last name*
+        <input type="text" name="last name" placeholder="Last name" required>
+      </label>
+    </div>
+    <div class="cell">
+      <label>Email*
+        <input type="email" name="email" placeholder="E-mail address" required>
+      </label>
+    </div>
+    <div class="cell">
+      <label>Phone number
+        <input type="text" name="phone" placeholder="phone number">
+      </label>
+    </div>
+  </div>
+
+  <h5 style="text-align: center;">The recipient's details:</h5>
+  <div class="grid-x grid-margin-x grid-margin-y grid-padding-x grid-padding-y large-up-3 medium-up-3 small-up-1" style="border:solid 1px; border-radius:5px; border-spacing:100px; width:fit-content; padding:10px; margin:auto;">
+    <div class="cell">
+      <label>"Salutation"
+        <select name="recipient salutation">
+          <option value=""></option>
+          <option value="mister">Herr</option>
+          <option value="miss">Frau</option>
+          <option value="Neutral salutation">Neutral salutation</option>
+        </select>
+      </label>
+    </div>
+    <div class="cell">
+      <label>First name*
+        <input type="text" name="recipient first name" placeholder="First name" required>
+      </label>
+    </div>
+    <div class="cell">
+      <label>Last name*
+        <input type="text" name="recipient last name" placeholder="Last name" required>
+      </label>
+    </div>
+  </div>
+  <br><button style="align-self: center; margin: 10px;" type="submit" class="button" name="submit">Submit</button><br>
+</form>
