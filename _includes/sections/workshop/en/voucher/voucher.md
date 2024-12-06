@@ -1,2 +1,2 @@
 ##### Would you like to give your loved ones a voucher for the workshop? Great idea! Here's how:
-##### 1. Fill out the fields below & submit the form<br>2. Transfer the corresponding amount to our club account (see above for prices and account details)<br>3. After receipt of payment you will receive a voucher by email<br>4. The recipient still has to follow the instructions on the voucher in order to successfully register for the workshop
+##### 1. Fill out the fields below & submit the form<br>2. Transfer the corresponding amount to our club account (see above for prices and account details)<br>3. After receipt of payment you will receive a voucher by email<br>4. The recipient still needs to fill out the registration form (see above) to complete the registration
