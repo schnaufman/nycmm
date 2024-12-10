@@ -1,0 +1,2 @@
+#### Workshop 2 - The Advanced Singer's Experience<br>Coach: Danielle Lous
+##### Dieser Workshop ist für Sänger:innen gedacht, die bereits einiges an Bühnenerfahrung mitbringen und  ihre stimmlichen Fähigkeiten verfeinern und ihre Bühnenpräsenz auf ein neues Level bringen möchten.

@@ -1,2 +1,2 @@
-#### Workshop 2 - Just Sing! A Capella Ensemble
-##### If you like to sing in a group, the A Capella Ensemble is perfect for you. Explore your voice like an instrument and sing polyphonically in harmony with others. In addition to a capella arrangements of trendy songs (pop, jazz & soul), we also sing our own arrangements and songs in this workshop. A performance at the final concert is the final highlight of the JUST SING! Workshops.
+#### Workshop 3 - Just Sing! A Capella Ensemble<br>Coach: Cassandra McConnell
+##### Experience the joy of singing with others in harmony, building a strong sense of community and musical connection.
