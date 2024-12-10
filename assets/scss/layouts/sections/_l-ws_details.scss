@@ -35,4 +35,12 @@
 .c-section-wsdetails-description {
   text-align: justify;
   padding-bottom: rem-calc(20);
+
+  h2, h3 {
+    text-align: center;
+    margin-bottom: rem-calc(5);
+  }
+  h4 {
+    margin-bottom: rem-calc(5);
+  } 
 }
