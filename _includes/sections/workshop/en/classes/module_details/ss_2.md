@@ -1,0 +1,1 @@
+##### Experiment with fresh songwriting techniques and transform your ideas into polished, compelling pieces

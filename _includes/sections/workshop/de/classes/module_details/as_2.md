@@ -1,1 +1,1 @@
-##### Lerne, deine Bühnenpräsenz zu perfektionieren und eine tiefere Verbindung zum Publikum herzustellen
+##### Lerne, deine Bühnenpräsenz zu perfektionieren und verfeinere deine Fähigkeiten in der musikalischen Interaktion mit einer Live-Combo

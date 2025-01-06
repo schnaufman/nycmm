@@ -1,1 +1,1 @@
-##### Erkunde das Geschichtenerzählen durch Textanalyse und emotionale Feinheiten.
+##### Erkunde das Geschichtenerzählen durch Textanalyse und improvisiere kreativ und authentisch

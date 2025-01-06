@@ -1,1 +1,1 @@
-##### Explore storytelling through text analysis and emotional nuance
+##### Explore storytelling through lyric analysis and improvise creatively and authentically

@@ -1,0 +1,1 @@
+##### Erforsche das volle Potenzial deiner Stimme und verbinde Körper, Geist und Seele für einen ganzheitlichen Zugang zum Singen
