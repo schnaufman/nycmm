@@ -1,3 +1,5 @@
 ### Workshops for vocalists
-#### Workshop 1 - Your Voice On Stage
-##### This workshop is about your performance on stage and everything that goes with it, such as vocal and microphone technology, learning new songs, mental preparation and your stage presence. Led by **Danielle Lous**, "Your Voice on stage" gives you all the important tools to "convey" your songs on stage as you imagine them in your wildest dreams!
+#### Workshop 1 - Your Voice On Stage<br>Coach: Chanda Rule
+##### This workshop is perfect for singers at all levels, especially those early in their solo journey. "Your Voice on Stage" equips you with the foundational skills to shine.
+##### Offered primarily in English with some German, this workshop prepares you for nightly JAM sessions and a final concert, setting the stage for your musical journey.
+

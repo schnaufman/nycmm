@@ -1,5 +1,5 @@
 ##### Danielle Lous
 
-###### Vocalist 
+###### Advanced Singer's
 
 [Website](https://fabulousbeing.com/){:target="_blank" rel="noopener noreferrer"}

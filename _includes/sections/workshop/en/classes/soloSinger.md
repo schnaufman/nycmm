@@ -1,2 +1,3 @@
-#### Workshop 3 - The Solo Singer & The Songwriter
-##### Whether you are already an experienced songwriter or are just starting to write your first song, this workshop is for you! We write and make music in a group supported by professional coaching. Try new writing methods, familiarize yourself with new sources of inspiration and possibly find a colleague or two for songwriting!
+#### Workshop 4 - The Solo Singer & The Songwriter<br>Coach: Andreas Haidecker
+##### Unleash your creativity and storytelling abilities in this workshop for songwriters at any level.
+##### This workshop, taught in German, concludes with a collection of original songs ready for your repertoire, celebrating your growth as a singer-songwriter.

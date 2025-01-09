@@ -1,0 +1,1 @@
+##### Explore storytelling through lyric analysis and improvise creatively and authentically
