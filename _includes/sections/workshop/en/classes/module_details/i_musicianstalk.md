@@ -1,1 +1,1 @@
-##### Theory explained in an entertaining way and there is also enough space for stories and questions
+##### Space for musical questions, entertaining music theory, improvisation and much more

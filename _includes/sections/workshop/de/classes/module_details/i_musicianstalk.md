@@ -1,1 +1,1 @@
-##### Theorie kurzweilig erklärt und auch für Geschichten und Fragen ist genügend Platz
+##### Raum für musikalische Fragen, kurzweilige Musiktheorie, Improvisation und vieles mehr

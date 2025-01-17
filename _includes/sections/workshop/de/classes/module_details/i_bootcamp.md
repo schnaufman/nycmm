@@ -1,1 +1,1 @@
-##### Spannender Einzel- oder Gruppenunterricht mit den jeweiligen Dozenten
+##### Spannender Gruppenunterricht am Instrument mit unseren hochkarätigen Dozenten

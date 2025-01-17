@@ -1,1 +1,1 @@
-##### Exciting individual or group lessons with the respective lecturers
+##### Exciting group lessons on the instrument with our top-class lecturers
