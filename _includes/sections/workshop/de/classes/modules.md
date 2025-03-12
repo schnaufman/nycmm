@@ -1,1 +1,1 @@
-##### **Die Workshops können während der [Online-Anmeldung](/workshop/#tickets) ausgesucht werden**
+##### **Die Workshops können während der [Online-Anmeldung](/workshop/#anmeldung) ausgesucht werden**
