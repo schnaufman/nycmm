@@ -1,0 +1,7 @@
+- id: "faq_id"
+  title: "faq_title"
+  folder: "faq"
+  descriptions:
+    main: "faq.md"
+#  content: "faq.html"
+#  details_file: "faq"

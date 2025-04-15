@@ -1,3 +1,4 @@
+<!--
 ---
 permalink: /jamademy/
 language: de
@@ -6,6 +7,7 @@ title: Jamademy
 ref: jamademy
 order: 5
 ---
+-->
 
 #### **Imagine a combo rehearsal that is about YOU!**
 

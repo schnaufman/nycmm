@@ -1,0 +1,2 @@
+### What is the NYCMM?
+#### The NYCMM is a music and culture festival that takes place every August in Mattighofen in Upper Austria. It offers top-class concerts as well as a jazz workshop with international lecturers.

@@ -52,6 +52,9 @@ de:
     accommodations_title: "Unterkünfte"
     workshopdetails_id: "workshopdetails"
     workshopdetails_title: "Workshopdetails"
+    # faq
+    faq_id : "faq"
+    faq_title : "FAQ"
   workshop:
     classes:
       i_bootcamp_title: "Boot Camp"
@@ -167,6 +170,9 @@ en:
     accommodations_title: "Accommodations"
     workshopdetails_id: "workshopdetails"
     workshopdetails_title: "Workshopdetails"
+    # faq
+    faq_id : "faq"
+    faq_title : "FAQ"
   workshop:
     classes:
       i_bootcamp_title: "Boot Camp"
