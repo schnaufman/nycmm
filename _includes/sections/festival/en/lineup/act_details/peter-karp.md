@@ -1,5 +1,0 @@
-#### **{{ act.title }}**
-
-##### **Peter Karp**, a living legend of "Americana Music" - a mix of blues, country, folk and R&B - has had a remarkable journey that has led from the vastness of Alabama to the vibrant streets of New York City. Growing up in a trailer park in Louisiana, Karp was influenced at a young age by the sounds of blues legends such as Robert Johnson, Muddy Waters, Howlin' Wolf and Elmore James. Since then, Karp has established himself internationally as an exceptional songwriter, singer and musician and is described by the trade press as the true essence of "Americana Music". USA Today describes Peter Karp as an extraordinary songwriter, singer and musician whose wordplay-filled songs provide real insights into human experiences as powerful as those of James Taylor and Bob Dylan.
-##### Peter Karp – vocals, guitar, piano, harmonica<br>Mark Johnson – electric & slide guitar<br>Marco Xeres – electric bass, backing vocals<br>Paolo Xeres – drums, backing vocals
-##### Furhter information:<br>[www.peterkarp.com](https://www.peterkarp.com/){:target="_blank"}

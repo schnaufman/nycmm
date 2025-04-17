@@ -6,6 +6,7 @@ title: FAQ
 section: faq
 ref: faq
 #order: 6
+menu: nothing
 ---
 
 ### Wo kann man schlafen?

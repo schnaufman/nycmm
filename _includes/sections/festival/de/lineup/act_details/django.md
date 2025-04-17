@@ -1,6 +1,0 @@
-#### **{{ act.title }}**
-
-##### „Swing à la Django“ vereint 7 ungarische Musikvirtuosen, die in diesem Konzert die klassische Musik des Geigers Antonio Vivaldi und sein Meisterwerk „ Die 4 Jahreszeiten“ mit Swing, Jazz, Folk und lateinamerikanischen Klängen kombinieren. Das mehrfach ausgezeichnete Ensemble spielt mit der Leidenschaft der Gipsy-Jazzlegende Django Reinhardt und nimmt sein Publikum auf eine abwechslungsreiche und unterhaltsame musikalische Reise mit, bei der man über die Virtuosität der Musiker und die vielseitigen Klänge und Rhythmen staunt und sich gerne von der Kraft und Schönheit der Musik vereinnahmen läßt. Das Ensemble wurde mit zwei goldene Schallplatten ausgezeichnet und stand unter anderem mit Sting, Zubin Mehta, Andrea Bocelli und Roby Lakatos auf der Bühne.
-##### „Swing à la Django“ sind: **Zoltán Baranyi** (Violine, Solist), **Vilmos Seres** (Klarinette), **János Dani** (Gitarre, Violine), **Norbert Dani** (Gitarre), **Róbert Gallyas-Lakatos** (Klavier), **Pál Lombos** (Kontrabass), **Máté Radics** (Schlagzeug)
-
-##### weitere Infos:<br>[www.swingaladjango.com](https://www.swingaladjango.com/){:target="_blank"} | [Promo Video](https://www.youtube.com/watch?v=Un1JBv5zLb8){:target="_blank"}

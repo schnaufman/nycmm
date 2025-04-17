@@ -20,7 +20,7 @@
   title: "tickets_title"
   folder: "tickets"
   descriptions:
-    main: "no_tickets.md"
+    main: "tickets.md"
   #content: "tickets.html"
   details_file: "festival_tickets"
   # enter ticket details to section_details/festival_tickets.yml
