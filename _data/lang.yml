@@ -3,7 +3,7 @@ de:
   translation: "Deutsch"
   home:
     #description: "Verwöhnt mit Bewährtem, verführt mit Neuem und inspiriert mit Kreativem"
-    description: "New Directions: Music meets Dance talks Integration"
+    description: "(G)artenvielfalt & Kunst: Connect, Neu Entdeckt!"
     sign_up: "Workshop Anmeldung<br>01. - 05. August"
     tickets: "Festivaltickets<br>06. - 10. August"
   navigation:
@@ -122,7 +122,7 @@ de:
 en:
   translation: "English"
   home:
-    description: "New Directions: Music meets Dance talks Integration"
+    description: "(G)artenvielfalt & Kunst: Connect, Neu Entdeckt!"
     sign_up: "Workshop Registration<br>01. - 05. August"
     tickets: "Festivaltickets<br>06. - 10. August"
   navigation:
