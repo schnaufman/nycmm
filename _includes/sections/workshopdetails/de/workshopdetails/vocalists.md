@@ -30,7 +30,7 @@
 ##### Dieser Workshop wird auf Deutsch unterrichtet und endet mit einer mitreißenden Performance im Abschlusskonzert, die die kollektive Kraft und Schönheit des Ensembles zelebriert.
 <br>
 
-### **Workshop 4: The Solo Singer & The Songwriter**<br>Coach: Andreas Haidecker
+### **Workshop 4: The Solo Singer & The Songwriter**<br>Coach: Anna Maurer
 #### Entfessle deine Kreativität und dein erzählerisches Talent in diesem Workshop für Songwriter:innen jeden Levels. Erforsche die Kunst des Songwritings und der Performance mit:
 * ##### Selbstbegleitung: Gewinne Selbstvertrauen im Umgang mit Klavier oder Gitarre zur Unterstützung deiner Songs.
 * ##### Kreatives Schreiben & Songentwicklung: Experimentiere mit neuen Songwriting-Techniken und verwandle deine Ideen in ausgearbeitete, überzeugende Stücke.

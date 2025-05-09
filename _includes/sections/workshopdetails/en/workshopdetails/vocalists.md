@@ -27,7 +27,7 @@
 
 ##### Taught in German, this workshop culminates in a moving performance at the final concert, celebrating the collective power and beauty of your ensemble.
 
-### **Workshop 4: The Solo Singer & The Songwriter**<br>Taught by Andreas Haidecker
+### **Workshop 4: The Solo Singer & The Songwriter**<br>Taught by Anna Maurer
 #### Unleash your creativity and storytelling abilities in this workshop for songwriters at any level. Dive into the art of songwriting and performance with:
 * ##### Accompanying Yourself: Gain confidence in using piano or guitar to enhance your songs.
 * ##### Creative Writing & Song Development: Experiment with fresh songwriting techniques and transform your ideas into polished, compelling pieces.
