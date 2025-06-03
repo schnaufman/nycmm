@@ -1,5 +1,4 @@
-#### **{{ act.title }}**
+##### Similar to the NYCMM concept of pampering with tried-and-true and seducing with new, the **Kernölsalaklub** performs its mostly sold-out concerts. The Styrian-founded ensemble, consisting of top-class musicians from the Austrian music scene, combines Caribbean rhythms and salsa with Austro-pop classics. To prepare for this dance-inspiring music this evening, we invite our audience to a salsa dance crash course immediately before the concert: **"a bailar!"**
+##### **Gregor Bischops** (voc & hand perc), **Eva Moreno** (vocals & hand perc), **Werner Radzik** (keys & arr.), **Andi Fürstner** (guitar & tres), **Thomas Stabler** (dr), **Ewald Gaulhofer** (congas), **Thomas Radzik** (timbales), **Stefan Padinger** (b), **Christoph Pfeiffer** (trp), **Karl Rossmann** (trp), **Gernot Strebl** (ts), **Reinhard Summerer** (trb & arr.)
 
-##### From years of shared musical experience in various musical contexts, an ensemble developed with **Thomas Milacher** on bass, **Harald Tanschek** on drums and **Anna Maurer** on piano that combines the tradition of the piano trio with a fusion from jazz, Latin, rock and influences of the classical music tradition leads logically into its own musical cosmos. The complex rhythmic and harmonic structures that Anna Maurer knows how to use in the deeply unique style of her compositions for the benefit of the music and her audience play a crucial role.
-
-##### Further information:<br>[www.anna-maurer.at](https://www.anna-maurer.at/){:target="_blank"}
+##### more info<br>[Youtube Promo video](https://www.youtube.com/watch?v=V4S3dcDsXGo){:target="_blank"}

@@ -1,3 +1,7 @@
-#### **{{ act.title }}**
-##### Was gibt es schöneres als einen Sonntag im Park?
-##### Der NYC Musikmarathon lädt auch dieses Jahr wieder mit zahlreichen (musikalischen) Stationen zum Spielen, Tanzen, Singen und Basteln im Voglpark Mattighofen ein. Beim Trommelkreis mit **Helmut Bimashofer** können Groß und Klein gemeinsam groovige Rhythmen kennenlernen. Als Highlight des Tages gibt es ab 13:00 ein grandioses Mitmachkonzert mit **Brennholz Rocks**, bei dem nicht nur zugehört, sondern auch geklatscht, gestampft und mitgesungen wird.
+##### Ein kostenloser Sommernachmittag mit Trommeln, Singen, Tanzen, Basteln, Musik-Spielstationen und einem Mitmachkonzert für Kinder, Jugendliche und Erwachsene. 
+##### **Programmablauf**
+##### **11:00 Uhr** Spielstationen mit Singen, Basteln, Tanzen, Geschichtenerzähler und Trommelkreis mit Helmut Bimashofer
+##### **13:00 Uhr**  Kinder-Mitmachkonzert mit Gernot Kranner
+
+##### Die Geschichte von Mogli, dem kleinen Dschungelhelden - nach dem weltbekannten Roman von Rudyard Kipling - neu erzählt, gesungen und getanzt - von und mit Musical-Star **Gernot Kranner**. Mit neuer Musik von **Walter Lochmann.**<br>Für junge Leute von heute.<br>Gemeinsam mit Mogli begeben sich die Kinder auf eine abenteuerliche musikalische Reise in den Dschungel, lernen dort die Sprachen der Tiere kennen - und die Regeln und Gesetze des Dschungels. Und wie wichtig es ist, diese auch zu befolgen.<br>Ein spannendes Musikabenteuer für Groß und Klein - voll toller Ohrwurm-Musik zum Mitmachen und Mitlachen.
+##### Am Klavier: Axel Ramerseder

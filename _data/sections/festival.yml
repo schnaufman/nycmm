@@ -21,7 +21,7 @@
   folder: "tickets"
   descriptions:
     main: "tickets.md"
-  #content: "tickets.html"
+  content: "tickets.html"
   details_file: "festival_tickets"
   # enter ticket details to section_details/festival_tickets.yml
 - id: "locations_id"

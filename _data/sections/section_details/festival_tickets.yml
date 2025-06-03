@@ -1,25 +1,25 @@
-- title: "13.08.<br>Abschlusskonzert"
+- title: "05.08.<br>Abschlusskonzert"
   price:
     regular: "freie Spende"
-- title: "14.08.<br>Opening Night"
+- title: "06.08.<br>Opening Night"
   price:
     regular: "freie Spende"
-- title: "15.08.<br>Blues Power Night"
+- title: "07.08.<br>Blues Power Night"
   price:
     regular: "25€"
     discount: "20€"
     door: "27€"
-- title: "16.08.<br>Jazz, Funk & Soul Night"
+- title: "08.08.<br>Latin Night \"*Dance the night away*\""
+  price:
+    regular: "25€"
+    discount: "20€"
+    door: "27€"
+- title: "09.08.<br>Jazz Night"
   price:
     regular: "27€"
     discount: "22€"
     door: "30€"
-- title: "17.08.<br>Swing Under The Stars Night"
-  price:
-    regular: "25€"
-    discount: "20€"
-    door: "27€"
-- title: "18.08.<br>A Musical Day In The Park"
+- title: "10.08.<br>Familienmusiktag"
   price:
     regular: "freie Spende"
 - title: "Festivalpass"

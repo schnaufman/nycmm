@@ -14,21 +14,12 @@
 #        lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAgACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4k9U1H4P6z/Zn2TwboHgttH8LQafrp03xPqOt2/iLxHp9hODr9qmtXt9faeb8ixgudPsf7Rs59VN3ewRJYTFtP+XlTzuD9pDE1cRCviZunTlRhTnh6Lr/DPlSTUYSk4uo6TVOKjd1IxjP6SnPJ6i9nVw9OhVw9CPNVjUlKlXqKhFaf3nOCv7OFZurOcny05ynD58NhPMTMjafGkp81UOqaXGUWT5lQxvdo8ZUEAo6IyEbWVSCB9GqkY+6/atx91v2NZ3a0buoNO+902numzwPZyl7y9klLVL21FWT1Ss5pq21mk11R/9k="
 #        width: "600px"
 #        height: "400px"
-- title: "Workshop - Abschlusskonzert"
+- title: "Vorprogramm"
   location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
   date:
-    # format: "Dienstag, {{ site.date.begin | date: \"%d\" | plus: 4 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
-    format: "Dienstag, 05.08.2025"
-    time: "17:00 Uhr, Einlass: 16:30 Uhr"
-  description: "template.md"
-  acts:
-#    - title: "Global Music Portraits"
-#      description: "abschlusskonzert.md"
-#      image:
-#        file: "abschlusskonzert.jpg"
-#        lqip: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAgACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4k9U1H4P6z/Zn2TwboHgttH8LQafrp03xPqOt2/iLxHp9hODr9qmtXt9faeb8ixgudPsf7Rs59VN3ewRJYTFtP+XlTzuD9pDE1cRCviZunTlRhTnh6Lr/DPlSTUYSk4uo6TVOKjd1IxjP6SnPJ6i9nVw9OhVw9CPNVjUlKlXqKhFaf3nOCv7OFZurOcny05ynD58NhPMTMjafGkp81UOqaXGUWT5lQxvdo8ZUEAo6IyEbWVSCB9GqkY+6/atx91v2NZ3a0buoNO+902numzwPZyl7y9klLVL21FWT1Ss5pq21mk11R/9k="
-#        height: "400px"
-#        width: "600px"
+    format: ""
+    time: ""
+  description: "workshop.md"
 - title: "Opening Night<br><b>(G)artenvielfalt & Kunst: Connect, Neu Entdeckt!</b>"
   location: "Stadtsaal"
   date:
@@ -37,7 +28,7 @@
   description: "template.md"
   acts:
     - title: ""
-      description: "template.md"
+      description: "opening-night.md"
       image:
         file: "opening.jpg"
         lqip: ""
@@ -51,35 +42,27 @@
   description: "template.md"
   acts:
     - title: ""
-      description: "template.md"
+      description: "justina.md"
       image:
         file: "justina.jpg"
         lqip: ""
         height: "400px"
         width: "600px"
-- title: "Austropop & Latin Night<br><b>Kernölsalsaklub</b> (Austria)"
+- title: "Latin Night \"*Dance the night away*\"<br><b>Kernölsalsaklub</b> (Austria)"
   location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
   date:
     format: "Freitag, 08.08.2025"
     time: "19:30 Uhr, Einlass: 19:00 Uhr"
   description: "template.md"
-#  acts-in-row: "2"
   acts:
     - title: ""
-      description: "template.md"
+      description: "kernoel.md"
       image:
         file: "kernoel.jpg"
         lqip: ""
         width: "600px"
         height: "400px"
-#    - title: "Sound Mosaic"
-#      description: "sound-mosaic.md"
-#      image:
-#        file: "sound_mosaic.jpg"
-#        lqip: ""
-#        width: "600px"
-#        height: "400px"
-- title: "Jazz Night<br><b>Lage Lund Trio</b> (Norway, USA)"
+- title: "Jazz Night<br><b>Lage Lund Quartett</b> (Norway, USA)"
   location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
   date:
     format: "Samstag, 09.08.2025"
@@ -87,7 +70,7 @@
   description: "template.md"
   acts:
     - title: ""
-      description: "template.md"
+      description: "lagelund.md"
       image:
         file: "lagelund.jpg"
         width: "600px"
@@ -98,16 +81,14 @@
 #    format: "Samstag, {{ site.date.begin | date: \"%d\" | plus: 8 }}.{{ site.date.begin | date: \"%m.%Y\" }}"
 #    time: "19:30 Uhr, Einlass: 19:00 Uhr"
 #  description: "template.md"
-- title: "Familienmusiktag"
+- title: "<b>Familienmusiktag</b>"
   location: "Voglpark / Stadtsaal (bei Schlechtwetter)"
   date:
     format: "Sonntag, 10.08.2025"
     time: "ab 11:00 Uhr"
   description: "template.md"
-#  acts:
-#    - title: "Familienmusiktag"
-#      description: "familienmusiktag.md"
-#      image:
-#        file: "familienmusiktag.jpg"
-#        width: "600px"
-#        height: "400px"
+  acts:
+    - title: "Familienmusiktag"
+      description: "familienmusiktag.md"
+      image:
+        file: "familienmusiktag.jpg"
