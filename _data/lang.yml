@@ -10,12 +10,8 @@ de:
     # about us
     overview_id: "uebersicht"
     overview_title: "Übersicht"
-    festival_id: "festival"
-    festival_title: "Festival"
-    workshop_id: "workshop"
-    workshop_title: "Workshop"
-    famtag_id: "familienmusiktag"
-    famtag_title: "Familienmusiktag"
+    livestream_id: "livestream"
+    livestream_title: "Livestream"
     contact_id: "kontakt"
     contact_title: "Kontakt"
     # festival
@@ -73,7 +69,7 @@ de:
       ss_2_title: "Kreatives Schreiben & Entwicklung von Songs"
       ss_3_title: "Kollaborative Kreativität"
     tickets:
-      wsticket_regular_title: "Early Bird Special"
+      wsticket_regular_title: "regulärer Preis"
       wsticket_students_title: "Schüler / Studenten"
       wsticket_children_title: "Kids-Workshop"
       wsticket_blasmusik_title: "Blasmusik Friendship"
@@ -129,12 +125,8 @@ en:
     # about us
     overview_id: "overview"
     overview_title: "Overview"
-    festival_id: "festival"
-    festival_title: "Festival"
-    workshop_id: "workshop"
-    workshop_title: "Workshop"
-    famtag_id: "musicday"
-    famtag_title: "Family Music Day"
+    livestream_id: "livestream"
+    livestream_title: "Livestream"
     contact_id: "contact"
     contact_title: "Contact"
     # festival
@@ -191,7 +183,7 @@ en:
       ss_2_title: "Creative Writing & Song Development"
       ss_3_title: "Collaborative Creativity"
     tickets:
-      wsticket_regular_title: "Early Bird Special"
+      wsticket_regular_title: "regular price"
       wsticket_students_title: "Students until 26"
       wsticket_children_title: "Kids-Workshop"
       wsticket_blasmusik_title: "Blasmusik Friendship"
