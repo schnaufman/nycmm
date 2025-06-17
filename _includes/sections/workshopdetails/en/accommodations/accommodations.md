@@ -8,9 +8,8 @@
 ##### [GH Helpfauerhof](https://www.helpfauerhof.at/)
 ##### [GH Steinerwirt](https://www.steinerwirt-eggelsberg.at/)
 
-##### **private rooms:**
-##### Fam. Krautstorfer: [krautstorfer@aon.at](mailto:krautstorfer@aon.at), Tel.: 0676-4829304
-##### Frau Eisele Maria, Wendling 25, 5232 Kirchberg, Tel.: 07747-5085
-##### Frau Paula Werni: Bradirn 28, 5222 Munderfing Tel.: 07744-8635
+
+##### [Zimmervermietung Krautstorfer](https://www.oberoesterreich.at/oesterreich-unterkunft/detail/104285/zimmervermietung-krautstorfer.html)
+##### [Haus Eisele Ferienwohnung](https://www.oberoesterreich.at/oesterreich-unterkunft/detail/430020015/haus-eisele-ferienwohnung.html)
 
 ##### More rooms in the area are available on [AirBnb](https://www.airbnb.at/)
