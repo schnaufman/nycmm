@@ -1,5 +1,7 @@
 ---
 images:
+  - file: "abimagoTV.png"
+    link: "https://www.austrotv.com/"
   - file: "bmkoes.png"
     link: "https://www.bundeskanzleramt.gv.at/"
     lqip: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAABFSURBVE3Buw5AMAAAwFNp0gTp4h/sft0/2aSTGDwHBnf1POZhKntcjrtHiw4ZCatP5dUgYUdEweWn8uqQcONEwImAgO0BgS4PInnW6rIAAAAASUVORK5CYII="
@@ -18,9 +20,6 @@ images:
   - file: "eurospar.png"
     link: "https://www.spar.at/standorte/eurospar-mattighofen-5230-braunauer-strasse-4"
     lqip: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAACCAYAAABhYU3QAAAAAklEQVR4AewaftIAAABZSURBVGN8I62yhT0iVOHf8+cMTEKCDP///WNgZGJm+PfxEwMjMxPDYw7Gg4s99PhYGBgY8n+uWM3OAATBb56xMzAw6DAwMHz9y/Cfi4GBgZmRkfHuQyGXewBlHhlzwnQnmAAAAABJRU5ErkJggg=="
-  - file: "gfoem.png"
-    link: "https://www.gfoem.at/"
-    lqip: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAAklEQVR4AewaftIAAACESURBVAF7AIT/Afrl3//+1ccA/uniAAMtPQD+1swAAAYPAP7n4wD+3tkAAiAlAAAHCAAC/cu6AP7r5AD+2MwA/LysAAD+/gD7v7YAARsfAP3RygABFxsA/uTgAATvHS0A+fb0AAooOgD2BQsA/+znAAVTKQABFBgA+3qQAAEOEQAEJi8A7GIyMrsPTSwAAAAASUVORK5CYII="
   - file: gh_badhaus.png
     link: "https://badhaus.at/"
     lqip: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAAklEQVR4AewaftIAAADWSURBVI3BS3aCMABA0ZcYwidGOQ6dOHP/q2oH7VEpBMi/7qC9V9Q3/kHxFvyObjti2FmmByAY7Jm2Gwh+R7cdanMzpWTWZUKphsGOlJxJMbC5GXk4UHJC9saSYmAwJ47nCzklaq0YO2JOI9RKNxxRz68P3DLh5heq0bj5RcmZ3lhqKUh5IKWIcsvE8nrQG0tOkeh3ck50veH5/Ylue4LfUJubWd0PbplodEuKHiqEfaVWCH5DSIkydiT6HSEEQkpU06B1T6mFFDxCCLrhiLre7lxvd/7yC6XXd+dKMQlvAAAAAElFTkSuQmCC"
@@ -33,12 +32,11 @@ images:
   - file: "land_ooe.png"
     link: "https://www.land-oberoesterreich.gv.at/"
     lqip: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAAC6SURBVE3BvapAYACA4ZcPKT8Dhm9hksViM8n1uItzAe7JZLDI4AIUZWBSlKJzJnWeR5nn+dc0TT7XdVHXNeM48smyDM00TYIg4LPvO33f07Yt/2nLsrCuK+/7oigK932TJAmGYeC6LsdxEMcx6rZtTNPEMAy0bcu6roRhSNM05HlO0zREUYSoqupHCIHjOAghkFJynidFUWDbNmVZ4vs+mud5dF3H8zxYlsWyLEgp0XUd3/dRVZU0TfkDJr5FZrSw254AAAAASUVORK5CYII="
-  - file: "lt1.png"
-    link: "https://www.lt1.at/"
-    lqip: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAAklEQVR4AewaftIAAADUSURBVG3Bu07CUACA4d9z2kabmJJiF5DLZLSPAJMxMBh4BEbCazATdxIeAZDLZoOjacJuYLADdsE4QFpKJTpUXY3fd9RstZLZ7JH/GMcQf8L1TQUZhGH7rtPBdV0KxQLDfp96rcbzQ5fb3DsNe0vvKUDhh1Qk1WqF+9EYx3GYTKdcnO6JvyCfStBVkNnzXNv3fUzTZPW6Yr1+48XzmHs7Lq2EyVKykRmU0XDAYrHkV7lURgjBX7Z9hQiDkMPHAf1EJ22m0VQV68xCCommaqQMg2gX8Q2dz0W/7tqYUAAAAABJRU5ErkJggg=="
   - file: "mattighofen.png"
     link: "https://www.mattighofen.at/"
     lqip: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAOCAYAAAAWo42rAAAAAklEQVR4AewaftIAAAGSSURBVG3BvWsTYQDA4d/dvbnkcrlLcmmJH1Uq2ICbgtTRVXCojg4OOov4j4jg6OjkJg7O7ewghQ4tHWw0WhN6SS53l1zv6301QqFgn0fr3b6vnNYKUkrCyRDb7VAWOU5rlXA6omY5zMa/0euNFu3VNWynTZrMaXYucXn9Fl73OtnpAtfrUq03EC+ebeG6Lkopjn5tUkiomYI4yXj68CWGEMyCu4jHj7bwPI+lOMnI8hKrKugPjundWMMwDHzfR3BOwzLB4p+f45iKOObm+jWW9CzLuMi3Ycj+YMIZ/dXrTyilmC8WnDfwI/qjkDOif5Jw5/kbNjd6bFypcLXb5MmDe5RS8vbzHu+3DyiSGMFfQWqQU+XDziFffwS8+/gFv4BpajJNS2RaIvIkosw1knhKkUSQzZnFJqNojqzUWVLZAlGxHAxDw2q0EZYDZomoueiZjjJtlqSmo/MfjYuI4PsuhRIcySHRyZhacEo0qFPEMapioaFBmSL8gx1s12Nv30cpyYrbIZzkFOGYmt1ESYksC/4A7gSyq4ojcHsAAAAASUVORK5CYII="
+  - file: "mawif.png"
+    link: "https://www.kleider-des-lichts.com/"
   - file: "mediadot.png"
     link: "https://mdot.at/"
     lqip: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAAklEQVR4AewaftIAAACiSURBVF3BO7JGMACA0Y88FMzQaixBpbQ5m7AUK7CXKEyERpFI7pi5hfnPyYDEvzzPGceRGCPruvKV81EUBdM0Mc8zvyQfMUastWzbxq8MSHy0bYsxhldd15znyUs2TcMwDAgh2PedruswxmCtpe97vPcsy0KmlEplWVJVFUophBCklJBSchwHIQSu60J673HOcd83Wmu01oQQkFLinON5Hl5/b69HkUJ1PgEAAAAASUVORK5CYII="
