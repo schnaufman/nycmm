@@ -1,4 +1,5 @@
 ##### Ähnlich dem Konzept des NYCMM, nämlich mit Bewährtem verwöhnen und mit Neuem verführen, bestreitet der **Kernölsalsaklub** seine meist ausverkauften Konzerte. Bei diesen vereint das in der Steiermark gegründetete Ensemble, bestehend aus hochklassigen Musikern der österreichischen Musikszene, karibische Rhythmen und Salsa mit Klassikern des Austro-Pop. Für alle, die  an diesem Abend das Tanzbein schwingen wollen, gibt es  während des Konzertes die Möglichkeit sich einem Salsa-Tanz-Crash-Course  anzuschließen: **„a bailar!“**
 ##### **Gregor Bischops** (voc & hand perc.), **Eva Moreno** (voc & hand perc.), **Werner Radzik** (keys & arr.), **Andi Fürstner** (guit & tres), **Thomas Stabler** (dr), **Ewald Gaulhofer** (congas), **Thomas Radzik** (timbales), **Stefan Padinger** (b), **Christoph Pfeiffer** (trp), **Karl Rossmann** (trp), **Gernot Strebl** (ts), **Reinhard Summerer** (trb & arr.) 
+##### *Dieses Konzert wird freundlicherweise von der [OÖ Versicherung](https://www.versich.at/){:target="_blank"} unterstützt*
 
 ##### weitere Infos<br>[Youtube Promovideo](https://www.youtube.com/watch?v=V4S3dcDsXGo){:target="_blank"}
