@@ -1,0 +1,1 @@
+### Für den Piano Workshop gibt es leider keine freien Plätze mehr. 
