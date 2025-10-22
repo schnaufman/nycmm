@@ -1,5 +1,5 @@
-#### Beginn: Freitag, 1. August 2025 - 9.00 Uhr
-#### Ende: Dienstag, 5. August 2025 - ca. 20:00 Uhr
+#### Beginn: Freitag, 31. Juli 2026 - 9.00 Uhr
+#### Ende: Dienstag, 4. August 2026 - ca. 20:00 Uhr
 
 ##### In der Mittagspause gibt es gemeinsame Essensmöglichkeiten in nahegelegenen Lokalitäten
 

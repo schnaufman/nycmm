@@ -1,5 +1,5 @@
-#### Start: Friday, August 1, 2025 - 9:00 a.m
-#### End: Tuesday, August 5, 2025 - approx. 8:00 p.m
+#### Start: Friday, July 31, 2026 - 9:00 a.m
+#### End: Tuesday, August 4, 2026 - approx. 8:00 p.m
 
 ##### During the lunch break, there are joint dining options in nearby restaurants
 
