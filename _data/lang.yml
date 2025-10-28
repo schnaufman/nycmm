@@ -2,10 +2,10 @@
 de:
   translation: "Deutsch"
   home:
-    #description: "Verwöhnt mit Bewährtem, verführt mit Neuem und inspiriert mit Kreativem"
-    description: "(G)artenvielfalt & Kunst: Connect, Neu Entdeckt!"
-    sign_up: "Workshop Anmeldung<br>01. - 05. August"
-    tickets: "Festivaltickets<br>06. - 10. August"
+    description: "Verwöhnt mit Bewährtem, verführt mit Neuem und inspiriert mit Kreativem"
+    #description: "(G)artenvielfalt & Kunst: Connect, Neu Entdeckt!"
+    sign_up: "Workshop Anmeldung<br>31.07. - 04.08."
+    tickets: "Festivaltickets<br>05.08. - 09.08."
   navigation:
     # about us
     overview_id: "uebersicht"
@@ -100,9 +100,9 @@ de:
       wsform_level_option4: "Fortgeschritten"
       wsform_comment_label: "Anmerkung"
       wsform_recommendation_label: "Wie hast du von uns erfahren?"
-      wsform_festivalpass_label: "Ich will natürlich einen nicen Festivalpass für 59€ dazu! (Achtung: Die Konzerte finden 2025 terminlich erst NACH dem Workshop statt)"
+      wsform_festivalpass_label: "Ich will natürlich einen nicen Festivalpass für 59€ dazu! (Achtung: Die Konzerte finden 2026 terminlich erst NACH dem Workshop statt)"
       wsform_pictures_label: "Ich bin damit einverstanden, dass während meiner Teilnahme am NYC Musikmarathon Fotos von mir gemacht und eventuell für Werbezwecke veröffentlicht werden.*"
-      wsform_signup_label: "Ich melde mich verbindlich für den NYC Musikmarathon 2025 an.*"
+      wsform_signup_label: "Ich melde mich verbindlich für den NYC Musikmarathon 2026 an.*"
       wsform_submit_label: "Abschicken"
       scholarship_title: "Stipendium"
     gallery:
@@ -118,9 +118,9 @@ de:
 en:
   translation: "English"
   home:
-    description: "(G)artenvielfalt & Kunst: Connect, Neu Entdeckt!"
-    sign_up: "Workshop Registration<br>01. - 05. August"
-    tickets: "Festivaltickets<br>06. - 10. August"
+    description: "Verwöhnt mit Bewährtem, verführt mit Neuem und inspiriert mit Kreativem"
+    sign_up: "Workshop Registration<br>31.07. - 04.08."
+    tickets: "Festivaltickets<br>05.08. - 09.08."
   navigation:
     # about us
     overview_id: "overview"
@@ -214,9 +214,9 @@ en:
       wsform_level_option4: "Advanced"
       wsform_comment_label: "Comment"
       wsform_recommendation_label: "Wie hast du von uns erfahren?"
-      wsform_festivalpass_label: "Of course I want an awesome festivalpass for €59! (Attention: The dates of the concerts in 2025 are AFTER the end of the workshop)"
+      wsform_festivalpass_label: "Of course I want an awesome festivalpass for €59! (Attention: The dates of the concerts in 2026 are AFTER the end of the workshop)"
       wsform_pictures_label: "I agree that photos of me may be taken during my participation in the NYC Musikmarathon and may be published for promotional purposes.*"
-      wsform_signup_label: "I register bindingly for the NYC Music Marathon 2025.*"
+      wsform_signup_label: "I register bindingly for the NYC Music Marathon 2026.*"
       wsform_submit_label: "Submit"
       scholarship_title: "Scholarship"
     gallery:
