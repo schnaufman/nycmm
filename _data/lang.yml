@@ -70,6 +70,7 @@ de:
       ss_3_title: "Kollaborative Kreativität"
     tickets:
       wsticket_regular_title: "regulärer Preis"
+      wsticket_early_bird: "Early Bird Special"
       wsticket_students_title: "Schüler / Studenten"
       wsticket_children_title: "Kids-Workshop"
       wsticket_blasmusik_title: "Blasmusik Friendship"
@@ -184,6 +185,7 @@ en:
       ss_3_title: "Collaborative Creativity"
     tickets:
       wsticket_regular_title: "regular price"
+      wsticket_early_bird: "Early Bird Special"
       wsticket_students_title: "Students until 26"
       wsticket_children_title: "Kids-Workshop"
       wsticket_blasmusik_title: "Blasmusik Friendship"
