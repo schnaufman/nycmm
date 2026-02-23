@@ -1,2 +1,1 @@
-## Here you can find the lineup from 2025.<br>2026's lineup will also be announced here.
-
+## Stay tuned!<br>The lineup for NYCMM 2026 is coming soon!

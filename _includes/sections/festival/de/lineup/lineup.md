@@ -1,1 +1,1 @@
-## Hier findest du noch das Programm von 2025.<br>Das Programm für 2026 wird ebenfalls hier veröffentlicht werden.
+## Stay tuned!<br>Das Programm für den NYCMM 2026 erscheint bald!
